@@ -1,0 +1,39 @@
+// Navigation sidebar: use dark text for links, underline on hover
+.site-nav {
+  .nav-list-item {
+    a.nav-list-link {
+      color: $body-text-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: $body-text-color;
+      }
+    }
+  }
+}
+
+// Main content area: links should look like links (underlined, dark text)
+.main-content {
+  a {
+    color: $body-text-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  // Keep nav/breadcrumb links subtle
+  .breadcrumb-nav a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
