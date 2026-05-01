@@ -39,7 +39,7 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 
 - [Workspace](workspace/index.md) - Keyboard shortcuts, selection, undo/redo, grouping, and more
 - [Library](library/index.md) - Organize, store, and share your designs
-- [Design Apps](design-apps/index.md) - Pre-built parametric designs you can customize
+- [Design Apps](designing/design-apps/index.md) - Pre-built parametric designs you can customize
 
 ## Reference
 

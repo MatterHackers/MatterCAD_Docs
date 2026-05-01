@@ -36,4 +36,4 @@ Components are reusable, parameterized groups of objects. When you create a comp
 
 - [Grouping](grouping.md) - Simple grouping without parameterization
 - [Expressions](expressions.md) - Use expressions to link component parameters
-- [Design Apps](../design-apps/index.md) - Pre-built components you can customize
+- [Design Apps](../designing/design-apps/index.md) - Pre-built components you can customize
