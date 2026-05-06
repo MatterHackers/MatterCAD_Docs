@@ -7,7 +7,9 @@ nav_order: 5
 
 A star-shaped 2D path with configurable number of points and inner/outer radius. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create 3D star shapes.
 
-<!-- IMAGE_NEEDED: Screenshot of a Star Path on the workspace -->
+<!-- Screenshot of a Star Path on the workspace -->
+![20260506 080319 paste 20260506 080319](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080319-paste-20260506-080319.jpg)
+
 
 ## Parameters
 

@@ -7,7 +7,9 @@ nav_order: 1
 
 A rectangular 2D path. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create box shapes, or as a base for other path operations.
 
-<!-- IMAGE_NEEDED: Screenshot of a Box Path on the workspace -->
+<!-- Screenshot of a Box Path on the workspace -->
+![20260506 080026 paste 20260506 080026](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080026-paste-20260506-080026.jpg)
+
 
 ## Parameters
 

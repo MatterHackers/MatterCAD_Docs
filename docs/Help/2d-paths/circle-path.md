@@ -7,7 +7,9 @@ nav_order: 2
 
 A circular 2D path. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create cylinders, or [Revolve](../operations/path/revolve.md) to create torus-like shapes.
 
-<!-- IMAGE_NEEDED: Screenshot of a Circle Path on the workspace -->
+<!-- Screenshot of a Circle Path on the workspace -->
+![20260506 080110 paste 20260506 080110](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080110-paste-20260506-080110.jpg)
+
 
 ## Parameters
 

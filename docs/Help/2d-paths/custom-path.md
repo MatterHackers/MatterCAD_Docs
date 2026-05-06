@@ -7,7 +7,9 @@ nav_order: 3
 
 Draw your own 2D path with control points. This gives you complete freedom to create any 2D shape that can then be extruded or revolved into a 3D object.
 
-<!-- IMAGE_NEEDED: Screenshot showing a custom path being edited with control points -->
+<!-- Screenshot showing a custom path being edited with control points -->
+![20260506 080247 paste 20260506 080247](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080247-paste-20260506-080247.jpg)
+
 
 ## How to Use
 

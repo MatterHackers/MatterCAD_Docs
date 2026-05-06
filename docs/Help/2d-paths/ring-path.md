@@ -7,7 +7,8 @@ nav_order: 4
 
 A 2D ring shape -- a circle with a circular hole in the center. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create tube or washer shapes.
 
-<!-- IMAGE_NEEDED: Screenshot of a Ring Path on the workspace -->
+<!-- Screenshot of a Ring Path on the workspace -->
+![20260506 080211 paste 20260506 080211](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080211-paste-20260506-080211.jpg)
 
 ## Parameters
 

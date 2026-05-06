@@ -8,7 +8,9 @@ nav_order: 1
 
 Array creates multiple copies of an object arranged in a pattern. Select a mode from the buttons at the top — **Linear**, **Radial**, or **Transform** — to switch between pattern types.
 
-<!-- IMAGE_NEEDED: Screenshot of the Array operation panel showing the mode buttons at the top (Linear | Radial | Transform) -->
+<!--  Screenshot of the Array operation panel showing the mode buttons at the top (Linear | Radial | Transform) -->
+![20260506 080647 paste 20260506 080647](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080647-paste-20260506-080647.jpg)
+
 
 ## How to Use
 
@@ -44,7 +46,9 @@ Linear mode places copies along a direction with optional rotation and scale pro
 
 Radial mode distributes copies evenly around a central axis at a fixed radius.
 
-<!-- IMAGE_NEEDED: Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
+<!--  Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
+![20260506 080718 paste 20260506 080718](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080718-paste-20260506-080718.jpg)
+
 
 **Count Method** — How the number of copies is determined:
 - **Count** — Explicit number of copies.
