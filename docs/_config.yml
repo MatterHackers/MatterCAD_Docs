@@ -21,5 +21,6 @@ footer_content: "MatterCAD Documentation &mdash; <a href=\"https://www.matterhac
 # Exclude non-doc files from Jekyll processing
 exclude:
   - _config.yml
+
+include:
   - help-docs.zip
-  - "*.zip"
