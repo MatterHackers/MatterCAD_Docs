@@ -2,8 +2,42 @@
 title: Release Notes
 nav_order: 104
 ---
-# MatterCAD 2.2026.3 (March 12, 2026)
+# MatterCAD 2.2026.5 (May 8, 2026)
 [Windows Download](https://mattercontrol.appspot.com/downloads/mattercad-windows/release)
+
+## New Features
+
+* **Redesigned Array Tool**
+  * Single unified Array operation replaces the old Linear Array, Radial Array, and Advanced Array
+  * **Linear** mode: copies along a direction with optional rotation and progressive scale
+  * **Radial** mode: copies around a central axis with configurable radius, sweep angle, and arc or full-circle patterns
+  * **Transform** mode: step copies using a manual transform or a named sibling object's transform
+  * Compounding rotation mode in Linear creates spirals, fans, and helices naturally
+  * Scale Affects Offset option for nautilus-shell and geometric-progression layouts
+  * <!-- IMAGE_NEEDED: Screenshot showing the Array tool panel with the four mode buttons, and a radial example in the viewport -->
+
+* **Library Favorites**
+  * Star any library item to add it to a persistent Favorites folder
+  * Quickly access your most-used primitives, generators, and saved parts from one place
+  * <!-- IMAGE_NEEDED: Screenshot of the Favorites container in the library sidebar with a few starred items -->
+
+## Improvements
+
+* **Align**
+  * Stacked alignment is now a direct mode button instead of a dropdown option
+
+* **File Support**
+  * Added support for WEBP image format in image-based operations
+  * Improved SVG file parsing for more reliable imports
+
+* **Reliability**
+  * Improved 3MF file loading speed and reliability
+  * Better tab restoration between sessions
+
+---
+
+# MatterCAD 2.2026.3 (March 12, 2026)
+[Windows Download](https://mattercontrol.appspot.com/admin/uploads/ag9zfm1hdHRlcmNvbnRyb2xyQQsSB1Byb2plY3QYgICI5uHFqwoMCxINUHVibGljUmVsZWFzZRiAgMjk1aGoCwwLEgZVcGxvYWQYgIDItJywqgsM)
 
 ## New Features
 

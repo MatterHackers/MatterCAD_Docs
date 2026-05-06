@@ -6,15 +6,15 @@ nav_order: 1
 ---
 # Array
 
-Array creates multiple copies of an object arranged in a pattern. Select a mode from the buttons at the top — **Linear**, **Radial**, **Curve**, or **Transform** — to switch between pattern types.
+Array creates multiple copies of an object arranged in a pattern. Select a mode from the buttons at the top — **Linear**, **Radial**, or **Transform** — to switch between pattern types.
 
-<!-- IMAGE_NEEDED: Screenshot of the Array operation panel showing the four mode buttons at the top (Linear | Radial | Curve | Transform) -->
+<!-- IMAGE_NEEDED: Screenshot of the Array operation panel showing the mode buttons at the top (Linear | Radial | Transform) -->
 
 ## How to Use
 
 1. Select an object
 2. Apply the **Array** operation from the Duplication menu
-3. Choose a mode (Linear, Radial, Curve, or Transform)
+3. Choose a mode (Linear, Radial, or Transform)
 4. Adjust the parameters for the chosen mode
 
 ## Mode: Linear
@@ -63,22 +63,6 @@ Radial mode distributes copies evenly around a central axis at a fixed radius.
 **Align Rotation** — Rotate each copy so its forward axis points outward from the center.
 
 **Forward Axis** — Which axis of the copy is treated as "forward" for alignment (shown when Align Rotation is on).
-
-## Mode: Curve
-
-Curve mode distributes copies along a sibling Curve object.
-
-**Count Method** — How spacing is determined:
-- **Count** — Explicit number of copies spread along the full curve.
-- **Distance** — Fixed distance in mm between copies; count is calculated automatically.
-
-**Count** / **Distance** — Number of copies or spacing between copies, depending on Count Method.
-
-**Curve Name** — Name of the sibling Curve object to follow. The Curve must be a direct sibling inside the same parent group.
-
-**Align Rotation** — Orient each copy so it follows the curve's direction.
-
-**Forward Axis** — Which axis of the copy aligns with the curve tangent (shown when Align Rotation is on).
 
 ## Mode: Transform
 
