@@ -41,12 +41,10 @@ This pattern works for any scenario where you need to pick from a set of variant
 
 ## Tips
 
-- Combine with [Linear Array](linear-array.md) or [Radial Array](radial-array.md) to create varied patterns where each copy selects a different child
+- Combine with [Array](array.md) to create varied patterns where each copy selects a different child
 - Use sheet variables for the index or name to drive selection from a spreadsheet
 - The fallback-to-first-child behavior means your design never breaks even if the index or name is wrong
 
 ## Related
 
-- [Linear Array](linear-array.md) - Duplicate objects along a straight line
-- [Radial Array](radial-array.md) - Duplicate objects in a circular pattern
-- [Advanced Array](advanced-array.md) - Create complex array patterns with additional control
+- [Array](array.md) - Duplicate objects in linear, radial, curve, and transform patterns

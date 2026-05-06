@@ -6,87 +6,126 @@ nav_order: 1
 ---
 # Array
 
-Array creates multiple copies of an object with configurable offset, rotation, scale, and randomization. You can create simple linear rows, circular patterns, spirals, and complex progressive arrangements -- all from one operation.
+Array creates multiple copies of an object arranged in a pattern. Select a mode from the buttons at the top — **Linear**, **Radial**, **Curve**, or **Transform** — to switch between pattern types.
 
-<!-- IMAGE_NEEDED: Screenshot of the Array operation panel showing the main parameters -->
+<!-- IMAGE_NEEDED: Screenshot of the Array operation panel showing the four mode buttons at the top (Linear | Radial | Curve | Transform) -->
 
 ## How to Use
 
 1. Select an object
 2. Apply the **Array** operation from the Duplication menu
-3. Adjust offset, count, and optionally enable rotation, scale, or randomization
+3. Choose a mode (Linear, Radial, Curve, or Transform)
+4. Adjust the parameters for the chosen mode
 
-## Count
+## Mode: Linear
 
-Controls how many copies are created and how they are distributed.
+Linear mode places copies along a direction with optional rotation and scale progression.
 
-- **Fit Type** - Choose how count is determined:
-  - **Fixed Count** - You specify an exact number of copies
-  - **Fit Length** - Copies fill a total length, count is calculated automatically
-  - **Fit Curve** - Copies are distributed along a sibling 3D Curve object
-- **Count** - Number of copies (shown for Fixed Count). Supports [expressions](../../workspace/expressions.md).
-- **Fit Length** - Total length to fill in mm (shown for Fit Length). Supports [expressions](../../workspace/expressions.md).
-- **Curve Id** - Name or ID of a sibling curve to follow (shown for Fit Curve)
+**Count** — Number of copies (integer or expression). The source object is the first copy; additional copies are offset from it.
 
-## Offset
+**Offset Method** — How spacing is calculated:
+- **Relative** — Offset is multiplied by the object's bounding box size. A Relative Offset of (1, 0, 0) spaces copies exactly one object-width apart along X.
+- **Offset** — Fixed world-space distance in mm per copy.
+- **Endpoint** — Set the position of the last copy; spacing is divided evenly between copies.
 
-Controls spacing and direction between copies.
+**Relative Offset** / **Offset** / **Endpoint** — The spacing vector, depending on the selected Offset Method.
 
-- **Offset Method**:
-  - **Relative** - Offset is multiplied by the object's bounding box size. A value of (1, 0, 0) places each copy one object-width apart along X.
-  - **Constant** - Offset is a fixed distance in mm regardless of object size.
-- **Offset** - The X, Y, Z offset vector between copies
+**Rotation Mode** — How rotation accumulates across copies:
+- **Local** — Each copy rotates in place at its own center; the offset direction stays in world axes.
+- **Compounding** — Rotation accumulates and steers the offset, producing spirals, fans, and helices.
 
-## Rotation
+**Rotation** — Per-copy rotation in degrees on each axis.
 
-Enable the **Use Rotation** toggle to add rotation to each copy.
+**Scale** — Per-copy cumulative scale on each axis. Values less than 1 shrink copies; values greater than 1 grow them.
 
-- **Rotation Angle** - Degrees of rotation. Supports [expressions](../../workspace/expressions.md).
-- **Angle Mode**:
-  - **Per Copy** - Each copy rotates this many degrees relative to the previous copy
-  - **Total** - The rotation angle is spread evenly across all copies
-- **Rotate About** - The axis and center point of rotation. Drag the origin in the viewport to change the radius of circular patterns.
-- **Rotate Part** - When on, each copy's geometry rotates to match its position (like spokes on a wheel). When off, copies maintain their original orientation.
+**Scale Affects Offset** — When on, the spacing between copies also scales with each step. Use this for tightening spirals and geometric progressions (nautilus shells, stacked nail-shell curves).
 
-## Scale
+## Mode: Radial
 
-Enable the **Use Scale** toggle to progressively scale copies.
+Radial mode distributes copies evenly around a central axis at a fixed radius.
 
-- **Scale** - Per-axis scale multiplier applied at each step. Values less than 1 shrink copies; greater than 1 grow them.
-- **Scale Offset** - When on, the offset distance also scales with each step, creating tightening spirals or converging patterns.
+<!-- IMAGE_NEEDED: Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
+
+**Count Method** — How the number of copies is determined:
+- **Count** — Explicit number of copies.
+- **Distance** — Angular gap between copies in degrees; count is calculated to fill the sweep.
+
+**Count** / **Angular Distance** — Number of copies (Count mode) or angular spacing in degrees (Distance mode). Supports expressions.
+
+**Central Axis** — The axis to rotate around (default: Z).
+
+**Circle Segment** — Whether copies span a full 360° circle (**Full**) or a partial arc (**Arc**).
+
+**Radius** — Distance from the central axis to each copy.
+
+**Sweep Angle** — Degrees of arc to fill (shown when Circle Segment is Arc). Supports expressions.
+
+**Align Rotation** — Rotate each copy so its forward axis points outward from the center.
+
+**Forward Axis** — Which axis of the copy is treated as "forward" for alignment (shown when Align Rotation is on).
+
+## Mode: Curve
+
+Curve mode distributes copies along a sibling Curve object.
+
+**Count Method** — How spacing is determined:
+- **Count** — Explicit number of copies spread along the full curve.
+- **Distance** — Fixed distance in mm between copies; count is calculated automatically.
+
+**Count** / **Distance** — Number of copies or spacing between copies, depending on Count Method.
+
+**Curve Name** — Name of the sibling Curve object to follow. The Curve must be a direct sibling inside the same parent group.
+
+**Align Rotation** — Orient each copy so it follows the curve's direction.
+
+**Forward Axis** — Which axis of the copy aligns with the curve tangent (shown when Align Rotation is on).
+
+## Mode: Transform
+
+Transform mode steps copies using a manual transform or by following another object's transform.
+
+**Count** — Number of copies (integer or expression).
+
+**Transform Reference** — Where the per-step transform comes from:
+- **Input** — You specify translation, rotation, and scale directly.
+- **Object** — The transform is read from a named sibling object.
+
+**Translation** — Per-step world-space offset in mm (shown when Reference is Input).
+
+**Rotation** — Per-step rotation in degrees per axis (shown when Reference is Input).
+
+**Scale** / **Scale Axes** — Uniform and per-axis scale applied at each step (shown when Reference is Input).
+
+**Transform Name** — Name of the sibling object whose transform is used as the per-step increment (shown when Reference is Object).
+
+**Relative Space** — When on, each copy's transform compounds in the local frame of the previous copy; when off, each step is applied in world space (shown when Reference is Object).
 
 ## Randomize
 
-Enable the **Use Randomize** toggle to add variation to copies.
+Enable **Randomize** to add variation to all copies.
 
-- **Random Offset** - Maximum random position offset per axis in mm
-- **Random Rotation** - Maximum random rotation per axis in degrees
-- **Random Scale Range** - Maximum random scale variation per axis (e.g., 0.1 means +/-10%)
-- **Random Seed** - Change this value to get a different random arrangement. Supports [expressions](../../workspace/expressions.md).
-- **Exclude First** - Keep the first copy at its exact computed position (default: on)
+- **Random Offset** — Maximum random position offset per axis in mm.
+- **Random Rotation** — Maximum random rotation per axis in degrees.
+- **Random Scale Axes** — Maximum random scale variation per axis.
+- **Exclude First** — Keep the first copy at its exact computed position (default: on).
+- **Exclude Last** — Keep the last copy at its exact computed position.
+- **Random Seed** — Change this to get a different random arrangement. Supports expressions.
 
-## Common Patterns
+## Merge
 
-### Linear Array
-Leave rotation and scale off. Set Offset Method to Relative with offset (1, 0, 0) for copies spaced one object-width apart along X. Adjust the offset vector to change direction and spacing.
-
-### Radial Array
-Enable Use Rotation, set Rotation Angle to 360/count, and adjust the Rotate About origin to set the circle radius. Turn on Rotate Part for spoke-like arrangements.
-
-### Spiral
-Enable both rotation and scale. Set a rotation angle and a scale less than 1.0 with Scale Offset on. Copies will spiral inward.
-
-### Staircase
-Set Offset to (1, 0, 0.5) for horizontal spacing with vertical rise. Enable rotation with a small angle for a curving staircase.
+- **Create Single Mesh** — Combine all copies into one merged mesh object.
+- **Merge Vertices** — Weld vertices within the merge distance threshold (shown when Create Single Mesh is on).
+- **Distance** — Merge threshold in mm (shown when Merge Vertices is on).
 
 ## Tips
 
-- The first copy stays at the original position; additional copies are offset from there
-- Use expressions for Count, Rotation Angle, or Fit Length to create parametric patterns
-- Relative offset is usually easier to work with since it adapts when you resize the source object
-- Drag the rotation axis origin in the viewport to interactively adjust circular pattern radius
+- Use expressions for Count, Rotation, or Endpoint to create parametric patterns
+- For circular patterns, use Radial mode — set Radius to control the circle size and enable Align Rotation if copies should face outward
+- Compounding rotation in Linear mode creates spirals and fans without manually calculating angle offsets
+- Scale Affects Offset creates nautilus-shell and geometric-progression layouts naturally
+- Combine Array with [Select Child](select-child.md) to create patterns where each copy shows a different variant
 
 ## Related
 
 - [Align](../placement/align.md) - Position objects relative to each other
-- [Select Child](select-child.md) - Pick a specific copy from the array
+- [Select Child](select-child.md) - Pick a specific copy from an array by index or name

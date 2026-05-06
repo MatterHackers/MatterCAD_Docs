@@ -16,14 +16,14 @@ This repository hosts the official MatterCAD documentation, served publicly via 
 
 | Boolean Operations | Array Patterns | Mechanical Parts |
 | :---: | :---: | :---: |
-| [![Boolean Subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/subtract) | [![Linear Array](https://matterhackers.github.io/MatterCAD_Docs/assets/array_linear.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/linear-array) | [![Gears](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical_gears.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/mechanical/gears) |
-| Combine, subtract, and intersect solids | Linear, radial, and advanced arrays | Gears, threads, and precision parts |
+| [![Boolean Subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/subtract) | [![Array](https://matterhackers.github.io/MatterCAD_Docs/assets/array_linear.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/array) | [![Gears](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical_gears.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/mechanical/gears) |
+| Combine, subtract, and intersect solids | Linear, radial, curve, and transform patterns | Gears, threads, and precision parts |
 
 ### Powerful Operations
 
-| [![Boolean Combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/combine) | [![Boolean Intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/intersect) | [![Radial Array](https://matterhackers.github.io/MatterCAD_Docs/assets/array_radial.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/radial-array) | [![Advanced Array](https://matterhackers.github.io/MatterCAD_Docs/assets/array_advanced.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/advanced-array) |
+| [![Boolean Combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/combine) | [![Boolean Intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/intersect) | [![Array (Radial)](https://matterhackers.github.io/MatterCAD_Docs/assets/array_radial.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/array) | [![Array (Advanced)](https://matterhackers.github.io/MatterCAD_Docs/assets/array_advanced.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/array) |
 | :---: | :---: | :---: | :---: |
-| Combine | Intersect | Radial Array | Advanced Array |
+| Combine | Intersect | Array (Radial) | Array (Transform) |
 
 ---
 
@@ -31,7 +31,7 @@ This repository hosts the official MatterCAD documentation, served publicly via 
 
 - **Parametric 3D Modeling** — Cubes, cylinders, spheres, cones, tori, and more with precise dimensional control
 - **Boolean Operations** — Combine, subtract, intersect, and subtract-and-replace to build complex shapes
-- **Array Tools** — Linear, radial, and advanced arrays for repeating patterns
+- **Array Tool** — Linear, radial, curve, and transform patterns for repeating features
 - **Reshape Operations** — Bevel, curve, twist, pinch, hollow out, and plane cut
 - **Path Operations** — Linear extrude, revolve, inflate, merge, border, and smooth paths
 - **2D Path Primitives** — Box, circle, ring, star, and custom paths for extrusion workflows

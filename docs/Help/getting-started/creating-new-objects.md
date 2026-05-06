@@ -29,7 +29,7 @@ The toolbar at the top of the viewport gives you quick access to common operatio
 - **Copy / Delete** - Duplicate or remove selected objects. Standard **Ctrl+C**, **Ctrl+X**, and **Ctrl+V** shortcuts also work
 - **Align** - Position multiple objects relative to each other
 - **Boolean operations** - [Combine](../operations/boolean/combine.md), [Subtract](../operations/boolean/subtract.md), [Intersect](../operations/boolean/intersect.md), and [Subtract & Replace](../operations/boolean/subtract-and-replace.md)
-- **Arrays** - Create [Linear](../operations/array/linear-array.md), [Radial](../operations/array/radial-array.md), or [Advanced](../operations/array/advanced-array.md) patterns of duplicated objects
+- **Arrays** - Create [linear, radial, curve, and transform patterns](../operations/array/array.md) of duplicated objects
 - **Transforms** - Apply [Rotate](../operations/transform/rotate.md), [Scale](../operations/transform/scale.md), [Mirror](../operations/transform/mirror.md), and other modifications
 
 ## Building Complex Shapes
