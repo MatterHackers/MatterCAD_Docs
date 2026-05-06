@@ -6,7 +6,7 @@ nav_order: 4
 ---
 # Subtract
 
-Subtract cuts one or more shapes out of another, performing a boolean subtraction. Use this to create holes, cutouts, and complex negative shapes.
+Subtract cuts one or more shapes out of another, performing a boolean subtraction. Use this to create holes, cutouts, and complex negative shapes. Subtract also works on 2D paths: when applied to path objects, it cuts one path's area out of another.
 
 <!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract -->
 ![boolean_subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)

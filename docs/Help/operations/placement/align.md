@@ -8,7 +8,9 @@ nav_order: 1
 
 Align precisely positions objects relative to an anchor object along the X, Y, and Z axes. You can align edges, centers, or origins with optional offsets.
 
-<!-- IMAGE_NEEDED: Screenshot showing two objects being aligned with alignment options visible -->
+<!--  Screenshot showing two objects being aligned with alignment options visible -->
+![20260506 154830 paste 20260506 154830](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154830-paste-20260506-154830.jpg)
+
 
 ## How to Use
 

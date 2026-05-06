@@ -8,7 +8,9 @@ nav_order: 1
 
 Mirror creates a reflected copy of an object across one of the three primary axes. The result is a mirrored version of the original shape.
 
-<!-- IMAGE_NEEDED: Before and after showing an object mirrored across the X axis -->
+<!--  Before and after showing an object mirrored across the X axis -->
+![20260506 160651 paste 20260506 160651](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160651-paste-20260506-160651.jpg)
+
 
 ## How to Use
 

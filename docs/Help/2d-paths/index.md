@@ -7,7 +7,9 @@ nav_order: 1
 
 2D paths are flat shapes that you can use as the starting point for 3D objects. Use [Linear Extrude](../operations/path/linear-extrude.md) to give a path height, or [Revolve](../operations/path/revolve.md) to spin a path around an axis to create a 3D form.
 
-<!-- IMAGE_NEEDED: Screenshot showing a 2D path being extruded into a 3D shape -->
+<!--  Screenshot showing a 2D path being extruded into a 3D shape -->
+![20260506 093625 paste 20260506 093625](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-093625-paste-20260506-093625.jpg)
+
 
 ## Available Paths
 

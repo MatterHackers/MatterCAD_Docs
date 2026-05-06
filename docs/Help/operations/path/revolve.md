@@ -8,7 +8,9 @@ nav_order: 6
 
 Revolve spins a 2D path around an axis to create a 3D solid of revolution. This is how you create vases, bowls, wheels, and other rotationally symmetric objects.
 
-<!-- IMAGE_NEEDED: Before and after showing a profile path being revolved into a vase shape -->
+<!--  Before and after showing a profile path being revolved into a vase shape -->
+![20260506 102004 paste 20260506 102004](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-102004-paste-20260506-102004.jpg)
+
 
 ## How to Use
 

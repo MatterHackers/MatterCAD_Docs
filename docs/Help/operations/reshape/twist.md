@@ -8,7 +8,8 @@ nav_order: 7
 
 Twist rotates the top of an object relative to the bottom, creating a spiral or twisted effect along the height. The rotation progresses smoothly from bottom to top.
 
-<!-- IMAGE_NEEDED: Before and after showing a cube being twisted into a spiral column -->
+<!--  Before and after showing a cube being twisted into a spiral column -->
+![20260506 155620 paste 20260506 155620](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155620-paste-20260506-155620.jpg)
 
 ## How to Use
 

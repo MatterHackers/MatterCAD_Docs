@@ -2,13 +2,14 @@
 title: Fit to Bounds
 parent: "Placement Operations"
 grand_parent: "Operations"
-nav_order: 2
+nav_order: 3
 ---
 # Fit to Bounds
 
 Fit to Bounds scales an object to fit within specified width, depth, and height dimensions. You can control how the object stretches and aligns within the target bounds.
 
-<!-- IMAGE_NEEDED: Screenshot showing an object being fit to specific bounding dimensions -->
+<!--  Screenshot showing an object being fit to specific bounding dimensions -->
+![20260506 154930 paste 20260506 154930](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154930-paste-20260506-154930.jpg)
 
 ## How to Use
 

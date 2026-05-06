@@ -8,7 +8,8 @@ nav_order: 6
 
 Radial Pinch compresses an object inward from a center point with a customizable profile curve. Unlike regular [Pinch](pinch.md) which works from back to front, Radial Pinch compresses symmetrically around a center axis.
 
-<!-- IMAGE_NEEDED: Before and after showing an object with radial pinch applied, creating a waisted shape -->
+<!--  Before and after showing an object with radial pinch applied, creating a waisted shape -->
+![20260506 155741 paste 20260506 155741](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155741-paste-20260506-155741.jpg)
 
 ## How to Use
 

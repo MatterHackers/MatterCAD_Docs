@@ -13,5 +13,5 @@ Placement operations help you precisely position objects relative to each other 
 ## Operations
 
 - [Align](align.md) - Align objects to each other along any axis
-- Dual Extrusion Align - Align objects to their share modeling positions
+- [Dual Extrusion Align](dual-extrusion-align.md) - Align objects to their shared modeling positions
 - [Fit to Bounds](fit-to-bounds.md) - Scale an object to fit within a specified bounding box

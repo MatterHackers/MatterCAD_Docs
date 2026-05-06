@@ -8,7 +8,9 @@ nav_order: 2
 
 Inflate Path expands a 2D path outward, making the shape larger while maintaining its overall form. This is similar to applying a uniform offset to all edges.
 
-<!-- IMAGE_NEEDED: Before and after showing a path inflated outward -->
+<!--  Before and after showing a path inflated outward -->
+![20260506 100652 paste 20260506 100652](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-100652-paste-20260506-100652.jpg)
+
 
 ## How to Use
 

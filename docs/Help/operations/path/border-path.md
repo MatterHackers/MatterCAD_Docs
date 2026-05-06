@@ -8,7 +8,9 @@ nav_order: 1
 
 Border Path adds a border offset around an existing path, creating a larger version of the shape that surrounds the original.
 
-<!-- IMAGE_NEEDED: Before and after showing a path with a border added -->
+<!--  Before and after showing a path with a border added -->
+![20260506 100533 paste 20260506 100533](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-100533-paste-20260506-100533.jpg)
+
 
 ## How to Use
 

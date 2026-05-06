@@ -8,7 +8,8 @@ nav_order: 5
 
 Outline Path creates an outline version of a filled path, converting a solid shape into just its boundary ring with a specified thickness.
 
-<!-- IMAGE_NEEDED: Before and after showing a solid circle path converted to a ring outline -->
+<!--  Before and after showing a solid circle path converted to a ring outline -->
+![20260506 101308 paste 20260506 101308](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-101308-paste-20260506-101308.jpg)
 
 ## How to Use
 

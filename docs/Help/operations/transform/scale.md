@@ -8,7 +8,8 @@ nav_order: 3
 
 Scale resizes an object with precise control over dimensions, proportions, and unit conversion. You can scale uniformly, lock specific axes together, or resize each axis independently.
 
-<!-- IMAGE_NEEDED: Screenshot showing the Scale operation properties with dimension fields and lock proportion options -->
+<!--  Screenshot showing the Scale operation properties with dimension fields and lock proportion options -->
+![20260506 160759 paste 20260506 160759](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160759-paste-20260506-160759.jpg)
 
 ## How to Use
 

@@ -8,7 +8,8 @@ nav_order: 4
 
 Pinch compresses the back of an object inward, with the effect increasing toward the top. This creates a tapered or squeezed appearance.
 
-<!-- IMAGE_NEEDED: Before and after showing an object being pinched -->
+<!--  Before and after showing an object being pinched -->
+![20260506 155449 paste 20260506 155449](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155449-paste-20260506-155449.jpg)
 
 ## How to Use
 

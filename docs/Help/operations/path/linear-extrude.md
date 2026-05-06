@@ -8,7 +8,9 @@ nav_order: 3
 
 Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. This is the primary way to convert paths into 3D objects.
 
-<!-- IMAGE_NEEDED: Before and after showing a 2D star path extruded into a 3D star -->
+<!--  Before and after showing a 2D star path extruded into a 3D star -->
+![20260506 100726 paste 20260506 100726](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-100726-paste-20260506-100726.jpg)
+
 
 ## How to Use
 

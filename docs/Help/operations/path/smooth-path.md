@@ -8,7 +8,9 @@ nav_order: 8
 
 Smooth Path rounds the corners and curves of a 2D path, creating softer, more organic shapes from angular inputs.
 
-<!-- IMAGE_NEEDED: Before and after showing a star path with sharp points smoothed to curves -->
+<!--  Before and after showing a star path with sharp points smoothed to curves -->
+![20260506 102302 paste 20260506 102302](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-102302-paste-20260506-102302.jpg)
+
 
 ## How to Use
 

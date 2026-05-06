@@ -19,4 +19,3 @@ Path operations work with 2D paths to create and modify 3D shapes. Use these to 
 - [Outline Path](outline-path.md) - Create an outline from a filled path
 - [Border Path](border-path.md) - Add a border offset around a path
 - [Select Paths](select-paths.md) - Select specific paths from complex multi-path objects
-- [Merge Path](merge-path.md) - Merge multiple paths together

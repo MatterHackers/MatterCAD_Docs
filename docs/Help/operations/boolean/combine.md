@@ -6,7 +6,7 @@ nav_order: 1
 ---
 # Combine
 
-Combine merges multiple objects into a single unified solid. This is equivalent to a boolean union operation -- it joins overlapping shapes into one continuous mesh.
+Combine merges multiple objects into a single unified solid. This is equivalent to a boolean union operation -- it joins overlapping shapes into one continuous mesh. Combine also works on 2D paths: when applied to path objects, it merges them into a single unified path.
 
 <!-- AUTO_IMAGE: type=from_mcx file=boolean_combine -->
 ![boolean_combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)

@@ -8,7 +8,8 @@ nav_order: 2
 
 Curve bends a straight object into an arc or circular shape. You can control the bend by specifying either an angle or a diameter to wrap around.
 
-<!-- IMAGE_NEEDED: Before and after showing a straight bar being curved into an arc -->
+<!--  Before and after showing a straight bar being curved into an arc -->
+![20260506 155243 paste 20260506 155243](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155243-paste-20260506-155243.jpg)
 
 ## How to Use
 

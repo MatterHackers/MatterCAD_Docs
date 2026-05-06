@@ -8,7 +8,8 @@ nav_order: 5
 
 Plane Cut slices an object at a specified height with a horizontal plane, keeping only the portion below the cut. The cut surface is capped with a flat face.
 
-<!-- IMAGE_NEEDED: Before and after showing an object being sliced at a specific height -->
+<!--  Before and after showing an object being sliced at a specific height -->
+![20260506 155526 paste 20260506 155526](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155526-paste-20260506-155526.jpg)
 
 ## How to Use
 

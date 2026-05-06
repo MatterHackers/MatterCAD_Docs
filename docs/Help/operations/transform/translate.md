@@ -8,7 +8,9 @@ nav_order: 4
 
 Translate moves an object by a specific distance along the X, Y, and/or Z axes. Unlike dragging an object with the mouse, Translate lets you enter exact offset values.
 
-<!-- IMAGE_NEEDED: Screenshot showing the Translate operation properties with X, Y, Z offset fields -->
+<!--  Screenshot showing the Translate operation properties with X, Y, Z offset fields -->
+![20260506 160828 paste 20260506 160828](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160828-paste-20260506-160828.jpg)
+
 
 ## How to Use
 

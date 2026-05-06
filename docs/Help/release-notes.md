@@ -19,7 +19,10 @@ nav_order: 104
 * **Library Favorites**
   * Star any library item to add it to a persistent Favorites folder
   * Quickly access your most-used primitives, generators, and saved parts from one place
-  * <!-- IMAGE_NEEDED: Screenshot of the Favorites container in the library sidebar with a few starred items -->
+  * <!-- Screenshot of the Favorites container in the library sidebar with a few starred items -->
+![20260506 083533 paste 20260506 083533](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-083533-paste-20260506-083533.jpg)
+![20260506 083600 paste 20260506 083600](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-083600-paste-20260506-083600.jpg)
+
 
 ## Improvements
 

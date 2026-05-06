@@ -26,7 +26,7 @@ MatterCAD includes a library of 3D primitive shapes that serve as the building b
 - [Half Cylinder](half-cylinder.md) - A cylinder cut in half lengthwise
 - [Half Wedge](half-wedge.md) - A wedge cut in half
 - [Hole](hole.md) - A cube-shaped hole used with boolean subtract operations
-- [3D Curve](3d-curve.md) - A 3D Bezier curve with interactive control points
+
 
 ## Text and Special Shapes
 

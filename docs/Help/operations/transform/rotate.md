@@ -8,7 +8,8 @@ nav_order: 2
 
 Rotate turns an object around a specified axis by a given angle. You can rotate around any axis direction and choose the center point of rotation.
 
-<!-- IMAGE_NEEDED: Screenshot showing the Rotate operation with the rotation gizmo visible in the viewport -->
+<!--  Screenshot showing the Rotate operation with the rotation gizmo visible in the viewport -->
+![20260506 160726 paste 20260506 160726](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160726-paste-20260506-160726.jpg)
 
 ## How to Use
 

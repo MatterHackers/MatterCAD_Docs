@@ -16,6 +16,5 @@ Reshape operations deform and modify the geometry of your objects, allowing you 
 - [Twist](twist.md) - Rotate an object progressively along its height
 - [Pinch](pinch.md) - Compress an object toward its center axis
 - [Radial Pinch](radial-pinch.md) - Pinch an object radially around an axis
-- [Bevel](bevel.md) - Add beveled edges to an object
 - [Plane Cut](plane-cut.md) - Slice an object with a flat plane at a specified height
 - [Hollow Out](hollow-out.md) - Create a hollow shell from a solid object

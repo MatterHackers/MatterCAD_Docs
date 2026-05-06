@@ -8,7 +8,8 @@ nav_order: 3
 
 Hollow Out creates a hollow shell from a solid object by offsetting the surface inward. The result is a thin-walled version of the original shape.
 
-<!-- IMAGE_NEEDED: Cross-section view showing a solid object hollowed out with visible wall thickness -->
+<!--  Cross-section view showing a solid object hollowed out with visible wall thickness -->
+![20260506 155412 paste 20260506 155412](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155412-paste-20260506-155412.jpg)
 
 ## How to Use
 
@@ -32,5 +33,4 @@ Hollow Out creates a hollow shell from a solid object by offsetting the surface 
 ## Related
 
 - [Plane Cut](plane-cut.md) - Cut an object at a specific height
-- [Bevel](bevel.md) - Round edges of an object
 - [Subtract](../boolean/subtract.md) - Manually cut material away

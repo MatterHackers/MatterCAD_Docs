@@ -47,7 +47,7 @@ Linear mode places copies along a direction with optional rotation and scale pro
 Radial mode distributes copies evenly around a central axis at a fixed radius.
 
 <!--  Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
-![20260506 080718 paste 20260506 080718](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080718-paste-20260506-080718.jpg)
+![20260506 092618 paste 20260506 092618](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-092618-paste-20260506-092618.jpg)
 
 
 **Count Method** — How the number of copies is determined:
