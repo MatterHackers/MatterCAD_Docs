@@ -14,7 +14,8 @@ nav_order: 104
   * **Transform** mode: step copies using a manual transform or a named sibling object's transform
   * Compounding rotation mode in Linear creates spirals, fans, and helices naturally
   * Scale Affects Offset option for nautilus-shell and geometric-progression layouts
-  * <!-- IMAGE_NEEDED: Screenshot showing the Array tool panel with the four mode buttons, and a radial example in the viewport -->
+  * <!--  Screenshot showing the Array tool panel with the four mode buttons, and a radial example in the viewport -->
+![20260506 162839 paste 20260506 162839](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-162839-paste-20260506-162839.jpg)
 
 * **Library Favorites**
   * Star any library item to add it to a persistent Favorites folder

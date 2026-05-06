@@ -5,6 +5,7 @@ nav_order: 105
 # MatterCAD 2.2026.5
 
 <!-- HERO_IMAGE: A GIF or screenshot showing Array in Radial mode with several copies arranged in a circle. ~800x450px -->
+![20260506 162820 paste 20260506 162820](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-162820-paste-20260506-162820.jpg)
 
 # What's New
 
@@ -17,7 +18,9 @@ nav_order: 105
 * **Library Favorites**
   * Star any library item to pin it to a persistent Favorites folder
   * Your most-used primitives and saved parts are always one click away
-  * <!-- IMAGE_NEEDED: Screenshot of the Favorites sidebar showing a few starred items -->
+  * ![20260506 083533 paste 20260506 083533](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-083533-paste-20260506-083533.jpg)
+![20260506 083600 paste 20260506 083600](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-083600-paste-20260506-083600.jpg)
+
 
 ## Improvements
 
