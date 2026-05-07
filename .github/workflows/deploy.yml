@@ -28,15 +28,16 @@ jobs:
 
           HELP_ROOT = "docs/Help"
 
-          # Build help-docs.zip containing all .md files from docs/Help/.
+          # Build help-docs.zip containing all help articles and JSON metadata from docs/Help/.
           # The app builds the help tree from the zip's directory structure
           # and extracts article titles from YAML frontmatter — no toc.json needed.
+          included_extensions = {".md", ".json"}
           with zipfile.ZipFile("docs/help-docs.zip", "w", zipfile.ZIP_DEFLATED) as zf:
               for root, dirs, files in os.walk(HELP_ROOT):
                   # Sort for deterministic zip ordering
                   dirs.sort()
                   for fname in sorted(files):
-                      if fname.endswith(".md"):
+                      if os.path.splitext(fname)[1].lower() in included_extensions:
                           full_path = os.path.join(root, fname)
                           # Entry path relative to docs/, e.g. "Help/operations/array-linear.md"
                           arc_name = os.path.relpath(full_path, "docs").replace("\\", "/")
