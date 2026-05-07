@@ -1,5 +1,6 @@
 ---
 title: Box Path
+articleKey: BoxPathObject3D
 parent: "2D Paths"
 nav_order: 1
 ---

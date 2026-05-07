@@ -1,5 +1,6 @@
 ---
 title: Outline Path
+articleKey: OutlinePathObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 5

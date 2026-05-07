@@ -1,5 +1,6 @@
 ---
 title: SVG Object
+articleKey: SvgObject3D
 parent: "Primitives"
 nav_order: 15
 ---

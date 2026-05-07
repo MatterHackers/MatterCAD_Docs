@@ -1,5 +1,6 @@
 ---
 title: Cube
+articleKey: CubeObject3D
 parent: "Primitives"
 nav_order: 4
 ---

@@ -1,5 +1,6 @@
 ---
 title: Select Child
+articleKey: SelectChildObject3D
 parent: "Array Operations"
 grand_parent: "Operations"
 nav_order: 4

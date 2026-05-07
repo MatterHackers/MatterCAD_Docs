@@ -1,5 +1,6 @@
 ---
 title: Scale
+articleKey: ScaleObject3D_3
 parent: "Transform Operations"
 grand_parent: "Operations"
 nav_order: 3

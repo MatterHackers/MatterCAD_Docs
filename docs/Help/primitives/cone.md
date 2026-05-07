@@ -1,5 +1,6 @@
 ---
 title: Cone
+articleKey: ConeObject3D
 parent: "Primitives"
 nav_order: 3
 ---

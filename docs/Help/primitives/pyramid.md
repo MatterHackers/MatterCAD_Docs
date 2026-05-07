@@ -1,5 +1,6 @@
 ---
 title: Pyramid
+articleKey: PyramidObject3D
 parent: "Primitives"
 nav_order: 11
 ---

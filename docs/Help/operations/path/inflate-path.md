@@ -1,5 +1,6 @@
 ---
 title: Inflate Path
+articleKey: InflatePathObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 2

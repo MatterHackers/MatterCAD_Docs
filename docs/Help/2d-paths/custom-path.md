@@ -1,5 +1,6 @@
 ---
 title: Custom Path
+articleKey: CustomPathObject3D
 parent: "2D Paths"
 nav_order: 3
 ---

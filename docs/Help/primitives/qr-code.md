@@ -1,5 +1,6 @@
 ---
 title: QR Code
+articleKey: QrCodeObject3D
 parent: "Primitives"
 nav_order: 12
 ---

@@ -1,5 +1,6 @@
 ---
 title: Cylinder
+articleKey: CylinderObject3D
 parent: "Primitives"
 nav_order: 5
 ---

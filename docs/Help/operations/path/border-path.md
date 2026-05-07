@@ -1,5 +1,6 @@
 ---
 title: Border Path
+articleKey: BorderPathObject3D_2
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 1

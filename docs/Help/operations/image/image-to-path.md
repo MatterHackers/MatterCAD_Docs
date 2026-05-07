@@ -1,5 +1,6 @@
 ---
 title: Image to Path
+articleKey: ImageToPathObject3D_2
 parent: "Image Operations"
 grand_parent: "Operations"
 nav_order: 2

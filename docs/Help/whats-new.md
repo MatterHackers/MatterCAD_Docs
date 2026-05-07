@@ -13,7 +13,6 @@ nav_order: 105
   * One tool, four modes — Linear, Radial, Curve, and Transform
   * Radial mode places copies in a circle or arc at any radius around any axis
   * Compounding rotation in Linear mode creates spirals and fans automatically
-  * <!-- IMAGE_NEEDED: GIF switching between Linear and Radial array modes, showing the viewport update live -->
 
 * **Library Favorites**
   * Star any library item to pin it to a persistent Favorites folder

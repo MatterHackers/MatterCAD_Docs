@@ -1,5 +1,6 @@
 ---
 title: Combine
+articleKey: CombineObject3D_2
 parent: "Boolean Operations"
 grand_parent: "Operations"
 nav_order: 1

@@ -1,5 +1,6 @@
 ---
 title: Ring Path
+articleKey: RingPathObject3D
 parent: "2D Paths"
 nav_order: 4
 ---

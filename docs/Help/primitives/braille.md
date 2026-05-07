@@ -1,5 +1,6 @@
 ---
 title: Braille
+articleKey: BrailleObject3D
 parent: "Primitives"
 nav_order: 2
 ---

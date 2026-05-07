@@ -1,5 +1,6 @@
 ---
 title: Star Path
+articleKey: StarPathObject3D
 parent: "2D Paths"
 nav_order: 5
 ---

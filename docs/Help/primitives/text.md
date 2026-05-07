@@ -1,5 +1,6 @@
 ---
 title: Text
+articleKey: TextObject3D_2
 parent: "Primitives"
 nav_order: 16
 ---

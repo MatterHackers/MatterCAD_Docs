@@ -1,5 +1,6 @@
 ---
 title: Plane Cut
+articleKey: PlaneCutObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 5

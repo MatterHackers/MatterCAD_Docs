@@ -1,5 +1,6 @@
 ---
 title: Image Object
+articleKey: ImageObject3D
 parent: "Primitives"
 nav_order: 10
 ---

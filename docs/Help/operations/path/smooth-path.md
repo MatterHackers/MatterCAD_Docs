@@ -1,5 +1,6 @@
 ---
 title: Smooth Path
+articleKey: SmoothPathObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 8

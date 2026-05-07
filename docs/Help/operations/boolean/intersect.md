@@ -1,5 +1,6 @@
 ---
 title: Intersect
+articleKey: IntersectionObject3D_2
 parent: "Boolean Operations"
 grand_parent: "Operations"
 nav_order: 2

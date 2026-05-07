@@ -1,5 +1,6 @@
 ---
 title: Half Sphere
+articleKey: HalfSphereObject3D
 parent: "Primitives"
 nav_order: 7
 ---

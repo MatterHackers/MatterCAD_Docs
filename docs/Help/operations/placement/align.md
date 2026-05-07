@@ -1,5 +1,6 @@
 ---
 title: Align
+articleKey: AlignObject3D_3
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 1

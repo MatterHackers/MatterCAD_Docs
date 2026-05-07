@@ -1,5 +1,6 @@
 ---
 title: Half Cylinder
+articleKey: HalfCylinderObject3D
 parent: "Primitives"
 nav_order: 6
 ---

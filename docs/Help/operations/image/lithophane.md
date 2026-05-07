@@ -1,5 +1,6 @@
 ---
 title: Lithophane
+articleKey: LithophaneObject3D
 parent: "Image Operations"
 grand_parent: "Operations"
 nav_order: 3

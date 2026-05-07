@@ -1,5 +1,6 @@
 ---
 title: Gears
+articleKey: GearObject3D
 parent: "Mechanical Parts"
 nav_order: 2
 ---

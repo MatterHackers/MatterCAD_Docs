@@ -1,5 +1,6 @@
 ---
 title: Translate
+articleKey: TranslateObject3D
 parent: "Transform Operations"
 grand_parent: "Operations"
 nav_order: 4

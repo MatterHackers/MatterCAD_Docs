@@ -1,5 +1,6 @@
 ---
 title: Gear 2D
+articleKey: Gear2D
 parent: "Mechanical Parts"
 nav_order: 1
 ---

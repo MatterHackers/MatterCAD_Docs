@@ -1,5 +1,6 @@
 ---
 title: Torus
+articleKey: TorusObject3D
 parent: "Primitives"
 nav_order: 17
 ---

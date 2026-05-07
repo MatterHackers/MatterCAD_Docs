@@ -1,5 +1,6 @@
 ---
 title: Braille Card
+articleKey: BrailleCardObject3D
 parent: "Primitives"
 nav_order: 1
 ---

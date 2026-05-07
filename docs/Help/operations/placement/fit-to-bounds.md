@@ -1,5 +1,6 @@
 ---
 title: Fit to Bounds
+articleKey: FitToBoundsObject3D_4
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 3

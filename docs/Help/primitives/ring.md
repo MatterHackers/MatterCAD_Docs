@@ -1,5 +1,6 @@
 ---
 title: Ring
+articleKey: RingObject3D
 parent: "Primitives"
 nav_order: 13
 ---

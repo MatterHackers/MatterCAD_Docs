@@ -1,5 +1,6 @@
 ---
 title: Reduce
+articleKey: DecimateObject3D
 parent: "Mesh Operations"
 grand_parent: "Operations"
 nav_order: 1

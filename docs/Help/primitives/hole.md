@@ -1,5 +1,6 @@
 ---
 title: Hole
+articleKey: CubeHoleObject3D
 parent: "Primitives"
 nav_order: 9
 ---

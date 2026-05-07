@@ -1,5 +1,6 @@
 ---
 title: Curve
+articleKey: CurveObject3D_3
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 2

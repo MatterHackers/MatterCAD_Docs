@@ -1,5 +1,6 @@
 ---
 title: Repair
+articleKey: RepairObject3D_2
 parent: "Mesh Operations"
 grand_parent: "Operations"
 nav_order: 2

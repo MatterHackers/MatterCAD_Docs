@@ -1,5 +1,6 @@
 ---
 title: Sphere
+articleKey: SphereObject3D
 parent: "Primitives"
 nav_order: 14
 ---

@@ -1,5 +1,6 @@
 ---
 title: Wedge
+articleKey: WedgeObject3D_2
 parent: "Primitives"
 nav_order: 18
 ---

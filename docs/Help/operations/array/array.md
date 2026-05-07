@@ -1,5 +1,6 @@
 ---
 title: Array
+articleKey: ArrayObject3D_2
 parent: "Array Operations"
 grand_parent: "Operations"
 nav_order: 1

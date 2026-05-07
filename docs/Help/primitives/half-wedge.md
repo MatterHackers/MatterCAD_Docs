@@ -1,5 +1,6 @@
 ---
 title: Half Wedge
+articleKey: HalfWedgeObject3D
 parent: "Primitives"
 nav_order: 8
 ---

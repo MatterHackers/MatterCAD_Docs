@@ -1,5 +1,6 @@
 ---
 title: Linear Extrude
+articleKey: LinearExtrudeObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 3
