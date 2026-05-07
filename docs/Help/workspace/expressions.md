@@ -37,9 +37,11 @@ Instead of typing a plain number in a parameter field, you can type a math expre
 - Expressions are supported in any field that shows `DoubleOrExpression`, `IntOrExpression`, or `StringOrExpression` in the code -- in practice, most numeric fields in design tools accept them
 - Use expressions to create relationships between parameters -- for example, set a hole's diameter to `outer_diameter - 4` so it always has 2mm walls
 - Expressions update automatically when referenced values change
+- Use a [Variable Sheet](variable-sheet.md) when several objects should share the same named values or formulas
 - You can use expressions in [Array](../operations/array/index.md) operations to create parametric patterns
 
 ## Related
 
 - [Components](components.md) - Create reusable parameterized designs
+- [Variable Sheet](variable-sheet.md) - Store shared values and formulas for a design
 - [Editing Objects](../getting-started/editing-objects.md) - Working with object parameters
