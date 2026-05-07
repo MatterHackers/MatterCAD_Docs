@@ -7,67 +7,88 @@ nav_order: 1
 ---
 # Align
 
-Align precisely positions objects relative to an anchor object along the X, Y, and Z axes. You can align edges, centers, or origins with optional offsets.
+Align precisely positions multiple objects relative to an anchor object. Use it to line up edges, center parts on each other, place one object on top of another, or create evenly spaced stacks.
 
 <!--  Screenshot showing two objects being aligned with alignment options visible -->
-![20260506 154830 paste 20260506 154830](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154830-paste-20260506-154830.jpg)
+![Two objects with the Align operation settings visible](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154830-paste-20260506-154830.jpg)
 
 
 ## How to Use
 
-1. Select two or more objects
-2. Apply the **Align** operation from the Placement menu
-3. Select which object to use as the **Anchor** (reference object)
-4. Set alignment options for each axis
+1. Select two or more objects.
+2. Apply the **Align** operation from the **Placement** menu.
+3. Choose the **Anchor** object. The anchor stays in place and the other objects move.
+4. Set alignment for the X, Y, and Z axes independently.
+5. Use **Apply** when you want to bake the aligned positions into the object tree.
 
 ## Parameters
 
-### Per Axis (X, Y, and Z each have the same options)
+### Anchor
 
-- **Align** - What part of the moving object(s) to align:
-  - **None** - No alignment on this axis
-  - **Min** - Align the object's minimum edge (left / front / bottom)
-  - **Center** - Align the object's center point
-  - **Max** - Align the object's maximum edge (right / back / top)
-  - **Origin** - Align to the object's origin point
-- **Options** - Enable advanced controls for this axis:
-  - **From Previous** - Chain alignment through objects in alphabetical order. Each object aligns to the previous one instead of the anchor (see below).
-  - **Sub-Align** - What part of the reference object to align to (same options as Align, but inverted -- Min becomes the far edge, Max becomes the near edge)
-  - **Offset** - Distance offset from the alignment position. Supports [expressions](../../workspace/expressions.md).
+The **Anchor** list selects the child object used as the reference. The anchor does not move. Every other child in the Align operation is repositioned relative to the anchor, unless an axis is using **Stacked** mode.
 
-## From Previous (Chained Alignment)
+### Axis Controls
 
-When **From Previous** is enabled on an axis, objects are aligned in a chain rather than all aligning to the anchor:
+Each axis has its own controls. You can align on one axis, two axes, or all three. The minimum and maximum edges are named for the axis:
 
-1. Objects are processed in alphabetical order (matching their tree view order)
-2. The first object aligns to the **Anchor** as usual
-3. Each subsequent object aligns to the **previous object** in the chain
+- **X Axis** - Min is left, Max is right.
+- **Y Axis** - Min is front, Max is back.
+- **Z Axis** - Min is bottom, Max is top.
 
-This is useful for stacking or spacing objects sequentially. Combined with **Sub-Align** and **Offset**, you can create evenly spaced layouts where each object sits next to the previous one.
+For each axis:
 
-### Example: Stack objects along Z
+- **Align** - Chooses the anchor reference point for that axis. Use **None** to leave positions unchanged on that axis.
+- **Mode** - Controls how the selected alignment is applied:
+  - **Simple** - Match each moving object's corresponding edge, center, or origin to the anchor. No offset is used.
+  - **Offset** - Choose which part of the moving object should land on the anchor reference, then add spacing with **Offset**.
+  - **Stacked** - Place objects one after another along that axis, using **Offset** as the gap between them.
+- **SubAlign** - Available in **Offset** mode. Chooses the part of the moving object to place on the anchor reference. If **SubAlign** is **None**, Align uses the same edge, center, or origin selected by **Align**.
+- **Offset** - Available in **Offset** and **Stacked** modes. Adds distance along that axis and supports [expressions](../../workspace/expressions.md).
 
-1. Set Z Align = Min
-2. Enable Z Options
-3. Turn on Z From Previous
-4. Set Z Sub-Align = Max
+## Alignment Modes
 
-The first object aligns its bottom to the anchor's top. The second object aligns its bottom to the first object's top. And so on -- creating a vertical stack.
+### Simple
+
+Use **Simple** when matching like-to-like positions. For example, **X Align: Center** moves every non-anchor object so its X center matches the anchor's X center. **Z Align: Min** moves every non-anchor object so its bottom sits at the anchor's bottom height.
+
+### Offset
+
+Use **Offset** when the part of the moving object should be different from the anchor reference. For example, to place an object on top of the anchor:
+
+1. Set **Z Align** to **Max** (top).
+2. Set **Z Mode** to **Offset**.
+3. Set **Z SubAlign** to **Bottom**.
+4. Set **Z Offset** to the desired gap, or leave it at `0` for direct contact.
+
+This places the moving object's bottom at the anchor's top, with optional spacing.
+
+### Stacked
+
+Use **Stacked** to chain multiple objects along an axis. Objects are processed by name, then by internal ID, so naming objects clearly gives predictable stack order.
+
+In **Stacked** mode, each moving object is placed against the previous reference on that axis:
+
+- **Min** alignment stacks toward the positive direction, such as left-to-right on X or bottom-to-top on Z.
+- **Max** alignment stacks toward the negative direction, such as right-to-left on X or top-to-bottom on Z.
+- **Center** and **Origin** alignment use the offset between each object's center or origin.
+
+Use **Offset** in **Stacked** mode to set the gap between objects.
 
 ## Examples
 
-- **Center two objects on X and Y** - Set X Align = Center and Y Align = Center. Both objects will share the same center point.
-- **Stack one object on top of another** - Set Z Align = Min, then enable Z Options and set Z Sub-Align = Max. The bottom of the moving object aligns with the top of the anchor.
-- **Offset from an edge** - Align to an edge, then use the Offset to add precise spacing.
-- **Chain objects along X** - Set X Align = Min, enable X Options, turn on From Previous, and set X Sub-Align = Max. Objects line up end-to-end in alphabetical order.
+- **Center objects on the bed footprint** - Choose the object that should stay fixed as the **Anchor**, then set **X Align** and **Y Align** to **Center**.
+- **Place one object on top of another** - Set **Z Align** to **Max** (top), **Z Mode** to **Offset**, and **Z SubAlign** to **Bottom**.
+- **Add a precise gap from an edge** - Use **Offset** mode, choose the moving object's edge with **SubAlign**, then set **Offset** to the spacing you need.
+- **Line up several objects end-to-end** - Set **X Align** to **Min** (left), **X Mode** to **Stacked**, and use **X Offset** for the gap.
+- **Build a vertical stack** - Set **Z Align** to **Min** (bottom), **Z Mode** to **Stacked**, and use **Z Offset** for the space between objects.
 
 ## Tips
 
-- The Anchor object stays in place; other objects move to align with it
-- You can align on one, two, or all three axes independently
-- Use offsets to add precise spacing between aligned objects
-- From Previous can be enabled independently per axis -- chain on X while centering all on Y
-- Align is non-destructive -- change the settings at any time to re-align
+- The anchor object stays in place; other objects move to align with it.
+- You can use different modes on different axes, such as **Stacked** on X while using **Center** and **Simple** on Y.
+- Use object names to control **Stacked** order when several objects are aligned at once.
+- Align is non-destructive until applied. You can change the settings at any time to re-align the children.
+- Use **Origin** when you need to line up modeling origins rather than bounding-box edges.
 
 ## Related
 

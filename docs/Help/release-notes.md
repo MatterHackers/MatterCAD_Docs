@@ -29,6 +29,8 @@ nav_order: 104
 
 * **Align**
   * Stacked alignment is now a direct mode button instead of a dropdown option
+  * Added clearer Simple, Offset, and Stacked modes for lining up edges, adding precise gaps, and building ordered stacks
+  * ![Two objects with the Align operation settings visible](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154830-paste-20260506-154830.jpg)
 
 * **File Support**
   * Added support for WEBP image format in image-based operations
@@ -37,6 +39,24 @@ nav_order: 104
 * **Reliability**
   * Improved 3MF file loading speed and reliability
   * Better tab restoration between sessions
+
+## Top Bug Fixes
+
+* **Login and Cloud Library Access**
+  * Login and Cloud Library access are restored after a backend server upgrade broke sign-in.
+  * MatterCAD now prompts you to sign in again when cloud access finds expired or invalid credentials.
+
+* **Scene Tree Selection**
+  * Fixed inconsistent selection behavior when choosing objects from the scene tree.
+
+* **Help Navigation**
+  * Fixed navigation issues in the bundled help and release documentation.
+
+* **Library Right-Click**
+  * Fixed right-click behavior in the library tree view.
+
+* **Sheets**
+  * Fixed a crash that could happen while working with sheets.
 
 ---
 
