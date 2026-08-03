@@ -29,7 +29,9 @@ Inflate is how you turn a line into a shape. Uncheck **Closed** on a [Custom Pat
 - **Round** adds a half circle past each end point
 - **Sharp** adds a square past each end point
 
-An open line has no inside to shrink into, so a zero or negative amount would leave nothing at all. Inflate clamps the value up to a small positive number in that case and writes the clamped number back so you can see what happened. Closed paths still shrink on negative values as they always have.
+An open line has no inside to shrink into, so a zero or negative amount would leave nothing at all. When the path is *entirely* open, Inflate clamps the value up to a small positive number and writes the clamped number back into the box so you can see what happened.
+
+A path that mixes open and closed contours is not clamped: the closed contours shrink as normal and the open ones simply drop out. Closed paths still shrink on negative values exactly as they always have.
 
 ## Tips
 

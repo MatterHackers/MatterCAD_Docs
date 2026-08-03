@@ -28,7 +28,7 @@ The **Closed** checkbox controls whether the path joins its last point back to i
 Two things to know before you uncheck **Closed**:
 
 - **Re-closing is not an undo.** Opening a path throws away its closing segment. If that segment was curved, checking **Closed** again brings back a straight line, not the curve. Use Ctrl+Z instead - undo restores the original path exactly.
-- **Some paths refuse to open.** A path that would be left with fewer than two points - a teardrop drawn as a single point and a curve looping back to it, for example - stays closed rather than collapsing into something you could no longer see or click.
+- **Some contours refuse to open.** A contour that would be left with fewer than two points - a teardrop drawn as a single point and a curve looping back to it - stays closed rather than collapsing into something you could no longer see or click. So does a contour holding a quadratic curve, which an imported SVG can contain: opening it would flatten the curve into a corner. The refusal is per contour, so the rest of the path still opens.
 
 If a path has several contours and they do not agree, the checkbox reads as open. Checking it brings every contour into line.
 
