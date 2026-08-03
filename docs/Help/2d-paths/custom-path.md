@@ -18,10 +18,27 @@ Draw your own 2D path with control points. This gives you complete freedom to cr
 2. Edit the control points to define your shape
 3. Apply [Linear Extrude](../operations/path/linear-extrude.md) or other path operations to create a 3D object
 
+## Open and Closed Paths
+
+The **Closed** checkbox controls whether the path joins its last point back to its first.
+
+- **Closed** (the default) makes the path outline a region. This is what [Linear Extrude](../operations/path/linear-extrude.md) and [Revolve](../operations/path/revolve.md) fill.
+- **Open** makes the path a line. A line encloses nothing, so it shows in the scene as a thin ribbon along its length rather than as a filled shape. Use [Inflate Path](../operations/path/inflate-path.md) to give it a width and turn it back into something solid.
+
+Two things to know before you uncheck **Closed**:
+
+- **Re-closing is not an undo.** Opening a path throws away its closing segment. If that segment was curved, checking **Closed** again brings back a straight line, not the curve. Use Ctrl+Z instead - undo restores the original path exactly.
+- **Some paths refuse to open.** A path that would be left with fewer than two points - a teardrop drawn as a single point and a curve looping back to it, for example - stays closed rather than collapsing into something you could no longer see or click.
+
+If a path has several contours and they do not agree, the checkbox reads as open. Checking it brings every contour into line.
+
+Operations that need a region will close an open path for you rather than refuse it. Linear Extrude, Revolve, Subtract and the other boolean operations all do this, so an open path extrudes to the same solid its closed version would.
+
 ## Tips
 
 - Use Custom Path when none of the built-in path shapes match what you need
 - For importing shapes from external vector editors, see [SVG Object](../primitives/svg-object.md)
+- To draw a line and turn it into a part, uncheck **Closed**, apply [Inflate Path](../operations/path/inflate-path.md) to give it a thickness, then [Linear Extrude](../operations/path/linear-extrude.md) to give it height
 
 ## Related
 

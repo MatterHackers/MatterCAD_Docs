@@ -19,6 +19,18 @@ Inflate Path expands a 2D path outward, making the shape larger while maintainin
 2. Apply **Inflate Path** from the Path operations menu
 3. Adjust the inflation amount
 
+## Inflating an Open Line
+
+Inflate is how you turn a line into a shape. Uncheck **Closed** on a [Custom Path](../../2d-paths/custom-path.md) to draw an open line, then inflate it: the result is a filled ribbon as wide either side of the line as the amount you set. From there it extrudes like any other path.
+
+**Style** sets how the two ends of the line are capped, as well as how its corners are joined:
+
+- **Flat** stops the ribbon square at each end point
+- **Round** adds a half circle past each end point
+- **Sharp** adds a square past each end point
+
+An open line has no inside to shrink into, so a zero or negative amount would leave nothing at all. Inflate clamps the value up to a small positive number in that case and writes the clamped number back so you can see what happened. Closed paths still shrink on negative values as they always have.
+
 ## Tips
 
 - Use negative values to shrink the path inward instead of expanding
