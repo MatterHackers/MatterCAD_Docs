@@ -30,7 +30,7 @@ Enable **Advanced** mode for fine-grained control:
 
 - **Weld Vertices** - Merge nearly-coincident vertices (default: on)
 - **Weld Tolerance** - How close vertices must be to merge
-- **Face Orientation** - Make all faces consistently oriented
+- **Face Orientation** - Turn inside-out shells the right way round, so every body reads as solid. Each shell is judged on its own, so a hollow model keeps its cavities instead of having them filled in. Shells whose own faces disagree with each other are left alone rather than guessed at, and models that are not watertight fall back to a more tolerant repair - run **Fill Holes** first if orientation alone does not fix them.
 - **Weld Edges** - Repair small cracks and bad seams
 - **Fill Holes** - Fill gaps in the mesh surface
 - **Remove Mode** - Remove internal or occluded geometry:
