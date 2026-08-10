@@ -55,6 +55,7 @@ nav_order: 104
   * Press Z with a flat path selected to animate to a straight-down editing view fitted to the path
   * The Scene Tree header is now one row: a breadcrumb that names the document and grows into a clickable path as you drill in
   * The 3D view renders fully anti-aliased on the first frame instead of converging over many frames, and thumbnails have smoother edges
+  * Sub-pixel text rendering is now on automatically when your display supports it, and can still be turned on or off under Advanced settings
 
 * **Modeling**
   * Linear Extrude can bevel the bottom edge with its own style, radius, and segment count

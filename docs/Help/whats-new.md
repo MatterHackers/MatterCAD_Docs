@@ -37,6 +37,7 @@ nav_order: 105
 * **Sharper Views** — The 3D view is fully anti-aliased on the first frame, and thumbnails have clean edges
 * **Errors You Can See** — Failed saves, tasks, and cloud problems now appear as notifications instead of failing silently
 * **Navigation** — Press Z with a 2D path selected for a top-down editing view
+* **Crisper Text** — Sub-pixel text rendering is now on automatically when your display supports it
 
 ## Top Bug Fixes
 
