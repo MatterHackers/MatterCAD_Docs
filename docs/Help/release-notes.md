@@ -29,11 +29,6 @@ nav_order: 104
   * New Keep Inside Out Geometry and Repair Winding Order options for troublesome imported meshes
 
 
-* **Open Paths**
-  * 2D paths can now be open lines as well as closed regions, with a Closed checkbox
-  * Open contours draw as a thin ribbon and can be inflated with end-cap styles
-  <!-- IMAGE: static — A path with Closed unchecked, shown as an open ribbon on the bed. ~500x350px -->
-
 ## Improvements
 
 * **2D Path Editor**
@@ -41,7 +36,8 @@ nav_order: 104
   * Mirror is now a live symmetry mode: edits mirror across the center as you make them, and dragging a mirrored pair onto the axis merges it to a single point
   * Drag-select points with a rubber band, move them as a group, snap to the grid, and press Esc to cancel a drag
   * Smooth fits a curve through your clicked-out points in one step
-  <!-- IMAGE: gif — Rubber-band select several points, drag them as a group, Esc to cancel. ~700x450px -->
+  <!-- gif — Rubber-band select several points, drag them as a group, Esc to cancel. ~700x450px -->
+  * ![Path Edit](https://www.matterhackers.com/r/yQwWXB)
 
 * **Viewing and Navigation**
   * Press Z with a flat path selected to animate to a straight-down editing view fitted to the path
@@ -64,7 +60,7 @@ nav_order: 104
 ---
 
 # MatterCAD 2.2026.5 (May 8, 2026)
-[Windows Download](https://mattercontrol.appspot.com/downloads/mattercad-windows/release)
+[Windows Download](https://mattercontrol.appspot.com/downloads/development/ag9zfm1hdHRlcmNvbnRyb2xyQQsSB1Byb2plY3QYgICI5uHFqwoMCxINUHVibGljUmVsZWFzZRiAgMiMyt-ICwwLEgZVcGxvYWQYgIDI7IHKkwoM)
 
 ## New Features
 
