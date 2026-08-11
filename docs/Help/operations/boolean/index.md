@@ -1,5 +1,6 @@
 ---
 title: Boolean Operations
+articleKey: BooleanObject3D
 parent: "Operations"
 has_children: true
 nav_order: 2
@@ -10,7 +11,7 @@ nav_order: 2
 
 Boolean operations let you create complex shapes by combining simpler ones. Select two or more objects and apply a boolean operation to merge, cut, or find the overlap between them.
 
-All four are one object -- see **[Boolean](boolean.md)**. The toolbar buttons below just pre-select which operation it starts with, and you can change it afterwards from the Properties panel.
+All four operations are performed by one Boolean object. The toolbar buttons below just pre-select which operation it starts with, and you can change it afterwards from the **Operation** icon row at the top of the Properties panel.
 
 |Combine|Subtract|Intersect|Subtract & Replace|
 | :--- | :--- | :--- | :--- |
@@ -18,7 +19,6 @@ All four are one object -- see **[Boolean](boolean.md)**. The toolbar buttons be
 
 ## Operations
 
-- [Boolean](boolean.md) - The one object that performs all four
 - [Combine](combine.md) - Merge multiple objects into a single solid shape
 - [Subtract](subtract.md) - Cut one shape out of another
 - [Intersect](intersect.md) - Keep only the volume where objects overlap

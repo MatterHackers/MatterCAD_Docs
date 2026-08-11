@@ -2,7 +2,7 @@
 title: Release Notes
 nav_order: 104
 ---
-# MatterCAD 2.2026.8 (August 10, 2026)
+# MatterCAD 2.2026.8 (August 13, 2026)
 [Windows Download](https://mattercontrol.appspot.com/downloads/mattercad-windows/release)
 
 ## New Features
@@ -11,14 +11,14 @@ nav_order: 104
   * Double-click an object on the bed or in the Scene Tree to step inside it and edit the parts it is built from — no separate window or tab
   * For operations like Subtract, you edit the source parts and the result rebuilds when you come back out
   * A breadcrumb across the top of the Scene Tree shows the full path; clicking a level folds your edits in as one undoable step, and each level keeps its own undo history
-  <!-- IMAGE: gif — Double-click into a nested group, move a part, then click back out through the breadcrumb. ~700x450px -->
+  <!-- Double-click into a nested group, move a part, then click back out through the breadcrumb. ~700x450px -->
   * ![Drill In](https://www.matterhackers.com/r/qgG4VA)
 
 * **One Boolean Tool**
   * Combine, Subtract, Intersect, and Subtract and Replace are now a single operation with an icon row at the top of its panel — switch modes with a click instead of deleting and re-applying
   * The same operation handles both 3D meshes and 2D paths, and shows progress while a heavy boolean runs
   * Designs saved with the older separate boolean objects continue to open normally
-  <!-- IMAGE: static — Boolean property panel with the four-icon operation row, Subtract selected. ~500x400px -->
+  <!-- Boolean property panel with the four-icon operation row, Subtract selected. ~500x400px -->
   * ![20260810 181041 paste 20260810 181041](https://matterhackers.github.io/MatterCAD_Docs/assets/20260810-181041-paste-20260810-181041.jpg)
 
 
@@ -27,19 +27,7 @@ nav_order: 104
   * Combine repairs parts with holes automatically: clean repairs join the union, parts that cannot be safely merged are kept beside it and named for you, and a part that could not be repaired keeps your original geometry
   * Plane Cut is now a true solid intersection, so the result is watertight and printable instead of an open shell
   * New Keep Inside Out Geometry and Repair Winding Order options for troublesome imported meshes
-  <!-- IMAGE: gif — Combine on a holey imported model: fails before, completes after with leftover parts named. ~700x400px -->
 
-
-* **Sweep**
-  * Sweep a 2D profile along a 3D Curve rail to build tubes, handles, rails, and trim
-  * Drag the Scale and Twist handles directly in the 3D view to taper and twist the shape by eye
-  * Applying Sweep with no rail adds a default S-curve rail so you can start shaping immediately
-  <!-- IMAGE: gif — Apply Sweep to a circle and a 3D Curve, then drag a scale sphere to taper it. ~700x450px -->
-
-* **Loft**
-  * Skin a solid between stacked 2D cross-sections — each path child contributes a section at its Z height
-  * Applying Loft to a selection that includes a 3D Curve creates a Sweep instead, since that is what the curve was for
-  <!-- IMAGE: gif — Stack three profiles at different heights and apply Loft. ~700x450px -->
 
 * **Open Paths**
   * 2D paths can now be open lines as well as closed regions, with a Closed checkbox
@@ -57,48 +45,20 @@ nav_order: 104
 
 * **Viewing and Navigation**
   * Press Z with a flat path selected to animate to a straight-down editing view fitted to the path
-  * The Scene Tree header is now one row: a breadcrumb that names the document and grows into a clickable path as you drill in
-  * The 3D view renders fully anti-aliased on the first frame instead of converging over many frames, and thumbnails have smoother edges
   * Sub-pixel text rendering is now on automatically when your display supports it, and can still be turned on or off under Advanced settings
 
 * **Modeling**
   * Linear Extrude can bevel the bottom edge with its own style, radius, and segment count
   * Editor-only objects (3D Curve, Measure Tool, Description, Sheet) still display but are excluded from export
 
-* **Errors You Can See**
-  * Failed saves, failed background tasks, and cloud problems now appear as dismissible notifications instead of being silently swallowed
-
-* **Print Farm and Job Manager**
-  * Faster repeat upload passes, a working Stop button, and recovery when a print-farm credential is rotated or revoked
-
 ## Top Bug Fixes
 
-* **Save Reliability**
   * A save that failed part-way could truncate the file it was replacing while reporting success. Saves now complete fully, then replace the destination atomically — the same protection covers library saves and exports
   * A failed save leaves the design marked unsaved, so closing the app cannot silently discard your work
-
-* **Align**
-  * Every rebuild snapped children back on all three axes, erasing any move you made on an axis Align was not controlling. Align now only resets the axes it controls
-
-* **Cloud and GitHub Libraries**
-  * A rate-limit or not-found response from GitHub crashed the library folder; errors now appear as a message on the folder instead
   * Saving a cloud item to disk kept the old tab name and lost the tab on restart
-
-* **Booleans and Selection**
-  * The Part(s) to Subtract radios could show two parts selected and refuse to let you pick just one
-  * 2D Subtract dropped every kept part after the first
-
-* **File Loading**
   * Fixed 3MF sub-models being silently dropped on load, and 3MF files loaded at the same time contaminating each other
-
-* **Image Converter**
   * Fixed crashes, a broken histogram filter, and copies of an image part not staying in sync with the original
-
-* **Path Editing**
   * Fixed a crash when deleting a curve point, and points at a closed path's seam reverting the mode you chose
-
-* **Interface**
-  * Fixed a crash when dragging the Text Size slider in Application Settings
   * The Stop button on a running task is now clickable and actually cancels
 
 ---
