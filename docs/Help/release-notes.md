@@ -12,12 +12,15 @@ nav_order: 104
   * For operations like Subtract, you edit the source parts and the result rebuilds when you come back out
   * A breadcrumb across the top of the Scene Tree shows the full path; clicking a level folds your edits in as one undoable step, and each level keeps its own undo history
   <!-- IMAGE: gif — Double-click into a nested group, move a part, then click back out through the breadcrumb. ~700x450px -->
+  * ![Drill In](https://www.matterhackers.com/r/qgG4VA)
 
 * **One Boolean Tool**
   * Combine, Subtract, Intersect, and Subtract and Replace are now a single operation with an icon row at the top of its panel — switch modes with a click instead of deleting and re-applying
   * The same operation handles both 3D meshes and 2D paths, and shows progress while a heavy boolean runs
   * Designs saved with the older separate boolean objects continue to open normally
   <!-- IMAGE: static — Boolean property panel with the four-icon operation row, Subtract selected. ~500x400px -->
+  * ![20260810 181041 paste 20260810 181041](https://matterhackers.github.io/MatterCAD_Docs/assets/20260810-181041-paste-20260810-181041.jpg)
+
 
 * **Booleans That Just Work**
   * Booleans run on a new native engine that is faster and succeeds on meshes that previously failed
@@ -25,6 +28,7 @@ nav_order: 104
   * Plane Cut is now a true solid intersection, so the result is watertight and printable instead of an open shell
   * New Keep Inside Out Geometry and Repair Winding Order options for troublesome imported meshes
   <!-- IMAGE: gif — Combine on a holey imported model: fails before, completes after with leftover parts named. ~700x400px -->
+
 
 * **Sweep**
   * Sweep a 2D profile along a 3D Curve rail to build tubes, handles, rails, and trim

@@ -9,7 +9,7 @@ nav_order: 4
 
 Select Child picks one child from a group of objects based on either an index number or a name. This is especially useful in scripted and parametric designs where you want to dynamically choose which object to display.
 
-<!-- : Screenshot showing Select Child operation with multiple children and one selected by index -->
+<!-- IMAGE: Screenshot showing Select Child operation with multiple children and one selected by index -->
 ![20260506 080526 paste 20260506 080526](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080526-paste-20260506-080526.jpg)
 
 
