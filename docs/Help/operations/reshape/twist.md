@@ -1,12 +1,13 @@
 ---
 title: Twist
+articleKey: TwistObject3D_3
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 7
 ---
 # Twist
 
-Twist rotates an object about its vertical axis, turning each height by the amount you draw on a curve. A curve that rises steadily from bottom to top gives the classic spiral column; a curve that is flat over part of the height leaves that part alone.
+Twist rotates the top of an object relative to the bottom, creating a spiral or twisted effect along the height. By default the rotation progresses evenly from bottom to top; under Advanced you can draw where along the height the turning actually happens.
 
 <!--  Before and after showing a cube being twisted into a spiral column -->
 ![20260506 155620 paste 20260506 155620](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155620-paste-20260506-155620.jpg)
@@ -15,37 +16,44 @@ Twist rotates an object about its vertical axis, turning each height by the amou
 
 1. Select an object
 2. Apply the **Twist** operation from the Reshape menu
-3. Edit the **Twist** curve to set how far the part is turned at each height
-4. Adjust **Rotation Slices** for smoothness
+3. Set the twist angle and adjust slicing for smoothness
+4. Turn on **Advanced** if you want to draw how the twist is spread up the part
 
-<!-- IMAGE_NEEDED: The Twist properties panel showing the curve editor with the default 0 to 45 degree line, and the guide line marking the top of the part -->
+## The Twist Profile
 
-## The Twist Curve
-
-The curve is read as a function of height:
+Under Advanced, the **Twist Profile** curve decides where the twist happens. The total amount of twist is still set by the Angle (or Rotation Distance) control - the curve only spreads it:
 
 - **Up the curve** is the height on the part in percent - 0 at the bottom, 100 at the top. A guide line across the editor marks 100 percent and is labeled with the part's real height in mm.
-- **Across the curve** is the twist in degrees at that height. Positive turns one way, **negative turns the other way** - a curve that crosses zero turns the bottom of the part one way and the top the other.
+- **Across the curve** is the percent of the total twist reached by that height - 0 for none of it, 100 for all of it.
 
-A new Twist starts with a straight line from 0 degrees at the bottom to 45 degrees at the top.
+A new Twist starts with a straight diagonal from 0 to 100, which is the plain even twist you get without Advanced at all.
 
-Where the curve does not cover the full height, the nearest end of it is held. So a curve drawn only between 40 and 60 percent still decides what happens above and below: everything under it is turned by the curve's bottom value and everything over it by the curve's top value. That is how you start and stop a twist part way up the part - the ends stay rigid instead of continuing to wind.
+A flat run in the curve is a band of the part that does not twist. Where the curve does not cover the full height, the nearest end of it is held, so a curve drawn only between 40 and 60 percent leaves the part rigid below and above it - that is how you start and stop a twist part way up.
+
+A run that falls back as it goes up unwinds: that band of the part turns the other way, back toward where it started. Drawing the profile up past 100 and then back down is how you overshoot the total and return to it.
 
 ## Parameters
 
-- **Twist** - The curve editor described above: the twist in degrees at each height in percent
-- **Rotation Slices** - Number of horizontal cuts added through the part so it can bend smoothly. More slices = smoother twist
+- **Rotation Type** - Choose between:
+  - **Angle** - Specify the total twist angle in degrees (3-360)
+  - **Distance** - Specify the twist as a distance along the circumference
+- **Rotation Slices** - Number of horizontal cuts added for smooth twisting. More slices = smoother twist
+- **Twist Right** - Direction of twist: right (clockwise) or left (counterclockwise)
+- **Prefered Radius** - Read-only: the radius the part itself reports, or the one implied by its shape, which is what a twist distance is measured around (Distance mode only)
+- **Edit Radius** - Turn off the reported radius so you can set your own (Distance mode only, and only when the part reports one)
+- **Override Radius** - Custom radius for the twist calculation (Distance mode only)
 
 ### Advanced Parameters
 
+- **Twist Profile** - The curve editor described above: the percent of the total twist reached at each height in percent
 - **Rotation Offset** - Shift the center the part is turned about, away from the middle of the part
 
 ## Tips
 
 - Higher Rotation Slices values produce smoother results but generate more geometry
-- Draw the curve flat at the bottom and rising after that to leave a straight base under a twisted column
+- Draw the profile flat at the bottom and rising after that to leave a straight base under a twisted column
 - A 90-degree twist on a square column creates an elegant architectural effect
-- Drag the curve into an S shape for a twist that winds one way and then back the other
+- Draw two flat runs joined by a short climb to wind the middle of the part and leave both ends rigid
 
 ## Related
 
