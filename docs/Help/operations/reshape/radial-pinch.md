@@ -21,7 +21,7 @@ Radial Pinch compresses an object inward from a center point with a customizable
 ## Parameters
 
 - **Path** - A profile curve editor that defines the pinch amount at each height level. Edit the curve to create custom pinch profiles
-- **Pinch Slices** - Number of vertical cuts for smooth pinching. More slices = smoother results
+- **Slices** - Number of horizontal cuts for smooth pinching, spaced evenly up the part. More slices = smoother results
 
 ### Advanced Parameters
 
@@ -35,7 +35,7 @@ Radial Pinch compresses an object inward from a center point with a customizable
 
 - Use the path editor to create hourglass, bottle, or vase-like shapes
 - Radial pinch is ideal for creating organic, rounded forms from cylindrical objects
-- Increase Pinch Slices for smoother curves, especially on tight pinch profiles
+- Increase Slices for smoother curves, especially on tight pinch profiles
 
 ## Related
 

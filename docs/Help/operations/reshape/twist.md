@@ -37,7 +37,8 @@ A run that falls back as it goes up unwinds: that band of the part turns the oth
 - **Rotation Type** - Choose between:
   - **Angle** - Specify the total twist angle in degrees (3-360)
   - **Distance** - Specify the twist as a distance along the circumference
-- **Rotation Slices** - Number of horizontal cuts added for smooth twisting. More slices = smoother twist
+- **Slices** - Number of horizontal cuts added for smooth twisting, spaced evenly up the part. More slices = smoother twist
+- **Minimum Sides** - The least number of sides the part should have around the twist axis. A coarse shape such as a cube has no geometry around its perimeter to carry the rotation, so its flat faces facet instead of curving; this adds vertical cuts through the twist axis so those faces can follow the twist. 0 (the default) leaves the part alone
 - **Twist Right** - Direction of twist: right (clockwise) or left (counterclockwise)
 - **Prefered Radius** - Read-only: the radius the part itself reports, or the one implied by its shape, which is what a twist distance is measured around (Distance mode only)
 - **Edit Radius** - Turn off the reported radius so you can set your own (Distance mode only, and only when the part reports one)
@@ -50,7 +51,8 @@ A run that falls back as it goes up unwinds: that band of the part turns the oth
 
 ## Tips
 
-- Higher Rotation Slices values produce smoother results but generate more geometry
+- Higher Slices values produce smoother results but generate more geometry
+- If a twisted cube or other flat-sided shape looks faceted rather than curved, raise Minimum Sides
 - Draw the profile flat at the bottom and rising after that to leave a straight base under a twisted column
 - A 90-degree twist on a square column creates an elegant architectural effect
 - Draw two flat runs joined by a short climb to wind the middle of the part and leave both ends rigid
