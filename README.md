@@ -55,6 +55,18 @@ This repository hosts the official MatterCAD documentation, served publicly via 
 
 ---
 
+## Translations
+
+The English articles under `docs/Help` are authoritative — always edit those. Translated copies live in `translations/<lang>/Help/**` for 16 languages and are **generated**, not hand-edited.
+
+- Regenerate with `python scripts/update_help_translations.py` from the MatterCAD repo root (requires `ANTHROPIC_API_KEY`). Run it after editing any English article.
+- The pipeline is incremental — a `source_hash` in each translated article's frontmatter means only changed articles are retranslated.
+- `deploy.yml` packs the translations into `help-docs.zip` as `<lang>/Help/...` entries alongside the English ones.
+- The app falls back to English per article, so a missing or stale translation is safe.
+- Translations are not published as Jekyll pages — only the English docs are served on GitHub Pages.
+
+---
+
 ## Reporting Issues
 
 MatterCAD's main repository is private, but you can report bugs, request features, or ask questions by [opening an issue here](https://github.com/MatterHackers/MatterCAD_Docs/issues). We actively monitor this repository for community feedback.
