@@ -10,9 +10,9 @@ source_lang: en
 <!-- AUTO_IMAGE: type=toolbar_icons group=Duplication -->
 ![Duplication toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Duplication.png)
 
-Array erstellt mehrere Kopien eines Objekts, die in einem Muster angeordnet werden. Das ist nützlich, um sich wiederholende Elemente wie Schraubenlöcher, Zaunpfosten, Zahnräder-Zähne oder dekorative Details zu erzeugen.
+Array erstellt mehrere Kopien eines Objekts, die in einem Muster angeordnet werden. Das ist nützlich, um sich wiederholende Elemente wie Schraubenlöcher, Zaunpfosten, Zahnräder oder dekorative Elemente zu erzeugen.
 
-Die Array-Operation unterstützt vier Modi – Linear, Radial, Curve und Transform – alle in einem einzigen Werkzeug.
+Die Array-Operation unterstützt vier Modi – Linear, Radial, Kurve und Transformieren – alle in einem einzigen Werkzeug.
 
 |Linear|Radial|
 | :--- | :--- |
@@ -20,5 +20,5 @@ Die Array-Operation unterstützt vier Modi – Linear, Radial, Curve und Transfo
 
 ## Seiten
 
-- [Array](array.md) – Lineare, radiale, kurvenbasierte und transformierte Muster aus duplizierten Objekten erstellen
-- [Select Child](select-child.md) – Dynamisch ein untergeordnetes Objekt einer Gruppe über Index oder Name auswählen
+- [Array](array.md) – Lineare, radiale, Kurven- und Transformationsmuster duplizierter Objekte erstellen
+- [Unterobjekt auswählen](select-child.md) – Dynamisch ein Unterobjekt einer Gruppe anhand von Index oder Name auswählen

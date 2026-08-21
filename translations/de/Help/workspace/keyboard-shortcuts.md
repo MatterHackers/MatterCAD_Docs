@@ -21,14 +21,14 @@ Schnellübersicht über alle in MatterCAD verfügbaren Tastenkürzel.
 | Strg + X | Ausgewählte Objekte ausschneiden |
 | Strg + V | Objekte einfügen |
 | Leertaste | Auswahl aufheben |
-| Esc | Aktuellen Ziehvorgang abbrechen |
+| Escape | Aktuellen Ziehvorgang abbrechen |
 | Entf | Ausgewählte Objekte löschen |
 
 ## Ansicht
 
 | Tastenkürzel | Aktion |
 |----------|--------|
-| W | Ansicht zurücksetzen (alle Objekte ins Ansichtsfenster einpassen) |
+| W | Ansicht zurücksetzen (alle Objekte in den Viewport einpassen) |
 | Z | Auf ausgewähltes Objekt zoomen |
 | Strg + Plus (+) | Vergrößern |
 | Strg + Minus (-) | Verkleinern |
@@ -37,19 +37,19 @@ Schnellübersicht über alle in MatterCAD verfügbaren Tastenkürzel.
 
 ## Maussteuerung
 
-| Aktion | Bedienung |
+| Aktion | Steuerung |
 |--------|---------|
 | Ansicht drehen | Rechtsklick + Ziehen |
 | Ansicht verschieben | Mittelklick + Ziehen |
-| Zoomen | Mausrad |
-| Objekt auswählen | Linksklick auf das Objekt |
+| Zoomen | Scrollrad |
+| Objekt auswählen | Linksklick auf Objekt |
 | Mehrfachauswahl | Umschalt + Linksklick oder Strg + Linksklick |
-| Rahmenauswahl | Linksklick + Ziehen auf leerer Fläche |
-| Kontextmenü | Rechtsklick auf das Objekt |
+| Rahmenauswahl | Linksklick + Ziehen auf leere Fläche |
+| Kontextmenü | Rechtsklick auf Objekt |
 
 ## Alternative Maussteuerung
 
-| Aktion | Bedienung |
+| Aktion | Steuerung |
 |--------|---------|
 | Ansicht drehen | Strg + Linksklick + Ziehen |
 | Ansicht verschieben | Strg + Umschalt + Linksklick + Ziehen |
@@ -59,11 +59,11 @@ Schnellübersicht über alle in MatterCAD verfügbaren Tastenkürzel.
 
 | Tastenkürzel | Aktion |
 |----------|--------|
-| Strg + Umschalt + T | Zuletzt geschlossenes Design erneut öffnen |
+| Strg + Umschalt + T | Zuletzt geschlossenen Entwurf erneut öffnen |
 | F1 | Hilfe öffnen |
 
 ## Verwandte Themen
 
 - [Maussteuerung](mouse-controls.md) – Ausführliche Referenz zur Maussteuerung
-- [Navigation im Ansichtsfenster](../getting-started/viewport-navigation.md) – So navigieren Sie in der 3D-Ansicht
+- [Viewport-Navigation](../getting-started/viewport-navigation.md) – So navigieren Sie in der 3D-Ansicht
 - [Auswahl](selection.md) – So funktioniert die Auswahl

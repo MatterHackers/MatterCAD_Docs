@@ -11,13 +11,13 @@ Erfahren Sie, wie Sie im MatterCAD-Arbeitsbereich navigieren, Tastenkürzel verw
 
 ## Themen
 
-- [Tastenkürzel](keyboard-shortcuts.md) – Kurzübersicht aller Tastenkürzel
+- [Tastenkürzel](keyboard-shortcuts.md) – Kurzübersicht über alle Tastenkürzel
 - [Maussteuerung](mouse-controls.md) – So navigieren Sie mit der Maus im 3D-Ansichtsfenster
-- [Auswahl](selection.md) – So wählen Sie Objekte einzeln oder mehrfach aus und verwalten die Auswahl
-- [Rückgängig und Wiederherstellen](undo-redo.md) – Änderungen an Ihrem Entwurf rückgängig machen und wiederherstellen
-- [Gruppieren](grouping.md) – Objekte für eine einfachere Verwaltung gruppieren und die Gruppierung aufheben
+- [Auswahl](selection.md) – So wählen Sie Objekte aus, treffen Mehrfachauswahlen und verwalten die Auswahl
+- [Rückgängig und Wiederholen](undo-redo.md) – Änderungen an Ihrer Konstruktion rückgängig machen und wiederholen
+- [Gruppieren](grouping.md) – Objekte gruppieren und Gruppierungen aufheben für eine einfachere Verwaltung
 - [Komponenten](components.md) – Wiederverwendbare Komponenten und Baugruppen erstellen
 - [Ausdrücke](expressions.md) – Mathematische Ausdrücke für parametrische Konstruktionen verwenden
 - [Variablenblatt](variable-sheet.md) – Gemeinsam genutzte Werte und Formeln für parametrische Konstruktionen speichern
-- [Messwerkzeug](measure-tool.md) – Abstände zwischen Punkten in Ihrem Entwurf messen
-- [Sperren und Ausblenden](lock-hide.md) – Objekte sperren, um Änderungen zu verhindern, und ausblenden, um die Ansicht übersichtlich zu halten
+- [Messwerkzeug](measure-tool.md) – Abstände zwischen Punkten in Ihrer Konstruktion messen
+- [Sperren und Ausblenden](lock-hide.md) – Objekte sperren, um Änderungen zu verhindern, und Objekte ausblenden, um die Ansicht übersichtlich zu halten

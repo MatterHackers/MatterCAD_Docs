@@ -7,7 +7,7 @@ source_lang: en
 ---
 # Cloud-Bibliothek
 
-Die Cloud-Bibliothek speichert Ihre Designs online in Ihrem MatterHackers-Konto. So können Sie von jedem Computer aus auf Ihre Designs zugreifen und behalten eine Sicherungskopie in der Cloud.
+Die Cloud-Bibliothek speichert Ihre Designs online in Ihrem MatterHackers-Konto. So können Sie von jedem Computer aus auf Ihre Designs zugreifen und eine Sicherung in der Cloud behalten.
 
 ![20260323 210141 paste 20260323 210141](https://matterhackers.github.io/MatterCAD_Docs/assets/20260323-210141-paste-20260323-210141.jpg)
 
@@ -17,12 +17,12 @@ Die Cloud-Bibliothek speichert Ihre Designs online in Ihrem MatterHackers-Konto.
 2. Die Cloud-Bibliothek erscheint in Ihrem Bibliotheksbrowser
 3. Laden Sie Designs hoch, indem Sie sie in den Cloud-Ordner ziehen, oder speichern Sie direkt in der Cloud
 
-## Funktionen
+## Merkmale
 
-- **Zugriff von überall** – Ihre Designs stehen auf jedem Computer zur Verfügung, an dem Sie sich anmelden
+- **Zugriff von überall** – Ihre Designs sind auf jedem Computer verfügbar, auf dem Sie sich anmelden
 - **Cloud-Sicherung** – Ihre Arbeit wird sicher online gespeichert
-- **Ordnerstruktur** – Erstellen Sie Ordner, um Ihre Cloud-Designs genauso zu organisieren wie in der lokalen Bibliothek
-- **Freigabe** – Geben Sie Designs für andere MatterCAD-Benutzer frei. Siehe [Freigabe](sharing.md)
+- **Ordnerstruktur** – Erstellen Sie Ordner, um Ihre Cloud-Designs genau wie in der Lokalen Bibliothek zu organisieren
+- **Teilen** – Teilen Sie Designs mit anderen MatterCAD-Benutzern. Siehe [Teilen](sharing.md)
 
 ## Tipps
 
@@ -34,5 +34,5 @@ Die Cloud-Bibliothek speichert Ihre Designs online in Ihrem MatterHackers-Konto.
 ## Verwandte Themen
 
 - [Lokale Bibliothek](local-library.md) – Auf Ihrem Computer gespeicherte Designs verwalten
-- [Freigabe](sharing.md) – Designs mit anderen teilen
-- [MatterCAD Pro](../mattercad-pro.md) – Pro-Funktionen für den Cloud-Speicher
+- [Teilen](sharing.md) – Designs mit anderen teilen
+- [MatterCAD Pro](../mattercad-pro.md) – Pro-Funktionen für Cloud-Speicher

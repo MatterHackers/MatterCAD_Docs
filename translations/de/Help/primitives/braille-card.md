@@ -16,16 +16,16 @@ Erstellen Sie Braille-Karten mit erhabenem Braille-Text auf einer integrierten G
 
 ## Verwendung
 
-1. Fügen Sie über das Panel „Primitive“ eine **Braille-Karte** hinzu
+1. Fügen Sie eine **Braille-Karte** aus dem Bereich Primitive hinzu
 2. Geben Sie den Text ein, den Sie kodieren möchten
-3. Das Werkzeug erzeugt sowohl die Braille-Punkte als auch eine Kartenbasis
+3. Das Werkzeug erzeugt sowohl die Braillepunkte als auch eine Kartenbasis
 
 ## Tipps
 
-- Verwenden Sie dies, wenn Sie ein vollständiges, druckfertiges Braille-Schild benötigen
-- Für Braille-Punkte ohne Grundplatte (zum Platzieren auf einer eigenen Oberfläche) verwenden Sie stattdessen [Braille](braille.md)
+- Verwenden Sie dies, wenn Sie ein vollständiges, druckfertiges Braille-Etikett benötigen
+- Für Braillepunkte ohne Grundplatte (zum Platzieren auf einer eigenen Oberfläche) verwenden Sie stattdessen [Braille](braille.md)
 
 ## Verwandte Themen
 
-- [Braille](braille.md) – Braille-Punkte ohne Kartenbasis
+- [Braille](braille.md) – Braillepunkte ohne Kartenbasis
 - [Text](text.md) – Standardmäßiger sichtbarer Text

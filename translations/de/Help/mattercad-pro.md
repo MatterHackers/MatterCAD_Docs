@@ -11,4 +11,4 @@ source_lang: en
 MatterCAD Pro schaltet erweiterte Funktionen und professionellen Support frei.
 
 - Mehr erfahren: [MatterCAD Pro Edition](https://www.matterhackers.com/store/l/mattercad-pro-edition)
-- Alle Versionsdetails finden Sie unter [Neuerungen](whats-new.md)
+- Alle Details zur Version finden Sie unter [Neuigkeiten](whats-new.md)

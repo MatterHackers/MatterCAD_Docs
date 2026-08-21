@@ -7,7 +7,7 @@ source_lang: en
 ---
 # Gruppieren
 
-Beim Gruppieren werden mehrere Objekte zu einer einzigen Einheit zusammengefasst, die als ein Objekt bewegt, kopiert und bearbeitet werden kann. Anders als beim [Kombinieren](../operations/boolean/combine.md) wird die Geometrie dabei nicht verschmolzen -- jedes Objekt bleibt innerhalb der Gruppe eigenständig.
+Beim Gruppieren werden mehrere Objekte zu einer einzigen Einheit zusammengefasst, die als ein Objekt verschoben, kopiert und bearbeitet werden kann. Im Gegensatz zu [Vereinen](../operations/boolean/combine.md) wird die Geometrie beim Gruppieren nicht zusammengeführt -- jedes Objekt bleibt innerhalb der Gruppe eigenständig.
 
 <!-- Screenshot showing objects before and after grouping, with the design tree showing the group hierarchy -->
 ![20260318 193104 paste 20260318 193104](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193104-paste-20260318-193104.jpg)
@@ -21,7 +21,7 @@ Beim Gruppieren werden mehrere Objekte zu einer einzigen Einheit zusammengefasst
 
 ### Objekte gruppieren
 
-1. Wählen Sie zwei oder mehr Objekte aus (Mehrfachauswahl mit Shift-Klick oder Strg-Klick)
+1. Wählen Sie zwei oder mehr Objekte aus (Umschalt-Klick oder Strg-Klick für die Mehrfachauswahl)
 2. Klicken Sie in der Symbolleiste auf die Schaltfläche **Gruppieren**
 3. Die Objekte sind nun gruppiert -- sie bewegen sich gemeinsam als eine Einheit
 
@@ -32,26 +32,26 @@ Beim Gruppieren werden mehrere Objekte zu einer einzigen Einheit zusammengefasst
 3. ![20260318 193354 paste 20260318 193354](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193354-paste-20260318-193354.jpg)
 4. Die einzelnen Objekte werden als separate Elemente wiederhergestellt
 
-Beim Aufheben der Gruppierung wird außerdem versucht, mehrere Körper innerhalb einer einzelnen importierten STL-Datei voneinander zu trennen, sofern vorhanden.
+Beim Aufheben der Gruppierung wird außerdem versucht, mehrere Körper innerhalb einer einzelnen importierten STL-Datei zu trennen, sofern vorhanden.
 
-## Gruppieren vs. Kombinieren
+## Gruppieren vs. Vereinen
 
-| Merkmal | Gruppieren | Kombinieren |
+| Merkmal | Gruppieren | Vereinen |
 |---------|-------|---------|
 | Objekte bleiben eigenständig | Ja | Nein |
-| Später wieder auflösbar | Ja | Nein (destruktiv) |
-| Überlappende Geometrie wird verschmolzen | Nein | Ja |
-| Objekte können unterschiedliche Farben haben | Ja | Farben bleiben pro Fläche erhalten |
+| Gruppierung später aufhebbar | Ja | Nein (destruktiv) |
+| Überlappende Geometrie wird zusammengeführt | Nein | Ja |
+| Objekte können unterschiedliche Farben haben | Ja | Farben werden pro Fläche beibehalten |
 | Anwendungsfall | Organisation und Bewegung | Erstellen einzelner Volumenkörper |
 
 ## Tipps
 
-- Gruppen lassen sich verschachteln -- Sie können Objekte gruppieren, die bereits in Gruppen enthalten sind
+- Gruppen können verschachtelt werden -- Sie können Objekte gruppieren, die sich bereits in Gruppen befinden
 - Wählen Sie eine Gruppe aus und sehen Sie im Konstruktionsbaum nach, um einzelne Objekte darin anzuzeigen und auszuwählen
-- Gruppieren ist nicht destruktiv und kann jederzeit mit „Gruppierung aufheben“ rückgängig gemacht werden
+- Das Gruppieren ist nicht destruktiv und kann jederzeit mit Gruppierung aufheben rückgängig gemacht werden
 
 ## Verwandte Themen
 
-- [Kombinieren](../operations/boolean/combine.md) - Objekte zu einem einzelnen Volumenkörper verschmelzen, statt sie zu gruppieren
+- [Vereinen](../operations/boolean/combine.md) - Objekte zu einem einzigen Volumenkörper zusammenführen, statt sie zu gruppieren
 - [Auswahl](selection.md) - So wählen Sie mehrere Objekte zum Gruppieren aus
 - [Komponenten](components.md) - Wiederverwendbare parametrisierte Gruppen erstellen

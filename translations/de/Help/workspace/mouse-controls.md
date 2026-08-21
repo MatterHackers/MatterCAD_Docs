@@ -7,7 +7,7 @@ source_lang: en
 ---
 # Maussteuerung
 
-Vollständige Referenz für die Maussteuerung im 3D-Viewport von MatterCAD.
+Vollständige Referenz für die Maussteuerung im 3D-Ansichtsfenster von MatterCAD.
 
 ## Navigation
 
@@ -32,30 +32,30 @@ Vollständige Referenz für die Maussteuerung im 3D-Viewport von MatterCAD.
 | **Objekt auswählen** | Linksklick auf das Objekt |
 | **Mehrfachauswahl** | Umschalt + Linksklick auf weitere Objekte |
 | **Mehrfachauswahl** | Strg + Linksklick auf weitere Objekte |
-| **Auswahl aufheben** | Linksklick auf freie Fläche |
-| **Auswahlrahmen** | Linksklick + Ziehen auf freier Fläche |
+| **Gesamte Auswahl aufheben** | Linksklick auf eine leere Fläche |
+| **Rahmenauswahl** | Linksklick + Ziehen auf einer leeren Fläche |
 | **Objekt verschieben** | Linksklick + Ziehen auf dem ausgewählten Objekt |
 | **Kontextmenü** | Rechtsklick auf das Objekt |
 
-## Objektsteuerelemente
+## Objektsteuerung
 
 Wenn ein Objekt ausgewählt ist, erscheinen interaktive Steuerelemente:
 
-| Aktion | Steuerelement |
+| Aktion | Steuerung |
 |--------|---------|
-| **Auf dem Druckbett verschieben** | Objekt ziehen |
+| **Auf dem Druckbett verschieben** | Das Objekt ziehen |
 | **Nach oben/unten verschieben** | Den senkrechten Pfeil über dem Objekt ziehen |
-| **Drehen** | Ein Drehsteuerelement an der Ecke anklicken und ziehen |
-| **Skalieren** | Ein Skaliersteuerelement an der Ecke anklicken und ziehen |
+| **Drehen** | Ein Dreh-Steuerelement an einer Ecke klicken und ziehen |
+| **Skalieren** | Ein Skalier-Steuerelement an einer Ecke klicken und ziehen |
 
 ## Tipps
 
 - Das Zoomen mit dem Scrollrad ist auf die Position des Mauszeigers zentriert -- zeigen Sie auf den Bereich, in den Sie hineinzoomen möchten
-- Die alternativen Steuerungen (Strg + Linksklick) sind nützlich, wenn Sie keine mittlere Maustaste haben oder der Rechtsklick unpraktisch ist
-- Beim Drehen mit den Ecksteuerelementen fahren Sie über die Winkelanzeigen, um in 45-Grad-Schritten einzurasten
+- Die alternative Steuerung (Strg + Linksklick) ist nützlich, wenn Sie keine mittlere Maustaste haben oder der Rechtsklick unpraktisch ist
+- Halten Sie beim Drehen mit den Eck-Steuerelementen den Mauszeiger über die Winkelanzeigen, um in 45-Grad-Schritten einzurasten
 
 ## Verwandte Themen
 
-- [Tastenkombinationen](keyboard-shortcuts.md) - Referenz der Tastenkombinationen
-- [Viewport-Navigation](../getting-started/viewport-navigation.md) - Ausführliche Navigationsanleitung
+- [Tastenkürzel](keyboard-shortcuts.md) - Referenz der Tastenkürzel
+- [Navigation im Ansichtsfenster](../getting-started/viewport-navigation.md) - Ausführliche Navigationsanleitung
 - [Auswahl](selection.md) - So funktioniert die Auswahl

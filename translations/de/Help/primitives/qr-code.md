@@ -16,18 +16,18 @@ Erzeugen Sie QR-Codes als 3D-Objekte. Sie können Text, URLs oder WLAN-Zugangsda
 
 ## Verwendung
 
-1. Fügen Sie einen **QR-Code** aus dem Grundkörper-Panel hinzu
-2. Wählen Sie den Ausgabetyp (Text oder WLAN)
+1. Fügen Sie einen **QR-Code** aus dem Bereich Primitive hinzu
+2. Wählen Sie den Ausgabetyp (Text oder WiFi)
 3. Geben Sie Ihren Inhalt ein
 4. Der QR-Code wird als 3D-Objekt erzeugt, das Sie in Ihrem Entwurf platzieren können
 
 ## Parameter
 
-### Textmodus
+### Text-Modus
 
 - **Text** – Der zu codierende Text oder die URL (Standard: "https://matterhackers.com")
 
-### WLAN-Modus
+### WiFi-Modus
 
 - **SSID** – Der Name des WLAN-Netzwerks
 - **Passwort** – Das WLAN-Passwort
@@ -35,10 +35,10 @@ Erzeugen Sie QR-Codes als 3D-Objekte. Sie können Text, URLs oder WLAN-Zugangsda
 
 ## Tipps
 
-- Verwenden Sie [Subtrahieren](../operations/boolean/subtract.md), um den QR-Code in eine Oberfläche zu gravieren, oder platzieren Sie ihn auf einer [Würfel](cube.md)-Grundfläche
+- Verwenden Sie [Subtrahieren](../operations/boolean/subtract.md), um den QR-Code in eine Oberfläche zu gravieren, oder platzieren Sie ihn auf einem [Würfel](cube.md) als Basis
 - Prüfen Sie vor dem Drucken mit einem Smartphone, ob sich Ihr QR-Code korrekt scannen lässt
 - Mit WLAN-QR-Codes können sich andere durch Scannen des Codes mit Ihrem Netzwerk verbinden
-- Achten Sie darauf, dass der QR-Code im gedruckten Zustand groß genug zum Scannen ist -- mindestens 20-25 mm breit
+- Achten Sie darauf, dass der QR-Code groß genug ist, um im gedruckten Zustand scanbar zu sein – mindestens 20–25 mm Kantenlänge
 
 ## Verwandte Themen
 

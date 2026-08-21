@@ -8,7 +8,7 @@ source_lang: en
 ---
 # Pyramide
 
-Eine vierseitige Pyramidenform mit einstellbarer rechteckiger Grundfläche und Höhe.
+Eine vierseitige Pyramidenform mit einstellbarer rechteckiger Basis und Höhe.
 
 <!--  Screenshot of a Pyramid primitive on the workspace -->
 ![20260318 183743 paste 20260318 183743](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183743-paste-20260318-183743.jpg)
@@ -16,17 +16,17 @@ Eine vierseitige Pyramidenform mit einstellbarer rechteckiger Grundfläche und H
 
 ## Parameter
 
-- **Breite** - Größe der Grundfläche entlang der X-Achse (Standard: 20mm)
-- **Tiefe** - Größe der Grundfläche entlang der Y-Achse (Standard: 20mm)
-- **Höhe** - Wie hoch die Pyramide von der Grundfläche bis zur Spitze ist (Standard: 20mm)
+- **Breite** - Größe der Basis entlang der X-Achse (Standard: 20mm)
+- **Tiefe** - Größe der Basis entlang der Y-Achse (Standard: 20mm)
+- **Höhe** - Wie hoch die Pyramide von der Basis bis zur Spitze ist (Standard: 20mm)
 
 ## Tipps
 
-- Setzen Sie Breite und Tiefe auf denselben Wert für eine reguläre Pyramide mit quadratischer Grundfläche
-- Verwenden Sie unterschiedliche Werte für Breite und Tiefe für eine Pyramide mit rechteckiger Grundfläche
+- Setzen Sie Breite und Tiefe auf denselben Wert für eine reguläre Pyramide mit quadratischer Basis
+- Verwenden Sie unterschiedliche Werte für Breite und Tiefe für eine Pyramide mit rechteckiger Basis
 - Nützlich für dekorative Elemente, Dachformen und spitz zulaufende Details
 
-## Verwandte Themen
+## Verwandt
 
-- [Kegel](cone.md) - Eine spitz zulaufende Form mit runder Grundfläche
+- [Kegel](cone.md) - Eine spitz zulaufende Form mit runder Basis
 - [Keil](wedge.md) - Ein dreieckiges Prisma (wie ein halber Würfel)

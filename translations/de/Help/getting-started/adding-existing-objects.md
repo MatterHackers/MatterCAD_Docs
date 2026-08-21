@@ -16,19 +16,19 @@ Sie können vorhandene 3D-Modelle in MatterCAD einbringen, indem Sie Dateien von
 ![20260324 081240 paste 20260324 081240](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081240-paste-20260324-081240.jpg)
 
 
-Klicken Sie in der Symbolleiste auf die Schaltfläche **Open**, um Dateien von Ihrem Computer zu durchsuchen und hinzuzufügen. MatterCAD unterstützt die folgenden Importformate:
+Klicken Sie in der Symbolleiste auf die Schaltfläche **Öffnen**, um Dateien von Ihrem Computer zu durchsuchen und hinzuzufügen. MatterCAD unterstützt die folgenden Importformate:
 
-- **STL** (.stl) – Branchenübliches 3D-Modellformat, weit verbreitet für den 3D-Druck
-- **AMF** (.amf) – Erweitertes Format mit Unterstützung für Farben und Multi-Material-Objekte
+- **STL** (.stl) – Industriestandard für 3D-Modelle, weit verbreitet im 3D-Druck
+- **AMF** (.amf) – Fortgeschrittenes Format mit Unterstützung für Farben und Objekte aus mehreren Materialien
 - **OBJ** (.obj) – Wavefront-3D-Grafikformat (nur Netzgeometrie)
-- **3MF** (.3mf) – 3D Manufacturing Format mit umfangreicher Metadatenunterstützung
-- **MCX** (.mcx) – MatterCADs natives Format, das alle Konstruktionsdaten und Parameter erhält
+- **3MF** (.3mf) – 3D Manufacturing Format mit umfangreicher Metadaten-Unterstützung
+- **MCX** (.mcx) – Das native Format von MatterCAD, das alle Konstruktionsdaten und Parameter erhält
 - **SVG** (.svg) – Scalable Vector Graphics, wird als 2D-Pfade importiert
-- **TTF / OTF** (.ttf, .otf) – Schriftdateien zur Verwendung mit dem Text-Werkzeug
+- **TTF / OTF** (.ttf, .otf) – Schriftartdateien zur Verwendung mit dem Text-Werkzeug
 
-## Drag and Drop
+## Drag & Drop
 
-Sie können Dateien auch direkt von Ihrem Desktop oder aus dem Datei-Explorer per Drag and Drop in den MatterCAD-Arbeitsbereich ziehen. Unterstützte Dateitypen werden automatisch importiert.
+Sie können Dateien auch per Drag & Drop direkt von Ihrem Desktop oder aus dem Datei-Explorer in den MatterCAD-Arbeitsbereich ziehen. Unterstützte Dateitypen werden automatisch importiert.
 
 ![20260324 081416 paste 20260324 081416](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081416-paste-20260324-081416.jpg)
 
@@ -36,29 +36,29 @@ Sie können Dateien auch direkt von Ihrem Desktop oder aus dem Datei-Explorer pe
 
 ### Die Bibliotheks-Seitenleiste
 
-Klicken Sie in der Symbolleiste auf die Schaltfläche **Add Content**, um das Bibliotheks-Browserfenster zu öffnen. Von hier aus können Sie:
+Klicken Sie in der Symbolleiste auf die Schaltfläche **Inhalt hinzufügen**, um den Bibliotheksbrowser zu öffnen. Von hier aus können Sie:
 
-- Ihre gespeicherten Designs durchsuchen
-- Zur Primitives-Bibliothek mit den integrierten Formen navigieren
-- Auf Ihre Cloud Library zugreifen, sofern Sie angemeldet sind
-- Jedes Element aus der Bibliothek per Drag and Drop direkt in Ihren Arbeitsbereich ziehen
+- Ihre gespeicherten Konstruktionen durchsuchen
+- Zur Bibliothek Primitive navigieren, um integrierte Formen zu verwenden
+- Auf Ihre Cloud-Bibliothek zugreifen, sofern Sie angemeldet sind
+- Jedes Element aus der Bibliothek per Drag & Drop direkt in Ihren Arbeitsbereich ziehen
 
 ![20260324 081446 paste 20260324 081446](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081446-paste-20260324-081446.jpg)
 
-### Der Bibliotheks-Tab
+### Die Registerkarte Bibliothek
 
-Sie können auch den Library-Tab verwenden, um Ihre Sammlungen zu durchsuchen. Klicken Sie mit der rechten Maustaste auf ein beliebiges Objekt in der Bibliothek und wählen Sie **Add to Scene**, um es in Ihren aktuellen Konstruktionsarbeitsbereich zu importieren.
+Sie können auch die Registerkarte Bibliothek verwenden, um Ihre Sammlungen zu durchsuchen. Klicken Sie mit der rechten Maustaste auf ein beliebiges Objekt in der Bibliothek und wählen Sie **Zur Szene hinzufügen**, um es in Ihren aktuellen Konstruktionsarbeitsbereich zu importieren.
 
 ![20260324 081536 paste 20260324 081536](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081536-paste-20260324-081536.jpg)
 
 ## Tipps
 
-- MCX ist das beste Format, um Designs später erneut zu bearbeiten, da es alle Parameter und den Konstruktionsbaum erhält
-- STL-Dateien enthalten ausschließlich Netzgeometrie. Wenn Sie eine STL-Datei importieren, können Sie weiterhin Operationen darauf anwenden, die ursprünglichen Parameter jedoch nicht bearbeiten
-- Beim Importieren mehrerer Dateien wird jede einzelne zu einem eigenständigen Objekt in Ihrer Szene. Verwenden Sie [Gruppieren](../workspace/grouping.md), um sie zu organisieren
+- MCX ist das beste Format, um Konstruktionen später erneut zu bearbeiten, da es alle Parameter und den Konstruktionsbaum erhält
+- STL-Dateien enthalten nur Netzgeometrie. Wenn Sie eine STL-Datei importieren, können Sie zwar weiterhin Operationen darauf anwenden, die ursprünglichen Parameter jedoch nicht bearbeiten
+- Beim Import mehrerer Dateien wird jede davon zu einem eigenen Objekt in Ihrer Szene. Verwenden Sie [Gruppieren](../workspace/grouping.md), um sie zu organisieren
 
 ## Verwandte Themen
 
-- [Neue Objekte erstellen](creating-new-objects.md) – Ein Design von Grund auf mit Grundkörpern beginnen
-- [Speichern und Exportieren](saving-and-exporting.md) – Ihre fertigen Designs speichern und exportieren
-- [Bibliothek](../library/index.md) – Mehr über das Organisieren Ihrer Designbibliothek erfahren
+- [Neue Objekte erstellen](creating-new-objects.md) – Eine Konstruktion von Grund auf mit Primitiven beginnen
+- [Speichern und Exportieren](saving-and-exporting.md) – Ihre fertigen Konstruktionen speichern und exportieren
+- [Bibliothek](../library/index.md) – Mehr über das Organisieren Ihrer Konstruktionsbibliothek erfahren

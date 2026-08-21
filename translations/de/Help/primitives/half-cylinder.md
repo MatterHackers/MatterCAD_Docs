@@ -8,7 +8,7 @@ source_lang: en
 ---
 # Halbzylinder
 
-Ein längs halbierter Zylinder, der eine Halbrohr- oder Rinnenform ergibt.
+Ein längs halbierter Zylinder, der eine Halbschalen- oder Rinnenform ergibt.
 
 <!--  Screenshot of a Half Cylinder primitive on the workspace -->
 ![20260318 183306 paste 20260318 183306](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183306-paste-20260318-183306.jpg)
@@ -16,18 +16,18 @@ Ein längs halbierter Zylinder, der eine Halbrohr- oder Rinnenform ergibt.
 
 ## Parameter
 
-- **Breite** – Größe über die flache Seite (Standard: 20 mm)
-- **Tiefe** – Größe von der flachen zur gewölbten Seite (Standard: 20 mm)
-- **Seiten** – Anzahl der Segmente entlang der gewölbten Fläche (Standard: 20)
+- **Breite** - Größe über die flache Seite (Standard: 20mm)
+- **Tiefe** - Größe von der flachen zur gewölbten Seite (Standard: 20mm)
+- **Seiten** - Anzahl der Segmente entlang der gewölbten Fläche (Standard: 20)
 
 ## Tipps
 
 - Nützlich zum Erstellen von Kanälen, Rinnen, Trögen und abgerundeten Kanten
-- Drehen Sie das Objekt, um es als Bogen oder Tunnelquerschnitt zu verwenden
-- Kombinieren Sie es mit einem [Würfel](cube.md) für Objekte mit einer abgerundeten Seite
+- Drehen, um die Form als Bogen- oder Tunnelquerschnitt zu verwenden
+- Mit einem [Würfel](cube.md) vereinen, um Objekte mit einer abgerundeten Seite zu erhalten
 
 ## Verwandte Themen
 
-- [Zylinder](cylinder.md) – Eine vollständige runde Säule
-- [Halbkugel](half-sphere.md) – Eine Kuppelform
-- [Halber Keil](half-wedge.md) – Ein halbierter Keil
+- [Zylinder](cylinder.md) - Eine vollständige runde Säule
+- [Halbkugel](half-sphere.md) - Eine Kuppelform
+- [Halber Keil](half-wedge.md) - Ein halbierter Keil

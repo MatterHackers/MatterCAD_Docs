@@ -1,5 +1,5 @@
 ---
-title: Pfadkontur
+title: Umrisspfad
 articleKey: OutlinePathObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
@@ -7,9 +7,9 @@ nav_order: 5
 source_hash: cd89d402da93362118047111c615350d5f3c1f76
 source_lang: en
 ---
-# Pfadkontur
+# Umrisspfad
 
-Pfadkontur erzeugt eine Konturversion eines gefüllten Pfads und wandelt eine massive Form in ihren reinen Randring mit einer festgelegten Stärke um.
+Umrisspfad erzeugt eine Umrissversion eines gefüllten Pfades und wandelt eine massive Form in einen reinen Randring mit einer festgelegten Stärke um.
 
 <!--  Before and after showing a solid circle path converted to a ring outline -->
 ![20260506 101308 paste 20260506 101308](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-101308-paste-20260506-101308.jpg)
@@ -17,17 +17,17 @@ Pfadkontur erzeugt eine Konturversion eines gefüllten Pfads und wandelt eine ma
 ## Verwendung
 
 1. Wählen Sie einen 2D-Pfad aus
-2. Wenden Sie **Pfadkontur** aus dem Menü der Pfadoperationen an
-3. Passen Sie die Konturstärke an
+2. Wenden Sie **Umrisspfad** aus dem Menü der Pfad-Operationen an
+3. Passen Sie die Stärke des Umrisses an
 
 ## Tipps
 
-- Verwenden Sie dies, um rahmenartige Formen aus massiven Pfaden zu erzeugen
-- Kombinieren Sie es mit [Lineare Extrusion](linear-extrude.md), um 3D-Rahmen und -Umrandungen zu erstellen
-- Ein konturierter [Kreispfad](../../2d-paths/circle-path.md) entspricht einem [Ringpfad](../../2d-paths/ring-path.md)
+- Damit erzeugen Sie rahmenartige Formen aus massiven Pfaden
+- Kombinieren Sie die Operation mit [Linear extrudieren](linear-extrude.md), um 3D-Rahmen und -Umrandungen zu erstellen
+- Ein Kreispfad mit Umriss ([Kreispfad](../../2d-paths/circle-path.md)) entspricht einem [Ringpfad](../../2d-paths/ring-path.md)
 
 ## Verwandte Themen
 
-- [Pfad aufweiten](inflate-path.md) – Einen Pfad nach außen erweitern
-- [Pfadrand](border-path.md) – Einen Randversatz hinzufügen
+- [Pfad aufblasen](inflate-path.md) – Einen Pfad nach außen erweitern
+- [Randpfad](border-path.md) – Einen Randversatz hinzufügen
 - [Ringpfad](../../2d-paths/ring-path.md) – Eine fertige Ringform

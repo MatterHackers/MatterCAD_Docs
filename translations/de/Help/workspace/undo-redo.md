@@ -1,37 +1,37 @@
 ---
-title: Rückgängig und Wiederherstellen
+title: Rückgängig und Wiederholen
 parent: "Workspace"
 nav_order: 9
 source_hash: a24c28c5640a8b59a836047f26dbbf0019de92c2
 source_lang: en
 ---
-# Rückgängig und Wiederherstellen
+# Rückgängig und Wiederholen
 
-MatterCAD speichert einen vollständigen Verlauf Ihrer Änderungen, sodass Sie Fehler rückgängig machen und zurückgenommene Aktionen wiederherstellen können.
+MatterCAD führt einen vollständigen Verlauf Ihrer Änderungen, sodass Sie Fehler rückgängig machen und zurückgenommene Aktionen wiederholen können.
 
 ## Verwendung
 
-- **Strg + Z** – Letzte Aktion rückgängig machen
-- **Strg + Y** oder **Strg + Umschalt + Z** – Letzte rückgängig gemachte Aktion wiederherstellen
-- Sie können auch die Schaltflächen **Undo** und **Redo** in der Symbolleiste verwenden
+- **Strg + Z** – Die letzte Aktion rückgängig machen
+- **Strg + Y** oder **Strg + Umschalt + Z** – Die zuletzt rückgängig gemachte Aktion wiederholen
+- Sie können auch die Schaltflächen **Rückgängig** und **Wiederholen** in der Symbolleiste verwenden
 
 ## Was rückgängig gemacht werden kann
 
 Alle Konstruktionsvorgänge werden im Rückgängig-Verlauf erfasst, darunter:
 
-- Hinzufügen oder Löschen von Objekten
-- Verschieben, Drehen und Skalieren von Objekten
-- Anwenden von Operationen (Boolesche Operationen, Transformationen, Umformungen usw.)
-- Ändern von Objektparametern
+- Objekte hinzufügen oder löschen
+- Objekte verschieben, drehen und skalieren
+- Operationen anwenden (Boolesche Operationen, Transformieren, Umformen usw.)
+- Objektparameter ändern
 - Gruppieren und Gruppierung aufheben
 
 ## Tipps
 
-- Durch wiederholtes Drücken von Strg + Z können Sie mehrere Schritte rückgängig machen
+- Sie können mehrere Schritte rückgängig machen, indem Sie Strg + Z wiederholt drücken
 - Der Rückgängig-Verlauf wird für die aktuelle Sitzung geführt. Beim Schließen und erneuten Öffnen einer Konstruktion beginnt ein neuer Verlauf.
-- Wenn Sie mehrere Schritte rückgängig machen und anschließend eine neue Änderung vornehmen, wird der Wiederherstellungsverlauf ab diesem Punkt gelöscht
+- Wenn Sie mehrere Schritte rückgängig machen und dann eine neue Änderung vornehmen, wird der Wiederholen-Verlauf ab diesem Punkt gelöscht
 
 ## Verwandte Themen
 
-- [Tastenkombinationen](keyboard-shortcuts.md) – Alle verfügbaren Tastenkombinationen
+- [Tastenkürzel](keyboard-shortcuts.md) – Alle verfügbaren Tastenkürzel
 - [Objekte bearbeiten](../getting-started/editing-objects.md) – Arbeiten mit Objekten im Ansichtsfenster

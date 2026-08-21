@@ -9,22 +9,22 @@ source_lang: en
 ---
 # An Zylinder anpassen
 
-„An Zylinder anpassen“ skaliert ein Objekt so, dass es in eine festgelegte zylindrische Begrenzung passt, die durch Durchmesser und Höhe definiert wird.
+An Zylinder anpassen skaliert ein Objekt so, dass es in eine festgelegte zylindrische Begrenzung passt, die durch einen Durchmesser und eine Höhe definiert wird.
 
 ## Verwendung
 
 1. Wählen Sie ein Objekt aus
-2. Wenden Sie die Operation **An Zylinder anpassen** aus dem Menü „Platzierung“ an
-3. Legen Sie den gewünschten Durchmesser und die gewünschte Höhe fest
+2. Wenden Sie die Operation **An Zylinder anpassen** aus dem Menü Platzierung an
+3. Legen Sie den gewünschten Durchmesser und die Höhe fest
 
 ## Parameter
 
 - **Durchmesser** – Der Durchmesser des Zielzylinders
 - **Höhe** – Die Höhe des Zielzylinders
-- **Z strecken** – Wenn aktiviert, wird das Objekt so skaliert, dass es der Höhe des Zylinders entspricht
-- **Alternative Zentrierung** – Wenn aktiviert, erfolgt die Zentrierung anhand der visuellen Gewichtung des Bauteils statt anhand seines Hüllkreises
+- **Strecken Z** – Wenn aktiviert, wird das Objekt auf die Höhe des Zylinders skaliert
+- **Alternative Zentrierung** – Wenn aktiviert, erfolgt die Zentrierung anhand der visuellen Gewichtung des Teils statt anhand seines Umkreises
 
-## Verwandte Themen
+## Verwandt
 
-- [An Begrenzungen anpassen](fit-to-bounds.md) – Stattdessen in einen rechteckigen Hüllquader einpassen
+- [An Grenzen anpassen](fit-to-bounds.md) – Stattdessen in einen rechteckigen Begrenzungsrahmen einpassen
 - [Ausrichten](align.md) – Objekte relativ zueinander positionieren

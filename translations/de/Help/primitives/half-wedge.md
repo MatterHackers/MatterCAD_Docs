@@ -8,7 +8,7 @@ source_lang: en
 ---
 # Halber Keil
 
-Eine halbierte Keilform mit dreieckigem Querschnitt (rechtwinkliges Dreieck). Nützlich für Eckversteifungen und kleine abgeschrägte Elemente.
+Eine halbierte Keilform mit rechtwinkligem Dreiecksquerschnitt. Nützlich für Eckverstärkungen und kleine abgeschrägte Elemente.
 
 <!--  Screenshot of a Half Wedge primitive on the workspace -->
 ![20260318 183405 paste 20260318 183405](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183405-paste-20260318-183405.jpg)
@@ -16,17 +16,17 @@ Eine halbierte Keilform mit dreieckigem Querschnitt (rechtwinkliges Dreieck). N�
 
 ## Parameter
 
-- **Breite** – Größe entlang der X-Achse (Standard: 20 mm)
-- **Tiefe** – Größe entlang der Y-Achse (Standard: 20 mm)
-- **Höhe** – Höhe des halben Keils an seinem höchsten Punkt (Standard: 10 mm)
+- **Breite** - Größe entlang der X-Achse (Standard: 20mm)
+- **Tiefe** - Größe entlang der Y-Achse (Standard: 20mm)
+- **Höhe** - Wie hoch der halbe Keil an seinem höchsten Punkt ist (Standard: 10mm)
 
 ## Tipps
 
 - Als Eckverrundung oder Stützwinkel verwenden
-- Mit anderen Formen kombinieren, um abgeschrägte Übergänge zu erzeugen
+- Mit anderen Formen vereinen, um abgeschrägte Übergänge zu erzeugen
 
 ## Verwandte Themen
 
-- [Keil](wedge.md) – Ein vollständiges dreieckiges Prisma
-- [Pyramide](pyramid.md) – Eine vierseitige spitz zulaufende Form
-- [Halbzylinder](half-cylinder.md) – Ein halbierter Zylinder
+- [Keil](wedge.md) - Ein vollständiges dreieckiges Prisma
+- [Pyramide](pyramid.md) - Eine vierseitige spitz zulaufende Form
+- [Halbzylinder](half-cylinder.md) - Ein halbierter Zylinder

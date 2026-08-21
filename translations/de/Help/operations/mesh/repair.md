@@ -9,43 +9,43 @@ source_lang: en
 ---
 # Reparieren
 
-Reparieren behebt häufige Probleme in der Mesh-Geometrie, darunter nicht-mannigfaltige Kanten, Löcher, uneinheitliche Flächenausrichtung und nahezu deckungsgleiche Vertices. Das ist besonders bei importierten STL- und OBJ-Dateien nützlich, die Fehler enthalten können.
+Reparieren behebt häufige Probleme in der Netzgeometrie, darunter nicht-mannigfaltige Kanten, Löcher, inkonsistente Flächenorientierung und nahezu deckungsgleiche Eckpunkte. Das ist besonders nützlich für importierte STL- und OBJ-Dateien, die Fehler enthalten können.
 
 ![20260324 080517 paste 20260324 080517](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080517-paste-20260324-080517.jpg)
 
 
 ## Verwendung
 
-1. Wählen Sie ein Objekt mit Mesh-Problemen aus
-2. Wenden Sie die Operation **Reparieren** aus dem Menü Mesh an
-3. Prüfen Sie die Statistiken vor und nach der Reparatur, um zu sehen, was behoben wurde
+1. Wählen Sie ein Objekt mit Netzproblemen aus
+2. Wenden Sie die Operation **Reparieren** aus dem Menü **Netz** an
+3. Prüfen Sie die Statistik vor und nach der Reparatur, um zu sehen, was behoben wurde
 
-## Statistiken (schreibgeschützt)
+## Statistik (schreibgeschützt)
 
-- **Vertices vorher / Vertices nachher** - Anzahl der Vertices vor und nach der Reparatur
-- **Flächen vorher / Flächen nachher** - Anzahl der Flächen vor und nach der Reparatur
-- **Nicht-mannigfaltige Kanten vorher / Nicht-mannigfaltige Kanten nachher** - Anzahl der problematischen Kanten vor und nach der Reparatur
+- **Anfangs-Eckpunkte / Endpunkte** - Anzahl der Eckpunkte vor und nach der Reparatur
+- **Anfangsflächen / Endflächen** - Anzahl der Flächen vor und nach der Reparatur
+- **Anfängliche nicht-mannigfaltige Kanten / Finale nicht-mannigfaltige Kanten** - Anzahl der problematischen Kanten vorher und nachher
 
 ### Erweiterte Optionen
 
-Aktivieren Sie den Modus **Erweitert** für eine feinere Steuerung:
+Aktivieren Sie den Modus **Erweitert** für eine feinstufige Kontrolle:
 
-- **Vertices verschweißen** - Nahezu deckungsgleiche Vertices zusammenführen (Standard: ein)
-- **Schweißtoleranz** - Wie nah Vertices beieinander liegen müssen, um zusammengeführt zu werden
-- **Flächenausrichtung** - Dreht nach innen gestülpte Hüllen richtig herum, sodass jeder Körper als solide erkannt wird. Jede Hülle wird für sich beurteilt, sodass ein hohles Modell seine Hohlräume behält, statt dass diese aufgefüllt werden. Hüllen, deren eigene Flächen sich widersprechen, bleiben unverändert, statt dass geraten wird, und bei Modellen, die nicht wasserdicht sind, wird auf eine tolerantere Reparatur zurückgegriffen - führen Sie zuerst **Löcher füllen** aus, wenn die Ausrichtung allein das Problem nicht behebt.
-- **Kanten verschweißen** - Kleine Risse und fehlerhafte Nähte reparieren
-- **Löcher füllen** - Lücken in der Mesh-Oberfläche schließen
-- **Entfernungsmodus** - Innenliegende oder verdeckte Geometrie entfernen:
+- **Punkte verschweißen** - Nahezu deckungsgleiche Eckpunkte zusammenführen (Standard: ein)
+- **Verschweißtoleranz** - Wie nah Eckpunkte beieinander liegen müssen, um zusammengeführt zu werden
+- **Flächenorientierung** - Dreht nach innen gestülpte Hüllen richtig herum, sodass jeder Körper als Volumenkörper gelesen wird. Jede Hülle wird für sich beurteilt, sodass ein hohles Modell seine Hohlräume behält, statt dass diese gefüllt werden. Hüllen, deren eigene Flächen sich widersprechen, werden unangetastet gelassen, statt darüber zu spekulieren, und Modelle, die nicht wasserdicht sind, greifen auf eine toleranter Reparatur zurück - führen Sie zuerst **Löcher füllen** aus, wenn die Orientierung allein sie nicht behebt.
+- **Kanten verschweißen** - Kleine Risse und schlechte Nähte reparieren
+- **Löcher füllen** - Lücken in der Netzoberfläche schließen
+- **Entfernen-Modus** - Interne oder verdeckte Geometrie entfernen:
   - **Keine** - Gesamte Geometrie beibehalten
-  - **Innenliegend** - Innere Körper entfernen, die in der Hauptform verborgen sind
+  - **Innenbereich** - Innenliegende Körper entfernen, die in der Hauptform verborgen sind
   - **Verdeckt** - Flächen entfernen, die von außen nicht sichtbar sind
 
 ## Tipps
 
-- Versuchen Sie es zuerst mit Reparieren, wenn boolesche Operationen (Vereinigen, Subtrahieren) bei importierten Modellen unerwartete Ergebnisse liefern
-- Die Standardeinstellungen (Vertices verschweißen ein, alles andere aus) beheben die häufigsten Probleme
+- Probieren Sie zuerst Reparieren, wenn boolesche Operationen (Vereinen, Subtrahieren) bei importierten Modellen unerwartete Ergebnisse liefern
+- Die Standardeinstellungen (Punkte verschweißen ein, alles andere aus) beheben die häufigsten Probleme
 - Aktivieren Sie Löcher füllen, wenn Sie durch Lücken im Modell hindurchsehen können
-- Verwenden Sie Innenliegend entfernen, um Modelle zu bereinigen, die verborgene Geometrie im Inneren enthalten
+- Verwenden Sie den Entfernen-Modus Innenbereich, um Modelle zu bereinigen, die verborgene Geometrie im Inneren haben
 
 ## Verwandte Themen
 

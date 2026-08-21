@@ -7,7 +7,7 @@ source_lang: en
 ---
 # Teilen
 
-Mit MatterCAD können Sie Ihre Designs über Freigabecodes mit anderen Benutzern teilen. So lässt sich einfach gemeinsam an Designs arbeiten oder Ihre Arbeit verteilen.
+Mit MatterCAD können Sie Ihre Designs über Freigabecodes mit anderen Benutzern teilen. So lässt sich einfach an Designs zusammenarbeiten oder die eigene Arbeit verbreiten.
 
 ![20260323 210309 paste 20260323 210309](https://matterhackers.github.io/MatterCAD_Docs/assets/20260323-210309-paste-20260323-210309.jpg)
 
@@ -20,18 +20,18 @@ Mit MatterCAD können Sie Ihre Designs über Freigabecodes mit anderen Benutzern
 
 ## Ein geteiltes Design empfangen
 
-1. Lassen Sie sich von jemandem einen Freigabecode geben
-2. Verwenden Sie die Option **Freigabecode einlösen** in der Bibliothek
+1. Lassen Sie sich einen Freigabecode von jemandem geben
+2. Verwenden Sie die Option **Code teilen einlösen** in der Bibliothek
 3. Das geteilte Design wird Ihrer Bibliothek hinzugefügt
 
 ## Tipps
 
 - Freigabecodes funktionieren mit Designs, die in der Cloud-Bibliothek gespeichert sind
-- Der Empfänger erhält eine Kopie des Designs -- seine Änderungen wirken sich nicht auf Ihr Original aus
-- Freigabecodes können über jeden Kanal weitergegeben werden: E-Mail, Chat, soziale Medien usw.
+- Der Empfänger erhält eine Kopie des Designs – Änderungen daran wirken sich nicht auf Ihr Original aus
+- Freigabecodes können über jeden beliebigen Kanal verbreitet werden: E-Mail, Chat, soziale Medien usw.
 
 ## Verwandte Themen
 
-- [Cloud-Bibliothek](cloud-library.md) - Designs online speichern, um sie zu teilen
-- [Lokale Bibliothek](local-library.md) - Designs auf Ihrem Computer verwalten
-- [Speichern und Exportieren](../getting-started/saving-and-exporting.md) - Alternative Möglichkeiten, Dateien zu teilen
+- [Cloud-Bibliothek](cloud-library.md) – Designs online speichern, um sie zu teilen
+- [Lokale Bibliothek](local-library.md) – Designs auf Ihrem Computer verwalten
+- [Speichern und Exportieren](../getting-started/saving-and-exporting.md) – Alternative Möglichkeiten, Dateien zu teilen

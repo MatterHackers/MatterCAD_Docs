@@ -18,14 +18,14 @@ Eine dreieckige Prismenform -- wie ein Würfel, der diagonal von einer Kante zur
 
 - **Breite** - Größe entlang der X-Achse (Standard: 20mm)
 - **Tiefe** - Größe entlang der Y-Achse (Standard: 20mm)
-- **Höhe** - Wie hoch der Keil an seiner höchsten Stelle ist (Standard: 20mm)
-- **Rundung** - Fügt der oberen Kante eine Rundung hinzu (Keine, Oben oder Unten)
-- **Rundungssegmente** - Glättegrad der Rundung (sichtbar, wenn Rundung aktiviert ist)
+- **Höhe** - Wie hoch der Keil an seinem höchsten Punkt ist (Standard: 20mm)
+- **Rund** - Rundung an der oberen Kante hinzufügen (Keine, Oben oder Unten)
+- **Rundungssegmente** - Glätte der Rundung (sichtbar, wenn **Rund** aktiviert ist)
 
 ## Tipps
 
-- Keile eignen sich hervorragend zum Erstellen von Rampen, schrägen Halterungen und Stützstrukturen
-- Verwenden Sie die Option Rundung für weiche Übergänge an der schrägen Kante
+- Keile eignen sich hervorragend für Rampen, abgewinkelte Halterungen und Stützstrukturen
+- Verwenden Sie die Option **Rund** für weiche Übergänge an der schrägen Kante
 
 ## Verwandte Themen
 

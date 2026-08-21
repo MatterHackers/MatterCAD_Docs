@@ -9,7 +9,7 @@ source_lang: en
 ---
 # Array
 
-Array erzeugt mehrere Kopien eines Objekts, die in einem Muster angeordnet werden. Wählen Sie oben über die Schaltflächen einen Modus – **Linear**, **Radial** oder **Transformation** –, um zwischen den Mustertypen zu wechseln.
+Array erstellt mehrere Kopien eines Objekts, die in einem Muster angeordnet werden. Wählen Sie oben über die Schaltflächen einen Modus — **Linear**, **Radial** oder **Transformieren** —, um zwischen den Mustertypen zu wechseln.
 
 <!--  Screenshot of the Array operation panel showing the mode buttons at the top (Linear | Radial | Transform) -->
 ![20260506 080647 paste 20260506 080647](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080647-paste-20260506-080647.jpg)
@@ -18,105 +18,105 @@ Array erzeugt mehrere Kopien eines Objekts, die in einem Muster angeordnet werde
 ## Verwendung
 
 1. Wählen Sie ein Objekt aus
-2. Wenden Sie die Operation **Array** aus dem Menü „Duplizieren“ an
-3. Wählen Sie einen Modus (Linear, Radial oder Transformation)
-4. Passen Sie die Parameter des gewählten Modus an
+2. Wenden Sie die Operation **Array** aus dem Menü Duplizierung an
+3. Wählen Sie einen Modus (Linear, Radial oder Transformieren)
+4. Passen Sie die Parameter für den gewählten Modus an
 
 ## Modus: Linear
 
-Im Modus „Linear“ werden Kopien entlang einer Richtung platziert, wahlweise mit fortschreitender Drehung und Skalierung.
+Im Modus Linear werden Kopien entlang einer Richtung platziert, wahlweise mit fortschreitender Drehung und Skalierung.
 
-**Anzahl** – Anzahl der Kopien (ganze Zahl oder Ausdruck). Das Ausgangsobjekt ist die erste Kopie; weitere Kopien werden dazu versetzt.
+**Anzahl** — Anzahl der Kopien (Ganzzahl oder Ausdruck). Das Ausgangsobjekt ist die erste Kopie; weitere Kopien werden davon versetzt.
 
-**Versatzmethode** – Wie der Abstand berechnet wird:
-- **Relativ** – Der Versatz wird mit der Größe des Begrenzungsrahmens des Objekts multipliziert. Ein relativer Versatz von (1, 0, 0) setzt die Kopien entlang X genau eine Objektbreite auseinander.
-- **Versatz** – Fester Abstand im Weltkoordinatensystem in mm pro Kopie.
-- **Endpunkt** – Legt die Position der letzten Kopie fest; der Abstand wird gleichmäßig auf die Kopien verteilt.
+**Versatzmethode** — Wie der Abstand berechnet wird:
+- **Relativ** — Der Versatz wird mit der Größe des Begrenzungsrahmens des Objekts multipliziert. Ein Relativer Offset von (1, 0, 0) setzt die Kopien entlang X genau eine Objektbreite auseinander.
+- **Versatz** — Fester Abstand im Weltkoordinatensystem in mm pro Kopie.
+- **Endpunkt** — Legt die Position der letzten Kopie fest; der Abstand wird gleichmäßig auf die Kopien verteilt.
 
-**Relativer Versatz** / **Versatz** / **Endpunkt** – Der Abstandsvektor, abhängig von der gewählten Versatzmethode.
+**Relativer Offset** / **Versatz** / **Endpunkt** — Der Abstandsvektor, abhängig von der gewählten Versatzmethode.
 
-**Rotationsmodus** – Wie sich die Drehung über die Kopien hinweg aufsummiert:
-- **Lokal** – Jede Kopie dreht sich an Ort und Stelle um ihren eigenen Mittelpunkt; die Versatzrichtung bleibt an den Weltachsen ausgerichtet.
-- **Kumulativ** – Die Drehung summiert sich auf und lenkt den Versatz mit, wodurch Spiralen, Fächer und Helices entstehen.
+**Drehmodus** — Wie sich die Drehung über die Kopien hinweg aufsummiert:
+- **Lokal** — Jede Kopie dreht sich an Ort und Stelle um ihren eigenen Mittelpunkt; die Versatzrichtung bleibt an den Weltachsen ausgerichtet.
+- **Verbund** — Die Drehung summiert sich auf und lenkt den Versatz mit, wodurch Spiralen, Fächer und Helices entstehen.
 
-**Drehung** – Drehung pro Kopie in Grad je Achse.
+**Drehung** — Drehung pro Kopie in Grad um jede Achse.
 
-**Skalierung** – Kumulative Skalierung pro Kopie je Achse. Werte kleiner als 1 verkleinern die Kopien, Werte größer als 1 vergrößern sie.
+**Skalieren** — Kumulative Skalierung pro Kopie auf jeder Achse. Werte kleiner als 1 verkleinern die Kopien, Werte größer als 1 vergrößern sie.
 
-**Skalierung wirkt auf Versatz** – Wenn aktiviert, skaliert auch der Abstand zwischen den Kopien mit jedem Schritt. Verwenden Sie dies für enger werdende Spiralen und geometrische Progressionen (Nautilusschalen, gestapelte Schneckenkurven).
+**Skalierung beeinflusst Versatz** — Wenn aktiviert, wird auch der Abstand zwischen den Kopien mit jedem Schritt skaliert. Verwenden Sie dies für enger werdende Spiralen und geometrische Progressionen (Nautilusschalen, gestapelte Nagelschalenkurven).
 
 ## Modus: Radial
 
-Im Modus „Radial“ werden Kopien gleichmäßig um eine zentrale Achse in einem festen Radius verteilt.
+Im Modus Radial werden Kopien gleichmäßig um eine Mittelachse in einem festen Radius verteilt.
 
 <!--  Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
 ![20260506 092618 paste 20260506 092618](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-092618-paste-20260506-092618.jpg)
 
 
-**Anzahlmethode** – Wie die Anzahl der Kopien bestimmt wird:
-- **Anzahl** – Explizite Anzahl der Kopien.
-- **Abstand** – Winkelabstand zwischen den Kopien in Grad; die Anzahl wird so berechnet, dass der Bereich gefüllt wird.
+**Zählmethode** — Wie die Anzahl der Kopien bestimmt wird:
+- **Anzahl** — Explizite Anzahl der Kopien.
+- **Abstand** — Winkelabstand zwischen den Kopien in Grad; die Anzahl wird berechnet, um den Sweep zu füllen.
 
-**Anzahl** / **Winkelabstand** – Anzahl der Kopien (Modus „Anzahl“) oder Winkelabstand in Grad (Modus „Abstand“). Unterstützt Ausdrücke.
+**Anzahl** / **Winkelabstand** — Anzahl der Kopien (Modus Anzahl) oder Winkelabstand in Grad (Modus Abstand). Unterstützt Ausdrücke.
 
-**Zentrale Achse** – Die Achse, um die gedreht wird (Standard: Z).
+**Mittelachse** — Die Achse, um die gedreht wird (Standard: Z).
 
-**Kreissegment** – Ob die Kopien einen vollen 360°-Kreis (**Voll**) oder einen Teilbogen (**Bogen**) umspannen.
+**Kreissegment** — Ob die Kopien einen vollständigen 360°-Kreis (**Voll**) oder einen Teilbogen (**Bogen**) umspannen.
 
-**Radius** – Abstand von der zentralen Achse zu jeder Kopie.
+**Radius** — Abstand von der Mittelachse zu jeder Kopie.
 
-**Überstrichener Winkel** – Zu füllender Bogen in Grad (wird angezeigt, wenn Kreissegment auf „Bogen“ steht). Unterstützt Ausdrücke.
+**Sweep-Winkel** — Zu füllender Bogen in Grad (wird angezeigt, wenn Kreissegment auf Bogen steht). Unterstützt Ausdrücke.
 
-**Drehung ausrichten** – Dreht jede Kopie so, dass ihre Vorwärtsachse vom Mittelpunkt nach außen zeigt.
+**Rotation ausrichten** — Dreht jede Kopie so, dass ihre Vorwärtsachse vom Mittelpunkt nach außen zeigt.
 
-**Vorwärtsachse** – Welche Achse der Kopie für die Ausrichtung als „vorwärts“ gilt (wird angezeigt, wenn „Drehung ausrichten“ aktiviert ist).
+**Vorwärtsachse** — Welche Achse der Kopie für die Ausrichtung als „vorwärts“ behandelt wird (wird angezeigt, wenn Rotation ausrichten aktiviert ist).
 
-## Modus: Transformation
+## Modus: Transformieren
 
-Im Modus „Transformation“ werden die Kopien über eine manuelle Transformation oder anhand der Transformation eines anderen Objekts schrittweise versetzt.
+Im Modus Transformieren werden die Kopien mit einer manuellen Transformation oder anhand der Transformation eines anderen Objekts schrittweise versetzt.
 
-**Anzahl** – Anzahl der Kopien (ganze Zahl oder Ausdruck).
+**Anzahl** — Anzahl der Kopien (Ganzzahl oder Ausdruck).
 
-**Transformationsreferenz** – Woher die Transformation pro Schritt stammt:
-- **Eingabe** – Sie geben Verschiebung, Drehung und Skalierung direkt an.
-- **Objekt** – Die Transformation wird von einem benannten gleichgeordneten Objekt übernommen.
+**Transformationsreferenz** — Woher die Transformation pro Schritt stammt:
+- **Eingabe** — Sie geben Verschiebung, Drehung und Skalierung direkt an.
+- **Objekt** — Die Transformation wird von einem benannten Geschwisterobjekt übernommen.
 
-**Verschiebung** – Versatz pro Schritt im Weltkoordinatensystem in mm (wird angezeigt, wenn die Referenz „Eingabe“ ist).
+**Verschiebung** — Versatz pro Schritt im Weltkoordinatensystem in mm (wird angezeigt, wenn die Referenz Eingabe ist).
 
-**Drehung** – Drehung pro Schritt in Grad je Achse (wird angezeigt, wenn die Referenz „Eingabe“ ist).
+**Drehung** — Drehung pro Schritt in Grad je Achse (wird angezeigt, wenn die Referenz Eingabe ist).
 
-**Skalierung** / **Skalierungsachsen** – Gleichmäßige und achsenweise Skalierung, die bei jedem Schritt angewendet wird (wird angezeigt, wenn die Referenz „Eingabe“ ist).
+**Skalieren** / **Achsen skalieren** — Gleichmäßige und achsenweise Skalierung, die bei jedem Schritt angewendet wird (wird angezeigt, wenn die Referenz Eingabe ist).
 
-**Transformationsname** – Name des gleichgeordneten Objekts, dessen Transformation als Schrittinkrement verwendet wird (wird angezeigt, wenn die Referenz „Objekt“ ist).
+**Transformationsname** — Name des Geschwisterobjekts, dessen Transformation als Schrittinkrement verwendet wird (wird angezeigt, wenn die Referenz Objekt ist).
 
-**Relativer Raum** – Wenn aktiviert, summiert sich die Transformation jeder Kopie im lokalen Koordinatensystem der vorherigen Kopie; wenn deaktiviert, wird jeder Schritt im Weltkoordinatensystem angewendet (wird angezeigt, wenn die Referenz „Objekt“ ist).
+**Relativer Raum** — Wenn aktiviert, summiert sich die Transformation jeder Kopie im lokalen Bezugssystem der vorherigen Kopie; wenn deaktiviert, wird jeder Schritt im Weltkoordinatensystem angewendet (wird angezeigt, wenn die Referenz Objekt ist).
 
-## Zufällige Variation
+## Randomisieren
 
-Aktivieren Sie **Zufällige Variation**, um allen Kopien Abweichungen hinzuzufügen.
+Aktivieren Sie **Randomisieren**, um allen Kopien Variation hinzuzufügen.
 
-- **Zufälliger Versatz** – Maximaler zufälliger Positionsversatz je Achse in mm.
-- **Zufällige Drehung** – Maximale zufällige Drehung je Achse in Grad.
-- **Zufällige Skalierungsachsen** – Maximale zufällige Skalierungsabweichung je Achse.
-- **Erste ausschließen** – Belässt die erste Kopie an ihrer exakt berechneten Position (Standard: aktiviert).
-- **Letzte ausschließen** – Belässt die letzte Kopie an ihrer exakt berechneten Position.
-- **Zufallswert (Seed)** – Ändern Sie diesen Wert, um eine andere zufällige Anordnung zu erhalten. Unterstützt Ausdrücke.
+- **Zufälliger Versatz** — Maximaler zufälliger Positionsversatz pro Achse in mm.
+- **Zufällige Drehung** — Maximale zufällige Drehung pro Achse in Grad.
+- **Zufallsskalierungsachsen** — Maximale zufällige Skalierungsvariation pro Achse.
+- **Erste ausschließen** — Behält die erste Kopie an ihrer exakt berechneten Position (Standard: aktiviert).
+- **Letzte ausschließen** — Behält die letzte Kopie an ihrer exakt berechneten Position.
+- **Zufallsstartwert** — Ändern Sie diesen Wert, um eine andere zufällige Anordnung zu erhalten. Unterstützt Ausdrücke.
 
 ## Zusammenführen
 
-- **Einzelnes Netz erstellen** – Fasst alle Kopien zu einem zusammengeführten Netzobjekt zusammen.
-- **Scheitelpunkte zusammenführen** – Verschweißt Scheitelpunkte innerhalb des Schwellenwerts für den Zusammenführungsabstand (wird angezeigt, wenn „Einzelnes Netz erstellen“ aktiviert ist).
-- **Abstand** – Schwellenwert für das Zusammenführen in mm (wird angezeigt, wenn „Scheitelpunkte zusammenführen“ aktiviert ist).
+- **Einzelnes Mesh erstellen** — Vereint alle Kopien zu einem einzigen zusammengeführten Mesh-Objekt.
+- **Vertices zusammenführen** — Verschweißt Vertices innerhalb des Schwellenwerts für den Zusammenführungsabstand (wird angezeigt, wenn Einzelnes Mesh erstellen aktiviert ist).
+- **Abstand** — Schwellenwert für das Zusammenführen in mm (wird angezeigt, wenn Vertices zusammenführen aktiviert ist).
 
 ## Tipps
 
-- Verwenden Sie Ausdrücke für Anzahl, Drehung oder Endpunkt, um parametrische Muster zu erstellen
-- Verwenden Sie für kreisförmige Muster den Modus „Radial“ – legen Sie mit dem Radius die Kreisgröße fest und aktivieren Sie „Drehung ausrichten“, wenn die Kopien nach außen zeigen sollen
-- Kumulative Drehung im Modus „Linear“ erzeugt Spiralen und Fächer, ohne dass Winkelversätze manuell berechnet werden müssen
-- „Skalierung wirkt auf Versatz“ erzeugt ganz natürlich Layouts nach Art von Nautilusschalen und geometrischen Progressionen
-- Kombinieren Sie Array mit [Untergeordnetes Objekt auswählen](select-child.md), um Muster zu erstellen, in denen jede Kopie eine andere Variante zeigt
+- Verwenden Sie Ausdrücke für Anzahl, Drehung oder Endpunkt, um parametrische Muster zu erzeugen
+- Verwenden Sie für kreisförmige Muster den Modus Radial — legen Sie den Radius fest, um die Kreisgröße zu steuern, und aktivieren Sie Rotation ausrichten, wenn die Kopien nach außen zeigen sollen
+- Die Verbund-Drehung im Modus Linear erzeugt Spiralen und Fächer, ohne dass Sie Winkelversätze manuell berechnen müssen
+- Skalierung beeinflusst Versatz erzeugt ganz von selbst Layouts nach Art von Nautilusschalen und geometrischen Progressionen
+- Kombinieren Sie Array mit [Unterobjekt auswählen](select-child.md), um Muster zu erstellen, bei denen jede Kopie eine andere Variante zeigt
 
 ## Verwandte Themen
 
-- [Ausrichten](../placement/align.md) – Objekte relativ zueinander positionieren
-- [Untergeordnetes Objekt auswählen](select-child.md) – Eine bestimmte Kopie aus einem Array nach Index oder Name auswählen
+- [Ausrichten](../placement/align.md) - Objekte relativ zueinander positionieren
+- [Unterobjekt auswählen](select-child.md) - Eine bestimmte Kopie aus einem Array anhand von Index oder Name auswählen
