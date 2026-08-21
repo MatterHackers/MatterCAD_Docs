@@ -27,6 +27,7 @@ jobs:
           import os, zipfile
 
           HELP_ROOT = "docs/Help"
+          TRANSLATIONS_ROOT = "translations"
 
           # Build help-docs.zip containing all help articles and JSON metadata from docs/Help/.
           # The app builds the help tree from the zip's directory structure
@@ -42,6 +43,22 @@ jobs:
                           # Entry path relative to docs/, e.g. "Help/operations/array-linear.md"
                           arc_name = os.path.relpath(full_path, "docs").replace("\\", "/")
                           zf.write(full_path, arc_name)
+
+              # Translated articles live outside docs/ so Jekyll never publishes them.
+              # Each language contributes "<lang>/Help/..." entries alongside the canonical tree.
+              if os.path.isdir(TRANSLATIONS_ROOT):
+                  for lang in sorted(os.listdir(TRANSLATIONS_ROOT)):
+                      lang_help = os.path.join(TRANSLATIONS_ROOT, lang, "Help")
+                      if not os.path.isdir(lang_help):
+                          continue
+                      for root, dirs, files in os.walk(lang_help):
+                          dirs.sort()
+                          for fname in sorted(files):
+                              if os.path.splitext(fname)[1].lower() == ".md":
+                                  full_path = os.path.join(root, fname)
+                                  # Entry path relative to translations/, e.g. "de/Help/operations/array-linear.md"
+                                  arc_name = os.path.relpath(full_path, TRANSLATIONS_ROOT).replace("\\", "/")
+                                  zf.write(full_path, arc_name)
               print(f"Generated docs/help-docs.zip with {len(zf.namelist())} entries")
           PYEOF
 
