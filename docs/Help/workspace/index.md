@@ -16,6 +16,8 @@ Learn how to navigate the MatterCAD workspace, use keyboard shortcuts, and manag
 - [Grouping](grouping.md) - Group and ungroup objects for easier management
 - [Components](components.md) - Create reusable components and assemblies
 - [Expressions](expressions.md) - Use math expressions for parametric design
+- [Expression Functions](expression-functions.md) - Reference for every function expressions can call
+- [Object References](object-references.md) - Read another object's settings with `Name.Property`
 - [Variable Sheet](variable-sheet.md) - Store shared values and formulas for parametric designs
 - [Measure Tool](measure-tool.md) - Measure distances between points in your design
 - [Lock and Hide](lock-hide.md) - Lock objects to prevent changes and hide objects to reduce clutter

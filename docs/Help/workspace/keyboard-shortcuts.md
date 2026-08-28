@@ -1,7 +1,7 @@
 ---
 title: Keyboard Shortcuts
 parent: "Workspace"
-nav_order: 4
+nav_order: 5
 ---
 # Keyboard Shortcuts
 

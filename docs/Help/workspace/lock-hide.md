@@ -1,7 +1,7 @@
 ---
 title: Lock and Hide
 parent: "Workspace"
-nav_order: 5
+nav_order: 6
 ---
 # Lock and Hide
 

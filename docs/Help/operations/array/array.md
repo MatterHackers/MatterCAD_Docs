@@ -113,8 +113,10 @@ Enable **Randomize** to add variation to all copies.
 - Compounding rotation in Linear mode creates spirals and fans without manually calculating angle offsets
 - Scale Affects Offset creates nautilus-shell and geometric-progression layouts naturally
 - Combine Array with [Select Child](select-child.md) to create patterns where each copy shows a different variant
+- Inside an Array, `[index]` in an expression is the copy's own position counting from 0 — pair it with `index()` to give every copy its own row of a [Variable Sheet](../../workspace/variable-sheet.md), as in `=index("A", [index]+2)`
 
 ## Related
 
 - [Align](../placement/align.md) - Position objects relative to each other
 - [Select Child](select-child.md) - Pick a specific copy from an array by index or name
+- [Expressions](../../workspace/expressions.md) - Drive each copy from `[index]` and sheet values

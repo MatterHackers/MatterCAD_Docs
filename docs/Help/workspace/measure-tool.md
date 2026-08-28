@@ -1,7 +1,7 @@
 ---
 title: Measure Tool
 parent: "Workspace"
-nav_order: 6
+nav_order: 7
 ---
 # Measure Tool
 

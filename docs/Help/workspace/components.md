@@ -36,4 +36,6 @@ Components are reusable, parameterized groups of objects. When you create a comp
 
 - [Grouping](grouping.md) - Simple grouping without parameterization
 - [Expressions](expressions.md) - Use expressions to link component parameters
+- [Variable Sheet](variable-sheet.md) - Store the shared values a component's parameters read
+- [Object References](object-references.md) - Link a parameter to another object's setting
 - [Design Apps](../designing/design-apps/index.md) - Pre-built components you can customize
