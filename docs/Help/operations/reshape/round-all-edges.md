@@ -12,7 +12,7 @@ Round All Edges rolls every outside edge and corner of a solid off at one radius
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_round_all_edges -->
 ![reshape_round_all_edges](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_round_all_edges.png)
 
-It is the answer to "which edges?" being "all of them". Where [Fillet](fillet.md) asks you to click the edges you want and can give each one its own radius, this one takes the whole part at a single radius and needs no clicks at all.
+It is the answer to "which edges?" being "all of them". Where [Fillet](fillet.md) asks you to click the edges you want, this one takes the whole part and needs no clicks at all. Both round at a single radius.
 
 ## How to Use
 
@@ -80,7 +80,7 @@ Use [Fillet](fillet.md) when:
 
 ## Related
 
-- [Fillet](fillet.md) - Round chosen edges, each at its own radius
+- [Fillet](fillet.md) - Round the edges you pick, at a radius you set
 - [Chamfer](chamfer.md) - Cut chosen edges flat
 - [Hollow Out](hollow-out.md) - Another whole-part operation with a similar cost profile
 - [Decimate](../mesh/decimate.md) - Reduce a heavy mesh before rounding it

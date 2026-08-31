@@ -12,31 +12,33 @@ Chamfer cuts the edges you pick flat, leaving a 45 degree face where the edge wa
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_chamfer -->
 ![reshape_chamfer](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_chamfer.png)
 
-Chamfer and [Fillet](fillet.md) are the same tool with two different profiles -- Chamfer leaves a flat cut, Fillet leaves an arc. Picking edges, per-selection sizes and the messages the panel shows work identically in both, and are described in full on the [Fillet](fillet.md) page.
+Chamfer and [Fillet](fillet.md) are the same tool with two different profiles -- Chamfer leaves a flat cut, Fillet leaves an arc. Picking edges, the one size a whole feature is cut at, and the messages the panel shows work identically in both, and are described in full on the [Fillet](fillet.md) page.
 
 ## How to Use
 
 1. Select a part, or a 2D path
 2. Click **Chamfer** in the Reshape group of the toolbar
 3. Click an edge (or, on a path, a corner) in the 3D view to add it
-4. Set the distance for that selection in the **Edges** list in the Properties panel
+4. Set **Distance** in the Properties panel
 
 Nothing is cut until you pick something. A fresh Chamfer on a solid is the part unchanged, waiting for a click.
+
+**One Chamfer, one distance.** Every edge a Chamfer selects is cut back by the same amount. If part of your shape needs a different distance, apply a second Chamfer on top of the first and pick those edges there.
 
 ## Picking Edges
 
 Hover the part and the edge under the cursor lights up white; click to add it, click it again to remove it. **Shift-click cycles what the click means** -- the edge alone, the loop it belongs to, or that loop read more coarsely so it does not stop at the facets of a curved wall. Shift-click only shows you the reading; a normal click commits it.
 
-Every committed selection becomes a row in the **Edges** list with its own distance, its own accent colour, a button that lights it up in the 3D view, and a remove button. Unlike Fillet, there is no segment count per row: a flat cut is one straight step across, and a second step would only put a point on a line.
+Every committed selection becomes a row in the **Edges** list with its own accent colour, a button that lights it up in the 3D view, and a remove button. There is no segment count anywhere on a Chamfer: a flat cut is one straight step across, and a second step would only put a point on a line.
 
-<!-- IMAGE_NEEDED: Screenshot of the Properties panel for a Chamfer with three groups in the Edges list, showing the per-group distance fields, colour swatches and remove buttons -->
+<!-- IMAGE_NEEDED: Screenshot of the Properties panel for a Chamfer with three groups in the Edges list, showing the colour swatches, highlight buttons and remove buttons -->
 
 On a 2D path the panel shows **Corners** and **Corner Threshold** instead. Small balls appear at each corner; click one to cut it, click it again to leave it sharp. With no corners selected every corner is cut, which is what a new Chamfer on a path starts out doing.
 
 ## Parameters
 
-- **Distance** - How far back from the edge the cut starts, measured along *each* of the two faces the edge joins. This is a *default* given to edges picked from now on, not the size of the chamfer: changing it does not resize anything already picked. Edit an existing selection's row in the list instead
-- **Edges** - The list of selections on a solid, one distance per row
+- **Distance** - How far back from the edge the cut starts, measured along *each* of the two faces the edge joins. Every edge this Chamfer selects is cut back by it; for a second distance, apply a second Chamfer
+- **Edges** - The list of selections on a solid
 - **Corners** - The same list for a 2D path. Empty means every corner
 - **Corner Threshold** - 2D only. How far a corner has to bend from straight before it counts as a corner at all
 

@@ -12,16 +12,18 @@ Fillet rounds the edges you pick. On a solid it rolls a ball of the radius you g
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_fillet -->
 ![reshape_fillet](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_fillet.png)
 
-Fillet and [Chamfer](chamfer.md) are the same tool with two different profiles -- Fillet leaves an arc, Chamfer leaves a flat cut -- so everything on this page about picking edges, group sizes and the messages the panel shows is true of both. If you want every outside edge of a part rounded at one radius and do not want to pick anything, use [Round All Edges](round-all-edges.md) instead.
+Fillet and [Chamfer](chamfer.md) are the same tool with two different profiles -- Fillet leaves an arc, Chamfer leaves a flat cut -- so everything on this page about picking edges and the messages the panel shows is true of both. If you want every outside edge of a part rounded at one radius and do not want to pick anything, use [Round All Edges](round-all-edges.md) instead.
 
 ## How to Use
 
 1. Select a part, or a 2D path
 2. Click **Fillet** in the Reshape group of the toolbar
 3. Click an edge (or, on a path, a corner) in the 3D view to add it
-4. Set the radius for that selection in the **Edges** list in the Properties panel
+4. Set **Radius** in the Properties panel
 
 Nothing is rounded until you pick something. A fresh Fillet on a solid is the part unchanged, waiting for a click.
+
+**One Fillet, one radius.** Every edge a Fillet selects is rounded at the same radius, the way every mainstream CAD package models the feature. If part of your shape needs a different radius, apply a second Fillet on top of the first and pick those edges there.
 
 ## Picking Edges on a Solid
 
@@ -37,14 +39,13 @@ Shift-click steps to the next reading and shows it without committing anything. 
 
 <!-- IMAGE_NEEDED: Screenshot of the 3D view with a Fillet selected, showing an edge highlighted in white under the cursor and two already-picked groups drawn in their own accent colors -->
 
-Each selection you commit becomes a row in the **Edges** list, labelled with what it is and how many edges it came to -- "1. Edge, 1 edge", "2. Chain, 64 edges", "3. Face Group, 4 edges". Every row carries:
+Each selection you commit becomes a row in the **Edges** list, labelled with what it is and how many edges it came to -- "1. Edge, 1 edge", "2. Chain, 64 edges", "3. Face Group, 4 edges". The list is what you have selected, not how big the round is; every row carries:
 
-- **its own radius and segment count**, so one Fillet can hold a 1 mm edge and a 5 mm one
 - a colour swatch showing the colour that group's edges are drawn in
 - a button that lights the group up in the 3D view, so you can tell which row means which edges
 - a remove button, which stops beveling those edges
 
-You can also drag the size handle that sits on each group in the 3D view to set its size by eye. Press **Esc** during the drag to cancel it.
+You can also drag the size handle that sits on each selected run in the 3D view to set the radius by eye. There is one number, so every handle moves together and any of them will do. Press **Esc** during the drag to cancel it.
 
 ## Picking Corners on a 2D Path
 
@@ -61,9 +62,9 @@ There is no shift-click here -- a corner is a corner, where an edge could also h
 
 ## Parameters
 
-- **Radius** - The radius newly picked edges and corners are given. It is the radius of the largest ball that would roll along the edge. This is a *default*, not the size of the fillet: changing it does not resize anything already picked. To change an existing selection, edit its row in the list
-- **Segments** - How many straight steps each arc is drawn with, again for edges picked from now on. More segments make a smoother curve and a heavier mesh. 8 is plenty for most parts
-- **Edges** - The list of selections on a solid, with a size and segment count per row (see above)
+- **Radius** - The radius every edge and corner this Fillet selects is rounded at. It is the radius of the largest ball that would roll along the edge. One Fillet has one radius; for a second radius, apply a second Fillet
+- **Segments** - How many straight steps each arc is drawn with. More segments make a smoother curve and a heavier mesh. 8 is plenty for most parts
+- **Edges** - The list of selections on a solid (see above)
 - **Corners** - The same list for a 2D path. Empty means every corner
 - **Corner Threshold** - 2D only. How far a corner has to bend from straight before it counts as a corner at all. Vertices straighter than this are left alone, which keeps a curve made of many short segments from being "rounded" segment by segment
 
@@ -101,6 +102,7 @@ One repair is made silently. A mesh made of loose, unwelded triangles -- which m
 - Selections survive a rebuild. They are stored as geometry, not as edge numbers, so changing the size of the box under a Fillet keeps the same edges rounded
 - If a whole rim should be rounded, click one edge of it and shift-click once -- that is nearly always faster and more robust than picking edges one at a time
 - Keep segments low while you work and raise them at the end. Every segment is mesh
+- Two radii on one part are two Fillets. Round the edges that share a radius, then apply another Fillet for the rest -- the same way you would in any other CAD package
 - Concave edges get a bead of material added into the corner rather than material cut away, which is what a fillet means on the inside of a shape
 - If every edge of the part should be rounded at one radius, [Round All Edges](round-all-edges.md) needs no picking at all
 
