@@ -27,6 +27,8 @@ Smooth Path rounds the corners and curves of a 2D path, creating softer, more or
 
 ## Related
 
+- [Fillet](../reshape/fillet.md) - Round chosen corners to an exact radius instead of smoothing the whole path
+- [Chamfer](../reshape/chamfer.md) - Cut chosen corners off flat
 - [Inflate Path](inflate-path.md) - Expand a path outward
 - [Outline Path](outline-path.md) - Create an outline from a path
 - [Linear Extrude](linear-extrude.md) - Give the smoothed path height

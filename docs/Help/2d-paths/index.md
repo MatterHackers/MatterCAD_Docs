@@ -18,3 +18,7 @@ nav_order: 1
 - [Ring Path](ring-path.md) - A 2D ring (circle with a hole)
 - [Star Path](star-path.md) - A star-shaped 2D outline with configurable points
 - [Custom Path](custom-path.md) - Draw your own 2D path with control points
+
+## Softening Corners
+
+Any of these paths can have its corners rounded or cut before you give it height. Use [Fillet](../operations/reshape/fillet.md) to round chosen corners to an exact radius, [Chamfer](../operations/reshape/chamfer.md) to cut them off flat, or [Smooth Path](../operations/path/smooth-path.md) to soften the whole path at once.
