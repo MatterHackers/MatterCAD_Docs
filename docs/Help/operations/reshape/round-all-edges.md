@@ -14,25 +14,33 @@ Round All Edges rolls every outside edge and corner of a solid off at one radius
 
 It is the answer to "which edges?" being "all of them". Where [Fillet](fillet.md) asks you to click the edges you want, this one takes the whole part and needs no clicks at all. Both round at a single radius.
 
+It rounds the edges that stick out, and only those. Its mirror image, [Round Inside Edges](round-inside-edges.md), fills the ones that go in. Neither touches the other's edges, so running both is how you round everything.
+
 ## How to Use
 
 1. Select a solid part
 2. Click **Round All Edges** in the Reshape group of the toolbar
 3. Set the **Radius**
-4. Wait -- this one takes real time, and shows a progress bar while it works
+4. Wait -- on most parts this takes real time, and shows a progress bar while it works
 
 ## Parameters
 
 - **Radius** - How far every outside edge is rounded. It is the radius of the largest ball that would roll over the whole part. The part has to be thicker than twice this everywhere (default: 1 mm)
 - **Segments** - How finely the rounding ball is drawn (default: 12). This is the single biggest lever on how long the operation takes, because the ball's detail is paid for on every triangle of the part. 12 is smooth enough for a rounding of any normal size; raise it only if you can see the facets
 
-## It Takes Time, and You Can Stop It
+## How Long It Takes, and How to Stop It
 
-Round All Edges is much slower than a Fillet on a few edges, and honestly so -- it does real work over every triangle of the part rather than over a handful of edges. Seconds on a simple part, considerably longer on a detailed or imported one.
+How long this takes depends on one thing about your part, and the two answers are very far apart.
+
+**A part with no dents in it is fast.** If the shape bulges outward everywhere -- a box, a cylinder, a cone, a wedge, a sphere, anything with no pocket, step or notch cut into it -- there is a shortcut, and Round All Edges takes it without being asked. These finish in a blink; the progress bar is barely there.
+
+**A part with an inside corner anywhere on it is slow.** Cut one notch in that box and the shortcut is gone: the work is now done over every triangle of the part rather than over a handful of edges. Seconds on a simple part, considerably longer on a detailed or imported one. This is the case most real parts are in.
+
+You do not have to work out which one you are in -- the operation does that itself, every time, and takes the fast route whenever it is available.
 
 While it runs there is a progress bar in the task area with a **Cancel** button beside it. Cancelling leaves the part as it was, unrounded, and costs nothing but the time already spent.
 
-Two things keep the bill down:
+Two things keep the bill down on the slow case:
 
 - **Keep Segments low.** It multiplies into every step of the work
 - **Round last.** Do it once, at the end, on the finished shape
@@ -67,19 +75,20 @@ Use **Round All Edges** when:
 Use [Fillet](fillet.md) when:
 
 - only some edges should be rounded, or different edges want different radii
-- you need the inside corners rounded too. Round All Edges only touches outside (convex) edges; it leaves inside corners exactly as they are
+- you need only SOME of the inside corners rounded. Round All Edges never touches an inside corner; [Round Inside Edges](round-inside-edges.md) rounds all of them at once, and a Fillet is what picks a few
 - the part is large or detailed and you do not want to pay for whole-part work
 - you want the selection to be a parametric part of the design that survives changes to the shape underneath
 
 ## Tips
 
 - The radius is measured in the source part's own units, so a part with a non-uniform scale on it rounds into an oval rather than a circle. Scale before rounding, not after
-- It rounds outside edges only. If you need the inside of a pocket softened as well, add a [Fillet](fillet.md) on those edges
+- It rounds outside edges only. To soften the inside of a pocket as well, add [Round Inside Edges](round-inside-edges.md) after it, or a [Fillet](fillet.md) on just the corners that matter
 - The result is a new solid, so booleans, transforms and everything else work on it normally
 - If you only want a soft break on the edges rather than a visible round, a small [Chamfer](chamfer.md) on the edges that matter is much faster
 
 ## Related
 
+- [Round Inside Edges](round-inside-edges.md) - The mirror image: fills every inside corner instead
 - [Fillet](fillet.md) - Round the edges you pick, at a radius you set
 - [Chamfer](chamfer.md) - Cut chosen edges flat
 - [Hollow Out](hollow-out.md) - Another whole-part operation with a similar cost profile

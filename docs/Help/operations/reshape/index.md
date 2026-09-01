@@ -15,6 +15,7 @@ Reshape operations deform and modify the geometry of your objects, allowing you 
 - [Fillet](fillet.md) - Round the edges you pick, or the corners of a 2D path
 - [Chamfer](chamfer.md) - Cut the edges you pick flat, or the corners of a 2D path
 - [Round All Edges](round-all-edges.md) - Round every outside edge of a solid at one radius
+- [Round Inside Edges](round-inside-edges.md) - Fill every inside corner of a solid at one radius
 - [Curve](curve.md) - Bend an object along a curve
 - [Twist](twist.md) - Rotate an object progressively along its height
 - [Pinch](pinch.md) - Compress an object toward its center axis
