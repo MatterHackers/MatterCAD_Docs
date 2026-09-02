@@ -47,6 +47,26 @@ sum(value, value, ...)
 
 Adds its arguments. `=sum(A1, A2, A3)` totals three cells; `=sum(2, 3, 4)` is `9`.
 
+## mod
+
+```
+mod(number, divisor)
+```
+
+The remainder of `number` divided by `divisor`: `=mod(7, 3)` is `1`.
+
+The result always takes the sign of the **divisor**, the way a spreadsheet's `MOD` does — so `=mod(-1, 2)` is `1`, not `-1`. That is what makes it safe for "every other one" tests, which stay correct even where the counter goes negative:
+
+```
+=mod(index, 2) == 0
+```
+
+That is `1` on the even items and `0` on the odd ones, so multiplying by it turns a feature on for every other one.
+
+The divisor does not have to be a whole number: `=mod(0.85, 0.05)` is `0`, and `=mod(0.9, 0.4)` is `0.1`.
+
+A divisor of `0` has no answer, so it is an error — the cell shows the formula text instead of a value, the same as dividing by zero does.
+
 ## strcat / concat
 
 ```
