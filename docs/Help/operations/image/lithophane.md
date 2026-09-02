@@ -36,5 +36,5 @@ A lithophane is a thin 3D panel where an image is encoded as varying thickness. 
 
 ## Related
 
-- [Image Converter](image-converter.md) - Create raised relief from images instead
+- [Image Converter](image-converter.md) - Trace an image's shapes and extrude them, instead of turning brightness into thickness
 - [Image to Path](image-to-path.md) - Trace image outlines as paths

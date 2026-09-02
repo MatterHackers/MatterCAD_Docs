@@ -41,4 +41,4 @@ Generate QR codes as 3D objects. You can encode text, URLs, or WiFi credentials 
 ## Related
 
 - [Text](text.md) - Standard 3D text
-- [Image Object](image-object.md) - Convert images to 3D
+- [Image Object](image-object.md) - Place a picture in your design as the input for the image operations

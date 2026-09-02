@@ -28,9 +28,11 @@ Plane Cut slices an object at a specified height with a horizontal plane, keepin
 - Useful for trimming imported models or creating flat bases
 - For cutting with a non-planar shape, use [Subtract](../boolean/subtract.md) with another object instead
 - For cutting with a tilted plane, rotate the object first, apply Plane Cut, then rotate back
+- To get the cross section itself as a 2D path instead of a cut solid, use [Slice to Path](slice-to-path.md)
 
 ## Related
 
+- [Slice to Path](slice-to-path.md) - Keep the outline where the plane crosses, rather than the solid
 - [Intersect](../boolean/intersect.md) - Keep only where objects overlap
 - [Subtract](../boolean/subtract.md) - Cut with any shape, not just a plane
 - [Hollow Out](hollow-out.md) - Create a hollow shell

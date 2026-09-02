@@ -34,5 +34,5 @@ MatterCAD includes a library of 3D primitive shapes that serve as the building b
 - [Braille](braille.md) - Generate 3D-printable Braille text
 - [Braille Card](braille-card.md) - Create Braille cards with embossed text
 - [QR Code](qr-code.md) - Generate QR codes as 3D objects
-- [Image Object](image-object.md) - Import images and convert them to 3D relief
+- [Image Object](image-object.md) - Place a picture in your design as the input for the image operations
 - [SVG Object](svg-object.md) - Import SVG vector graphics as 3D shapes

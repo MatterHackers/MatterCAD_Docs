@@ -21,4 +21,5 @@ Reshape operations deform and modify the geometry of your objects, allowing you 
 - [Pinch](pinch.md) - Compress an object toward its center axis
 - [Radial Pinch](radial-pinch.md) - Pinch an object radially around an axis
 - [Plane Cut](plane-cut.md) - Slice an object with a flat plane at a specified height
+- [Slice to Path](slice-to-path.md) - Take the outline where a horizontal plane crosses a solid, as a 2D path
 - [Hollow Out](hollow-out.md) - Create a hollow shell from a solid object

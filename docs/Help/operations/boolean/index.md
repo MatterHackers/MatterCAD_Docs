@@ -11,7 +11,7 @@ nav_order: 2
 
 Boolean operations let you create complex shapes by combining simpler ones. Select two or more objects and apply a boolean operation to merge, cut, or find the overlap between them.
 
-All four operations are performed by one Boolean object. The toolbar buttons below just pre-select which operation it starts with, and you can change it afterwards from the **Operation** icon row at the top of the Properties panel.
+All four operations are performed by one Boolean object. The toolbar buttons below just pre-select which operation it starts with, and you can change it afterwards from the row of operation icon tabs at the top of the Properties panel.
 
 |Combine|Subtract|Intersect|Subtract & Replace|
 | :--- | :--- | :--- | :--- |

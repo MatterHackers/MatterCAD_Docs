@@ -1,6 +1,6 @@
 ---
 title: Revolve
-articleKey: RevolveObject3D
+articleKey: RevolveObject3D_2, RevolveObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 6
@@ -37,5 +37,7 @@ Revolve spins a 2D path around an axis to create a 3D solid of revolution. This 
 ## Related
 
 - [Linear Extrude](linear-extrude.md) - Extrude straight up instead of revolving
+- [Sweep](sweep.md) - Carry a profile along a 3D curve instead of around an axis
+- [Loft](loft.md) - Blend between stacked sections
 - [2D Paths](../../2d-paths/index.md) - Create profile paths to revolve
 - [Torus](../../primitives/torus.md) - A ready-made revolved ring shape

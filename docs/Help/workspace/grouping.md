@@ -1,5 +1,6 @@
 ---
 title: Grouping
+articleKey: GroupObject3D, GroupHolesAppliedObject3D
 parent: "Workspace"
 nav_order: 4
 ---

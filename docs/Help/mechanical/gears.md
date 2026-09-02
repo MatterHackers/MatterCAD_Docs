@@ -49,5 +49,7 @@ Create 3D gears with fully configurable tooth geometry. MatterCAD generates prop
 
 ## Related
 
+- [Cycloidal Gear](cycloidal-gear.md) - A cycloidal speed reducer, for large reductions in one compact stage
+
 - [Gear 2D](gear-2d.md) - 2D gear path for path operations
 - [Threads](threads.md) - Create threaded features

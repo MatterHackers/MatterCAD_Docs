@@ -37,7 +37,7 @@ Image to Path traces the outlines of an image to create 2D paths. These paths ca
 
 ## Related
 
-- [Image Converter](image-converter.md) - Create height-map relief instead of flat paths
+- [Image Converter](image-converter.md) - The same trace, already wrapped in an extrude and an optional base
 - [Lithophane](lithophane.md) - Create backlit image displays
 - [SVG Object](../../primitives/svg-object.md) - Import vector graphics directly (no tracing needed)
 - [Linear Extrude](../path/linear-extrude.md) - Give the traced path height

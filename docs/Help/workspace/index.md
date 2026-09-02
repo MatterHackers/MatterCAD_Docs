@@ -20,4 +20,6 @@ Learn how to navigate the MatterCAD workspace, use keyboard shortcuts, and manag
 - [Object References](object-references.md) - Read another object's settings with `Name.Property`
 - [Variable Sheet](variable-sheet.md) - Store shared values and formulas for parametric designs
 - [Measure Tool](measure-tool.md) - Measure distances between points in your design
+- [Description](description.md) - Place a Markdown note in the scene
+- [Modify Parameters](modify-parameters.md) - Drive visibility and colour from expressions
 - [Lock and Hide](lock-hide.md) - Lock objects to prevent changes and hide objects to reduce clutter

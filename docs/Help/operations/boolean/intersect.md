@@ -12,7 +12,7 @@ Intersect keeps only the volume every object shares and discards the rest.
 <!-- AUTO_IMAGE: type=from_mcx file=boolean_intersect -->
 ![boolean_intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)
 
-[Combine](combine.md), [Subtract](subtract.md), Intersect and [Subtract and Replace](subtract-and-replace.md) are all performed by one Boolean object -- the toolbar button creates it with Intersect already selected, and you can switch to any of the other three at any time from the **Operation** icon row at the top of the Properties panel.
+[Combine](combine.md), [Subtract](subtract.md), Intersect and [Subtract and Replace](subtract-and-replace.md) are all performed by one Boolean object -- the toolbar button creates it with Intersect already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 
 Intersect works on solids and on 2D paths. It looks at what you gave it and does the right kind of operation, so intersecting two paths produces one path and intersecting two meshes produces one solid.
 
@@ -20,11 +20,11 @@ Intersect works on solids and on 2D paths. It looks at what you gave it and does
 
 1. Select two or more objects
 2. Click **Intersect** in the toolbar
-3. Change your mind at any time by clicking a different icon in the **Operation** row at the top of the Properties panel -- the shape rebuilds with the new operation
+3. Change your mind at any time by clicking a different operation tab at the top of the Properties panel (each tab shows the operation's icon, hover for its name) -- the shape rebuilds with the new operation
 
 ## Parameters
 
-- **Operation** - Which boolean to perform. Shown as an icon row at the top of the panel
+- **Operation** - Which boolean to perform. Shown as a row of icon tabs at the top of the panel
 - **Keep Inside Out Geometry** - Treat an inside-out shell as solid material instead of letting it cancel out the volume around it. Turn this on when a model that should be solid comes back with parts missing. It forces the slower, exact boolean engine
 - **Repair Winding Order** - Rewind each part's inside-out shells before the boolean runs. This fixes the geometry once rather than changing what every later operation counts as solid, and is usually the better of the two answers to an inside-out model
 

@@ -35,9 +35,12 @@ Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. Thi
 - This works with any 2D path: [Circle](../../2d-paths/circle-path.md), [Box](../../2d-paths/box-path.md), [Star](../../2d-paths/star-path.md), [SVG](../../primitives/svg-object.md), and [Custom](../../2d-paths/custom-path.md) paths
 - Enable Bevel Top for a more polished, professional look
 - For revolving a path around an axis instead of extruding straight up, see [Revolve](revolve.md)
+- For a profile that follows a route through space, see [Sweep](sweep.md); for one that changes shape as it rises, see [Loft](loft.md)
 
 ## Related
 
 - [Revolve](revolve.md) - Spin a path around an axis
+- [Sweep](sweep.md) - Carry a path along a 3D curve
+- [Loft](loft.md) - Blend between two or more stacked paths
 - [2D Paths](../../2d-paths/index.md) - Available path shapes
 - [Text](../../primitives/text.md) - Text is automatically extruded

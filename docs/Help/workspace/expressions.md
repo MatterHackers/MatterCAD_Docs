@@ -10,7 +10,7 @@ Most parameters in MatterCAD accept an expression instead of a plain number. An 
 <!--  Screenshot showing an expression being entered in a parameter field -->
 ![20260318 193631 paste 20260318 193631](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193631-paste-20260318-193631.jpg)
 
-This page describes the expression language itself. See [Expression Functions](expression-functions.md) for the function library, [Object References](object-references.md) for reading another object's settings, and [Variable Sheet](variable-sheet.md) for storing shared values a whole design can use.
+This page describes the expression language itself. See [Expression Functions](expression-functions.md) for the function library, [Object References](object-references.md) for reading another object's settings, [Variable Sheet](variable-sheet.md) for storing shared values a whole design can use, and [Modify Parameters](modify-parameters.md) for driving an object's visibility and colour from an expression.
 
 ## Starting an Expression
 

@@ -12,7 +12,7 @@ Subtract and Replace subtracts the parts you choose out of the parts you did not
 <!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract_and_replace -->
 ![boolean_subtract_and_replace](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract_and_replace.png)
 
-[Combine](combine.md), [Subtract](subtract.md), [Intersect](intersect.md) and Subtract and Replace are all performed by one Boolean object -- the toolbar button creates it with Subtract & Replace already selected, and you can switch to any of the other three at any time from the **Operation** icon row at the top of the Properties panel.
+[Combine](combine.md), [Subtract](subtract.md), [Intersect](intersect.md) and Subtract and Replace are all performed by one Boolean object -- the toolbar button creates it with Subtract & Replace already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 
 Subtract & Replace is not offered for 2D paths -- a region has no removed volume to hand back.
 
@@ -21,14 +21,14 @@ Subtract & Replace is not offered for 2D paths -- a region has no removed volume
 1. Select two or more objects
 2. Click **Subtract & Replace** in the toolbar
 3. Use **Part(s) to Subtract** to choose which children are the cutting shapes
-4. Change your mind at any time by clicking a different icon in the **Operation** row at the top of the Properties panel -- the shape rebuilds with the new operation
+4. Change your mind at any time by clicking a different operation tab at the top of the Properties panel (each tab shows the operation's icon, hover for its name) -- the shape rebuilds with the new operation
 
 ## Parameters
 
-- **Operation** - Which boolean to perform. Shown as an icon row at the top of the panel
-- **Part(s) to Subtract** - Which children are the cutting shapes
+- **Operation** - Which boolean to perform. Shown as a row of icon tabs at the top of the panel
 - **Keep Inside Out Geometry** - Treat an inside-out shell as solid material instead of letting it cancel out the volume around it. Turn this on when a model that should be solid comes back with parts missing. It forces the slower, exact boolean engine
 - **Repair Winding Order** - Rewind each part's inside-out shells before the boolean runs. This fixes the geometry once rather than changing what every later operation counts as solid, and is usually the better of the two answers to an inside-out model
+- **Part(s) to Subtract** - Which children are the cutting shapes
 
 ## Tips
 

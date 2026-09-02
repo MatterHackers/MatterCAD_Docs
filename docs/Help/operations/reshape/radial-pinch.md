@@ -1,5 +1,6 @@
 ---
 title: Radial Pinch
+articleKey: RadialPinchObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 6

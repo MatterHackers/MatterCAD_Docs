@@ -16,3 +16,5 @@ MatterCAD includes specialized tools for creating mechanical components like gea
 - [Gears](gears.md) - Create 3D gears with configurable teeth, module size, and pressure angle
 - [Gear 2D](gear-2d.md) - Create a 2D gear path for use with extrude or other path operations
 - [Threads](threads.md) - Add screw threads to cylindrical objects
+- [Screw](screw.md) - Generate a complete fastener from a standard metric or inch size
+- [Cycloidal Gear](cycloidal-gear.md) - Generate the disc and pin ring of a cycloidal speed reducer

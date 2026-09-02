@@ -49,6 +49,7 @@ Create screw threads with configurable diameter, pitch, and thread profile. Thre
 
 ## Related
 
+- [Screw](screw.md) - A complete fastener with head, drive and tip, built from a standard size
 - [Gears](gears.md) - Create mechanical gear shapes
 - [Cylinder](../primitives/cylinder.md) - A plain round column (no threads)
 - [Subtract](../operations/boolean/subtract.md) - Cut threads out of other objects to create holes
