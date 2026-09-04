@@ -16,6 +16,8 @@ It is the answer to "which edges?" being "all of them". Where [Fillet](fillet.md
 
 It rounds the edges that stick out, and only those. Its mirror image, [Round Inside Edges](round-inside-edges.md), fills the ones that go in. Neither touches the other's edges, so running both is how you round everything.
 
+This operation is [Erode](erode.md) followed by [Dilate](dilate.md) at the same radius. Use those operations separately when you want just the shrink or grow step.
+
 ## How to Use
 
 1. Select a solid part

@@ -14,6 +14,8 @@ Round Inside Edges fills every inside corner of a solid with a bead of one radiu
 
 It is the mirror image of [Round All Edges](round-all-edges.md). That one rounds the edges that stick out; this one fills the ones that go in. Neither touches the other's edges, so the two together round everything -- run Round All Edges, then Round Inside Edges.
 
+This operation is [Dilate](dilate.md) followed by [Erode](erode.md) at the same radius. Use those operations separately when you want just the shrink or grow step.
+
 ## How to Use
 
 1. Select a solid part
