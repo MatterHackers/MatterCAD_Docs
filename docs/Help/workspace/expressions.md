@@ -51,19 +51,30 @@ Three math constants can be used by name anywhere in a formula:
 - `tau` - 6.28318..., a full revolution in radians
 - `e` - 2.71828..., the base of the natural logarithm
 
-Unit constants convert a measurement into MatterCAD's internal millimetres. These must be written in square brackets, because they are substituted into the formula before it is evaluated:
+`[pi]`, `[tau]` and `[e]` work in square brackets too, so you can write either style.
 
-| Constant | Value in mm |
+## Units
+
+Expressions - and the model itself - are always in millimetres. A number with no unit on it is a number of millimetres, no matter which units the workspace is displaying. Write a unit when you want something else converted for you:
+
+| Unit | Value in mm |
 | --- | --- |
-| `[cm]` | 10 |
-| `[m]` | 1000 |
-| `[inch]` | 25.4 |
-| `[ft]` | 304.8 |
+| `mm` | 1 |
+| `cm` | 10 |
+| `m` | 1000 |
+| `in`, `inch` | 25.4 |
+| `ft` | 304.8 |
 
-- `=2 * [inch]` gives `50.8`
-- `=1.5 * [cm] + 2` gives `17`
+- `=1.5in` gives `38.1`
+- `=0.25 in + width/2` adds a quarter inch to half of `width`
 
-`[pi]`, `[tau]` and `[e]` work in brackets too, so you can write either style.
+A unit can be written straight onto a number (`=3mm`, `=1.5 in`) or used as a value of its own (`=2 * in` is the same `50.8` as `=2in`). The bracket form `=2 * [inch]` still works as well.
+
+A unit written on a number belongs to that number alone, exactly the way a decimal point does: `2in` is the single value `50.8`, so `=1/2in` is one divided by two inches, not half an inch. Half an inch is `=0.5in` or `=1/2*in`.
+
+A field that does not start with `=` accepts a unit too: type `1.5in` into a length box and you get 38.1 mm whether the box is showing inches or millimetres. A plain number there is still read in whatever units the box displays.
+
+If a Variable Sheet cell is named after a unit, the cell wins - your own value is used, not the built-in one.
 
 ## Referencing Sheet Values
 
