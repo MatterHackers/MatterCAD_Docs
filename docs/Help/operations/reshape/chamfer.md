@@ -27,7 +27,7 @@ Nothing is cut until you pick something. A fresh Chamfer on a solid is the part 
 
 ## Picking Edges
 
-Hover the part and the edge under the cursor lights up white; click to add it, click it again to remove it. **Shift-click cycles what the click means** -- the edge alone, the loop it belongs to, or that loop read more coarsely so it does not stop at the facets of a curved wall. **Tab** is the same step from the keyboard. Shift-click only shows you the reading; a normal click commits it. A small badge beside the hovered edge names the reading on offer -- "1 edge", "40 edges, chain" -- with a stepper each side for the reading next door.
+Hover the part and the edge under the cursor lights up white; click to add it, click it again to remove it. **One click can mean several things** -- the edge alone, the loop it belongs to, or that loop read more coarsely so it does not stop at the facets of a curved wall. A small badge beside the hovered edge names the reading on offer -- "1 edge", "40 edges, chain" -- with an arrow each side for the reading next door. The arrows only show you a reading; a normal click commits it.
 
 Every committed selection becomes a row in the **Edges** list with its own accent colour, a button that lights it up in the 3D view, a remove button, and a reading dropdown offering that pick's other readings. Choosing one of them replaces that group in its own slot rather than adding a second, and can be undone. There is no segment count anywhere on a Chamfer: a flat cut is one straight step across, and a second step would only put a point on a line.
 

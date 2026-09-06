@@ -29,15 +29,15 @@ Nothing is rounded until you pick something. A fresh Fillet on a solid is the pa
 
 Move the mouse over the part with the Fillet selected and the edge under the cursor lights up in white. Click it to add it. Click an edge that is already selected and it is removed again.
 
-**Shift-click cycles what the click means.** The same click can honestly mean several different things, and MatterCAD offers all of them rather than guessing:
+**One click can mean several things.** The same click can honestly mean several different things, and MatterCAD offers all of them rather than guessing:
 
 - **the edge on its own** -- just what you clicked
 - **the loop it belongs to** -- the run of edges that continues smoothly from it, the way most CAD packages extend a picked edge
 - **that loop read more coarsely** -- the same walk with the surface treated as smoother, so it does not stop at the facets of a curved wall. There are two steadily coarser readings of it, though on a shape where they come to the same edges you will only be offered one
 
-Shift-click steps to the next reading and shows it without committing anything, and **Tab** is the same step from the keyboard. When the one you want is lit, click normally to keep it. This matters most on rounded shapes: the rim of a tessellated cylinder is a single flat facet at the tightest reading and the whole circle at the loosest.
+A small badge sits beside the edge you are hovering and names the reading being offered -- "1 edge", "40 edges, chain" -- with an arrow each side for stepping to the reading next door. The arrows only show the reading; they commit nothing, so when the one you want is lit, click normally to keep it. This matters most on rounded shapes: the rim of a tessellated cylinder is a single flat facet at the tightest reading and the whole circle at the loosest. Where a pick has only one reading there is nothing to step to and the badge shows no arrows.
 
-A small badge sits beside the edge you are hovering and names the reading being offered -- "1 edge", "40 edges, chain" -- with a stepper each side for walking to the reading next door. With nothing hovered it names the reading of whichever row in the **Edges** list is highlighted, and its steppers change that group instead of the pick.
+With nothing hovered the badge names the reading of whichever row in the **Edges** list is highlighted, and its arrows change that group instead of the pick.
 
 <!-- IMAGE_NEEDED: Screenshot of the 3D view with a Fillet selected, showing an edge highlighted in white under the cursor and two already-picked groups drawn in their own accent colors -->
 
@@ -46,7 +46,7 @@ Each selection you commit becomes a row in the **Edges** list, labelled with wha
 - a colour swatch showing the colour that group's edges are drawn in
 - a button that lights the group up in the 3D view, so you can tell which row means which edges
 - a remove button, which stops beveling those edges
-- a reading dropdown, offering the same readings of that pick the badge and Tab do -- "1 edge", "40 edges, chain", with the tolerance named as well when more than one chain is on offer
+- a reading dropdown, offering the same readings of that pick the badge does -- "1 edge", "40 edges, chain", with the tolerance named as well when more than one chain is on offer
 
 Choosing a different reading of an edge a group already holds does not add a second group: the new reading takes the old one's place in the list, keeping its slot and its colour. Like every other edit to the list, it can be undone.
 
@@ -56,7 +56,7 @@ You can also drag the size handle that sits on each selected run in the 3D view 
 
 When the thing you filleted is a 2D path, the panel shows **Corners** and **Corner Threshold** instead of **Edges**, and a small ball appears at every corner of the path. Click a ball to round that corner; click it again to leave it sharp.
 
-There is no shift-click here -- a corner is a corner, where an edge could also have meant its loop.
+There is no reading badge here -- a corner is a corner, where an edge could also have meant its loop.
 
 **With no corners selected, every corner is rounded.** That is the default a new Fillet on a path starts in, and it is what designs saved before corner picking existed still ask for. Pick a corner and you have narrowed it to just the corners you pick.
 
@@ -91,7 +91,7 @@ Others describe a shape the round cannot be swept along at all:
 - *"The faces along this edge meet at N degrees, which is too sharp/flat to bevel."* -- a knife edge or a nearly flat join
 - *"The group resolved to no edges at all."* -- the shape changed under the Fillet and the edge that was picked is no longer there. Pick it again
 - *"The cut removed the whole part, so nothing was left to keep."* -- shown above the list rather than on a row, because it is about the operation and not any one group. The sizes are far too big for the part
-- *"This tangent chain never grew past the edge that was picked... Choose a coarser reading of this pick - from the row's dropdown in the Edges list, or from the badge beside the edge in the 3D view (Tab still cycles them) - because the tolerance ladder goes up to 30 degrees, which reads a tessellated surface as one surface and walks the whole run."* -- you picked a loop on a curved surface at the tightest reading, so the walk stopped at the first facet. Both of the controls it names are on screen while you read it, and either one re-reads the group in place
+- *"This tangent chain never grew past the edge that was picked... Choose a coarser reading of this pick - from the row's dropdown in the Edges list, or from the badge beside the edge in the 3D view - because the tolerance ladder goes up to 30 degrees, which reads a tessellated surface as one surface and walks the whole run."* -- you picked a loop on a curved surface at the tightest reading, so the walk stopped at the first facet. Both of the controls it names are on screen while you read it, and either one re-reads the group in place
 
 The panel also shows **advisories** above the list, in a different colour and with a different glyph. Nothing failed; they tell you about a repair that was made to your source so the fillet could run:
 
@@ -105,7 +105,7 @@ One repair is made silently. A mesh made of loose, unwelded triangles -- which m
 
 - Fillet last. Round the edges of a shape after you have finished cutting and combining it, so you do not have to re-pick edges every time the shape changes
 - Selections survive a rebuild. They are stored as geometry, not as edge numbers, so changing the size of the box under a Fillet keeps the same edges rounded
-- If a whole rim should be rounded, click one edge of it and shift-click (or press Tab) once -- that is nearly always faster and more robust than picking edges one at a time. If you have already committed the single edge, the row's reading dropdown gets you there without re-picking
+- If a whole rim should be rounded, hover one edge of it, step the badge on once so the whole rim lights up, and click -- that is nearly always faster and more robust than picking edges one at a time. If you have already committed the single edge, the row's reading dropdown gets you there without re-picking
 - Keep segments low while you work and raise them at the end. Every segment is mesh
 - Two radii on one part are two Fillets. Round the edges that share a radius, then apply another Fillet for the rest -- the same way you would in any other CAD package
 - Concave edges get a bead of material added into the corner rather than material cut away, which is what a fillet means on the inside of a shape
