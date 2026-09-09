@@ -5,7 +5,7 @@ nav_order: 4
 ---
 # Saving and Exporting
 
-MatterCAD supports several file formats for saving and exporting your designs. The format you choose depends on how you plan to use the file.
+MatterCAD supports several file formats for saving and exporting your designs. The format you choose depends on how you plan to use the file. The export dialog lists them most-faithful-first: MCX, then 3MF, then STL, then OBJ.
 
 ## Save Formats
 
@@ -19,6 +19,12 @@ MCX is MatterCAD's native file format and the best choice for designs you want t
 - Component relationships
 
 **Use MCX when:** You want to save your work and continue editing it later.
+
+### 3MF
+
+3MF is the modern replacement for STL, and the best choice when you are leaving MCX behind. It keeps each part in your design as its own object, with its own position and its own colors, in a single compressed file.
+
+**Use 3MF when:** You want to 3D print a multi-part or multi-color design, or hand it to a slicer that understands more than bare triangles.
 
 ### STL
 
@@ -51,8 +57,9 @@ Your design is also saved automatically as you work, so you will not lose change
 
 ## Tips
 
-- Always save an MCX copy of your design before exporting to STL or OBJ, so you can make changes later
-- When exporting STL, all objects in the scene are merged into a single mesh
+- Always save an MCX copy of your design before exporting to 3MF, STL or OBJ, so you can make changes later
+- STL keeps your objects separate unless you tick **Performe Union** in the export options, which merges them into a single mesh
+- Holes are applied for you when you export to STL, 3MF or OBJ. None of those formats can say "this shape is a hole", so MatterCAD subtracts each hole from the parts it overlaps and leaves the hole itself out of the file. Your design is not changed - only the exported copy
 - If you need to share a design with someone who uses MatterCAD, send the MCX file to preserve full editability
 - You can also save designs to your [Cloud Library](../library/cloud-library.md) for access from any computer
 
