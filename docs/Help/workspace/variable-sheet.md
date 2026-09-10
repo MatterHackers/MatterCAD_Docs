@@ -11,7 +11,7 @@ The Variable Sheet stores shared values for a design. Use it when several object
 <!-- IMAGE_NEEDED: Replacement hero shot of the current Variable Sheet editor - menu bar, Name and formula boxes, and a grid of named cells with formulas. The image below predates the menu bar. -->
 ![20260507 080914 paste 20260507 080914](https://matterhackers.github.io/MatterCAD_Docs/assets/20260507-080914-paste-20260507-080914.jpg)
 
-This page covers what a sheet is for and how its values are written and read. For the mechanics of the editor itself - adding and removing rows and columns, column widths, cell formatting and CSV - see [Editing a Variable Sheet](sheet-editing.md).
+This page covers what a sheet is for and how its values are written and read. For the mechanics of the editor itself - adding and removing rows and columns, column widths and row heights, cell formatting and CSV - see [Editing a Variable Sheet](sheet-editing.md).
 
 ## How to Add a Variable Sheet
 
@@ -59,6 +59,14 @@ Names look after themselves in two ways:
 - **Renaming rewrites every reference.** Change a cell's name and every `=oldname` in the sheet and everywhere in the design is rewritten to the new name, as a single Undo step.
 
 Clearing a name rewrites too, but to `#REF!` rather than to a new name: the name no longer exists, so every formula that read it says so. That is deliberate - a reference to a name that has gone breaks visibly instead of quietly evaluating to zero.
+
+### The One Thing a Rename Cannot Rewrite
+
+A name written **inside quotes** - the column argument [`index()` and `xlookup()`](expression-functions.md#index) take - is read as a cell name while the formula is being evaluated, so nothing rewrites it: quoted names are left exactly as you typed them, because a quoted string may be text that has nothing to do with any cell.
+
+So the rename happens, and MatterCAD then shows a message listing every formula that still quotes the old name - in the sheet and in the objects that read it - naming where each one is, so you can go and retype them. Rename `price` to `cost` and `=index("price", 2)` is one of the lines you get back.
+
+A rename that only changes letter case - `price` to `Price` - says nothing, because a quoted name is matched regardless of case and every one of those formulas still finds the cell.
 
 ### What a Name Can Be
 
@@ -136,7 +144,7 @@ Put a table in the sheet - part numbers down column A, say, with a header in row
 
 ## Related
 
-- [Editing a Variable Sheet](sheet-editing.md) - Rows and columns, column widths, cell formats and CSV
+- [Editing a Variable Sheet](sheet-editing.md) - Rows and columns, column widths and row heights, cell formats and CSV
 - [Expressions](expressions.md) - Expression syntax, cell references and bracket tokens
 - [Expression Functions](expression-functions.md) - Every function, with examples
 - [Object References](object-references.md) - Read a value off another object instead of a cell

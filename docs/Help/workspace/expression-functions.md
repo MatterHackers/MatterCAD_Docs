@@ -177,7 +177,7 @@ The quoted column can be written two ways:
 
 The name is read **first**, and column letters are what text no name claims falls back to. That is what lets a short name work: the columns run `A` to `XFD`, so a one, two or three letter name like `sku` is also column letters - for a column 13,000 columns off the right of any sheet you would build - and `=index("sku", 2)` means the cell you named. The two readings cannot collide, because a cell may not be **named** after a column of its own sheet: on a five column sheet the editor refuses `A` through `E` and accepts `F`, `sku` and `sku_id`.
 
-The name is read as the formula is evaluated, so **renaming the cell does not rewrite it**. Rename `price` to `cost` and every `=price` in the design is rewritten, but `=index("price", 2)` still says `"price"` and has to be retyped. In a sheet whose names move about, column letters are the safer thing to write.
+The name is read as the formula is evaluated, so **renaming the cell does not rewrite it**. Rename `price` to `cost` and every `=price` in the design is rewritten, but `=index("price", 2)` still says `"price"` and has to be retyped. You are told which ones: a rename shows a message listing every formula left quoting the old name, so none of them go quietly stale. In a sheet whose names move about, column letters are the safer thing to write.
 
 The point of the function is a row that is worked out rather than typed. Inside an [Array](../operations/array/index.md), each copy substitutes its own position for `[index]`:
 

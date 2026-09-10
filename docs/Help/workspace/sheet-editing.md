@@ -5,7 +5,7 @@ nav_order: 13
 ---
 # Editing a Variable Sheet
 
-This page covers the mechanics of the [Variable Sheet](variable-sheet.md) editor: changing the shape of the sheet, sizing its columns, formatting what a cell shows, and moving a sheet in and out as CSV. For what a sheet is and how its values are written and read, start at [Variable Sheet](variable-sheet.md).
+This page covers the mechanics of the [Variable Sheet](variable-sheet.md) editor: changing the shape of the sheet, sizing its columns and rows, formatting what a cell shows, and moving a sheet in and out as CSV. For what a sheet is and how its values are written and read, start at [Variable Sheet](variable-sheet.md).
 
 Every edit on this page is a single Undo step - the only exception is **Refresh Imported Data**, which changes nothing you authored. The sheet shares the design's undo history, so **Ctrl+Z** in the workspace steps back through sheet edits along with everything else. See [Undo and Redo](undo-redo.md).
 
@@ -33,6 +33,8 @@ There are three ways to change the shape of a sheet, and they run the same comma
 
 **Click a column letter or a row number** to select that whole column or row - the header lights up to show it - and **right-click** one for the menu of commands that act on it. A right-click selects the header as well, so the menu always acts on the line you can see is selected. **Escape** clears a header selection.
 
+**Shift+click a second header of the same kind** to select the range between the two, and every header in it lights up: click column B, Shift+click column E, and B, C, D and E are all selected. The range is always measured from the header you clicked plainly, so a further Shift+click moves its far end rather than starting from where the range currently begins. Shift+clicking the *other* kind of header - a row number while columns are selected - is treated as a plain click and starts again there, as an ordinary click anywhere does. A right-click starts again too, on the header it lands on, which is why a header menu always acts on that one line even when it is opened inside a range. The commands that act on a range as a whole are the **Insert** menu's and the keyboard chords.
+
 <!-- IMAGE_NEEDED: The sheet editor with a right-click menu open on column header B, showing Auto-size Column, Insert Column Left, Insert Column Right, Remove Column and Add Column -->
 
 Right-clicking a **column letter** offers:
@@ -44,6 +46,7 @@ Right-clicking a **column letter** offers:
 
 Right-clicking a **row number** offers:
 
+- **Auto-fit Row** - Fit the row to the tallest value in it.
 - **Insert Row Above** / **Insert Row Below** - Add a blank row beside this one.
 - **Remove Row** - Take this row away, moving the rows below it up.
 - **Add Row** - Append a row at the bottom of the sheet.
@@ -52,7 +55,9 @@ A sheet must keep at least one row and one column, so **Remove Row** and **Remov
 
 ### The Insert Menu
 
-The menu bar's **Insert** menu holds the same commands, and they act on whatever is **selected**: the row and column of a selected cell, or the one line a selected header names. A selected column header names no row, so the row entries are greyed out while it is selected, and the other way about. With nothing selected there is nothing for them to act on, so every entry but **Add Row** and **Add Column** is greyed out.
+The menu bar's **Insert** menu holds the same commands, and they act on whatever is **selected**: the row and column of a selected cell, or the lines a selected header names. A selected column header names no row, so the row entries are greyed out while it is selected, and the other way about. With nothing selected there is nothing for them to act on, so every entry but **Add Row** and **Add Column** is greyed out.
+
+A range of headers is acted on **as a whole, in one step**. With columns B through D selected, **Insert Column Left** puts three blank columns in and records a single Undo entry named for what it did, *Insert 3 Columns*; **Remove Column** takes all three away as *Remove 3 Columns*, and two selected rows removed are *Remove 2 Rows*. **Insert Column Left** and **Insert Row Above** go in before the **first** line of the range, **Insert Column Right** and **Insert Row Below** after the **last**. A removal that would take every row or every column of the sheet is refused, so **Remove Row** and **Remove Column** are greyed out for a range covering the lot, just as they are for the sheet's last line.
 
 The two `+` buttons at the right and bottom edges of the grid are **Add Column** and **Add Row** under another name.
 
@@ -67,7 +72,9 @@ Two chords insert and remove a line, and **what they act on is what is selected*
 
 On a Mac, use Cmd in place of Ctrl.
 
-The chords work while a cell or header is *selected*, not while a cell is being edited - press Escape or Enter to finish an edit first. An insert from a header leaves the new blank line selected, so pressing the chord again inserts another one. A removal the sheet would refuse - its last row or column - does nothing, the same thing the greyed menu entry says.
+The chords work while a cell or header is *selected*, not while a cell is being edited - press Escape or Enter to finish an edit first. A removal the sheet would refuse - its last row or column, or a range covering every one of them - does nothing, the same thing the greyed menu entry says.
+
+A range of headers takes the chords as a whole, in one Undo step, exactly as the **Insert** menu does: three row headers selected and the insert chord adds three blank rows as *Insert 3 Rows*, and the remove chord takes all three away as *Remove 3 Rows*. After an insert the new blank lines are the ones left selected, so pressing the chord again inserts another set the same size; after a removal the line that took their place is selected on its own.
 
 ### What Happens to Your Formulas
 
@@ -77,18 +84,25 @@ Three things are worth knowing:
 
 - **A reference to a cell that was removed becomes `#REF!`.** It does not slide onto the neighbour that took the removed cell's place, because that would silently point the formula at a different value. `=A1+1` becomes `=#REF!+1`, and the cell shows `#REF!+1` - the stored formula without its leading `=` - instead of a number. A sheet cell reading the broken one falls back to `0`; an object parameter reading it keeps an error value, `0.1` for a decimal parameter and `1` for a whole-number one, so the shape it drives comes out visibly wrong rather than plausibly wrong. Either way nothing is invented, and the formula says exactly what went wrong.
 - **Cell names travel with their cells** and are never rewritten. A cell named `wall_thickness` keeps that name wherever the edit moves it, so `=wall_thickness` never needs touching.
-- **The whole thing is one Undo step** - the insertion or removal, the cells that moved, and every formula that was rewritten in the sheet and in the design. One Undo puts all of it back exactly as it was.
+- **The whole thing is one Undo step** - the insertion or removal, the cells that moved, and every formula that was rewritten in the sheet and in the design. One Undo puts all of it back exactly as it was. A range is one step too, however many lines it covers: *Remove 3 Columns* is a single entry, and one Undo brings all three columns and every formula they touched back together.
 
-## Column Widths
+## Column Widths and Row Heights
 
 <!-- IMAGE_NEEDED: Close-up of the separator between two column headers with the horizontal resize cursor showing -->
 
 - **Drag the separator** between two column letters to set a column's width by hand.
 - **Double-click the separator** to size the column to the widest value it is currently showing - the same thing **Auto-size Column** does from the column's header menu.
 
-Both are undoable, and a drag counts as one step no matter how far you moved the pointer.
+<!-- IMAGE_NEEDED: Close-up of the bottom edge of a row number with the vertical resize cursor showing, beside a row holding a wrapped multi-line value -->
 
-Auto-size measures what the column **displays**, so a cell showing a formula's result is measured by the result. Column widths belong to the sheet and are saved with the design, but they are not part of a CSV.
+Rows work the same way, on the bottom edge of the row number:
+
+- **Drag the bottom edge of a row number** to set that row's height by hand, as one *Resize Row* Undo step.
+- **Double-click that edge**, or pick **Auto-fit Row** from the row's header menu, to fit the row to the tallest value it is showing, as one *Auto-fit Row* step. A row whose values are all single lines fits back to the standard height - dragging is the only thing that takes a row below that.
+
+Each of these is undoable, and a drag counts as one step no matter how far you moved the pointer.
+
+Auto-size and auto-fit measure what the column or row **displays**, so a cell showing a formula's result is measured by the result. Column widths and row heights belong to the sheet and are saved with the design, but they are not part of a CSV. A height belongs to the row itself rather than to the row number, so it travels with that row through inserts, removals and their undo; and because a CSV import replaces the values rather than the shape of the grid, it keeps the heights of the rows it covers - a row the file adds arrives at the standard height, the way a new column arrives at the default width.
 
 ## Formatting Cells
 
