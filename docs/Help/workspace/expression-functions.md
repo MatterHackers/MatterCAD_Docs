@@ -168,7 +168,16 @@ index(column, row)
 
 Reads the cell at a column and a row - the one thing a written-out reference like `=A7` cannot do, because `index()` will take a **calculated** row.
 
-The column is given as letters in quotes (`"A"`, `"ab"`), not as a full cell id, and the row is the **one-based** number shown down the left of the sheet, exactly as in A1 notation. So `=index("A", 2)` and `=A2` are the same value.
+The column is given in quotes and the row is the **one-based** number shown down the left of the sheet, exactly as in A1 notation. So `=index("A", 2)` and `=A2` are the same value.
+
+The quoted column can be written two ways:
+
+- **The name of a cell in that column.** If C1 is named `product_price`, `=index("product_price", 2)` reads `C2`. Naming the header cell is the natural way to do this, so a formula can say which column it means instead of counting letters across the top of the sheet.
+- **Column letters** - `"A"`, `"ab"`. A full cell id is not a column: `"A1"` names a cell.
+
+The name is read **first**, and column letters are what text no name claims falls back to. That is what lets a short name work: the columns run `A` to `XFD`, so a one, two or three letter name like `sku` is also column letters - for a column 13,000 columns off the right of any sheet you would build - and `=index("sku", 2)` means the cell you named. The two readings cannot collide, because a cell may not be **named** after a column of its own sheet: on a five column sheet the editor refuses `A` through `E` and accepts `F`, `sku` and `sku_id`.
+
+The name is read as the formula is evaluated, so **renaming the cell does not rewrite it**. Rename `price` to `cost` and every `=price` in the design is rewritten, but `=index("price", 2)` still says `"price"` and has to be retyped. In a sheet whose names move about, column letters are the safer thing to write.
 
 The point of the function is a row that is worked out rather than typed. Inside an [Array](../operations/array/index.md), each copy substitutes its own position for `[index]`:
 
@@ -178,7 +187,7 @@ The point of the function is a row that is worked out rather than typed. Inside 
 
 The first copy reads `A2`, the second `A3`, the third `A4` - walking down column A while skipping the header in row 1. Put that in a Text object's text field and an array of it prints a different part number on every copy.
 
-A column that is not column letters (`"A1"` is a cell, not a column), or a row past the bottom of the sheet, is treated exactly like a misspelled cell reference - the sheet shows `0` rather than inventing a value.
+A quoted column that is neither column letters nor a name some cell has (`"A1"` is a cell, not a column), or a row past the bottom of the sheet, is treated exactly like a misspelled cell reference - the sheet shows `0` rather than inventing a value.
 
 ## xlookup
 
@@ -200,7 +209,7 @@ Given a price list with ids in column A, names in column B and prices in column 
 
 The rules:
 
-- **Both columns are letters in quotes** - `"A"`, `"ab"` - exactly as `index()` takes them. A full cell id is not a column, and neither is a bare `A` without the quotes.
+- **Both columns are quoted, and take either form `index()` takes** - the name of a cell in that column, or column letters (`"A"`, `"ab"`). Name A1 `sku_id` and B1 `sku_name` and the first example above can be written `=xlookup("Magenta thing", "sku_name", "sku_id")`. A full cell id is not a column, and neither is a bare `A` without the quotes. See [index](#index) for which of the two a quoted column is read as, and why a rename leaves it alone.
 - **The search runs from row 1 down**, so a header row is scanned like any other.
 - **The match is exact.** There is no partial or wildcard matching.
 - **Text matches without regard to case**, so `"magenta THING"` finds `Magenta thing`.
@@ -209,7 +218,7 @@ The rules:
 - **Empty cells do not stop the search** - a gap in the middle of the column is scanned past.
 - `if_not_found`, when given, is what you get when nothing matches: `=xlookup("no such thing", "B", "A", "unknown")`.
 - **Without `if_not_found`, a miss behaves like a reference to a cell that does not exist** - the sheet shows `0`, and anything downstream is deferred rather than fed a made-up value.
-- **A misspelled column is a broken reference, not a miss.** `if_not_found` deliberately does not cover it, so a typo in a column name shows up instead of being quietly answered.
+- **A misspelled column - or a name no cell has - is a broken reference, not a miss.** `if_not_found` deliberately does not cover it, so a typo in a column shows up instead of being quietly answered.
 
 ## importdata
 

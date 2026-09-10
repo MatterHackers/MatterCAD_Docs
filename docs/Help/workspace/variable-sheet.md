@@ -66,6 +66,7 @@ Names are not case sensitive, and a name is refused - with a message saying why 
 
 - **Letters, digits and underscores**, starting with a letter or an underscore. Spaces are turned into underscores for you, so `wall thickness` becomes `wall_thickness`.
 - **Not an address inside the sheet.** `b2` already names the cell in column B, row 2, so it cannot also be a name. An address *beyond* the sheet - `Z99` on a 5x5 sheet - is allowed, because nothing reads it as an address today; grow the sheet to include that cell and every `=Z99` starts reading the cell instead of your named one.
+- **Not a column of the sheet.** On a 5 column sheet `A` through `E` are refused, because [`index()` and `xlookup()`](expression-functions.md#index) read a quoted column as a cell NAME first - a cell named `B` would take the spelling `"B"` away from column B. Letters past the right edge are fine: `F` and `sku` are ordinary names on that sheet - but the same caveat applies as for an address beyond the sheet: add columns until the sheet reaches `F` and `index("F", 2)` starts reading that column instead of your named cell.
 - **Not a built-in constant or unit.** `pi`, `tau`, `e`, `mm`, `cm`, `m`, `in`, `inch`, `ft`, `true` and `false` already mean something in a formula.
 - **Not a name another cell already has.** Two cells sharing a name would leave every formula reading whichever one happened to be resolved first.
 
