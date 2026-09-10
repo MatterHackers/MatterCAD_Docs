@@ -9,6 +9,18 @@ Every function listed here can be called from any expression - in a [Variable Sh
 
 For the syntax around these functions - the leading `=`, operators, cell references and bracket tokens - see [Expressions](expressions.md).
 
+## Text Arguments
+
+A text argument is written in double quotes, and the usual escape sequences are honoured inside them: `\n` for a newline, `\r` for a carriage return, `\t` for a tab, `\\` for a backslash, `\"` for a double quote and `\'` for a single quote. Each reaches the function as the character it stands for, so any of them can be used as a delimiter:
+
+```
+=split(A1, "\n", 0)      the first line of a multi-line value
+=count(A1, "\n")         how many lines that value has
+=split(A1, "\"", 1)      splits on a double quote character
+```
+
+Escapes belong to the **formula text**, not to your data. A cell holding `C:\new\temp` reaches `split()`, `count()`, `substitute()` and `strcat()` exactly as the sheet stores it - the `\n` in the middle of it is two characters, not a newline.
+
 ## Math Functions
 
 Any one- or two-argument method of the standard math library is available by name. The most useful ones:
@@ -188,6 +200,8 @@ Given a price list with ids in column A, names in column B and prices in column 
 
 The rules:
 
+- **Both columns are letters in quotes** - `"A"`, `"ab"` - exactly as `index()` takes them. A full cell id is not a column, and neither is a bare `A` without the quotes.
+- **The search runs from row 1 down**, so a header row is scanned like any other.
 - **The match is exact.** There is no partial or wildcard matching.
 - **Text matches without regard to case**, so `"magenta THING"` finds `Magenta thing`.
 - **Numbers match as numbers**, so `19.99` finds a cell holding `19.9900`.
@@ -212,20 +226,22 @@ Reads a whole URL or local file and returns its contents. A body that parses as 
 
 Notes:
 
-- **Use forward slashes in local paths.** A backslash starts an escape sequence inside a quoted argument.
-- **Results are cached for the session.** The same URL or path is fetched once; restart MatterCAD to pick up a changed file.
+- **Use forward slashes in local paths.** A backslash starts an escape sequence inside a quoted argument, so write `"C:/Parts/sizes.csv"` rather than `"C:\Parts\sizes.csv"`.
+- **Results are cached for the session.** The same URL or path is fetched once. To pick up a source that has changed, use **Refresh Imported Data** on the sheet editor's File menu - see [Editing a Variable Sheet](sheet-editing.md#refresh-imported-data).
 - **A failure comes back as text** beginning with `Error:`, so a broken link shows in the cell instead of breaking the design.
+- **URLs need a desktop MatterCAD.** In the browser the sheet cannot fetch one, and the cell says so; a local file still reads normally.
 
 ### Reading a CSV Row by Row
 
-`importdata()` hands back the whole file, so pull it apart with `split()` - once on newlines to pick a line, then again on commas to pick a field. The newline cannot be spelled inline inside a function argument, so park it in a cell of its own first:
+`importdata()` hands back the whole file, so pull it apart with `split()` - once on newlines to pick a line, then again on commas to pick a field. The newline is written inline as `"\n"`, so the whole thing fits in one cell:
 
-| Cell | Contents | Purpose |
-| --- | --- | --- |
-| `A1` | `="\n"` | A newline, as a value the formulas below can use |
-| `A2` | `=split(split(importdata("C:/Parts/sizes.csv"), A1, 2), ",", 0)` | The first field of the file's third line |
+```
+=split(split(importdata("C:/Parts/sizes.csv"), "\n", 2), ",", 0)
+```
 
 The inner `split()` takes line `2` (counting from 0, so the third line); the outer one takes field `0` of that line. Change the line number to `[index]+1` in an object's parameter field and each copy in an [Array](../operations/array/index.md) reads its own row of the file.
+
+`count()` sizes the run for you - `=count(importdata("C:/Parts/sizes.csv"), "\n")` is the number of lines in the file, which is what an Array's **Count** wants. `importdata()` trims the whitespace off both ends of what it reads, so a file that ends with a newline does not leave an empty line on the end of the count, and `split()` trims each piece it hands back, so a Windows file's carriage returns do not come through either.
 
 ## rand
 
@@ -246,5 +262,6 @@ A random number between 0 and 1. Called with no argument it is different every t
 
 - [Expressions](expressions.md) - Expression syntax, constants, cell references and bracket tokens
 - [Variable Sheet](variable-sheet.md) - Where sheet values and named cells come from
+- [Editing a Variable Sheet](sheet-editing.md) - Rows and columns, cell formats, and refreshing imported data
 - [Object References](object-references.md) - Read another object's settings inside an expression
 - [Array](../operations/array/index.md) - Drive each copy from its own row with `[index]`

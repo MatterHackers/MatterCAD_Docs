@@ -19,6 +19,7 @@ Learn how to navigate the MatterCAD workspace, use keyboard shortcuts, and manag
 - [Expression Functions](expression-functions.md) - Reference for every function expressions can call
 - [Object References](object-references.md) - Read another object's settings with `Name.Property`
 - [Variable Sheet](variable-sheet.md) - Store shared values and formulas for parametric designs
+- [Editing a Variable Sheet](sheet-editing.md) - Rows and columns, column widths, cell formats and CSV
 - [Measure Tool](measure-tool.md) - Measure distances between points in your design
 - [Description](description.md) - Place a Markdown note in the scene
 - [Modify Parameters](modify-parameters.md) - Drive visibility and colour from expressions
