@@ -29,9 +29,9 @@ Every edit on this page is a single Undo step - the only exception is **Refresh 
 
 There are three ways to change the shape of a sheet, and they run the same commands.
 
-### The Header Menus
+### The Headers
 
-**Right-click a column letter or a row number** for the menu of commands that act on that column or row. This is the direct way: the line the menu opens on is the line the commands act on, so nothing has to be selected first.
+**Click a column letter or a row number** to select that whole column or row - the header lights up to show it - and **right-click** one for the menu of commands that act on it. A right-click selects the header as well, so the menu always acts on the line you can see is selected. **Escape** clears a header selection.
 
 <!-- IMAGE_NEEDED: The sheet editor with a right-click menu open on column header B, showing Auto-size Column, Insert Column Left, Insert Column Right, Remove Column and Add Column -->
 
@@ -52,22 +52,22 @@ A sheet must keep at least one row and one column, so **Remove Row** and **Remov
 
 ### The Insert Menu
 
-The menu bar's **Insert** menu holds the same commands, and they act on the **selected cell's** row and column. With no cell selected there is nothing for them to act on, so every entry but **Add Row** and **Add Column** is greyed out.
+The menu bar's **Insert** menu holds the same commands, and they act on whatever is **selected**: the row and column of a selected cell, or the one line a selected header names. A selected column header names no row, so the row entries are greyed out while it is selected, and the other way about. With nothing selected there is nothing for them to act on, so every entry but **Add Row** and **Add Column** is greyed out.
 
 The two `+` buttons at the right and bottom edges of the grid are **Add Column** and **Add Row** under another name.
 
 ### Keyboard
 
-Two of the commands have a keyboard chord, and both act on the row the selected cell is in:
+Two chords insert and remove a line, and **what they act on is what is selected**: a selected cell spends them on its row, a selected column header on that column, a selected row header on that row.
 
-| Chord | What it does |
-| --- | --- |
-| Ctrl + Shift + '+', or Ctrl + numpad '+' | Insert Row Above |
-| Ctrl + '-', or Ctrl + numpad '-' | Remove Row |
+| Chord | With a cell or a row header selected | With a column header selected |
+| --- | --- | --- |
+| Ctrl + Shift + '+', or Ctrl + numpad '+' | Insert Row Above | Insert Column Left |
+| Ctrl + '-', or Ctrl + numpad '-' | Remove Row | Remove Column |
 
 On a Mac, use Cmd in place of Ctrl.
 
-The chords work while a cell is *selected*, not while it is being edited - press Escape or Enter to finish an edit first. Columns have no chord: the chords name a line through the selection, and the sheet has no notion of a selected column.
+The chords work while a cell or header is *selected*, not while a cell is being edited - press Escape or Enter to finish an edit first. An insert from a header leaves the new blank line selected, so pressing the chord again inserts another one. A removal the sheet would refuse - its last row or column - does nothing, the same thing the greyed menu entry says.
 
 ### What Happens to Your Formulas
 
