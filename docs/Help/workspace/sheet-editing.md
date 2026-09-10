@@ -1,7 +1,7 @@
 ---
 title: Editing a Variable Sheet
 parent: "Workspace"
-nav_order: 15
+nav_order: 13
 ---
 # Editing a Variable Sheet
 
@@ -16,6 +16,7 @@ Every edit on this page is a single Undo step - the only exception is **Refresh 
 | Key | What it does |
 | --- | --- |
 | Arrow keys | Move the selection one cell |
+| Arrow keys, while editing | Move the caret through the cell's text |
 | Tab / Shift+Tab | Move to the next or previous cell |
 | Enter or F2 | Start editing the selected cell |
 | Enter, while editing | Finish the edit and move down |
@@ -62,7 +63,7 @@ Two of the commands have a keyboard chord, and both act on the row the selected 
 | Chord | What it does |
 | --- | --- |
 | Ctrl + Shift + '+', or Ctrl + numpad '+' | Insert Row Above |
-| Ctrl + '-' | Remove Row |
+| Ctrl + '-', or Ctrl + numpad '-' | Remove Row |
 
 On a Mac, use Cmd in place of Ctrl.
 
@@ -70,11 +71,11 @@ The chords work while a cell is *selected*, not while it is being edited - press
 
 ### What Happens to Your Formulas
 
-A structural edit moves cells, and every reference to a moved cell is rewritten so it still points at the same value. That covers formulas **in the sheet** and formulas **anywhere in the design** that read the sheet - an object whose Width is `=B2` follows B2 to C2 when a column is inserted to its left.
+A structural edit moves cells, and every reference to a moved cell is rewritten so it still points at the same value. That covers formulas **in the sheet** and formulas **in every object that reads this sheet** - an object whose Width is `=B2` follows B2 to C2 when a column is inserted to its left.
 
 Three things are worth knowing:
 
-- **A reference to a cell that was removed becomes `#REF!`.** It does not slide onto the neighbour that took the removed cell's place, because that would silently point the formula at a different value. `=A1+1` becomes `=#REF!+1`, and the cell shows that text instead of a number. A sheet cell reading the broken one falls back to `0`; an object parameter reading it falls back to its placeholder value. Either way nothing is invented, and the formula says exactly what went wrong.
+- **A reference to a cell that was removed becomes `#REF!`.** It does not slide onto the neighbour that took the removed cell's place, because that would silently point the formula at a different value. `=A1+1` becomes `=#REF!+1`, and the cell shows `#REF!+1` - the stored formula without its leading `=` - instead of a number. A sheet cell reading the broken one falls back to `0`; an object parameter reading it keeps an error value, `0.1` for a decimal parameter and `1` for a whole-number one, so the shape it drives comes out visibly wrong rather than plausibly wrong. Either way nothing is invented, and the formula says exactly what went wrong.
 - **Cell names travel with their cells** and are never rewritten. A cell named `wall_thickness` keeps that name wherever the edit moves it, so `=wall_thickness` never needs touching.
 - **The whole thing is one Undo step** - the insertion or removal, the cells that moved, and every formula that was rewritten in the sheet and in the design. One Undo puts all of it back exactly as it was.
 
@@ -99,7 +100,7 @@ The **Format** menu changes how the **selected** cell is shown. It never changes
 - **Alignment** - **Left**, **Center** or **Right**.
 - **Bold** - Show the cell's value in bold.
 
-The choice the cell is already on is marked with a bullet in front of it. Each pick is one Undo step, and the whole menu is greyed out until a cell is selected.
+The choice the cell is already on is marked with a bullet in front of it. Each pick is one Undo step. The **Format** menu itself still opens with nothing selected; its entries are greyed out until you click a cell.
 
 Decimal places only apply to a value that reads as a **number**. Text, and an error marker such as `#REF!`, are shown as they are - there is nothing in them to round. And because the setting is about display only, `=A1/3` set to two places still feeds its full value to whatever reads that cell.
 
@@ -109,11 +110,13 @@ Decimal places only apply to a value that reads as a **number**. Text, and an er
 
 ### Import CSV...
 
-Replaces the entire contents of the sheet with a CSV file, as a single undoable step.
+Replaces what every cell in the sheet holds with the fields of a CSV file, resizing the sheet to fit, as a single undoable step.
 
 Fields arrive **exactly as they are written in the file**, so a field starting with `=` becomes a formula - which means a sheet exported as expressions, or a spreadsheet saved out of Excel, imports as live formulas rather than as text. Quoting is honoured, so a quoted field carrying commas or newlines arrives as the one field it was written as, and a ragged file is padded out with empty cells.
 
-Two things a CSV cannot carry: cell **names** and column **widths**. Neither is restored by an import.
+A CSV carries no cell **names**, no cell **formats** and no column **widths**, so an import keeps the ones the sheet already has - **by position**. The cell in column B, row 3 keeps its name, its decimal places and its alignment, and only what it holds is written over. Column widths are kept the same way, and a column the file adds arrives at the default width.
+
+Rows and columns past the end of the file are **dropped**, and the names on those cells go with them. Nothing is rewritten to `#REF!` for them - an import replaces the sheet wholesale, and one Undo puts every dropped cell back - so a formula that read a dropped name falls back to `0` until the sheet gives the name back or you rewrite the formula.
 
 Because an imported field can be a formula, importing a CSV from a source you do not trust runs whatever that file says to run - including `=importdata("...")`, which reads a file or a URL every time the sheet recalculates.
 

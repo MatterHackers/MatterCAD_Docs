@@ -40,7 +40,6 @@ Click a cell to select it, then type into the formula box to change what it hold
 Each cell holds one **expression**, which is whatever you typed into it:
 
 - **A number** - `12`, `0.5`, `-3`. Sheet numbers are millimetres.
-- **A number with a unit** - `2.5mm`, `5in`, `1ft`. The unit is converted for you, so `5in` is worth `127`. See [Expressions](expressions.md#units) for the full list.
 - **Text** - anything that is not a number and does not start with `=`. It is shown exactly as you typed it, quote characters and all.
 - **A formula** - anything starting with `=`. It is evaluated, and the cell shows the result.
 
@@ -59,14 +58,14 @@ Names look after themselves in two ways:
 - **A name travels with its cell.** Insert a row above a named cell and the name moves down with it - it belongs to the cell, not to the address.
 - **Renaming rewrites every reference.** Change a cell's name and every `=oldname` in the sheet and everywhere in the design is rewritten to the new name, as a single Undo step.
 
-Clearing a name is the one case that does not rewrite: the name no longer exists, so every formula that read it becomes `#REF!`. That is deliberate - a reference to a name that has gone breaks visibly instead of quietly evaluating to zero.
+Clearing a name rewrites too, but to `#REF!` rather than to a new name: the name no longer exists, so every formula that read it says so. That is deliberate - a reference to a name that has gone breaks visibly instead of quietly evaluating to zero.
 
 ### What a Name Can Be
 
 Names are not case sensitive, and a name is refused - with a message saying why - rather than being quietly changed into something else:
 
 - **Letters, digits and underscores**, starting with a letter or an underscore. Spaces are turned into underscores for you, so `wall thickness` becomes `wall_thickness`.
-- **Not a cell address.** `b2` names a cell on any sheet that has a column B and a row 2, so it cannot also be a name.
+- **Not an address inside the sheet.** `b2` already names the cell in column B, row 2, so it cannot also be a name. An address *beyond* the sheet - `Z99` on a 5x5 sheet - is allowed, because nothing reads it as an address today; grow the sheet to include that cell and every `=Z99` starts reading the cell instead of your named one.
 - **Not a built-in constant or unit.** `pi`, `tau`, `e`, `mm`, `cm`, `m`, `in`, `inch`, `ft`, `true` and `false` already mean something in a formula.
 - **Not a name another cell already has.** Two cells sharing a name would leave every formula reading whichever one happened to be resolved first.
 
@@ -78,7 +77,9 @@ Start a formula with `=` to evaluate it in the sheet:
 - `=pi * 10` returns `31.415926535897931`
 - `=A1 * 2` references another cell by address
 - `=wall_thickness + 4` references a named cell
-- `=2.5in` returns `63.5` - the unit is converted to millimetres
+- `=2.5in` returns `63.5`, and `=5in` returns `127` - the unit is converted to millimetres
+
+A unit suffix is read by the expression parser, so it only counts inside a formula. A cell holding `5in` on its own is never evaluated and stays the text `5in`; write `=5in` to get `127`. That is what the editor's own hint means by *Write a unit for inches, e.g. =2in*. See [Expressions](expressions.md#units) for the units available.
 
 The sheet supports arithmetic, parentheses, comparisons, the constants `pi`, `tau` and `e`, the bracketed unit constants `[cm]`, `[m]`, `[inch]` and `[ft]`, and the whole function library. See [Expressions](expressions.md) for the syntax and [Expression Functions](expression-functions.md) for the functions.
 
