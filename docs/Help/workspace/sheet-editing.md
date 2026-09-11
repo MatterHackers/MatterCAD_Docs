@@ -16,14 +16,19 @@ Every edit on this page is a single Undo step - the only exception is **Refresh 
 | Key | What it does |
 | --- | --- |
 | Arrow keys | Move the selection one cell |
+| Shift+Arrow | Take the selection out to a rectangle of cells |
 | Arrow keys, while editing | Move the caret through the cell's text |
 | Tab / Shift+Tab | Move to the next or previous cell |
 | Enter or F2 | Start editing the selected cell |
 | Enter, while editing | Finish the edit and move down |
 | Tab, while editing | Finish the edit and move across |
 | Escape, while editing | Abandon the edit and keep what was there |
-| Delete or Backspace | Empty the selected cell |
+| Delete or Backspace | Empty every selected cell, as one Undo step |
 | Any other character | Start editing, replacing what the cell held - as in a spreadsheet |
+
+**Shift+click a second cell** to select the rectangle between it and the cell you clicked plainly, and every cell in it is shaded to show it: click B2, Shift+click D4, and the nine cells from B2 to D4 are all selected. **Shift+Arrow** does the same thing a cell at a time. The range is always measured from the cell you clicked plainly, so a further Shift+click moves its far end rather than starting from where the range currently begins. A **plain click**, or a plain arrow key, drops back to that one cell.
+
+The formula bar, the name box and the **Format** menu go on acting on the **active** cell - the one you took the selection out to, which carries the accent border. **Copy**, **Paste**, **Clear** and **Delete** act on the whole range.
 
 ## Rows and Columns
 
@@ -149,11 +154,27 @@ Nothing you authored changes, so this is not an undoable step. A sheet importing
 ## The Edit Menu
 
 - **Undo** / **Redo** - Step back and forward through sheet edits, including a whole CSV import.
-- **Copy Cell** - Puts the selected cell's formula, not its result, on the clipboard.
-- **Paste Cell** - Writes the clipboard text into the selected cell.
-- **Clear Cell** - Empties the selected cell.
+- **Copy** - Puts the selected cells on the clipboard **as they were typed**, formulas rather than results. One cell copies as its bare formula; a range copies as tab separated text, which pastes into Excel, Google Sheets or anything else that speaks a spreadsheet's clipboard.
+- **Paste** - Writes the clipboard in starting at the **top left of the selection**, however many cells are selected - a spreadsheet pastes what was copied, not what will fit. A block running past the right or bottom edge **grows the sheet** to hold it, and the whole paste, growth included, is one Undo step named *Paste Cells*. A single value with no tabs or line breaks in it pastes as an ordinary cell edit into the top left cell.
+- **Clear** - Empties every selected cell, as one Undo step.
 
 The cell commands need a selected cell; they are greyed out until you click one.
+
+Anything pasted in becomes a cell's text exactly as it reads, so a field starting with `=` arrives as a **live formula** - the same caveat as [Import CSV...](#import-csv), and the same reason to be careful with a block copied from a source you do not trust.
+
+### Pasting Formulas
+
+When you paste cells you copied from a MatterCAD sheet, their **cell references move with the block**, the way a spreadsheet's relative references do. Copy `=A1*2` out of B1, paste it at B3, and it reads `=A3*2` - it went down two rows, so the cell it reads went down two rows with it, and the formula still means "twice the cell two above me".
+
+Three things never move:
+
+- **Cell names.** `=wall_thickness` means the same cell wherever the formula lands, which is the whole point of naming a cell - the same rule the structural edits follow, in [What Happens to Your Formulas](#what-happens-to-your-formulas).
+- **Quoted text**, including the quoted column names `index()` and `xlookup()` take.
+- **Object references** such as `=Bracket.Width`, which name a part of your design rather than a cell of the sheet.
+
+A reference that the move would carry **above the first row or left of column A** has no cell left to name, and becomes `#REF!`. Copy `=A1*2` from B2 and paste it at B1 and you get `=#REF!*2`: a visibly broken formula, rather than one quietly reading somewhere you did not mean. Running off the **right or bottom** is not an error, because a sheet grows in those directions.
+
+Text copied out of **another program**, or typed by hand, pastes **exactly as written** - MatterCAD did not write it, so it has no idea where the formulas in it came from and adjusts nothing.
 
 ## The Help Menu
 
