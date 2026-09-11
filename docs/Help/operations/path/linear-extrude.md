@@ -30,6 +30,11 @@ Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. Thi
 - **Radius** - How wide the bevel extends (default: 3mm)
 - **Segments** - Smoothness of the bevel curve (default: 9)
 
+
+## Projection Plane
+
+Every path operation carries a **Projection Plane** section that says which flat surface its input paths are flattened onto -- by default the plane the first input was drawn on. Leave it on **Auto** unless the panel warns that your paths are not coplanar. See [Construction Planes](../../workspace/construction-planes.md).
+
 ## Tips
 
 - This works with any 2D path: [Circle](../../2d-paths/circle-path.md), [Box](../../2d-paths/box-path.md), [Star](../../2d-paths/star-path.md), [SVG](../../primitives/svg-object.md), and [Custom](../../2d-paths/custom-path.md) paths

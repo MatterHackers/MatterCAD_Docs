@@ -1,6 +1,6 @@
 ---
 title: Array
-articleKey: ArrayObject3D_2
+articleKey: ArrayObject3D_3, ArrayObject3D_2
 parent: "Array Operations"
 grand_parent: "Operations"
 nav_order: 1
@@ -57,7 +57,13 @@ Radial mode distributes copies evenly around a central axis at a fixed radius.
 
 **Count** / **Angular Distance** — Number of copies (Count mode) or angular spacing in degrees (Distance mode). Supports expressions.
 
-**Central Axis** — The axis to rotate around (default: Z).
+**Central Axis** — The axis the copies circle, given as a [construction plane](../../workspace/construction-planes.md): its normal is the axis and its origin is the centre of the circle. The origin starts at the centre of the source object's bounding box, and the axis is drawn in the viewport while the Array is selected.
+
+- **Preset** — **XY** circles about +Z (the default), **XZ** about -Y, **YZ** about +X. The **Flipped** presets reverse each of those, which reverses the direction copies are laid out in. Choosing a preset also resets the origin to the object's own zero, so re-enter your centre afterwards if you had moved it.
+- **Origin** — The centre of the circle. Supports expressions per component.
+- **Normal** — The axis itself; any length will do.
+- **X Direction** — Not used by Array. An axis has no need of a sideways direction.
+- **Pick Face** — Click the button, then click a flat face anywhere in the scene to circle about that face's normal. Press Esc to cancel.
 
 **Circle Segment** — Whether copies span a full 360° circle (**Full**) or a partial arc (**Arc**).
 
@@ -106,6 +112,10 @@ Enable **Randomize** to add variation to all copies.
 - **Merge Vertices** — Weld vertices within the merge distance threshold (shown when Create Single Mesh is on).
 - **Distance** — Merge threshold in mm (shown when Merge Vertices is on).
 
+## Older files
+
+An Array created before construction planes shipped keeps its original **Central Axis** control — a direction vector with an axis dropdown — and keeps working exactly as it did. New Array operations get the construction plane described above. To move an old one over, delete it and apply Array again.
+
 ## Tips
 
 - Use expressions for Count, Rotation, or Endpoint to create parametric patterns
@@ -117,6 +127,7 @@ Enable **Randomize** to add variation to all copies.
 
 ## Related
 
+- [Construction Planes](../../workspace/construction-planes.md) - Presets, expressions, and Pick Face for the Central Axis
 - [Align](../placement/align.md) - Position objects relative to each other
 - [Select Child](select-child.md) - Pick a specific copy from an array by index or name
 - [Expressions](../../workspace/expressions.md) - Drive each copy from `[index]` and sheet values

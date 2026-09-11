@@ -27,6 +27,11 @@ Revolve spins a 2D path around an axis to create a 3D solid of revolution. This 
 - **Ending Angle** - Where the revolution ends (default: 45). Set to 360 for a full revolution.
 - **Sides** - Number of segments around the revolution (default: 30). More = smoother surface.
 
+
+## Projection Plane
+
+The **Projection Plane** section says which flat surface the profile is flattened onto before it is spun -- by default the plane the profile was drawn on. See [Construction Planes](../../workspace/construction-planes.md).
+
 ## Tips
 
 - Use Axis Position to control the inner diameter of the revolved shape

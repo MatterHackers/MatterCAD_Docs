@@ -22,7 +22,7 @@ Where [Linear Extrude](linear-extrude.md) gives one profile a constant height, L
 
 The operation is enabled for anything that presents a path rather than a solid. The Path group is hidden on the toolbar by default -- see [Path Operations](index.md) for how to turn it on, or use the right-click **Modify** menu instead. An object that carries its own mesh -- an existing Linear Extrude, Revolve or Sweep, all of which keep their source path as a child -- is not offered as a section.
 
-**Loft has no properties of its own.** You shape the result entirely by editing and moving the sections, which is why the Properties panel for a Loft is bare.
+**Loft has no shaping properties of its own.** You shape the result entirely by editing and moving the sections, which is why the Properties panel for a Loft holds only the Projection Plane section described below.
 
 ## How the Sections Are Chosen
 
@@ -46,6 +46,11 @@ One section has nothing to skin between, so a copy of it is placed 20mm directly
 A [3D Curve](curve-3d.md) in the selection says you want the profiles carried *along* the curve, which is a [Sweep](sweep.md), not a loft. MatterCAD builds a Sweep for you instead, with the curve as the rail. Lofting would have silently dropped the curve -- it is not a path, so it is no section -- and handed back a straight prism with the curve dangling inside it.
 
 Only a curve you actually selected counts. A curve buried inside a selected solid (an existing Sweep keeps its rail as a child) is that solid's own business.
+
+
+## Projection Plane
+
+Loft's only settings are its **Projection Plane** section, which says which flat surface the sections are measured against. Leave it on **Auto**: a Loft deliberately stacks its sections at different heights, and only warns when they face different directions. See [Construction Planes](../../workspace/construction-planes.md).
 
 ## Tips
 

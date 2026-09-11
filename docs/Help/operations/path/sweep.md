@@ -49,6 +49,11 @@ Both graphs start flat -- 100 percent scale and 0 twist the whole way -- which i
 
 When a Sweep is selected, a control sphere sits on the solid for every point of the Scale graph, and of the Twist graph when the rail is open, so you can shape those functions against the shape they are shaping.
 
+
+## Projection Plane
+
+The **Projection Plane** section says which flat surface the profile is flattened onto before it is carried along the rail -- by default the plane the profile was drawn on. See [Construction Planes](../../workspace/construction-planes.md).
+
 ## Tips
 
 - Shape the rail first, then the profile. The rail decides where the part goes; the profile only decides what its section looks like
