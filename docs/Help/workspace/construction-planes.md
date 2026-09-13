@@ -7,14 +7,16 @@ nav_order: 16
 
 A construction plane is a flat frame you can put anywhere in space and then work on. It is three values — an **Origin**, a **Normal** and an **X Direction** — and together they answer "where is flat, which way is up, and which way is sideways".
 
-Construction planes are what let a 2D shape be drawn somewhere other than the bed, and what let an operation say which way it turns or repeats. You will meet one in four places:
+Construction planes are what let a 2D shape be drawn somewhere other than the bed, what let an operation say which way it turns or repeats, and what say where a solid is cut. You will meet one in six places:
 
 - **Plane** on a 2D shape, which is the surface that shape is drawn on
 - **Projection Plane** on any operation that consumes paths, which is the surface it flattens its inputs onto
 - **Rotate About** on [Rotate](../operations/transform/rotate.md), where the normal is the axis it turns around
 - **Central Axis** on a radial [Array](../operations/array/array.md), where the normal is the axis copies circle
+- **Plane** on [Plane Cut](../operations/reshape/plane-cut.md), which is where the solid is cut and which side is kept
+- **Plane** on [Slice to Path](../operations/reshape/slice-to-path.md), which is where the cross section is taken and the plane its path is drawn on
 
-<!-- IMAGE_NEEDED: The Properties panel for a Circle Path with the Plane control expanded, showing the preset dropdown, the Pick Face button, and the Origin, Normal and X Direction rows -->
+<!-- IMAGE_NEEDED: The Properties panel for a Circle Path with the Plane control expanded, showing the preset tabs, the Flip switch, the Pick Face button, and the Origin, Normal and X Direction rows -->
 
 ## The Three Values
 
@@ -28,20 +30,19 @@ Rotate and Array use only the Origin and the Normal — spinning the plane with 
 
 ## Presets
 
-The dropdown above the three rows offers six ready-made planes:
+The row of tabs above offers three ready-made facings, and the **Flip** switch under them turns any of them over:
 
-| Preset | Faces | Use it for |
-| --- | --- | --- |
-| **XY** | up, `+Z` | flat on the bed, the default |
-| **XZ** | forward, `-Y` | standing up, facing you |
-| **YZ** | right, `+X` | standing up, facing sideways |
-| **XY Flipped** | down, `-Z` | the same plane, seen from the other side |
-| **XZ Flipped** | back, `+Y` | the same plane, seen from the other side |
-| **YZ Flipped** | left, `-X` | the same plane, seen from the other side |
+| Tab | Faces | Flipped | Use it for |
+| --- | --- | --- | --- |
+| **XY** | up, `+Z` | down, `-Z` | flat on the bed, the default |
+| **XZ** | forward, `-Y` | back, `+Y` | standing up, facing you |
+| **YZ** | right, `+X` | left, `-X` | standing up, facing sideways |
 
-A Flipped preset is the same flat surface as its unflipped twin; only the facing reverses. That matters where a direction is a direction and not just a surface: which way an extrude grows, and which way around a Rotate or a radial Array turns.
+Flipping is the same flat surface seen from the other side; only the facing reverses. That matters where a direction is a direction and not just a surface: which way an extrude grows, and which way around a Rotate or a radial Array turns.
 
-Picking a preset sets the Normal and clears the Origin and X Direction, and it is a single undo step. The dropdown reads **Custom** whenever the three values do not match any preset — including whenever one of them is an expression.
+The tabs say which way the plane **faces**, and nothing else. A Plane Cut lying flat ten high is still an XY plane, so XY stays lit and the `10` shows in the Origin row below — where the plane sits is yours, not the preset's. Choosing a tab re-aims the Normal and clears the X Direction (which only means anything relative to a normal), but leaves the Origin exactly where you put it, all in a single undo step. Flip does the same: it turns the normal over and leaves the plane where it is.
+
+The fourth tab, **Custom**, lights up on its own whenever the plane faces none of those six ways — picked off a slanted face, typed by hand, or driven by an expression. You can also click it yourself at any time: it changes nothing, it only shows the **Plane Values** section. That section appears on its own whenever there is something in the values the tabs cannot say — an Origin that is not `0, 0, 0`, an X Direction of your own, an expression, or a normal that is none of the six.
 
 ## Expressions
 
