@@ -18,9 +18,9 @@ Subtract & Replace is not offered for 2D paths -- a region has no removed volume
 
 ## How to Use
 
-1. Select two or more objects
-2. Click **Subtract & Replace** in the toolbar
-3. Use **Part(s) to Subtract** to choose which children are the cutting shapes
+1. Select the object to keep, then hold Shift and select the objects to cut away from it
+2. Click **Subtract & Replace** in the toolbar -- every object you selected after the first is cut from the first
+3. Use **Part(s) to Subtract** to change which children are the cutting shapes
 4. Change your mind at any time by clicking a different operation tab at the top of the Properties panel (each tab shows the operation's icon, hover for its name) -- the shape rebuilds with the new operation
 
 ## Parameters

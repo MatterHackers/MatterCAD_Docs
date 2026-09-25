@@ -7,7 +7,7 @@ nav_order: 2
 ---
 # Subtract
 
-Subtract cuts the parts you choose out of the parts you did not. Use **Part(s) to Subtract** to pick the cutting shapes; everything else is the base that gets cut.
+Subtract cuts the parts you choose out of the parts you did not. Select the part to keep first, then the shapes to cut from it, and press Subtract: the first object you selected is the base, and every object you selected after it is cut from it. Use **Part(s) to Subtract** to change which shapes cut; everything not ticked is the base that gets cut.
 
 <!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract -->
 ![boolean_subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)
@@ -18,9 +18,9 @@ Subtract works on solids and on 2D paths. It looks at what you gave it and does 
 
 ## How to Use
 
-1. Select two or more objects
-2. Click **Subtract** in the toolbar -- a default part to cut away is picked for you so it does something right away
-3. Use **Part(s) to Subtract** to choose which children are the cutting shapes
+1. Select the object to keep, then hold Shift and select the objects to cut away from it
+2. Click **Subtract** in the toolbar -- every object you selected after the first is cut from the first
+3. Use **Part(s) to Subtract** to change which children are the cutting shapes
 4. Change your mind at any time by clicking a different operation tab at the top of the Properties panel (each tab shows the operation's icon, hover for its name) -- the shape rebuilds with the new operation
 
 ## Parameters
