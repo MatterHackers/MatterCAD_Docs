@@ -19,10 +19,16 @@ Revolve spins a 2D path around an axis to create a 3D solid of revolution. This 
 2. Apply **Revolve** from the Path operations menu
 3. Adjust the rotation range, axis position, and number of sides
 
+## Where the Axis Is
+
+The axis is the path's own **x = 0** line: the vertical line through the path's origin (the origin the path editor shows). Draw the profile to the right of that line, at the radius you want - a point 10 mm right of the origin ends up 10 mm from the axis. Anything drawn left of the line is folded across it, so keep the profile on one side.
+
+On the bed (the default plane) the path's up direction is the world **Y** axis, so a revolved part lies on its side along Y. Rotate it afterwards to stand it up.
+
 ## Parameters
 
 - **Rotation** - Total rotation angle for the revolve (default: 0, range: 0-360). Set to 360 for a complete revolution.
-- **Axis Position** - Offset of the rotation axis from the path center (default: 0, range: -30 to 30). Positive moves the axis away from the path, creating a larger opening.
+- **Axis Offset** - Moves the axis away from the path's x = 0 line (default: 0, range: -30 to 30). Positive values move it in +X, closer to a profile drawn right of the origin, which shrinks the part.
 - **Starting Angle** - Where the revolution begins (default: 0)
 - **Ending Angle** - Where the revolution ends (default: 45). Set to 360 for a full revolution.
 - **Sides** - Number of segments around the revolution (default: 30). More = smoother surface.
@@ -34,7 +40,7 @@ The **Projection Plane** section says which flat surface the profile is flattene
 
 ## Tips
 
-- Use Axis Position to control the inner diameter of the revolved shape
+- Use Axis Offset to control the inner diameter of the revolved shape
 - Set Starting and Ending Angle to less than 360 to create partial revolutions (arches, gutters)
 - Draw a profile path of your vase or bowl shape, then revolve it for perfect symmetry
 - A [Circle Path](../../2d-paths/circle-path.md) revolved creates a torus
