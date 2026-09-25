@@ -32,7 +32,7 @@ The 3D viewport is where you view and interact with your designs. MatterCAD uses
 
 ### View Shortcuts
 
-- **W** - Reset the view to fit all objects in the viewport
+- **W** - Home: turn to the standard three-quarter view and fit everything you can see in the viewport. Hidden objects are left out, and an empty design shows the bed. The view glides there from wherever it is, and pressing W again when you are already there leaves it alone
 - **Z** - Zoom to the currently selected object
 
 ### Arrow Key Navigation
@@ -47,7 +47,7 @@ The 3D viewport is where you view and interact with your designs. MatterCAD uses
 
 ## Tips
 
-- If you lose sight of your model, press **W** to reset the view and bring everything back into frame
+- If you lose sight of your model, press **W** (or the Home button beside the view cube) to go back to the Home view with everything in frame
 - Use **Z** after selecting an object to quickly focus on it
 - The scroll wheel zoom is centered on your mouse cursor position, so point at the area you want to zoom into
 - You can combine rotation and panning to inspect any angle of your design
