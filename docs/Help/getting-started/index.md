@@ -26,6 +26,7 @@ When you open MatterCAD, you will see several key areas:
 - [Adding Existing Objects](adding-existing-objects.md) - Import files from your computer or the library
 - [Editing Objects](editing-objects.md) - Move, rotate, and scale parts directly in the 3D view
 - [Saving and Exporting](saving-and-exporting.md) - Save your work and export to different file formats
+- [Using AI Assistants](ai-assistants.md) - Let Claude Code, Codex or Claude Desktop read and edit your designs
 
 ## Quick Start
 

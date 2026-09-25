@@ -17,6 +17,7 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 - [Adding Existing Objects](getting-started/adding-existing-objects.md) - Import files and library content
 - [Editing Objects](getting-started/editing-objects.md) - Move, rotate, and scale parts in the 3D view
 - [Saving and Exporting](getting-started/saving-and-exporting.md) - Save your work and export to different formats
+- [Using AI Assistants](getting-started/ai-assistants.md) - Let an AI chat tool read and edit your designs
 
 ## Design Building Blocks
 
