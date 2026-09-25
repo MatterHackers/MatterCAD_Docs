@@ -106,6 +106,22 @@ When the sheet changes, MatterCAD recalculates the objects that depend on it - a
 
 An expression can also read a value straight off another object rather than out of a sheet - `=Handle.Sides`, or `=self.Depth` for the object's own settings. See [Object References](object-references.md).
 
+### When a Size Changes
+
+When a shape's size changes - from a sheet or by typing a new value - it keeps its **bottom** where it was and stays **centered** in X and Y. A taller cube grows upward from the same floor; a wider one grows out evenly on both sides.
+
+So to place parts that follow a sheet, measure from the bottom, not the middle:
+
+1. Put each part on the bed, centered at X 0, Y 0. If you rotate one, set it back down on the bed afterward - rotation turns a part about its center, which can push it below the bed.
+2. Wrap it in a **Translate** and give the **Translation** formulas: X and Y say where the part's center goes, Z says how high its bottom sits.
+
+For example, with sheet cells `T` (thickness), `H` (post height) and `L` (arm length):
+
+- **Post** - a Cube with Width `=T`, Depth `=T`, Height `=H`. It stays on the bed; no Translate needed.
+- **Arm** - a Cube with Width `=L`, Depth `=T`, Height `=T`, then a Translate with Translation `=[L/2 - T/2, 0, H]`. Its bottom rests on top of the post, flush with the post's left side, and it reaches out to the right.
+
+Change `H` and the arm rides up with the post's top. Change `T` and both parts thicken without the arm sinking into the post, because every position was measured from a bottom that the resize does not move.
+
 ## Text and Data
 
 Variable Sheet cells can hold text as well as numbers. Text values are useful for generated labels, part numbers, imported data, and custom design apps.
