@@ -55,7 +55,7 @@ SVG export creates a 2D vector file from the top-down view of your design. This 
 
 Your design is also saved automatically as you work, so you will not lose changes if you close the application.
 
-An MCX file also remembers the view you saved it with - the direction, zoom and perspective or orthographic setting - so it opens looking the way you left it. Moving the view does not count as a change, so it never asks you to save just because you looked around.
+An MCX file also remembers the view you saved it with - the direction, zoom and perspective or orthographic setting - so it opens looking the way you left it. Each open design keeps its own perspective or orthographic setting, so switching tabs switches it too, and a new design starts in the one you last chose. Moving the view does not count as a change, so it never asks you to save just because you looked around.
 
 ## Tips
 
