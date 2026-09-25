@@ -30,8 +30,8 @@ On the bed (the default plane) the path's up direction is the world **Y** axis, 
 - **Rotation** - Total rotation angle for the revolve (default: 0, range: 0-360). Set to 360 for a complete revolution.
 - **Axis Offset** - Moves the axis away from the path's x = 0 line (default: 0, range: -30 to 30). Positive values move it in +X, closer to a profile drawn right of the origin, which shrinks the part.
 - **Starting Angle** - Where the revolution begins (default: 0)
-- **Ending Angle** - Where the revolution ends (default: 45). Set to 360 for a full revolution.
-- **Sides** - Number of segments around the revolution (default: 30). More = smoother surface.
+- **Ending Angle** - Where the revolution ends (default: 360, a full revolution).
+- **Sides** - Number of segments around the revolution (default: 40, the same as Sphere and Cylinder). More = smoother surface, but a slower rebuild.
 
 
 ## Projection Plane
