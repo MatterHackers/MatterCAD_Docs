@@ -100,7 +100,7 @@ Most numeric fields in MatterCAD support expressions. To use a sheet value in an
 
 - Set a Cube **Width** to `=case_width`.
 - Set an Array **Count** to `=hole_count`.
-- Set a Translate **Offset** value to `=wall_thickness * 2`.
+- Set a Translate **Translation** value to `=wall_thickness * 2`.
 
 When the sheet changes, MatterCAD recalculates the objects that depend on it - and only those objects, so a big design stays responsive.
 

@@ -43,14 +43,26 @@ The copied text contains a private access key. Anyone who has it can edit your d
 ### Claude Code
 
 1. Press **Copy** next to **Claude Code**.
-2. Paste the copied command into a terminal and run it. It adds MatterCAD for every folder you use Claude Code in.
+2. Paste the copied command into a terminal and run it. It adds a server named `mattercad` for every folder you use Claude Code in. The command looks like this, with your own port and key:
+
+   ```
+   claude mcp add --transport http --scope user mattercad http://127.0.0.1:47813/mcp --header "Authorization: Bearer <your key>"
+   ```
+
 3. Start a new Claude Code session, or type `/mcp` in a session that's already running to reconnect.
 
 ### Codex
 
 1. Press **Copy** next to **Codex**.
-2. Open `~/.codex/config.toml` in a text editor. On Windows, this is `.codex\config.toml` in your user folder. If the file doesn't exist, create it.
-3. Paste the copied section at the end of the file and save it.
+2. Open `~/.codex/config.toml` in a text editor. On Windows, this is `%USERPROFILE%\.codex\config.toml`. If the file doesn't exist, create it.
+3. Paste the copied section at the end of the file and save it. Codex reads its MCP servers from `[mcp_servers.<name>]` sections, and the copied one is named `mattercad`. It connects straight to MatterCAD's address with your key in a header, so Codex needs no helper program:
+
+   ```toml
+   [mcp_servers.mattercad]
+   url = "http://127.0.0.1:47813/mcp"
+   http_headers = { "Authorization" = "Bearer <your key>" }
+   ```
+
 4. Start a new Codex session.
 
 ### Claude Desktop
@@ -58,11 +70,29 @@ The copied text contains a private access key. Anyone who has it can edit your d
 Claude Desktop connects through a small helper called mcp-remote, which it downloads and runs with Node's `npx`. Install [Node.js](https://nodejs.org) first if you don't have it.
 
 1. Press **Copy** next to **Claude Desktop**.
-2. In Claude Desktop, open **Settings**, then **Developer**, then **Edit Config** to find `claude_desktop_config.json`.
+2. In Claude Desktop, open **Settings**, then **Developer**, then **Edit Config**. This opens `claude_desktop_config.json`, which is here:
+   - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+   - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 3. Paste the copied text into the file and save it:
    - If the file is empty, or has no `mcpServers` section, replace its contents with the copied text.
    - If it already has an `mcpServers` section, copy just the `"mattercad"` entry into it.
-4. Quit Claude Desktop completely and open it again.
+
+   The copied text looks like this, with your own port and key:
+
+   ```json
+   {
+     "mcpServers": {
+       "mattercad": {
+         "command": "npx",
+         "args": ["-y", "mcp-remote", "http://127.0.0.1:47813/mcp", "--allow-http", "--header", "Authorization:${AUTH_HEADER}"],
+         "env": { "AUTH_HEADER": "Bearer <your key>" }
+       }
+     }
+   }
+   ```
+
+   Leave out the space after `Authorization:` and keep the key in `env` as shown. On Windows, a space there breaks the setup.
+4. Quit Claude Desktop completely and open it again. Closing its window is not enough, because Claude Desktop keeps running in the background. On macOS, choose **Quit Claude** from the **Claude** menu. On Windows, right-click the Claude icon in the system tray and choose **Quit**.
 
 Don't use Claude Desktop's **Connectors** screen for MatterCAD. It can't reach an app running on your own computer.
 
@@ -78,7 +108,9 @@ Once connected, the AI can:
 - **Measure** - get the size, volume and surface area of objects, check that they are solid, and find the gap between two objects.
 - **Take pictures** - look at the design from a named view (front, back, left, right, top, bottom or isometric).
 - **Hide and show** - hide objects or show only some of them, the same as the app's own [Hide](../workspace/lock-hide.md). This changes the view only, not the design.
-- **Build and change** - create shapes, change their properties (including [expressions](../workspace/expressions.md)), rename, delete, move, rotate and scale them, [combine or subtract](../operations/boolean/index.md) them, make [arrays](../operations/array/index.md), and [group](../workspace/grouping.md) or ungroup them.
+- **Build and change** - create shapes, change their properties (including [expressions](../workspace/expressions.md)), rename, delete, move, rotate and scale them, [combine or subtract](../operations/boolean/index.md) them, make [arrays](../operations/array/index.md), and [group](../workspace/grouping.md) or ungroup them. A new shape lands where the app's own Add puts it: centered on the bed and resting on it, unless the AI gives it a position.
+- **Round and bevel edges** - add a [Fillet](../operations/reshape/fillet.md) or [Chamfer](../operations/reshape/chamfer.md), list the part's edges with their positions, and pick the edges to round or bevel, the same edges you could click in the 3D view.
+- **Use formulas in positions** - drive a [Translate](../operations/transform/translate.md)'s **Translation** from sheet values, for example `=[wall_thickness * 2, 0, 5]`, so the part moves when the sheet changes.
 - **Edit sheets** - read and write cells in a [Variable Sheet](../workspace/variable-sheet.md), so your design can be driven by named values.
 - **Undo and redo** - step back or forward through the design's undo history.
 - **Start, open and save designs** - start a new design in a new tab, open a model file in a new tab, and save.
