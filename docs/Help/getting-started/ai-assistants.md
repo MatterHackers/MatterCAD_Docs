@@ -66,6 +66,10 @@ Claude Desktop connects through a small helper called mcp-remote, which it downl
 
 Don't use Claude Desktop's **Connectors** screen for MatterCAD. It can't reach an app running on your own computer.
 
+### After Updating MatterCAD
+
+When you update MatterCAD, start a new chat session, or reconnect the tool (in Claude Code type `/mcp`; restart Codex or Claude Desktop), so the AI sees the newest tools. A chat that loaded MatterCAD's tools before the update can keep using their old descriptions.
+
 ## What the AI Can Do
 
 Once connected, the AI can:
@@ -78,13 +82,13 @@ Once connected, the AI can:
 - **Edit sheets** - read and write cells in a [Variable Sheet](../workspace/variable-sheet.md), so your design can be driven by named values.
 - **Undo and redo** - step back or forward through the design's undo history.
 - **Start, open and save designs** - start a new design in a new tab, open a model file in a new tab, and save.
-- **Export** - write STL or 3MF files. See [Saving and Exporting](saving-and-exporting.md).
+- **Export** - write STL or 3MF files into the AI folder (see below). If a file with that name is already there, the AI replaces it only when it asks to overwrite. See [Saving and Exporting](saving-and-exporting.md).
 - **Search these help pages** - look up what an operation does before using it.
 
 ### What the AI Can't Do
 
 - **Write files outside your chosen folder.** The AI only saves new designs and exports into the folder shown next to **AI can save and export to:** in the panel. It starts as the **MatterCAD AI Exports** folder in your Documents folder; press **Choose...** to pick another.
-- **Overwrite a file your design didn't come from.** The AI can save a design back to the file it was opened from, the same as pressing Save. It can't save it over any other file.
+- **Overwrite a file your design didn't come from.** The AI can save a design back to the file it was opened from, the same as pressing Save. It can't save it over any other file. The one exception is export: it can replace a file inside the AI folder when it asks to overwrite, and it never writes outside that folder.
 - **Run code.** The AI builds designs only from MatterCAD's own shapes and operations.
 - **Work while MatterCAD is closed.** MatterCAD must be open, with access turned on.
 - **Work in the browser version.** AI assistant access is only in the desktop app.
