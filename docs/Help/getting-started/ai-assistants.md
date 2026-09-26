@@ -105,6 +105,7 @@ When you update MatterCAD, start a new chat session, or reconnect the tool (in C
 Once connected, the AI can:
 
 - **Read the design** - see the objects in the tab you're looking at, their sizes, and every property you can edit.
+- **Keep the design's notes** - read the [Design Notes](../workspace/design-notes.md) first, and keep them a short, current brief of the design's goal, key sizes, decisions and open questions. It keeps what you wrote unless you ask it to change it.
 - **Measure** - get the size, volume and surface area of objects, check that they are solid, and find the gap between two objects.
 - **Take pictures** - look at the design from a named view (front, back, left, right, top, bottom or isometric).
 - **Hide and show** - hide objects or show only some of them, the same as the app's own [Hide](../workspace/lock-hide.md). This changes the view only, not the design.
@@ -163,6 +164,7 @@ MatterCAD hasn't heard from your AI tool yet.
 
 ## Related Topics
 
+- [Design Notes](../workspace/design-notes.md)
 - [Undo and Redo](../workspace/undo-redo.md)
 - [Saving and Exporting](saving-and-exporting.md)
 - [Variable Sheet](../workspace/variable-sheet.md)

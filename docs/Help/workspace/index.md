@@ -23,5 +23,6 @@ Learn how to navigate the MatterCAD workspace, use keyboard shortcuts, and manag
 - [Construction Planes](construction-planes.md) - Place flat work anywhere in space with an origin, a normal and an X direction
 - [Measure Tool](measure-tool.md) - Measure distances between points in your design
 - [Description](description.md) - Place a Markdown note in the scene
+- [Design Notes](design-notes.md) - Keep a short brief with the design, read first by you and AI assistants
 - [Modify Parameters](modify-parameters.md) - Drive visibility and colour from expressions
 - [Lock and Hide](lock-hide.md) - Lock objects to prevent changes and hide objects to reduce clutter
