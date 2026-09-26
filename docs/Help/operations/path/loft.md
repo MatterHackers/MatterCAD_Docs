@@ -20,7 +20,7 @@ Where [Linear Extrude](linear-extrude.md) gives one profile a constant height, L
 3. Move each section up or down to change where the blend happens
 4. Edit any section's own path to change the shape at that height
 
-The operation is enabled for anything that presents a path rather than a solid. The Path group is hidden on the toolbar by default -- see [Path Operations](index.md) for how to turn it on, or use the right-click **Modify** menu instead. An object that carries its own mesh -- an existing Linear Extrude, Revolve or Sweep, all of which keep their source path as a child -- is not offered as a section.
+The operation is enabled for anything that presents a path rather than a solid. It is in the Path group of the toolbar and in the right-click **Modify** menu. An object that carries its own mesh -- an existing Linear Extrude, Revolve or Sweep, all of which keep their source path as a child -- is not offered as a section.
 
 **Loft has no shaping properties of its own.** You shape the result entirely by editing and moving the sections, which is why the Properties panel for a Loft holds only the Projection Plane section described below.
 

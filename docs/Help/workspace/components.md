@@ -22,7 +22,7 @@ A component is a group of objects that shows only a chosen handful of controls. 
 
 **Make Component** is only enabled for a selection sitting at the top of the scene, not for something already nested inside another object.
 
-The Constraints group the toolbar button lives in is hidden by default. Click **Tools** at the right end of the toolbar and set **Constraints** to Expand or Collapse to bring it back. The right-click Modify menu offers Make Component either way.
+If you have hidden the Constraints group the toolbar button lives in, click **Tools** at the right end of the toolbar and set **Constraints** to Expand or Collapse to bring it back. The right-click Modify menu offers Make Component either way.
 
 ### Editing and Finalizing
 

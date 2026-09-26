@@ -21,9 +21,13 @@ Operations modify, combine, and transform objects in your design. MatterCAD orga
   <!-- AUTO_IMAGE: type=toolbar_icons group=Placement -->
   ![Placement toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Placement.png)
 
-- [Reshape](reshape/index.md) - Deform and modify object geometry with curve, twist, pinch, and more
-  <!-- AUTO_IMAGE: type=toolbar_icons group=Reshape -->
-  ![Reshape toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Reshape.png)
+- [Reshape](reshape/index.md) - Round, offset and deform object geometry, from two toolbar groups
+  - **Round & Offset** - fillet, chamfer, round edges, dilate, erode and hollow out
+  <!-- AUTO_IMAGE: type=toolbar_icons group=RoundOffset -->
+  ![Round & Offset toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-RoundOffset.png)
+  - **Deform** - curve, pinch, twist, plane cut and slice to path
+  <!-- AUTO_IMAGE: type=toolbar_icons group=Deform -->
+  ![Deform toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Deform.png)
 
 - [Array](array/index.md) - Create patterns of duplicated objects in linear or radial arrangements
   <!-- AUTO_IMAGE: type=toolbar_icons group=Duplication -->

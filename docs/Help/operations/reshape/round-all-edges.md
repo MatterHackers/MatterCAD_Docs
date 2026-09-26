@@ -21,7 +21,7 @@ This operation is [Erode](erode.md) followed by [Dilate](dilate.md) at the same 
 ## How to Use
 
 1. Select a solid part
-2. Click **Round All Edges** in the Reshape group of the toolbar
+2. Click **Round All Edges** in the Round & Offset group of the toolbar
 3. Set the **Radius**
 4. Wait -- on most parts this takes real time, and shows a progress bar while it works
 

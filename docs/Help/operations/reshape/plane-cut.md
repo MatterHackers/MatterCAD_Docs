@@ -15,7 +15,7 @@ Plane Cut slices an object with a [construction plane](../../workspace/construct
 ## How to Use
 
 1. Select an object
-2. Apply the **Plane Cut** operation from the Reshape menu
+2. Click **Plane Cut** in the Deform group of the toolbar
 3. Put the plane where you want the cut -- drag its handles in the viewport, or type the values into the **Plane** row
 
 The plane starts level, facing up, 10mm above the object's own zero, which is where the old Cut Height slider started.

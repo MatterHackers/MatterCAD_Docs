@@ -15,7 +15,7 @@ Twist rotates the top of an object relative to the bottom, creating a spiral or 
 ## How to Use
 
 1. Select an object
-2. Apply the **Twist** operation from the Reshape menu
+2. Click **Twist** in the Deform group of the toolbar
 3. Set the twist angle and adjust slicing for smoothness
 4. Turn on **Advanced** if you want to draw how the twist is spread up the part
 

@@ -15,7 +15,7 @@ Hollow Out creates a hollow shell from a solid object by offsetting the surface 
 ## How to Use
 
 1. Select a solid object
-2. Apply the **Hollow Out** operation from the Reshape menu
+2. Click **Hollow Out** in the Round & Offset group of the toolbar
 3. Set the desired wall thickness
 
 ## Parameters

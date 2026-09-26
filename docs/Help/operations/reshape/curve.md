@@ -15,7 +15,7 @@ Curve bends a straight object into an arc or circular shape. You can control the
 ## How to Use
 
 1. Select an object
-2. Apply the **Curve** operation from the Reshape menu
+2. Click **Curve** in the Deform group of the toolbar
 3. Choose between Angle or Diameter bend type
 4. Adjust the parameters to get the desired curvature
 

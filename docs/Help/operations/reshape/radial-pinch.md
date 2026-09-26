@@ -15,7 +15,7 @@ Radial Pinch compresses an object inward from a center point with a customizable
 ## How to Use
 
 1. Select an object
-2. Apply the **Radial Pinch** operation from the Reshape menu
+2. Click **Radial Pinch** in the Deform group of the toolbar
 3. Edit the path profile to define how much pinch is applied at each height
 4. Adjust the number of slices for smoothness
 

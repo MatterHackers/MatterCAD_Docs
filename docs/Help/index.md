@@ -30,7 +30,7 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 - [Boolean](operations/boolean/index.md) - Combine, subtract, and intersect objects
 - [Transform](operations/transform/index.md) - Move, rotate, scale, and mirror
 - [Placement](operations/placement/index.md) - Align objects and fit to bounds
-- [Reshape](operations/reshape/index.md) - Curve, twist, pinch, bevel, and more
+- [Reshape](operations/reshape/index.md) - The Round & Offset and Deform groups: fillet, chamfer, curve, twist, and more
 - [Array](operations/array/index.md) - Create linear and radial patterns of objects
 - [Path](operations/path/index.md) - Extrude, revolve, and modify 2D paths
 - [Mesh](operations/mesh/index.md) - Repair and simplify mesh geometry

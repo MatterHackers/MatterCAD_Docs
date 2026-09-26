@@ -21,7 +21,7 @@ Where [Linear Extrude](linear-extrude.md) pushes a profile straight up and [Revo
 4. Select the **3D Curve** in the design tree and drag its control points to shape the route
 5. Adjust **Rail Segments** if the result looks faceted
 
-The operation is only enabled when the selected item is a path. The Path group is hidden on the toolbar by default -- see [Path Operations](index.md) for how to turn it on, or use the right-click **Modify** menu instead.
+The operation is only enabled when the selected item is a path. It is in the Path group of the toolbar and in the right-click **Modify** menu.
 
 You can also build one the other way round: select a path *and* a 3D Curve together and choose **Loft**. A curve in the selection means you want the profile carried along it, so MatterCAD makes a Sweep instead of a loft, with the curve as the rail and everything else as the profile.
 

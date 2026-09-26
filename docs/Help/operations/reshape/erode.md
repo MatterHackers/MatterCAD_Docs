@@ -15,7 +15,7 @@ Erode shrinks a solid inward by the radius of a ball. Flat faces move inward. In
 ## How to Use
 
 1. Select a solid part
-2. Click **Erode** in the Reshape group of the toolbar
+2. Click **Erode** in the Round & Offset group of the toolbar
 3. Set **Radius** to the distance to shrink
 4. Wait for the operation to finish; use **Cancel** in the task area to keep the previous result
 

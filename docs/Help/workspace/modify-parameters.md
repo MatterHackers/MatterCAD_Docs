@@ -10,17 +10,17 @@ Modify Parameters wraps whatever you have selected and lets [expressions](expres
 
 <!-- IMAGE_NEEDED: Screenshot of a Modify Parameters selected in the design tree, with the Properties panel showing the Visible Override field and the Red/Green/Blue expression fields -->
 
-## Turning It On
+## Finding It
 
-Modify Parameters lives in the **Constraints** group of the toolbar, which is hidden by default.
+Modify Parameters lives in the **Constraints** group of the toolbar. If you have hidden that group, bring it back:
 
 1. Click **Tools** at the right end of the toolbar
 2. Find **Constraints** in the list
 3. Set it to **Expand** (buttons always shown) or **Collapse** (buttons behind the group button)
 
-The Constraints group remembers its own setting, so showing it here is all it takes -- it comes back the next time MatterCAD starts whatever you have done with the **Path** group or any other. The same menu is where you show, hide, expand and collapse every other toolbar group.
+The Constraints group remembers its own setting, whatever you have done with the **Path** group or any other. The same menu is where you show, hide, expand and collapse every other toolbar group.
 
-You do not have to show the group at all if you would rather not: **Modify Parameters** is also in the right-click **Modify** menu of any selected object, whether the toolbar group is showing or not.
+**Modify Parameters** is also in the right-click **Modify** menu of any selected object, whether the toolbar group is showing or not.
 
 ## How to Use
 

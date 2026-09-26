@@ -15,7 +15,7 @@ Dilate grows a solid outward by the radius of a ball. Flat faces move outward. O
 ## How to Use
 
 1. Select a solid part
-2. Click **Dilate** in the Reshape group of the toolbar
+2. Click **Dilate** in the Round & Offset group of the toolbar
 3. Set **Radius** to the distance to grow
 4. Wait for the operation to finish; use **Cancel** in the task area to keep the previous result
 

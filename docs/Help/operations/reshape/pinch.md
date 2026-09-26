@@ -15,7 +15,7 @@ Pinch compresses the back of an object inward, with the effect increasing toward
 ## How to Use
 
 1. Select an object
-2. Apply the **Pinch** operation from the Reshape menu
+2. Click **Pinch** in the Deform group of the toolbar
 3. Adjust the pinch percentage
 
 ## Parameters

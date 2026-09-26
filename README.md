@@ -32,7 +32,7 @@ This repository hosts the official MatterCAD documentation, served publicly via 
 - **Parametric 3D Modeling** — Cubes, cylinders, spheres, cones, tori, and more with precise dimensional control
 - **Boolean Operations** — Combine, subtract, intersect, and subtract-and-replace to build complex shapes
 - **Array Tool** — Linear, radial, curve, and transform patterns for repeating features
-- **Reshape Operations** — Bevel, curve, twist, pinch, hollow out, and plane cut
+- **Reshape Operations** — Round & Offset (fillet, chamfer, dilate, erode, hollow out) and Deform (curve, twist, pinch, plane cut)
 - **Path Operations** — Linear extrude, revolve, inflate, merge, border, and smooth paths
 - **2D Path Primitives** — Box, circle, ring, star, and custom paths for extrusion workflows
 - **Mechanical Parts** — Built-in gear and thread generators

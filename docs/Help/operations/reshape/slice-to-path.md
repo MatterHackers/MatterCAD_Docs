@@ -18,7 +18,7 @@ The section is drawn on the plane it was taken on, not flattened back onto the b
 ## How to Use
 
 1. Select a solid
-2. Click **Slice to Path** in the Reshape group of the toolbar
+2. Click **Slice to Path** in the Deform group of the toolbar
 3. Put the plane through the part where you want the section -- drag its handles in the viewport, or type the values into the **Plane** row
 4. Apply a path operation to the result -- [Linear Extrude](../path/linear-extrude.md) is the usual next step
 

@@ -39,7 +39,7 @@ Most designs in MatterCAD are built by combining simple shapes:
 1. **Start with primitives** - Add the basic shapes you need
 2. **Position them** - Move and rotate objects so they overlap where you want
 3. **Apply boolean operations** - Use [Combine](../operations/boolean/combine.md) to merge shapes together, or [Subtract](../operations/boolean/subtract.md) to cut one shape out of another
-4. **Refine** - Use [Reshape](../operations/reshape/index.md) operations like Bevel, Curve, or Twist to add detail
+4. **Refine** - Use the **Round & Offset** and **Deform** groups ([Reshape](../operations/reshape/index.md)), with operations like Fillet, Curve, or Twist, to add detail
 
 ## Related
 

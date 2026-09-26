@@ -17,7 +17,7 @@ Chamfer and [Fillet](fillet.md) are the same tool with two different profiles --
 ## How to Use
 
 1. Select a part, or a 2D path
-2. Click **Chamfer** in the Reshape group of the toolbar
+2. Click **Chamfer** in the Round & Offset group of the toolbar
 3. Click an edge (or, on a path, a corner) in the 3D view to add it
 4. Set **Distance** in the Properties panel
 

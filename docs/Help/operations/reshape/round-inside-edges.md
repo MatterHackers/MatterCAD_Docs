@@ -19,7 +19,7 @@ This operation is [Dilate](dilate.md) followed by [Erode](erode.md) at the same 
 ## How to Use
 
 1. Select a solid part
-2. Click **Round Inside Edges** in the Reshape group of the toolbar
+2. Click **Round Inside Edges** in the Round & Offset group of the toolbar
 3. Set the **Radius**
 4. Wait -- this one takes real time, and shows a progress bar while it works
 

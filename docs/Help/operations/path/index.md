@@ -10,7 +10,7 @@ nav_order: 5
 
 Path operations work with 2D paths to create and modify 3D shapes. Use these to extrude, revolve, and refine path-based geometry.
 
-The **Path** group is hidden on the toolbar until you turn it on. Click **Tools** at the right end of the toolbar, find **Path** in the list, and set it to **Expand** or **Collapse**. Every path operation is also available in the right-click **Modify** menu of a selected object, whether the group is showing or not.
+The **Path** group is on the toolbar. If you have hidden it, click **Tools** at the right end of the toolbar, find **Path** in the list, and set it to **Expand** or **Collapse** to bring it back. Every path operation is also available in the right-click **Modify** menu of a selected object, whether the group is showing or not.
 
 ## Operations
 
