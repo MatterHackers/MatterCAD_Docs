@@ -25,7 +25,7 @@ Operations modify, combine, and transform objects in your design. MatterCAD orga
   - **Round & Offset** - fillet, chamfer, round edges, dilate, erode and hollow out
   <!-- AUTO_IMAGE: type=toolbar_icons group=RoundOffset -->
   ![Round & Offset toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-RoundOffset.png)
-  - **Deform** - curve, pinch, twist, plane cut and slice to path
+  - **Deform** - curve, pinch, radial pinch, twist, plane cut and slice to path
   <!-- AUTO_IMAGE: type=toolbar_icons group=Deform -->
   ![Deform toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Deform.png)
 
