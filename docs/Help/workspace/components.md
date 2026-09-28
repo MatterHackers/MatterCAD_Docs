@@ -52,6 +52,7 @@ Behind the scenes those parameters usually write into a Variable Sheet inside th
 ## Related
 
 - [Grouping](grouping.md) - Simple grouping without parameterization
+- [Node Graphs](node-graphs.md) - Wire parts into a reusable tool with a few settings
 - [Expressions](expressions.md) - Use expressions to link component parameters
 - [Variable Sheet](variable-sheet.md) - Store the shared values a component's parameters read
 - [Object References](object-references.md) - Link a parameter to another object's setting

@@ -44,3 +44,7 @@ Operations modify, combine, and transform objects in your design. MatterCAD orga
 - [Image](image/index.md) - Convert images to 3D objects and paths
   <!-- AUTO_IMAGE: type=toolbar_icons group=Image -->
   ![Image toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Image.png)
+
+## Node Graphs
+
+**Convert to Nodes**, next to Group and Ungroup on the toolbar, turns the selected parts into a node graph you wire up in the node editor. See [Node Graphs](../workspace/node-graphs.md).

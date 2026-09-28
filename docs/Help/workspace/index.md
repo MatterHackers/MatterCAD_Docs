@@ -15,6 +15,7 @@ Learn how to navigate the MatterCAD workspace, use keyboard shortcuts, and manag
 - [Undo and Redo](undo-redo.md) - Undo and redo changes to your design
 - [Grouping](grouping.md) - Group and ungroup objects for easier management
 - [Components](components.md) - Create reusable components and assemblies
+- [Node Graphs](node-graphs.md) - Wire parts into a reusable tool with Convert to Nodes and the node editor
 - [Expressions](expressions.md) - Use math expressions for parametric design
 - [Expression Functions](expression-functions.md) - Reference for every function expressions can call
 - [Object References](object-references.md) - Read another object's settings with `Name.Property`
