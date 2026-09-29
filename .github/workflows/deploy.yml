@@ -16,6 +16,9 @@ concurrency:
 
 jobs:
   build:
+    # Pages is set up on MatterHackers/MatterCAD_Docs only; on a fork (larsbrubaker/MatterCAD_Docs)
+    # configure-pages fails with "Get Pages site failed", so a fork push skips the deploy.
+    if: github.repository == 'MatterHackers/MatterCAD_Docs'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
