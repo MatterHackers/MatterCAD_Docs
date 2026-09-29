@@ -59,6 +59,7 @@ Type that number or less. Everything on the [Fillet](fillet.md) page under "When
 - Distance is measured along the faces, not across the cut. A 2 mm chamfer takes 2 mm off each face and leaves a cut face about 2.8 mm wide
 - Chamfer and Fillet can be stacked: chamfer one set of edges, then fillet the result's new edges
 - If every outside edge should be broken at one size and you do not care whether it is round, [Round All Edges](round-all-edges.md) needs no picking
+- In a [node graph](../../workspace/node-graphs.md), a Chamfer node cuts every sharp edge until you wire a selection into its Selection socket - see *Choose Edges with Selection Nodes* there
 
 ## Related
 

@@ -48,14 +48,14 @@ That ordering is what makes references survive copying. Duplicate a part named `
 
 ## Which Settings You Can Read
 
-A reference can read the object's **inputs** - the values the properties panel gives you an editor for. In practice that means numbers, whole numbers, on/off settings and text.
+A reference can read the object's **inputs** - the values the properties panel gives you an editor for. In practice that means numbers, whole numbers, on/off settings and text. For a value made of X, Y and Z (a position, a size, a Bounds' Min or Max), add the letter to read one number: `=Mover.Translation.X`, `=Bounds.Max.Z`.
 
 Some things deliberately cannot be read, and a reference to them is left unresolved rather than guessed at:
 
 - **Drop-down choices**, because substituting the hidden number behind a choice would mean something you never wrote
-- **Grouped values** such as an offset or an axis written as `[10, 20, 30]`, because there is no single number to put in their place
+- **A whole X, Y and Z value** such as an offset written as `[10, 20, 30]`, because there is no single number to put in its place - read one part of it instead, like `=Mover.Translation.X`
 - **Results rather than inputs** - a mesh, a computed bounding size, or anything the properties panel does not offer as a field
-- **Chained references** such as `=Mover.Translation.X`, and anything with a call in it
+- **Longer chains** such as `=A.B.C.X`, and anything with a call in it
 
 ## Sheet Names Win
 

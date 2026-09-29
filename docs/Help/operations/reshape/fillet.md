@@ -110,6 +110,7 @@ One repair is made silently. A mesh made of loose, unwelded triangles -- which m
 - Two radii on one part are two Fillets. Round the edges that share a radius, then apply another Fillet for the rest -- the same way you would in any other CAD package
 - Concave edges get a bead of material added into the corner rather than material cut away, which is what a fillet means on the inside of a shape
 - If every edge of the part should be rounded at one radius, [Round All Edges](round-all-edges.md) needs no picking at all
+- In a [node graph](../../workspace/node-graphs.md), a Fillet node rounds every sharp edge until you wire a selection into its Selection socket - see *Choose Edges with Selection Nodes* there
 
 ## Related
 

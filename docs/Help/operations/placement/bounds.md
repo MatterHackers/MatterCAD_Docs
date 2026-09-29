@@ -24,7 +24,11 @@ These are measured for you and can't be typed over:
 - **Size** - The box's width, depth and height
 - **Center** - The middle of the box
 
-Formulas in other parts can read these values, for example `=Bounds.Max.Z` for the height of the top of the box.
+Formulas in other parts can read one part of a value by adding its letter: `=Bounds.Max.Z` is the height of the top of the box, and `=Bounds.Size.X` its width. Use the Bounds' own name in the scene tree in place of `Bounds` if you renamed it.
+
+## In a Node Graph
+
+Bounds is also a node (Add Node > Operations). Wire parts into its **Source**; its **Result** is the box, and its **Min**, **Max**, **Size** and **Center** are outputs you can wire into another card's settings - through Separate XYZ for a single number, or into an Inside Box node to round only the edges inside the box. See *Values Between Nodes* on the [Node Graphs](../../workspace/node-graphs.md) page.
 
 ## Tips
 
@@ -35,3 +39,4 @@ Formulas in other parts can read these values, for example `=Bounds.Max.Z` for t
 
 - [Fit to Bounds](fit-to-bounds.md) - Scale a part to fit a box of the size you choose
 - [Align](align.md) - Position parts relative to each other
+- [Node Graphs](../../workspace/node-graphs.md) - Wire a Bounds' values into other nodes
