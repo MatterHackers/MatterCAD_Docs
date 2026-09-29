@@ -16,3 +16,4 @@ Placement operations help you precisely position objects relative to each other 
 - [Dual Extrusion Align](dual-extrusion-align.md) - Align objects to their shared modeling positions
 - [Fit to Bounds](fit-to-bounds.md) - Scale an object to fit within a specified bounding box
 - [Fit to Cylinder](fit-to-cylinder.md) - Scale an object to fit within a specified cylinder
+- [Bounds](bounds.md) - Make a solid box the size of the selected parts
