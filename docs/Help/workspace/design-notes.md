@@ -7,13 +7,13 @@ nav_order: 17
 
 Design Notes are a short written brief that travels with your design: what it is for, the sizes that matter, the decisions you made and what is still open. Whoever opens the design next reads them first, whether that's you in a month, a colleague, or an [AI assistant](../getting-started/ai-assistants.md).
 
-<!-- IMAGE_NEEDED: Screenshot of the Design Notes window on the Preview tab, showing a short brief with Goal, Key sizes, Decisions still in force and Open / next headings, and the highlighted Notes button in the 3D view's control column -->
+<!-- IMAGE_NEEDED: Screenshot of the Design Notes window on the Preview tab, showing a short brief with Goal, Key sizes, Decisions still in force and Open / next headings, and the highlighted Notes button at the top of the scene tree, beside Show All and Unlock All -->
 
 Notes belong to the whole design, not to one object. To put a note next to a feature in the 3D view, use a [Description](description.md) instead.
 
 ## How to Use
 
-1. Click the **Design Notes** button in the column of view buttons at the right of the 3D view, under the snap and units buttons. The button is highlighted when the design has notes, so you can see there is something to read.
+1. Click the **Notes** button at the top of the scene tree, beside **Show All** and **Unlock All**. The button is highlighted when the design has notes, so you can see there is something to read.
 2. The window opens on **Preview**, showing the notes as formatted text. A design with no notes shows a hint about what to write.
 3. Click **Edit** to change the notes. They are [Markdown](https://guides.github.com/features/mastering-markdown/), so you can use headings, lists, bold and links. The **Help** tab is a Markdown reference.
 4. Click **Save** to keep your changes, or close the window to throw them away.
