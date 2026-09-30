@@ -24,6 +24,14 @@ Without the leading `=`, the field keeps what you typed - `20 + 5` in a numeric 
 
 The same rule applies inside Variable Sheet cells: a cell whose contents start with `=` is a formula, and anything else is stored as a plain number or as text.
 
+## Numbers in Your Region's Format
+
+Numbers are shown and typed the way your computer's region writes them. Where a comma is the decimal mark, formulas use it too, and a semicolon separates function arguments and the parts of a vector, the way spreadsheets do: `=MAX(1,5; 2)` and `[1,5; 2; 3]`. Elsewhere the same formulas read `=MAX(1.5, 2)` and `[1.5, 2, 3]`. You can always type a period as the decimal mark.
+
+Type numbers without thousands separators - `1000`, not `1.000` or `1,000` - or MatterCAD will ask you to.
+
+Your design is saved the same way whichever format you use, so it opens identically on any computer. To choose a format other than your region's, set **Number format** in Application Settings to **1234.5** or **1234,5**.
+
 ## Operators
 
 | Operator | Meaning |

@@ -2,6 +2,20 @@
 title: Release Notes
 nav_order: 104
 ---
+# MatterCAD - Next Release (in development)
+
+## New Features
+
+* **Numbers in Your Region's Format**
+  * MatterCAD shows numbers the way your computer's region writes them - 1234,5 where a comma is the decimal mark, 1234.5 where it is a period - and you type them the same way
+  * Designs, settings and formulas are saved the same way on every computer, so a design made in Germany opens exactly the same in the US
+  * A number typed with thousands separators (1.000 or 1,000) is refused with a message asking for 1000, instead of being guessed as one or a thousand
+  * Where a comma is the decimal mark, formulas use it too, with semicolons between values the way spreadsheets do: `=MAX(1,5; 2)` and `[1,5; 2; 3]`
+  * A new **Number format** choice in Application Settings picks System (your region), 1234.5 or 1234,5
+  <!-- IMAGE: static - Application Settings with the Number format list open showing System, 1234.5 and 1234,5. ~500x300px -->
+
+---
+
 # MatterCAD 2.2026.8 (August 13, 2026)
 [Windows Download](https://mattercontrol.appspot.com/downloads/mattercad-windows/release)
 
