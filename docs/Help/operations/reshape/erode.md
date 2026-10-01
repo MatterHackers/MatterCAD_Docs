@@ -19,18 +19,21 @@ Erode shrinks a solid inward by at least the radius you set, never less. Flat fa
 3. Set **Radius** to the smallest distance to shrink
 4. Wait for the operation to finish; use **Cancel** in the task area to keep the previous result
 
-While you drag the **Radius** slider on a detailed part, MatterCAD shows a quick, see-through preview, and a **Preview** row appears in the task area. Let go to build the exact result; it replaces the preview, with a progress bar and the time left. Grab the slider again to stop that build and return to the preview. The preview is approximate, so its edges look a little softer; the final result is exact. Small parts skip the preview because the exact result is already quick.
+On a detailed part, MatterCAD builds fast by default. Every surface still moves at least the radius, but outside edges that should stay sharp can come out slightly rounded, and a note in the panel says so. For perfectly sharp edges, check **Exact** at the top of the panel; it is slower, and on a large part it can take minutes. Simple parts are always built exactly, so the checkbox doesn't show for them.
+
+With **Exact** checked, dragging the **Radius** slider shows a quick, see-through preview, and a **Preview** row appears in the task area. Let go to build the exact result; it replaces the preview, with a progress bar and the time left. Grab the slider again to stop that build and return to the preview.
 
 ## Parameters
 
 - **Radius** - The least distance surfaces move inward (default: 1 mm). Must be greater than zero. Some faces can move a little further, never less
-- **Segments** - The detail of the rounding ball (default: 16). More segments produce finer curves and bring the result closer to exactly the radius set, but take longer, especially on parts with pockets or notches
+- **Exact** - Shown only on detailed parts (256 triangles or more). Check it for the precise result with perfectly sharp edges; it is slower. Unchecked, the part builds in seconds
+- **Segments** - Only used by exact builds. The detail of the rounding ball (default: 16). More segments produce finer curves and bring the result closer to exactly the radius set, but take longer, especially on parts with pockets or notches
 
 ## When It Refuses
 
 The radius must be smaller than half the source bounding box's smallest side, and a little smaller still because the rounding ball reaches slightly past the radius. That is an upper bound, not a guarantee that the ball fits inside the shape. If the radius is too large, the message tells you the largest radius that works; set **Radius** below it. If no solid remains after erosion, the operation refuses the result and leaves the source visible. A thin feature disappearing is allowed as long as some solid remains.
 
-Convex parts, such as boxes with no pockets or notches, use a fast exact erosion. Parts with inside corners take longer.
+With **Exact** checked, convex parts, such as boxes with no pockets or notches, still erode quickly. Parts with inside corners take longer.
 
 ## Tips
 

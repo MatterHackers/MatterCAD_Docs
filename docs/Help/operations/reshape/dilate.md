@@ -19,12 +19,15 @@ Dilate grows a solid outward by at least the radius you set, never less. Flat fa
 3. Set **Radius** to the smallest distance to grow
 4. Wait for the operation to finish; use **Cancel** in the task area to keep the previous result
 
-While you drag the **Radius** slider on a detailed part, MatterCAD shows a quick, see-through preview, and a **Preview** row appears in the task area. Let go to build the exact result; it replaces the preview, with a progress bar and the time left. Grab the slider again to stop that build and return to the preview. The preview is approximate, so its edges look a little softer; the final result is exact. Small parts skip the preview because the exact result is already quick.
+On a detailed part, MatterCAD builds fast by default. Every surface still moves at least the radius, but inside corners that should stay sharp can come out slightly rounded, and a note in the panel says so. For perfectly sharp edges, check **Exact** at the top of the panel; it is slower, and on a large part it can take minutes. Simple parts are always built exactly, so the checkbox doesn't show for them.
+
+With **Exact** checked, dragging the **Radius** slider shows a quick, see-through preview, and a **Preview** row appears in the task area. Let go to build the exact result; it replaces the preview, with a progress bar and the time left. Grab the slider again to stop that build and return to the preview.
 
 ## Parameters
 
 - **Radius** - The least distance surfaces move outward (default: 1 mm). Must be greater than zero. Some faces can move a little further, never less
-- **Segments** - The detail of the rounding ball (default: 16). More segments produce finer curves and bring the result closer to exactly the radius set, but take longer, especially on parts with pockets or notches
+- **Exact** - Shown only on detailed parts (256 triangles or more). Check it for the precise result with perfectly sharp edges; it is slower. Unchecked, the part builds in seconds
+- **Segments** - Only used by exact builds. The detail of the rounding ball (default: 16). More segments produce finer curves and bring the result closer to exactly the radius set, but take longer, especially on parts with pockets or notches
 
 ## Tips
 
