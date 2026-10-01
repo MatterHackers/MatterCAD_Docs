@@ -18,6 +18,8 @@ Hollow Out turns a solid part into a shell with walls at least as thick as you s
 2. Click **Hollow Out** in the Round & Offset group of the toolbar
 3. Set **Wall Thickness** to how thick the walls should be
 4. Wait for the operation to finish; the progress bar shows the time left, and **Cancel** in the task area keeps the previous result
+
+While you drag the **Wall Thickness** slider on a detailed part, MatterCAD shows a quick, see-through preview, and a **Preview** row appears in the task area. Let go to build the exact result; it replaces the preview, with a progress bar and the time left. Grab the slider again to stop that build and return to the preview. The preview is approximate, so its edges look a little softer; the final result is exact. Small parts skip the preview because the exact result is already quick.
 5. To open the cavity, [Subtract](../boolean/subtract.md) a [Hole](../../primitives/hole.md) or other shape that reaches through a wall
 
 ## Parameters
