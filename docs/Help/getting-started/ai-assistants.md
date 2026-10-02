@@ -109,13 +109,13 @@ Once connected, the AI can:
 - **Measure** - get the size, volume and surface area of objects, check that they are solid, and find the gap between two objects.
 - **Take pictures** - look at the design from a named view (front, back, left, right, top, bottom or isometric).
 - **Hide and show** - hide objects or show only some of them, the same as the app's own [Hide](../workspace/lock-hide.md). This changes the view only, not the design.
-- **Build and change** - create shapes, change their properties (including [expressions](../workspace/expressions.md)), rename, delete, move, rotate and scale them, [combine or subtract](../operations/boolean/index.md) them, make [arrays](../operations/array/index.md), and [group](../workspace/grouping.md) or ungroup them. A new shape lands where the app's own Add puts it: centered on the bed and resting on it, unless the AI gives it a position.
+- **Build and change** - create shapes, change their properties (including [expressions](../workspace/expressions.md)) and colors, rename, delete, move, rotate and scale them, [combine or subtract](../operations/boolean/index.md) them, make [arrays](../operations/array/index.md), and [group](../workspace/grouping.md) or ungroup them. A new shape lands where the app's own Add puts it: centered on the bed and resting on it, unless the AI gives it a position.
 - **Round and bevel edges** - add a [Fillet](../operations/reshape/fillet.md) or [Chamfer](../operations/reshape/chamfer.md), list the part's edges with their positions, and pick the edges to round or bevel, the same edges you could click in the 3D view.
 - **Use formulas in positions** - drive a [Translate](../operations/transform/translate.md)'s **Translation** from sheet values, for example `=[wall_thickness * 2, 0, 5]`, so the part moves when the sheet changes.
 - **Edit sheets** - read and write cells in a [Variable Sheet](../workspace/variable-sheet.md), so your design can be driven by named values.
 - **Undo and redo** - step back or forward through the design's undo history.
 - **Start, open and save designs** - start a new design in a new tab, open a model file in a new tab, and save.
-- **Export** - write STL or 3MF files into the AI folder (see below). If a file with that name is already there, the AI replaces it only when it asks to overwrite. See [Saving and Exporting](saving-and-exporting.md).
+- **Export** - write STL or 3MF files into the AI folder (see below). If a file with that name is already there, the AI replaces it only when it asks to overwrite. A 3MF keeps each part's color, for printing in more than one material. See [Saving and Exporting](saving-and-exporting.md).
 - **Search these help pages** - look up what an operation does before using it.
 
 ### What the AI Can't Do
