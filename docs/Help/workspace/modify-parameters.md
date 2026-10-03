@@ -44,13 +44,15 @@ Inside the three colour expressions you can use three extra variables that stand
 
 They must be written in square brackets and they are not case sensitive, so `[red]` and `[Red]` are the same thing. Results outside 0-255 are clamped.
 
+These variables do not hold one fixed number. MatterCAD works them out separately for each part underneath the Modify Parameters, from that part's own colour. So `=[red] - 40` in **Red** takes the same amount of red out of every part, each starting from its own red: a bright red part becomes a darker red, and a blue part with no red in it stays blue. That is also why the Properties panel shows no value for them - there is a different one for every part.
+
 Examples:
 
-- `=[red] - 2` - a shade darker in red than whatever the part already is
+- `=[red] - 40` - less red than each part already has
 - `=255 - [red]` - inverted red
 - `=warm * 255` - a channel driven straight from a named sheet cell holding a 0 to 1 value
 
-The Properties panel prints a reminder of these three variables above the colour fields.
+You do not have to remember them. Above the colour fields the Properties panel shows the hint *Type [ in Red, Green or Blue to use each part's own color.* Do that - type `=[` into one of the three fields - and an [autocomplete](expressions.md#autocomplete) list offers `[red]`, `[green]` and `[blue]` first, followed by the bracket names every expression can use. Pick one with the arrow keys and **Enter**, or click it.
 
 ## Tips
 

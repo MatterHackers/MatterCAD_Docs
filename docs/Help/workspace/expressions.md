@@ -24,6 +24,27 @@ Without the leading `=`, the field keeps what you typed - `20 + 5` in a numeric 
 
 The same rule applies inside Variable Sheet cells: a cell whose contents start with `=` is a formula, and anything else is stored as a plain number or as text.
 
+## Autocomplete
+
+You do not have to remember every name. Once a field starts with `=`, MatterCAD offers a list of what you can type at the cursor:
+
+- **Start typing a word** - the list shows the sheet cell names, functions, objects and `self` that begin with what you typed. Typing `=` on its own, or after an operator or `(`, shows nothing until you type a letter.
+- **Type `[`** - the list shows every bracket name that works in this field. `[index]` appears only inside an [Array](../operations/array/index.md), and in the colour fields of [Modify Parameters](modify-parameters.md) `[red]`, `[green]` and `[blue]` come first.
+- **Type an object's name and a dot, or `self.`** - the list shows that object's settings with their current values, ready to [reference](object-references.md). After a setting such as a position, another dot lists its X, Y and Z.
+
+Each row shows the name and, where there is one, its current value. The line at the bottom of the list says what the highlighted entry is.
+
+| Key | What it does |
+| --- | --- |
+| Up, Down, Page Up, Page Down | Move the highlight |
+| Enter or Tab | Put the highlighted entry into the field |
+| Esc | Close the list and keep what you typed |
+| Click | Put the clicked entry into the field |
+
+Picking a function types its name and the opening `(`, ready for its arguments. Picking an object types its name and the dot, so the list of its settings opens straight away.
+
+Autocomplete works in every expression field: the Properties panel, the number boxes in a node graph, the X and Y boxes of the path editor, and the formula bar and cells of a [Variable Sheet](variable-sheet.md).
+
 ## Numbers in Your Region's Format
 
 Numbers are shown and typed the way your computer's region writes them. Where a comma is the decimal mark, formulas use it too, and a semicolon separates function arguments and the parts of a vector, the way spreadsheets do: `=MAX(1,5; 2)` and `[1,5; 2; 3]`. Elsewhere the same formulas read `=MAX(1.5, 2)` and `[1.5, 2, 3]`. You can always type a period as the decimal mark.
