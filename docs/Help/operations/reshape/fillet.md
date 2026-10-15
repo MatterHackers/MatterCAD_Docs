@@ -12,7 +12,7 @@ Fillet rounds the edges you pick. On a solid it rolls a ball of the radius you g
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_fillet -->
 ![reshape_fillet](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_fillet.png)
 
-Fillet and [Chamfer](chamfer.md) are the same tool with two different profiles -- Fillet leaves an arc, Chamfer leaves a flat cut -- so everything on this page about picking edges and the messages the panel shows is true of both. If you want every outside edge of a part rounded at one radius and do not want to pick anything, use [Round All Edges](round-all-edges.md) instead.
+Fillet and [Chamfer](chamfer.md) are one tool with two profiles -- Fillet leaves an arc, Chamfer leaves a flat cut -- so everything on this page about picking edges and the messages the panel shows is true of both. The Fillet and Chamfer toolbar buttons only choose which profile it starts with; see [Switching to Chamfer](#switching-to-chamfer) to change it afterwards. If you want every outside edge of a part rounded at one radius and do not want to pick anything, use [Round All Edges](round-all-edges.md) instead.
 
 ## How to Use
 
@@ -65,9 +65,19 @@ There is no reading badge here -- a corner is a corner, where an edge could also
 
 *The original star path on the left, the same path with a 1.5 mm Fillet on every corner on the right.*
 
+## Switching to Chamfer
+
+The two icon tabs at the top of the Properties panel, **Fillet** and **Chamfer** (hover one to see its name), switch the profile in place. Click **Chamfer** and the same edges are cut flat instead of rounded; click **Fillet** to round them again. The switch keeps everything you set up: the edges and corners you picked, the size, and the other settings. Only the profile changes, so it is a quick way to compare the two on the same edges.
+
+- The size keeps its number. On a Fillet it is labelled **Radius**, on a Chamfer **Distance**; on a square edge both cut back the same amount along each face, so the edge's footprint does not move when you switch
+- **Segments** only shows on a Fillet, because a flat cut has no curve to smooth. The number is kept for when you switch back
+- A Fillet still called "Fillet" is renamed "Chamfer" when you switch, and back again. A name you gave it yourself stays. Formulas that refer to it by name follow the rename
+- One undo puts the switch back
+
 ## Parameters
 
-- **Radius** - The radius every edge and corner this Fillet selects is rounded at. It is the radius of the largest ball that would roll along the edge. One Fillet has one radius; for a second radius, apply a second Fillet
+- **Fillet / Chamfer** - The profile: round or flat. Switching keeps the picked edges and the size (see above)
+- **Radius** - The radius every edge and corner this Fillet selects is rounded at. It is the radius of the largest ball that would roll along the edge. One Fillet has one radius; for a second radius, apply a second Fillet. In a formula it is called `Size` (for example `=Fillet.Size`), whether the operation is a Fillet or a Chamfer, so a formula keeps working when you switch
 - **Segments** - How many straight steps each arc is drawn with. More segments make a smoother curve and a heavier mesh. 8 is plenty for most parts
 - **Edges** - The list of selections on a solid (see above)
 - **Corners** - The same list for a 2D path. Empty means every corner

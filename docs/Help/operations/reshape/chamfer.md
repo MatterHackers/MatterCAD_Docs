@@ -12,7 +12,9 @@ Chamfer cuts the edges you pick flat, leaving a 45 degree face where the edge wa
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_chamfer -->
 ![reshape_chamfer](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_chamfer.png)
 
-Chamfer and [Fillet](fillet.md) are the same tool with two different profiles -- Chamfer leaves a flat cut, Fillet leaves an arc. Picking edges, the one size a whole feature is cut at, and the messages the panel shows work identically in both, and are described in full on the [Fillet](fillet.md) page.
+Chamfer and [Fillet](fillet.md) are one tool with two profiles -- Chamfer leaves a flat cut, Fillet leaves an arc. Picking edges, the one size a whole feature is cut at, and the messages the panel shows work identically in both, and are described in full on the [Fillet](fillet.md) page.
+
+**Switching to Fillet.** The two icon tabs at the top of the Properties panel, **Fillet** and **Chamfer**, switch the profile in place. Click **Fillet** and the same edges are rounded instead of cut flat, keeping the edges and corners you picked and the size; click **Chamfer** to cut them flat again. A Chamfer still called "Chamfer" is renamed "Fillet", and a name you gave it yourself stays. One undo puts the switch back. The details are under [Switching to Chamfer](fillet.md#switching-to-chamfer) on the Fillet page.
 
 ## How to Use
 
@@ -37,7 +39,8 @@ On a 2D path the panel shows **Corners** and **Corner Threshold** instead. Small
 
 ## Parameters
 
-- **Distance** - How far back from the edge the cut starts, measured along *each* of the two faces the edge joins. Every edge this Chamfer selects is cut back by it; for a second distance, apply a second Chamfer
+- **Fillet / Chamfer** - The profile: round or flat. Switching keeps the picked edges and the size
+- **Distance** - How far back from the edge the cut starts, measured along *each* of the two faces the edge joins. Every edge this Chamfer selects is cut back by it; for a second distance, apply a second Chamfer. In a formula it is called `Size` (for example `=Chamfer.Size`), whether the operation is a Chamfer or a Fillet, so a formula keeps working when you switch
 - **Edges** - The list of selections on a solid
 - **Corners** - The same list for a 2D path. Empty means every corner
 - **Corner Threshold** - 2D only. How far a corner has to bend from straight before it counts as a corner at all
