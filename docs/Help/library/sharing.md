@@ -13,19 +13,20 @@ MatterCAD lets you share your designs with other users through share codes. This
 ## Sharing a Design
 
 1. Right-click on a design in your [Cloud Library](cloud-library.md)
-2. Select **Share**
+2. Select **Share...**
 3. A share code is generated that you can send to others
 
 ## Receiving a Shared Design
 
 1. Get a share code from someone
-2. Use the **Redeem Share Code** option in the library
-3. The shared design is added to your library
+2. [Sign in](../workspace/account.md), click your name at the right of the tab bar, and choose **Enter Share Code...**
+3. Type the code and click **Continue**, then **Done**
+4. The shared design is in the **Shared with Me** folder of your Library
 
 ## Tips
 
 - Share codes work with designs stored in the Cloud Library
-- The recipient gets a copy of the design -- changes they make don't affect your original
+- A shared design is read-only for the person who receives it, so they can't change your original
 - Share codes can be distributed through any channel: email, chat, social media, etc.
 
 ## Related

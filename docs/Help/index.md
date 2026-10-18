@@ -39,6 +39,12 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 ## Workspace and Workflow
 
 - [Workspace](workspace/index.md) - Keyboard shortcuts, selection, undo/redo, grouping, and more
+- [Menus and Toolbar](workspace/menus-and-toolbar.md) - The ☰ MatterCAD menu and the design toolbar
+- [Camera Controls](workspace/camera-controls.md) - The cube and buttons in the corner of the 3D view
+- [Tabs, Search and the Status Bar](workspace/tabs-and-search.md) - Tabs, help search and the status bar
+- [Settings](workspace/settings.md) - Language, text size, themes, AI providers and more
+- [Signing In](workspace/account.md) - Your MatterHackers account
+- [Updates and Recovery](workspace/updates-and-recovery.md) - Updates, crash reports and getting unsaved work back
 - [Library](library/index.md) - Organize, store, and share your designs
 - [Design Apps](library/design-apps.md) - Pre-built parametric designs you can customize
 

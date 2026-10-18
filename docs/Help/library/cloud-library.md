@@ -11,7 +11,7 @@ The Cloud Library stores your designs online in your MatterHackers account. This
 
 ## Getting Started
 
-1. Sign in to your MatterHackers account from the application menu
+1. Sign in to your MatterHackers account: click **(sign in)** at the far right of the tab bar. See [Signing In](../workspace/account.md)
 2. The Cloud Library appears in your library browser
 3. Upload designs by dragging them into the cloud folder, or save directly to the cloud
 
@@ -33,3 +33,4 @@ The Cloud Library stores your designs online in your MatterHackers account. This
 
 - [Local Library](local-library.md) - Manage designs stored on your computer
 - [Sharing](sharing.md) - Share designs with others
+- [Signing In](../workspace/account.md) - Sign in, sign out and what signing out closes

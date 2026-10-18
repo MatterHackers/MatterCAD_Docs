@@ -16,7 +16,7 @@ Translate moves an object by a specific distance along the X, Y, and/or Z axes. 
 ## How to Use
 
 1. Select an object
-2. Apply the **Translate** operation from the Transform menu
+2. Click **Translate** in the Transform group of the toolbar
 3. Enter the desired offset values for X, Y, and Z in the Properties panel
 
 ## Parameters

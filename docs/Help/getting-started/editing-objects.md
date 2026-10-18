@@ -11,7 +11,7 @@ On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
 ## Moving Parts
 
-- **Drag the part** to slide it across the bed. It snaps to the snap grid (see [Viewport Navigation](viewport-navigation.md#snap-grid)).
+- **Drag the part** to slide it across the bed. It snaps to the snap grid (see [Camera Controls](../workspace/camera-controls.md#the-snap-button)).
 - **Hold Shift while you drag** to keep the move along one direction.
 - **Drag the arrow above the part** to lift it off the bed or lower it. Double-click the arrow to drop the part onto whatever is under it, or onto the bed.
 - **Press the arrow keys** to nudge the selected part one snap step (at least 0.1 mm) across the bed, in the direction the key points on screen. Hold Shift for five steps, or Ctrl for a fifth of a step.

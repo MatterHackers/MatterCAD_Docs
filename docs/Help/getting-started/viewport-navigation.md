@@ -40,26 +40,9 @@ With a part selected, the arrow keys move the part instead. See [Editing Objects
 
 The cube in the top-right corner of the 3D view shows which way you are looking. Click a face, edge or corner of the cube to turn the view to face it, or drag the cube to turn the view.
 
-Around the cube are round buttons. Hover over one to see its name.
+The round buttons around the cube reset the view (**Reset View**, as W does), zoom to the selected parts (**Zoom to Selection**, as Z does), switch **Turntable Mode** and **Perspective Mode**, and choose what a left-drag does (**Select Parts**, **Rotate View**, **Move View** or **Zoom View**). Under the cube are **Show Bed**, the view style button, the snap button and the units button.
 
-- **Reset View** - Go Home, as W does.
-- **Zoom to Selection** - Fit the selected parts in the view, as Z does. It is greyed out while nothing is selected.
-- **Turntable Mode** - When on (the starting setting), turning the view spins it around the bed's upright axis, so up stays up. When off, the view turns freely in any direction.
-- **Perspective Mode** - When on, the view shows perspective (near things look bigger). When off, it shows an orthographic view, with no perspective. Each design remembers its own setting, and a new design starts with the one you chose last.
-- **Select Parts**, **Rotate View**, **Move View** and **Zoom View** - Choose what a left-drag does. **Select Parts** is the usual mode, where a left-drag moves a part or draws a selection rectangle. In the other three, a left-drag turns, moves or zooms the view. While you hold Ctrl (or press another mouse button) the mode changes for that drag, and the buttons show it.
-
-Under the cube are more buttons:
-
-- **Show Bed** - Show or hide the bed and its grid.
-- **The view style button** - How parts are drawn: **Shaded**, **Outlines** (the starting style), **Non-Manifold**, **Polygons** or **Overhang**. **Show part colors** turns part colors on and off.
-
-### Snap Grid
-
-The snap button shows how far a drag moves at a time, in the design's units ("-" when snapping is off). Click it to choose another distance, or **Off** to stop snapping. The button flashes when a drag snaps. The arrow keys nudge a part by the same distance.
-
-### Units
-
-The units button beside the snap button shows the units the design is shown and edited in: **mm**, **in**, **ft** or **m**. When you pick another unit, MatterCAD asks whether to keep the parts' real sizes (the numbers change) or keep your numbers (the parts change size).
+See [Camera Controls](../workspace/camera-controls.md) for what every button does.
 
 ## Touch Screen
 
@@ -74,6 +57,7 @@ The units button beside the snap button shows the units the design is shown and 
 
 ## Related
 
+- [Camera Controls](../workspace/camera-controls.md) - Every button around the cube
 - [Editing Objects](editing-objects.md) - Move, turn and resize parts in the 3D view
 - [Selection](../workspace/selection.md) - How to select parts
 - [Mouse Controls](../workspace/mouse-controls.md) - Every mouse control
