@@ -9,7 +9,7 @@ nav_order: 2
 ![20260506 160531 paste 20260506 160531](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160531-paste-20260506-160531.jpg)
 
 
-Dual Extrusion Align puts two or more selected parts back where they sit relative to each other in the files they came from. One part keeps its center where it is, and every part moves by the same amount, so parts that were modeled together line up again. It also clears each part's rotation and scale.
+Dual Extrusion Align puts two or more selected parts back where they sit relative to each other in the files they came from. Every part is set to the same position: the first part stays where it is, and each other part ends up the same distance from its own file position as the first, so parts that were modeled together line up again. It also clears each part's rotation and scale.
 
 <!--  Screenshot showing two parts before and after Dual Extrusion Align -->
 |![20260506 160417 paste 20260506 160417](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160417-paste-20260506-160417.jpg)

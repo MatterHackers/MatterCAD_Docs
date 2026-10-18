@@ -48,19 +48,20 @@ SVG export creates a 2D vector file from the top-down view of your design. This 
 
 ![20260324 080726 paste 20260324 080726](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080726-paste-20260324-080726.jpg)
 
-1. Open the **brand menu** (the MatterCAD logo in the top-left corner)
-2. Select **Save As** to choose a location and format
-3. Select the file format from the format dropdown
-4. Choose where to save the file and click **Save**
+The **Save** button is at the left of the design toolbar. It reads **Save •** while the design has unsaved changes.
 
-Your design is also saved automatically as you work, so you will not lose changes if you close the application.
+- **Save** writes the design to its MCX file. A design that has never been saved asks for a name and folder first, as Save As does.
+- **Save As** (in the menu under the arrow beside Save) saves the design under a new name or in another folder, as an MCX file: pick a library folder (on your computer or in your Cloud Library), type a **Design Name** and click **Save**.
+- **Export** (in the same menu, and in the **Bed** menu) writes the design to another format: pick the format, set its options, click **Export** and choose where the file goes.
+
+If MatterCAD closes before you save, it offers to recover your unsaved work the next time it starts. Save your design to keep it.
 
 An MCX file also remembers the view you saved it with - the direction, zoom and perspective or orthographic setting - so it opens looking the way you left it. Each open design keeps its own perspective or orthographic setting, so switching tabs switches it too, and a new design starts in the one you last chose. Moving the view does not count as a change, so it never asks you to save just because you looked around.
 
 ## Tips
 
 - Always save an MCX copy of your design before exporting to 3MF, STL or OBJ, so you can make changes later
-- STL keeps your objects separate unless you tick **Performe Union** in the export options, which merges them into a single mesh
+- STL keeps your objects separate unless you tick **Perform Union** in the export options, which merges them into a single mesh
 - Holes are applied for you when you export to STL, 3MF or OBJ. None of those formats can say "this shape is a hole", so MatterCAD subtracts each hole from the parts it overlaps and leaves the hole itself out of the file. Your design is not changed - only the exported copy
 - If you need to share a design with someone who uses MatterCAD, send the MCX file to preserve full editability
 - You can also save designs to your [Cloud Library](../library/cloud-library.md) for access from any computer

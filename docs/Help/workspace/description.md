@@ -10,7 +10,7 @@ Description puts a note in the scene. It is a label anchored to a point in your 
 
 <!-- IMAGE_NEEDED: Screenshot of a Description in the 3D view, showing the note panel connected to its anchor point on a part, with the Properties panel showing the Markdown text field -->
 
-Like the [Measure Tool](measure-tool.md), it is a design aid rather than a part. A Description is left out of exports.
+Like the [Measure Tool](measure-tool.md), it is a design aid rather than a part. A Description is left out of STL, 3MF and OBJ exports (an MCX keeps it).
 
 ## How to Use
 
@@ -33,7 +33,7 @@ The note's position is set by dragging its anchor in the 3D view rather than by 
 - Markdown means you can link out -- to a datasheet, to a standard, to the page you got a dimension from
 - Place the anchor on the feature the note is about. A note about a hole should point at the hole
 - Set **Width** to Wide for a paragraph and Narrow for a one-line label
-- Descriptions are left out of exports, so you can leave them in the design. There is no need to strip them before exporting
+- Descriptions are left out of STL, 3MF and OBJ exports, so you can leave them in the design. There is no need to strip them before exporting
 
 ## Related
 
