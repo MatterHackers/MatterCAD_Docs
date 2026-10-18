@@ -19,6 +19,13 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 - [Saving and Exporting](getting-started/saving-and-exporting.md) - Save your work and export to different formats
 - [Using AI Assistants](getting-started/ai-assistants.md) - Let an AI chat tool read and edit your designs
 
+## MatterCAD on the Web
+
+- [MatterCAD on the Web](web/index.md) - Open, preview and edit your designs on the MatterCAD website
+- [Saving on the Web](web/saving.md) - Save to your online library and get back unsaved changes
+- [Using MatterCAD on a Phone](web/phone.md) - The phone layout, the bottom sheet and touch gestures
+- [Web and Desktop Differences](web/web-and-desktop.md) - What works differently in a browser
+
 ## Design Building Blocks
 
 - [Primitives](primitives/index.md) - 3D shapes like cubes, cylinders, spheres, text, and more
