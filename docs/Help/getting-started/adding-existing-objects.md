@@ -23,7 +23,7 @@ You can bring models you already have into MatterCAD: files from your computer, 
 2. Choose **Add System File to Bed**.
 3. Pick the file. Its parts are added to the bed of the design you are working on.
 
-The file dialog for **Open System File** and **Add System File to Bed** offers MCX, STL, OBJ and 3MF files and pictures (JPG, PNG, BMP, GIF, WEBP, TGA).
+The file dialog for **Open System File** and **Add System File to Bed** offers every format MatterCAD reads (its filter reads "MCX, STL, OBJ, 3MF, AMF, STEP, SVG, DXF, Images"): MCX, STL, OBJ, 3MF, AMF, STEP/STP, SVG and DXF files, and pictures (JPG/JPEG, PNG, BMP, GIF, WEBP, TGA).
 
 ## Drag and Drop
 
@@ -46,7 +46,7 @@ Drag files from your computer onto the 3D view. They land on the bed where you l
 
 Click **Add to Bed** in the toolbar. The library opens over the left side of the design. From there you can:
 
-- Open **Included** for the built-in shapes, **Sample Parts**, **Tools** and **Design Apps**
+- Open **Included** for the built-in shapes, **Sample Parts** (finished designs such as the **Coin**), **Tools** and **Design Apps**
 - Open **Computer** for the files in your Downloads, Desktop and Documents folders
 - Open your **Cloud Library** when you are signed in
 - Drag any item onto the bed, or right-click it and choose **Add to Bed**
@@ -55,7 +55,7 @@ Click **Add to Bed** in the toolbar. The library opens over the left side of the
 
 ### The Library Tab
 
-The **Library** tab shows the same library at full size. Right-click any item and choose **Add to Bed** to add it to the design you have open, or **Open** to open it in its own tab.
+The **Library** tab shows the same library at full size. Right-click any item and choose **Add to Bed** to add it to the design you have open, or **Open a copy** to start a new design from it. **Open** opens a saved design (an MCX file in a folder you can save to) in its own tab; it is greyed out for STL files, built-in shapes and sample parts, which you open with **Open a copy** instead.
 
 ## Tips
 

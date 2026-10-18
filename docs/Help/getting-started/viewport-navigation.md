@@ -50,7 +50,7 @@ Around the cube are round buttons. Hover over one to see its name.
 
 Under the cube are more buttons:
 
-- **Show Print Bed** - Show or hide the bed and its grid.
+- **Show Bed** - Show or hide the bed and its grid.
 - **The view style button** - How parts are drawn: **Shaded**, **Outlines** (the starting style), **Non-Manifold**, **Polygons** or **Overhang**. **Show part colors** turns part colors on and off.
 
 ### Snap Grid

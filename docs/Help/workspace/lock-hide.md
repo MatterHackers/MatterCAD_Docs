@@ -35,7 +35,7 @@ An x-rayed part is drawn see-through, so the parts behind and inside it show. X-
 
 ## Lock
 
-A locked part stays visible and still takes part in operations and exports, but you can't pick it in the 3D view, so a click or drag there goes past it. Locking a selected part clears the selection.
+A locked part stays visible and still takes part in operations and exports, but you can't pick it in the 3D view: a click, a drag or a selection rectangle there goes past it. Locking a selected part clears the selection. Clicking its row in the Design tree still selects it.
 
 ## Tips
 

@@ -37,8 +37,9 @@ Ungrouping also attempts to separate multiple bodies within a single imported ST
 
 | Feature | Group | Combine |
 |---------|-------|---------|
-| Objects remain separate | Yes | No |
-| Can ungroup later | Yes | No (destructive) |
+| Objects remain separate | Yes | Kept inside the Combine, but shown as one joined shape |
+| Can change the parts later | Yes | Yes: double-click the Combine (Edit Children) and change a part, and the Combine updates |
+| Ungroup | Puts the parts back as separate objects | Bakes the Combine into one plain shape; the original parts are gone (Ctrl+Z / ⌘Z takes it back) |
 | Merges overlapping geometry | No | Yes |
 | Objects can have different colors | Yes | Colors preserved per-face |
 | Use case | Organization and movement | Creating single solid shapes |
