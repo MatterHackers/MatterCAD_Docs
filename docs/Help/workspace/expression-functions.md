@@ -238,7 +238,7 @@ Notes:
 - **Use forward slashes in local paths.** A backslash starts an escape sequence inside a quoted argument, so write `"C:/Parts/sizes.csv"` rather than `"C:\Parts\sizes.csv"`.
 - **Results are cached for the session.** The same URL or path is fetched once. To pick up a source that has changed, use **Refresh Imported Data** on the sheet editor's File menu - see [Editing a Variable Sheet](sheet-editing.md#refresh-imported-data).
 - **A failure comes back as text** beginning with `Error:`, so a broken link shows in the cell instead of breaking the design.
-- **`importdata` needs a desktop MatterCAD.** Neither source works in the browser build: a URL is refused outright, because the sheet evaluates synchronously and the browser has no synchronous fetch, and a local path fails on the sandbox that keeps a page away from your disk. Either way the cell shows an `Error:` message rather than a value.
+- **`importdata` needs MatterCAD on your computer.** In a browser it can read neither a file nor a web address, and the cell shows "Error: importdata cannot read files or web addresses in the browser. To import data, open this design in the MatterCAD desktop app."
 
 ### Designs From Someone Else Ask First
 

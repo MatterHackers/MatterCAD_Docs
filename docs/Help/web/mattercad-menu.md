@@ -33,7 +33,9 @@ You can also start a new design from the website's **Library** page: open a fold
 
 ## Help
 
-**Help** opens MatterCAD's help pages in a window over the editor. Your design stays as it is underneath. The first time you open it, the articles take a moment to load, and a short line says so meanwhile. If they can't be loaded, the window tells you.
+**Help** opens MatterCAD's help pages in a window over the editor. Your design stays as it is underneath.
+
+The first time you open it, the articles take a moment to arrive: the window shows "Loading help…" until they do. If they can't be loaded, it says "Help couldn't be loaded. Check your internet connection, then open Help again." Opening **Help** again tries once more. The **Mouse** and **Keys** pages, which list every mouse control and shortcut, are there either way, even without a connection.
 
 - On a wider screen the window opens at the right. You can move it, and close it with the close button in its title bar.
 - On a phone, or in a narrow window, it covers the whole screen. Close it with the close button in its title bar.

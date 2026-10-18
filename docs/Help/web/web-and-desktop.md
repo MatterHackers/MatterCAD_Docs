@@ -21,7 +21,7 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 - There is no **Check For Update**: the website runs the version of MatterCAD it serves. Reload the page to get a newer version once the website has one.
 - **Settings** has only **Number format** and **Depth Peeling Layers**. The colors follow the light or dark theme you chose on the website ([The MatterCAD Menu](mattercad-menu.md#settings)).
 - The **Bed** menu has no **Reload**.
-- A selected part has no **Help** button and no **Help Docs** menu row. Open **Help** from the MatterCAD menu instead. The first time you open it, its articles take a moment to load.
+- A selected part has no **Help** button and no **Help Docs** menu row. Open **Help** from the MatterCAD menu instead. The first time you open it, its articles take a moment to load ([Help](mattercad-menu.md#help)).
 - There is no **Open With** in a part's right-click menu, and no menu item that shows a file in your computer's file manager.
 - **Save as Tool**, for node graphs, is only in MatterCAD on your computer.
 
@@ -32,7 +32,7 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 
 ## Variable Sheets
 
-A sheet's **importdata()** can't read a file or a web address in a browser. The cell shows an error instead of a value. See [importdata](../workspace/expression-functions.md#importdata).
+A sheet's **importdata()** can't read a file or a web address in a browser. Instead of a value, the cell shows: "Error: importdata cannot read files or web addresses in the browser. To import data, open this design in the MatterCAD desktop app." See [importdata](../workspace/expression-functions.md#importdata).
 
 ## Keyboard
 

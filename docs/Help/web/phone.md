@@ -83,7 +83,7 @@ To put the keyboard away, tap the key with the down arrow on the bottom row of t
 
 ## Full Screen
 
-Where your phone's browser can fill the screen, the title bar has a full screen icon (four corners), just before the download arrow. Tap it to fill the screen with the title bar and the design, and tap it again to go back.
+Where your phone's browser can fill the screen, the title bar has a full screen icon (four corners), just before the download arrow. Tap it to fill the screen with the title bar and the design, and tap it again to go back. Where the browser can't fill the screen, as on an iPhone, there is no full screen button at all, neither in the title bar nor in MatterCAD.
 
 ## Related
 
