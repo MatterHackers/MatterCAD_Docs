@@ -9,7 +9,7 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 
 ## Your Designs and Files
 
-- **Save** keeps the design in your online library, not in a file on your computer. **Save As** asks only for a name: the copy goes in the same folder as the design. See [Saving on the Web](saving.md).
+- **Save** keeps the design in your online library, not in a file on your computer. **Save As** asks only for a name: the copy goes in the folder you opened the design from when you may add to it, otherwise in **My Designs**. See [Saving on the Web](saving.md).
 - **Export** and the page's **Download** button are how you get a file on your computer. Your browser downloads it.
 - **Add to Bed** has no **Computer** folder. To bring in a file from your computer, use **Add System File to Bed** (your browser asks you to pick the file) or drag the file onto the 3D view. See [Adding Parts on the Web](adding-parts.md).
 - Unsaved changes are kept as a copy in your browser, which holds designs up to about 3.5 MB. MatterCAD on your computer offers to recover unsaved work when it starts instead ([Saving and Exporting](../getting-started/saving-and-exporting.md#recover-unsaved-work)).
@@ -21,7 +21,7 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 - There is no **Check For Update**: the website runs the version of MatterCAD it serves. Reload the page to get a newer version once the website has one.
 - **Settings** has only **Number format** and **Depth Peeling Layers**. The colors follow the light or dark theme you chose on the website ([The MatterCAD Menu](mattercad-menu.md#settings)).
 - The **Bed** menu has no **Reload**.
-- A selected part has no **Help** button and no **Help Docs** menu row. Open **Help** from the MatterCAD menu instead.
+- A selected part has no **Help** button and no **Help Docs** menu row. Open **Help** from the MatterCAD menu instead. The first time you open it, its articles take a moment to load.
 - There is no **Open With** in a part's right-click menu, and no menu item that shows a file in your computer's file manager.
 - **Save as Tool**, for node graphs, is only in MatterCAD on your computer.
 

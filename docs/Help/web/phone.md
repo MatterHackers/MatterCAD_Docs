@@ -11,7 +11,7 @@ On a phone held upright, MatterCAD lays itself out to give the 3D view as much o
 
 ## On the Design's Page
 
-On a phone, the title bar's buttons show only their icons: the back arrow (to the library), the pencil (**Edit**), which turns into a check mark (**Done**) while you edit, and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
+On a phone, the title bar's buttons are icons only: the back arrow (to the library), the pencil (**Edit**), which turns into a check mark (**Done**) while you edit, the full screen icon (where your browser can fill the screen), and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
 
 ## The Toolbar
 
@@ -79,11 +79,11 @@ One finger does what the selected mode button says, and two fingers pinch to zoo
 
 Tap a field, such as a size in the Properties panel or the name in the **Save As** box, and MatterCAD's own keyboard slides up from the bottom of the screen. MatterCAD makes room above it: the bottom sheet rests on top of the keyboard, the 3D view gets shorter, and the field you are typing in stays in sight.
 
-To put the keyboard away, tap the key with the down arrow on its bottom row. The layout goes back to how it was.
+To put the keyboard away, tap the key with the down arrow on the bottom row of the letters page (the ?123 and other symbol pages don't have it), or tap outside the field, for example in the 3D view. The layout goes back to how it was.
 
 ## Full Screen
 
-Where your phone's browser can fill the screen, the title bar has a **Full screen** button. Tap it to fill the screen with the title bar and the design, and tap it again (**Exit full screen**) to go back.
+Where your phone's browser can fill the screen, the title bar has a full screen icon (four corners), just before the download arrow. Tap it to fill the screen with the title bar and the design, and tap it again to go back.
 
 ## Related
 

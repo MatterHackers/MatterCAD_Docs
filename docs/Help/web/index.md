@@ -13,7 +13,7 @@ A design page works in three steps:
 2. **Edit** - Press **Edit** and the MatterCAD editor slides in around the same view.
 3. **Done** - Press **Done** to go back to the preview.
 
-<!-- IMAGE_NEEDED: A design page on the MatterCAD website in a desktop browser: the title bar (Library back button, Edit, the design's name, Full screen, Download) above the 3D preview of a design, with Reset View and the Rotate View / Move View / Zoom View buttons at the preview's top-left -->
+<!-- IMAGE_NEEDED: A design page on the MatterCAD website in a desktop browser: the title bar (Library back button, Edit, the design's name, the full screen icon, Download) above the 3D preview of a design, with Reset View and the Rotate View / Move View / Zoom View buttons at the preview's top-left -->
 
 ## What You Need
 
@@ -33,7 +33,7 @@ The title bar above the design holds:
 - **Library** (with the back arrow) - Back to the library folder you came from.
 - **Edit** - Opens the editor. It reads **Done** while you edit. It can't be pressed until MatterCAD has started, or while the editor is sliding in or out.
 - The design's name.
-- **Full screen** - Fills the screen with the title bar and the design. Press it again (**Exit full screen**), or press Esc, to go back. It is there only when your browser can fill the screen.
+- **The full screen button** (an icon of four corners, between the name and **Download**) - Fills the screen with the title bar and the design. Press it again, or press Esc, to go back. Its tooltip reads "Full screen" or "Exit full screen". It is there only when your browser can fill the screen.
 - **Download** - Downloads the design's file as it was last saved.
 
 If the design can't be shown, the page says why, starting with "This design couldn't be shown", and tells you to use **Download** to get the file.

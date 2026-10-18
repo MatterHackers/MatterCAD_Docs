@@ -20,13 +20,19 @@ When Save asks for a name, the **Save As** box opens with the design's name fill
 1. Type a name in **Name**.
 2. Click **Save**.
 
-The design is saved as a new design in the same folder as the one it came from, and from then on **Save** saves that new design. The page's address, title and **Download** button change to the saved design.
+The design is saved as a new design. Where it goes:
+
+- **A new design you started with New Design on the Library page** goes in that folder.
+- **Any other design** goes in the folder you opened it from on the website's **Library** page, when you may add designs to that folder.
+- **Otherwise it goes in My Designs.** That is where it goes when the design came from **Shared with Me** or **Purchased**, from a locked or read-only folder, or when you opened its page from a direct link rather than from the **Library** page.
+
+From then on **Save** saves that new design. The page's address, title and **Download** button change to the saved design.
 
 If the website refuses to save over a design, the **Save As** box opens with the reason, for example "You can't save over this design. Enter a name to save your own copy." Type a name to save your own copy.
 
 ## Save As
 
-Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (⌘⇧S on a Mac). The **Save As** box opens as above. Type a new name and click **Save** to save a copy in the same folder.
+Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (⌘⇧S on a Mac). The **Save As** box opens as above. Type a new name and click **Save** to save a copy. The copy goes where [Save](#save) puts a new design: the folder you opened the design from when you may add to it, otherwise **My Designs**.
 
 ## Export and Download
 
