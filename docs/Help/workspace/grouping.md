@@ -20,14 +20,14 @@ Grouping combines multiple objects into a single unit that can be moved, copied,
 
 ### Grouping Objects
 
-1. Select two or more objects (Shift-click or Ctrl-click to multi-select)
-2. Click the **Group** button in the toolbar
+1. Select two or more objects (click one, then Shift-click the others)
+2. Click the **Group** button in the toolbar, or press **G**
 3. The objects are now grouped -- they move together as one unit
 
 ### Ungrouping Objects
 
 1. Select a group
-2. Click the **Ungroup** button in the toolbar
+2. Click the **Ungroup** button in the toolbar, or press **Shift + G**
 3. ![20260318 193354 paste 20260318 193354](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193354-paste-20260318-193354.jpg)
 4. The individual objects are restored as separate items
 

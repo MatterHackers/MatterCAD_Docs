@@ -5,53 +5,64 @@ nav_order: 10
 ---
 # Selection
 
-Selecting objects is fundamental to working in MatterCAD. You need to select objects before you can move, modify, or apply operations to them.
+Select parts before you move them, change their settings or use an operation on them. The selected parts are outlined in the 3D view and highlighted in the Design tree.
+
+On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
 <!--  Screenshot showing multiple selected objects with selection highlights -->
 ![20260318 192323 paste 20260318 192323](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-192323-paste-20260318-192323.jpg)
 
+## In the 3D View
 
-## Single Selection
+These work while **Select Parts** is the chosen mode (the round buttons around the cube in the top-right corner).
 
-- **Left-click on an object** to select it. The previously selected object is deselected.
-- **Left-click on empty space** to deselect everything.
+- **Click a part** to select it on its own. If the part is already one of several selected parts, the selection stays, so you can drag them all together.
+- **Shift + click** another part to add it to the selection.
+- **Ctrl + click** a part, without dragging, to add it to the selection, or to take it out if it is already selected. (Ctrl + drag turns the view instead.)
+- **Click empty space** to clear the selection.
+- **Ctrl + A** selects every part.
 
-## Multi-Selection
+Hidden parts and locked parts can't be picked in the 3D view. See [Lock and Hide](lock-hide.md).
 
-- **Shift + Left-click** on additional objects to add them to your selection
-- **Ctrl + Left-click** also adds objects to your selection
-- **Ctrl + A** selects all objects in the scene
+## Rectangle Selection
 
-## Rubber Band Selection
-
-Click and drag on an empty area of the viewport to draw a selection rectangle. All objects within the rectangle are selected.
+Drag across an empty area of the 3D view to draw a rectangle. Every part the rectangle touches is selected.
 
 <!--  Screenshot showing a rubber band selection rectangle being drawn -->
 ![20260318 192357 paste 20260318 192357](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-192357-paste-20260318-192357.jpg)
 
+## In the Design Tree
 
-## Clearing Selection
+The Design tree, at the top of the **Design** tab on the right, lists every part. Use it to pick parts that are hard to click in the 3D view, such as a part inside a group.
 
-- **Left-click on empty space** clears the selection
-- **Space** clears the selection
-- **Escape** cancels a drag operation
+- **Click a row** to select its part. A hidden part is not selected.
+- **Ctrl + click** another row to add its part to the selection, or to take it out when several parts are selected. This works for parts at the top level of the tree.
+- After you click a row, **↑** and **↓** select the row above or below; **→** opens a row and **←** closes it.
 
-## Working with Selections
+## Clearing the Selection
 
-Once you have objects selected:
+- Click empty space in the 3D view.
+- Press **Space**.
 
-- **Move** them by dragging in the viewport
-- **Apply operations** from the toolbar (boolean, transform, array, etc.)
-- **Edit properties** in the Properties panel (when a single object is selected)
-- **Right-click** to access the context menu with available actions
+## Working with a Selection
+
+Once parts are selected you can:
+
+- **Move** them by dragging, or nudge them with the arrow keys (Shift for bigger steps, Ctrl for smaller ones)
+- **Use an operation** from the toolbar, such as Combine, Align or Array
+- **Change settings** in the Properties panel
+- **Group** them with G, or ungroup with Shift+G
+- **Rename** the selected part with F2
+- **Right click** for the part's menu
 
 ## Tips
 
-- When multiple objects are selected, they are temporarily grouped for operations. The Properties panel shows shared properties.
-- Use the Design Tree to select objects that are hard to click in the viewport -- clicking an item in the tree selects it in the view.
+- Escape during a drag puts the parts back where they were.
+- To change a part inside a group or operation, double-click the group to edit the parts inside it, then select the part.
 
 ## Related
 
-- [Editing Objects](../getting-started/editing-objects.md) - Move, rotate, and scale selected objects
-- [Grouping](grouping.md) - Permanently group objects together
-- [Keyboard Shortcuts](keyboard-shortcuts.md) - All shortcuts including selection
+- [Editing Objects](../getting-started/editing-objects.md) - Move, turn and resize selected parts
+- [Grouping](grouping.md) - Keep parts together as a group
+- [Lock and Hide](lock-hide.md) - Keep parts from being picked, or out of sight
+- [Keyboard Shortcuts](keyboard-shortcuts.md) - Every shortcut

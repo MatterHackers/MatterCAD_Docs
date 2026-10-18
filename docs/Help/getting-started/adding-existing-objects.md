@@ -5,58 +5,66 @@ nav_order: 1
 ---
 # Adding Existing Objects
 
-You can bring existing 3D models into MatterCAD by importing files from your computer or adding content from the built-in library.
+You can bring models you already have into MatterCAD: files from your computer, parts from the library, and your saved designs.
 
-## From Your Computer
+## Open a File as Its Own Design
 
-![20260324 081143 paste 20260324 081143](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081143-paste-20260324-081143.jpg)
+1. Click the **☰ MatterCAD** menu at the left end of the tabs (on a Mac you can also use the **File** menu in the menu bar).
+2. Choose **Open System File** (or press Ctrl+O, ⌘O on Mac).
+3. Pick the file. It opens in a new tab.
+
+**Open Recent**, in the same menu, lists the designs you opened lately.
+
+## Add a File to the Design You Have Open
 
 ![20260324 081240 paste 20260324 081240](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081240-paste-20260324-081240.jpg)
 
+1. Click the arrow beside **Add to Bed** in the toolbar.
+2. Choose **Add System File to Bed**.
+3. Pick the file. Its parts are added to the bed of the design you are working on.
 
-Click the **Open** button in the toolbar to browse and add files from your computer. MatterCAD supports the following import formats:
-
-- **STL** (.stl) - Industry standard 3D model format, widely used for 3D printing
-- **AMF** (.amf) - Advanced format supporting colors and multi-material objects
-- **OBJ** (.obj) - Wavefront 3D graphics format (mesh geometry only)
-- **3MF** (.3mf) - 3D Manufacturing Format with rich metadata support
-- **MCX** (.mcx) - MatterCAD's native format, preserving all design data and parameters
-- **SVG** (.svg) - Scalable Vector Graphics, imported as 2D paths
-- **TTF / OTF** (.ttf, .otf) - Font files for use with the Text tool
+The file dialog for **Open System File** and **Add System File to Bed** offers MCX, STL, OBJ and 3MF files and pictures (JPG, PNG, BMP, GIF, WEBP, TGA).
 
 ## Drag and Drop
 
-You can also drag and drop files directly from your desktop or file explorer into the MatterCAD workspace. Supported file types will be imported automatically.
+Drag files from your computer onto the 3D view. They land on the bed where you let go. MatterCAD reads these formats:
+
+- **MCX** (.mcx) - MatterCAD's own format, with every part and setting still editable
+- **STL** (.stl) - The most widely used mesh format
+- **OBJ** (.obj) - A common mesh format from other 3D programs
+- **3MF** (.3mf) - A mesh format that keeps parts and colors separate
+- **AMF** (.amf) - A mesh format that supports colors and several materials
+- **STEP** (.step, .stp) - The format CAD programs use to exchange solid models
+- **SVG** (.svg) and **DXF** (.dxf) - Flat drawings, brought in as 2D paths
+- **Pictures** - Brought in as an image you can turn into a 3D shape
 
 ![20260324 081416 paste 20260324 081416](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081416-paste-20260324-081416.jpg)
 
 ## From the Library
 
-### The Library Sidebar
+### Add to Bed
 
-Click the **Add Content** button in the toolbar to open the library browser panel. From here you can:
+Click **Add to Bed** in the toolbar. The library opens over the left side of the design. From there you can:
 
-- Browse your saved designs
-- Navigate to the Primitives library for built-in shapes
-- Access your Cloud Library if signed in
-- Drag and drop any item from the library directly into your workspace
+- Open **Included** for the built-in shapes, **Sample Parts**, **Tools** and **Design Apps**
+- Open **Computer** for the files in your Downloads, Desktop and Documents folders
+- Open your **Cloud Library** when you are signed in
+- Drag any item onto the bed, or right-click it and choose **Add to Bed**
 
 ![20260324 081446 paste 20260324 081446](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081446-paste-20260324-081446.jpg)
 
 ### The Library Tab
 
-You can also use the Library tab to browse your collections. Right-click on any object in the library and select **Add to Scene** to import it into your current design workspace.
-
-![20260324 081536 paste 20260324 081536](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081536-paste-20260324-081536.jpg)
+The **Library** tab shows the same library at full size. Right-click any item and choose **Add to Bed** to add it to the design you have open, or **Open** to open it in its own tab.
 
 ## Tips
 
-- MCX is the best format for re-editing designs later, since it preserves all parameters and the design tree
-- STL files contain only mesh geometry. If you import an STL, you can still apply operations to it, but you cannot edit the original parameters
-- When importing multiple files, each one becomes a separate object in your scene. Use [Group](../workspace/grouping.md) to organize them
+- MCX is the best format for designs you want to change later: every part and setting stays editable.
+- An STL, OBJ, 3MF, AMF or STEP file comes in as a finished shape. You can move it and use operations on it, but it has no settings to change.
+- Each file you add becomes its own part on the bed. Use [Group](../workspace/grouping.md) to keep parts together.
 
 ## Related
 
-- [Creating New Objects](creating-new-objects.md) - Start a design from scratch with primitives
+- [Creating New Objects](creating-new-objects.md) - Start a design from scratch with shapes
 - [Saving and Exporting](saving-and-exporting.md) - Save and export your finished designs
-- [Library](../library/index.md) - Learn more about organizing your design library
+- [Library](../library/index.md) - Organize your design library

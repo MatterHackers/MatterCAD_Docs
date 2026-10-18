@@ -5,45 +5,63 @@ nav_order: 2
 ---
 # Creating New Objects
 
-MatterCAD provides a rich set of tools for creating 3D objects. You can start with primitive shapes, use specialized tools like text and QR codes, or build complex forms using boolean operations and arrays.
+Most designs start from simple shapes. You add them, size them, place them, and then combine or reshape them with operations.
 
 ![20260324 081122 paste 20260324 081122](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081122-paste-20260324-081122.jpg)
 
-## Adding Primitives
+## Start a New Design
 
-The fastest way to start a design is by adding primitive shapes. Open the Primitives panel in the library and click on any shape to add it to your workspace. Available primitives include:
+Click the **+** button in the row of tabs (**Create New Design**), or press Ctrl+T (⌘T on Mac) while a design is showing. The new design opens in its own tab with an empty bed.
 
-- **Basic shapes** - Cube, Cylinder, Sphere, Cone, Torus, Ring, Pyramid, Wedge, and their half variants
-- **Text and special** - Text, Braille, QR Code, Image Object, SVG Object
+## Add Shapes
 
-Each primitive has parameters you can adjust in the Properties panel after selecting it. For example, a Cube has Width, Depth, and Height controls. See [Primitives](../primitives/index.md) for details on each shape.
+Click a shape in the favorites bar down the left side of the design, or drag it onto the bed where you want it.
 
-## The Operations Toolbar
+For more shapes, click **Add to Bed** in the toolbar and open **Included**:
+
+- **3D Primitives** - Cube, Hole, Pyramid, Wedge, Half Wedge, Text, Cylinder, Cone, Half Cylinder, Torus, Tube, Sphere, Half Sphere and Image Converter
+- **2D Primitives** - Flat shapes (paths) you can extrude or revolve into solids
+- **Mechanical** - Involute Gear, Cycloidal Gear, Threads and Screw
+- **Tools** - QR Code, Measure Tool, Description and Variable Sheet
+- **Sample Parts** - Finished designs to start from
+
+Drag a shape onto the bed, or right-click it and choose **Add to Bed**.
+
+Each shape has settings you change in the Properties panel once it is selected. A Cube, for example, has **Width**, **Depth** and **Height**. See [Primitives](../primitives/index.md) for every shape.
+
+## The Toolbar
 
 ![20260324 081005 paste 20260324 081005](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081005-paste-20260324-081005.jpg)
 
-The toolbar at the top of the viewport gives you quick access to common operations:
+After **Add to Bed**, **Save** and **Bed**, the toolbar holds:
 
-- **Undo / Redo** - Reverse or replay changes. You can also use **Ctrl+Z** to undo and **Ctrl+Y** to redo
-- **Group / Ungroup** - Combine selected objects into a group that moves and operates as one unit, or break a group apart
-- **Copy / Delete** - Duplicate or remove selected objects. Standard **Ctrl+C**, **Ctrl+X**, and **Ctrl+V** shortcuts also work
-- **Align** - Position multiple objects relative to each other
-- **Boolean operations** - [Combine](../operations/boolean/combine.md), [Subtract](../operations/boolean/subtract.md), [Intersect](../operations/boolean/intersect.md), and [Subtract & Replace](../operations/boolean/subtract-and-replace.md)
-- **Arrays** - Create [linear, radial, curve, and transform patterns](../operations/array/array.md) of duplicated objects
-- **Transforms** - Apply [Rotate](../operations/transform/rotate.md), [Scale](../operations/transform/scale.md), [Mirror](../operations/transform/mirror.md), and other modifications
+- **Undo / Redo** - Take back a change or put it back: Ctrl+Z (⌘Z on Mac) and Ctrl+Y (⌘Y on Mac)
+- **Group / Ungroup** - Join the selected parts into a group that moves as one, or split a group apart
+- **Duplicate / Remove** - Make a copy of the selected parts, or delete them. Ctrl+C, Ctrl+X and Ctrl+V (⌘C, ⌘X and ⌘V on Mac) copy, cut and paste
+- **Arrange All Parts** - Arrange all the parts around the middle of the bed
+- **Lay Flat** - Turn the selected part so its lowest face lies flat on the bed
+- **Merge group** - [Combine](../operations/boolean/combine.md), [Subtract](../operations/boolean/subtract.md), [Intersect](../operations/boolean/intersect.md) and [Subtract & Replace](../operations/boolean/subtract-and-replace.md)
+- **Duplication group** - Clone, [Array](../operations/array/array.md) (rows, rings and other patterns of copies) and Select Child
+- **Transform group** - [Translate](../operations/transform/translate.md), [Rotate](../operations/transform/rotate.md), [Scale](../operations/transform/scale.md) and [Mirror](../operations/transform/mirror.md)
+- **Placement group** - [Align](../operations/placement/align.md) and other ways to place parts against each other
+- **Round & Offset** and **Deform** groups - [Reshape](../operations/reshape/index.md) operations such as Fillet, Curve and Twist
+- **Tools** - At the end of the toolbar: collapse or hide groups you don't use
 
-## Building Complex Shapes
+Hover over a button to see its name. A button that is greyed out tells you, when you hover over it, what to select first.
 
-Most designs in MatterCAD are built by combining simple shapes:
+## Building a Shape from Simple Parts
 
-1. **Start with primitives** - Add the basic shapes you need
-2. **Position them** - Move and rotate objects so they overlap where you want
-3. **Apply boolean operations** - Use [Combine](../operations/boolean/combine.md) to merge shapes together, or [Subtract](../operations/boolean/subtract.md) to cut one shape out of another
-4. **Refine** - Use the **Round & Offset** and **Deform** groups ([Reshape](../operations/reshape/index.md)), with operations like Fillet, Curve, or Twist, to add detail
+1. **Add the shapes you need.**
+2. **Place them** so they overlap where you want them joined or cut.
+3. **Select the parts** (click one, then Shift-click the others).
+4. **Apply a Merge operation:** [Combine](../operations/boolean/combine.md) joins them; [Subtract](../operations/boolean/subtract.md) cuts every part you selected after the first out of the first one.
+5. **Refine** with the **Round & Offset** and **Deform** groups ([Reshape](../operations/reshape/index.md)) to round edges, bend or twist.
+
+An operation keeps the parts it was made from, so you can go back and change them later.
 
 ## Related
 
-- [Primitives](../primitives/index.md) - Full reference for all primitive shapes
-- [Adding Existing Objects](adding-existing-objects.md) - Import files instead of creating from scratch
-- [Boolean Operations](../operations/boolean/index.md) - Combine shapes into complex forms
-- [Editing Objects](editing-objects.md) - Move, rotate, and scale objects after creating them
+- [Primitives](../primitives/index.md) - Every shape and its settings
+- [Adding Existing Objects](adding-existing-objects.md) - Bring in files instead of starting from scratch
+- [Boolean Operations](../operations/boolean/index.md) - Combine shapes into more complex ones
+- [Editing Objects](editing-objects.md) - Move, turn and resize parts

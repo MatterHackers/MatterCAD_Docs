@@ -5,34 +5,47 @@ nav_order: 6
 ---
 # Lock and Hide
 
-Lock and Hide let you control which objects in your design can be selected and which are visible. These features help you work more efficiently on complex designs by preventing accidental changes and reducing visual clutter.
+On a busy design, three switches help you work on one part without disturbing the others:
 
-## Lock
-![20260318 193003 paste 20260318 193003](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193003-paste-20260318-193003.jpg)
+- **Hide** takes a part out of sight, and out of the shapes your design makes.
+- **X-ray** draws a part see-through, so you can see what is behind or inside it.
+- **Lock** keeps a part from being picked in the 3D view, so you can't move it by accident.
 
+## Where to Find Them
 
-Locking an object prevents it from being selected or moved in the viewport. The object remains visible but cannot be accidentally modified.
-
-- Click the **lock icon** next to an object in the Design Tree to toggle its lock state
-- Locked objects still participate in boolean operations and other calculations
+- **In the Design tree:** each row has an eye (Hide), an x-ray column and a padlock (Lock). Click one to switch it for that part.
+- **On a part's right-click menu:** **Hide**, **X-ray** and **Lock** sit at the top. Each is lit while the part is in that state. **Hide Others** hides every part except the selected one.
+- **Above the Design tree:** **Show All**, **Clear X-ray** and **Unlock All** turn the state off for every part. Each is available only while some part is in that state. **Show All** and **Unlock All** are also on the right-click menu of the empty bed.
 
 ## Hide
 
-![20260318 192834 paste 20260318 192834](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-192834-paste-20260318-192834.jpg)
+A hidden part disappears from the 3D view. It stays in the design and in the Design tree, so you can show it again.
 
-Hiding an object makes it invisible in the viewport while keeping it in the design. The object still exists and participates in operations.
+A hidden part is left out of what your design makes:
 
-- Click the **eye icon** next to an object in the Design Tree to toggle visibility
-- Hidden objects are still included in exports unless you remove them
+- **Operations leave hidden parts out.** Hide the cutting shape inside a Subtract and the part is no longer cut; show it again and the cut comes back.
+- **Exports leave hidden parts out.** An export to STL, 3MF, OBJ, AMF or STEP has no hidden parts in it. An MCX file keeps them, still hidden.
+- **Home (W) leaves hidden parts out** when it fits the design in the view.
+
+You can't select a hidden part, and hiding a selected part clears the selection.
+
+## X-ray
+
+An x-rayed part is drawn see-through, so the parts behind and inside it show. X-ray changes only how the part looks: you can still select it, and it still takes part in operations and exports.
+
+## Lock
+
+A locked part stays visible and still takes part in operations and exports, but you can't pick it in the 3D view, so a click or drag there goes past it. Locking a selected part clears the selection.
 
 ## Tips
 
-- Lock your base or reference objects while working on details to avoid accidentally moving them
-- Hide objects that are obscuring the area you're working on
-- Both lock and hide states are saved with the design
-- You can lock and hide objects in the Design Tree even if they're inside groups or components
+- Lock a base or reference part while you work on the details around it.
+- Hide parts that are in the way, but remember to show them before you export.
+- Hiding and showing are not steps you can undo with Ctrl+Z (⌘Z on Mac); use the eye or **Show All** instead.
+- Hide and Lock are saved with the design.
+- You can hide, x-ray or lock parts inside groups from their rows in the Design tree.
 
 ## Related
 
-- [Selection](selection.md) - How to select objects
-- [Grouping](grouping.md) - Organize objects into groups
+- [Selection](selection.md) - How to select parts
+- [Grouping](grouping.md) - Keep parts together as a group

@@ -15,10 +15,14 @@ You watch every change happen live in the 3D view. Each AI change is a single un
 
 AI assistant access is off until you turn it on.
 
-1. Open the **AI Assistant Access** panel in one of two ways:
-   - Click the **AI** item in the status bar at the bottom of the window. This always works, even when you're not signed in.
+1. Open the **AI Assistant Access** panel in any of these ways:
+   - Click the globe in the status bar at the bottom of the window and choose **AI Assistant Access...**. This works whether or not you're signed in.
+   - Open **☰ MatterCAD** › **Settings**, find **AI Providers**, and click **Open** beside **AI Assistant Access**.
    - Open the account menu and choose **AI Assistant Access...**. This menu is only there while you're signed in.
+   - Once access is on, click the **AI** item in the status bar.
 2. Turn on **Allow AI assistants to edit designs**.
+
+Outside AI tools connect only to the desktop app, not to MatterCAD on the website.
 
 <!-- IMAGE_NEEDED: Screenshot of the AI Assistant Access panel showing the Allow AI assistants to edit designs switch, the Address and Port rows, the AI can save and export to folder, and the Copy buttons for Claude Code, Codex and Claude Desktop -->
 
