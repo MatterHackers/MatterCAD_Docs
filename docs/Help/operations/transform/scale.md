@@ -26,11 +26,13 @@ You can also scale objects in the viewport by clicking and dragging the scale co
 
 Choose your own size, or one of four unit conversions:
 
-- **Custom** (default) - Enter your own sizes or percentages. Choosing Custom again puts the part back to its original size, ready for new values
+- **Custom** (default) - Enter your own sizes or percentages. Choosing Custom after a unit conversion keeps the part at its current size, so you can adjust from there
 - **Inches to mm** - Makes the part 25.4 times bigger: for a model drawn in inches that came in too small
 - **mm to Inches** - Divides the size by 25.4
 - **mm to cm** - Makes the part a tenth the size
 - **cm to mm** - Makes the part 10 times bigger
+
+Undoing a Scale Type change gives the part back the size it had before. This works the same on every Scale, including those in designs saved by earlier versions.
 
 With a conversion chosen, the panel shows the resulting **Width Percent**, **Depth Percent** and **Height Percent** as read-only values, and the rows below are hidden.
 

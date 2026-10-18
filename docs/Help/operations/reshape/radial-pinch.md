@@ -20,13 +20,13 @@ Radial Pinch pushes each horizontal layer of a part in or out from its vertical 
 
 ## Parameters
 
-- **Pinch** - A profile editor drawn in mm. Up the profile is the height on the part, from its bottom to its top; a guide line marks the top and is labelled with the part's height. Across is each layer's new distance from the center line (the editor's origin line); a second guide line marks the part's own reach from the center and is labelled with it. Where the profile sits on that reach line the layer is unchanged; nearer the center line pulls it in (0 collapses it onto the center line); farther out pushes it out
+- **Pinch** - The part's outline from bottom to top, drawn in mm. Up is the height on the part; a guide line marks the top and is labelled with the part's height. Across is how far that layer reaches from the center line (the editor's origin line); a second guide line marks the part's own reach and is labelled with it. On that reach line a layer stays as it is; nearer the center pinches it in (0 collapses it onto the center line); farther out pushes it out
 - **Slices** - How many horizontal cuts, spaced evenly up the part, give the mesh enough detail to follow the profile (default 20; the slider runs 0 to 50). More slices give a smoother result
 - **Advanced** - Off by default. Turn it on for the options below
 
 ### Advanced Parameters
 
-- **Pinch Type Value** - Which way the part is pushed:
+- **Pinch Type** - Which way the part is pinched:
   - **Radial** (default) - In or out equally on all sides
   - **X Axis** - Only along the X axis
   - **Y Axis** - Only along the Y axis

@@ -24,7 +24,7 @@ Curve bends a straight object into an arc or circular shape. You can control the
 - **Bend Type** - How you set the bend, as tabs:
   - **Angle** (default) - Bend the part by an angle
   - **Diameter** - Bend the part around a circle of a chosen diameter
-- **Diameter** - The diameter of the circle the part wraps around, in mm (the slider runs 1 to 400). Shown with Bend Type Diameter
+- **Diameter** - The size of the circle the bend wraps around, measured across it, in mm (the slider runs 1 to 400). Shown with Bend Type Diameter
 - **Angle** - How far the part turns, in degrees (default 90; 1 to 360). Shown with Bend Type Angle. Angle and Diameter describe the same bend: set one and the other follows
 - **Bend Direction** - **Bend Up** (default) or **Bend Down**: which way the ends curl, around the Z axis
 - **Start Percent** - Where the bend is centered along the part's length, as a percent from the left side (default 50)

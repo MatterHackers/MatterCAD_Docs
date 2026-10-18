@@ -70,7 +70,7 @@ Radial mode distributes copies evenly around a central axis at a fixed radius.
 
 **Sweep Angle** — Degrees of arc to fill (default 90; -360 to 360; shown when Circle Segment is Arc). Supports expressions.
 
-**Align Rotation** — On by default. Each copy is turned about the central axis by its own angle around the ring, so every copy faces the axis the way the source does. Turn it off to keep every copy facing the same way as the source.
+**Align Rotation** — On by default: each copy turns with its place around the circle, so every copy faces the center the way the original does. Off: every copy keeps the original's direction.
 
 ## Mode: Transform
 
@@ -98,7 +98,7 @@ Turn on **Randomize** (off by default) to add variation to the copies. Every ran
 
 - **Random Offset** — Maximum random position offset per axis in mm.
 - **Random Rotation** — Maximum random rotation per axis in degrees.
-- **Random Scale Axes** — Maximum random scale variation per axis.
+- **Random Scale Axes** — How much each copy's size can randomly change along each axis, as a fraction of its size: 0.2 lets a copy grow or shrink by up to 20% along that axis.
 - **Exclude First** — Keep the first copy at its exact computed position (default: on).
 - **Exclude Last** — Keep the last copy at its exact computed position.
 - **Random Seed** — Change this to get a different random arrangement (default 0). Supports expressions.

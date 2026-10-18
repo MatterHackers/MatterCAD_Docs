@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Braille
 
-Braille turns English text into raised Braille dots on a backing tile. It can write letter-by-letter (Grade 1) or contracted (Grade 2) Braille. The dots are always the standard Braille size, so the result can be read by touch.
+Braille turns English text into raised Braille dots on a backing plate. It can write letter-by-letter (Grade 1) or contracted (Grade 2) Braille. The dots are always the standard Braille size, so the result can be read by touch.
 
 <!-- Screenshot of a Braille object showing raised dots on the workspace -->
 ![20260318 182800 paste 20260318 182800](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-182800-paste-20260318-182800.jpg)
@@ -21,10 +21,10 @@ Braille turns English text into raised Braille dots on a backing tile. It can wr
 ## Parameters
 
 - **Text** - The English text to write in Braille (default "Braille")
-- **Backing Depth** - How thick the tile under the dots is, in mm (default 3; the slider runs 0.5 to 10)
+- **Backing Depth** - How thick the plate under the Braille dots is, in mm (default 3; the slider runs 0.5 to 10)
 - **Use Grade 2** - Off by default. Turn it on for Grade 2 Braille, which uses contractions for common words and letter groups
 - **Render As Braille** - On by default. Turn it off to show the same text in ordinary letters instead of dots, which helps you see what Grade 2 changed
-- **Add Hook** - Off by default. Adds a loop so the tile can hang from a necklace or keychain
+- **Add Hook** - Off by default. Adds a loop so the plate can hang from a necklace or keychain
 - **Website** - Opens the Wikipedia page about Braille
 
 ## Tips
