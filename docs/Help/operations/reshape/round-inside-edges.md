@@ -90,4 +90,4 @@ Use [Fillet](fillet.md) when:
 - [Fillet](fillet.md) - Round the edges you pick, inside or out, at a radius you set
 - [Chamfer](chamfer.md) - Cut chosen edges flat
 - [Hollow Out](hollow-out.md) - Another whole-part operation with a similar cost profile
-- [Decimate](../mesh/decimate.md) - Reduce a heavy mesh before rounding it
+- [Reduce](../mesh/decimate.md) - Reduce a heavy mesh before rounding it

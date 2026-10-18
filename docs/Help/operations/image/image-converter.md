@@ -21,7 +21,7 @@ The component surfaces just the controls you normally need. Everything else is s
 
 There are two ways in:
 
-- **From the library.** Open the Primitives panel and drag **Image Converter** onto the bed. It arrives with a placeholder image you then replace.
+- **From the library.** Open the **3D Primitives** folder (in the Library, or under **Add to Bed**) and add **Image Converter** to the bed. It arrives with a placeholder image you then replace.
 - **From an image already in the scene.** Select an [Image](../../primitives/image-object.md) and choose **Image Converter** from the Image group of the toolbar. The operation is only enabled when the selected item is an image.
 
 Then:

@@ -15,32 +15,32 @@ Fit to Bounds scales an object to fit within specified width, depth, and height 
 ## How to Use
 
 1. Select an object
-2. Apply the **Fit to Bounds** operation from the Placement menu
-3. Enter the target dimensions
-4. Choose proportion locking and stretch behavior
+2. Click **Fit to Bounds** in the Placement group of the toolbar
+3. Enter the target **Width**, **Depth** and **Height**
+4. Choose the proportion locking and how each axis stretches
 
 ## Parameters
 
-- **Lock Proportion** - How to constrain proportions:
-  - **None** - Each axis can be set independently
-  - **X & Y** - Width and depth are locked together
-  - **X, Y & Z** - Uniform scaling on all axes
-- **Width** - Target width (X dimension)
-- **Depth** - Target depth (Y dimension)
-- **Height** - Target height (Z dimension)
+- **Lock Proportion** - Which axes keep their proportions:
+  - **None** (default) - Each axis fits on its own
+  - **X Y** - Width and Depth scale together
+  - **X Y Z** - All three scale together, keeping the part's shape
+- **Width** - Target width (X), in mm
+- **Depth** - Target depth (Y), in mm
+- **Height** - Target height (Z), in mm. Not shown for a 2D path, which has no height
 
-### When Lock Proportion is X & Y or X, Y & Z
+Each **Stretch** row chooses how the part fits:
 
-- **Stretch** - How the object fits:
-  - **Inside** - Scale down to fit entirely within the bounds (may leave gaps)
-  - **Expand** - Scale up to fill the bounds (may exceed in some dimensions)
+- **Inside** - Shrink if needed to fit, but never grow
+- **Expand** (default) - Grow (or shrink) to fill the bounds
 
-### When Lock Proportion is None
+The rows that show depend on Lock Proportion:
 
-Each axis has its own:
+- **Group** section (X Y or X Y Z) - One **Stretch** for the locked axes
+- **X Axis** and **Y Axis** sections (None) - A **Stretch** for each axis
+- **Z Axis** section (None or X Y) - A **Stretch** for the height
 
-- **Stretch** - Inside or Expand per axis
-- **Align** - Where to position within the bounds (Min, Center, Max)
+Whenever an axis's Stretch is **Inside**, an **Align** row appears for it: **Min**, **Center** (default) or **Max**, where the part sits within the bounds on that axis, since it may not fill them.
 
 ## Tips
 

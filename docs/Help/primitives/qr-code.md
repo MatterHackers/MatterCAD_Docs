@@ -6,7 +6,7 @@ nav_order: 12
 ---
 # QR Code
 
-Generate QR codes as 3D objects. You can encode text, URLs, or WiFi credentials into a scannable 3D QR code.
+QR Code makes a scannable QR code from text, a web address or WiFi login details. It arrives as a flat picture plate (60 × 60 mm, 0.2 mm thick) that works like an [Image Object](image-object.md): use it as the picture for [Image Converter](../operations/image/image-converter.md) or [Lithophane](../operations/image/lithophane.md) to turn it into a raised or engraved code.
 
 <!--  Screenshot of a 3D QR Code object on the workspace -->
 ![20260318 184540 paste 20260318 184540](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-184540-paste-20260318-184540.jpg)
@@ -14,29 +14,35 @@ Generate QR codes as 3D objects. You can encode text, URLs, or WiFi credentials 
 
 ## How to Use
 
-1. Add a **QR Code** from the Primitives panel
-2. Choose the output type (Text or WiFi)
-3. Enter your content
-4. The QR code is generated as a 3D object you can place on your design
+1. Open **Included > Tools** in the Library (or under **Add to Bed**) and add **QR Code** to the bed
+2. Choose **Text** or **WiFi** for **Output Option**
+3. Enter your content; the code updates as you type
+4. With the QR Code selected, click **Image Converter** in the Image group of the toolbar to make a solid code
 
 ## Parameters
 
-### Text Mode
+- **Output Option** - **Text** (default) or **WiFi**: what the code holds
 
-- **Text** - The text or URL to encode (default: "https://matterhackers.com")
+### Text
 
-### WiFi Mode
+- **Text** - The text or web address to encode (default "https://matterhackers.com")
+
+### WiFi
 
 - **SSID** - The name of the WiFi network
-- **Password** - The WiFi password
-- **Security** - The security type (WEP, WPA, or None)
+- **Password** - The password of the WiFi network
+- **Security** - **WEP**, **WPA** (default) or **None**
+
+### Both
+
+- **Invert** - Off by default. Swaps the dark and light squares
 
 ## Tips
 
-- Use [Subtract](../operations/boolean/subtract.md) to engrave the QR code into a surface, or place it on top of a [Cube](cube.md) base
+- After Image Converter, place the solid code on top of a [Cube](cube.md) base, or [Subtract](../operations/boolean/subtract.md) it to engrave the code into a surface
 - Test that your QR code scans correctly with a phone before you export it
 - WiFi QR codes let people connect to your network by scanning the code
-- Make sure the QR code is large enough to scan on the finished part -- at least 20-25mm across
+- Keep the code large enough to scan on the finished part: scale it down only as far as a phone can still read it
 
 ## Related
 

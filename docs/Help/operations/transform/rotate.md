@@ -9,15 +9,14 @@ nav_order: 2
 
 Rotate turns an object around an axis by a given angle. The axis is a [construction plane](../../workspace/construction-planes.md): the plane's normal is what the object turns around, and the plane's origin is the point it turns about.
 
-<!--  Screenshot showing the Rotate operation with the rotation gizmo visible in the viewport -->
-![20260506 160726 paste 20260506 160726](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160726-paste-20260506-160726.jpg)
+<!-- IMAGE_NEEDED: Screenshot showing the Rotate operation with its Rotate About plane in the viewport and the Properties panel (XY / XZ / YZ / Custom tabs, Flip, Pick Face, Angle) -->
 
 ## How to Use
 
 1. Select an object
-2. Apply the **Rotate** operation from the Transform menu
+2. Click **Rotate** in the Transform group of the toolbar
 3. Set the rotation angle in the Properties panel
-4. Choose the axis under **Rotate About** — a preset, typed values, or a face picked off a model
+4. Choose the axis under **Rotate About** — a tab, typed values, or a face picked off a model
 
 You can also rotate objects directly in the viewport by clicking the rotate corner controls on a selected object. Moving your mouse over the angle indicators snaps to 45-degree increments.
 
@@ -30,7 +29,8 @@ You can also rotate objects directly in the viewport by clicking the rotate corn
 
 The plane is shown in the viewport while the Rotate is selected, so you can see the axis you are turning around.
 
-- **Preset** - **XY** turns about +Z, **XZ** about -Y, **YZ** about +X. The **Flipped** presets reverse each of those, so the same positive angle turns the other way. Choosing a preset also resets the Origin to the object's own zero, so re-enter your pivot point afterwards if you had moved it.
+- **XY / XZ / YZ / Custom** - The tabs choose the axis: **XY** turns about Z, **XZ** about Y, **YZ** about X. **Custom** shows the plane's values for an axis none of the tabs describe. Choosing a tab re-aims the axis and leaves the Origin where it is.
+- **Flip** - Reverses the axis, so the same positive angle turns the other way.
 - **Origin** - The point the object pivots about. It starts at the centre of the object's bounding box.
 - **Normal** - The axis itself. Type any direction; it does not need to be unit length.
 - **X Direction** - Not used by Rotate. An axis has no need of a sideways direction, so leave it alone.

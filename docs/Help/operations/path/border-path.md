@@ -7,7 +7,7 @@ nav_order: 1
 ---
 # Border Path
 
-Border Path adds a border offset around an existing path, creating a larger version of the shape that surrounds the original.
+Border Path makes a flat base shape around a 2D path: by default a rounded rectangle 3 mm bigger than the path on every side. Extrude it to make a plate, a tag or a backing for raised text. In the Design tree it is named **Border**.
 
 <!--  Before and after showing a path with a border added -->
 ![20260506 100533 paste 20260506 100533](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-100533-paste-20260506-100533.jpg)
@@ -16,14 +16,28 @@ Border Path adds a border offset around an existing path, creating a larger vers
 ## How to Use
 
 1. Select a 2D path
-2. Apply **Border Path** from the Path operations menu
-3. Adjust the border width
+2. Click **Border Path** in the Path group of the toolbar
+3. Pick a **Base Type** and set **Expand**
+
+## Parameters
+
+- **Base Type** - The shape of the border, as tabs:
+  - **None** - No border is made (the panel says so)
+  - **Rectangle** (default) - The rectangle around the path's bounds, grown by Expand, with rounded corners
+  - **Circle** - The smallest circle around the path, grown by Expand
+  - **Outline** - The path's own outline, grown by Expand
+- **Expand** - How far the border reaches past the path, in mm (default 3; the slider runs 0 to 30). Not shown for None
+- **Infill Amount** - Outline only. Fills in notches and gaps in the outline so the border's edge is smoother, in mm (default 3; 0 to 10). The bigger the amount, the wider the gaps it bridges; 0 just grows the outline by Expand
+- **Style** - Outline only. How the grown outline's corners are drawn: **Flat**, **Round** (default) or **Sharp**
+- **Centering** - Circle only. **Bounds** centers the circle on the path's bounding box; **Weighted** (default) centers it on the middle of the path's outer outlines
+- **Radius** - Rectangle only. The corner radius, in mm (default 3; the slider runs 0 to 20)
+- **Segments** - Rectangle only. How many straight pieces make each rounded corner (default 9; 1 to 30)
 
 ## Tips
 
-- Use this to create margin or padding around shapes
-- Combine with the original path and [Subtract](../boolean/subtract.md) to create frame shapes
-- Similar to [Inflate Path](inflate-path.md) but specifically designed for border generation
+- Set Radius to 0 for a square-cornered rectangle
+- Duplicate the path first, then [Subtract](../boolean/subtract.md) the copy from the border to make a frame shape
+- To grow the path itself without a separate base shape, use [Inflate Path](inflate-path.md)
 
 ## Related
 

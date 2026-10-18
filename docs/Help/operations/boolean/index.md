@@ -9,7 +9,7 @@ nav_order: 2
 <!-- AUTO_IMAGE: type=toolbar_icons group=Merge -->
 ![Merge toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Merge.png)
 
-Boolean operations let you create complex shapes by combining simpler ones. Select two or more objects and apply a boolean operation to merge, cut, or find the overlap between them.
+Boolean operations let you create complex shapes by combining simpler ones. They are the **Merge** group of the toolbar. Select two or more objects and apply a boolean operation to merge, cut, or find the overlap between them.
 
 All four operations are performed by one Boolean object. The toolbar buttons below just pre-select which operation it starts with, and you can change it afterwards from the row of operation icon tabs at the top of the Properties panel.
 

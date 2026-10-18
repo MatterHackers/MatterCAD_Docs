@@ -9,8 +9,7 @@ nav_order: 5
 
 Plane Cut slices an object with a [construction plane](../../workspace/construction-planes.md) and keeps the part behind it -- everything on the far side of the way the plane faces. The cut surface is capped with a flat face, so the result is still a solid you can go on building with.
 
-<!--  Before and after showing an object being sliced at a specific height -->
-![20260506 155526 paste 20260506 155526](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155526-paste-20260506-155526.jpg)
+<!-- IMAGE_NEEDED: Before and after showing an object cut by a Plane Cut, with its Properties panel showing the Plane row (XY / XZ / YZ / Custom, Flip, Pick Face) -->
 
 ## How to Use
 
@@ -18,7 +17,7 @@ Plane Cut slices an object with a [construction plane](../../workspace/construct
 2. Click **Plane Cut** in the Deform group of the toolbar
 3. Put the plane where you want the cut -- drag its handles in the viewport, or type the values into the **Plane** row
 
-The plane starts level, facing up, 10mm above the object's own zero, which is where the old Cut Height slider started.
+The plane starts level, facing up, 10 mm above the object's own zero.
 
 ## The Plane
 

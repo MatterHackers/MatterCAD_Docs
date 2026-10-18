@@ -7,23 +7,26 @@ nav_order: 8
 ---
 # Smooth Path
 
-Smooth Path rounds the corners and curves of a 2D path, creating softer, more organic shapes from angular inputs.
+Smooth Path evens out small bumps and jagged steps in a 2D path, such as the stair-steps of an outline traced from a picture. Each pass moves every point toward the average of itself and its neighbours, and no point ever moves further than **Smooth Distance** from where it started, so the overall shape stays the same. To round corners to a chosen size, use [Fillet](../reshape/fillet.md) instead.
 
-<!--  Before and after showing a star path with sharp points smoothed to curves -->
-![20260506 102302 paste 20260506 102302](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-102302-paste-20260506-102302.jpg)
+<!-- IMAGE_NEEDED: Before and after showing a jagged traced outline evened out by Smooth Path, with its Properties panel (Smooth Distance, Iterations) -->
 
 
 ## How to Use
 
 1. Select a 2D path
-2. Apply **Smooth Path** from the Path operations menu
-3. The path corners are smoothed into curves
+2. Click **Smooth Path** in the Path group of the toolbar
+3. Raise **Smooth Distance** or **Iterations** until the bumps are gone
+
+## Parameters
+
+- **Smooth Distance** - The farthest any point may move, in mm (default 0.3; the slider runs 0.01 to 1)
+- **Iterations** - How many smoothing passes to run (default 3; 1 to 10). More passes make a smoother line, up to the Smooth Distance limit
 
 ## Tips
 
-- Apply before [Linear Extrude](linear-extrude.md) to create extruded shapes with soft edges
-- Use on a [Star Path](../../2d-paths/star-path.md) to create a rounded star
-- Multiple applications of Smooth Path increase the smoothing effect
+- Use it on paths from [Image to Path](../image/image-to-path.md) to clean up the jagged edges of a traced picture before you extrude it
+- Because no point moves further than Smooth Distance, sharp corners only soften slightly; [Fillet](../reshape/fillet.md) rounds them properly
 
 ## Related
 

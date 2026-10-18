@@ -17,16 +17,16 @@ A triangular prism shape -- like a cube cut diagonally from one edge to the oppo
 - **Width** - Size along the X axis (default: 20mm)
 - **Depth** - Size along the Y axis (default: 20mm)
 - **Height** - How tall the wedge is at its tallest point (default: 20mm)
-- **Round** - Add rounding to the top edge (None, Up, or Down)
-- **Round Segments** - Smoothness of the rounding (visible when Round is enabled)
+- **Round** - Shapes the sloped face: **None** (default) keeps it flat, **Up** bulges it outward in a curve, **Down** curves it inward
+- **Round Segments** - How many steps make the curved face (default 15; 2 to 90). More is smoother. Shown only with Round set to Up or Down
 
 ## Tips
 
 - Wedges are great for creating ramps, angled brackets, and support structures
-- Use the Round option for smooth transitions on the sloped edge
+- Use Round **Down** for a curved ramp, or **Up** for a quarter-round molding
 
 ## Related
 
-- [Half Wedge](half-wedge.md) - A wedge cut in half
+- [Half Wedge](half-wedge.md) - A ridge with two sloped sides
 - [Pyramid](pyramid.md) - A four-sided pointed shape
 - [Cube](cube.md) - A rectangular box

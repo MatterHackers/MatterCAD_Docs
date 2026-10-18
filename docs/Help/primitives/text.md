@@ -6,7 +6,7 @@ nav_order: 16
 ---
 # Text
 
-Create 3D extruded text with customizable content, font, size, and height. Text objects are great for labels, signs, nameplates, and decorative lettering.
+Text makes raised 3D letters from words you type, in one of MatterCAD's fonts. Use it for labels, signs, nameplates and decorative lettering. **Text 2D** in the 2D Primitives is the same object with its Output set to **2D**: flat letter outlines you can extrude, offset or cut with the path operations.
 
 <!--  Screenshot of a 3D Text object on the workspace showing extruded letters -->
 ![20260318 184207 paste 20260318 184207](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-184207-paste-20260318-184207.jpg)
@@ -14,22 +14,27 @@ Create 3D extruded text with customizable content, font, size, and height. Text 
 
 ## How to Use
 
-1. Add a **Text** primitive from the Primitives panel
-2. Type your text in the **Name** field in the Properties panel
-3. Adjust the font, size, and extrusion height as needed
+1. Add **Text** from the 3D Primitives (or the Primitive Shapes bar)
+2. Type your words in the **Text** box in the Properties panel
+3. Pick a **Font** and set the **Point Size** and **Height**
 
 ## Parameters
 
-- **Name** - The text content to display
-- **Point Size** - The font size. This is accurate relative to standard print sizing -- a 12-point size in MatterCAD matches 12-point type on a 2D printer
-- **Height** - The extrusion height (how far the text sticks up from the surface)
-- **Font** - Select from available system fonts
+- **Multi Line** - Off by default. Turn it on to type several lines: the one-line **Text** box is replaced by a larger **Text** box, and **Alignment** appears
+- **Alignment** - Left (default), Center or Right: how the lines line up with each other. Shown only with Multi Line on
+- **Text** - The words to write (default "Text")
+- **Point Size** - The letter size in points (default 24; the slider runs 1 to 48)
+- **Height** - How tall the letters stand, in mm (default 3). Shown only for 3D output
+- **Font** - The typeface (default Nunito Bold), chosen from the fonts that come with MatterCAD
+- **Output** - **3D** (default) makes solid letters; **2D** makes flat letter outlines
+- **Wrap Lines** - Off by default. Turn it on to break long lines at the Wrapping Width
+- **Wrapping Width** - The width, in mm, at which lines wrap (default 200). Shown only with Wrap Lines on
+- **Wrapping Indent** - How many spaces to add at the start of each wrapped line (default 0), useful for bullet points. Shown only with Multi Line and Wrap Lines on
 
 ## Tips
 
 - Use [Subtract](../operations/boolean/subtract.md) to engrave text into a surface instead of raising it
-- For very small text, increase the Point Size and then [Scale](../operations/transform/scale.md) down the entire object for better detail
-- Each letter in the text is a separate path that gets extruded together
+- Switch Output to **2D** to give the letters a bevel or an outline with the path operations, then extrude them yourself
 
 ## Related
 

@@ -14,27 +14,26 @@ A round column shape with configurable diameter, height, and number of sides. Th
 
 ## Parameters
 
-- **Diameter** - The width across the cylinder (default: 20mm)
-- **Height** - How tall the cylinder is (default: 20mm)
-- **Sides** - Number of segments around the perimeter (default: 40). Lower values create polygonal shapes (e.g., 6 for a hexagon)
+- **Diameter** - The width from one side to the opposite side, in mm (default 20)
+- **Height** - How tall the cylinder is, in mm (default 20)
+- **Sides** - Number of segments around the perimeter (default 40; 3 to 360). Lower values create polygonal shapes (e.g., 6 for a hexagon)
+- **Advanced** - Off by default. Turn it on for the options below
 
 ### Advanced Parameters
 
-Enable **Advanced** mode to access additional controls:
-
-- **Diameter Top** - Set a different diameter for the top of the cylinder to create tapered or truncated cone shapes (default: matches Diameter)
-- **Starting Angle** - Angle where the cylinder begins (default: 0). Use with Ending Angle to create partial cylinders
-- **Ending Angle** - Angle where the cylinder ends (default: 360). Set less than 360 for pie-slice shapes
+- **Diameter Top** - The diameter of the top, in mm (default 20). It is separate from Diameter, so changing Diameter leaves it alone; set it differently for a tapered shape
+- **Starting Angle** - Where the cylinder begins around its axis, in degrees (default 0; 0 to 359). Use with Ending Angle to create partial cylinders
+- **Ending Angle** - Where the cylinder ends, in degrees (default 360). Less than 360 makes a pie-slice shape
 
 ## Tips
 
 - Set Sides to a low number to create regular polygons -- 6 for hexagons, 8 for octagons, etc.
 - Use different Diameter and Diameter Top values to create truncated cones and tapered shapes
 - Set Starting and Ending Angles to create pie-slice or arc shapes
-- Cylinders make excellent cutting tools for creating round holes with [Subtract](../operations/boolean/subtract.md)
+- For a round hole, set a Cylinder's **Output** to **Hole**, or cut it out with [Subtract](../operations/boolean/subtract.md)
 
 ## Related
 
 - [Cone](cone.md) - A cylinder that tapers to a point
 - [Half Cylinder](half-cylinder.md) - A cylinder cut in half lengthwise
-- [Ring](ring.md) - A hollow cylinder (tube)
+- [Tube](ring.md) - A hollow cylinder

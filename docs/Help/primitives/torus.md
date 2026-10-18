@@ -14,18 +14,17 @@ A donut-shaped ring with independent control over the overall size and the thick
 
 ## Parameters
 
-- **Outer Diameter** - The overall width across the torus (default: 20mm)
-- **Inner Diameter** - The diameter of the hole in the center (default: 10mm)
-- **Sides** - Number of segments around the main ring (default: 40)
+- **Outer Diameter** - The overall width across the torus, in mm (default 20)
+- **Inner Diameter** - The width of the hole in the center, in mm (default 10)
+- **Sides** - Number of segments around the main ring (default 40; 3 to 360). Without Advanced, the cross-section gets half as many sides (at least 3)
+- **Advanced** - Off by default. Turn it on for the options below
 
 ### Advanced Parameters
 
-Enable **Advanced** mode for additional controls:
-
-- **Starting Angle** - Angle where the torus begins (default: 0)
-- **Ending Angle** - Angle where the torus ends (default: 360). Set less than 360 for an open ring or arc
-- **Ring Sides** - Number of segments around the cross-section of the ring (default: 15). More = smoother tube profile
-- **Ring Phase Angle** - Rotates the cross-section profile (default: 0)
+- **Starting Angle** - Where the torus begins around its axis, in degrees (default 0)
+- **Ending Angle** - Where the torus ends, in degrees (default 360). Less than 360 makes an open ring or arc
+- **Ring Sides** - Number of segments around the cross-section (default 15; the slider runs 3 to 260). More is a smoother, rounder ring
+- **Ring Phase Angle** - Turns the cross-section about its own center, in degrees (default 0). It shows most with few Ring Sides: with 4, for example, it turns the square cross-section into a diamond
 
 ## Tips
 
@@ -35,6 +34,6 @@ Enable **Advanced** mode for additional controls:
 
 ## Related
 
-- [Ring](ring.md) - A straight-walled hollow cylinder (tube)
+- [Tube](ring.md) - A straight-walled hollow cylinder
 - [Sphere](sphere.md) - A solid ball shape
 - [Half Sphere](half-sphere.md) - A dome shape

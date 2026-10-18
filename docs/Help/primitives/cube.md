@@ -17,9 +17,9 @@ A rectangular box shape with adjustable width, depth, height, and optional round
 - **Width** - Size along the X axis (default: 20mm)
 - **Depth** - Size along the Y axis (default: 20mm)
 - **Height** - Size along the Z axis (default: 20mm)
-- **Round** - Enable rounded edges
-- **Radius** - Size of the rounding (visible when Round is enabled)
-- **Round Segments** - Smoothness of the rounding, more segments = smoother curves (visible when Round is enabled)
+- **Round** - Off by default. Turn it on to round every edge
+- **Radius** - The size of the rounding, in mm (default 3; the slider runs 0 to 20). Shown only with Round on
+- **Round Segments** - How many steps make each rounded edge (default 9; 1 to 20). More is smoother. Shown only with Round on
 
 ## Tips
 

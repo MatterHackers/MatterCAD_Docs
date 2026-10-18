@@ -6,50 +6,53 @@ nav_order: 3
 ---
 # Threads
 
-Create screw threads with configurable diameter, pitch, and thread profile. Threads can be used as standalone bolts/screws or subtracted from other objects to create threaded holes.
+Threads makes a threaded rod with the standard ISO 60 degree thread profile, standing on Z from the bed up. Its length is **Pitch** × **Rotations**. Turn on **Use As Hole** and it becomes the hole that rod screws into instead.
 
 <!-- AUTO_IMAGE: type=from_thumbnail item=threads file=mechanical_threads -->
 ![mechanical_threads](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical_threads.png)
 
 ## How to Use
 
-1. Add **Threads** from the Mechanical tools or Primitives panel
-2. Set the diameter, pitch, and number of rotations
-3. Optionally enable "Use as Hole" for creating threaded holes
+1. Open **Included > Mechanical** in the Library (or under **Add to Bed**) and add **Threads** to the bed
+2. Set the **Diameter**, **Pitch** and **Rotations**
+3. For a threaded hole, turn on **Use As Hole**
 
 ## Parameters
 
 ### Usage
 
-- **Use as Hole** - When enabled, the threads are sized with extra tolerance for use as a subtracted hole (default: off)
-- **Tolerance** - Extra clearance for fit when used as a hole (default: 0.2mm, visible when Use as Hole is on)
+- **Use As Hole** - Off by default. Turn it on to make the hole these threads fit instead of a rod. The threads become a hole (their Output is set to Hole in the same undo step), cut full height to both ends and widened by the Tolerance
+- **Countersink Ends** - On by default. Adds a cone at both ends of the hole so a screw starts easily and the edge of the hole stays clean. Shown only with Use As Hole on
+- **Tolerance** - Extra room for the fit, in mm (default 0.2; the slider runs 0 to 0.5). A bigger value makes a looser fit. Shown only with Use As Hole on
 
 ### Attributes
 
-- **Diameter** - The outer diameter of the threaded section (default: 10mm)
-- **Pitch** - Distance between each thread turn (default: 2mm). Smaller pitch = finer threads
-- **Thread Scale** - Width of the threads as a ratio of the pitch (default: 1.0, range: 0.1-1.0)
-- **Rotations** - Number of complete thread turns (default: 10)
+- **Diameter** - The outer diameter of the threads, in mm (default 10; up to 100)
+- **Pitch** - The distance from one thread to the next, in mm (default 2). A smaller pitch makes finer threads
+- **Thread Scale** - The width of the threads as a ratio of the pitch (default 1; 0.1 to 1)
+- **Rotations** - How many times the thread goes around (default 10)
 
 ### Geometry
 
-- **Sides** - Number of segments around the perimeter (default: 40). More = smoother
+- **Sides** - Number of segments around the perimeter (default 40; 3 to 200). More is smoother
 
 ### Tips (Thread Ends)
 
-- **Tip Scale** - How much to taper the thread ends (default: 0, range: 0-1). Set above 0 to create tapered lead-in at the ends
-- **Tip Angle** - The angle over which to taper the tips (default: 90 degrees)
+The panel's **Tips** section shapes the two ends of a rod. It is not shown with Use As Hole on.
+
+- **Tip Scale** - How tall the thread is where it meets each end, from 0 (cut down to the core, the default) to 1 (full height, cut square). A low value gives the rod a lead-in that starts easily
+- **Tip Angle** - How far around, in degrees of a turn, the thread takes to rise from the Tip Scale height to full height (default 90; 0 to 180). 0 cuts the ends square
 
 ## Tips
 
-- To create a threaded hole: enable "Use as Hole", position the threads, and [Subtract](../operations/boolean/subtract.md) from your object
-- Add Tolerance when using as a hole so the threaded parts fit together
-- Standard metric thread pitches: M3=0.5mm, M4=0.7mm, M5=0.8mm, M6=1.0mm, M8=1.25mm, M10=1.5mm
-- Use Tip Scale to create a lead-in that makes it easier to start threading
+- To make a threaded hole: turn on **Use As Hole**, move the threads into your part, then select both and [Combine](../operations/boolean/combine.md) them. A hole cuts away whatever it overlaps
+- Raise **Tolerance** if a rod and its hole fit too tightly
+- Standard metric coarse pitches: M3 = 0.5 mm, M4 = 0.7 mm, M5 = 0.8 mm, M6 = 1.0 mm, M8 = 1.25 mm, M10 = 1.5 mm. For a standard fastener, [Screw](screw.md) fills these in for you
+- Keep Tip Scale at 0 for a lead-in that makes it easier to start threading; raise it toward 1 for blunter ends
 
 ## Related
 
 - [Screw](screw.md) - A complete fastener with head, drive and tip, built from a standard size
-- [Gears](gears.md) - Create mechanical gear shapes
+- [Involute Gear](gears.md) - Create mechanical gear shapes
 - [Cylinder](../primitives/cylinder.md) - A plain round column (no threads)
-- [Subtract](../operations/boolean/subtract.md) - Cut threads out of other objects to create holes
+- [Combine](../operations/boolean/combine.md) - Combine a part with a threaded hole to cut the hole into it

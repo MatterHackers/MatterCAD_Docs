@@ -10,7 +10,7 @@ nav_order: 1
 
 Array creates multiple copies of an object arranged in a pattern. This is useful for creating repeating features like bolt holes, fence posts, gear teeth, or decorative elements.
 
-The Array operation supports four modes — Linear, Radial, Curve, and Transform — all in a single tool.
+The **Duplication** group of the toolbar holds **Clone**, **Array** and **Select Child**. Array has three modes, **Linear**, **Radial** and **Transform**, all in a single tool.
 
 |Linear|Radial|
 | :--- | :--- |
@@ -18,5 +18,5 @@ The Array operation supports four modes — Linear, Radial, Curve, and Transform
 
 ## Pages
 
-- [Array](array.md) - Create linear, radial, curve, and transform patterns of duplicated objects
+- [Array](array.md) - Create linear, radial and transform patterns of duplicated objects
 - [Select Child](select-child.md) - Dynamically pick one child from a group by index or name

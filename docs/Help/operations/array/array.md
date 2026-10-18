@@ -9,14 +9,13 @@ nav_order: 1
 
 Array creates multiple copies of an object arranged in a pattern. Select a mode from the buttons at the top — **Linear**, **Radial**, or **Transform** — to switch between pattern types.
 
-<!--  Screenshot of the Array operation panel showing the mode buttons at the top (Linear | Radial | Transform) -->
-![20260506 080647 paste 20260506 080647](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080647-paste-20260506-080647.jpg)
+<!-- IMAGE_NEEDED: Screenshot of the Array operation panel showing the mode buttons at the top (Linear | Radial | Transform) -->
 
 
 ## How to Use
 
-1. Select an object
-2. Apply the **Array** operation from the Duplication menu
+1. Select one part
+2. Click **Array** in the Duplication group of the toolbar
 3. Choose a mode (Linear, Radial, or Transform)
 4. Adjust the parameters for the chosen mode
 
@@ -24,56 +23,54 @@ Array creates multiple copies of an object arranged in a pattern. Select a mode 
 
 Linear mode places copies along a direction with optional rotation and scale progression.
 
-**Count** — Number of copies (integer or expression). The source object is the first copy; additional copies are offset from it.
+**Count** — Number of copies, the source included (default 3; the slider runs 1 to 200). The source object is the first copy; additional copies are offset from it.
 
 **Offset Method** — How spacing is calculated:
-- **Relative** — Offset is multiplied by the object's bounding box size. A Relative Offset of (1, 0, 0) spaces copies exactly one object-width apart along X.
-- **Offset** — Fixed world-space distance in mm per copy.
-- **Endpoint** — Set the position of the last copy; spacing is divided evenly between copies.
+- **Relative** (default) — Offset is multiplied by the object's bounding box size. A Relative Offset of (1, 0, 0), the default, spaces copies exactly one object-width apart along X.
+- **Offset** — Fixed world-space distance in mm per copy (default 10, 0, 0).
+- **Endpoint** — Set the position of the last copy relative to the first (default 100, 0, 0); spacing is divided evenly between copies.
 
 **Relative Offset** / **Offset** / **Endpoint** — The spacing vector, depending on the selected Offset Method.
 
 **Rotation Mode** — How rotation accumulates across copies:
-- **Local** — Each copy rotates in place at its own center; the offset direction stays in world axes.
+- **Local** (default) — Each copy rotates in place at its own center; the offset direction stays in world axes.
 - **Compounding** — Rotation accumulates and steers the offset, producing spirals, fans, and helices.
 
-**Rotation** — Per-copy rotation in degrees on each axis.
+**Rotation** — Per-copy rotation in degrees on each axis (default 0, 0, 0).
 
-**Scale** — Per-copy cumulative scale on each axis. Values less than 1 shrink copies; values greater than 1 grow them.
+**Scale** — Per-copy cumulative scale on each axis (default 1, 1, 1). Values less than 1 shrink copies; values greater than 1 grow them.
 
-**Scale Affects Offset** — When on, the spacing between copies also scales with each step. Use this for tightening spirals and geometric progressions (nautilus shells, stacked nail-shell curves).
+**Scale Affects Offset** — On by default. When on, the spacing between copies also scales with each step. Use this for tightening spirals and geometric progressions (nautilus shells, stacked nail-shell curves).
 
 ## Mode: Radial
 
 Radial mode distributes copies evenly around a central axis at a fixed radius.
 
-<!--  Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
-![20260506 092618 paste 20260506 092618](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-092618-paste-20260506-092618.jpg)
+<!-- IMAGE_NEEDED: Screenshot of Array in Radial mode showing 6 copies arranged in a circle, with Radius and Central Axis parameters visible -->
 
 
 **Count Method** — How the number of copies is determined:
-- **Count** — Explicit number of copies.
+- **Count** (default) — Explicit number of copies.
 - **Distance** — Angular gap between copies in degrees; count is calculated to fill the sweep.
 
-**Count** / **Angular Distance** — Number of copies (Count mode) or angular spacing in degrees (Distance mode). Supports expressions.
+**Count** / **Angular Distance** — Number of copies (Count mode, default 3) or angular spacing in degrees (Distance mode, default 30; 1 to 360). Supports expressions.
 
 **Central Axis** — The axis the copies circle, given as a [construction plane](../../workspace/construction-planes.md): its normal is the axis and its origin is the centre of the circle. The origin starts at the centre of the source object's bounding box, and the axis is drawn in the viewport while the Array is selected.
 
-- **Preset** — **XY** circles about +Z (the default), **XZ** about -Y, **YZ** about +X. The **Flipped** presets reverse each of those, which reverses the direction copies are laid out in. Choosing a preset also resets the origin to the object's own zero, so re-enter your centre afterwards if you had moved it.
+- **XY / XZ / YZ / Custom** — The tabs choose the axis: **XY** circles about Z (the default), **XZ** about Y, **YZ** about X. **Custom** shows the plane's values for an axis none of the tabs describe. Choosing a tab re-aims the axis and leaves the origin where it is.
+- **Flip** — Reverses the axis, which reverses the direction copies are laid out in.
 - **Origin** — The centre of the circle. Supports expressions per component.
 - **Normal** — The axis itself; any length will do.
 - **X Direction** — Not used by Array. An axis has no need of a sideways direction.
 - **Pick Face** — Click the button, then click a flat face anywhere in the scene to circle about that face's normal. Press Esc to cancel.
 
-**Circle Segment** — Whether copies span a full 360° circle (**Full**) or a partial arc (**Arc**).
+**Circle Segment** — Whether copies span a full 360° circle (**Full**, the default) or a partial arc (**Arc**).
 
-**Radius** — Distance from the central axis to each copy.
+**Radius** — Distance from the central axis to each copy, in mm (default 30; the slider runs 0 to 500).
 
-**Sweep Angle** — Degrees of arc to fill (shown when Circle Segment is Arc). Supports expressions.
+**Sweep Angle** — Degrees of arc to fill (default 90; -360 to 360; shown when Circle Segment is Arc). Supports expressions.
 
-**Align Rotation** — Rotate each copy so its forward axis points outward from the center.
-
-**Forward Axis** — Which axis of the copy is treated as "forward" for alignment (shown when Align Rotation is on).
+**Align Rotation** — On by default. Each copy is turned about the central axis by its own angle around the ring, so every copy faces the axis the way the source does. Turn it off to keep every copy facing the same way as the source.
 
 ## Mode: Transform
 
@@ -82,35 +79,35 @@ Transform mode steps copies using a manual transform or by following another obj
 **Count** — Number of copies (integer or expression).
 
 **Transform Reference** — Where the per-step transform comes from:
-- **Input** — You specify translation, rotation, and scale directly.
+- **Input** (default) — You specify translation, rotation, and scale directly.
 - **Object** — The transform is read from a named sibling object.
 
-**Translation** — Per-step world-space offset in mm (shown when Reference is Input).
+**Transform Translation** — Per-step offset in mm (default 10, 0, 0; shown when Reference is Input).
 
-**Rotation** — Per-step rotation in degrees per axis (shown when Reference is Input).
+**Transform Rotation** — Per-step rotation in degrees per axis (default 0, 0, 0; shown when Reference is Input).
 
-**Scale** / **Scale Axes** — Uniform and per-axis scale applied at each step (shown when Reference is Input).
+**Scale** / **Scale Axes** — Uniform and per-axis scale applied at each step (default 1 and 1, 1, 1; shown when Reference is Input).
 
 **Transform Name** — Name of the sibling object whose transform is used as the per-step increment (shown when Reference is Object).
 
-**Relative Space** — When on, each copy's transform compounds in the local frame of the previous copy; when off, each step is applied in world space (shown when Reference is Object).
+**Relative Space** — On by default. When on, each copy's transform compounds in the local frame of the previous copy; when off, each step is applied in world space (shown when Reference is Object).
 
 ## Randomize
 
-Enable **Randomize** to add variation to all copies.
+Turn on **Randomize** (off by default) to add variation to the copies. Every random amount starts at 0.
 
 - **Random Offset** — Maximum random position offset per axis in mm.
 - **Random Rotation** — Maximum random rotation per axis in degrees.
 - **Random Scale Axes** — Maximum random scale variation per axis.
 - **Exclude First** — Keep the first copy at its exact computed position (default: on).
 - **Exclude Last** — Keep the last copy at its exact computed position.
-- **Random Seed** — Change this to get a different random arrangement. Supports expressions.
+- **Random Seed** — Change this to get a different random arrangement (default 0). Supports expressions.
 
 ## Merge
 
-- **Create Single Mesh** — Combine all copies into one merged mesh object.
-- **Merge Vertices** — Weld vertices within the merge distance threshold (shown when Create Single Mesh is on).
-- **Distance** — Merge threshold in mm (shown when Merge Vertices is on).
+- **Create Single Mesh** — Off by default. Combine all copies into one merged mesh object.
+- **Merge** — Off by default. Weld points of the copies that lie within **Distance** of each other (shown when Create Single Mesh is on).
+- **Distance** — How close two points must be to be welded, in mm (default 0.01; the slider runs 0 to 1; shown when Merge is on).
 
 ## Older files
 

@@ -6,7 +6,7 @@ nav_order: 5
 ---
 # Star Path
 
-A star-shaped 2D path with configurable number of points and inner/outer radius. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create 3D star shapes.
+A star-shaped 2D path, added as **Star** from the 2D Primitives. You choose how many points it has and how far its points and valleys are from the center. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create 3D star shapes.
 
 <!-- Screenshot of a Star Path on the workspace -->
 ![20260506 080319 paste 20260506 080319](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080319-paste-20260506-080319.jpg)
@@ -14,18 +14,19 @@ A star-shaped 2D path with configurable number of points and inner/outer radius.
 
 ## Parameters
 
-- **Points** - Number of star points
-- **Outer Radius** - Distance from center to the tip of each point
-- **Inner Radius** - Distance from center to the valleys between points
+- **Points** - How many points the star has (default 5; 3 to 20)
+- **Point Radius** - The distance from the center to the tip of each point, in mm (default 40)
+- **Valley Radius** - The distance from the center to the valleys between the points, in mm (default 15)
+- **Plane** - The [construction plane](../workspace/construction-planes.md) the star is drawn on (default XY, flat on the bed)
 
 ## Tips
 
-- The ratio between Inner and Outer Radius determines how "pointy" the star is. A small Inner Radius creates sharp, pronounced points.
-- Set Points to 5 for a classic star, 6 for a Star of David shape, or higher for gear-like shapes
-- Use [Smooth Path](../operations/path/smooth-path.md) on a Star Path to create rounded star shapes
+- The Valley Radius compared with the Point Radius sets how pointy the star is: a small Valley Radius makes long, sharp points
+- For a six-pointed star like the Star of David, set Points to 6 and the Valley Radius to about 0.58 times the Point Radius (23 with the default Point Radius of 40)
+- Use [Fillet](../operations/reshape/fillet.md) on a star to round its tips and valleys
 
 ## Related
 
 - [Circle Path](circle-path.md) - A smooth circle
-- [Gears](../mechanical/gears.md) - A proper gear profile, with **Output** set to **2D**
+- [Involute Gear](../mechanical/gears.md) - A proper gear profile, with **Output** set to **2D**
 - [Linear Extrude](../operations/path/linear-extrude.md) - Give paths height

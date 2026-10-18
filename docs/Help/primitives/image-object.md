@@ -21,7 +21,7 @@ There are three ways an Image gets into a design:
 
 - **Drop a file on the bed.** Drag a `png`, `jpg`, `gif`, `webp` or `tga` file from your desktop onto the 3D view. It arrives as an Image named "Image"
 - **Insert from the library.** Image files stored in your library open the same way
-- **From inside an Image Converter.** The Primitives panel's **Image Converter** is a [component](../workspace/components.md) built around an Image. Expand it in the design tree to select the Image inside it and change the picture there
+- **From inside an Image Converter.** The **Image Converter** in the 3D Primitives folder is a [component](../workspace/components.md) built around an Image. Expand it in the design tree to select the Image inside it and change the picture there
 
 Once it is in the scene:
 

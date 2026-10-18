@@ -15,7 +15,7 @@ Repair fixes common problems in mesh geometry, including non-manifold edges, hol
 ## How to Use
 
 1. Select an object with mesh problems
-2. Apply the **Repair** operation from the Mesh menu
+2. Click **Repair** in the Mesh group of the toolbar
 3. Review the before/after statistics to see what was fixed
 
 ## Statistics (Read Only)
@@ -47,5 +47,5 @@ Enable **Advanced** mode for fine-grained control:
 
 ## Related
 
-- [Decimate](decimate.md) - Reduce polygon count
+- [Reduce](decimate.md) - Lower the polygon count
 - [Adding Existing Objects](../../getting-started/adding-existing-objects.md) - Import models that may need repair

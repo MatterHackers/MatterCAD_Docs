@@ -6,7 +6,7 @@ nav_order: 2
 ---
 # Braille
 
-Generate raised Braille text from standard English text. The Braille tool supports both Grade 1 (letter-by-letter) and Grade 2 (contracted) Braille encoding.
+Braille turns English text into raised Braille dots on a backing tile. It can write letter-by-letter (Grade 1) or contracted (Grade 2) Braille. The dots are always the standard Braille size, so the result can be read by touch.
 
 <!-- Screenshot of a Braille object showing raised dots on the workspace -->
 ![20260318 182800 paste 20260318 182800](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-182800-paste-20260318-182800.jpg)
@@ -14,24 +14,26 @@ Generate raised Braille text from standard English text. The Braille tool suppor
 
 ## How to Use
 
-1. Add a **Braille** primitive from the Primitives panel
-2. Type your text in the **Text to Encode** field
-3. The tool automatically converts it to the correct Braille dot pattern
+1. Open **Included > Design Apps** in the Library (or under **Add to Bed**) and add **Braille** to the bed
+2. Type your words in the **Text** box in the Properties panel
+3. The dots update to spell it in Braille
 
 ## Parameters
 
-- **Text to Encode** - The English text to convert to Braille
-- **Scale** - Adjust the overall size of the Braille output
-- **Height** - The height of the raised Braille dots
+- **Text** - The English text to write in Braille (default "Braille")
+- **Backing Depth** - How thick the tile under the dots is, in mm (default 3; the slider runs 0.5 to 10)
+- **Use Grade 2** - Off by default. Turn it on for Grade 2 Braille, which uses contractions for common words and letter groups
+- **Render As Braille** - On by default. Turn it off to show the same text in ordinary letters instead of dots, which helps you see what Grade 2 changed
+- **Add Hook** - Off by default. Adds a loop so the tile can hang from a necklace or keychain
+- **Website** - Opens the Wikipedia page about Braille
 
 ## Tips
 
-- Grade 2 Braille uses contractions and abbreviations for common words and letter combinations, making it more compact
-- Standard Braille cell dimensions are used to ensure the output is readable
-- Combine with a flat [Cube](cube.md) base to create a complete Braille label or sign
-- For Braille cards with an integrated base, see [Braille Card](braille-card.md)
+- Grade 2 Braille is more compact, because it writes common words and letter combinations as single cells
+- The dot size and spacing follow the Braille standard and cannot be changed, so the result stays readable. Scaling the object changes the dots too, so leave it at full size if it is meant to be read
+- For a single letter shown both in Braille and as an ordinary letter, see [Braille Card](braille-card.md)
 
 ## Related
 
-- [Braille Card](braille-card.md) - Braille with an integrated card base
+- [Braille Card](braille-card.md) - One letter in Braille with the ordinary letter above it
 - [Text](text.md) - Standard 3D text

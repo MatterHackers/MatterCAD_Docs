@@ -5,13 +5,13 @@ nav_order: 6
 ---
 # Operations
 
-Operations modify, combine, and transform objects in your design. MatterCAD organizes operations into groups that match the toolbar in the application.
+Operations modify, combine, and transform objects in your design. The toolbar shows them in groups; each button works once you have selected the parts it needs. A collapsed group shows as one button with an arrow for the rest. Every operation is also in the Properties panel's **Action** menu and in the right-click **Modify** menu.
+
+Before the groups, the toolbar has **Arrange All Parts**, then **Lay Flat**, **Rebuild**, **Group**, **Ungroup** and **Convert to Nodes**, then **Duplicate** and **Remove**.
 
 ## Operation Groups
 
-- [Boolean](boolean/index.md) - Combine, subtract, and intersect objects to create complex shapes
-  <!-- AUTO_IMAGE: type=toolbar_icons group=Merge -->
-  ![Merge toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Merge.png)
+In toolbar order:
 
 - [Transform](transform/index.md) - Move, rotate, scale, and mirror objects
   <!-- AUTO_IMAGE: type=toolbar_icons group=Transform -->
@@ -29,21 +29,27 @@ Operations modify, combine, and transform objects in your design. MatterCAD orga
   <!-- AUTO_IMAGE: type=toolbar_icons group=Deform -->
   ![Deform toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Deform.png)
 
-- [Array](array/index.md) - Create patterns of duplicated objects in linear or radial arrangements
-  <!-- AUTO_IMAGE: type=toolbar_icons group=Duplication -->
-  ![Duplication toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Duplication.png)
+- [Image](image/index.md) - Convert images to 3D objects and paths
+  <!-- AUTO_IMAGE: type=toolbar_icons group=Image -->
+  ![Image toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Image.png)
 
 - [Path](path/index.md) - Operations for working with 2D paths, including extrude and revolve
   <!-- AUTO_IMAGE: type=toolbar_icons group=Path -->
   ![Path toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Path.png)
 
-- [Mesh](mesh/index.md) - Repair and optimize mesh geometry
+- [Merge](boolean/index.md) - Combine, subtract, and intersect objects to create complex shapes
+  <!-- AUTO_IMAGE: type=toolbar_icons group=Merge -->
+  ![Merge toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Merge.png)
+
+- [Duplication](array/index.md) - Clone, Array (linear, radial and transform patterns) and Select Child
+  <!-- AUTO_IMAGE: type=toolbar_icons group=Duplication -->
+  ![Duplication toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Duplication.png)
+
+- [Mesh](mesh/index.md) - Repair and reduce mesh geometry
   <!-- AUTO_IMAGE: type=toolbar_icons group=Mesh -->
   ![Mesh toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Mesh.png)
 
-- [Image](image/index.md) - Convert images to 3D objects and paths
-  <!-- AUTO_IMAGE: type=toolbar_icons group=Image -->
-  ![Image toolbar icons](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-Image.png)
+- **Constraints** - [Modify Parameters](../workspace/modify-parameters.md), and **Make Component** and **Edit Component** (see [Components](../workspace/components.md))
 
 ## Node Graphs
 

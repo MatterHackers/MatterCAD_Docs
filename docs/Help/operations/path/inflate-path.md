@@ -16,8 +16,13 @@ Inflate Path expands a 2D path outward, making the shape larger while maintainin
 ## How to Use
 
 1. Select a 2D path
-2. Apply **Inflate Path** from the Path operations menu
-3. Adjust the inflation amount
+2. Click **Inflate Path** in the Path group of the toolbar
+3. Set **Inflate**
+
+## Parameters
+
+- **Inflate** - How far to move the path's edges outward, in mm (default 0.2; the slider runs -5 to 5). A negative value shrinks a closed path inward
+- **Style** - How corners (and the ends of open lines) are drawn: **Flat**, **Round** or **Sharp** (default)
 
 ## Inflating an Open Line
 

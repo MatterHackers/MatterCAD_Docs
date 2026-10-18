@@ -9,8 +9,7 @@ nav_order: 7
 
 Twist rotates the top of an object relative to the bottom, creating a spiral or twisted effect along the height. By default the rotation progresses evenly from bottom to top; under Advanced you can draw where along the height the turning actually happens.
 
-<!--  Before and after showing a cube being twisted into a spiral column -->
-![20260506 155620 paste 20260506 155620](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155620-paste-20260506-155620.jpg)
+<!-- IMAGE_NEEDED: Before and after showing a cube being twisted into a spiral column, with the Twist's Properties panel (Rotation Type, Angle, Slices, Minimum Sides, Twist Right) -->
 
 ## How to Use
 
@@ -35,11 +34,11 @@ A run that falls back as it goes up unwinds: that band of the part turns the oth
 ## Parameters
 
 - **Rotation Type** - Choose between:
-  - **Angle** - Specify the total twist angle in degrees (3-360)
-  - **Distance** - Specify the twist as a distance along the circumference
-- **Slices** - Number of horizontal cuts added for smooth twisting, spaced evenly up the part. More slices = smoother twist
-- **Minimum Sides** - The least number of sides the part should have around the twist axis. A coarse shape such as a cube has no geometry around its perimeter to carry the rotation, so its flat faces facet instead of curving; this adds vertical cuts through the twist axis so those faces can follow the twist. 0 (the default) leaves the part alone
-- **Twist Right** - Direction of twist: right (clockwise) or left (counterclockwise)
+  - **Angle** (default) - Specify the total twist angle in degrees (default 45; 3 to 360)
+  - **Distance** - Specify the twist as a distance along the circumference, in mm (default 10)
+- **Slices** - Number of horizontal cuts added for smooth twisting, spaced evenly up the part (default 5; the slider runs 0 to 50). More slices give a smoother twist
+- **Minimum Sides** - The least number of sides the part should have around the twist axis (0 to 20). A coarse shape such as a cube has no geometry around its perimeter to carry the rotation, so its flat faces facet instead of curving; this adds vertical cuts through the twist axis so those faces can follow the twist. 0 (the default) leaves the part alone
+- **Twist Right** - On by default: the twist turns right (clockwise). Turn it off to twist left (counterclockwise)
 - **Prefered Radius** - Read-only: the radius the part itself reports, or the one implied by its shape, which is what a twist distance is measured around (Distance mode only)
 - **Edit Radius** - Turn off the reported radius so you can set your own (Distance mode only, and only when the part reports one)
 - **Override Radius** - Custom radius for the twist calculation (Distance mode only)

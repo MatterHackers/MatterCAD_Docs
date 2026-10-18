@@ -14,13 +14,16 @@ The **Path** group is on the toolbar. If you have hidden it, click **Tools** at 
 
 ## Operations
 
+The Path group holds these nine, in this order:
+
 - [Linear Extrude](linear-extrude.md) - Give a 2D path height to create a 3D object
 - [Revolve](revolve.md) - Spin a 2D path around an axis to create a solid of revolution
 - [Sweep](sweep.md) - Carry a 2D profile along a 3D curve
 - [Loft](loft.md) - Blend a solid between stacked 2D sections
-- [3D Curve](curve-3d.md) - Draw the curve a Sweep follows
-- [Smooth Path](smooth-path.md) - Smooth the curves of a path
+- [Smooth Path](smooth-path.md) - Even out small bumps in a path
 - [Inflate Path](inflate-path.md) - Expand a path outward
 - [Outline Path](outline-path.md) - Create an outline from a filled path
-- [Border Path](border-path.md) - Add a border offset around a path
+- [Border Path](border-path.md) - Make a base shape around a path
 - [Select Paths](select-paths.md) - Select specific paths from complex multi-path objects
+
+Also here: [3D Curve](curve-3d.md), the curve a Sweep follows. It is a primitive, added from the 3D Primitives folder.

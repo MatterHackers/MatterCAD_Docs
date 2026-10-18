@@ -14,12 +14,12 @@ Subtract and Replace subtracts the parts you choose out of the parts you did not
 
 [Combine](combine.md), [Subtract](subtract.md), [Intersect](intersect.md) and Subtract and Replace are all performed by one Boolean object -- the toolbar button creates it with Subtract & Replace already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 
-Subtract & Replace is not offered for 2D paths -- a region has no removed volume to hand back.
+On 2D paths, Subtract & Replace works as [Subtract](subtract.md): the cutting shapes are cut out of the base and nothing is kept in their place, because a flat region has no removed volume to hand back.
 
 ## How to Use
 
 1. Select the object to keep, then hold Shift and select the objects to cut away from it
-2. Click **Subtract & Replace** in the toolbar -- every object you selected after the first is cut from the first
+2. Click **Subtract & Replace** in the Merge group of the toolbar -- every object you selected after the first is cut from the first
 3. Use **Part(s) to Subtract** to change which children are the cutting shapes
 4. Change your mind at any time by clicking a different operation tab at the top of the Properties panel (each tab shows the operation's icon, hover for its name) -- the shape rebuilds with the new operation
 

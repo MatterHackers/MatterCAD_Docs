@@ -21,18 +21,23 @@ Curve bends a straight object into an arc or circular shape. You can control the
 
 ## Parameters
 
-- **Bend Type** - Choose between:
-  - **Angle** - Specify the bend angle directly (1-360 degrees)
-  - **Diameter** - Specify the diameter of the circle the part wraps around
-- **Bend Direction** - Bend Up or Bend Down
-- **Start Percent** - Where along the object to start the bend (0-100%)
-- **Split Mesh** - Split the mesh for smooth curves (default: on)
-- **Min Sides Per Rotation** - Minimum number of mesh segments per full revolution. Higher values = smoother curves
+- **Bend Type** - How you set the bend, as tabs:
+  - **Angle** (default) - Bend the part by an angle
+  - **Diameter** - Bend the part around a circle of a chosen diameter
+- **Diameter** - The diameter of the circle the part wraps around, in mm (the slider runs 1 to 400). Shown with Bend Type Diameter
+- **Angle** - How far the part turns, in degrees (default 90; 1 to 360). Shown with Bend Type Angle. Angle and Diameter describe the same bend: set one and the other follows
+- **Bend Direction** - **Bend Up** (default) or **Bend Down**: which way the ends curl, around the Z axis
+- **Start Percent** - Where the bend is centered along the part's length, as a percent from the left side (default 50)
+- **Split Mesh** - On by default. Cuts the part into strips across its length first, so it has enough detail to bend smoothly
+- **Min Sides Per Rotation** - The fewest strips per full turn of the bend (default 30; the slider runs 3 to 360). More is smoother. Shown only with Split Mesh on
+- **Advanced** - Off by default. Turn it on to bend only part of the length
 
 ### Advanced Parameters
 
-- **Start Bend Percent** - Percentage from the left where the bend starts
-- **End Bend Percent** - Percentage from the left where the bend ends
+- **Start Bend Percent** - Where the bent stretch begins, as a percent of the length from the left (default 0)
+- **End Bend Percent** - Where the bent stretch ends, as a percent of the length from the left (default 100)
+
+In Advanced mode only the stretch between these two bends, turning by the Angle; the straight parts on either side stay straight and follow the ends of the bend.
 
 ## Tips
 

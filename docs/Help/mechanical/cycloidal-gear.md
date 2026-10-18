@@ -16,16 +16,16 @@ An eccentric on the input shaft pushes a lobed disc so that it *wobbles* rather 
 
 That slow rotation is taken out of the disc through a set of oversized holes near its centre, which ride on output pins standing in a plate. The holes are drawn larger than the pins by twice the eccentricity, which is exactly the room the pins need to stay in contact as the disc walks around.
 
-**A drive is a matched pair.** The Disc and the Pin Ring have to be built with the same Pin Count, Pin Circle Diameter, Pin Diameter and Eccentricity or they will not run together. MatterCAD remembers those numbers per user, so adding a Disc and then a Pin Ring gives you two parts on the same settings.
+**A drive is a matched pair.** The Disc and the Pin Ring have to be built with the same Pin Count, Pin Circle Diameter, Pin Diameter and Eccentricity or they will not run together. A new Cycloidal Gear always starts on the same default sizes, so adding a Disc and then a Pin Ring gives you two parts on the same settings.
 
 ## How to Use
 
-1. Open the Mechanical group in the library and drag **Cycloidal Gear** onto the bed
+1. Open **Included > Mechanical** in the Library (or under **Add to Bed**) and add **Cycloidal Gear** to the bed
 2. Leave **Part** on **Disc** and set the sizes you want
-3. Add a second Cycloidal Gear and switch its **Part** to **Pin Ring** -- it comes up on the same numbers
+3. Add a second Cycloidal Gear and switch its **Part** to **Pin Ring**, then give it the same drive sizes as the disc
 4. Add the eccentric bearing bore, the output pins and the housing yourself
 
-Sizes left at 0 take the value you last used, seeded on first run with a sensible default (60mm pin circle, 6mm pins, 1.5mm eccentricity, 5mm high). **Center Bore Diameter** and **Output Hole Count** are the exceptions: 0 is a real answer there, meaning "no bore" and "no output holes", so those two are not seeded.
+Sizes left at 0 take a fixed default: Height 5 mm, Pin Circle Diameter 60 mm, Pin Diameter 6 mm, Eccentricity 1.5 mm, Clearance 0.1 mm, Output Hole Circle Diameter 34 mm, Output Pin Diameter 5 mm and Ring Edge Width 4 mm. **Center Bore Diameter** and **Output Hole Count** are the exceptions: 0 is a real answer there, meaning "no bore" and "no output holes".
 
 ## Parameters
 
@@ -37,7 +37,7 @@ Sizes left at 0 take the value you last used, seeded on first run with a sensibl
 
 ### The drive (both parts)
 
-These four have to match between the disc and the ring:
+The first four have to match between the disc and the ring:
 
 - **Pin Count** - The number of pins in the ring (default 10, range 3-40). The disc gets one lobe fewer than this, and that lobe count is the reduction ratio of the drive
 - **Pin Circle Diameter** - The diameter of the circle the pin centres stand on. This is the working size of the drive
@@ -56,7 +56,7 @@ These four have to match between the disc and the ring:
 
 - **Ring Edge Width** - The width of the material outside the pins. The slider covers the useful range; a typed or calculated value can go up to 1000
 
-### Computed values (read only)
+### Gear Data (read only)
 
 - **Lobe Count** - The number of lobes on the disc, always one fewer than the Pin Count
 - **Reduction Ratio** - How many turns of the input shaft it takes to turn the output once, with the pin ring held still and the output taken off the disc's holes. It is the Lobe Count
@@ -73,6 +73,6 @@ These four have to match between the disc and the ring:
 
 ## Related
 
-- [Gears](gears.md) - Involute gears, for ordinary meshing gear trains
+- [Involute Gear](gears.md) - Involute gears, for ordinary meshing gear trains
 - [Threads](threads.md) - Screw threads
 - [Subtract](../operations/boolean/subtract.md) - Cut the bearing bore and output holes to your own sizes

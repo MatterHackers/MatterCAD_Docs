@@ -9,15 +9,14 @@ nav_order: 6
 
 Revolve spins a 2D path around an axis to create a 3D solid of revolution. This is how you create vases, bowls, wheels, and other rotationally symmetric objects.
 
-<!--  Before and after showing a profile path being revolved into a vase shape -->
-![20260506 102004 paste 20260506 102004](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-102004-paste-20260506-102004.jpg)
+<!-- IMAGE_NEEDED: Before and after showing a profile path being revolved into a vase shape, with the Revolve's Properties panel (Rotation, Axis Offset, Starting Angle, Ending Angle, Sides) -->
 
 
 ## How to Use
 
 1. Select a 2D path
-2. Apply **Revolve** from the Path operations menu
-3. Adjust the rotation range, axis position, and number of sides
+2. Click **Revolve** in the Path group of the toolbar
+3. Adjust the Starting and Ending Angle, the Axis Offset and the number of Sides
 
 ## Where the Axis Is
 
@@ -27,11 +26,11 @@ On the bed (the default plane) the path's up direction is the world **Y** axis, 
 
 ## Parameters
 
-- **Rotation** - Total rotation angle for the revolve (default: 0, range: 0-360). Set to 360 for a complete revolution.
-- **Axis Offset** - Moves the axis away from the path's x = 0 line (default: 0, range: -30 to 30). Positive values move it in +X, closer to a profile drawn right of the origin, which shrinks the part.
-- **Starting Angle** - Where the revolution begins (default: 0)
-- **Ending Angle** - Where the revolution ends (default: 360, a full revolution).
-- **Sides** - Number of segments around the revolution (default: 40, the same as Sphere and Cylinder). More = smoother surface, but a slower rebuild.
+- **Rotation** - Turns the axis within the path's plane, about the path's origin, in degrees (default 0; 0 to 360). At 0 the axis is the path's vertical x = 0 line; at 90 it runs across the path instead. It does not change how far the profile is spun: that is the Starting and Ending Angle
+- **Axis Offset** - Moves the axis away from the path's x = 0 line, in mm (default 0; the slider runs -30 to 30). Positive values move it in +X, closer to a profile drawn right of the origin, which shrinks the part
+- **Starting Angle** - Where the spin begins, in degrees (default 0; 0 to 360)
+- **Ending Angle** - Where the spin ends, in degrees (default 360, a full turn)
+- **Sides** - Number of segments around the spin (default 40; 3 to 360). More is a smoother surface, but a slower rebuild
 
 
 ## Projection Plane

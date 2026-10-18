@@ -17,7 +17,7 @@ The curve is drawn as a thin octagonal tube so you can see it and click on it. T
 
 You get a 3D Curve two ways:
 
-- **From the library.** Open the Primitives panel and drag **3D Curve** onto the bed. It arrives as a flattened spiral you can reshape
+- **From the library.** Open the **3D Primitives** folder (in the Library, or under **Add to Bed**) and add **3D Curve** to the bed. It arrives as a flattened spiral you can reshape
 - **From a Sweep.** Applying [Sweep](sweep.md) to a path creates a curve for you -- an S shape about twice as long as the profile is wide, starting at the profile
 
 Then shape it:

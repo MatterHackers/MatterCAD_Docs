@@ -9,8 +9,7 @@ nav_order: 3
 
 Hollow Out turns a solid part into a shell with walls at least as thick as you set, leaving a closed, hidden cavity inside. It takes only a few seconds, even on detailed parts.
 
-<!--  Cross-section view showing a solid object hollowed out with visible wall thickness -->
-![20260506 155412 paste 20260506 155412](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155412-paste-20260506-155412.jpg)
+<!-- IMAGE_NEEDED: Cross-section view showing a solid object hollowed out with visible wall thickness, with the Hollow Out's Properties panel (Wall Thickness) -->
 
 ## How to Use
 

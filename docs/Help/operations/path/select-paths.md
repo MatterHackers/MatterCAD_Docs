@@ -9,6 +9,18 @@ nav_order: 7
 
 Select Paths filters which sub-paths from a complex path object are kept. It is especially useful when working with decorative or multi-part fonts where you need the outer letterforms and inner cutout shapes as separate pieces — for example, to give them two different colors.
 
+## How to Use
+
+1. Select a 2D path (or a Text object with its Output set to 2D)
+2. Click **Select Paths** in the Path group of the toolbar
+3. Pick a **Filter Preset**
+
+## Parameters
+
+- **Filter Preset** - Which paths to keep: **All** (default), **Outer Paths Only**, **Holes Only**, **By Group Index** or **Custom** (see below)
+- **Group Index Filter** - The shape group to keep, counting from 0 (default 0). Shown only for By Group Index
+- **Include Function** - The expression that decides each path (default `=PathDepth==0`). Shown only for Custom
+
 <!--  Screenshot showing Select Paths applied to decorative text with outer paths highlighted -->
 ![20260506 154655 paste 20260506 154655](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154655-paste-20260506-154655.jpg)
 

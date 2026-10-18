@@ -7,27 +7,28 @@ nav_order: 3
 ---
 # Lithophane
 
-A lithophane is a thin 3D panel where an image is encoded as varying thickness. When backlit, the thinner areas let more light through, revealing the image. This creates a beautiful way to display photographs and artwork.
+A lithophane is a thin panel where a picture is turned into varying thickness. With a light behind it, the thinner areas let more light through and the picture appears. It is a beautiful way to display photographs and artwork.
 
-![20260324 080310 paste 20260324 080310](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080310-paste-20260324-080310.jpg)
+<!-- IMAGE_NEEDED: A Lithophane made from a photo, with the Lithophane's Properties panel (Pixels Per mm, Height, Width, Invert and the Update button) -->
 
 
 ## How to Use
 
-1. Import an image or select an existing image object
-2. Apply the **Lithophane** operation
-3. Adjust the resolution and dimensions
+1. Add a picture to the bed (drop an image file on the 3D view) and select it
+2. Click **Lithophane** in the Image group of the toolbar
+3. Set the size and detail, then click **Update** to rebuild. Changing a setting does not rebuild a lithophane on its own, because a detailed one can take a while to build
 
 ## Parameters
 
-- **Pixels Per mm** - Resolution of the lithophane (default: 1.5, range: 0.5-3). Higher values capture more detail but create larger files
-- **Height** - Maximum thickness of the lithophane panel (default: 2.5mm, range: 0.5-3mm)
-- **Width** - Total width of the lithophane in pixels (default: 150)
-- **Invert** - Reverse the light/dark mapping (default: on). Usually kept on for correct display when backlit
+- **Pixels Per mm** - How many of the picture's pixels make each millimetre (default 1.5; 0.1 to 10). More gives finer detail, a heavier model and a longer build. It does not change the size: the panel stays **Width** wide
+- **Height** - The thickness at the thickest point, in mm (default 2.5; the slider runs 0.5 to 3). The thinnest areas are 0.4 mm thick
+- **Width** - The width of the panel, in mm (default 150). The height follows the picture's proportions
+- **Invert** - On by default: dark parts of the picture are thick, so they block the light and look dark when lit from behind. Turn it off to make light parts thick instead
 
 ## Tips
 
-- A height of 2-3mm works well for most lithophanes
+- Try a low Pixels Per mm while you choose the size, then raise it for the final model
+- A height of 2 to 3 mm works well for most lithophanes
 - Portrait photos with good contrast work particularly well
 
 ## Related

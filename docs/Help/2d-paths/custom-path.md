@@ -8,15 +8,33 @@ nav_order: 3
 
 Draw your own 2D path with control points. This gives you complete freedom to create any 2D shape that can then be extruded or revolved into a 3D object.
 
-<!-- Screenshot showing a custom path being edited with control points -->
-![20260506 080247 paste 20260506 080247](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080247-paste-20260506-080247.jpg)
+<!-- IMAGE_NEEDED: Screenshot showing a custom path being edited in the Properties panel's path editor, with its toolbar (Reset Zoom, Sharp, Matched, Aligned, Free, Mirror, the X and Y boxes and the pop-out button) -->
 
 
 ## How to Use
 
-1. Add a **Custom Path** from the 2D Paths library
-2. Edit the control points to define your shape
+1. Add **Custom Path** from the 2D Primitives folder (in the Library, or under **Add to Bed**)
+2. Edit its points in the path editor in the Properties panel (see below)
 3. Apply [Linear Extrude](../operations/path/linear-extrude.md) or other path operations to create a 3D object
+
+## Editing the Path
+
+The path editor in the Properties panel shows the path with its points and their curve handles:
+
+- **Drag** a point or a handle to move it
+- **Double-click** a segment to add a point there
+- **Delete** removes the selected points
+- **Ctrl + scroll** (⌘ + scroll on Mac) zooms; **Ctrl + drag** (⌘ + drag) pans. **Reset Zoom** (the home button) fits the path again
+- Type an exact position, or a formula such as `=height`, in the **X** and **Y** boxes to place the selected point
+
+The four point buttons set how the selected point's handles behave:
+
+- **Sharp** - a sharp corner with no handles
+- **Matched** - handles in a straight line and of equal length, for a smooth curve
+- **Aligned** - handles in a straight line, each its own length
+- **Free** - handles move independently
+
+**Mirror** turns on symmetry: edits are mirrored across the vertical line x = 0, so you only draw half of a symmetric shape. The pop-out button on the editor's toolbar moves the editor into its own window, for more room.
 
 ## Open and Closed Paths
 

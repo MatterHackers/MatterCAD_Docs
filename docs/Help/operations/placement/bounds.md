@@ -12,7 +12,7 @@ Bounds replaces the selected parts with a solid box that exactly fills the space
 ## How to Use
 
 1. Select one or more parts
-2. Choose **Bounds** from the Placement menu
+2. Click **Bounds** in the Placement group of the toolbar
 3. Read the box's corners and size in the properties panel
 
 ## Values

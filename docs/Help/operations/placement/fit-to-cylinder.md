@@ -9,11 +9,12 @@ nav_order: 4
 
 Fit to Cylinder scales an object to fit within a specified cylindrical boundary defined by a diameter and height.
 
+There is no toolbar button or menu entry for Fit to Cylinder. You meet it in designs that already contain one, where you can select it and change its settings like any other operation. To fit a part into a size, use [Fit to Bounds](fit-to-bounds.md).
+
 ## How to Use
 
-1. Select an object
-2. Apply the **Fit to Cylinder** operation from the Placement menu
-3. Set the target Diameter and Height
+1. Select the Fit to Cylinder in the Design tree
+2. Set the target Diameter and Height in the Properties panel
 
 ## Parameters
 

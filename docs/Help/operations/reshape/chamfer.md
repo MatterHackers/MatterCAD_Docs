@@ -7,7 +7,7 @@ nav_order: 9
 ---
 # Chamfer
 
-Chamfer cuts the edges you pick flat, leaving a 45 degree face where the edge was. On a 2D path it cuts the corners off instead.
+Chamfer cuts the edges you pick flat, leaving a flat face where the edge was (at 45 degrees on a square edge). On a 2D path it cuts the corners off instead.
 
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_chamfer -->
 ![reshape_chamfer](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_chamfer.png)
@@ -20,14 +20,16 @@ Chamfer and [Fillet](fillet.md) are one tool with two profiles -- Chamfer leaves
 
 1. Select a part, or a 2D path
 2. Click **Chamfer** in the Round & Offset group of the toolbar
-3. Click an edge (or, on a path, a corner) in the 3D view to add it
+3. On a solid, click an edge in the 3D view to add it. On a path, every corner sharper than the **Bend Threshold** is cut straight away
 4. Set **Distance** in the Properties panel
 
-Nothing is cut until you pick something. A fresh Chamfer on a solid is the part unchanged, waiting for a click.
+On a solid nothing is cut until you pick an edge: a fresh Chamfer shows the part unchanged, waiting for a click.
 
 **One Chamfer, one distance.** Every edge a Chamfer selects is cut back by the same amount. If part of your shape needs a different distance, apply a second Chamfer on top of the first and pick those edges there.
 
 ## Picking Edges
+
+**Selection Mode** decides what a click picks: **Chain** (default) takes the edge and the edges that continue smoothly from it, **Edge** takes one straight crease (click a face away from its edges to take its whole rim), and **Point** takes a tip or corner of the part.
 
 Hover the part and the edge under the cursor lights up white; click to add it, click it again to remove it. **One click can mean several things** -- the edge alone, the loop it belongs to, or that loop read more coarsely so it does not stop at the facets of a curved wall. A small badge beside the hovered edge names the reading on offer -- "1 edge", "40 edges, chain" -- with an arrow each side for the reading next door. The arrows only show you a reading; a normal click commits it.
 
@@ -35,15 +37,18 @@ Every committed selection becomes a row in the **Edges** list with its own accen
 
 <!-- IMAGE_NEEDED: Screenshot of the Properties panel for a Chamfer with three groups in the Edges list, showing the colour swatches, highlight buttons and remove buttons -->
 
-On a 2D path the panel shows **Corners** and **Corner Threshold** instead. Small balls appear at each corner; click one to cut it, click it again to leave it sharp. With no corners selected every corner is cut, which is what a new Chamfer on a path starts out doing.
+On a 2D path the panel shows **Choose Corners** instead, with three tabs: **Angle** (default) cuts every corner that bends more than the **Bend Threshold**; **Select** cuts only the corners you click (small balls appear at each corner; click one to cut it, click it again to leave it sharp; with none picked nothing is cut); **Formula** cuts each corner its **Formula** expression says yes to. The corner variables are listed under [Choosing Corners on a 2D Path](fillet.md#choosing-corners-on-a-2d-path) on the Fillet page.
 
 ## Parameters
 
 - **Fillet / Chamfer** - The profile: round or flat. Switching keeps the picked edges and the size
-- **Distance** - How far back from the edge the cut starts, measured along *each* of the two faces the edge joins. Every edge this Chamfer selects is cut back by it; for a second distance, apply a second Chamfer. In a formula it is called `Size` (for example `=Chamfer.Size`), whether the operation is a Chamfer or a Fillet, so a formula keeps working when you switch
+- **Choose Corners** - 2D paths only: **Select**, **Angle** (default) or **Formula**
+- **Distance** - How far back from the edge the cut starts, measured along *each* of the two faces the edge joins (default 2 mm; the slider runs 0.1 to 20). Every edge this Chamfer selects is cut back by it; for a second distance, apply a second Chamfer. In a formula it is called `Size` (for example `=Chamfer.Size`), whether the operation is a Chamfer or a Fillet, so a formula keeps working when you switch
+- **Selection Mode** - Solids only: **Chain** (default), **Edge** or **Point**
+- **Bend Threshold** - How far the surface has to bend at an edge, or a path at a corner, before it counts as one (default 20 degrees; 1 to 90). Anything flatter is read as smooth: it is not offered for picking and is not cut
 - **Edges** - The list of selections on a solid
-- **Corners** - The same list for a 2D path. Empty means every corner
-- **Corner Threshold** - 2D only. How far a corner has to bend from straight before it counts as a corner at all
+- **Formula** - 2D paths in Formula mode only: the expression that decides each corner
+- **Corners** - 2D paths in Select mode only: the corners you clicked. Empty means none
 
 On a 2D path the distance is the setback along each edge from the corner, not a radius. That is deliberate: one radius applied to corners of different angles would set each of them back by a different amount, which is not what the number you typed into Distance means.
 

@@ -14,21 +14,20 @@ A round ball shape with adjustable diameter and detail level.
 
 ## Parameters
 
-- **Diameter** - The width across the sphere (default: 20mm)
-- **Sides** - Number of segments around the perimeter (default: 40). More sides = smoother surface
+- **Diameter** - The width across the sphere, in mm (default 20)
+- **Sides** - Number of segments around the sphere (default 40; 3 to 360). More is smoother. Without Advanced, the same number is used from top to bottom
+- **Advanced** - Off by default. Turn it on for the options below
 
 ### Advanced Parameters
 
-Enable **Advanced** mode for additional controls:
-
-- **Starting Angle** - Angle where the sphere surface begins (default: 0)
-- **Ending Angle** - Angle where the sphere surface ends (default: 360). Set less than 360 for partial sphere shapes
-- **Latitude Sides** - Number of segments from top to bottom (default: 30). More = smoother poles
+- **Starting Angle** - Where the sphere begins around its vertical axis, in degrees (default 0)
+- **Ending Angle** - Where the sphere ends, in degrees (default 360). Less than 360 cuts out a wedge, like an orange with segments removed
+- **Latitude Sides** - Number of segments from top to bottom (default 30; 3 to 180). More is smoother
 
 ## Tips
 
 - 40 sides is smooth enough for most parts. Higher values create smoother surfaces but larger files
-- Use Starting and Ending Angles to create partial sphere shapes like bowls or domes
+- Starting and Ending Angle cut the sphere from top to bottom, like orange segments. For a dome, use a [Half Sphere](half-sphere.md)
 - Combine with [Subtract](../operations/boolean/subtract.md) to create spherical cavities
 
 ## Related

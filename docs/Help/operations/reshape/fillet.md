@@ -18,22 +18,28 @@ Fillet and [Chamfer](chamfer.md) are one tool with two profiles -- Fillet leaves
 
 1. Select a part, or a 2D path
 2. Click **Fillet** in the Round & Offset group of the toolbar
-3. Click an edge (or, on a path, a corner) in the 3D view to add it
+3. On a solid, click an edge in the 3D view to add it. On a path, every corner sharper than the **Bend Threshold** is rounded straight away (see [Choosing Corners on a 2D Path](#choosing-corners-on-a-2d-path))
 4. Set **Radius** in the Properties panel
 
-Nothing is rounded until you pick something. A fresh Fillet on a solid is the part unchanged, waiting for a click.
+On a solid nothing is rounded until you pick an edge: a fresh Fillet shows the part unchanged, waiting for a click.
 
-**One Fillet, one radius.** Every edge a Fillet selects is rounded at the same radius, the way every mainstream CAD package models the feature. If part of your shape needs a different radius, apply a second Fillet on top of the first and pick those edges there.
+**One Fillet, one radius.** Every edge a Fillet selects is rounded at the same radius. If part of your shape needs a different radius, apply a second Fillet on top of the first and pick those edges there.
 
 ## Picking Edges on a Solid
+
+**Selection Mode** decides what a click picks:
+
+- **Chain** (default) - the edge and the edges that continue smoothly from it, so one click can take a whole rim around a curve
+- **Edge** - one straight crease. Click a face away from its edges to pick that face's whole rim
+- **Point** - a tip or corner of the part, such as the point of a cone, rounded on its own
 
 Move the mouse over the part with the Fillet selected and the edge under the cursor lights up in white. Click it to add it. Click an edge that is already selected and it is removed again.
 
 **One click can mean several things.** The same click can honestly mean several different things, and MatterCAD offers all of them rather than guessing:
 
 - **the edge on its own** -- just what you clicked
-- **the loop it belongs to** -- the run of edges that continues smoothly from it, the way most CAD packages extend a picked edge
-- **that loop read more coarsely** -- the same walk with the surface treated as smoother, so it does not stop at the facets of a curved wall. There are two steadily coarser readings of it, though on a shape where they come to the same edges you will only be offered one
+- **the loop it belongs to** -- the run of edges that continues smoothly from it
+- **that loop read more coarsely** -- the same walk with the surface treated as smoother, so it does not stop at the facets of a curved wall
 
 A small badge sits beside the edge you are hovering and names the reading being offered -- "1 edge", "40 edges, chain" -- with an arrow each side for stepping to the reading next door. The arrows only show the reading; they commit nothing, so when the one you want is lit, click normally to keep it. This matters most on rounded shapes: the rim of a tessellated cylinder is a single flat facet at the tightest reading and the whole circle at the loosest. Where a pick has only one reading there is nothing to step to and the badge shows no arrows.
 
@@ -52,13 +58,13 @@ Choosing a different reading of an edge a group already holds does not add a sec
 
 You can also drag the size handle that sits on each selected run in the 3D view to set the radius by eye. There is one number, so every handle moves together and any of them will do. Press **Esc** during the drag to cancel it.
 
-## Picking Corners on a 2D Path
+## Choosing Corners on a 2D Path
 
-When the thing you filleted is a 2D path, the panel shows **Corners** and **Corner Threshold** instead of **Edges**, and a small ball appears at every corner of the path. Click a ball to round that corner; click it again to leave it sharp.
+When the thing you filleted is a 2D path, the panel shows **Choose Corners** instead of **Selection Mode** and **Edges**. Its three tabs decide which corners are rounded:
 
-There is no reading badge here -- a corner is a corner, where an edge could also have meant its loop.
-
-**With no corners selected, every corner is rounded.** That is the default a new Fillet on a path starts in, and it is what designs saved before corner picking existed still ask for. Pick a corner and you have narrowed it to just the corners you pick.
+- **Angle** (default) - every corner that bends more than the **Bend Threshold** is rounded. A new Fillet on a path rounds all its sharp corners this way
+- **Select** - only the corners you click. A small ball appears at every corner of the path; click one to round it, click it again to leave it sharp. The picked corners are listed under **Corners**. With none picked, nothing is rounded
+- **Formula** - an expression in the **Formula** box decides each corner: the corner is rounded when the result is not zero. It must start with `=`. It can use `CornerIndex` (which corner along its contour, from 0), `CornerCount` (how many corners that contour has), `CornerX` and `CornerY` (where the corner is), `CornerAngle` (how far it bends, in degrees; 0 is straight) and `CornerContour` (which contour it is on, from 0). The default, `=mod(CornerIndex, 2) == 0`, rounds every other corner
 
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_fillet_2d -->
 ![reshape_fillet_2d](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_fillet_2d.png)
@@ -77,11 +83,14 @@ The two icon tabs at the top of the Properties panel, **Fillet** and **Chamfer**
 ## Parameters
 
 - **Fillet / Chamfer** - The profile: round or flat. Switching keeps the picked edges and the size (see above)
-- **Radius** - The radius every edge and corner this Fillet selects is rounded at. It is the radius of the largest ball that would roll along the edge. One Fillet has one radius; for a second radius, apply a second Fillet. In a formula it is called `Size` (for example `=Fillet.Size`), whether the operation is a Fillet or a Chamfer, so a formula keeps working when you switch
-- **Segments** - How many straight steps each arc is drawn with. More segments make a smoother curve and a heavier mesh. 8 is plenty for most parts
+- **Choose Corners** - 2D paths only: **Select**, **Angle** (default) or **Formula** (see above)
+- **Radius** - The radius every edge and corner this Fillet selects is rounded at (default 2 mm; the slider runs 0.1 to 20): the radius of the largest ball that would roll along the edge. One Fillet has one radius; for a second radius, apply a second Fillet. In a formula it is called `Size` (for example `=Fillet.Size`), whether the operation is a Fillet or a Chamfer, so a formula keeps working when you switch
+- **Segments** - How many straight steps each arc is drawn with (default 8; 1 to 30). More segments make a smoother curve and a heavier mesh
+- **Selection Mode** - Solids only: **Chain** (default), **Edge** or **Point** (see above)
+- **Bend Threshold** - How far the surface has to bend at an edge, or a path at a corner, before it counts as one (default 20 degrees; 1 to 90). Anything flatter is read as smooth: it is not offered for picking and is not rounded. This keeps the facets of a curved wall, or a curve made of many short segments, from being rounded one by one
 - **Edges** - The list of selections on a solid (see above)
-- **Corners** - The same list for a 2D path. Empty means every corner
-- **Corner Threshold** - 2D only. How far a corner has to bend from straight before it counts as a corner at all. Vertices straighter than this are left alone, which keeps a curve made of many short segments from being "rounded" segment by segment
+- **Formula** - 2D paths in Formula mode only: the expression that decides each corner
+- **Corners** - 2D paths in Select mode only: the corners you clicked. Empty means none
 
 ## When It Refuses
 
@@ -105,7 +114,7 @@ Others describe a shape the round cannot be swept along at all:
 
 The panel also shows **advisories** above the list, in a different colour and with a different glyph. Nothing failed; they tell you about a repair that was made to your source so the fillet could run:
 
-> This source mesh is inside out - every one of its faces points into the solid rather than out of it. It has been turned right way out to bevel it; the source itself is unchanged.
+> This part was inside out - every one of its faces pointed into the solid rather than out of it - and has been turned right way out so it could be bevelled. The bevelled part comes back facing the right way; check that it is the shape you expect.
 
 Only the working copy is changed, never your model. If you would rather fix it once and for all, use [Repair](../mesh/repair.md) on the source.
 
@@ -117,7 +126,7 @@ One repair is made silently. A mesh made of loose, unwelded triangles -- which m
 - Selections survive a rebuild. They are stored as geometry, not as edge numbers, so changing the size of the box under a Fillet keeps the same edges rounded
 - If a whole rim should be rounded, hover one edge of it, step the badge on once so the whole rim lights up, and click -- that is nearly always faster and more robust than picking edges one at a time. If you have already committed the single edge, the row's reading dropdown gets you there without re-picking
 - Keep segments low while you work and raise them at the end. Every segment is mesh
-- Two radii on one part are two Fillets. Round the edges that share a radius, then apply another Fillet for the rest -- the same way you would in any other CAD package
+- Two radii on one part are two Fillets. Round the edges that share a radius, then apply another Fillet for the rest
 - Concave edges get a bead of material added into the corner rather than material cut away, which is what a fillet means on the inside of a shape
 - If every edge of the part should be rounded at one radius, [Round All Edges](round-all-edges.md) needs no picking at all
 - In a [node graph](../../workspace/node-graphs.md), a Fillet node rounds every sharp edge until you wire a selection into its Selection socket - see *Choose Edges with Selection Nodes* there

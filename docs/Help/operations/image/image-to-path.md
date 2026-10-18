@@ -15,7 +15,7 @@ Image to Path traces the outlines of an image to create 2D paths. These paths ca
 ## How to Use
 
 1. Select an image object in your workspace
-2. Apply **Image to Path** from the Image operations menu
+2. Click **Image to Path** in the Image group of the toolbar
 3. Choose the analysis type and adjust the selection range
 
 ## Parameters
@@ -25,7 +25,7 @@ Image to Path traces the outlines of an image to create 2D paths. These paths ca
   - **Colors** - Trace based on color regions
   - **Intensity** - Trace based on brightness levels (best for most images)
 - **Select Range** - A histogram control to select which brightness/color values to include in the trace
-- **Min Surface Area** - Minimum area for a path loop to be included. Increase to filter out small noise artifacts
+- **Min Surface Area** - The smallest area a traced loop needs to be kept, in square mm (default 1; the slider runs 0 to 150). Increase it to filter out small specks
 
 ## Tips
 

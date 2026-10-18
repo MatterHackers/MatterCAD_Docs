@@ -15,8 +15,8 @@ Scale resizes an object with precise control over dimensions, proportions, and u
 ## How to Use
 
 1. Select an object
-2. Apply the **Scale** operation from the Transform menu
-3. Choose your scaling method and enter the desired values
+2. Click **Scale** in the Transform group of the toolbar
+3. Choose a **Scale Type**, then enter the sizes or percentages you want
 
 You can also scale objects in the viewport by clicking and dragging the scale corner controls on a selected object.
 
@@ -24,24 +24,26 @@ You can also scale objects in the viewport by clicking and dragging the scale co
 
 ### Scale Type
 
-Choose a preset or custom scaling:
+Choose your own size, or one of four unit conversions:
 
-- **Custom** - Enter your own dimensions or percentages
-- **Inches to mm** - Multiply by 25.4 (convert imperial to metric)
-- **mm to Inches** - Multiply by 0.0393 (convert metric to imperial)
-- **mm to cm** - Multiply by 0.1
-- **cm to mm** - Multiply by 10
+- **Custom** (default) - Enter your own sizes or percentages. Choosing Custom again puts the part back to its original size, ready for new values
+- **Inches to mm** - Makes the part 25.4 times bigger: for a model drawn in inches that came in too small
+- **mm to Inches** - Divides the size by 25.4
+- **mm to cm** - Makes the part a tenth the size
+- **cm to mm** - Makes the part 10 times bigger
 
-### Scale Method (Custom mode)
+With a conversion chosen, the panel shows the resulting **Width Percent**, **Depth Percent** and **Height Percent** as read-only values, and the rows below are hidden.
 
-- **Direct** - Enter the desired Width, Depth, and Height in millimeters
-- **Percentage** - Enter Width, Depth, and Height as percentages of the original size
+### Scale Method (Custom only)
 
-### Lock Proportion
+- **Direct** (default) - Enter the Width, Depth and Height you want, in mm
+- **Percentage** - Enter **Width Percent**, **Depth Percent** and **Height Percent** of the original size
 
-- **None (Scale Freely)** - Each axis scales independently
-- **X & Y** - Width and Depth are locked together; Height scales independently
-- **X, Y & Z** - All three axes scale together uniformly
+### Lock Proportion (Custom only)
+
+- **None** - Scale freely: each axis changes on its own
+- **X Y** - Width and Depth stay locked together; Height changes on its own
+- **X Y Z** (default) - Width, Depth and Height all change together, keeping the part's proportions
 
 ### Dimensions
 
@@ -52,7 +54,7 @@ Choose a preset or custom scaling:
 ## Tips
 
 - Use "Inches to mm" if you imported an STL file that was designed in inches and appears too small
-- Lock Proportion to X, Y & Z for uniform scaling -- changing any one dimension updates them all
+- With Lock Proportion on **X Y Z**, changing any one dimension updates them all
 - The object's base position is maintained during scaling so it stays on the workspace surface
 - You can type exact values for precise sizing, or use the sliders for quick adjustments
 

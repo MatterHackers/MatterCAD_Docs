@@ -15,4 +15,4 @@ Transform operations change the position, orientation, and size of objects witho
 - [Translate](translate.md) - Move an object by a specific offset in X, Y, or Z
 - [Rotate](rotate.md) - Rotate an object around an axis by a specified angle
 - [Scale](scale.md) - Resize an object with options for uniform or per-axis scaling
-- [Mirror](mirror.md) - Create a mirrored copy of an object across an axis
+- [Mirror](mirror.md) - Flip an object across an axis

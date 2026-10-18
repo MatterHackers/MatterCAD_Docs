@@ -5,7 +5,7 @@ nav_order: 1
 ---
 # 2D Paths
 
-2D paths are flat shapes that you can use as the starting point for 3D objects. Use [Linear Extrude](../operations/path/linear-extrude.md) to give a path height, or [Revolve](../operations/path/revolve.md) to spin a path around an axis to create a 3D form.
+2D paths are flat shapes that you can use as the starting point for 3D objects. Add them from the **2D Primitives** folder (in the Library, or under **Add to Bed**). Use [Linear Extrude](../operations/path/linear-extrude.md) to give a path height, or [Revolve](../operations/path/revolve.md) to spin a path around an axis to create a 3D form.
 
 <!--  Screenshot showing a 2D path being extruded into a 3D shape -->
 ![20260506 093625 paste 20260506 093625](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-093625-paste-20260506-093625.jpg)
@@ -13,20 +13,23 @@ nav_order: 1
 
 ## Available Paths
 
-- [Circle Path](circle-path.md) - A circular 2D outline
-- [Box Path](box-path.md) - A rectangular 2D outline
-- [Ring Path](ring-path.md) - A 2D ring (circle with a hole)
-- [Star Path](star-path.md) - A star-shaped 2D outline with configurable points
+In the order the 2D Primitives folder lists them:
+
+- [Box](box-path.md) - A rectangle, with optional rounded corners
 - [Custom Path](custom-path.md) - Draw your own 2D path with control points
+- **Text 2D** - Flat letter outlines: the [Text](../primitives/text.md) object with its Output set to 2D
+- [Circle](circle-path.md) - A circle (or a regular polygon, with few sides)
+- [Ring](ring-path.md) - A circle with a hole
+- [Star](star-path.md) - A star with any number of points
 
 ## The Plane a Path Is Drawn On
 
-Every one of these paths has a **Plane** in its Properties panel — a [construction plane](../workspace/construction-planes.md) that decides where the flat shape lives. By default it is XY, flat on the bed, which is how paths have always behaved and what older files get when they are opened.
+Every one of these paths has a **Plane** in its Properties panel — a [construction plane](../workspace/construction-planes.md) that decides where the flat shape lives. By default it is XY, flat on the bed.
 
 Change it and the shape stands somewhere else without any of its own dimensions changing:
 
-- Pick **XZ** or **YZ** from the preset dropdown to stand the path upright
-- Type an **Origin** to move the whole path, or a **Normal** to tilt it, either one driven by an [expression](../workspace/expressions.md) if you want it to follow the rest of the design
+- Click the **XZ** or **YZ** tab to stand the path upright, and **Flip** to face it the other way
+- Type an **Origin** to move the whole path, a **Normal** to tilt it, or an **X Direction** to turn it within the plane, each one driven by an [expression](../workspace/expressions.md) if you want it to follow the rest of the design
 - Click **Pick Face** and then a flat face of a model, to draw on that face's plane
 
 Operations that consume paths flatten their inputs onto one plane before they work, so putting several paths on different planes is worth doing deliberately — see [Construction Planes](../workspace/construction-planes.md) for how each operation chooses.

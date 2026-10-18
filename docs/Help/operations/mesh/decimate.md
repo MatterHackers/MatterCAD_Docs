@@ -5,7 +5,7 @@ parent: "Mesh Operations"
 grand_parent: "Operations"
 nav_order: 1
 ---
-# Reduce (Decimate)
+# Reduce
 
 Reduce lowers the polygon count of a mesh while preserving the overall shape. This is useful for simplifying highly detailed models, reducing file size, and speeding up operations on complex geometry.
 
@@ -15,19 +15,19 @@ Reduce lowers the polygon count of a mesh while preserving the overall shape. Th
 ## How to Use
 
 1. Select an object
-2. Apply the **Reduce** operation from the Mesh menu
-3. Choose your target (count or percentage) and adjust
+2. Click **Reduce** in the Mesh group of the toolbar
+3. Choose **Percent** or **Count** and set the target
 
 ## Parameters
 
-- **Mode** - Choose how to specify the target:
-  - **Percent** - Keep a percentage of the original polygons (default: 50%)
-  - **Count** - Target a specific polygon count
-- **Source Polygon Count** - Original number of polygons (read only)
-- **Target Percent** - Percentage of polygons to keep (visible in Percent mode)
-- **Target Count** - Exact number of polygons to keep (visible in Count mode)
-- **Count After Percent Reduction** - Final polygon count after percentage reduction (read only)
-- **Maintain Surface** - Project vertices back to the original surface for higher accuracy (slower but more faithful to the original shape)
+- **Mode** - How you set the target:
+  - **Percent** (default) - Keep a percentage of the original polygons
+  - **Count** - Aim for a number of polygons
+- **Source Polygon Count** - The original number of polygons (read only)
+- **Target Count** - The number of polygons to keep (shown in Count mode)
+- **Target Percent** - The percentage of polygons to keep (default 50; 1 to 100; shown in Percent mode)
+- **Maintain Surface** - Off by default. Keeps every reduced point on the surface of the original mesh. This is not normally needed and makes the reduction much slower
+- **Final Count** - The number of polygons the percentage gives (read only; shown in Percent mode)
 
 ## Tips
 

@@ -72,7 +72,7 @@ Because a pick writes plain numbers, the plane does not follow the face afterwar
 
 ## Planes on 2D Shapes
 
-Every 2D shape carries a **Plane**: [Circle](../2d-paths/circle-path.md), [Box](../2d-paths/box-path.md), [Ring](../2d-paths/ring-path.md), [Star](../2d-paths/star-path.md) and [Custom](../2d-paths/custom-path.md) paths, and the shape-producing objects such as [Text](../primitives/text.md), [Gears](../mechanical/gears.md) and Image to Path.
+Every 2D shape carries a **Plane**: [Circle](../2d-paths/circle-path.md), [Box](../2d-paths/box-path.md), [Ring](../2d-paths/ring-path.md), [Star](../2d-paths/star-path.md) and [Custom](../2d-paths/custom-path.md) paths, and the shape-producing objects such as [Text](../primitives/text.md), [Involute Gear](../mechanical/gears.md) and Image to Path.
 
 The shape is still drawn the same way, with the same width and height and radius; the Plane only decides where that flat drawing lives. Set a Box Path's Plane to XZ and it stands up; give it an Origin of `0, 0, 20` and it stands up twenty millimetres above the bed.
 

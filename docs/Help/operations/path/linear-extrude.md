@@ -16,19 +16,24 @@ Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. Thi
 ## How to Use
 
 1. Select a 2D path or path-based object
-2. Apply **Linear Extrude** from the Path operations menu
+2. Click **Linear Extrude** in the Path group of the toolbar
 3. Set the desired height
 
 ## Parameters
 
-- **Height** - How tall the extrusion is (default: 5mm, range: 0.1-50mm)
-- **Bevel Top** - Add a beveled (rounded) edge to the top of the extrusion (default: off)
+- **Height** - How tall the extrusion is, in mm (default 5; the slider runs 0.1 to 50)
+- **Bevel Top** - Off by default. Rounds the top edge of the extrusion
+- **Bevel Bottom** - Off by default. Rounds the bottom edge, where the part meets the bed. It has its own size, so a part can have a large round at the bottom and a small one on top
 
-### Bevel Parameters (visible when Bevel Top is enabled)
+### Bevel Parameters
 
-- **Style** - The bevel profile style (Sharp or rounded)
-- **Radius** - How wide the bevel extends (default: 3mm)
-- **Segments** - Smoothness of the bevel curve (default: 9)
+Shown when **Bevel Top** is on:
+
+- **Style** - How the corners of the shape are drawn as the edge rounds in: **Flat**, **Round** or **Sharp** (default)
+- **Radius** - How far the round reaches, in mm (default 3; the slider runs 0 to 20)
+- **Segments** - How many steps make the round (default 9; 1 to 20). More is smoother
+
+Shown when **Bevel Bottom** is on: **Bottom Style**, **Bottom Radius** and **Bottom Segments**, the same settings for the bottom edge (defaults Sharp, 3 and 9).
 
 
 ## Projection Plane
