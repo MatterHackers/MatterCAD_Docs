@@ -14,10 +14,10 @@ A star-shaped 2D path, added as **Star** from the 2D Primitives. You choose how 
 
 ## Parameters
 
+- **Plane** - The [construction plane](../workspace/construction-planes.md) the star is drawn on (default XY, flat on the bed)
 - **Points** - How many points the star has (default 5; 3 to 20)
 - **Point Radius** - The distance from the center to the tip of each point, in mm (default 40)
 - **Valley Radius** - The distance from the center to the valleys between the points, in mm (default 15)
-- **Plane** - The [construction plane](../workspace/construction-planes.md) the star is drawn on (default XY, flat on the bed)
 
 ## Tips
 

@@ -14,12 +14,13 @@ Text makes raised 3D letters from words you type, in one of MatterCAD's fonts. U
 
 ## How to Use
 
-1. Add **Text** from the 3D Primitives (or the Primitive Shapes bar)
+1. Add **Text** from the 3D Primitives folder, or double-click it in the favorites bar
 2. Type your words in the **Text** box in the Properties panel
 3. Pick a **Font** and set the **Point Size** and **Height**
 
 ## Parameters
 
+- **Plane** - The [construction plane](../workspace/construction-planes.md) the text is drawn on (default XY, flat on the bed)
 - **Multi Line** - Off by default. Turn it on to type several lines: the one-line **Text** box is replaced by a larger **Text** box, and **Alignment** appears
 - **Alignment** - Left (default), Center or Right: how the lines line up with each other. Shown only with Multi Line on
 - **Text** - The words to write (default "Text")

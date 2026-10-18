@@ -25,7 +25,7 @@ Image to Path traces the outlines of an image to create 2D paths. These paths ca
   - **Colors** - Trace based on color regions
   - **Intensity** - Trace based on brightness levels (best for most images)
 - **Select Range** - A histogram control to select which brightness/color values to include in the trace
-- **Min Surface Area** - The smallest area a traced loop needs to be kept, in square mm (default 1; the slider runs 0 to 150). Increase it to filter out small specks
+- **Min Surface Area** - Drops small traced loops, measured in the picture's pixels (default 1; the slider runs 0 to 150). A loop is kept only if its area is at least this number squared, in square pixels: 1 keeps loops of 1 square pixel or more, 10 needs 100 square pixels. Increase it to filter out small specks. When the trace finds only one loop, it is always kept
 
 ## Tips
 

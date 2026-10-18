@@ -29,7 +29,7 @@ Every one of these paths has a **Plane** in its Properties panel — a [construc
 Change it and the shape stands somewhere else without any of its own dimensions changing:
 
 - Click the **XZ** or **YZ** tab to stand the path upright, and **Flip** to face it the other way
-- Type an **Origin** to move the whole path, a **Normal** to tilt it, or an **X Direction** to turn it within the plane, each one driven by an [expression](../workspace/expressions.md) if you want it to follow the rest of the design
+- Click **Custom** to show the plane's values (under **Plane Values**), then type an **Origin** to move the whole path, a **Normal** to tilt it, or an **X Direction** to turn it within the plane, each one driven by an [expression](../workspace/expressions.md) if you want it to follow the rest of the design
 - Click **Pick Face** and then a flat face of a model, to draw on that face's plane
 
 Operations that consume paths flatten their inputs onto one plane before they work, so putting several paths on different planes is worth doing deliberately — see [Construction Planes](../workspace/construction-planes.md) for how each operation chooses.

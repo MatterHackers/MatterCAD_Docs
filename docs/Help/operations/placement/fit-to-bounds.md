@@ -38,7 +38,7 @@ The rows that show depend on Lock Proportion:
 
 - **Group** section (X Y or X Y Z) - One **Stretch** for the locked axes
 - **X Axis** and **Y Axis** sections (None) - A **Stretch** for each axis
-- **Z Axis** section (None or X Y) - A **Stretch** for the height
+- **Z Axis** section (None or X Y) - A **Stretch** for the height. For a 2D path the Z Axis Stretch and Align rows are hidden, since a path has no height
 
 Whenever an axis's Stretch is **Inside**, an **Align** row appears for it: **Min**, **Center** (default) or **Max**, where the part sits within the bounds on that axis, since it may not fill them.
 

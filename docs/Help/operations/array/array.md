@@ -79,18 +79,18 @@ Transform mode steps copies using a manual transform or by following another obj
 **Count** — Number of copies (integer or expression).
 
 **Transform Reference** — Where the per-step transform comes from:
-- **Input** (default) — You specify translation, rotation, and scale directly.
+- **Input** (default) — You specify the translation, rotation and scale directly.
 - **Object** — The transform is read from a named sibling object.
 
 **Transform Translation** — Per-step offset in mm (default 10, 0, 0; shown when Reference is Input).
 
 **Transform Rotation** — Per-step rotation in degrees per axis (default 0, 0, 0; shown when Reference is Input).
 
-**Scale** / **Scale Axes** — Uniform and per-axis scale applied at each step (default 1 and 1, 1, 1; shown when Reference is Input).
+**Scale Axes** — Per-axis scale applied at each step (default 1, 1, 1; shown when Reference is Input).
 
 **Transform Name** — Name of the sibling object whose transform is used as the per-step increment (shown when Reference is Object).
 
-**Relative Space** — On by default. When on, each copy's transform compounds in the local frame of the previous copy; when off, each step is applied in world space (shown when Reference is Object).
+**Relative Space** — On by default (shown when Reference is Object). When on, each step uses the named object's own move, turn and scale relative to the group it is in. When off, it uses where that object really sits in the design, so the moves of every group it is inside count too. Either way the steps add up from copy to copy the same way.
 
 ## Randomize
 

@@ -19,7 +19,7 @@ A rectangular box shape with adjustable width, depth, height, and optional round
 - **Height** - Size along the Z axis (default: 20mm)
 - **Round** - Off by default. Turn it on to round every edge
 - **Radius** - The size of the rounding, in mm (default 3; the slider runs 0 to 20). Shown only with Round on
-- **Round Segments** - How many steps make each rounded edge (default 9; 1 to 20). More is smoother. Shown only with Round on
+- **Round Segments** - How many steps make each rounded edge (default 9; the slider runs 1 to 20, and you can type up to 90). More is smoother. Shown only with Round on
 
 ## Tips
 

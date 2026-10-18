@@ -30,7 +30,7 @@ An index below 0 picks the first child, and an index past the end picks the last
 
 ## Use in Scripting
 
-Select Child is designed to work with expressions and the `rand()` function to create dynamic, data-driven designs. `rand(seed)` gives a number from 0 up to (but not including) 1, so multiply it by the number of children and round down to get an index: with 5 children, `=floor(rand(42) * 5)` picks one of them, the same one every time for seed 42. On its own, `rand(42)` as an index always picks the first child.
+Select Child is designed to work with expressions and the `rand()` function to create dynamic, data-driven designs. `rand(seed)` gives a number from 0 up to (but not including) 1, so multiply it by the number of children and round down to get an index: with 5 children, `=floor(rand(42) * 5)` picks one of them, the same one every time for seed 42. Always wrap it this way: Child Index rounds to the nearest whole number, so a bare `rand(seed)` only ever picks the first or second child.
 
 **Example: Random book props for a stage show**
 

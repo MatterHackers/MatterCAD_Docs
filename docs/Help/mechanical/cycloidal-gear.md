@@ -29,6 +29,8 @@ Sizes left at 0 take a fixed default: Height 5 mm, Pin Circle Diameter 60 mm, Pi
 
 ## Parameters
 
+In the Properties panel, everything from **Part** to **Ring Edge Width** is in the **Features** section, Clearance is in **Advanced**, and the read-only values are in **Gear Data**.
+
 ### Which part, and how
 
 - **Output** - **3D** builds the part as a solid; **2D** builds it as a flat path that [path operations](../operations/path/index.md) can consume. 3D is the default and is what almost every drive part is wanted as
@@ -37,13 +39,12 @@ Sizes left at 0 take a fixed default: Height 5 mm, Pin Circle Diameter 60 mm, Pi
 
 ### The drive (both parts)
 
-The first four have to match between the disc and the ring:
+These have to match between the disc and the ring:
 
-- **Pin Count** - The number of pins in the ring (default 10, range 3-40). The disc gets one lobe fewer than this, and that lobe count is the reduction ratio of the drive
+- **Pin Count** - The number of pins in the ring (default 10; the slider runs 3 to 40, and you can type up to 100). The disc gets one lobe fewer than this, and that lobe count is the reduction ratio of the drive
 - **Pin Circle Diameter** - The diameter of the circle the pin centres stand on. This is the working size of the drive
 - **Pin Diameter** - The diameter of a single pin. Pins that would touch each other are pulled back, since there has to be ring material between them
 - **Eccentricity** - How far the disc's centre is offset from the ring's centre, in mm. This is what the eccentric on the input shaft has to be made to. It cannot reach the pin circle radius divided by the pin count -- the lobes come to points there -- so larger values snap back
-- **Clearance** - The running clearance between the disc and the pins, in mm. It is taken off the disc profile and added to the ring's bore. The pins themselves are always drawn at their true size, since they are normally dowels or bearings that have to fit the holes that hold them
 
 ### Disc only
 
@@ -56,11 +57,15 @@ The first four have to match between the disc and the ring:
 
 - **Ring Edge Width** - The width of the material outside the pins. The slider covers the useful range; a typed or calculated value can go up to 1000
 
+### Advanced
+
+- **Clearance** - The running clearance between the disc and the pins, in mm (default 0.1). It is taken off the disc profile and added to the ring's bore. The pins themselves are always drawn at their true size, since they are normally dowels or bearings that have to fit the holes that hold them
+
 ### Gear Data (read only)
 
 - **Lobe Count** - The number of lobes on the disc, always one fewer than the Pin Count
 - **Reduction Ratio** - How many turns of the input shaft it takes to turn the output once, with the pin ring held still and the output taken off the disc's holes. It is the Lobe Count
-- **Output Hole Diameter** - The diameter the output pin holes are actually drawn at, which is the Output Pin Diameter plus twice the Eccentricity. This is the number you have to hold when you drill the plate the output pins stand in
+- **Output Hole Diameter** - Disc only. The diameter the output pin holes are actually drawn at, which is the Output Pin Diameter plus twice the Eccentricity. This is the number you have to hold when you drill the plate the output pins stand in
 - **Outer Diameter** - The diameter to the outside of the part that was built
 
 ## Tips

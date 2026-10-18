@@ -18,10 +18,10 @@ There is no toolbar button or menu entry for Fit to Cylinder. You meet it in des
 
 ## Parameters
 
-- **Diameter** - The diameter of the target cylinder
-- **Height** - The height of the target cylinder
-- **Stretch Z** - When enabled, scales the object to match the cylinder's height
-- **Alternate Centering** - When enabled, centers based on the visual weight of the part rather than its bounding circle
+- **Alternate Centering** - Off by default. Normally the part is expanded to fill the cylinder; turn this on to center the part's weight in the cylinder instead
+- **Diameter** - The diameter of the target cylinder, in mm
+- **Height** - The height of the target cylinder, in mm
+- **Stretch Z** - On by default. Scales the part to the cylinder's height too; turn it off to leave the height alone
 
 ## Related
 

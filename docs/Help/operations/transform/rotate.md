@@ -22,8 +22,8 @@ You can also rotate objects directly in the viewport by clicking the rotate corn
 
 ## Parameters
 
-- **Angle** - The rotation angle in degrees (range: 3-360). Supports [expressions](../../workspace/expressions.md).
 - **Rotate About** - The construction plane whose normal is the axis of rotation and whose origin is the centre of rotation.
+- **Angle** - The rotation angle in degrees (default 0; the slider runs 3 to 360, and you can type any angle, negative ones included). Supports [expressions](../../workspace/expressions.md).
 
 ### Rotate About
 

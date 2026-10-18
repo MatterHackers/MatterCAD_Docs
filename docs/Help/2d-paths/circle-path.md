@@ -14,9 +14,9 @@ A circular 2D path, added as **Circle** from the 2D Primitives. Use with [Linear
 
 ## Parameters
 
+- **Plane** - The [construction plane](../workspace/construction-planes.md) the circle is drawn on (default XY, flat on the bed)
 - **Diameter** - The width from one side to the opposite side, in mm (default 20)
 - **Sides** - How many straight segments make the circle (default 40; 3 to 360). More is smoother; 3 makes a triangle, 6 a hexagon
-- **Plane** - The [construction plane](../workspace/construction-planes.md) the circle is drawn on (default XY, flat on the bed)
 
 ## Tips
 

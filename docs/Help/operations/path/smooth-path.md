@@ -10,6 +10,7 @@ nav_order: 8
 Smooth Path evens out small bumps and jagged steps in a 2D path, such as the stair-steps of an outline traced from a picture. Each pass moves every point toward the average of itself and its neighbours, and no point ever moves further than **Smooth Distance** from where it started, so the overall shape stays the same. To round corners to a chosen size, use [Fillet](../reshape/fillet.md) instead.
 
 <!-- IMAGE_NEEDED: Before and after showing a jagged traced outline evened out by Smooth Path, with its Properties panel (Smooth Distance, Iterations) -->
+![20260506 102302 paste 20260506 102302](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-102302-paste-20260506-102302.jpg)
 
 
 ## How to Use

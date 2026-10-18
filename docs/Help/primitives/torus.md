@@ -24,7 +24,7 @@ A donut-shaped ring with independent control over the overall size and the thick
 - **Starting Angle** - Where the torus begins around its axis, in degrees (default 0)
 - **Ending Angle** - Where the torus ends, in degrees (default 360). Less than 360 makes an open ring or arc
 - **Ring Sides** - Number of segments around the cross-section (default 15; the slider runs 3 to 260). More is a smoother, rounder ring
-- **Ring Phase Angle** - Turns the cross-section about its own center, in degrees (default 0). It shows most with few Ring Sides: with 4, for example, it turns the square cross-section into a diamond
+- **Ring Phase Angle** - Turns the cross-section about its own center, in degrees (default 0). It shows most with few Ring Sides: with 4 at the default 0 the cross-section is a diamond (points at the outer edge, top, inner edge and bottom), and at 45 it becomes a square with a flat top
 
 ## Tips
 

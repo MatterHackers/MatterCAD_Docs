@@ -29,7 +29,7 @@ Threads makes a threaded rod with the standard ISO 60 degree thread profile, sta
 
 - **Diameter** - The outer diameter of the threads, in mm (default 10; up to 100)
 - **Pitch** - The distance from one thread to the next, in mm (default 2). A smaller pitch makes finer threads
-- **Thread Scale** - The width of the threads as a ratio of the pitch (default 1; 0.1 to 1)
+- **Thread Scale** - The width of the threads as a ratio of the pitch (default 1; the slider runs 0.1 to 1, and you can type down to 0)
 - **Rotations** - How many times the thread goes around (default 10)
 
 ### Geometry

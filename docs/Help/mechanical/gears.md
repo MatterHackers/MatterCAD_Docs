@@ -19,8 +19,8 @@ Involute Gear makes spur gears, racks and internal (ring) gears with true involu
 
 ## Parameters
 
-- **Output** - **3D** (default) makes a solid gear; **2D** makes its flat outline
 - **Plane** - The [construction plane](../workspace/construction-planes.md) the gear is drawn on (default XY, flat on the bed)
+- **Output** - **3D** (default) makes a solid gear; **2D** makes its flat outline
 
 ### Features
 

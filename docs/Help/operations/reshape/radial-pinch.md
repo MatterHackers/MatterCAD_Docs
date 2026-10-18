@@ -7,7 +7,7 @@ nav_order: 6
 ---
 # Radial Pinch
 
-Radial Pinch pushes each horizontal layer of a part in or out from its vertical center line, following a profile you draw. Unlike regular [Pinch](pinch.md), which tapers from front to back, Radial Pinch works all the way around the part. A new Radial Pinch starts with an S-shaped profile that bulges the middle of the part outward.
+Radial Pinch pushes each horizontal layer of a part in or out from its vertical center line, following a profile you draw. Unlike regular [Pinch](pinch.md), which tapers from front to back, Radial Pinch works all the way around the part. A new Radial Pinch starts with a profile at the part's own reach at the bottom and top, bulging out to one and a half times that reach through the middle.
 
 <!-- IMAGE_NEEDED: Before and after showing an object with Radial Pinch applied, with its Properties panel showing the Pinch profile editor, Slices and Advanced -->
 
@@ -20,7 +20,7 @@ Radial Pinch pushes each horizontal layer of a part in or out from its vertical 
 
 ## Parameters
 
-- **Pinch** - A profile editor. Up the profile is the height of the part (in percent, bottom to top); across it is how far that layer is pushed, in mm. Points toward the center line pull the part in; points away from it push the part out
+- **Pinch** - A profile editor drawn in mm. Up the profile is the height on the part, from its bottom to its top; a guide line marks the top and is labelled with the part's height. Across is each layer's new distance from the center line (the editor's origin line); a second guide line marks the part's own reach from the center and is labelled with it. Where the profile sits on that reach line the layer is unchanged; nearer the center line pulls it in (0 collapses it onto the center line); farther out pushes it out
 - **Slices** - How many horizontal cuts, spaced evenly up the part, give the mesh enough detail to follow the profile (default 20; the slider runs 0 to 50). More slices give a smoother result
 - **Advanced** - Off by default. Turn it on for the options below
 

@@ -5,7 +5,7 @@ nav_order: 7
 ---
 # Primitives
 
-MatterCAD's 3D primitive shapes are the building blocks for your designs. Add one from the **3D Primitives** folder (in the Library, or under **Add to Bed**), or from the **Primitive Shapes** bar, then change its settings in the Properties panel to get the exact shape you need.
+MatterCAD's 3D primitive shapes are the building blocks for your designs. Add one from the **3D Primitives** folder (in the Library, or under **Add to Bed**), or from the favorites bar down the left side of the design, then change its settings in the Properties panel to get the exact shape you need.
 
 <!-- Screenshot of the Primitives panel showing all available shapes -->
 ![20260319 173740 paste 20260319 173740](https://matterhackers.github.io/MatterCAD_Docs/assets/20260319-173740-paste-20260319-173740.jpg)

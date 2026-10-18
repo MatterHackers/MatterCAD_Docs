@@ -48,7 +48,7 @@ The hole always includes room for the head: a round counterbore for Socket, Butt
 - **Measurement** - **Metric** (default) or **Inch**. This only chooses which table of standard sizes you pick from; the model is built in mm either way
 - **Size** (metric) - M2, M2.5, M3, M4, M5, M6 (default), M8, M10, M12, or **Custom**
 - **Size** (inch) - #2-56, #4-40, #6-32, #8-32, #10-24, #10-32, 1/4-20 (default), 1/4-28, 5/16-18, 3/8-16, or **Custom**. The number after the dash is the threads per inch
-- **Thread Spacing** - Coarse or Fine. Coarse is the usual choice; fine threads hold better in thin material and resist loosening. Only shown for metric sizes that have a fine pitch defined -- the inch sizes name their own pitch, so there is nothing for the switch to do there
+- **Thread Spacing** - Coarse or Fine. Coarse is the usual choice; fine threads hold better in thin material and resist loosening. Only shown for metric sizes that have a fine pitch defined -- the inch sizes name their own pitch, so there is nothing for the switch to do there. Also hidden for a Clearance hole, whose size does not depend on the pitch
 
 With a standard size chosen, **Diameter** and **Pitch** are shown as read-only values so you can see what you are getting. Choose **Custom** and they become editable:
 
