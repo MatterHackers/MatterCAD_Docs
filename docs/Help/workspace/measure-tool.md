@@ -25,10 +25,10 @@ The Measure Tool lets you measure distances between points in your design. Place
 
 ## Tips
 
-- Use this to verify dimensions before exporting for 3D printing
+- Use this to verify dimensions before you export
 - The Measure Tool measures the straight-line distance between the two spheres, whatever is in between
 - Dragging a sphere is undoable, so you can step back to a previous measurement
-- The Measure Tool does not print and is left out of exports, so you can leave it in your design
+- The Measure Tool is left out of exports, so you can leave it in your design
 
 ## Related
 

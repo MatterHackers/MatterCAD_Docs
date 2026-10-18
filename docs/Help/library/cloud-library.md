@@ -33,4 +33,3 @@ The Cloud Library stores your designs online in your MatterHackers account. This
 
 - [Local Library](local-library.md) - Manage designs stored on your computer
 - [Sharing](sharing.md) - Share designs with others
-- [MatterCAD Pro](../mattercad-pro.md) - Pro features for cloud storage

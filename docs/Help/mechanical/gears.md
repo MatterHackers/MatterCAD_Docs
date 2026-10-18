@@ -44,12 +44,10 @@ Create 3D gears with fully configurable tooth geometry. MatterCAD generates prop
 
 - Two gears will mesh correctly when they have the same Circular Pitch and Pressure Angle
 - Use the Pitch Radius values to correctly space meshing gears -- the distance between gear centers should equal the sum of their pitch radii
-- Add Backlash for 3D printed gears to account for printing tolerances
-- For 2D gear profiles (for use with Extrude), see [Gear 2D](gear-2d.md)
+- Add Backlash so meshing gears have room to turn even when the finished parts come out slightly off size
+- For a flat gear profile to use with path operations such as [Linear Extrude](../operations/path/linear-extrude.md), set **Output** to **2D**
 
 ## Related
 
 - [Cycloidal Gear](cycloidal-gear.md) - A cycloidal speed reducer, for large reductions in one compact stage
-
-- [Gear 2D](gear-2d.md) - 2D gear path for path operations
 - [Threads](threads.md) - Create threaded features

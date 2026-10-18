@@ -185,7 +185,7 @@ The point of the function is a row that is worked out rather than typed. Inside 
 =index("A", [index]+2)
 ```
 
-The first copy reads `A2`, the second `A3`, the third `A4` - walking down column A while skipping the header in row 1. Put that in a Text object's text field and an array of it prints a different part number on every copy.
+The first copy reads `A2`, the second `A3`, the third `A4` - walking down column A while skipping the header in row 1. Put that in a Text object's text field and an array of it puts a different part number on every copy.
 
 A quoted column that is neither column letters nor a name some cell has (`"A1"` is a cell, not a column), or a row past the bottom of the sheet, is treated exactly like a misspelled cell reference - the sheet shows `0` rather than inventing a value.
 

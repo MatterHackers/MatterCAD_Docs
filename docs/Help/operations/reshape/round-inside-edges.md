@@ -81,7 +81,7 @@ Use [Fillet](fillet.md) when:
 
 - The radius is measured in the source part's own units, so a part with a non-uniform scale on it fills into an oval rather than a circle. Scale before rounding, not after
 - It fills inside corners only. If you also want the outside edges softened, add [Round All Edges](round-all-edges.md) -- the two do not overlap, so the order does not matter much, though rounding the outside first leaves less mesh for this one to chew through
-- Sharp inside corners are also where a printed part fails first. A small radius here is a real strength improvement, not just a cosmetic one
+- Sharp inside corners are also where a part under load cracks first. A small radius here is a real strength improvement, not just a cosmetic one
 - The result is a new solid, so booleans, transforms and everything else work on it normally
 
 ## Related

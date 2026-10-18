@@ -31,7 +31,7 @@ MatterCAD includes a library of 3D primitive shapes that serve as the building b
 ## Text and Special Shapes
 
 - [Text](text.md) - Create 3D extruded text with customizable fonts and sizing
-- [Braille](braille.md) - Generate 3D-printable Braille text
+- [Braille](braille.md) - Generate raised Braille text
 - [Braille Card](braille-card.md) - Create Braille cards with embossed text
 - [QR Code](qr-code.md) - Generate QR codes as 3D objects
 - [Image Object](image-object.md) - Place a picture in your design as the input for the image operations

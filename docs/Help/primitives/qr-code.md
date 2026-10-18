@@ -34,9 +34,9 @@ Generate QR codes as 3D objects. You can encode text, URLs, or WiFi credentials 
 ## Tips
 
 - Use [Subtract](../operations/boolean/subtract.md) to engrave the QR code into a surface, or place it on top of a [Cube](cube.md) base
-- Test that your QR code scans correctly with a phone before printing
+- Test that your QR code scans correctly with a phone before you export it
 - WiFi QR codes let people connect to your network by scanning the code
-- Make sure the QR code is large enough to be scannable when printed -- at least 20-25mm across
+- Make sure the QR code is large enough to scan on the finished part -- at least 20-25mm across
 
 ## Related
 

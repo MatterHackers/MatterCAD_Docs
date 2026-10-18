@@ -27,7 +27,7 @@ Enable **Advanced** mode for additional controls:
 
 ## Tips
 
-- For 3D printing, 40 sides is usually sufficient. Higher values create smoother surfaces but larger files
+- 40 sides is smooth enough for most parts. Higher values create smoother surfaces but larger files
 - Use Starting and Ending Angles to create partial sphere shapes like bowls or domes
 - Combine with [Subtract](../operations/boolean/subtract.md) to create spherical cavities
 

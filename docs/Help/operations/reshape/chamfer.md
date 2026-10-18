@@ -58,7 +58,6 @@ Type that number or less. Everything on the [Fillet](fillet.md) page under "When
 ## Tips
 
 - A chamfer is the cheaper edge break: it adds two triangles per edge where a fillet adds a whole arc's worth
-- On a part you plan to 3D print, a chamfer on the bottom edge is often easier to print cleanly than a fillet of the same size
 - Distance is measured along the faces, not across the cut. A 2 mm chamfer takes 2 mm off each face and leaves a cut face about 2.8 mm wide
 - Chamfer and Fillet can be stacked: chamfer one set of edges, then fillet the result's new edges
 - If every outside edge should be broken at one size and you do not care whether it is round, [Round All Edges](round-all-edges.md) needs no picking

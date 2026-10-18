@@ -6,7 +6,7 @@ nav_order: 10
 ---
 # Image Object
 
-An Image is a picture placed in your design. MatterCAD builds it as a very thin flat slab -- 0.2mm thick -- with the picture painted on its upward face, sized so the image's longer side is 60mm and its proportions are kept. Nothing in the picture becomes height: brightness is not depth here, and an Image on its own is a printed-looking photograph lying on the bed, not a relief.
+An Image is a picture placed in your design. MatterCAD builds it as a very thin flat slab -- 0.2mm thick -- with the picture painted on its upward face, sized so the image's longer side is 60mm and its proportions are kept. Nothing in the picture becomes height: brightness is not depth here, and an Image on its own is a flat photograph lying on the bed, not a relief.
 
 What makes it useful is what reads from it. Every image operation -- [Image Converter](../operations/image/image-converter.md), [Image to Path](../operations/image/image-to-path.md) and [Lithophane](../operations/image/lithophane.md) -- takes an Image as its input, and each is only enabled when the selected item is one. On its own an Image is also a good tracing reference or a label you can see while you build around it.
 
@@ -51,7 +51,7 @@ Colour and material are not offered for an Image -- the picture supplies its own
 ## Tips
 
 - **Brightness into height is [Lithophane](../operations/image/lithophane.md).** That is the height-map tool. The Image itself never turns light and dark into thickness
-- **A silhouette you can print is [Image Converter](../operations/image/image-converter.md)**, which traces the picture and extrudes the outline, with an optional base under it
+- **A solid silhouette is [Image Converter](../operations/image/image-converter.md)**, which traces the picture and extrudes the outline, with an optional base under it
 - **Just the outline as a 2D path is [Image to Path](../operations/image/image-to-path.md)**, ready for your own extrude, revolve or offset
 - Swap the picture on an existing Image rather than deleting it and adding a new one. Everything stacked above it re-traces from the new picture and keeps its own settings
 - An Image is not a solid. Boolean operations skip it, so combine the *result* of an image operation with a [Cube](cube.md) or another part, not the Image itself
@@ -60,7 +60,7 @@ Colour and material are not offered for an Image -- the picture supplies its own
 
 ## Related
 
-- [Image Converter](../operations/image/image-converter.md) - Trace the picture and extrude it into a printable part
+- [Image Converter](../operations/image/image-converter.md) - Trace the picture and extrude it into a solid part
 - [Image to Path](../operations/image/image-to-path.md) - Trace the picture into 2D paths
 - [Lithophane](../operations/image/lithophane.md) - Turn brightness into thickness for a backlit panel
 - [QR Code](qr-code.md) - Another object the image operations accept as input

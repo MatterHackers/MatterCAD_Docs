@@ -12,3 +12,4 @@ The library lets you organize, store, and share your 3D designs. You can browse 
 - [Local Library](local-library.md) - Manage your designs stored on your computer
 - [Cloud Library](cloud-library.md) - Store and access designs in your MatterHackers cloud account
 - [Sharing](sharing.md) - Share designs with other MatterCAD users
+- [Design Apps](design-apps.md) - Pre-built parametric designs you can customize

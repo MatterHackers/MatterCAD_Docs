@@ -7,7 +7,7 @@ nav_order: 1
 ---
 # Image Converter
 
-Image Converter turns a picture into a printable part. It traces the shapes in the image into a 2D outline, smooths that outline, and extrudes it to a height you choose -- so a logo becomes a raised solid with the logo's silhouette, not a relief carved from brightness.
+Image Converter turns a picture into a solid part. It traces the shapes in the image into a 2D outline, smooths that outline, and extrudes it to a height you choose -- so a logo becomes a raised solid with the logo's silhouette, not a relief carved from brightness.
 
 <!-- IMAGE_NEEDED: Screenshot of an Image Converter selected in the 3D view with the Properties panel open, showing the image thumbnail, the Analysis Type tabs and the Select Range histogram -->
 
@@ -85,7 +85,7 @@ The height controls for the base. They only appear once Base Type is something o
 
 - High-contrast images with clear silhouettes trace best. A busy photograph traces into hundreds of loops
 - If the result has speckles, raise **Min Surface Area** before fiddling with the histogram -- it is usually noise, not threshold
-- The base is aligned under the main extrude automatically. Give the base a small **Height** and a modest **Expand** for a printable, stable part
+- The base is aligned under the main extrude automatically. Give the base a small **Height** and a modest **Expand** for a stable part
 - Removing an Image Converter (Cancel on the component) leaves the original Image behind, not a pile of loose operations, so you can start over from the same picture
 - Only the controls the component surfaces are shown by default. To reach the rest -- the Smooth Path settings, for example -- expand the component in the design tree
 

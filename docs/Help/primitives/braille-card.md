@@ -20,7 +20,7 @@ Create Braille cards with embossed Braille text on an integrated base. This is a
 
 ## Tips
 
-- Use this when you want a complete, ready-to-print Braille label
+- Use this when you want a complete, ready-made Braille label
 - For Braille dots without a base (to place on your own surface), use [Braille](braille.md) instead
 
 ## Related

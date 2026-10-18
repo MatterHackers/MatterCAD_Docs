@@ -9,7 +9,7 @@ nav_order: 2
 ![20260506 160531 paste 20260506 160531](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160531-paste-20260506-160531.jpg)
 
 
-Dual Extrusion Align repositions two or more selected objects so their centers align to their shared modeling origin — the position they were designed to occupy relative to each other for dual-extrusion printing.
+Dual Extrusion Align puts two or more selected parts back where they sit relative to each other in the files they came from. One part keeps its center where it is, and every part moves by the same amount, so parts that were modeled together line up again. It also clears each part's rotation and scale.
 
 <!--  Screenshot showing two parts before and after Dual Extrusion Align -->
 |![20260506 160417 paste 20260506 160417](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160417-paste-20260506-160417.jpg)
@@ -19,11 +19,11 @@ Dual Extrusion Align repositions two or more selected objects so their centers a
 ## How to Use
 
 1. Select two or more objects
-2. Apply **Dual Extrusion Align** from the Placement menu
+2. Apply **Dual Extrusion Align** from the Placement group on the toolbar
 
 ## When to Use
 
-Use this operation when you have parts designed to print together on a dual-extrusion printer but have been moved out of their relative positions. Dual Extrusion Align restores them to their intended shared coordinate space.
+Use this operation when parts that were made to fit together, such as the pieces of a multi-part model exported in shared coordinates, have been moved apart. Because it clears rotation and scale, apply it before you rotate or scale the parts. It is a single undo step.
 
 ## Related
 

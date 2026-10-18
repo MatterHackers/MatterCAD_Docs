@@ -34,4 +34,4 @@ When you open MatterCAD, you will see several key areas:
 2. **Move it** - Click and drag the object to reposition it, or use the up/down arrow to adjust height
 3. **Modify it** - Select the object and adjust its parameters in the Properties panel on the right
 4. **Add more shapes** - Add additional primitives and use [Boolean operations](../operations/boolean/index.md) to combine or subtract them
-5. **Save your work** - Use the brand menu to save your design in MCX format, or export to STL for 3D printing
+5. **Save your work** - Use the toolbar's **Save** button to save your design in MCX format, or **Export** (in the arrow beside Save) to write STL, 3MF and other formats for other programs

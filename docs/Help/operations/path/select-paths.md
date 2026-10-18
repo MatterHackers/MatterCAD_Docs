@@ -7,7 +7,7 @@ nav_order: 7
 ---
 # Select Paths
 
-Select Paths filters which sub-paths from a complex path object are kept. It is especially useful when working with decorative or multi-part fonts where you need the outer letterforms and inner cutout shapes as separate pieces — for example, to 3D print them in two different colors.
+Select Paths filters which sub-paths from a complex path object are kept. It is especially useful when working with decorative or multi-part fonts where you need the outer letterforms and inner cutout shapes as separate pieces — for example, to give them two different colors.
 
 <!--  Screenshot showing Select Paths applied to decorative text with outer paths highlighted -->
 ![20260506 154655 paste 20260506 154655](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154655-paste-20260506-154655.jpg)
@@ -64,16 +64,16 @@ Expressions must start with `=` to enable variable substitution. Without `=`, th
 | `PathArea` | Area of this individual path |
 | `PathLength` | Perimeter of this individual path |
 
-## Example: Multi-Color Christmas Font Print
+## Example: Two-Color Lettering
 
-A common use for Select Paths is printing decorative text where the letters have inner cutout shapes. To print the outer letters in one color and the inner cuts in a second color:
+A common use for Select Paths is decorative text where the letters have inner cutout shapes. To give the outer letters one color and the inner cuts a second color:
 
 1. Add a **Text** object and set it to **2D output**
 2. Apply **Select Paths** → set preset to **Outer Paths Only**
-3. Apply **Linear Extrude** to give it height → assign your first filament color
+3. Apply **Linear Extrude** to give it height → give it your first color
 4. Go back to the original text object
 5. Apply a second **Select Paths** → set preset to **Holes Only**
-6. Apply **Linear Extrude** with the same height → assign your second filament color
+6. Apply **Linear Extrude** with the same height → give it your second color
 7. Position one extruded object on top of the other — the two colors align perfectly
 
 ## Related

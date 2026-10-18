@@ -115,7 +115,7 @@ Once connected, the AI can:
 - **Edit sheets** - read and write cells in a [Variable Sheet](../workspace/variable-sheet.md), so your design can be driven by named values.
 - **Undo and redo** - step back or forward through the design's undo history.
 - **Start, open and save designs** - start a new design in a new tab, open a model file in a new tab, and save.
-- **Export** - write STL or 3MF files into the AI folder (see below). If a file with that name is already there, the AI replaces it only when it asks to overwrite. A 3MF keeps each part's color, for printing in more than one material. See [Saving and Exporting](saving-and-exporting.md).
+- **Export** - write STL or 3MF files into the AI folder (see below). If a file with that name is already there, the AI replaces it only when it asks to overwrite. A 3MF keeps each part's color. See [Saving and Exporting](saving-and-exporting.md).
 - **Search these help pages** - look up what an operation does before using it.
 
 ### What the AI Can't Do

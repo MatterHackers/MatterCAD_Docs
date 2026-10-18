@@ -33,6 +33,6 @@ Create 3D extruded text with customizable content, font, size, and height. Text 
 
 ## Related
 
-- [Braille](braille.md) - Generate 3D-printable Braille text
+- [Braille](braille.md) - Generate raised Braille text
 - [QR Code](qr-code.md) - Generate a QR code as a 3D object
 - [Image Object](image-object.md) - Place a picture in your design as the input for the image operations

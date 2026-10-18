@@ -27,5 +27,5 @@ A star-shaped 2D path with configurable number of points and inner/outer radius.
 ## Related
 
 - [Circle Path](circle-path.md) - A smooth circle
-- [Gear 2D](../mechanical/gear-2d.md) - A proper gear profile
+- [Gears](../mechanical/gears.md) - A proper gear profile, with **Output** set to **2D**
 - [Linear Extrude](../operations/path/linear-extrude.md) - Give paths height

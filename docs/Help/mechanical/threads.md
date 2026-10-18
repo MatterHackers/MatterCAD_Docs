@@ -43,7 +43,7 @@ Create screw threads with configurable diameter, pitch, and thread profile. Thre
 ## Tips
 
 - To create a threaded hole: enable "Use as Hole", position the threads, and [Subtract](../operations/boolean/subtract.md) from your object
-- Add Tolerance when using as a hole to ensure the printed parts fit together
+- Add Tolerance when using as a hole so the threaded parts fit together
 - Standard metric thread pitches: M3=0.5mm, M4=0.7mm, M5=0.8mm, M6=1.0mm, M8=1.25mm, M10=1.5mm
 - Use Tip Scale to create a lead-in that makes it easier to start threading
 

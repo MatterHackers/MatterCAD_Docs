@@ -62,9 +62,9 @@ With a standard size chosen, **Diameter** and **Pitch** are shown as read-only v
 
 ## Tips
 
-- Printed threads need clearance. If you are printing both the screw and the part it goes into, make the hole from a Screw with a slightly larger custom diameter, or from [Threads](threads.md) with a tolerance set
+- Mating threads need clearance. If you are making both the screw and the part it goes into, make the hole from a Screw with a slightly larger custom diameter, or from [Threads](threads.md) with a tolerance set
 - Keep **Sides** low while you experiment with head types and drives -- the thread is the expensive part of the model -- and raise it before you export
-- A Chamfered tip is worth keeping for a printed screw. A flat-ended thread is much harder to start
+- A Chamfered tip is worth keeping: a flat-ended thread is much harder to start
 - To make a clearance pocket for a bought fastener, build the Screw at the bought size and [Subtract](../operations/boolean/subtract.md) it from your part
 - A countersunk (Flat) head needs a matching cone in the part. Subtracting the screw itself gives you that for free
 

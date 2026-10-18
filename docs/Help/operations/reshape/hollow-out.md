@@ -29,7 +29,6 @@ Hollow Out turns a solid part into a shell with walls at least as thick as you s
 - The cavity is fully enclosed, so it is invisible from outside. Use a cut or a Subtract to open it or to see inside
 - A part thinner than twice the wall thickness stays solid there, since it is all wall. If nothing hollows out, lower **Wall Thickness**
 - Hollow Out is useful for creating enclosures, containers, vases, and lightweight parts
-- A wall thickness of 1-2 mm is typical for most 3D-printed parts
 
 ## Related
 

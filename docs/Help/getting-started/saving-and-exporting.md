@@ -24,13 +24,13 @@ MCX is MatterCAD's native file format and the best choice for designs you want t
 
 3MF is the modern replacement for STL, and the best choice when you are leaving MCX behind. It keeps each part in your design as its own object, with its own position and its own colors, in a single compressed file.
 
-**Use 3MF when:** You want to 3D print a multi-part or multi-color design, or hand it to a slicer that understands more than bare triangles.
+**Use 3MF when:** You want to send a multi-part or multi-color design to another program and keep each part and its colors, not just bare triangles.
 
 ### STL
 
-STL is the most widely used format for 3D printing. It contains only the final triangle mesh geometry without any design history or parameters.
+STL is the most widely used 3D model format: almost every program that reads 3D models reads STL. It contains only the final triangle mesh geometry without any design history or parameters.
 
-**Use STL when:** You want to 3D print your design or share it with someone who does not use MatterCAD.
+**Use STL when:** You want to send your design to a program that only needs its shape, or share it with someone who does not use MatterCAD.
 
 ### OBJ
 

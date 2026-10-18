@@ -7,7 +7,7 @@ nav_order: 11
 ---
 # 3D Curve
 
-A 3D Curve is a Bezier spline you draw through space by dragging spheres in the 3D view. It is not a solid and it does not print -- it is a route. Its main job is to be the rail a [Sweep](sweep.md) carries a profile along.
+A 3D Curve is a Bezier spline you draw through space by dragging spheres in the 3D view. It is not a solid -- it is a route. Its main job is to be the rail a [Sweep](sweep.md) carries a profile along.
 
 <!-- IMAGE_NEEDED: Screenshot of a 3D Curve selected in the 3D view, showing the thick tube of the curve, the anchor spheres along it, and the two handle spheres of the point being edited -->
 

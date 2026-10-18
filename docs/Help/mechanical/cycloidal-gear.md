@@ -6,7 +6,7 @@ nav_order: 5
 ---
 # Cycloidal Gear
 
-Cycloidal Gear generates the flat parts of a cycloidal drive -- the single stage speed reducer built from a lobed disc rolling inside a ring of pins. It is the mechanism inside a lot of robot joints and printed gearboxes, because it gets a large reduction out of one very compact stage.
+Cycloidal Gear generates the flat parts of a cycloidal drive -- the single stage speed reducer built from a lobed disc rolling inside a ring of pins. It is the mechanism inside a lot of robot joints and compact gearboxes, because it gets a large reduction out of one very compact stage.
 
 <!-- IMAGE_NEEDED: Screenshot of a Cycloidal Gear disc and pin ring side by side in the 3D view, with the Properties panel showing the Part tabs -->
 
@@ -67,13 +67,12 @@ These four have to match between the disc and the ring:
 
 - Raise the **Pin Count** for more reduction. 10 pins gives 9:1; 21 pins gives 20:1 in the same footprint
 - Start from the pin circle. It sets the size of the whole gearbox, and everything else is proportioned inside it
-- **Clearance** is the number to reach for when a printed drive binds. Add a little and reprint the disc; the pins are unchanged
+- **Clearance** is the number to reach for when a finished drive binds. Add a little and remake only the disc; the pins are unchanged
 - Two discs at 180 degrees to each other balance the wobble out, which is why most real drives use a pair. Duplicate the disc and rotate the second one half a turn of the eccentric
 - Switch **Output** to 2D when you want to take the profile into path operations -- [Border Path](../operations/path/border-path.md), or your own [Linear Extrude](../operations/path/linear-extrude.md) with a bevel on it
 
 ## Related
 
 - [Gears](gears.md) - Involute gears, for ordinary meshing gear trains
-- [Gear 2D](gear-2d.md) - A 2D involute gear path
 - [Threads](threads.md) - Screw threads
 - [Subtract](../operations/boolean/subtract.md) - Cut the bearing bore and output holes to your own sizes

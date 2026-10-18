@@ -50,7 +50,6 @@ This repository hosts the official MatterCAD documentation, served publicly via 
 - [Primitives](https://matterhackers.github.io/MatterCAD_Docs/Help/primitives/) — All 3D shape primitives
 - [Operations](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/) — Boolean, array, reshape, transform, path, and mesh operations
 - [Workspace](https://matterhackers.github.io/MatterCAD_Docs/Help/workspace/) — Keyboard shortcuts, mouse controls, expressions, components
-- [Designing](https://matterhackers.github.io/MatterCAD_Docs/Help/designing/) — Design workflows and techniques
 - [Library](https://matterhackers.github.io/MatterCAD_Docs/Help/library/) — Cloud and local library management
 
 ---
@@ -62,7 +61,8 @@ The English articles under `docs/Help` are authoritative — always edit those. 
 - Regenerate with `python scripts/update_help_translations.py` from the MatterCAD repo root (requires `ANTHROPIC_API_KEY`). Run it after editing any English article.
 - The pipeline is incremental — a `source_hash` in each translated article's frontmatter means only changed articles are retranslated.
 - `deploy.yml` packs the translations into `help-docs.zip` as `<lang>/Help/...` entries alongside the English ones.
-- The app falls back to English per article, so a missing or stale translation is safe.
+- The app falls back to English per article, so a missing translation is safe.
+- A translation whose `source_hash` no longer matches its English article is deleted, not kept: the app and the AI assistant read the translation in place of the English page whenever one exists, so a stale one would serve out-of-date text. Regenerate it instead.
 - Translations are not published as Jekyll pages — only the English docs are served on GitHub Pages.
 
 ---
