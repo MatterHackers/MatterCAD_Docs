@@ -21,7 +21,7 @@ Click **☰ MatterCAD** at the left end of the tabs. The items, from top to bott
 | **Open Recent** | Lists the last 10 designs you opened, newest first, each with a small picture. Hover over one to see where it is. Click one to open it again. A design that is already open shows its tab instead of opening twice. When there are none, the list says **No recent files** |
 | **Help** | Opens the **Help** tab, the same as pressing F1 |
 | **Interface Tour** | Opens the welcome window. Click **Next** there for a short guided tour of the window. See [Updates and Recovery](updates-and-recovery.md#the-welcome-page-and-the-interface-tour) |
-| **Check For Update** | Looks for a newer version of MatterCAD. See [Updates and Recovery](updates-and-recovery.md#check-for-update) |
+| **Check For Update** | Looks for a newer version of MatterCAD. See [Updates and Recovery](updates-and-recovery.md#check-for-update). It isn't in the menu in the browser, where reloading the page gets the newest version, or in a copy of MatterCAD set up not to use the network |
 | **Settings** | Opens **MatterCAD Settings**. See [Settings](settings.md) |
 | **Community** › **Guides and Articles** | Opens MatterHackers' MatterCAD guides and articles in your web browser |
 | **About MatterCAD** | Shows the version you have. See [Updates and Recovery](updates-and-recovery.md#about-mattercad) |

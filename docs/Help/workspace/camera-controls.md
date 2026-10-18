@@ -5,7 +5,7 @@ nav_order: 20
 ---
 # Camera Controls
 
-The camera controls sit in the top-right corner of the 3D view: a cube that shows which way you are looking, round buttons around it, and a few more buttons under it. They change how you see the design, never the design itself, except the units button, which asks first.
+The camera controls sit in the top-right corner of the 3D view: a cube that shows which way you are looking, round buttons around it, and a few more buttons under it. They change how you see the design, never the design itself. The one exception is the units button: when the design has parts, it asks first how they should follow the new unit.
 
 To move the view with the mouse, the keyboard or a touch screen, see [Viewport Navigation](../getting-started/viewport-navigation.md).
 
@@ -41,7 +41,7 @@ The four mode buttons choose what a left-drag in the 3D view does. Only one is o
 
 While you hold Ctrl, or drag with another mouse button, the mode changes for that one drag, and the buttons show it. When you let go, the mode you chose comes back.
 
-Hover over a mode button to see every way to do the same thing in the status bar, for example "Rotate: Right Mouse Button, Ctrl + Left Mouse Button, Arrow Keys".
+Hover over a mode button to see every way to do the same thing in the status bar. For **Rotate View**, Windows and Linux show "Rotate: Right Mouse Button, Ctrl + Left Mouse Button, Arrow Keys (when nothing is selected)". A Mac names its own gestures: "Rotate: ⌘ + Drag, Two-Finger Click + Drag, Arrow Keys (when nothing is selected)".
 
 ### Turntable Mode and Perspective Mode
 
@@ -62,7 +62,7 @@ The button beside **Show Bed** shows a picture of the style in use. Click it to 
 |-------|--------------|
 | **Shaded** | Solid parts with no lines |
 | **Outlines (default)** | Solid parts with a line along each sharp edge. This is the starting style |
-| **Non-Manifold** | Solid parts with no lines, except a highlighted line along any edge that leaves a gap in the surface, so you can find holes in a mesh |
+| **Non-Manifold** | Solid parts with no lines, except a highlighted line along every edge that is not shared by exactly two faces: edges along a gap in the surface, and edges where three or more faces meet. Use it to find holes and other mesh problems |
 | **Polygons** | Solid parts with every triangle of the mesh outlined |
 | **Overhang** | Faces colored by the way they point: blue for faces that point up or sideways, turning to red as a face turns to point straight down |
 

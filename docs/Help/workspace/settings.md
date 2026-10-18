@@ -13,6 +13,8 @@ Every change takes effect when you make it; there is no Save button. Click **Clo
 
 The page has five sections: **General**, **Theme**, **Options**, **Advanced** and **AI Providers**. **Options**, **Advanced** and **AI Providers** start closed: click a heading to open it. MatterCAD remembers which ones you left open.
 
+In the browser, Settings has no **AI Providers** section, and **Advanced** has no **Application Storage** or **Application Cache** rows.
+
 <!-- IMAGE_NEEDED: The MatterCAD Settings window with the General and Theme sections showing (Language, Number format, Thumbnails, the Text Size slider, and the row of theme previews with the accent color swatches) and the Options, Advanced and AI Providers headings closed below them -->
 
 ## General
@@ -39,7 +41,7 @@ The window reloads after each change. You can also change the theme without open
 |---------|--------------|
 | **Depth Peeling Layers** | How carefully see-through parts are drawn where they overlap: **Off**, **4**, **6** (the starting value) or **8**. More layers draw overlapping see-through parts more accurately but take more work from your graphics card. **Off** uses a quicker approximation. Open designs follow the change at once |
 | **Show Welcome Message** | When on (the starting setting), the welcome window opens each time MatterCAD starts. Ticking **Don't remind me again** in the welcome window turns this off. See [Updates and Recovery](updates-and-recovery.md#the-welcome-page-and-the-interface-tour) |
-| **Send Crash Reports** | When on, MatterCAD offers to send a report after it crashes, and shows you exactly what would be sent before anything goes. When off (the starting setting), it never offers. Crash reports are sent from MatterCAD for Windows and Mac. See [Updates and Recovery](updates-and-recovery.md#crash-reports) |
+| **Send Crash Reports** | When on, MatterCAD offers to send a report after it crashes, and shows you exactly what would be sent before anything goes. It turns on when you choose **Allow** in the one-time question "Help improve MatterCAD?" that MatterCAD asks when it starts, or when you turn it on here. Until you answer that question it shows off. Once you have turned it off, MatterCAD never asks or offers. Crash reports are sent from MatterCAD for Windows and Mac. See [Updates and Recovery](updates-and-recovery.md#crash-reports) |
 
 ## Advanced
 
@@ -48,8 +50,8 @@ The window reloads after each change. You can also change the theme without open
 | **Touch Screen Mode** | For a computer with a touch screen. When on, the starting text size is 1.3 instead of 1.0, unless you have already chosen a text size. The window reloads |
 | **Snap baselines to whole pixels** | Lines text up on whole screen pixels, which makes it look sharper on an ordinary screen. On a high-resolution screen (such as a Mac's Retina screen) it makes no visible difference. It starts on. The window reloads |
 | **Enable LCD subpixel rendering** | Uses the separate red, green and blue parts of each pixel on an LCD screen to make text sharper. On Windows it starts out following your computer's ClearType setting; on Mac and Linux it starts off |
-| **Application Storage** | **Open Folder** (the link button) opens the folder where MatterCAD keeps your settings, your library and its other data. See [Frequently Asked Questions](../frequently-asked-questions.md#how-do-i-clear-the-application-data) for where it is |
-| **Application Cache** | **Clear Cache** (the X button) deletes temporary files MatterCAD no longer needs, such as update installers older than 30 days. It does not ask first |
+| **Application Storage** | **Open Folder** (the link button) opens the folder where MatterCAD keeps your settings, your library and its other data. See [Frequently Asked Questions](../frequently-asked-questions.md#how-do-i-clear-the-application-data) for where it is. Desktop app only |
+| **Application Cache** | **Clear Cache** (the X button) deletes temporary files MatterCAD no longer needs, such as update installers older than 30 days. It does not ask first. Desktop app only |
 | **GitHub Personal Access Token** | Only needed if you browse designs stored on GitHub in the Library a lot. GitHub limits how often a program may read from it without signing in; paste a GitHub personal access token here to raise that limit. The box shows the token as you type it, and it is kept on this computer |
 
 ## AI Providers

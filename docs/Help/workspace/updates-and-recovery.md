@@ -52,7 +52,7 @@ Choosing a channel checks for an update on that channel at once.
 
 - The first time MatterCAD finds a newer version, it asks **Recommended Update Available**: "There is a recommended update available for MatterCAD. Would you like to download it now?" Click **Download Now** to download it and open **Check for Update**, or **Remind Me Later**.
 - When an update is available, **Update Available** appears in the tab bar, just right of the **+** button, and flashes briefly. Click it to open **Check for Update**.
-- When an update is required, **Check for Update** opens by itself.
+- When an update is required, **Check for Update** opens by itself, except in Touch Screen Mode (see [Settings](settings.md#advanced)).
 
 ## About MatterCAD
 
@@ -91,7 +91,7 @@ If you allowed it and MatterCAD crashes, the next time it starts it asks **Send 
 - Tick **Include the design file that was open** only if you want to send that design too. It starts unticked, and it is only there when the file still exists.
 - Click **Send** to send the report, or **Don't send** to delete it.
 
-You are asked about every report, and nothing is sent without your answer. Before a report is sent, your computer account name is replaced with "[user]", and your AI keys and AI assistant access token are taken out.
+Nothing is sent without your answer. If the same crash happened several times, its reports are offered once, together. At most three different crashes are offered each time MatterCAD starts. Before a report is sent, your computer account name is replaced with "[user]", and your AI keys and AI assistant access token are taken out.
 
 ## Recover Unsaved Work
 

@@ -73,7 +73,7 @@ The bar along the bottom of the window shows, from left to right:
 - **Hints** - What the button or control under the mouse does, or the keys that do the same thing. For example, hover over **Reset View** to see "W Key".
 - **The theme button** - Opens the **Theme** settings in a small panel, so you can change the colors without opening Settings. See [Settings](settings.md#theme).
 - **The AI item** - Shows **AI Ready**, **AI Connected** or **AI Editing** while AI assistant access is on, and is hidden while it is off. Click it to open **AI Assistant Access**. See [Using AI Assistants](../getting-started/ai-assistants.md).
-- **The globe** - Your connection to MatterCAD's online services. It reads **Connected** while you are signed in and online, **Disconnected** while you are signed out or offline, and **Retry Login** when your sign-in has run out and you need to [sign in](account.md) again. Hover over it to see, for example, "Services: Connected". Click it and choose **AI Assistant Access...** to open the AI assistant panel, whether or not you are signed in.
+- **The globe** - Your connection to MatterCAD's online services. It reads **Connected** while you are signed in and online, **Disconnected** while you are signed out or offline, and **Retry Login** when your sign-in has run out and you need to [sign in](account.md) again. Hover over it to see, for example, "Services: Connected". In the desktop app, click it and choose **AI Assistant Access...** to open the AI assistant panel, whether or not you are signed in. In the browser, clicking the globe opens no menu.
 
 ## Related
 
