@@ -16,7 +16,7 @@ To turn it off, click **Done** on the bar, press **X** again, choose **Section V
 
 ## The First Cut
 
-Turning it on cuts at once. The cut goes through the centre of the selected parts, or through the centre of the whole design when nothing is selected. It lies square to the X, Y or Z direction you are looking along most closely, and the half facing you is taken away, so you look straight at the cut faces.
+Turning it on cuts at once. The cut goes through the centre of the selected parts, or through the centre of the whole design when nothing is selected. It lies square to the X, Y or Z direction you are looking along most closely, and the half facing you is taken away, so the cut faces turn toward you.
 
 ## The Section View Bar
 
@@ -57,7 +57,7 @@ An arrow stands on the cut, pointing into the half that is taken away. Drag it t
 
 ## What You See
 
-- **Cut faces are solid and hatched.** Where the cut passes through a part, the cut face is filled in a darker shade of the part's colour, with diagonal lines over it. The lines lean one way on one part and the other way on the next, so parts that touch are easy to tell apart. The lines keep about the same spacing on screen as you zoom.
+- **Cut faces are solid and hatched.** Where the cut passes through a part, the cut face is filled in a darker shade of the part's colour, with diagonal lines over it. The lines lean one way on one part and the other way on the next, so neighbouring parts usually lean opposite ways and are easy to tell apart. The lines keep about the same spacing on screen as you zoom.
 - **Parts are cut, hidden or whole.** A part the cut passes through is cut. A part wholly in the half taken away is not drawn. A part wholly in the half you see is drawn whole.
 - **See-through parts are cut but not filled.**
 - **Clicks go to what you can see.** Clicking through the cut selects the part you see there, never a part in the half that is taken away.

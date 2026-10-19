@@ -57,14 +57,14 @@ The **Surfaced Editors** list decides which settings of the parts inside appear 
 
 The surfaced settings appear in the Properties panel once **Finalized** is on. While you are editing the component, the panel shows the **Surfaced Editors** list instead. To take a setting off the component, click its entry's **Delete** button while you are editing the component. An entry that no longer finds anything, for example after you delete the part it named, shows no row.
 
-To show a cell of the component's [Variable Sheet](variable-sheet.md) instead of a part's setting, type `!` and the cell's name or address in the box at the top of the Editor Selector, for example `!wall_thickness` or `!B2`, and click **Save**. The row reads the cell's name, with underscores shown as spaces.
+To show a cell of the component's [Variable Sheet](variable-sheet.md) instead of a part's setting, type `!` and the cell's name or address in the box at the top of the Editor Selector, for example `!wall_thickness` or `!B2`, and click **Save**. The row reads the cell's name, with underscores shown as spaces, or its address, such as **B2**, when the cell has no name.
 
 #### How Rows Are Named
 
-A finished component's rows read clearly without your help:
+A finalized component's rows read clearly without your help:
 
 - A row with a **Label** reads the label as you typed it.
-- A setting reads its own name, such as **Width**. When two rows would read the same, the part's name goes in front, such as **Base Width** and **Arm Width**. If the parts have the same name too, the names of the groups they sit in go in front as well, and if even those match, the rows are numbered, such as **Base Width 1** and **Base Width 2**.
+- A setting reads its own name, such as **Width**. When two rows would read the same, the part's name goes in front, such as **Base Width** and **Arm Width**. If the parts have the same name too, the names of the parts they sit in go in front as well, and if even those match, the rows are numbered, such as **Base Width 1** and **Base Width 2**.
 - An **All** entry shows a section titled with the part's name.
 
 To rename a row, click its entry's **Edit** button, type the name in the **Label** box, and click **Save**. To go back to the name MatterCAD gives it, clear the box and click **Save**. The entry and its label change together, in one undo step. A row's name is only what the panel shows: formulas still read the setting by its own name.

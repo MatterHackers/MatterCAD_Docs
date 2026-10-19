@@ -152,7 +152,7 @@ The AI can work on any design you have open, not only the one in front.
 
 ## The AI's Work Is Saved With the Design
 
-What an outside AI tool does on a design is kept with that design's [AI tab](ai-tab.md) chat and saved in its `.mcx` file: each tool it called, what it asked for, the answer it got, and the changes it made. The access key is never kept. Up to 50 of the newest calls are kept.
+What an outside AI tool does on a design is kept with that design's [AI tab](ai-tab.md) chat and saved in its `.mcx` file: each tool it called, what it asked for, the answer it got, and the changes it made. The access key is never kept. Up to 50 of the newest calls are kept, and long answers and very large requests are shortened.
 
 - **You can see it.** Open the design's **AI** tab. The tool's work shows as one collapsed group under the name the tool gives itself, for example "Claude Code (outside assistant): 3 tool calls, changed add mounting holes". Click the group to see each call.
 - **Any AI can pick up.** The next time you chat in that design's **AI** tab, the AI is given a short summary of what the outside tool did, so it can carry on. Because the record is saved in the file, this also works after you save, close and reopen the design.
