@@ -50,4 +50,4 @@ Subtract works on solids and on 2D paths. It looks at what you gave it and does 
 - [Hole](../../primitives/hole.md) - A cube pre-configured to subtract
 - [Repair](../mesh/repair.md) - Fix damaged imported meshes before a boolean
 
-This page also covers the older Subtract objects still found in designs saved before the operations were merged. They keep working exactly as they did; new designs use the shared Boolean object with the Subtract operation selected.
+This page also covers the separate Subtract objects some designs hold in place of the Boolean object. They work the same way. The toolbar's **Subtract** always makes the Boolean object, with Subtract selected.
