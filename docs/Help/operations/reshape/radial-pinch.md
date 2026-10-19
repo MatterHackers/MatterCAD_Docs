@@ -20,7 +20,7 @@ Radial Pinch pushes each horizontal layer of a part in or out from its vertical 
 
 ## Parameters
 
-- **Pinch** - The part's outline from bottom to top, drawn in mm. Up is the height on the part; a guide line marks the top and is labelled with the part's height. Across is how far that layer reaches from the center line (the editor's origin line); a second guide line marks the part's own reach and is labelled with it. On that reach line a layer stays as it is; nearer the center pinches it in (0 collapses it onto the center line); farther out pushes it out
+- **Pinch** - The part's outline from bottom to top, drawn in the design's units (see [the units button](../../workspace/camera-controls.md#the-units-button)): the **X** box of a selected point is how far it reaches across and the **Y** box is how high it is, both in those units. Up is the height on the part; a guide line marks the top and is labelled with the part's height. Across is how far that layer reaches from the center line (the editor's origin line); a second guide line marks the part's own reach and is labelled with it. On that reach line a layer stays as it is; nearer the center pinches it in (0 collapses it onto the center line); farther out pushes it out
 - **Slices** - How many horizontal cuts, spaced evenly up the part, give the mesh enough detail to follow the profile (default 20; the slider runs 0 to 50). More slices give a smoother result
 - **Advanced** - Off by default. Turn it on for the options below
 
@@ -37,6 +37,7 @@ Radial Pinch pushes each horizontal layer of a part in or out from its vertical 
 - Use the profile editor to create hourglass, bottle, or vase-like shapes
 - Radial pinch is ideal for creating organic, rounded forms from cylindrical objects
 - Increase Slices for smoother curves, especially on tight pinch profiles
+- When you change the design's units and choose to keep your numbers, so that every part changes size, the Pinch profile changes size with the part, both how far it reaches and how high it goes, and the part keeps its shape
 
 ## Related
 

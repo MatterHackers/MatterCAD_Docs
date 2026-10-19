@@ -23,12 +23,12 @@ Threads makes a threaded rod with the standard ISO 60 degree thread profile, sta
 
 - **Use As Hole** - Off by default. Turn it on to make a threaded hole: once combined with a part, the threads cut a matching hole into it, widened by Tolerance so a bolt of this size fits. Turning it on also sets the threads' Output to Hole, in the same undo step, and the thread runs full height to both ends
 - **Countersink Ends** - On by default. Adds a cone at both ends of the hole so a screw starts easily and the edge of the hole stays clean. Shown only with Use As Hole on
-- **Tolerance** - Extra room for the fit, in mm (default 0.2; the slider runs 0 to 0.5). A bigger value makes a looser fit. Shown only with Use As Hole on
+- **Tolerance** - Extra room for the fit, in mm (default 0.2; the slider runs 0 to 0.5). A bigger value makes a looser fit. Type a bigger value, or let go of the slider at its end, and the slider grows to fit, up to 10 mm, which is also the most Tolerance takes. Shown only with Use As Hole on
 
 ### Attributes
 
 - **Diameter** - The outer diameter of the threads, in mm (default 10; the slider runs 1 to 100, which is also the most it takes)
-- **Pitch** - The distance from one thread to the next, in mm (default 2). A smaller pitch makes finer threads
+- **Pitch** - The distance from one thread to the next, in mm (default 2; the slider runs 0.5 to 100, which is also the most it takes). A smaller pitch makes finer threads. Most of the slider's length is given to small pitches, so the common ones of a few mm are easy to pick
 - **Thread Scale** - The width of the threads as a ratio of the pitch (default 1; the slider runs 0.1 to 1, and you can type down to 0)
 - **Rotations** - How many times the thread goes around (default 10)
 

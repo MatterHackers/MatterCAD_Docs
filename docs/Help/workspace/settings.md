@@ -21,7 +21,7 @@ In the browser, Settings has no **AI Providers** section, and **Advanced** has n
 
 | Setting | What it does |
 |---------|--------------|
-| **Language** | The language MatterCAD shows its menus and messages in. Pick one from the list and the window reloads in that language. **Default** and **English** both give English. The first time MatterCAD starts, it picks your computer's language if MatterCAD has it |
+| **Language** | The language MatterCAD shows its menus and messages in. The list shows the language in use; pick another and the window reloads in that language. The first time MatterCAD starts, it picks your computer's language if MatterCAD has it |
 | **Number format** | How numbers are shown and typed: **System** (follow your computer's region setting), **1234.5** (a point before the decimals) or **1234,5** (a comma before the decimals). The window reloads |
 | **Thumbnails** | **Reset Thumbnails** deletes the small pictures the library shows for your designs and makes them again. MatterCAD asks first: click **Reset** to go ahead or **No** to stop. The library may be slower for a while as the pictures are remade |
 | **Text Size** | Makes everything in the window bigger or smaller, from 0.3 to 2.5 (1.0 is normal). The row's name shows the size, for example "Text Size : 1.2". Move the slider, then click **Apply** to use the new size (the window reloads). If you close Settings without clicking **Apply**, the new size is used the next time you start MatterCAD |
@@ -41,7 +41,7 @@ The window reloads after each change. You can also change the theme without open
 |---------|--------------|
 | **Depth Peeling Layers** | How carefully see-through parts are drawn where they overlap: **Off**, **4**, **6** (the starting value) or **8**. More layers draw overlapping see-through parts more accurately but take more work from your graphics card. **Off** uses a quicker approximation. Open designs follow the change at once |
 | **Show Welcome Message** | When on (the starting setting), the welcome window opens each time MatterCAD starts. Ticking **Don't remind me again** in the welcome window turns this off. See [Updates and Recovery](updates-and-recovery.md#the-welcome-page-and-the-interface-tour) |
-| **Send Crash Reports** | When on, MatterCAD offers to send a report after it crashes, and shows you exactly what would be sent before anything goes. It turns on when you choose **Allow** in the one-time question "Help improve MatterCAD?" that MatterCAD asks when it starts, or when you turn it on here. Until you answer that question it shows off. Once you have turned it off, MatterCAD never asks or offers. Crash reports are sent from MatterCAD for Windows and Mac. See [Updates and Recovery](updates-and-recovery.md#crash-reports) |
+| **Send Crash Reports** | When on, MatterCAD offers to send a report after it crashes, and shows you exactly what would be sent before anything goes. It turns on when you choose **Allow** in the one-time question "Help improve MatterCAD?" that MatterCAD asks when it starts, or when you turn it on here. Until you answer that question it shows off. The question says what a report leaves out: "Your computer's user name, your AI keys and your GitHub token are taken out; other text, such as file names, is sent as it is." Once you have turned it off, MatterCAD never asks or offers. Crash reports are sent from MatterCAD for Windows and Mac. See [Updates and Recovery](updates-and-recovery.md#crash-reports) |
 
 ## Advanced
 
@@ -52,7 +52,7 @@ The window reloads after each change. You can also change the theme without open
 | **Enable LCD subpixel rendering** | Uses the separate red, green and blue parts of each pixel on an LCD screen to make text sharper. On Windows it starts out following your computer's ClearType setting; on Mac and Linux it starts off |
 | **Application Storage** | **Open Folder** (the link button) opens the folder where MatterCAD keeps your settings, your library and its other data. See [Frequently Asked Questions](../frequently-asked-questions.md#how-do-i-clear-the-application-data) for where it is. Desktop app only |
 | **Application Cache** | **Clear Cache** (the X button) deletes temporary files MatterCAD no longer needs, such as update installers older than 30 days. It does not ask first. Desktop app only |
-| **GitHub Personal Access Token** | Only needed if you browse designs stored on GitHub in the Library a lot. GitHub limits how often a program may read from it without signing in; paste a GitHub personal access token here to raise that limit. The box shows the token as you type it, and it is kept on this computer |
+| **GitHub Personal Access Token** | Only needed if you browse designs stored on GitHub in the Library a lot. GitHub limits how often a program may read from it without signing in; paste a GitHub personal access token here to raise that limit. While it is empty, the box says "Enter Personal Access Token". The box hides what you paste, the token is saved as soon as it is in the box, and it is kept on this computer and taken out of crash reports |
 
 ## AI Providers
 

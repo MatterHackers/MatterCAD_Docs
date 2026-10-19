@@ -86,7 +86,9 @@ Transform mode steps copies using a manual transform or by following another obj
 
 **Transform Rotation** — Per-step rotation in degrees per axis (default 0, 0, 0; shown when Reference is Input).
 
-**Scale Axes** — Per-axis scale applied at each step (default 1, 1, 1; shown when Reference is Input).
+**Scale** — How much bigger or smaller each copy is than the one before, the same on every axis (default 1; shown when Reference is Input). 2 doubles the size at each step, so three copies are 1×, 2× and 4× the size of the original; 0.5 halves it at each step. Scale multiplies **Scale Axes**: a Scale of 2 with Scale Axes of 1.5, 1, 1 makes each copy 3 times as long along X as the one before, and twice as big along Y and Z. Supports expressions.
+
+**Scale Axes** — The same step-by-step size change, set separately for X, Y and Z (default 1, 1, 1; shown when Reference is Input). 1 keeps that axis the size of the copy before.
 
 **Transform Name** — Name of the sibling object whose transform is used as the per-step increment (shown when Reference is Object).
 
@@ -112,6 +114,8 @@ Turn on **Randomize** (off by default) to add variation to the copies. Every ran
 ## Older files
 
 An Array created before construction planes shipped keeps its original **Central Axis** control — a direction vector with an axis dropdown — and keeps working exactly as it did. New Array operations get the construction plane described above. To move an old one over, delete it and apply Array again.
+
+A Transform array saved by an earlier version of MatterCAD with its **Scale** set to anything other than 1 builds without Scale, so the design keeps the shape it was saved with, and its Scale row is hidden. To change the size of its copies, use **Scale Axes**.
 
 ## Tips
 

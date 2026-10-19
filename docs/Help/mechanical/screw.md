@@ -39,9 +39,9 @@ The hole always includes room for the head: a round counterbore for Socket, Butt
 
 - **Use As Hole** - Off by default. Turn it on to build the hole this screw fits instead of the screw
 - **Hole Type** - **Tapped** (default), **Clearance** or **Pilot** (see above). Shown only with Use As Hole on
-- **Tolerance** - Extra room for the fit, in mm (default 0.2; the slider runs 0 to 0.5). A bigger value makes a looser fit. Shown only with Use As Hole on
+- **Tolerance** - Extra room for the fit, in mm (default 0.2; the slider runs 0 to 0.5). A bigger value makes a looser fit. Type a bigger value, or let go of the slider at its end, and the slider grows to fit, up to 10 mm, which is also the most Tolerance takes. Shown only with Use As Hole on
 - **Countersink Ends** - On by default. Adds a cone at both ends of the thread so the screw starts easily and the edge of the hole stays clean. Shown only for a Tapped hole
-- **Head Clearance** - How far the pocket for the head reaches above the top of the head, in mm. It follows the head's height (6 for the default M6 socket head) until you type a value of your own. Shown only with Use As Hole on
+- **Head Clearance** - How far the pocket for the head reaches above the top of the head, in mm (the slider runs 0 to 50 and grows for a bigger value, up to 1000 mm, which is also the most it takes). It follows the head's height (6 for the default M6 socket head) until you type a value of your own. Shown only with Use As Hole on
 
 ### Thread
 
@@ -60,9 +60,9 @@ A Clearance hole has no Pitch row, because its size does not depend on the pitch
 
 ### Length
 
-- **Length** - Distance from under the head to the tip of the screw, in mm (default 20)
+- **Length** - Distance from under the head to the tip of the screw, in mm (default 20; the slider runs 2 to 100 and grows for a longer screw, up to 1000 mm, which is also the most it takes)
 - **Threading** - **Fully Threaded** (default) carries thread the whole way. **Partially Threaded** leaves a smooth shank under the head, which centres the parts being joined. Not shown for a Clearance or Pilot hole
-- **Thread Length** - How much of the length carries thread, measured up from the tip, in mm (default 12). Only shown for a partially threaded screw
+- **Thread Length** - How much of the length carries thread, measured up from the tip, in mm (default 12; the slider runs 2 to 100 and grows for a bigger value, up to 1000 mm). It can't be more than **Length**. Only shown for a partially threaded screw
 
 ### Head
 

@@ -45,9 +45,16 @@ Right-click a design tab for:
 
 | Item | What it does |
 |------|--------------|
-| **Rename** | Opens **Rename Item**. Type the new name and click **Rename**. For a saved design, the file is renamed too, in the same folder |
+| **Rename** | Opens **Rename Item**. Type the new name and click **Rename**. For a saved design, the file is renamed too, in the same folder. See [When a rename doesn't work](#when-a-rename-doesnt-work) |
 | **Reload** | Throws away your changes and opens the design again as you last saved it, after asking. See [Menus and Toolbar](menus-and-toolbar.md#bed) |
 | **Show in Explorer** (Windows), **Show in Finder** (Mac), **Show in Files** (Linux) | Opens the folder the design's file is in, with the file selected. Only for designs saved as files on your computer |
+
+#### When a rename doesn't work
+
+When a design saved on your computer can't be renamed, it keeps its old name and a message in the status bar says why:
+
+- A file name can't hold the character `/`, and on Windows it can't hold `\` `:` `*` `?` `"` `<` `>` or `|` either. A new name with one of them gets a message naming it, for example "A file name can't contain '/'. Choose a name without it, then rename again."
+- Any other problem gets "Could not rename '…'. Make sure the file is not open in another program and that its folder can be changed, then try again.", with the design's name in place of '…'.
 
 ## Search
 

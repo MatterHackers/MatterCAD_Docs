@@ -11,7 +11,7 @@ You don't need an account to design in MatterCAD. Sign in to your MatterHackers 
 
 ## Sign In
 
-1. Click **(sign in)** at the far right of the tab bar. Hover over it and it says "Sign in to your MatterCAD account"; this is your MatterHackers account.
+1. Click **(sign in)** at the far right of the tab bar. Hover over it and it says "Sign in to your MatterHackers account".
 2. In **Sign in to my account**, type your **Username or Email** and your **Password**. Tick **Show Password** to see what you typed.
 3. Click **Sign in**, or press Enter in the password box.
 
@@ -59,8 +59,8 @@ While you are signed in, click your name at the right of the tab bar for:
 ### Enter a share code
 
 1. Choose **Enter Share Code...**.
-2. Type the code you were given and click **Continue**.
-3. When MatterCAD says "Your code has been redeemed.", click **Done**.
+2. In **Library - Enter Share Code**, type the code you were given in the **Enter Share Code:** box and click **Continue**. The note under the box says "This code will provide read-only access."
+3. When MatterCAD says "Your code has been redeemed. Please check your 'Shared with Me' folder in your Library.", click **Done**.
 
 The shared design is in the **Shared with Me** folder of your Library. You can open and use it, but you can't change the original. If the code is wrong, MatterCAD says "Oops! Invalid code."; click **Try Again** to fix it.
 

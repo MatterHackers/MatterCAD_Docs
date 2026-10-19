@@ -51,7 +51,7 @@ Choosing a channel checks for an update on that channel at once.
 ### When MatterCAD tells you itself
 
 - The first time MatterCAD finds a newer version, it asks **Recommended Update Available**: "There is a recommended update available for MatterCAD. Would you like to download it now?" Click **Download Now** to download it and open **Check for Update**, or **Remind Me Later**.
-- When an update is available, **Update Available** appears in the tab bar, just right of the **+** button, and flashes briefly. Click it to open **Check for Update**.
+- When an update is available, **Update Available** appears in the tab bar, just right of the **+** button, and flashes briefly. Hover over it to see "Open Check for Update to install the new version", and click it to open **Check for Update**.
 - When an update is required, **Check for Update** opens by itself, except in Touch Screen Mode (see [Settings](settings.md#advanced)).
 
 ## About MatterCAD
@@ -84,18 +84,18 @@ After MatterCAD updates to a new version, it opens the **Help** tab on [What's N
 
 ## Crash Reports
 
-On Windows and Mac, MatterCAD asks once, when it starts, **Help improve MatterCAD?**: "MatterCAD can send a report when it crashes, so the crash can be fixed." Click **Allow** or **No thanks**. You can change your answer at any time with **Send Crash Reports** in [Settings](settings.md#options).
+On Windows and Mac, MatterCAD asks once, when it starts, **Help improve MatterCAD?**: "MatterCAD can send a report when it crashes, so the crash can be fixed." It goes on: "A report contains the error, a stack trace and application state. Your computer's user name, your AI keys and your GitHub token are taken out; other text, such as file names, is sent as it is. It never includes your design files unless you approve that for a specific report." Click **Allow** or **No thanks**. You can change your answer at any time with **Send Crash Reports** in [Settings](settings.md#options).
 
 If you allowed it and MatterCAD crashes, the next time it starts it asks **Send this crash report?** and shows you the error and exactly what would be sent.
 
 - Tick **Include the design file that was open** only if you want to send that design too. It starts unticked, and it is only there when the file still exists.
 - Click **Send** to send the report, or **Don't send** to delete it.
 
-Nothing is sent without your answer. If the same crash happened several times, its reports are offered once, together. At most three different crashes are offered each time MatterCAD starts. Before a report is sent, your computer account name is replaced with "[user]", and your AI keys and AI assistant access token are taken out.
+Nothing is sent without your answer. If the same crash happened several times, its reports are offered once, together. At most three different crashes are offered each time MatterCAD starts. Before a report is sent, your computer's user name is replaced with "[user]", and your AI keys, your AI assistant access token and your GitHub token are taken out. Other text in the report, such as the names of your files, is sent as it is, so read what **Send this crash report?** shows before you click **Send**.
 
 ## Recover Unsaved Work
 
-If MatterCAD closes before you save, for example after a crash, the next time it starts it asks **Recover Design**: "Unsaved work was found for '…' from … Recover it as an unsaved design? The original saved file will remain unchanged." See [Saving and Exporting](../getting-started/saving-and-exporting.md#recover-unsaved-work) for what **Recover** and **Discard recovery** do.
+If MatterCAD closes before you save, for example after a crash, the next time it starts it asks **Recover Design**. For a design you had saved before, on your computer or in your Cloud Library, it says "Unsaved work was found for '…' from … Recover it as an unsaved design? The original saved file will remain unchanged." For a design you never saved, it says "Unsaved work was found for '…' from … Recover it as an unsaved design?" See [Saving and Exporting](../getting-started/saving-and-exporting.md#recover-unsaved-work) for what **Recover** and **Discard recovery** do.
 
 - If several designs have unsaved work, MatterCAD asks about each one in its own window. Answer them in any order.
 - Closing the question with its X, or pressing Esc, is the same as **Discard recovery**.
