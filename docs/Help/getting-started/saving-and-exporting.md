@@ -15,7 +15,7 @@ The **Save** button is in the design's toolbar, right after **Add to Bed**. It r
 
 - **Save** (Ctrl+S) writes the design to its MCX file. A design that has never been saved asks for a name and a folder first, as Save As does. So does a design you opened from an STL, a picture or any other file that is not an MCX: Save never writes your design over the file it came from.
 - **Save As** (Ctrl+Shift+S, or the arrow beside **Save**) saves the design under a new name or in another folder:
-  1. Pick a library folder, on your computer or in your Cloud Library. The box is headed "Choose where to save your design". Until you open a folder that can take a design, it says "Choose a folder you can save in." and **Save** can't be clicked.
+  1. Pick a library folder, on your computer or in your Cloud Library. The box is headed "Choose where to save your design". It opens in the folder you last left it in. While the folder showing can't take a design, it says "Choose a folder you can save in." and **Save** can't be clicked.
   2. Type a **Design Name**. Clicking a design in the list puts its name there, without the extension; the design saves as an MCX file.
   3. Click **Save**. If the folder already has a design with that name, a box titled **Confirm Save As** asks before **Replace** saves over it.
 
