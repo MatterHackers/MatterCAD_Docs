@@ -16,6 +16,7 @@ A round ball shape with adjustable diameter and detail level.
 
 - **Diameter** - The width across the sphere, in mm (default 20)
 - **Sides** - Number of segments around the sphere (default 40; 3 to 360). More is smoother. Without Advanced, the same number is used from top to bottom
+- **Grow From** - Which side of the part stays where it is when you change its size: **Center** (the default) grows it the same amount on every side, **Front Left** keeps its front and left sides in place so it grows toward the back and right, and **Back Right** keeps its back and right sides in place so it grows toward the front and left. The sides are the part's own, so a part you have turned grows along its own sides. The bottom always stays where it is. It applies when **Diameter** changes, whether you type it or a formula changes it; other settings don't use it. It is the last row in the panel
 - **Advanced** - Off by default. Turn it on for the options below
 
 ### Advanced Parameters

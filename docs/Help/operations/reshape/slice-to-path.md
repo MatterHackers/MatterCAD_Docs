@@ -7,7 +7,7 @@ nav_order: 12
 ---
 # Slice to Path
 
-Slice to Path cuts a solid with a [construction plane](../../workspace/construction-planes.md) and hands you the outline where the plane crossed it, as a 2D path. It is how you get a real cross section of a part out as something you can go on building with -- extrude it, offset it, or use it as the profile of a [Sweep](../path/sweep.md).
+Slice to Path makes a **cross section** of a part: a flat 2D path of the part's outline at the height you choose, where a [construction plane](../../workspace/construction-planes.md) passes through it. Use it to see the shape of a part at that height, or to reuse that shape -- extrude it, offset it, or use it as the profile of a [Sweep](../path/sweep.md). The plane can also be tilted or stood upright, for a section at any angle.
 
 <!-- IMAGE_NEEDED: Screenshot of a Slice to Path applied to a solid, showing the flat outline path where the slice plane crossed the part -->
 

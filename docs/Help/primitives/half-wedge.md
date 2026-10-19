@@ -17,6 +17,7 @@ A ridge: a triangular prism whose two sloped sides meet at a peak centered acros
 - **Width** - Size along the X axis, across the two slopes, in mm (default 20)
 - **Depth** - Size along the Y axis, the length of the ridge, in mm (default 20)
 - **Height** - How tall the peak is, in mm (default 10)
+- **Grow From** - Which side of the part stays where it is when you change its size: **Center** (the default) grows it the same amount on every side, **Front Left** keeps its front and left sides in place so it grows toward the back and right, and **Back Right** keeps its back and right sides in place so it grows toward the front and left. The sides are the part's own, so a part you have turned grows along its own sides. The bottom always stays where it is, so a taller part grows upward. It applies when **Width** or **Depth** changes, whether you type it or a formula changes it; other settings don't use it. It is the last row in the panel
 
 ## Tips
 

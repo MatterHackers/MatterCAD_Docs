@@ -25,7 +25,7 @@ The path editor in the Properties panel shows the path with its points and their
 - **Double-click** a segment to add a point there
 - **Delete** removes the selected points
 - **Ctrl + scroll** (⌘ + scroll on Mac) zooms; **Ctrl + drag** (⌘ + drag) pans. **Reset Zoom** (the home button) fits the path again
-- Type an exact position, or a formula such as `=height`, in the **X** and **Y** boxes to place the selected point
+- Type an exact position, or a formula such as `=height`, in the **X** and **Y** boxes to place the selected point (see [Points That Follow a Formula](#points-that-follow-a-formula))
 
 The four point buttons set how the selected point's handles behave:
 
@@ -35,6 +35,19 @@ The four point buttons set how the selected point's handles behave:
 - **Free** - handles move independently
 
 **Mirror** turns on symmetry: edits are mirrored across the vertical line x = 0, so you only draw half of a symmetric shape. The pop-out button on the editor's toolbar moves the editor into its own window, for more room.
+
+## Points That Follow a Formula
+
+A corner or curve point's **X** and **Y** can each be a formula instead of a number, so the point moves when the value it reads changes:
+
+1. Click the point in the path editor to select it
+2. In the **X** or **Y** box on the editor's toolbar, type a formula starting with `=`, for example `=width` for a [Variable Sheet](../workspace/variable-sheet.md) cell, or `=Base.Width` for another part's setting (see [Object References](../workspace/object-references.md)), and press Enter
+
+The point moves to the formula's value, and moves again whenever the value changes. Each box is separate: one axis can follow a formula while you still drag the point along the other. A dragged point doesn't move along an axis a formula sets. To hand an axis back to dragging, type a plain number in its box.
+
+If a formula names something that isn't there, an orange **!** beside the box says what is wrong.
+
+When the [AI](../getting-started/ai-tab.md) draws a path for you, it can give its corner and curve points formulas too. A circular arc it draws takes numbers only: its ends, center and radius are fixed when the arc is drawn, so draw a point that must follow a formula with a line or a curve.
 
 ## Open and Closed Paths
 

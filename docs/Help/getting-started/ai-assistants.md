@@ -1,11 +1,13 @@
 ---
 title: Using AI Assistants
 parent: "Getting Started"
-nav_order: 6
+nav_order: 7
 ---
 # Using AI Assistants with MatterCAD
 
 AI chat tools such as Claude Code, Codex and Claude Desktop can work on your designs in MatterCAD. Ask one to "add four 3 mm holes in the corners" or "make the lid 2 mm thicker", and it reads the design, makes the change, and checks the result. It works on the design in front unless you name another open design by its tab name (see [Which Design the AI Works On](#which-design-the-ai-works-on)).
+
+To chat with an AI inside MatterCAD instead, with nothing to set up outside it, use the side panel's **AI** tab: see [The AI Tab](ai-tab.md).
 
 When the design is in front, you watch every change happen live in the 3D view. Each AI change is a single undo step in that design's undo history, with a name that starts with "AI:", for example "AI: add mounting holes", so one Undo takes it back.
 
@@ -140,7 +142,7 @@ The AI can work on any design you have open, not only the one in front.
 - **Give each design its own name.** When several open tabs share a name, such as unsaved **New Design** tabs, MatterCAD won't guess: the AI is shown each of them, with where it is kept, so it can ask you which one you mean. Saving each design under its own name avoids that.
 - **A closed design is gone for the AI.** If you close a design the AI was working on, it is told the design was closed.
 - **Each AI tool keeps its own place.** A connected AI tool that keeps a session with MatterCAD remembers the design it last worked on, so its work doesn't move where another tool's changes go. Tools that don't keep a session share one place.
-- **The AI tab inside MatterCAD is separate.** The AI chat in the side panel's **AI** tab works only on its own design, whichever tab is in front.
+- **The AI tab inside MatterCAD is separate.** The AI chat in the side panel's **AI** tab works only on its own design, whichever tab is in front. See [The AI Tab](ai-tab.md).
 
 ## Undo and Safety
 
@@ -180,6 +182,7 @@ MatterCAD hasn't heard from your AI tool yet.
 
 ## Related Topics
 
+- [The AI Tab](ai-tab.md) - Chat with an AI inside MatterCAD
 - [Design Notes](../workspace/design-notes.md)
 - [Undo and Redo](../workspace/undo-redo.md)
 - [Saving and Exporting](saving-and-exporting.md)

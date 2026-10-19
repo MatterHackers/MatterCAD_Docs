@@ -108,7 +108,9 @@ An expression can also read a value straight off another object rather than out 
 
 ### When a Size Changes
 
-When a shape's size changes - from a sheet or by typing a new value - it keeps its **bottom** where it was and stays **centered** in X and Y. A taller cube grows upward from the same floor; a wider one grows out evenly on both sides.
+When a shape's size changes - from a sheet or by typing a new value - it keeps its **bottom** where it was and, with **Grow From** at its default **Center**, stays **centered** in X and Y. A taller cube grows upward from the same floor; a wider one grows out evenly on both sides.
+
+**Tip:** a part driven by a formula grows from its **Grow From** point, the last row in a shape's panel (see [Primitives](../primitives/index.md#where-a-shape-sits)). Set it to **Front Left** or **Back Right** and a part that gets wider or deeper keeps those sides where they are, so a part pressed against another stays against it. The sides are the part's own, so this holds for a part you have turned.
 
 So to place parts that follow a sheet, measure from the bottom, not the middle:
 

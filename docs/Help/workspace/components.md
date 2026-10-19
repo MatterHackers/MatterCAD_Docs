@@ -33,6 +33,15 @@ A component has two modes, switched by the **Finalized** setting:
 
 **Edit Component** puts a finalized component back into editing mode. It is offered in the Modify menu for a finalized component sitting at the top level of the scene.
 
+### Adding a Part to a Component
+
+To put another part into a component you have already made, use either way:
+
+- **Paste it in.** Select the part and choose **Cut** (to move it) or **Copy** (to put in a copy) from its right-click menu. Then right-click the component and choose **Paste Into**. The part goes inside the component, standing where it was.
+- **Open the component and add it.** If the component is finalized, choose **Edit Component** from its right-click **Modify** menu first. Double-click the component (or right-click it and choose **Edit Children**), add the part as usual, for example from the favorites bar or with **Paste**, then click **‹ Back** at the top of the 3D view. The part is now inside the component.
+
+A part you add shows no setting on a finalized component until you add it to **Surfaced Editors** (below).
+
 ### Choosing What a Component Shows
 
 The **Surfaced Editors** list decides which settings of the parts inside appear on the component. Each entry in the list shows one setting of one part, or all of one part's settings.
@@ -55,7 +64,7 @@ An entry finds its part by name, going down from the component, and names that d
 
 #### Asking the AI
 
-You can ask the [AI](../getting-started/ai-assistants.md) to do this for you, for example "show the cube's Depth on the component". It adds the entry to **Surfaced Editors**, and the row shows once the component is finalized. If the entry would show nothing, or the way to the part is ambiguous because two parts share a name or unnamed groups sit on the way, the change is refused and the AI is told why, so it can rename the parts or ask you. Naming your parts avoids this.
+You can ask the [AI](../getting-started/ai-tab.md) to do this for you, for example "show the cube's Depth on the component". It adds the entry to **Surfaced Editors**, and the row shows once the component is finalized. If the entry would show nothing, or the way to the part is ambiguous because two parts share a name or unnamed groups sit on the way, the change is refused and the AI is told why, so it can rename the parts or ask you. Naming your parts avoids this.
 
 ### Example: Parts That Follow Each Other
 

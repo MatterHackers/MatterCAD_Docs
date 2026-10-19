@@ -17,6 +17,7 @@ A four-sided pyramid shape with an adjustable rectangular base and height.
 - **Width** - Base size along the X axis (default: 20mm)
 - **Depth** - Base size along the Y axis (default: 20mm)
 - **Height** - How tall the pyramid is from base to apex (default: 20mm)
+- **Grow From** - Which side of the part stays where it is when you change its size: **Center** (the default) grows it the same amount on every side, **Front Left** keeps its front and left sides in place so it grows toward the back and right, and **Back Right** keeps its back and right sides in place so it grows toward the front and left. The sides are the part's own, so a part you have turned grows along its own sides. The bottom always stays where it is, so a taller part grows upward. It applies when **Width** or **Depth** changes, whether you type it or a formula changes it; other settings don't use it. It is the last row in the panel
 
 ## Tips
 

@@ -177,6 +177,7 @@ When the [AI](../getting-started/ai-assistants.md) writes a formula into a numbe
 - Build relationships instead of repeating numbers: set a hole's diameter to `=outer_diameter - 4` so it always leaves 2 mm walls.
 - Use a [Variable Sheet](variable-sheet.md) when more than one object needs the same value.
 - Expressions re-evaluate on their own when anything they reference changes - there is nothing to refresh by hand.
+- A shape whose size comes from a formula grows from its **Grow From** point, the last row in its panel. Set it to **Front Left** or **Back Right** to keep those sides in place as the formula's value changes, for example a part that must stay against a wall (see [Primitives](../primitives/index.md#where-a-shape-sits)).
 
 ## Related
 

@@ -24,7 +24,7 @@ On a Mac, press ⌘ (Command) wherever these pages say Ctrl.
 - **Favorites bar** - The column of shapes down the left side. It starts with the 3D primitives (Cube, Cylinder, Sphere and the rest); the heart on an item in the library adds it here or takes it off. Double-click a shape to add it to the bed, or drag it onto the bed where you want it.
 - **3D view** - The middle of the window, where your design sits on the bed.
 - **Camera controls** - The cube in the top-right corner of the 3D view and the buttons around and under it. See [Camera Controls](../workspace/camera-controls.md).
-- **Side panel** - On the right, with a **Design** tab and an **AI** tab. The **Design** tab shows the **Design tree** (every part in your design) above the **Properties panel** (the settings of the selected part).
+- **Side panel** - On the right, with a **Design** tab and an **AI** tab ([The AI Tab](ai-tab.md)). The **Design** tab shows the **Design tree** (every part in your design) above the **Properties panel** (the settings of the selected part).
 
 ## Topics
 
@@ -33,6 +33,7 @@ On a Mac, press ⌘ (Command) wherever these pages say Ctrl.
 - [Adding Existing Objects](adding-existing-objects.md) - Bring in files from your computer or the library
 - [Editing Objects](editing-objects.md) - Move, turn and resize parts in the 3D view, and change their settings
 - [Saving and Exporting](saving-and-exporting.md) - Save your work, recover unsaved work, and export to other file formats
+- [The AI Tab](ai-tab.md) - Ask the AI to build, change or explain a design, right in the side panel
 - [Using AI Assistants](ai-assistants.md) - Let Claude Code, Codex or Claude Desktop read and edit your designs
 
 ## Quick Start

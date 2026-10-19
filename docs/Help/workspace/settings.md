@@ -56,7 +56,7 @@ The window reloads after each change. You can also change the theme without open
 
 ## AI Providers
 
-This section sets up MatterCAD's own AI chat, in the **AI** tab of the side panel. It is in the desktop app only.
+This section sets up MatterCAD's own AI chat, in the **AI** tab of the side panel (see [The AI Tab](../getting-started/ai-tab.md)). It is in the desktop app only.
 
 At the top it says: "Your API keys are kept in MatterCAD's settings on this computer, and each is sent only to its own provider."
 

@@ -33,6 +33,12 @@ In the order the 3D Primitives folder lists them:
 - [3D Curve](../operations/path/curve-3d.md) - A curve through points in space, for Sweep and other operations
 
 
+## Where a Shape Sits
+
+A new shape stands on the bed: its bottom is at Z 0. A [Translate](../operations/transform/translate.md) moves the whole shape by its **Translation**, so for a shape centered at X 0, Y 0, the Translation's X and Y say where the shape's center goes and its Z says how high its bottom sits.
+
+When you change a shape's size, its bottom stays where it is and, by default, its center stays put in X and Y. On the Cube, Hole, Pyramid, Wedge, Half Wedge, Cylinder, Cone, Half Cylinder, Torus, Tube, Sphere and Half Sphere, the **Grow From** setting (the last row in the panel) can keep the shape's front-left or back-right sides in place instead.
+
 ## Other Shapes
 
 These come from other places:
