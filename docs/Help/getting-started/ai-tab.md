@@ -45,7 +45,7 @@ You can add pictures and PDFs to a message, for example a photo of a part you wa
 - Paste a picture into the message box with Ctrl+V
 - Drag files onto the AI tab
 
-The chat takes pictures (.png, .jpg, .jpeg, .webp and .gif) and PDFs. Other files are skipped, and the chat says which. Pictures are made smaller to fit, at most 1568 pixels on their long side. A PDF can be up to 22 MB and 100 pages, and can't be password protected.
+The chat takes pictures (.png, .jpg, .jpeg, .webp and .gif) and PDFs. If you drag in several files and some of them can be attached, the others are skipped and the chat says which. If none of the files you drag in can be attached, the AI tab leaves them alone and MatterCAD opens them as it would anywhere else, so an STL dropped there is added to your design. Pictures are made smaller to fit, at most 1568 pixels on their long side. A PDF can be up to 22 MB and 100 pages, and can't be password protected.
 
 Each file waits above the message box until you send. Click **×** on one to take it off. The AI can also place an attached picture in your design, to trace or build over.
 
@@ -57,7 +57,7 @@ Click the microphone button ("Speak your message") and talk. While it records, a
 - Click **Send** while recording to stop and send in one step
 - Press Escape to throw the recording away
 
-A recording stops on its own after 5 minutes. Voice needs an OpenAI API key under your own keys ("Add your OpenAI API key in Settings to use voice."). The microphone button is hidden where MatterCAD can't record.
+A recording stops on its own after 5 minutes. With your own API keys, voice needs an OpenAI API key ("Add your OpenAI API key in Settings to use voice."). On the MatterHackers AI service, voice uses the service's own speech-to-text when the service offers it. The microphone button is hidden where MatterCAD can't record.
 
 ## The Context Meter
 

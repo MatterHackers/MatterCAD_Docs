@@ -52,7 +52,7 @@ If the object being sliced has several visible parts, each is sliced and the res
 - A tilted section is direct: turn the plane, do not rotate the object
 - **Apply** turns the result into an editable [Custom Path](../../2d-paths/custom-path.md) on the same plane, which you can then reshape point by point
 - Two slices on two planes give you two sections you can [Loft](../path/loft.md) between, which is a quick way to simplify an organic shape
-- Slice to Path is not [Plane Cut](plane-cut.md). Plane Cut keeps the solid and throws away what is on the other side of the plane; Slice to Path throws away the solid and keeps the outline
+- Slice to Path is not [Plane Cut](plane-cut.md). Plane Cut keeps the solid and throws away what is on the other side of the plane; Slice to Path hides the solid, keeping it underneath, and shows only the outline
 
 ## Related
 
