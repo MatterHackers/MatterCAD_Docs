@@ -167,6 +167,10 @@ MatterCAD never guesses at a value it could not work out:
 - Cells that depend on each other in a loop also resolve to `0` rather than looping forever.
 - A formula that cannot be parsed at all is kept as the text you typed, so nothing is lost and you can correct it in place.
 
+### Formulas the AI Writes
+
+When the [AI](../getting-started/ai-assistants.md) writes a formula into a number, whole-number or X, Y and Z setting, MatterCAD checks it first. If the formula names a cell, object or setting that isn't there, or isn't a complete formula (such as `=W*`), the change is refused: nothing in your design changes, and the AI is told what is wrong and which names exist, so it can fix the formula. A formula that is written correctly but can't get its value for another reason, such as a missing wire in a [node graph](node-graphs.md), is kept and shows the panel's usual warning, the same as one you type.
+
 ## Tips
 
 - Expressions work in any parameter the properties panel shows a value box for - dimensions, counts, angles, offsets and text.

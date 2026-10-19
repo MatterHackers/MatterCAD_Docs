@@ -84,14 +84,18 @@ After MatterCAD updates to a new version, it opens the **Help** tab on [What's N
 
 ## Crash Reports
 
-On Windows and Mac, MatterCAD asks once, when it starts, **Help improve MatterCAD?**: "MatterCAD can send a report when it crashes, so the crash can be fixed." It goes on: "A report contains the error, a stack trace and application state. Your computer's user name, your AI keys and your GitHub token are taken out; other text, such as file names, is sent as it is. It never includes your design files unless you approve that for a specific report." Click **Allow** or **No thanks**. You can change your answer at any time with **Send Crash Reports** in [Settings](settings.md#options).
+On Windows and Mac, MatterCAD asks once, when it starts, **Help improve MatterCAD?**: "MatterCAD can send a report when it crashes, so the crash can be fixed." It goes on: "A report contains the error, a stack trace, application state and the recent debug log. Your computer's user name, your AI keys and your GitHub token are taken out; other text, such as file names, is sent as it is. It never includes your design files unless you approve that for a specific report." Click **Allow** or **No thanks**. You can change your answer at any time with **Send Crash Reports** in [Settings](settings.md#options).
 
-If you allowed it and MatterCAD crashes, the next time it starts it asks **Send this crash report?** and shows you the error and exactly what would be sent.
+If you allowed it and MatterCAD crashes, the next time it starts it asks **Send this crash report?** and shows you the error and exactly what would be sent. When MatterCAD has a debug log, the details go on: "The recent debug log is sent with this report, with the same things taken out. Its last lines:" followed by the end of the log as it would be sent, and "The log files are at:" followed by where they are on your computer, so you can open them and read the whole log.
 
 - Tick **Include the design file that was open** only if you want to send that design too. It starts unticked, and it is only there when the file still exists.
 - Click **Send** to send the report, or **Don't send** to delete it.
 
 Nothing is sent without your answer. If the same crash happened several times, its reports are offered once, together. At most three different crashes are offered each time MatterCAD starts. Before a report is sent, your computer's user name is replaced with "[user]", and your AI keys, your AI assistant access token and your GitHub token are taken out. Other text in the report, such as the names of your files, is sent as it is, so read what **Send this crash report?** shows before you click **Send**.
+
+When you click **Send**, MatterCAD's two log files, `debug_log.previous.txt` and `debug_log.txt`, go with the report. MatterCAD takes your user name and those keys and tokens out of every line as it writes it to the log, and again before sending.
+
+MatterCAD for Linux doesn't send crash reports yet. It doesn't ask the question, and the reports it writes after a crash stay on your computer.
 
 ## Recover Unsaved Work
 
