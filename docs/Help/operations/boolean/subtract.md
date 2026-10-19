@@ -37,6 +37,8 @@ Subtract works on solids and on 2D paths. It looks at what you gave it and does 
 - To cut a through-hole, make sure the cutting object passes completely through the base
 - For a simple hole, the [Hole](../../primitives/hole.md) primitive is already set up to subtract
 - The cutting objects stay in the design tree, so you can move or resize them and the cut updates
+- With no shape left to cut, because you deleted the cutting shapes or unticked them all in **Part(s) to Subtract**, the Subtract shows its part whole
+- Deleted a cutting shape by mistake? **Undo** brings it back, still cutting
 - If a result looks wrong, check that the source objects are watertight. **Repair Winding Order** fixes inside-out shells; [Repair](../mesh/repair.md) fixes broader damage in imported models
 
 ## Related

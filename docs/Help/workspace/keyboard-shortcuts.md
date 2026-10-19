@@ -7,6 +7,8 @@ nav_order: 5
 
 The **Keys** and **Mouse** tables below are the same list as **Help › Keys** and **Help › Mouse** in MatterCAD itself (press F1 and find them in the list of help pages). In the app, those pages show Mac keys on a Mac.
 
+You don't have to learn the keys from this page. A menu row with a key shows it at its right, for example **Save As** in a part's right-click menu. A button with a key names it in its tooltip after the button's name, for example "Undo - Move (Ctrl+Z)", "Group (G)" or "Reset View (W)".
+
 Keys that belong to one tool are on that tool's page: the [sheet editor](sheet-editing.md), the [path editor](../2d-paths/custom-path.md), [3D Curve](../operations/path/curve-3d.md) points and text fields.
 
 On a Mac, Ctrl is ⌘ (Command) and Shift is ⇧.
@@ -23,6 +25,7 @@ On a Mac, Ctrl is ⌘ (Command) and Shift is ⇧.
 | ctrl + - | ⌘- | Zoom out |
 | w | w | Reset View (the Home button) |
 | z | z | Zoom to Selection |
+| x | x | Section View (turn on and off) |
 
 ### Selection
 
@@ -31,6 +34,7 @@ On a Mac, Ctrl is ⌘ (Command) and Shift is ⇧.
 | ctrl + a | ⌘A | Select all |
 | space bar | space bar | Clear the selection |
 | esc | esc | Cancel the drag in progress (a dragged part goes back where it was) |
+| esc | esc | Turn off Section View |
 | ↑ ↓ | ↑ ↓ | In the Design tree: select the row above or below |
 | → | → | In the Design tree: open the selected row |
 | ← | ← | In the Design tree: close the row, or go to the row it is in |
@@ -108,3 +112,4 @@ On a Mac, Ctrl is ⌘ (Command) and Shift is ⇧.
 - [Mouse Controls](mouse-controls.md) - Every mouse control, with the view modes and touch
 - [Viewport Navigation](../getting-started/viewport-navigation.md) - How to move around the 3D view
 - [Selection](selection.md) - How selecting works
+- [Section View](section-view.md) - What X and Escape do while the view is cut open

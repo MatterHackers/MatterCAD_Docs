@@ -13,7 +13,7 @@ On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
 ## The ☰ MatterCAD Menu
 
-Click **☰ MatterCAD** at the left end of the tabs. The items, from top to bottom:
+Click **☰ MatterCAD** at the left end of the tabs. A row with a key shows it at its right, as **Open System File** shows Ctrl+O. The items, from top to bottom:
 
 | Item | What it does |
 |------|--------------|
@@ -53,7 +53,7 @@ The toolbar runs across the top of each design tab. When the window is too narro
 - **My Tools**, the operation tools you saved yourself, when you have any.
 - **Tools**, at the end (below).
 
-Hover over any button to see its name. A greyed-out button can't be used on what is selected; hover over it to see what it needs. While you hover, the status bar at the bottom of the window shows a hint for the button, such as its shortcut.
+Hover over any button to see its name, with its key when it has one, for example "Group (G)". A greyed-out button can't be used on what is selected; hover over it to see what it needs. While you hover, the status bar at the bottom of the window shows a hint for the button, such as its shortcut.
 
 ### Add to Bed
 

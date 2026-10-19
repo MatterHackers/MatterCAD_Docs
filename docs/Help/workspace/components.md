@@ -37,7 +37,7 @@ A component has two modes, switched by the **Finalized** setting:
 
 To put another part into a component you have already made, use either way:
 
-- **Paste it in.** Select the part and choose **Cut** (to move it) or **Copy** (to put in a copy) from its right-click menu. Then right-click the component and choose **Paste Into**. The part goes inside the component, standing where it was.
+- **Paste it in.** Select the part and choose **Cut** (to move it) or **Copy** (to put in a copy) from its right-click menu. Then right-click the component and choose **Paste Into**. The part goes inside the component, standing where it was. On a finalized component **Paste Into** is greyed out, and hovering over it says "The part would go inside Component 'Fan Mount', which is finalized. Set its Finalized to false first", with your component's name. Choose **Edit Component** first.
 - **Open the component and add it.** If the component is finalized, choose **Edit Component** from its right-click **Modify** menu first. Double-click the component (or right-click it and choose **Edit Children**), add the part as usual, for example from the favorites bar or with **Paste**, then click **‹ Back** at the top of the 3D view. The part is now inside the component.
 
 A part you add shows no setting on a finalized component until you add it to **Surfaced Editors** (below).
@@ -51,12 +51,23 @@ The **Surfaced Editors** list decides which settings of the parts inside appear 
 3. Click the entry's **Edit** button. The **Editor Selector** window opens
 4. In the tree, click the part whose setting you want to show
 5. Under **Properties**, click the setting, for example **Width**. Click **All** instead to show every setting of that part, in a section titled with the part's name
-6. Click **Save**. The box at the top of the window shows what the entry will say, such as `"Arm".Width`, and the entry takes that text
-7. Add an entry for each setting you want, then turn on **Finalized**
+6. To give the row a name of your own, type it in the **Label** box. While the box is empty, it shows in grey the name the row will read
+7. Click **Save**. The entry in the list shows the row's name, for example **Width**. Hover over the name to see what the entry points to, such as `"Arm".Width`
+8. Add an entry for each setting you want, then turn on **Finalized**
 
 The surfaced settings appear in the Properties panel once **Finalized** is on. While you are editing the component, the panel shows the **Surfaced Editors** list instead. To take a setting off the component, click its entry's **Delete** button while you are editing the component. An entry that no longer finds anything, for example after you delete the part it named, shows no row.
 
-To show a cell of the component's [Variable Sheet](variable-sheet.md) instead of a part's setting, type `!` and the cell's name or address in the box at the top of the Editor Selector, for example `!wall_thickness` or `!B2`, and click **Save**. The row is labelled with the cell's name.
+To show a cell of the component's [Variable Sheet](variable-sheet.md) instead of a part's setting, type `!` and the cell's name or address in the box at the top of the Editor Selector, for example `!wall_thickness` or `!B2`, and click **Save**. The row reads the cell's name, with underscores shown as spaces.
+
+#### How Rows Are Named
+
+A finished component's rows read clearly without your help:
+
+- A row with a **Label** reads the label as you typed it.
+- A setting reads its own name, such as **Width**. When two rows would read the same, the part's name goes in front, such as **Base Width** and **Arm Width**. If the parts have the same name too, the names of the groups they sit in go in front as well, and if even those match, the rows are numbered, such as **Base Width 1** and **Base Width 2**.
+- An **All** entry shows a section titled with the part's name.
+
+To rename a row, click its entry's **Edit** button, type the name in the **Label** box, and click **Save**. To go back to the name MatterCAD gives it, clear the box and click **Save**. The entry and its label change together, in one undo step. A row's name is only what the panel shows: formulas still read the setting by its own name.
 
 #### Name Your Parts
 

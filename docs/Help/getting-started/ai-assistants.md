@@ -148,7 +148,17 @@ The AI can work on any design you have open, not only the one in front.
 
 - **One Undo takes back one AI change.** However many steps the AI took to make a change, they are one "AI: ..." step in that design's undo history. If any part of a change fails, the AI's whole change is undone and your design is left as it was.
 - **The AI can reach every open design.** To be sure the AI can't change a design, close it. Short of that, don't name it to the AI and keep it out of the front. When it isn't clear which design you mean, MatterCAD stops the change and tells the AI, so it can ask you before it changes anything.
-- **Everything stays on your computer.** MatterCAD only accepts connections from your own computer, and only from tools that have your access key. Nothing is sent anywhere.
+- **Everything stays on your computer.** MatterCAD only accepts connections from your own computer, and only from tools that have your access key. MatterCAD sends nothing anywhere for these tools. The record of their work is saved in the design's file, so anyone you share the file with can read it; use **Clear chat** in the **AI** tab first if you'd rather they didn't.
+
+## The AI's Work Is Saved With the Design
+
+What an outside AI tool does on a design is kept with that design's [AI tab](ai-tab.md) chat and saved in its `.mcx` file: each tool it called, what it asked for, the answer it got, and the changes it made. The access key is never kept. Up to 50 of the newest calls are kept.
+
+- **You can see it.** Open the design's **AI** tab. The tool's work shows as one collapsed group under the name the tool gives itself, for example "Claude Code (outside assistant): 3 tool calls, changed add mounting holes". Click the group to see each call.
+- **Any AI can pick up.** The next time you chat in that design's **AI** tab, the AI is given a short summary of what the outside tool did, so it can carry on. Because the record is saved in the file, this also works after you save, close and reopen the design.
+- **Clear chat removes it.** **Clear chat** in the **AI** tab deletes the record along with the chat.
+
+A call that changed the design marks it as having unsaved changes. A call that only read the design is saved the next time you save.
 
 ## The Feedback Log
 

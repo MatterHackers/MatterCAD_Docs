@@ -68,6 +68,8 @@ The button beside **Show Bed** shows a picture of the style in use. Click it to 
 
 Under the styles, **Show part colors** turns the parts' own colors on and off. When it is off, every part is drawn in one neutral gray. This setting applies to every open design.
 
+The last row, **Section View** (key **X**), cuts the design open so you can see inside it. See [Section View](section-view.md).
+
 Each design tab keeps its own style. A new design starts with the style you chose last.
 
 ### The Snap Button
@@ -107,6 +109,7 @@ When the window is very narrow, the cube is left out and the buttons stand in a 
 ## Related
 
 - [Viewport Navigation](../getting-started/viewport-navigation.md) - Turn, move and zoom the view with the mouse, keys or touch
+- [Section View](section-view.md) - Cut the design open to see inside
 - [Mouse Controls](mouse-controls.md) - Every mouse control
 - [Keyboard Shortcuts](keyboard-shortcuts.md) - Every shortcut
 - [Menus and Toolbar](menus-and-toolbar.md) - The application menu and the toolbar above the 3D view

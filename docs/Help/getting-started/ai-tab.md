@@ -69,6 +69,12 @@ Click the meter for details: this message's token counts and model calls, and th
 
 **Clear chat**, at the top right of the tab, deletes this design's chat. It asks first ("Clear this design's AI chat? This can't be undone."). Click **Clear chat** to delete it, or **No** to keep it. Your design's parts are not changed.
 
+## Work From Outside AI Tools
+
+When an AI tool outside MatterCAD, such as Claude Code, works on the design (see [Using AI Assistants](ai-assistants.md)), its work shows in the chat as one group under the name the tool gives itself, closed to a one-line summary such as "Claude Code (outside assistant): 3 tool calls, changed add mounting holes". Click the group to open it and see each call, then click a call to see what it asked for and the answer it got.
+
+The next message you send gives the AI a short summary of that work, with the design's notes, so it can carry on where the outside tool stopped. **Clear chat** deletes this record too.
+
 ## The Chat Is Saved With the Design
 
 The chat is saved in the design's `.mcx` file. Open the design again later, click **AI**, and the chat is there, so you or the AI can pick up where you left off. Anyone you share the file with can read the chat too, so clear it first if you'd rather they didn't.
