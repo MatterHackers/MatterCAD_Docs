@@ -9,7 +9,7 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 
 ## Your Designs and Files
 
-- **Save** keeps the design in your online library, not in a file on your computer. **Save As** asks only for a name: the copy goes in the folder you opened the design from when you may add to it, otherwise in **My Designs**. See [Saving on the Web](saving.md).
+- **Save** keeps the design in your online library, not in a file on your computer. **Save As** lists only **My Designs** and its folders: choose the folder and the name for the copy there. It has no **Computer** folder. See [Saving on the Web](saving.md#save-as).
 - **Export** and the page's **Download** button are how you get a file on your computer. Your browser downloads it.
 - **Add to Bed** has no **Computer** folder. To bring in a file from your computer, use **Add System File to Bed** (your browser asks you to pick the file) or drag the file onto the 3D view. See [Adding Parts on the Web](adding-parts.md).
 - Unsaved changes are kept as a copy in your browser, which holds designs up to about 3.5 MB. MatterCAD on your computer offers to recover unsaved work when it starts instead ([Saving and Exporting](../getting-started/saving-and-exporting.md#recover-unsaved-work)).

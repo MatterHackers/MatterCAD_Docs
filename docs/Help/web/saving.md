@@ -12,27 +12,40 @@ On the website, **Save** keeps your design in your online library, the same libr
 Click **Save** in the toolbar, or press Ctrl+S (⌘S on a Mac). The button reads **Save •** while the design has changes that are not saved.
 
 - **A design you can change** is saved over its own copy in your library.
-- **A design you can't save over** (one that isn't yours, or one that isn't an MCX design, such as an STL) is never written over. Save asks for a name instead and saves your own copy as a new MCX design.
-- **A new design** asks for a name the first time you save it.
+- **A design you can't save over** (one that isn't yours, or one that isn't an MCX design, such as an STL) is never written over. Save opens **Save As** instead, to save your own copy as a new MCX design.
+- **A new design** asks where to save it the first time you save it.
 
-When Save asks for a name, the **Save As** box opens with the design's name filled in:
+When Save can't save in place, the [Save As](#save-as) box opens with the design's name filled in. Choose a folder and a name there. From then on **Save** saves that new design.
 
-1. Type a name in **Name**.
-2. Click **Save**.
-
-The design is saved as a new design. Where it goes:
-
-- **A new design you started with New Design on the Library page** goes in that folder.
-- **Any other design** goes in the folder you opened it from on the website's **Library** page, when you may add designs to that folder.
-- **Otherwise it goes in My Designs.** That is where it goes when the design came from **Shared with Me** or **Purchased**, from a locked or read-only folder, or when you opened its page from a direct link rather than from the **Library** page.
-
-From then on **Save** saves that new design. The page's address, title and **Download** button change to the saved design.
-
-If the website refuses to save over a design, the **Save As** box opens with the reason, for example "You can't save over this design. Enter a name to save your own copy." Type a name to save your own copy.
+If the website refuses to save over a design, the **Save As** box opens with the reason above the list: "You can't save over this design. Choose a folder and a name to save your own copy." When your sign-in may have expired, the line starts "Your sign-in has expired, or you can't save over this design."
 
 ## Save As
 
-Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (⌘⇧S on a Mac). The **Save As** box opens as above. Type a new name and click **Save** to save a copy. The copy goes where [Save](#save) puts a new design: the folder you opened the design from when you may add to it, otherwise **My Designs**.
+Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (⌘⇧S on a Mac). The **Save As** box shows your online library, so you choose the folder the copy goes in:
+
+1. Pick a folder. The box opens in the folder the design is in. For a new design, it opens in the folder you clicked **New Design** in on the **Library** page, or, after **New Design** in the MatterCAD menu, in the folder of the design you had open. When the design isn't in your own library (it came from **Shared with Me** or **Purchased**), the box opens in **My Designs**.
+2. Type a name under **Design Name**. Clicking a design in the list puts its name there.
+3. Click **Save**.
+
+In the box:
+
+- **The path along the top** shows where you are. Click a folder in it to go back to that folder. Double-click a folder in the list to open it. Double-clicking a design is the same as clicking it and then **Save**.
+- **Create Folder** makes a new folder in the folder you are in. Type its name under **Folder Name** and click **Create**.
+- **Only My Designs is listed.** Designs can't be saved in **Shared with Me** or **Purchased**, so they aren't there. While no folder that can take a design is open, the box says "Please select a writable folder" and **Save** can't be clicked.
+- **There is no Computer folder.** A web page can't save to your computer: to get a file there, use [Export or Download](#export-and-download).
+
+### Saving over a design
+
+When the folder already has a design with that name, MatterCAD asks first, in a box titled **Confirm Save As**. It names the design and asks "Do you want to replace it?"
+
+- **Replace** - Saves your design over that one.
+- **Cancel** - Goes back to the **Save As** box to choose another name or folder.
+
+You can replace only your own designs. If the design there isn't yours, or is locked, the **Save As** box opens again, says you can't replace that design, and asks you to "Choose another name or folder."
+
+### After Save As
+
+The page now shows the design you saved: its address, title and **Download** button change to it, and the address names the folder it is in. **Save** saves that design from then on.
 
 ## Export and Download
 

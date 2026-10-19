@@ -21,11 +21,11 @@ If the design you have open has changes that are not saved, MatterCAD asks first
 - **Discard Changes** - Starts the new design without saving your changes.
 - **Cancel** - Keeps the design you have open, with its changes.
 
-The new design is called "New Design" and the page's title changes to match. The title bar's **Download** button is hidden until you save it, because nothing is added to your library until then. The first **Save** asks for a name and saves the design where the design you had open would have saved a copy: the folder you opened it from on the **Library** page when you may add to it, otherwise **My Designs** (see [Saving on the Web](saving.md)).
+The new design is called "New Design" and the page's title changes to match. The title bar's **Download** button is hidden until you save it, because nothing is added to your library until then. The first **Save** opens **Save As** in the folder of the design you had open (or **My Designs** when that design wasn't in your own library), where you choose the folder and the name ([Saving on the Web](saving.md#save-as)).
 
 To go back to the design you had open before, use your browser's Back button. It opens that design as it was last saved.
 
-You can also start a new design from the website's **Library** page: open a folder and click **New Design**. MatterCAD opens on an empty bed, ready to edit, and the first **Save** puts the design in that folder. If you press **Done** before you ever save it, you go back to the folder.
+You can also start a new design from the website's **Library** page: open a folder and click **New Design**. MatterCAD opens on an empty bed, ready to edit, and the first **Save** opens **Save As** in that folder. If you press **Done** before you ever save it, you go back to the folder.
 
 ## Interface Tour
 

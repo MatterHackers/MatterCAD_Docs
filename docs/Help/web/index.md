@@ -66,7 +66,7 @@ Press **Done** in the title bar. If every change is saved, the editor slides awa
 
 If you have changes that are not saved, MatterCAD asks first, in a box titled **Save Changes?**: "Save your changes before you stop editing?"
 
-- **Save Changes** - Saves the design, then goes back to the preview once the save has finished. If the design can't be saved over, MatterCAD asks for a name and saves your own copy first ([Saving on the Web](saving.md)).
+- **Save Changes** - Saves the design, then goes back to the preview once the save has finished. If the design can't be saved over, **Save As** opens first, so you choose a folder and a name for your own copy ([Saving on the Web](saving.md)).
 - **Discard Changes** - Throws your changes away, puts back the last saved version, and goes back to the preview.
 - **Cancel** - Stays in the editor with your changes.
 
@@ -77,7 +77,7 @@ While you have changes that are not saved, your browser asks before you leave th
 ## Topics
 
 - [The MatterCAD Menu](mattercad-menu.md) - New Design, the Interface Tour, Help and Settings on the website
-- [Saving on the Web](saving.md) - Save, Save As, Export, and getting back unsaved changes
+- [Saving on the Web](saving.md) - Save, Save As to a folder of your choice, Export, and getting back unsaved changes
 - [Adding Parts on the Web](adding-parts.md) - Shapes, sample parts and the designs in your own library
 - [Using MatterCAD on a Phone](phone.md) - The phone layout, the bottom sheet and touch gestures
 - [Web and Desktop Differences](web-and-desktop.md) - What works differently in a browser
