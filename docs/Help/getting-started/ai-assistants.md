@@ -5,9 +5,9 @@ nav_order: 6
 ---
 # Using AI Assistants with MatterCAD
 
-AI chat tools such as Claude Code, Codex and Claude Desktop can work on your designs in MatterCAD. Ask one to "add four 3 mm holes in the corners" or "make the lid 2 mm thicker", and it reads the design in the tab you're looking at, makes the change, and checks the result.
+AI chat tools such as Claude Code, Codex and Claude Desktop can work on your designs in MatterCAD. Ask one to "add four 3 mm holes in the corners" or "make the lid 2 mm thicker", and it reads the design, makes the change, and checks the result. It works on the design in front unless you name another open design by its tab name (see [Which Design the AI Works On](#which-design-the-ai-works-on)).
 
-You watch every change happen live in the 3D view. Each AI change is a single undo step with a name that starts with "AI:", for example "AI: add mounting holes", so one Undo takes it back.
+When the design is in front, you watch every change happen live in the 3D view. Each AI change is a single undo step in that design's undo history, with a name that starts with "AI:", for example "AI: add mounting holes", so one Undo takes it back.
 
 <!-- IMAGE_NEEDED: Screenshot of MatterCAD with an AI change just applied, the Undo history showing an "AI: add mounting holes" step -->
 
@@ -32,7 +32,7 @@ While access is on, the status bar item shows what is happening:
 
 - **AI Ready** - access is on, and no AI tool has talked to MatterCAD in the last minute.
 - **AI Connected** - an AI tool has talked to MatterCAD in the last minute.
-- **AI Editing** - an AI tool is changing your design right now. You can keep working while it does.
+- **AI Editing** - an AI tool is changing a design right now. You can keep working while it does.
 
 If the [feedback log](#the-feedback-log) is on, the item adds "(logging)", for example "AI Connected (logging)". When access is off, the item is hidden.
 
@@ -108,17 +108,18 @@ When you update MatterCAD, start a new chat session, or reconnect the tool (in C
 
 Once connected, the AI can:
 
-- **Read the design** - see the objects in the tab you're looking at, their sizes, and every property you can edit.
+- **See your open designs** - list every open design tab by name, with where it is kept (its file, or your cloud library), whether it has unsaved changes, and which one is in front.
+- **Read a design** - see the objects in any open design, their sizes, and every property you can edit.
 - **Keep the design's notes** - read the [Design Notes](../workspace/design-notes.md) first, and keep them a short, current brief of the design's goal, key sizes, decisions and open questions. It keeps what you wrote unless you ask it to change it.
-- **Measure** - get the size, volume and surface area of objects, check that they are solid, and find the gap between two objects.
-- **Take pictures** - look at the design from a named view (front, back, left, right, top, bottom or isometric).
+- **Measure** - get the size, volume and surface area of objects in any open design, without bringing it to the front, check that they are solid, and find the gap between two objects.
+- **Take pictures** - look at any open design from a named view (front, back, left, right, top, bottom or isometric), without bringing it to the front.
 - **Hide and show** - hide objects or show only some of them, the same as the app's own [Hide](../workspace/lock-hide.md). This changes the view only, not the design.
 - **Build and change** - create shapes, change their properties (including [expressions](../workspace/expressions.md)) and colors, rename, delete, move, rotate and scale them, [combine or subtract](../operations/boolean/index.md) them, make [arrays](../operations/array/index.md), and [group](../workspace/grouping.md) or ungroup them. A new shape lands where the app's own Add puts it: centered on the bed and resting on it, unless the AI gives it a position.
 - **Round and bevel edges** - add a [Fillet](../operations/reshape/fillet.md) or [Chamfer](../operations/reshape/chamfer.md), list the part's edges with their positions, and pick the edges to round or bevel, the same edges you could click in the 3D view.
 - **Use formulas in positions** - drive a [Translate](../operations/transform/translate.md)'s **Translation** from sheet values, for example `=[wall_thickness * 2, 0, 5]`, so the part moves when the sheet changes.
 - **Edit sheets** - read and write cells in a [Variable Sheet](../workspace/variable-sheet.md), so your design can be driven by named values.
 - **Undo and redo** - step back or forward through the design's undo history.
-- **Start, open and save designs** - start a new design in a new tab, open a model file in a new tab, and save.
+- **Start, open and save designs** - start a new design in a new tab, open a model file in a new tab, and save an open design. A new or opened tab comes to the front.
 - **Export** - write STL or 3MF files into the AI folder (see below). If a file with that name is already there, the AI replaces it only when it asks to overwrite. A 3MF keeps each part's color. See [Saving and Exporting](saving-and-exporting.md).
 - **Search these help pages** - look up what an operation does before using it.
 
@@ -130,10 +131,21 @@ Once connected, the AI can:
 - **Work while MatterCAD is closed.** MatterCAD must be open, with access turned on.
 - **Work in the browser version.** AI assistant access is only in the desktop app.
 
+## Which Design the AI Works On
+
+The AI can work on any design you have open, not only the one in front.
+
+- **Name the design to work on another tab.** Tell the AI the name on the design's tab, for example "in Lid, make the wall 2 mm thicker". It works on that design where it is, without bringing it to the front, and its changes go to that design even if you switch tabs while it works.
+- **Name no design, and it works on the one in front.** If you switch to a different tab while it is working that way, MatterCAD stops its next change and tells it which design is in front and which one it was working on, so it can ask you which one you mean. A change never lands in a tab you switched to without the AI knowing.
+- **Give each design its own name.** When several open tabs share a name, such as unsaved **New Design** tabs, MatterCAD won't guess: the AI is shown each of them, with where it is kept, so it can ask you which one you mean. Saving each design under its own name avoids that.
+- **A closed design is gone for the AI.** If you close a design the AI was working on, it is told the design was closed.
+- **Each AI tool keeps its own place.** A connected AI tool that keeps a session with MatterCAD remembers the design it last worked on, so its work doesn't move where another tool's changes go. Tools that don't keep a session share one place.
+- **The AI tab inside MatterCAD is separate.** The AI chat in the side panel's **AI** tab works only on its own design, whichever tab is in front.
+
 ## Undo and Safety
 
-- **One Undo takes back one AI change.** However many steps the AI took to make a change, they are one "AI: ..." step in your undo history. If any part of a change fails, the AI's whole change is undone and your design is left as it was.
-- **The AI works in the tab you're looking at.** If you switch to another tab, the AI is told and has to read the design again before it can change anything. It never edits a tab you've left without knowing. To keep a design safe from the AI, switch to a different tab.
+- **One Undo takes back one AI change.** However many steps the AI took to make a change, they are one "AI: ..." step in that design's undo history. If any part of a change fails, the AI's whole change is undone and your design is left as it was.
+- **The AI can reach every open design.** To be sure the AI can't change a design, close it. Short of that, don't name it to the AI and keep it out of the front. When it isn't clear which design you mean, MatterCAD stops the change and tells the AI, so it can ask you before it changes anything.
 - **Everything stays on your computer.** MatterCAD only accepts connections from your own computer, and only from tools that have your access key. Nothing is sent anywhere.
 
 ## The Feedback Log

@@ -12,7 +12,7 @@ Round Inside Edges fills every inside corner of a solid with a bead of one radiu
 <!-- AUTO_IMAGE: type=from_mcx file=reshape_round_inside_edges -->
 ![reshape_round_inside_edges](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_round_inside_edges.png)
 
-It is the mirror image of [Round All Edges](round-all-edges.md). That one rounds the edges that stick out; this one fills the ones that go in. Neither touches the other's edges, so the two together round everything -- run Round All Edges, then Round Inside Edges.
+It is the mirror image of [Round All Edges](round-all-edges.md). That one rounds the edges that stick out; this one fills the ones that go in. Neither touches the other's edges, so the two together round everything -- run Round Inside Edges, then Round All Edges over it. Chained that way, the surface comes out clean and smooth, with no thin slivers where the inside bead meets the rounded ends.
 
 This operation is [Dilate](dilate.md) followed by [Erode](erode.md) at the same radius. Use those operations separately when you want just the shrink or grow step.
 
@@ -26,7 +26,7 @@ This operation is [Dilate](dilate.md) followed by [Erode](erode.md) at the same 
 ## Parameters
 
 - **Radius** - How far every inside corner is filled in. It is the radius of the largest ball that would roll around the inside of the part (default: 1 mm)
-- **Segments** - How finely the rounding ball is drawn (default: 12). This is the single biggest lever on how long the operation takes, because the ball's detail is paid for on every triangle of the part. 12 is smooth enough for a fillet of any normal size; raise it only if you can see the facets
+- **Segments** - How finely the rounding ball is drawn (default: 16; the slider runs 8 to 24 in steps of 4). This is the single biggest lever on how long the operation takes. 16 puts four flat facets across each rounded edge. Every 4 more segments add one more facet, so the round looks smoother, and make the operation take longer, because the ball's detail is paid for on every triangle of the part. 8, the fewest, gives two facets; a smaller number is raised to 8. A round in a design you open keeps the Segments it was saved with, or 12 if the file doesn't give one
 
 ## It Adds Material, and Never Removes Any
 
@@ -80,7 +80,7 @@ Use [Fillet](fillet.md) when:
 ## Tips
 
 - The radius is measured in the source part's own units, so a part with a non-uniform scale on it fills into an oval rather than a circle. Scale before rounding, not after
-- It fills inside corners only. If you also want the outside edges softened, add [Round All Edges](round-all-edges.md) -- the two do not overlap, so the order does not matter much, though rounding the outside first leaves less mesh for this one to chew through
+- It fills inside corners only. If you also want the outside edges softened, add [Round All Edges](round-all-edges.md) over it -- the two do not overlap, and Round All Edges on top of Round Inside Edges gives a clean, smooth surface where they meet
 - Sharp inside corners are also where a part under load cracks first. A small radius here is a real strength improvement, not just a cosmetic one
 - The result is a new solid, so booleans, transforms and everything else work on it normally
 

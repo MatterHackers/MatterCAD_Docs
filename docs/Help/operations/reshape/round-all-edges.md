@@ -28,7 +28,7 @@ This operation is [Erode](erode.md) followed by [Dilate](dilate.md) at the same 
 ## Parameters
 
 - **Radius** - How far every outside edge is rounded. It is the radius of the largest ball that would roll over the whole part. The part has to be thicker than twice this everywhere (default: 1 mm)
-- **Segments** - How finely the rounding ball is drawn (default: 12). This is the single biggest lever on how long the operation takes, because the ball's detail is paid for on every triangle of the part. 12 is smooth enough for a rounding of any normal size; raise it only if you can see the facets
+- **Segments** - How finely the rounding ball is drawn (default: 16; the slider runs 8 to 24 in steps of 4). This is the single biggest lever on how long the operation takes. 16 puts four flat facets across each rounded edge. Every 4 more segments add one more facet, so the round looks smoother, and make the operation take longer, because the ball's detail is paid for on every triangle of the part. 8, the fewest, gives two facets; a smaller number is raised to 8. A round in a design you open keeps the Segments it was saved with, or 12 if the file doesn't give one
 
 ## How Long It Takes, and How to Stop It
 
@@ -84,7 +84,7 @@ Use [Fillet](fillet.md) when:
 ## Tips
 
 - The radius is measured in the source part's own units, so a part with a non-uniform scale on it rounds into an oval rather than a circle. Scale before rounding, not after
-- It rounds outside edges only. To soften the inside of a pocket as well, add [Round Inside Edges](round-inside-edges.md) after it, or a [Fillet](fillet.md) on just the corners that matter
+- It rounds outside edges only. To soften the inside of a pocket as well, put [Round Inside Edges](round-inside-edges.md) on the part first and then Round All Edges over it. Chained that way, the surface comes out clean and smooth, with no thin slivers where the inside bead meets the rounded ends. To soften just the inside corners that matter, use a [Fillet](fillet.md) on them instead
 - The result is a new solid, so booleans, transforms and everything else work on it normally
 - If you only want a soft break on the edges rather than a visible round, a small [Chamfer](chamfer.md) on the edges that matter is much faster
 
