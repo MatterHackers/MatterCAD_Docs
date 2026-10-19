@@ -31,14 +31,14 @@ A component has two modes, switched by the **Finalized** setting:
 - **Editing** (Finalized off) - Everything inside is on show in the design tree, including any [Variable Sheet](variable-sheet.md) it holds, so you can build and wire it up. The Properties panel shows the component's **Finalized** and **Surfaced Editors** settings
 - **Distribution** (Finalized on) - Only the surfaced controls are shown, and the embedded sheet is hidden. This is how someone using your component sees it
 
-**Edit Component** puts a finalized component back into editing mode. It is offered in the Modify menu for a finalized component sitting at the top level of the scene.
+**Edit Component** puts a finalized component back into editing mode. To find it, right-click the component and choose **Modify** › **Constraints** › **Edit Component**. It is listed only for a finalized component sitting at the top level of the design.
 
 ### Adding a Part to a Component
 
 To put another part into a component you have already made, use either way:
 
-- **Paste it in.** Select the part and choose **Cut** (to move it) or **Copy** (to put in a copy) from its right-click menu. Then right-click the component and choose **Paste Into**. The part goes inside the component, standing where it was. On a finalized component **Paste Into** is greyed out, and hovering over it says "The part would go inside Component 'Fan Mount', which is finalized. Set its Finalized to false first", with your component's name. Choose **Edit Component** first.
-- **Open the component and add it.** If the component is finalized, choose **Edit Component** from its right-click **Modify** menu first. Double-click the component (or right-click it and choose **Edit Children**), add the part as usual, for example from the favorites bar or with **Paste**, then click **‹ Back** at the top of the 3D view. The part is now inside the component.
+- **Paste it in.** Select the part and choose **Cut** (to move it) or **Copy** (to put in a copy) from its right-click menu. Then right-click the component and choose **Paste Into**. The part goes inside the component, standing where it was. On a finalized component **Paste Into** is greyed out, and hovering over it says "Component 'Fan Mount' is finalized. Choose Edit Component first, then paste into it.", with your component's name. Right-click the component, choose **Modify** › **Constraints** › **Edit Component**, then paste.
+- **Open the component and add it.** If the component is finalized, choose **Modify** › **Constraints** › **Edit Component** from its right-click menu first. Double-click the component (or right-click it and choose **Edit Children**), add the part as usual, for example from the favorites bar or with **Paste**, then click **‹ Back** at the top of the 3D view. The part is now inside the component.
 
 A part you add shows no setting on a finalized component until you add it to **Surfaced Editors** (below).
 
@@ -46,7 +46,7 @@ A part you add shows no setting on a finalized component until you add it to **S
 
 The **Surfaced Editors** list decides which settings of the parts inside appear on the component. Each entry in the list shows one setting of one part, or all of one part's settings.
 
-1. Select the component. If it is finalized, choose **Edit Component** from the right-click **Modify** menu first
+1. Select the component. If it is finalized, choose **Modify** › **Constraints** › **Edit Component** from its right-click menu first
 2. In the Properties panel, click the add button (a plus sign in a circle) at the end of the **Surfaced Editors** list. An entry called **New Entry** appears in the list
 3. Click the entry's **Edit** button. The **Editor Selector** window opens
 4. In the tree, click the part whose setting you want to show

@@ -34,11 +34,11 @@ A design from your [Cloud Library](../library/cloud-library.md) that has been de
 
 ## The Mac Menu Bar
 
-On a Mac, the same items are also in the menu bar at the top of the screen:
+On a Mac, the same items are also in the menu bar at the top of the screen, each showing its key:
 
 - **MatterCAD** - **About MatterCAD**, **Settings** (⌘,), **Check For Update** and **Quit** (⌘Q).
-- **File** - **Open System File** (⌘O) and **Open Recent**.
-- **Help** - **Help**, **Interface Tour** and **Community**.
+- **File** - **Open System File** (⌘O), **Open Recent**, **Save** (⌘S) and **Save As** (⇧⌘S). **Save** and **Save As** work on the design in front, as the toolbar's do.
+- **Help** - **Help** (F1), **Interface Tour** and **Community**.
 
 The first time MatterCAD starts, these items stay greyed out until you accept the license agreement. **Quit** always works.
 

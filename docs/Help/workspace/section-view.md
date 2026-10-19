@@ -47,9 +47,9 @@ A face that doesn't point along X, Y or Z leaves no axis button highlighted. The
 - With parts selected, it takes the cut through the selected parts only. This lets you take one part's outline out of an assembly.
 - With nothing selected, it takes the cut through every part the cut crosses.
 
-Everything it takes becomes one path, so overlapping parts give one outline. The path lies on the cut face, and it is selected when it is added. It is one undo step, "Make Path". Section View stays on.
+Everything it takes becomes one path, so overlapping parts give one outline. The path lies on the cut face, and it is selected when it is added. MatterCAD says which parts it used: "Made a path of the cut through the selected parts." or "Made a path of the cut through every part it crosses." It is one undo step, "Make Path". Section View stays on.
 
-If the cut doesn't cross those parts, nothing is added and MatterCAD says so, for example "The cut does not cross any part. Move the cut onto a part and try again".
+If the cut doesn't cross those parts, nothing is added and MatterCAD says "The cut does not cross the selected parts. Move the cut onto them and try again." or "The cut does not cross any part. Move the cut onto a part and try again."
 
 ## Dragging the Cut
 
