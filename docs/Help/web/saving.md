@@ -21,27 +21,31 @@ If the website refuses to save over a design, the **Save As** box opens with the
 
 ## Save As
 
-Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (⌘⇧S on a Mac). The **Save As** box shows your online library, so you choose the folder the copy goes in:
+Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (⌘⇧S on a Mac). The **Save As** box, headed "Choose where to save your design", shows your online library, so you choose the folder the copy goes in:
 
 1. Pick a folder. The box opens in the folder the design is in. For a new design, it opens in the folder you clicked **New Design** in on the **Library** page, or, after **New Design** in the MatterCAD menu, in the folder of the design you had open. When the design isn't in your own library (it came from **Shared with Me** or **Purchased**), the box opens in **My Designs**.
-2. Type a name under **Design Name**. Clicking a design in the list puts its name there.
+2. Type a name under **Design Name**. Clicking a design or a part in the list puts its name there, without the extension (for example "Bracket"). The design always saves as an MCX design.
 3. Click **Save**.
 
 In the box:
 
 - **The path along the top** shows where you are. Click a folder in it to go back to that folder. Double-click a folder in the list to open it. Double-clicking a design is the same as clicking it and then **Save**.
 - **Create Folder** makes a new folder in the folder you are in. Type its name under **Folder Name** and click **Create**.
-- **Only My Designs is listed.** Designs can't be saved in **Shared with Me** or **Purchased**, so they aren't there. While no folder that can take a design is open, the box says "Please select a writable folder" and **Save** can't be clicked.
+- **Only My Designs is listed.** Designs can't be saved in **Shared with Me** or **Purchased**, so they aren't there. While no folder that can take a design is open, the box says "Choose a folder you can save in." and **Save** can't be clicked.
 - **There is no Computer folder.** A web page can't save to your computer: to get a file there, use [Export or Download](#export-and-download).
 
 ### Saving over a design
 
-When the folder already has a design with that name, MatterCAD asks first, in a box titled **Confirm Save As**. It names the design and asks "Do you want to replace it?"
+When the folder already has a design with that name, MatterCAD asks first, in a box titled **Confirm Save As**, for example:
+
+> "Bracket" already exists. Do you want to replace it?
 
 - **Replace** - Saves your design over that one.
 - **Cancel** - Goes back to the **Save As** box to choose another name or folder.
 
-You can replace only your own designs. If the design there isn't yours, or is locked, the **Save As** box opens again, says you can't replace that design, and asks you to "Choose another name or folder."
+You can replace only your own designs. If the design there isn't yours, or is locked, the **Save As** box opens again and says so above the list, for example:
+
+> You can't replace "Bracket". Choose another name or folder.
 
 ### After Save As
 
