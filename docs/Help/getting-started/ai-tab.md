@@ -19,7 +19,7 @@ Each design has its own chat. The AI in a design's tab works only on that design
 
 On the desktop, the chat uses your own API key or the MatterHackers AI service, as set under **AI connection** in [Settings](../workspace/settings.md#ai-providers). If it can't connect, the tab says what is missing, for example "Add your Anthropic API key in Settings to use AI.", with an **Open Settings** button. On the website, the site decides whether you can chat.
 
-The first time you send a message, a **Before You Send** window says what leaves your computer and where it goes. Click **Send** to go on, or **Cancel**.
+Your first message sends at once, like every one after it. What you send, with any pictures or files you attach and the parts of your design the AI reads, goes to the AI service you use: with your own API keys, to the provider you chose (Anthropic or OpenAI); on MatterHackers AI, to MatterHackers AI. You agree to this when you sign up for that service, so MatterCAD doesn't stop to ask before you send.
 
 ## What to Ask
 
