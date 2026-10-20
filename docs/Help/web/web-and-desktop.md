@@ -11,13 +11,13 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 
 - **Save** keeps the design in your online library, not in a file on your computer. **Save As** lists only **My Designs** and its folders: choose the folder and the name for the copy there. It has no **Computer** folder. See [Saving on the Web](saving.md#save-as).
 - **Export** and the page's **Download** button are how you get a file on your computer. Your browser downloads it.
-- **Add to Bed** has no **Computer** folder. To bring in a file from your computer, use **Add System File to Bed** (your browser asks you to pick the file) or drag the file onto the 3D view. See [Adding Parts on the Web](adding-parts.md).
+- **Add to Bed** has no **Computer** folder. To bring in a file from your computer, use **Add System File to Bed** in the **MatterCAD** menu (your browser asks you to pick the file) or drag the file onto the 3D view. See [Adding Parts on the Web](adding-parts.md).
 - Unsaved changes are kept as a copy in your browser, which holds designs up to about 3.5 MB. MatterCAD on your computer offers to recover unsaved work when it starts instead ([Saving and Exporting](../getting-started/saving-and-exporting.md#recover-unsaved-work)).
 
 ## The Window and Menus
 
 - Each design has its own page. There are no tabs, no **Library** or **Help** tab, and no status bar along the bottom.
-- The toolbar's **MatterCAD** menu holds **New Design**, **Interface Tour**, **Help** and **Settings**. **Open System File**, **Open Recent**, **Check For Update**, **Community** and **About MatterCAD** are only in MatterCAD on your computer.
+- The toolbar's **MatterCAD** menu holds **Add System File to Bed**, **New Design**, **Interface Tour**, **Help** and **Settings**. **Open System File**, **Open Recent**, **Check For Update**, **Community** and **About MatterCAD** are only in MatterCAD on your computer.
 - There is no **Check For Update**: the website runs the version of MatterCAD it serves. Reload the page to get a newer version once the website has one.
 - **Settings** has only **Number format** and **Depth Peeling Layers**. The colors follow the light or dark theme you chose on the website ([The MatterCAD Menu](mattercad-menu.md#settings)).
 - The **Bed** menu has no **Reload**.

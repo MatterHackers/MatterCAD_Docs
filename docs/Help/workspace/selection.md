@@ -53,7 +53,7 @@ Once parts are selected you can:
 - **Change settings** in the Properties panel
 - **Group** them with G, or ungroup with Shift+G
 - **Rename** the selected part with F2
-- **Right click** for the part's menu
+- **Right click** for the part's menu (on a touch screen, hold a finger on the part)
 
 ## Tips
 

@@ -5,11 +5,15 @@ nav_order: 1
 ---
 # The MatterCAD Menu on the Website
 
-While you edit a design on the website, the toolbar has a **MatterCAD** menu (☰) right after **Add to Bed**. On a phone the button shows only the ☰.
+While you edit a design on the website, the toolbar starts with a **MatterCAD** menu (☰), before **Add to Bed**. On a phone the button shows only the ☰, at the start of the toolbar.
 
-It holds four items: **New Design**, **Interface Tour**, **Help** and **Settings**.
+It holds five items: **Add System File to Bed**, **New Design**, **Interface Tour**, **Help** and **Settings**.
 
-<!-- IMAGE_NEEDED: The website's editor with the MatterCAD menu open under its ☰ MatterCAD button beside Add to Bed, showing New Design, Interface Tour, Help and Settings -->
+<!-- IMAGE_NEEDED: The website's editor with the MatterCAD menu open under its ☰ MatterCAD button at the start of the toolbar, showing Add System File to Bed, New Design, Interface Tour, Help and Settings -->
+
+## Add System File to Bed
+
+**Add System File to Bed** brings in a file from your computer or phone. Your browser asks you to pick the file, and its parts are added to the bed. See [Adding Parts on the Web](adding-parts.md#files-from-your-computer).
 
 ## New Design
 

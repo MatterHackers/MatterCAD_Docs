@@ -49,7 +49,7 @@ Click **Add to Bed** in the toolbar. The library opens over the left side of the
 - Open **Included** for the built-in shapes, **Sample Parts** (finished designs such as the **Coin**), **Tools** and **Design Apps**
 - Open **Computer** for the files in your Downloads, Desktop and Documents folders
 - Open your **Cloud Library** when you are signed in
-- Drag any item onto the bed, or right-click it and choose **Add to Bed**
+- Drag any item onto the bed, or right-click it (on a touch screen, hold a finger on it) and choose **Add to Bed**
 
 ![20260324 081446 paste 20260324 081446](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081446-paste-20260324-081446.jpg)
 

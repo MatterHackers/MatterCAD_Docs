@@ -51,7 +51,7 @@ In the preview a click never selects or moves a part. Press **Edit** to change t
 
 Press **Edit** in the title bar. The editor slides in around the design:
 
-- The **toolbar** across the top, starting with **Add to Bed** and the **MatterCAD** menu ([The MatterCAD Menu](mattercad-menu.md)).
+- The **toolbar** across the top, starting with the **MatterCAD** menu and **Add to Bed** ([The MatterCAD Menu](mattercad-menu.md)).
 - The **favorites bar** of shapes down the left side.
 - The **side panel** on the right, with its **Design** and **AI** tabs and the **Notes** button.
 - The **camera controls**: the cube in the top-right corner of the view and the round buttons around it.
@@ -76,8 +76,8 @@ While you have changes that are not saved, your browser asks before you leave th
 
 ## Topics
 
-- [The MatterCAD Menu](mattercad-menu.md) - New Design, the Interface Tour, Help and Settings on the website
+- [The MatterCAD Menu](mattercad-menu.md) - Add System File to Bed, New Design, the Interface Tour, Help and Settings on the website
 - [Saving on the Web](saving.md) - Save, Save As to a folder of your choice, Export, and getting back unsaved changes
 - [Adding Parts on the Web](adding-parts.md) - Shapes, sample parts and the designs in your own library
-- [Using MatterCAD on a Phone](phone.md) - The phone layout, the bottom sheet and touch gestures
+- [Using MatterCAD on a Phone](phone.md) - The phone layout, the selection bar, press and hold menus and the bottom sheet
 - [Web and Desktop Differences](web-and-desktop.md) - What works differently in a browser

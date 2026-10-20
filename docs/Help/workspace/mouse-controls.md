@@ -62,6 +62,7 @@ Press Escape during a drag to put the part back. See [Editing Objects](../gettin
 
 - **One finger** - Tap to select. Drag to do what the selected mode says: move a part in **Select Parts**, or turn, move or zoom the view in the other modes.
 - **Two fingers** - Spread or pinch to zoom, and move both fingers together to move the view, in any mode.
+- **Hold one finger still** - On a part, opens the part's menu, the one a right click opens. On empty space, opens the bed menu. A ring fills around your finger while you hold, and the menu opens after about half a second, with rows big enough for a finger.
 
 ## Related
 

@@ -57,7 +57,7 @@ A group or an operation holds other parts. To change one of them:
 
 ## The Right-Click Menu
 
-Right-click a part to select it and open its menu:
+Right-click a part to select it and open its menu. On a touch screen, hold a finger still on the part instead:
 
 - **Hide**, **X-ray** and **Lock** (see [Lock and Hide](../workspace/lock-hide.md))
 - **Rename** (or press F2)
@@ -68,7 +68,7 @@ Right-click a part to select it and open its menu:
 - **Help Docs** - the help page for this kind of part, when there is one
 - **Remove**
 
-Right-click the empty bed for **Save**, **Save As**, **Export**, **Cut**, **Copy**, **Paste**, **Arrange All Parts**, **Show All** and **Unlock All**.
+Right-click the empty bed (or hold a finger on it) for **Save**, **Save As**, **Export**, **Reload**, **Cut**, **Copy**, **Paste**, **Arrange All Parts**, **Show All**, **Unlock All** and **Clear Bed**.
 
 ## Tips
 

@@ -24,7 +24,7 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 
 - [MatterCAD on the Web](web/index.md) - Open, preview and edit your designs on the MatterCAD website
 - [Saving on the Web](web/saving.md) - Save to your online library and get back unsaved changes
-- [Using MatterCAD on a Phone](web/phone.md) - The phone layout, the bottom sheet and touch gestures
+- [Using MatterCAD on a Phone](web/phone.md) - The phone layout, the selection bar, press and hold menus and the bottom sheet
 - [Web and Desktop Differences](web/web-and-desktop.md) - What works differently in a browser
 
 ## Design Building Blocks

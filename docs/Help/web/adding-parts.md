@@ -9,11 +9,13 @@ While you edit a design on the website, you can add shapes, sample parts, your o
 
 ## Shapes from the Favorites Bar
 
-Double-click a shape in the favorites bar down the left side of the editor, or drag it onto the bed. See [Creating New Objects](../getting-started/creating-new-objects.md#add-shapes). On a phone, the toolbar's **Add Shapes** button opens the same shapes ([Using MatterCAD on a Phone](phone.md#add-shapes)).
+Double-click a shape in the favorites bar down the left side of the editor, or drag it onto the bed. See [Creating New Objects](../getting-started/creating-new-objects.md#add-shapes). On a phone, the toolbar's **Add** button opens the same shapes, and you can drag in one after another ([Using MatterCAD on a Phone](phone.md#add)).
 
 ## Add to Bed
 
 Click **Add to Bed** in the toolbar. The library opens over the left side of the design. Drag an item onto the bed, or double-click it, to add it to your design. Click outside the library to close it.
+
+On a phone, tap **Add**, then the last tile, the open folder (**Add from Library…**). Drag an item onto the bed, or hold a finger on it and choose **Add to Bed**.
 
 <!-- IMAGE_NEEDED: The website's editor with the Add to Bed library open over the left side, listing Included, My Designs, Shared with Me and Purchased -->
 
@@ -41,7 +43,7 @@ If the website refuses to send a design, MatterCAD shows a message asking you to
 
 ## Files from Your Computer
 
-- **Add System File to Bed** - Click the arrow beside **Add to Bed** and choose **Add System File to Bed**. Your browser asks you to pick a file, and its parts are added to the bed.
+- **Add System File to Bed** - Open the **MatterCAD** menu (☰) at the start of the toolbar and choose **Add System File to Bed**, its first item. Your browser asks you to pick a file, and its parts are added to the bed. This works on a phone too.
 - **Drag and drop** - Drag a file from your computer onto the 3D view while you edit. It lands where you let go.
 
 MatterCAD reads the same formats as on your computer: MCX, STL, OBJ, 3MF, AMF, STEP, SVG, DXF and pictures. See [Adding Existing Objects](../getting-started/adding-existing-objects.md#drag-and-drop) for what each one brings in.
