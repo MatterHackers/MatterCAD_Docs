@@ -14,9 +14,9 @@ On a Mac, press ⌘ (Command) wherever these pages say Ctrl.
 ## The Window
 
 - **Tabs** - Along the top. Each open design has its own tab; the **Store**, **Library** and **Help** have tabs too. The **+** button (**Create New Design**) opens a new design. See [Tabs, Search and the Status Bar](../workspace/tabs-and-search.md).
-- **☰ MatterCAD menu** - At the left end of the tabs: **Open System File**, **Open Recent**, **Help**, **Interface Tour**, **Check For Update**, **Settings**, **Community** and **About MatterCAD**. On a Mac the same items are also in the menu bar at the top of the screen. See [Menus and Toolbar](../workspace/menus-and-toolbar.md).
+- **☰ MatterCAD menu** - At the left end of the tabs: **Add System File to Bed**, **Open System File**, **Open Recent**, **Help**, **Interface Tour**, **Check For Update**, **Settings**, **Community** and **About MatterCAD**. On a Mac the same items are also in the menu bar at the top of the screen. See [Menus and Toolbar](../workspace/menus-and-toolbar.md).
 - **Toolbar** - Across the top of the design:
-  - **Add to Bed** - opens the library so you can drag parts and files onto the bed. The arrow beside it holds **Add System File to Bed**.
+  - **Add to Bed** - opens the library so you can drag parts and files onto the bed. To add a file from your computer, use **Add System File to Bed** in the **☰ MatterCAD** menu.
   - **Save** - saves the design. The arrow beside it holds **Save As** and **Export**. The button reads **Save •** while you have changes that are not saved.
   - **Bed** - **Export**, **Cut**, **Copy**, **Paste**, **Reload** and **Clear Bed**.
   - **Undo** and **Redo**.

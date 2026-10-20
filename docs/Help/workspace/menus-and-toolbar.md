@@ -5,11 +5,11 @@ nav_order: 19
 ---
 # Menus and Toolbar
 
-The **☰ MatterCAD** menu at the left end of the tabs holds what belongs to the whole app: opening files, help, updates and settings. The toolbar across the top of a design holds what belongs to that design: adding parts, saving, the bed, undo and the operations.
+The **☰ MatterCAD** menu at the left end of the tabs holds what belongs to the whole app: adding and opening files, help, updates and settings. The toolbar across the top of a design holds what belongs to that design: adding parts, saving, the bed, undo and the operations.
 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
-<!-- IMAGE_NEEDED: The top of the MatterCAD window with the ☰ MatterCAD menu open over a design tab, showing every item from Open System File to About MatterCAD, and the toolbar's Add to Bed, Save and Bed buttons beside it -->
+<!-- IMAGE_NEEDED: The top of the MatterCAD window with the ☰ MatterCAD menu open over a design tab, showing every item from Add System File to Bed to About MatterCAD, and the toolbar's Add to Bed, Save and Bed buttons beside it -->
 
 ## The ☰ MatterCAD Menu
 
@@ -17,6 +17,7 @@ Click **☰ MatterCAD** at the left end of the tabs. A row with a key shows it a
 
 | Item | What it does |
 |------|--------------|
+| **Add System File to Bed** | Adds a file from your computer to the design you have open. Its parts land on the bed, in one undo step. It is greyed out while the **Library** or **Help** tab is in front. See [Adding Existing Objects](../getting-started/adding-existing-objects.md) |
 | **Open System File** | Opens a file from your computer (Ctrl+O). An MCX design opens in its own tab. Any other file (an STL, a picture, a drawing) opens on the bed of a new design. See [Adding Existing Objects](../getting-started/adding-existing-objects.md) |
 | **Open Recent** | Lists the last 10 designs you opened, newest first, each with a small picture. Hover over one to see where it is. Click one to open it again. A design that is already open shows its tab instead of opening twice. When there are none, the list says **No recent files** |
 | **Help** | Opens the **Help** tab, the same as pressing F1 |
@@ -37,7 +38,7 @@ A design from your [Cloud Library](../library/cloud-library.md) that has been de
 On a Mac, the same items are also in the menu bar at the top of the screen, and **File** adds **Save** and **Save As**, which the ☰ MatterCAD menu leaves to the toolbar. An item with a key shows it:
 
 - **MatterCAD** - **About MatterCAD**, **Settings** (⌘,), **Check For Update** and **Quit** (⌘Q).
-- **File** - **Open System File** (⌘O), **Open Recent**, **Save** (⌘S) and **Save As** (⇧⌘S). **Save** and **Save As** work on the design in front, as the toolbar's do.
+- **File** - **Add System File to Bed**, **Open System File** (⌘O), **Open Recent**, **Save** (⌘S) and **Save As** (⇧⌘S). **Save** and **Save As** work on the design in front, as the toolbar's do.
 - **Help** - **Help** (F1), **Interface Tour** and **Community**.
 
 The first time MatterCAD starts, these items stay greyed out until you accept the license agreement. **Quit** always works.
@@ -57,8 +58,9 @@ Hover over any button to see its name, with its key when it has one, for example
 
 ### Add to Bed
 
-- Click **Add to Bed** to open the library over the left side of the design. Drag a part or a file from it onto the bed. Click **Add to Bed** again, or click outside the library, to close it. See [Adding Existing Objects](../getting-started/adding-existing-objects.md#add-to-bed).
-- Click the arrow beside it and choose **Add System File to Bed** to pick a file on your computer. Its parts are added to the design you have open, in one undo step.
+Click **Add to Bed** to open the library over the left side of the design. Drag a part or a file from it onto the bed. Click **Add to Bed** again, or click outside the library, to close it. See [Adding Existing Objects](../getting-started/adding-existing-objects.md#add-to-bed).
+
+To pick a file on your computer instead, choose **Add System File to Bed** in the **☰ MatterCAD** menu (above).
 
 ### Save
 

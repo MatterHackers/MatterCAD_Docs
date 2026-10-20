@@ -17,11 +17,13 @@ You can bring models you already have into MatterCAD: files from your computer, 
 
 ## Add a File to the Design You Have Open
 
-![20260324 081240 paste 20260324 081240](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081240-paste-20260324-081240.jpg)
+<!-- IMAGE_NEEDED: The ☰ MatterCAD menu open over a design tab, with Add System File to Bed highlighted as its first item -->
 
-1. Click the arrow beside **Add to Bed** in the toolbar.
-2. Choose **Add System File to Bed**.
+1. Click the **☰ MatterCAD** menu at the left end of the tabs (on a Mac you can also use the **File** menu in the menu bar).
+2. Choose **Add System File to Bed**, the first item.
 3. Pick the file. Its parts are added to the bed of the design you are working on.
+
+**Add System File to Bed** is greyed out while the **Library** or **Help** tab is in front, because there is no bed to add to. Click the tab of the design you want first.
 
 The file dialog for **Open System File** and **Add System File to Bed** offers every format MatterCAD reads (its filter reads "MCX, STL, OBJ, 3MF, AMF, STEP, SVG, DXF, Images"): MCX, STL, OBJ, 3MF, AMF, STEP/STP, SVG and DXF files, and pictures (JPG/JPEG, PNG, BMP, GIF, WEBP, TGA).
 

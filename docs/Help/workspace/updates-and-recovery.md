@@ -72,7 +72,7 @@ When MatterCAD starts, it shows **Welcome to MatterCAD**: "Let's show you around
 
 To take the tour at any time, click **☰ MatterCAD** › **Interface Tour** (on a Mac, also **Help** › **Interface Tour**), then **Next**.
 
-The tour dims the window and points at one part of it at a time, with a short note: the **Application Menu**, **Open a File**, **Add to Bed**, **Primitive Shapes**, **Undo & Redo**, the **Tumble Cube**, **Sign In**, **Search MatterCAD**, **Themes** and **Help**. A stop is skipped when that part isn't on screen.
+The tour dims the window and points at one part of it at a time, with a short note: the **Application Menu**, **Add to Bed**, **Primitive Shapes**, **Undo & Redo**, the **Tumble Cube**, **Sign In**, **Search MatterCAD**, **Themes** and **Help**. A stop is skipped when that part isn't on screen.
 
 - Click **Next**, or press Enter, to go on. On the last stop the button reads **Done**.
 - Click **Prev** to go back.

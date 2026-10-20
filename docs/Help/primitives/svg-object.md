@@ -15,7 +15,7 @@ An SVG (Scalable Vector Graphics) file opens as an **SVG Import**. By default it
 
 ## How to Use
 
-1. Drag an .svg file onto the 3D view, use **Add System File to Bed** under **Add to Bed**, or add one from a library folder
+1. Drag an .svg file onto the 3D view, use **Add System File to Bed** in the **☰ MatterCAD** menu, or add one from a library folder
 2. Set the **Height**, or switch **Output** to **2D** to work with the flat shapes
 3. In 2D, apply [Linear Extrude](../operations/path/linear-extrude.md) to give it height, or use other [Path Operations](../operations/path/index.md)
 
