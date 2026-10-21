@@ -3,6 +3,8 @@ title: Reshape Operations
 parent: "Operations"
 has_children: true
 nav_order: 7
+description: Find the tools that round, offset, bend, twist and cut parts into new forms.
+keywords: modify shape, organic shapes, shape tools
 ---
 # Reshape Operations
 Reshape operations deform and modify the geometry of your objects, allowing you to create organic and complex forms from simple shapes. They sit in two groups on the toolbar, **Round & Offset** and **Deform**; the right-click **Modify** menu has a submenu for each.

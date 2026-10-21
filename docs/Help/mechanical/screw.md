@@ -3,6 +3,8 @@ title: Screw
 articleKey: ScrewObject3D
 parent: "Mechanical Parts"
 nav_order: 4
+description: Make a standard metric screw or bolt, or the threaded, clearance or pilot hole for one, by picking its size.
+keywords: bolt, fastener, socket head, countersink, cap screw, machine screw
 ---
 # Screw
 

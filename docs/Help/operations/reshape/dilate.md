@@ -4,6 +4,8 @@ articleKey: DilateObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 13
+description: Grow a solid outward by a set distance, rounding its outside edges and making its holes smaller.
+keywords: offset outward, expand solid, fatten, thicker walls
 ---
 # Dilate
 

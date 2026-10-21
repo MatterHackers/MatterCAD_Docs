@@ -2,6 +2,8 @@
 title: MatterCAD on the Web
 has_children: true
 nav_order: 3.5
+description: Open, preview and edit your designs in a web browser on the MatterCAD website, with nothing to install.
+keywords: browser, website, online editor, no install, web app, view online
 ---
 # MatterCAD on the Web
 

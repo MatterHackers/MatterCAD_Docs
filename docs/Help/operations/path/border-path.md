@@ -4,6 +4,8 @@ articleKey: BorderPathObject3D_2
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: Make a flat base shape around a 2D path, such as a plate or tag behind raised text.
+keywords: base plate, backing, tag, name tag, plaque, keychain
 ---
 # Border Path
 

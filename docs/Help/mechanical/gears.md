@@ -3,6 +3,8 @@ title: Involute Gear
 articleKey: GearObject3D
 parent: "Mechanical Parts"
 nav_order: 2
+description: Make spur gears, racks and ring gears with teeth that mesh, as solids or flat outlines.
+keywords: spur gear, rack, ring gear, internal gear, teeth, cog, gear train
 ---
 # Involute Gear
 

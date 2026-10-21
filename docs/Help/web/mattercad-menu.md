@@ -2,6 +2,8 @@
 title: The MatterCAD Menu
 parent: "MatterCAD on the Web"
 nav_order: 1
+description: "What each item in the website editor's MatterCAD menu does: add a file, new design, tour, help and settings."
+keywords: web menu, hamburger menu, website menu, browser menu
 ---
 # The MatterCAD Menu on the Website
 

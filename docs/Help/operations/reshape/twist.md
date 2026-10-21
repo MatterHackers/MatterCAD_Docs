@@ -4,6 +4,8 @@ articleKey: TwistObject3D_3
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 7
+description: Turn the top of a part against its bottom to make a spiral or twisted shape.
+keywords: helix, swirl, corkscrew, torsion, twisted
 ---
 # Twist
 

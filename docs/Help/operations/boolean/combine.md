@@ -4,6 +4,8 @@ articleKey: CombineObject3D_2
 parent: "Boolean Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: Join parts into one solid, so overlapping shapes become a single part with no inside walls.
+keywords: union, merge, join, fuse, weld, add together, glue parts
 ---
 # Combine
 

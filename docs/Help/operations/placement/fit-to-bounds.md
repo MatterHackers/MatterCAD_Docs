@@ -4,6 +4,8 @@ articleKey: FitToBoundsObject3D_4
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 3
+description: Scale a part to fit an exact width, depth and height.
+keywords: fit size, exact size, scale to size, resize to fit, stretch to fit, target size
 ---
 # Fit to Bounds
 

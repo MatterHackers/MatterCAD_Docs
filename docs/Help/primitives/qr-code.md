@@ -3,6 +3,8 @@ title: QR Code
 articleKey: QrCodeObject3D
 parent: "Primitives"
 nav_order: 12
+description: Make a scannable QR code from text, a web address or WiFi details, to raise or engrave on a part.
+keywords: barcode, scan code, link, url, website code, wifi password, scannable
 ---
 # QR Code
 

@@ -4,6 +4,8 @@ articleKey: RoundInsideEdgesObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 11
+description: Fill every inside corner of a part with a smooth bead, which makes joins stronger.
+keywords: inside fillet, inner corner, concave corner, cove, strengthen corner, smooth join
 ---
 # Round Inside Edges
 

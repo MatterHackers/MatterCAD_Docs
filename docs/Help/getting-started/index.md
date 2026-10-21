@@ -2,6 +2,8 @@
 title: Getting Started
 has_children: true
 nav_order: 3
+description: A tour of the MatterCAD window and a quick start for making your first design.
+keywords: beginner, tutorial, basics, introduction, first steps, overview, learn, how to start
 ---
 # Getting Started with MatterCAD
 

@@ -4,6 +4,8 @@ articleKey: BoundsObject3D
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 5
+description: Replace parts with a solid box that fills the space they take up, which follows them as they change.
+keywords: bounding box, extents, envelope, overall size
 ---
 # Bounds
 

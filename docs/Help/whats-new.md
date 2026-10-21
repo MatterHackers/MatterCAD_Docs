@@ -1,6 +1,8 @@
 ---
 title: What's New
 nav_order: 105
+description: The highlights of the latest MatterCAD release.
+keywords: new features, latest release, latest version, highlights, recent changes
 ---
 # MatterCAD 2.2026.8
 

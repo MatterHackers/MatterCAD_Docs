@@ -2,6 +2,8 @@
 title: Operations
 has_children: true
 nav_order: 6
+description: Find every operation on the toolbar, grouped as Transform, Placement, Merge, Deform and more.
+keywords: tools, toolbar operations, modify, features, commands, actions
 ---
 # Operations
 

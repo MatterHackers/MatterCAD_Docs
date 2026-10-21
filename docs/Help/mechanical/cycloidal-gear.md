@@ -3,6 +3,8 @@ title: Cycloidal Gear
 articleKey: CycloidalGearObject3D
 parent: "Mechanical Parts"
 nav_order: 5
+description: Make the disc and pin ring of a cycloidal drive, a compact speed reducer for robot joints and gearboxes.
+keywords: cycloidal drive, speed reducer, gearbox, reduction, robot joint, pin ring, lobed disc
 ---
 # Cycloidal Gear
 

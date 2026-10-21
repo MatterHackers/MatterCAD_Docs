@@ -3,6 +3,8 @@ title: Placement Operations
 parent: "Operations"
 has_children: true
 nav_order: 6
+description: Find the tools that position parts exactly against each other or inside a size.
+keywords: positioning, placing parts, exact placement
 ---
 # Placement Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Placement -->

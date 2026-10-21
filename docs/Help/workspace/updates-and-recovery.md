@@ -2,6 +2,8 @@
 title: Updates and Recovery
 parent: "Workspace"
 nav_order: 24
+description: Update MatterCAD, send crash reports and get your work back after MatterCAD closes unexpectedly.
+keywords: upgrade, new version, crash, crashed, lost work, autosave, restore
 ---
 # Updates and Recovery
 

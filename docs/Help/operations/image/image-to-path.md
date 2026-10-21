@@ -4,6 +4,8 @@ articleKey: ImageToPathObject3D_2
 parent: "Image Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Trace the outlines of a picture into flat 2D paths you can extrude, revolve or cut with.
+keywords: trace, tracing, vectorize, outline from picture, bitmap to vector
 ---
 # Image to Path
 

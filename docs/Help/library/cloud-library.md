@@ -2,6 +2,8 @@
 title: Cloud Library
 parent: "Library"
 nav_order: 1
+description: Keep your designs online in your MatterHackers account so you can open them on any computer.
+keywords: cloud, online storage, sync, my designs, cloud storage, any computer
 ---
 # Cloud Library
 

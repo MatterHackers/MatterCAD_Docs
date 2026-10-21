@@ -3,6 +3,8 @@ title: Cylinder
 articleKey: CylinderObject3D
 parent: "Primitives"
 nav_order: 5
+description: Add a round column of any diameter and height for pins, rods, posts and round holes.
+keywords: rod, pin, post, column, peg, hexagon prism
 ---
 # Cylinder
 

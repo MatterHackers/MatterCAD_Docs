@@ -3,6 +3,8 @@ title: Half Sphere
 articleKey: HalfSphereObject3D
 parent: "Primitives"
 nav_order: 7
+description: Add a dome, the top half of a ball, for rounded caps, covers and lenses.
+keywords: dome, hemisphere, cap, half ball, rounded cover
 ---
 # Half Sphere
 

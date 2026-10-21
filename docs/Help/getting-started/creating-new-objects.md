@@ -2,6 +2,8 @@
 title: Creating New Objects
 parent: "Getting Started"
 nav_order: 2
+description: Start a new design, add shapes to the bed and build a part from simple shapes.
+keywords: blank design, add shape, start designing, first design, make something
 ---
 # Creating New Objects
 

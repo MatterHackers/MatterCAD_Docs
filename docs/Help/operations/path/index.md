@@ -3,6 +3,8 @@ title: Path Operations
 parent: "Operations"
 has_children: true
 nav_order: 5
+description: Find the tools that turn flat 2D paths into 3D parts and reshape the paths themselves.
+keywords: 2d to 3d, path tools, sketch tools, profile tools
 ---
 # Path Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Path -->

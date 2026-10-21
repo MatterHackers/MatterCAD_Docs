@@ -3,6 +3,8 @@ title: Pyramid
 articleKey: PyramidObject3D
 parent: "Primitives"
 nav_order: 11
+description: Add a four-sided pyramid with a rectangular base and a point at the top.
+keywords: square pyramid, apex, obelisk, pointed top
 ---
 # Pyramid
 

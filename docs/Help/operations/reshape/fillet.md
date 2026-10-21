@@ -4,6 +4,8 @@ articleKey: FilletObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 8
+description: Round off just one edge or the few you pick, or the corners of a 2D path, with the radius you choose.
+keywords: round one edge, single edge, rounded corner, roundover
 ---
 # Fillet
 

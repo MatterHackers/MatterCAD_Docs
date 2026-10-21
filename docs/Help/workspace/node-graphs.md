@@ -3,6 +3,8 @@ title: Node Graphs
 articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D
 parent: "Workspace"
 nav_order: 18
+description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
+keywords: nodes, graph, visual programming, node editor, wires, procedural
 ---
 # Node Graphs
 

@@ -4,6 +4,8 @@ articleKey: ChamferObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 9
+description: Cut the edges you pick flat at an angle, or cut the corners off a 2D path.
+keywords: bevel, beveled edge, angled edge, cut corner, 45 degree edge, edge break
 ---
 # Chamfer
 

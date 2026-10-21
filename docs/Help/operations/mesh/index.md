@@ -3,6 +3,8 @@ title: Mesh Operations
 parent: "Operations"
 has_children: true
 nav_order: 4
+description: Find the tools that fix and simplify the triangle meshes of imported parts.
+keywords: mesh tools, cleanup, triangles, fix mesh
 ---
 # Mesh Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Mesh -->

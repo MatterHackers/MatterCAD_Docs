@@ -4,6 +4,8 @@ articleKey: ArrayObject3D_3, ArrayObject3D_2
 parent: "Array Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: Make many copies of a part in a row, a grid, a circle or along a path, all in one editable pattern.
+keywords: copies, repeat, pattern, circular pattern, polar array, copies in a circle, grid of copies
 ---
 # Array
 

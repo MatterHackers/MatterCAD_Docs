@@ -2,6 +2,8 @@
 title: 2D Paths
 has_children: true
 nav_order: 1
+description: Find the flat 2D shapes you can extrude, revolve or sweep into 3D parts.
+keywords: 2d shapes, sketches, flat shapes, profiles, outlines, 2d primitives
 ---
 # 2D Paths
 

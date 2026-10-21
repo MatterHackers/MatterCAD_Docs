@@ -2,6 +2,8 @@
 title: Design Apps
 parent: "Library"
 nav_order: 4
+description: Make a custom part by changing the settings of a ready-made design instead of starting from scratch.
+keywords: customizer, templates, ready-made designs, configurable parts, customizable, presets
 ---
 MatterCAD provides powerful tools for designing and creating your own 3D models. With the operations on the toolbar, you can combine and subtract different parts to create entirely new designs. For those new to 3D design, Design Apps offer an approachable alternative. Instead of creating a 3D model from scratch, you can modify pre-built designs by adjusting parameters to match your specific requirements.
 

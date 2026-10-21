@@ -3,6 +3,8 @@ title: Align in Place
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Put parts from separate files back where they fit together, as their files placed them.
+keywords: assembly, fit together, original position, restore position, multi-part file, reassemble
 ---
 # Align in Place
 

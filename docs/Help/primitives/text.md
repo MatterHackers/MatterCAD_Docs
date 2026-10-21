@@ -3,6 +3,8 @@ title: Text
 articleKey: TextObject3D_2, TextObject3D
 parent: "Primitives"
 nav_order: 16
+description: Add raised 3D letters from words you type, for labels, signs and nameplates.
+keywords: lettering, font, emboss, writing, name, words, sign, label
 ---
 # Text
 

@@ -4,6 +4,8 @@ articleKey: Curve3DObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 11
+description: Draw a curve through space by dragging points, to use as the route a Sweep follows.
+keywords: 3d spline, bezier curve, rail, route, 3d line, path in space
 ---
 # 3D Curve
 

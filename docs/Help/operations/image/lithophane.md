@@ -4,6 +4,8 @@ articleKey: LithophaneObject3D
 parent: "Image Operations"
 grand_parent: "Operations"
 nav_order: 3
+description: Turn a photo into a thin panel that shows the picture when light shines through it.
+keywords: lithopane, photo panel, night light, lamp, backlit photo, light box, photo print
 ---
 # Lithophane
 

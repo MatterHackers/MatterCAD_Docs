@@ -2,6 +2,8 @@
 title: Documentation
 nav_order: 1
 has_children: true
+description: "The MatterCAD help home: links to every topic, from getting started to operations and the workspace."
+keywords: contents, table of contents, all topics, start here, documentation home
 ---
 # Welcome
 

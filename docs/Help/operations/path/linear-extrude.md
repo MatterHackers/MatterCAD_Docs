@@ -4,6 +4,8 @@ articleKey: LinearExtrudeObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 3
+description: Give a flat 2D shape height to turn it into a solid, with an optional bevel on its edge.
+keywords: extrusion, pull up, add height, 2d to 3d, raise, make solid
 ---
 # Linear Extrude
 

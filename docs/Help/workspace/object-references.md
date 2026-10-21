@@ -2,6 +2,8 @@
 title: Object References
 parent: "Workspace"
 nav_order: 9
+description: Make one part's setting follow another's by naming it in a formula, such as =Handle.Sides.
+keywords: link parts, follow another part, dot notation, connect values, depends on
 ---
 # Object References
 

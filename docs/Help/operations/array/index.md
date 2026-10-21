@@ -3,6 +3,8 @@ title: Array Operations
 parent: "Operations"
 has_children: true
 nav_order: 1
+description: Find the tools that repeat parts in patterns and pick one part out of a group.
+keywords: duplication, repeating parts, patterns, multiple copies
 ---
 # Array Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Duplication -->

@@ -4,6 +4,8 @@ articleKey: HollowOutObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 3
+description: Make a solid part hollow inside, with walls as thick as you set.
+keywords: shell, empty inside, wall thickness, save material, cavity
 ---
 # Hollow Out
 

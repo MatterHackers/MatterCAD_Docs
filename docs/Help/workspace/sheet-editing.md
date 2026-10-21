@@ -2,6 +2,8 @@
 title: Editing a Variable Sheet
 parent: "Workspace"
 nav_order: 13
+description: "Edit a Variable Sheet's grid: add rows and columns, size and format cells, and import or export CSV."
+keywords: csv, excel, cells, rows, columns, format cells, import csv
 ---
 # Editing a Variable Sheet
 

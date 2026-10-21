@@ -4,6 +4,8 @@ articleKey: SmoothPathObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 8
+description: Even out jagged steps and bumps in a 2D path, such as an outline traced from a picture.
+keywords: jagged, smoother, clean up outline, stair steps, rough edges, soften
 ---
 # Smooth Path
 

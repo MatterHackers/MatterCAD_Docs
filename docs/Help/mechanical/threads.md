@@ -3,6 +3,8 @@ title: Threads
 articleKey: ThreadsObject3D_2
 parent: "Mechanical Parts"
 nav_order: 3
+description: Make a threaded rod or a threaded hole with a standard thread profile, sized by diameter and pitch.
+keywords: tap, tapped hole, nut, internal thread, external thread, iso metric thread
 ---
 # Threads
 

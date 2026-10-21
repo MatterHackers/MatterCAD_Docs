@@ -2,6 +2,8 @@
 title: Selection
 parent: "Workspace"
 nav_order: 10
+description: Pick the parts you want to work on in the 3D view or the Design tree, one or many at a time.
+keywords: pick, multi-select, select all, box select, click to select, deselect
 ---
 # Selection
 

@@ -3,6 +3,8 @@ title: Star Path
 articleKey: StarPathObject3D
 parent: "2D Paths"
 nav_order: 5
+description: Draw a flat star with as many points as you like and extrude it into a 3D star.
+keywords: star shape, 2d star, starburst, pointed shape
 ---
 # Star Path
 

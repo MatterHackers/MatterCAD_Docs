@@ -3,6 +3,8 @@ title: Image Operations
 parent: "Operations"
 has_children: true
 nav_order: 3
+description: Find the tools that turn pictures, photos and logos into 3D parts and paths.
+keywords: pictures, photos, image tools
 ---
 # Image Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Image -->

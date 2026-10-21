@@ -3,6 +3,8 @@ title: Box Path
 articleKey: BoxPathObject3D
 parent: "2D Paths"
 nav_order: 1
+description: Draw a flat rectangle or rounded rectangle you can extrude into a box, plate or tag.
+keywords: rectangle, rounded rectangle, flat square, 2d square, rounded corners
 ---
 # Box Path
 

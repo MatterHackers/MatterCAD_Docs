@@ -4,6 +4,8 @@ articleKey: BooleanObject3D
 parent: "Operations"
 has_children: true
 nav_order: 2
+description: Combine, subtract and intersect parts to make new shapes from simple ones.
+keywords: csg, constructive solid geometry, shape math, merge group
 ---
 # Boolean Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Merge -->

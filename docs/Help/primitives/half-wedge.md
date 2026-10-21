@@ -3,6 +3,8 @@ title: Half Wedge
 articleKey: HalfWedgeObject3D
 parent: "Primitives"
 nav_order: 8
+description: Add a ridge shaped like a roof, with two slopes meeting at a peak.
+keywords: roof, ridge, peak, triangular prism, gable, a-frame
 ---
 # Half Wedge
 

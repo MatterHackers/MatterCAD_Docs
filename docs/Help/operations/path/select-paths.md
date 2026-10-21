@@ -4,6 +4,8 @@ articleKey: SelectPathsObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 7
+description: Keep only some pieces of a 2D path, such as the outer shapes or the holes, for two-color lettering.
+keywords: filter paths, holes only, outer paths, letter holes, sub paths, counters
 ---
 # Select Paths
 

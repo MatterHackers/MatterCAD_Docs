@@ -4,6 +4,8 @@ articleKey: ErodeObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 14
+description: Shrink a solid inward by a set distance, rounding its inside corners and making its holes bigger.
+keywords: offset inward, clearance, tolerance, loosen fit, thinner
 ---
 # Erode
 

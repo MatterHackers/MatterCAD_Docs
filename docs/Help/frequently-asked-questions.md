@@ -1,6 +1,8 @@
 ---
 title: Frequently Asked Questions
 nav_order: 101
+description: "Answers to common problems: imported parts the wrong size and resetting MatterCAD's settings."
+keywords: faq, problems, troubleshooting, tiny part, huge part, reset settings, start over, reinstall, data folder
 ---
 # Why are my objects the wrong scale?
 - STL files don't store unit information. MatterCAD expects STL dimensions in millimeters, while most CAD software exports in their native units (typically inches). This causes scaling discrepancies when importing designs.

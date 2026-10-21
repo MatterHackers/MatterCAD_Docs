@@ -2,6 +2,8 @@
 title: Settings
 parent: "Workspace"
 nav_order: 22
+description: Change MatterCAD's language, text size, color theme, see-through drawing and AI connection.
+keywords: preferences, dark mode, light mode, font size, color scheme, api key
 ---
 # Settings
 

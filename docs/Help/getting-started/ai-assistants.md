@@ -2,6 +2,8 @@
 title: Using AI Assistants
 parent: "Getting Started"
 nav_order: 7
+description: Let an AI tool such as Claude Code, Codex or Claude Desktop read and change your designs in MatterCAD.
+keywords: mcp, mcp server, llm, connect an ai, ai agent, automation, external ai
 ---
 # Using AI Assistants with MatterCAD
 

@@ -3,6 +3,8 @@ title: Ring Path
 articleKey: RingPathObject3D
 parent: "2D Paths"
 nav_order: 4
+description: Draw a flat ring, a circle with a hole, to extrude into a washer or tube.
+keywords: 2d ring, annulus, donut outline, flat washer, circle with hole
 ---
 # Ring Path
 

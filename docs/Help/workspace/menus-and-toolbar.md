@@ -2,6 +2,8 @@
 title: Menus and Toolbar
 parent: "Workspace"
 nav_order: 19
+description: What the MatterCAD menu, the Mac menu bar and the toolbar buttons do, from adding and deleting parts to saving.
+keywords: delete, erase, buttons, file menu, main menu, duplicate
 ---
 # Menus and Toolbar
 

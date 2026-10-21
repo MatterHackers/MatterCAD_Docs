@@ -3,6 +3,8 @@ title: Braille
 articleKey: BrailleObject3D
 parent: "Primitives"
 nav_order: 2
+description: Turn typed words into raised Braille dots on a plate that can be read by touch.
+keywords: tactile, blind, visually impaired, raised dots, accessibility, braille sign, grade 2
 ---
 # Braille
 

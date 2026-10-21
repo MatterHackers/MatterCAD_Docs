@@ -4,6 +4,8 @@ articleKey: SelectChildObject3D
 parent: "Array Operations"
 grand_parent: "Operations"
 nav_order: 4
+description: Show just one part of a group, chosen by its number or name, for designs that switch between options.
+keywords: pick one, choose part, switch, option, variant, index, configurable
 ---
 # Select Child
 

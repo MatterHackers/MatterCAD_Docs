@@ -4,6 +4,8 @@ articleKey: SweepObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 9
+description: Carry a flat profile along a 3D curve to make tubes, handles, cables and other bent shapes.
+keywords: follow path, extrude along curve, handle, cable, wire, bent tube, tube along curve
 ---
 # Sweep
 

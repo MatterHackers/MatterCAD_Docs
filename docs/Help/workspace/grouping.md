@@ -3,6 +3,8 @@ title: Grouping
 articleKey: GroupObject3D, GroupHolesAppliedObject3D
 parent: "Workspace"
 nav_order: 4
+description: Group parts so they move and copy as one, without merging them, and ungroup them again.
+keywords: ungroup, together, assembly, keep together, move together
 ---
 # Grouping
 

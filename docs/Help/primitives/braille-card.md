@@ -3,6 +3,8 @@ title: Braille Card
 articleKey: BrailleCardObject3D
 parent: "Primitives"
 nav_order: 1
+description: Make a card showing one letter in Braille and as a printed letter, for learning the Braille alphabet.
+keywords: braille alphabet, learn braille, teaching, letter card, flash card
 ---
 # Braille Card
 

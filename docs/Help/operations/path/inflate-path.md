@@ -4,6 +4,8 @@ articleKey: InflatePathObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Grow a flat 2D shape outward by a set distance, or give a thin line a width.
+keywords: offset, expand, grow outline, thicken, enlarge path, offset path
 ---
 # Inflate Path
 

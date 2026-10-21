@@ -4,6 +4,8 @@ articleKey: PlaneCutObject3D_2, PlaneCutObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 5
+description: Cut a part in half, or anywhere, with a flat plane and keep one side, with the cut face closed flat.
+keywords: cut in half, split, chop, trim, cut off, bisect, cut flat
 ---
 # Plane Cut
 

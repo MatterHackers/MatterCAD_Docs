@@ -2,6 +2,8 @@
 title: The AI Tab
 parent: "Getting Started"
 nav_order: 6
+description: Chat with an AI inside MatterCAD that builds, changes and explains your design from plain words.
+keywords: chatgpt, ai chat, ask the ai, artificial intelligence, chatbot, describe a part
 ---
 # The AI Tab
 

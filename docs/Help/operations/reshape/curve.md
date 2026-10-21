@@ -4,6 +4,8 @@ articleKey: CurveObject3D_3
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Bend a straight part into an arc or wrap it around a circle of the size you choose.
+keywords: bend, wrap, arc, arch, curl, wrap around cylinder, curved text
 ---
 # Curve
 

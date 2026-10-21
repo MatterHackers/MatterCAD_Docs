@@ -2,6 +2,8 @@
 title: Mouse Controls
 parent: "Workspace"
 nav_order: 8
+description: "Everything the mouse does in the 3D view: turning the view, selecting and moving parts and the handles."
+keywords: mouse buttons, click, scroll wheel, right click, middle click
 ---
 # Mouse Controls
 

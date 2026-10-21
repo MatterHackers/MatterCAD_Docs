@@ -3,6 +3,8 @@ title: Components
 articleKey: ComponentObject3D
 parent: "Workspace"
 nav_order: 1
+description: Wrap parts into a component that shows only the few settings that matter, so it acts like one part.
+keywords: custom part, reusable part, expose settings, few settings, parametric part
 ---
 # Components
 

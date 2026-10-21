@@ -2,6 +2,8 @@
 title: Signing In
 parent: "Workspace"
 nav_order: 23
+description: Sign in to your MatterHackers account for the Cloud Library, sharing and MatterHackers AI.
+keywords: login, log in, sign up, password, register, log out
 ---
 # Signing In
 

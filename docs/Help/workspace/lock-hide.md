@@ -2,6 +2,8 @@
 title: Lock and Hide
 parent: "Workspace"
 nav_order: 6
+description: Hide a part, see through it with X-ray, or lock it so you can't move it by accident.
+keywords: invisible, unhide, transparent, see-through, freeze, visibility
 ---
 # Lock and Hide
 

@@ -2,6 +2,8 @@
 title: Primitives
 has_children: true
 nav_order: 7
+description: "Find the basic 3D shapes to build designs from: boxes, cylinders, spheres, text and more."
+keywords: shapes, basic shapes, building blocks, 3d shapes, solids
 ---
 # Primitives
 

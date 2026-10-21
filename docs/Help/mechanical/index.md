@@ -2,6 +2,8 @@
 title: Mechanical Parts
 has_children: true
 nav_order: 5
+description: "Find the parametric mechanical parts: gears, threads and screws."
+keywords: hardware, machine parts, mechanical design
 ---
 # Mechanical Parts
 

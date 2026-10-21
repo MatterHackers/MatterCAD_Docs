@@ -2,6 +2,8 @@
 title: Camera Controls
 parent: "Workspace"
 nav_order: 20
+description: Use the view cube and its buttons to change the view, view style, snap grid and the design's units.
+keywords: view cube, change units, millimeters, imperial, metric units, view style, wireframe, snap grid
 ---
 # Camera Controls
 

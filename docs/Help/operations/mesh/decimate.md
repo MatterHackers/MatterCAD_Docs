@@ -4,6 +4,8 @@ articleKey: DecimateObject3D
 parent: "Mesh Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: Lower the number of triangles in a detailed mesh to make the file smaller and edits faster.
+keywords: decimate, simplify, polygon count, triangle count, smaller file, low poly
 ---
 # Reduce
 

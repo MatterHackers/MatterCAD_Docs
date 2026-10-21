@@ -4,6 +4,8 @@ articleKey: PinchObject3D_3
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 4
+description: Taper a part so it narrows (or widens) from front to back.
+keywords: taper, narrow, squeeze, slim
 ---
 # Pinch
 

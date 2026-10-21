@@ -2,6 +2,8 @@
 title: Sharing
 parent: "Library"
 nav_order: 3
+description: Share a design from your Cloud Library with someone using a share code, or open one shared with you.
+keywords: send a design, collaborate, give a design, shared with me, send to a friend
 ---
 # Sharing
 

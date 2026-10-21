@@ -3,6 +3,8 @@ title: Measure Tool
 articleKey: MeasureToolObject3D
 parent: "Workspace"
 nav_order: 7
+description: Measure the distance between two points in your design.
+keywords: ruler, dimension, caliper, how big, size check, length
 ---
 # Measure Tool
 

@@ -2,6 +2,8 @@
 title: Viewport Navigation
 parent: "Getting Started"
 nav_order: 5
+description: Turn, move and zoom the 3D view with the mouse, keyboard, camera cube or touch screen.
+keywords: orbit, pan, zoom, rotate view, spin view, look around, home view, trackpad
 ---
 # Viewport Navigation
 

@@ -2,6 +2,8 @@
 title: Section View
 parent: "Workspace"
 nav_order: 25
+description: Cut the design open in the 3D view to see inside it, without changing any parts.
+keywords: cutaway, look inside, clipping plane, inner walls, internal view, peek inside
 ---
 # Section View
 

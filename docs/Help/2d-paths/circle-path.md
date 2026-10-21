@@ -3,6 +3,8 @@ title: Circle Path
 articleKey: CirclePathObject3D
 parent: "2D Paths"
 nav_order: 2
+description: Draw a flat circle you can extrude into a disc or cylinder, or revolve into a ring.
+keywords: 2d circle, disc, disk, round outline, flat circle
 ---
 # Circle Path
 

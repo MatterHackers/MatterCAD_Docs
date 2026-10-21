@@ -3,6 +3,8 @@ title: Cube
 articleKey: CubeObject3D
 parent: "Primitives"
 nav_order: 4
+description: Add a box of any width, depth and height, with optional rounded edges.
+keywords: box, block, brick, cuboid, rounded box, rectangular block
 ---
 # Cube
 

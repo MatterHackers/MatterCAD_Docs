@@ -4,6 +4,8 @@ articleKey: RevolveObject3D_2, RevolveObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 6
+description: Spin a flat profile around an axis to make round parts like vases, bowls, knobs and wheels.
+keywords: lathe, spin, rotate profile, vase, bowl, turned part, round part
 ---
 # Revolve
 

@@ -2,6 +2,8 @@
 title: Design Notes
 parent: "Workspace"
 nav_order: 17
+description: Write a short brief that travels with your design, saying what it is for and what you decided.
+keywords: brief, readme, documentation, requirements, intent
 ---
 # Design Notes
 

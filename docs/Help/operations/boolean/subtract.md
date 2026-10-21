@@ -4,6 +4,8 @@ articleKey: SubtractObject3D_2
 parent: "Boolean Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Cut one shape out of another to make holes, slots and pockets.
+keywords: difference, cut out, remove material, pocket, carve, punch through
 ---
 # Subtract
 

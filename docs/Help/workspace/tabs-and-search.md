@@ -2,6 +2,8 @@
 title: Tabs, Search and the Status Bar
 parent: "Workspace"
 nav_order: 21
+description: Open, close and rename design tabs, search the help, and read the status bar at the bottom.
+keywords: help search, status bar, rename tab, close tab, find help
 ---
 # Tabs, Search and the Status Bar
 

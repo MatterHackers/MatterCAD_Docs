@@ -2,6 +2,8 @@
 title: Undo and Redo
 parent: "Workspace"
 nav_order: 11
+description: Take back a change with Undo, or put it back with Redo.
+keywords: mistake, go back, revert, ctrl z, history, take back
 ---
 # Undo and Redo
 

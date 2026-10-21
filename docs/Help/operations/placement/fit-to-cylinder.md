@@ -4,6 +4,8 @@ articleKey: FitToCylinderObject3D
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 4
+description: Change the settings of a Fit to Cylinder you find in an older design, which scales a part to a round size.
+keywords: fit into cylinder, round boundary, diameter fit, older designs
 ---
 # Fit to Cylinder
 

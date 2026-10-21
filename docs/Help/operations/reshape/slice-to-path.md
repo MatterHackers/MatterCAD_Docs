@@ -4,6 +4,8 @@ articleKey: FindSliceObject3D_2, FindSliceObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 12
+description: Get a flat 2D outline of a part at a height you choose, to see or reuse its shape there.
+keywords: find slice, cross section, outline at height, section path, contour, profile from part
 ---
 # Slice to Path
 

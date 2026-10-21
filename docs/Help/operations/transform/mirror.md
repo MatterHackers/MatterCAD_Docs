@@ -4,6 +4,8 @@ articleKey: MirrorObject3D_2
 parent: "Transform Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: Flip a part across X, Y or Z to make its mirror image, such as a left and right pair.
+keywords: flip, reverse, left and right, symmetric, opposite hand
 ---
 # Mirror
 

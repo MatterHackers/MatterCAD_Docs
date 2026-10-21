@@ -3,6 +3,8 @@ title: Hole
 articleKey: CubeHoleObject3D
 parent: "Primitives"
 nav_order: 9
+description: Add a box that cuts away whatever it overlaps, the quick way to make holes and slots.
+keywords: negative shape, slot, square hole, rectangular cutout, empty space
 ---
 # Hole
 

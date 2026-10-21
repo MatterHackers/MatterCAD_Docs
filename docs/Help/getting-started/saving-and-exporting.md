@@ -2,6 +2,8 @@
 title: Saving and Exporting
 parent: "Getting Started"
 nav_order: 4
+description: Save your design as an MCX file, or export STL, 3MF, OBJ, STEP and more for slicers and other programs.
+keywords: slicer, 3d printer, 3d printing, file format, file type, save a copy, mcx
 ---
 # Saving and Exporting
 

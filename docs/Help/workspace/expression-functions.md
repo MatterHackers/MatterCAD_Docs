@@ -2,6 +2,8 @@
 title: Expression Functions
 parent: "Workspace"
 nav_order: 2
+description: Every function you can use in a formula, such as sqrt, sum, round, if, lookup and text functions.
+keywords: math, sqrt, sin, cos, lookup, min, max
 ---
 # Expression Functions
 

@@ -2,6 +2,8 @@
 title: Workspace
 has_children: true
 nav_order: 8
+description: Find your way around the window, the tools, the shortcuts and how to manage your work.
+keywords: interface, window, user interface, workflow
 ---
 # Workspace
 

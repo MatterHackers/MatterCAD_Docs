@@ -3,6 +3,8 @@ title: Custom Path
 articleKey: CustomPathObject3D
 parent: "2D Paths"
 nav_order: 3
+description: Draw any flat shape point by point, with curves and straight lines, then turn it into a 3D part.
+keywords: draw a shape, sketch, polygon, bezier, spline, freehand, profile, control points, edit points
 ---
 # Custom Path
 

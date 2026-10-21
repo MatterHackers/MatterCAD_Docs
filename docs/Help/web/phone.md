@@ -2,6 +2,8 @@
 title: Using MatterCAD on a Phone
 parent: "MatterCAD on the Web"
 nav_order: 4
+description: "Use MatterCAD on a phone: the phone layout, the selection bar, press and hold menus and touch gestures."
+keywords: mobile, iphone, android, smartphone, touch, small screen, phone layout
 ---
 # Using MatterCAD on a Phone
 

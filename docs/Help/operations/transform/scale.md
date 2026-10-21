@@ -4,6 +4,8 @@ articleKey: ScaleObject3D_3
 parent: "Transform Operations"
 grand_parent: "Operations"
 nav_order: 3
+description: Resize a part by exact amounts, keep its proportions, or convert a part between inches and millimeters.
+keywords: resize, bigger, smaller, enlarge, shrink, percent, proportion
 ---
 # Scale
 

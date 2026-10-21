@@ -3,6 +3,8 @@ title: Sphere
 articleKey: SphereObject3D
 parent: "Primitives"
 nav_order: 14
+description: Add a ball of any diameter, as smooth as you like.
+keywords: ball, globe, orb, round ball, bead
 ---
 # Sphere
 

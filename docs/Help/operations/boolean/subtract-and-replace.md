@@ -4,6 +4,8 @@ articleKey: SubtractAndReplaceObject3D_2
 parent: "Boolean Operations"
 grand_parent: "Operations"
 nav_order: 4
+description: Cut one part out of another and keep the cut-away piece as its own part, such as for a two-color inlay.
+keywords: inlay, two colors, multi color, cut and keep, replace, insert, multi-material
 ---
 # Subtract and Replace
 

@@ -3,6 +3,8 @@ title: Variable Sheet
 articleKey: SheetObject3D
 parent: "Workspace"
 nav_order: 12
+description: Keep shared sizes and values in one sheet so changing one number updates every part that uses it.
+keywords: spreadsheet, variables, table, named values, shared sizes
 ---
 # Variable Sheet
 

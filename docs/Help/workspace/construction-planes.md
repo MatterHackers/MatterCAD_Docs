@@ -2,6 +2,8 @@
 title: Construction Planes
 parent: "Workspace"
 nav_order: 16
+description: "Set the flat frame a shape is drawn on or an operation works around: its origin, normal and direction."
+keywords: workplane, work plane, sketch plane, draw on a face, tilted plane
 ---
 # Construction Planes
 

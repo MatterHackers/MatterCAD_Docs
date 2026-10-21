@@ -2,6 +2,8 @@
 title: Library
 has_children: true
 nav_order: 4
+description: Find, organize and share your designs in the local library, the cloud library and Design Apps.
+keywords: files, browse designs, saved designs, file browser, where are my designs
 ---
 # Library
 

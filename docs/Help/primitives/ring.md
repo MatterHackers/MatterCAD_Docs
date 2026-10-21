@@ -3,6 +3,8 @@ title: Tube
 articleKey: RingObject3D
 parent: "Primitives"
 nav_order: 13
+description: Add a tube, a hollow cylinder, for pipes, washers, spacers and rings.
+keywords: pipe, washer, spacer, hollow cylinder, bushing, sleeve
 ---
 # Tube
 

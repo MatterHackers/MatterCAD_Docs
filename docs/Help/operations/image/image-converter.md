@@ -4,6 +4,8 @@ articleKey: 4D9BD8DB-C544-4294-9C08-4195A409217A
 parent: "Image Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: Turn a picture or logo into a raised solid part, with an optional base, ready to export.
+keywords: picture to 3d, logo, photo to model, silhouette, image to stl, stencil, emblem
 ---
 # Image Converter
 

@@ -4,6 +4,8 @@ articleKey: IntersectionObject3D_2
 parent: "Boolean Operations"
 grand_parent: "Operations"
 nav_order: 3
+description: Keep only the space where parts overlap and throw the rest away.
+keywords: intersection, overlap, common part, shared volume, where parts meet
 ---
 # Intersect
 

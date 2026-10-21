@@ -4,6 +4,8 @@ articleKey: TranslateObject3D
 parent: "Transform Operations"
 grand_parent: "Operations"
 nav_order: 4
+description: Move a part by an exact distance along X, Y and Z.
+keywords: move by distance, exact position, shift, move exactly
 ---
 # Translate
 

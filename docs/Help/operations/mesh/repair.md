@@ -4,6 +4,8 @@ articleKey: RepairObject3D_2
 parent: "Mesh Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Fix holes, flipped faces and broken edges in an imported STL or OBJ so it becomes a clean solid.
+keywords: fix stl, broken mesh, non-manifold, watertight, holes in mesh, bad stl, mesh errors, heal
 ---
 # Repair
 

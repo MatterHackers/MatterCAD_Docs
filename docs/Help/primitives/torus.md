@@ -3,6 +3,8 @@ title: Torus
 articleKey: TorusObject3D
 parent: "Primitives"
 nav_order: 17
+description: Add a donut-shaped ring, with its overall size and the thickness of the ring set separately.
+keywords: donut, doughnut, o-ring, loop, bagel
 ---
 # Torus
 

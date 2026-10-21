@@ -3,6 +3,8 @@ title: Wedge
 articleKey: WedgeObject3D_2
 parent: "Primitives"
 nav_order: 18
+description: Add a wedge, a box cut corner to corner, for ramps, slopes and supports.
+keywords: ramp, slope, incline, triangle, angled block, gusset
 ---
 # Wedge
 

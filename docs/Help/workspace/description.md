@@ -3,6 +3,8 @@ title: Description
 articleKey: DescriptionObject3D
 parent: "Workspace"
 nav_order: 14
+description: Put a note in the 3D view, a label pinned to a point in your design, written in Markdown.
+keywords: note, annotation, comment, callout, instruction, text note
 ---
 # Description
 

@@ -4,6 +4,8 @@ articleKey: RadialPinchObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 6
+description: Push a part in or out all the way around, layer by layer, following a profile you draw.
+keywords: bulge, waist, barrel, hourglass
 ---
 # Radial Pinch
 

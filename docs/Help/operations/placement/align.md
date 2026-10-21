@@ -4,6 +4,8 @@ articleKey: AlignObject3D_3
 parent: "Placement Operations"
 grand_parent: "Operations"
 nav_order: 1
+description: "Line up parts with each other: match edges, center one on another, or stack them."
+keywords: line up, center, stack, put on top, align edges, flush, lay out
 ---
 # Align
 

@@ -3,6 +3,8 @@ title: SVG Object
 articleKey: SvgObject3D
 parent: "Primitives"
 nav_order: 15
+description: Open an SVG drawing as solid parts or as flat paths you can extrude, revolve or cut with.
+keywords: vector drawing, illustrator, inkscape, vector art, clip art
 ---
 # SVG Object
 

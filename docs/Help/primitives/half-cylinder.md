@@ -3,6 +3,8 @@ title: Half Cylinder
 articleKey: HalfCylinderObject3D
 parent: "Primitives"
 nav_order: 6
+description: Add a shape with a flat bottom and a round top, half of a cylinder lying along its length.
+keywords: half round, semicircle, rounded top, half pipe, tunnel
 ---
 # Half Cylinder
 

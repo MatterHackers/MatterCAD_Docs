@@ -3,6 +3,8 @@ title: Image Object
 articleKey: ImageObject3D
 parent: "Primitives"
 nav_order: 10
+description: Add a picture to your design as a flat plate, ready for Image Converter, Lithophane or tracing.
+keywords: picture, png, jpg, jpeg, bitmap, gif, add image, insert picture
 ---
 # Image Object
 

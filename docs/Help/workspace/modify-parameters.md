@@ -3,6 +3,8 @@ title: Modify Parameters
 articleKey: ModifyParametersObject3D
 parent: "Workspace"
 nav_order: 15
+description: Let a formula decide whether a part shows and what color it is.
+keywords: conditional, show if, visibility formula, color formula, toggle part
 ---
 # Modify Parameters
 

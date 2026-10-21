@@ -4,6 +4,8 @@ articleKey: RoundAllEdgesObject3D
 parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 10
+description: Round every outside edge and corner of a part at once with a single radius, with nothing to pick.
+keywords: fillet everything, soften everything, smooth outside corners, comfortable grip, blunt sharp corners
 ---
 # Round All Edges
 

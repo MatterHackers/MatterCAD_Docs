@@ -4,6 +4,8 @@ articleKey: RotateObject3D_3, RotateObject3D_2
 parent: "Transform Operations"
 grand_parent: "Operations"
 nav_order: 2
+description: Turn a part by an exact angle around an axis you choose.
+keywords: turn, angle, degrees, tilt, orientation, rotate 90
 ---
 # Rotate
 

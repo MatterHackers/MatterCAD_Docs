@@ -3,6 +3,8 @@ title: Cone
 articleKey: ConeObject3D
 parent: "Primitives"
 nav_order: 3
+description: Add a cone, a round shape that comes to a point, for tips, funnels and spikes.
+keywords: point, spike, funnel, tapered cylinder, tip, truncated cone
 ---
 # Cone
 

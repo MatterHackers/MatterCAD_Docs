@@ -4,6 +4,8 @@ articleKey: LoftObject3D
 parent: "Path Operations"
 grand_parent: "Operations"
 nav_order: 10
+description: Make a solid that blends smoothly between two or more flat shapes stacked at different heights.
+keywords: blend shapes, morph, transition, square to circle, skin sections
 ---
 # Loft
 

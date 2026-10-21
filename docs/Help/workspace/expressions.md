@@ -2,6 +2,8 @@
 title: Expressions
 parent: "Workspace"
 nav_order: 3
+description: Type a formula instead of a number so a size follows other sizes and the design stays parametric.
+keywords: formula, equation, calculate, parametric, equals sign
 ---
 # Expressions
 

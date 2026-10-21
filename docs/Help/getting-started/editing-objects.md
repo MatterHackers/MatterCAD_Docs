@@ -2,6 +2,8 @@
 title: Editing Objects
 parent: "Getting Started"
 nav_order: 3
+description: Move, lift, turn and resize parts by dragging their handles, or type exact sizes in the Properties panel.
+keywords: move a part, drag, handles, nudge, arrow keys, right-click menu, change size
 ---
 # Editing Objects
 

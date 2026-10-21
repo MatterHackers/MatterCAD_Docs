@@ -1,6 +1,8 @@
 ---
 title: Release Notes
 nav_order: 104
+description: "Every change in each MatterCAD release: new features, improvements and bug fixes."
+keywords: changelog, change log, version history, what changed, fixes
 ---
 # MatterCAD - Next Release (in development)
 

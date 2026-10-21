@@ -2,6 +2,8 @@
 title: Adding Existing Objects
 parent: "Getting Started"
 nav_order: 1
+description: Import STL, OBJ, 3MF, STEP, SVG and other files from your computer or the library into your design.
+keywords: import, import stl, load a file, open a file, open stl, drag and drop, insert model, bring in a model
 ---
 # Adding Existing Objects
 

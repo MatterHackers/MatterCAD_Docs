@@ -3,6 +3,8 @@ title: Transform Operations
 parent: "Operations"
 has_children: true
 nav_order: 8
+description: Find the tools that move, turn, resize and flip parts by exact amounts.
+keywords: position, orientation, exact placement, numeric transform
 ---
 # Transform Operations
 <!-- AUTO_IMAGE: type=toolbar_icons group=Transform -->

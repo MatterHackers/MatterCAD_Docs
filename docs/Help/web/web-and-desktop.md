@@ -2,6 +2,8 @@
 title: Web and Desktop Differences
 parent: "MatterCAD on the Web"
 nav_order: 5
+description: What works differently in the website editor than in the desktop app, and which browsers you need.
+keywords: browser differences, desktop app, webgpu, chrome, safari, firefox, limitations
 ---
 # Web and Desktop Differences
 

@@ -2,6 +2,8 @@
 title: Adding Parts on the Web
 parent: "MatterCAD on the Web"
 nav_order: 3
+description: Add shapes, sample parts, your online designs and files from your computer while editing on the website.
+keywords: browser upload, upload file, web import, add file online, website add
 ---
 # Adding Parts on the Web
 

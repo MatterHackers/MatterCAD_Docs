@@ -2,6 +2,8 @@
 title: Keyboard Shortcuts
 parent: "Workspace"
 nav_order: 5
+description: Every key and mouse shortcut in MatterCAD, from the view and selection to editing and files.
+keywords: hotkeys, keys, shortcut keys, key bindings, keyboard commands
 ---
 # Keyboard Shortcuts
 

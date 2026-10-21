@@ -2,6 +2,8 @@
 title: Local Library
 parent: "Library"
 nav_order: 2
+description: Browse, open and organize the designs saved on your computer into folders.
+keywords: my files, folders, local files, organize designs, rename design, new folder
 ---
 # Local Library
 
