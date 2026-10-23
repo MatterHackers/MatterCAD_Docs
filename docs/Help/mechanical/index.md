@@ -2,12 +2,12 @@
 title: Mechanical Parts
 has_children: true
 nav_order: 5
-description: "Find the parametric mechanical parts: gears, threads and screws."
+description: "Find the parametric mechanical parts: gears, gearboxes, threads and screws."
 keywords: hardware, machine parts, mechanical design
 ---
 # Mechanical Parts
 
-The Library's **Included > Mechanical** folder holds parametric mechanical parts: gears, threads and screws.
+The Library's **Included > Mechanical** folder holds parametric mechanical parts: gears, a gearbox, threads and screws.
 
 ## Tools
 
@@ -19,3 +19,4 @@ The Library's **Included > Mechanical** folder holds parametric mechanical parts
 - [Threads](threads.md) - A threaded rod, or the threaded hole it fits
 - [Screw](screw.md) - A complete fastener from a standard metric or inch size, or the hole for one
 - [Cycloidal Gear](cycloidal-gear.md) - Generate the disc and pin ring of a cycloidal speed reducer
+- [Cycloidal Gearbox](cycloidal-gearbox.md) - A complete, printable cycloidal gearbox that bolts onto a stepper motor, with its parts list
