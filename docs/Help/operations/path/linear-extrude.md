@@ -24,6 +24,7 @@ Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. Thi
 ## Parameters
 
 - **Height** - How tall the extrusion is, in mm (default 5; the slider runs 0.1 to 50)
+- **Direction** - Which side of the sketch the solid grows to. **Up** (the default) stands it on the sketch, **Center** puts half the height above the sketch and half below, and **Down** hangs it below the sketch. Bevel Top always rounds the top face and Bevel Bottom the bottom face, whichever way it grows. The height handle sits on the face that moves: drag Down's bottom face further down to make it taller
 - **Bevel Top** - Off by default. Rounds the top edge of the extrusion
 - **Bevel Bottom** - Off by default. Rounds the bottom edge, where the part meets the bed. It has its own size, so a part can have a large round at the bottom and a small one on top
 
@@ -46,6 +47,7 @@ Every path operation carries a **Projection Plane** section that says which flat
 
 - This works with any 2D path: [Circle](../../2d-paths/circle-path.md), [Box](../../2d-paths/box-path.md), [Star](../../2d-paths/star-path.md), [SVG](../../primitives/svg-object.md), and [Custom](../../2d-paths/custom-path.md) paths
 - Enable Bevel Top for a more polished, professional look
+- Use **Down** to cut a pocket into a part: draw the shape on the part's top face, extrude it Down and subtract it
 - For revolving a path around an axis instead of extruding straight up, see [Revolve](revolve.md)
 - For a profile that follows a route through space, see [Sweep](sweep.md); for one that changes shape as it rises, see [Loft](loft.md)
 
