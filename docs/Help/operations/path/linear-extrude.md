@@ -24,9 +24,9 @@ Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. Thi
 ## Parameters
 
 - **Height** - How tall the extrusion is, in mm (default 5; the slider runs 0.1 to 50)
-- **Direction** - Which side of the sketch the solid grows to. **Up** (the default) stands it on the sketch, **Center** puts half the height above the sketch and half below, and **Down** hangs it below the sketch. Bevel Top always rounds the top face and Bevel Bottom the bottom face, whichever way it grows. The height handle sits on the face that moves: drag Down's bottom face further down to make it taller
+- **Direction** - Which side of the sketch the solid grows to. **Up** (the default) stands it on the sketch, **Center** puts half the height above the sketch and half below, and **Down** hangs it below the sketch. Bevel Top always rounds the top face and Bevel Bottom the bottom face, whichever way it grows. The height handle sits on the top face (with **Down**, on the bottom face): drag it away from the part to make it taller
 - **Bevel Top** - Off by default. Rounds the top edge of the extrusion
-- **Bevel Bottom** - Off by default. Rounds the bottom edge, where the part meets the bed. It has its own size, so a part can have a large round at the bottom and a small one on top
+- **Bevel Bottom** - Off by default. Rounds the bottom edge. It has its own size, so a part can have a large round at the bottom and a small one on top
 
 ### Bevel Parameters
 
