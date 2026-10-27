@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, TraceMaskObject3D
+articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -93,11 +93,13 @@ Only the chosen branch is built, so a graph with many options stays quick. If Ch
 The Image nodes split **Image to Path** into steps you can see and change:
 
 1. Add an **Image** (Add Node > Image) and pick its picture on its card, or drag a picture in from the Library.
-2. Wire it into a mask. **Transparency Mask** keeps the picture's solid (not see-through) pixels. **Intensity Mask** keeps the pixels whose brightness is inside its **Select Range**, set on the histogram on its card. The card shows the mask it makes.
+2. Wire it into a mask. **Transparency Mask** keeps the picture's solid (not see-through) pixels. **Intensity Mask** keeps the pixels whose brightness is inside its **Select Range**, set on the histogram on its card. **Color Mask** splits the picture into its most distinct colors and keeps the pixels nearest the colors you tick on its card, as Image to Path's Colors tab does; its **Colors** output lists those colors. The card shows the mask it makes.
 3. Wire the mask into **Trace Mask**. It traces the mask's outline into a path, leaving out pieces smaller than **Min Surface Area**.
 4. Wire Trace Mask's result into **Linear Extrude**, or any other node that takes an outline.
 
 The same picture at the same size traces to the same outline Image to Path gives. A picture wired straight into Trace Mask traces its solid pixels.
+
+To let the picture choose, wire it into **Analyze Picture** too. It gives the analysis Image to Path would pick for that picture - Transparency, Colors or Intensity - so wired into a **Switch**'s Choose, with each mask wired into the option of the same name, it passes on the mask that suits the picture.
 
 ## Choose Edges with Selection Nodes
 
