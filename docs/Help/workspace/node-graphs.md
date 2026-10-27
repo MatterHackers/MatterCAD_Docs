@@ -1,10 +1,10 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D
+articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
-keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, if else, variants
+keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, variants, copies
 ---
 # Node Graphs
 
@@ -30,7 +30,7 @@ Select the object and turn **Show Graph** on or off in the Properties panel. Wit
 - **Input** (on the left) holds everything that comes into the graph: its settings (parameters), the objects it works on, and the **Scene** and **Parameters** sockets used by formulas.
 - **Output** (on the right) is what the object shows. Whatever you wire into it is the result.
 - **Cards** are the nodes in between. Each card is an object - a shape, an operation, a sheet - and shows the same settings the Properties panel would. Click a card to select it; drag its title bar to move it.
-- **Sockets** are the dots on a card's edges: inputs on the left, outputs on the right. Their colour says what they carry - green for solids, blue for paths, grey for numbers, lilac for yes/no values, indigo for positions and sizes (an X, Y and Z together), orange for 3D curves, plum for images, pink for Variables. A single number or yes/no is drawn as a short bar instead of a dot. Hover a socket to see its name.
+- **Sockets** are the dots on a card's edges: inputs on the left, outputs on the right. Their colour says what they carry - green for solids, blue for paths, grey for numbers, lilac for yes/no values, indigo for positions and sizes (an X, Y and Z together), orange for 3D curves, plum for images, lime for copies, pink for Variables. A single number or yes/no is drawn as a short bar instead of a dot. Hover a socket to see its name.
 - **Diamond sockets** are selections: they carry an answer for each edge or corner, not one value. See **Choose Edges with Selection Nodes** below.
 - **Noodles** are the wires. Drag from an output socket and drop on an input socket of the same colour to connect them. To move a noodle, pick it up by the end at its input and drop it somewhere else; drop it on empty space to remove it. A noodle that would make a loop is refused, and so is one between sockets that don't match - the editor tells you why, for example *Types don't match: geometry into image*. A noodle into a diamond socket is dashed.
 
@@ -38,7 +38,7 @@ Scroll the mouse wheel to zoom, and drag with the right or middle mouse button t
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math and Vector Math), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math and Vector Math), **Copies** (Line Copies, Circle Copies, Step Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
 - Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
@@ -100,6 +100,20 @@ The Image nodes split **Image to Path** into steps you can see and change:
 The same picture at the same size traces to the same outline Image to Path gives. A picture wired straight into Trace Mask traces its solid pixels.
 
 To let the picture choose, wire it into **Analyze Picture** too. It gives the analysis Image to Path would pick for that picture - Transparency, Colors or Intensity - so wired into a **Switch**'s Choose, with each mask wired into the option of the same name, it passes on the mask that suits the picture.
+
+## Copies
+
+The Copies nodes make many copies of a part, as the [Array](../operations/array/array.md) does, with each step a node you can see and wire:
+
+- **Line Copies** gives a row of placements: **Count** copies, each one **Offset** further on, or spread evenly up to an **Endpoint**, or each a share of the part's size (**Relative Offset**, 1 puts them side by side).
+- **Circle Copies** gives a ring: **Count** copies, or as many as fit at **Angle Between**, **Radius** from the **Central Axis**, all the way round or over an arc of **Sweep Angle**. With **Face the Center** on, each copy turns with its place around the circle.
+- **Step Copies** gives copies that each move by **Translation**, turn by **Rotation** and scale by **Scale** once more than the one before - spirals, stairs and shrinking rows.
+- **Adjust Copies** takes a list of copies and moves, turns and scales every one by **Offset**, **Rotation** and **Scale**. Turn **Randomize** on to add a random amount to each copy, up to **Random Offset**, **Random Rotation** and **Random Scale Axes**. The same **Seed** always gives the same copies; change it for a different mix. **Skip First** and **Skip Last** leave an end copy in place.
+- **Place on Copies** puts a copy of the part wired into its **Geometry** at every placement wired into its **Copies**. **Create Single Mesh** joins them into one mesh (with **Merge**, points closer than **Distance** become one). An outline wired in gives outlines out, so *Circle -> Place on Copies -> Linear Extrude* extrudes every copy.
+
+The copies sit exactly where an Array with the same settings puts them. A Copies socket (lime) only connects to another Copies socket.
+
+For example, wire a Cube into Place on Copies' **Geometry** and a Line Copies into its **Copies**, then wire Place on Copies into the Output: the graph shows a row of cubes, as many as Line Copies' Count.
 
 ## Choose Edges with Selection Nodes
 
