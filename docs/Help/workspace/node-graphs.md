@@ -1,10 +1,10 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D
+articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, TraceMaskObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
-keywords: nodes, graph, visual programming, node editor, wires, procedural
+keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, if else, variants
 ---
 # Node Graphs
 
@@ -38,7 +38,8 @@ Scroll the mouse wheel to zoom, and drag with the right or middle mouse button t
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **Operations**, **Math** (Separate XYZ and Combine XYZ), **Sheet**, **Selection** (Position, Compare and Inside Box) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math and Vector Math), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
 - To delete a node, select it and press **Delete** or **Backspace**, or right-click its card and choose **Delete Node**. Its noodles go with it. Input and Output can't be deleted.
@@ -66,6 +67,37 @@ Min, Max, Size and Center are each an X, Y and Z together (the indigo socket). T
 - **Separate XYZ** (Add Node > Math) splits a position or size into its **X**, **Y** and **Z**. For example, wire the Bounds' **Size** into Separate XYZ's **Vector** and its **Z** into a Cube's **Height** to make the cube exactly as tall as the parts in the Bounds.
 - **Combine XYZ** does the reverse: three numbers in, one position or size out.
 - In a formula, add the letter: `=Bounds.Max.Z` is the top of the Bounds box, and `=Bounds.Size.X` its width. Inside a graph, wire the Bounds card's Variables socket to the card whose formula reads it, as for any formula (see **Formulas Inside a Graph** below).
+
+## Math and Vector Math
+
+**Math** (Add Node > Math) works out a number from two numbers, **A** and **B**. Pick what it does on its card: Add, Subtract, Multiply, Divide, Power, Minimum, Maximum, Modulo, Absolute, Round, Floor, Ceiling, Square Root, Sine, Cosine, Tangent or Clamp. Sine, Cosine and Tangent take A as an angle in degrees, and Clamp keeps A between B and **Max**. Type A and B on the card, or wire values into them, and wire its **Result** into any setting on another card - a Cube's Width, say, or a Compare's B.
+
+**Vector Math** does the same for positions and sizes (an X, Y and Z together). Its operations are Add, Subtract, Multiply, Scale (A times the number **Scale**), Length, Distance, Dot, Cross, Normalize, Minimum and Maximum. Operations that give a position or size come out of **Vector**; Length, Distance and Dot give a single number, which comes out of **Value**.
+
+Both work in plain numbers, so a factor of 2 stays 2 whatever units you use. When an operation has no answer - dividing by zero, the square root of a negative number, the tangent of 90 degrees - the result is 0 and the card shows a warning saying what to change.
+
+For example, to make a hole half the width of a part: wire a Bounds' **Size** through **Separate XYZ**, wire its **X** into a Math set to **Divide** with B at 2, and wire the Result into a Cylinder's Diameter.
+
+## Switch Between Branches
+
+A **Switch** (Add Node > Flow) passes on one of its inputs and ignores the rest, so one graph can make several versions of a part.
+
+- Wire a choice parameter (a setting with a drop-down of options) into its **Choose** input and the Switch gets one input per option, named after it. Wire a different part into each, and the option picked in the Properties panel decides which part comes out of its **Result**.
+- Wire a yes/no value into Choose and the inputs are **False** and **True**.
+- With anything else, or nothing, wired into Choose, the inputs are numbered; set how many with **Options**, and type the number or name of the one to pass on into **Choose**.
+
+Only the chosen branch is built, so a graph with many options stays quick. If Choose names no input, or nothing is wired into the chosen one, the Switch passes nothing on and its card says why.
+
+## Trace a Picture with Masks
+
+The Image nodes split **Image to Path** into steps you can see and change:
+
+1. Add an **Image** (Add Node > Image) and pick its picture on its card, or drag a picture in from the Library.
+2. Wire it into a mask. **Transparency Mask** keeps the picture's solid (not see-through) pixels. **Intensity Mask** keeps the pixels whose brightness is inside its **Select Range**, set on the histogram on its card. The card shows the mask it makes.
+3. Wire the mask into **Trace Mask**. It traces the mask's outline into a path, leaving out pieces smaller than **Min Surface Area**.
+4. Wire Trace Mask's result into **Linear Extrude**, or any other node that takes an outline.
+
+The same picture at the same size traces to the same outline Image to Path gives. A picture wired straight into Trace Mask traces its solid pixels.
 
 ## Choose Edges with Selection Nodes
 
@@ -157,6 +189,7 @@ Graphs can be nested up to 8 deep. Deeper than that, the graph shows *Graphs can
 ## Related Topics
 
 - [Fillet](../operations/reshape/fillet.md) - Rounding edges, and picking them in the 3D view
+- [Image to Path](../operations/image/image-to-path.md) - Tracing a picture's outline in one step
 - [Bounds](../operations/placement/bounds.md) - A box that fits other parts, and its Min, Max, Size and Center
 - [Components](components.md) - Another way to show just a few settings for a group of parts
 - [Expressions](expressions.md) - Formulas in settings
