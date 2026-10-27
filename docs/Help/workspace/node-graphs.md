@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D
+articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -119,7 +119,11 @@ For example, wire a Cube into Place on Copies' **Geometry** and a Line Copies in
 
 A **Handles** node gives your graph a handle in the 3D view, so you can change a value by dragging instead of typing. Add an **Arrow Handle** from **Add Node > Handles** and wire a parameter from the **Input** node into its **Value**, then wire its **Result** on to the settings that parameter fed: the value passes through unchanged. Set **Position** to where the arrow starts, **Direction** to which way it points, and **Scale** to how many millimeters it moves for each 1 the value grows.
 
-Select the graph and a sphere shows at the value's place along the arrow. Drag it to change the parameter as you watch the part follow; let go and the change is one undo step, or press **Esc** during the drag to put the value back. While a graph has handles, they take the place of the usual sizing handles.
+A **Dial Handle** turns an angle, such as a Rotate's angle or a Circle Copies' sweep: its sphere sits **Radius** away from **Center**, turned **Value** degrees around **Axis** from **Start Direction** (counter-clockwise looking down the axis). Drag the sphere around the circle; the angle keeps counting past a full turn instead of jumping back to 0, and an arc shows how far it has turned.
+
+A **Radius Handle** sets a distance from a point, such as a Circle Copies' radius or half a cylinder's diameter: its sphere sits **Value** away from **Center** toward **Direction**, on a circle facing **Normal**. Drag the sphere toward or away from the center, and the circle grows or shrinks with it.
+
+Select the graph and a sphere shows at each handle's value: along the arrow, around the dial or out from the center. Drag it to change the parameter as you watch the part follow; let go and the change is one undo step, or press **Esc** during the drag to put the value back. While a graph has handles, they take the place of the usual sizing handles.
 
 A handle shows only when its **Value** is wired straight from a parameter, and hides while that parameter is a formula, since dragging would replace the formula. A handle inside a graph used as a node also shows on the outer graph when the card's parameter socket is wired from the outer graph's **Input**.
 
