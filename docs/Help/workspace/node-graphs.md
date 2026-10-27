@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D
+articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -114,6 +114,14 @@ The Copies nodes make many copies of a part, as the [Array](../operations/array/
 The copies sit exactly where an Array with the same settings puts them. A Copies socket (lime) only connects to another Copies socket.
 
 For example, wire a Cube into Place on Copies' **Geometry** and a Line Copies into its **Copies**, then wire Place on Copies into the Output: the graph shows a row of cubes, as many as Line Copies' Count.
+
+## On-screen Handles
+
+A **Handles** node gives your graph a handle in the 3D view, so you can change a value by dragging instead of typing. Add an **Arrow Handle** from **Add Node > Handles** and wire a parameter from the **Input** node into its **Value**, then wire its **Result** on to the settings that parameter fed: the value passes through unchanged. Set **Position** to where the arrow starts, **Direction** to which way it points, and **Scale** to how many millimeters it moves for each 1 the value grows.
+
+Select the graph and a sphere shows at the value's place along the arrow. Drag it to change the parameter as you watch the part follow; let go and the change is one undo step, or press **Esc** during the drag to put the value back. While a graph has handles, they take the place of the usual sizing handles.
+
+A handle shows only when its **Value** is wired straight from a parameter, and hides while that parameter is a formula, since dragging would replace the formula. A handle inside a graph used as a node also shows on the outer graph when the card's parameter socket is wired from the outer graph's **Input**.
 
 ## Choose Edges with Selection Nodes
 
