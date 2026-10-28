@@ -4,7 +4,7 @@ articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxO
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
-keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, variants, copies
+keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, variants, copies, for each, loop, repeat
 ---
 # Node Graphs
 
@@ -38,7 +38,7 @@ Scroll the mouse wheel to zoom, and drag with the right or middle mouse button t
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math and Vector Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math and Vector Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
 - Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
@@ -87,6 +87,17 @@ A **Switch** (Add Node > Flow) passes on one of its inputs and ignores the rest,
 - With anything else, or nothing, wired into Choose, the inputs are numbered; set how many with **Options**, and type the number or name of the one to pass on into **Choose**.
 
 Only the chosen branch is built, so a graph with many options stays quick. If Choose names no input, or nothing is wired into the chosen one, the Switch passes nothing on and its card says why.
+
+## Repeat with For Each
+
+A **For Each** (Add Node > Flow) holds a graph of its own and builds it several times, once for each number from 0 up to its **Count**. Use it when each copy should be a little different - a row of pegs that get taller, or a stack of layers.
+
+- Double-click its card to open the graph inside. Its Input gives **Index**, the number of the run being built (0 for the first, 1 for the second, ...), and **Count**. Wire Index through a **Math** node into whatever should change from one copy to the next: for a row of cubes 10 mm apart, wire Index into a Math set to **Multiply** with B at 10, its Result into a **Combine XYZ**'s X, and that into a Translate's **Translation**.
+- Wire the part each run makes into the inner Output, then step back out (Escape or the breadcrumb).
+- On the For Each's card, set **Count** (or wire a value into it) and choose how the parts come out with **Combine**: **Keep Separate** gives a group with one part per run, in order; **Union** joins them into one part.
+- Anything else you wire into the For Each - parameters, parts, pictures - reaches every run.
+
+A Count of 0 gives nothing. Each run remembers what it built, so raising the Count builds only the new runs.
 
 ## Trace a Picture with Masks
 
