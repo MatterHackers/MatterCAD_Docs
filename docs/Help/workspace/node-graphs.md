@@ -184,6 +184,7 @@ A new parameter appears on the Input node and as a row in the object's Propertie
 - **Rename** a parameter by double-clicking its name.
 - **Reorder** parameters by dragging the grip at the left end of a row.
 - **Remove** a parameter by removing its last noodle; the row goes with it.
+- **Add Note** (beside the empty socket's hint) adds a line of text that shows among the parameters in the Properties panel. Its settings open so you can type the text straight away.
 - A parameter can hold a formula, like `=A1` from a [Variable Sheet](variable-sheet.md) or `=Handle.Width` from another object.
 - Other objects can read it too: `=Bracket.Width` reads the Width parameter of the graph named Bracket. Nodes inside a graph can't be read from outside; if you try, you see *Nodes inside a graph can't be used from outside it; add a graph parameter instead.*
 
