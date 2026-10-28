@@ -31,7 +31,7 @@ Click the arrow beside **Save** and choose **Save As**, or press Ctrl+Shift+S (â
 
 In the box:
 
-- **The path along the top** shows where you are. Click a folder in it to go back to that folder. Double-click a folder in the list to open it. Double-clicking a design is the same as clicking it and then **Save**.
+- **The path along the top** shows where you are. Click a folder in it to go back to that folder. Double-click a folder in the list to open it, or on a phone or touch screen, tap it once. Double-clicking a design is the same as clicking it and then **Save**. Tapping a design with your finger only puts its name under **Design Name**.
 - **Create Folder** makes a new folder in the folder you are in. Type its name under **Folder Name** and click **Create**.
 - **Only My Designs is listed.** Designs can't be saved in **Shared with Me** or **Purchased**, so they aren't there. While no folder that can take a design is open, the box says "Choose a folder you can save in." and **Save** can't be clicked.
 - **There is no Computer folder.** A web page can't save to your computer: to get a file there, use [Export or Download](#export-and-download).
