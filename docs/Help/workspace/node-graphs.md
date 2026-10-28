@@ -4,7 +4,7 @@ articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxO
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
-keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, variants, copies, for each, loop, repeat
+keywords: nodes, graph, visual programming, node editor, wires, procedural, arithmetic, conditional, copies, for each
 ---
 # Node Graphs
 
