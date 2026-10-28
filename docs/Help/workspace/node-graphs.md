@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
+articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -159,6 +159,8 @@ A **Dial Handle** turns an angle, such as a Rotate's angle or a Circle Copies' s
 A **Radius Handle** sets a distance from a point, such as a Circle Copies' radius or half a cylinder's diameter: its sphere sits **Value** away from **Center** toward **Direction**, on a circle facing **Normal**. Drag the sphere toward or away from the center, and the circle grows or shrinks with it.
 
 A **Point Handle** moves a point, such as a part's position or the end of a Line Copies: wire a vec3 parameter into its **Value** and its sphere sits at that point. Drag the sphere and the point follows the mouse across the view.
+
+A **Circle Axis** (in **Add Node > Copies**) puts a ring's handles where the ring is. Wire the same values into its **Central Axis** as into the Circle Copies, and the part's center (a **Bounds** node's **Center**) into **Part Center**. Its **Center**, **Normal** and **Start Direction** then give a Radius Handle its **Center**, **Normal** and **Direction**, and a Dial Handle its **Center**, **Axis** and **Start Direction**, so the handles follow the ring onto XZ, YZ or a custom axis. Until you set the axis's **Origin**, the ring goes around the part's center.
 
 Select the graph and a sphere shows at each handle's value: along the arrow, around the dial, out from the center or at the point. Drag it to change the parameter as you watch the part follow; let go and the change is one undo step, or press **Esc** during the drag to put the value back. While a graph has handles, they take the place of the usual sizing handles.
 
