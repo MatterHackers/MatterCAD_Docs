@@ -99,6 +99,28 @@ A **For Each** (Add Node > Flow) holds a graph of its own and builds it several 
 
 A Count of 0 gives nothing. Each run remembers what it built, so raising the Count builds only the new runs.
 
+### Lists and Ranges
+
+A graph setting can be a **list**: a numbered section for each item (**Layer 1**, **Layer 2**, ...), each with its own values. Its length can follow another setting - **Colors - 1** layers for a picture split into Colors colours - and items keep their values when the list shrinks and grows back.
+
+Wire a list into a For Each's **Count** and it runs once per item. Each run reads its item's values through Input parameters named after the fields (**Height**), and two ranges over the items:
+
+- **HeightBelow**, a number field added up over the items before this one: where a layer starts.
+- **TicksFromHere**, a list of colours joined over this item and every later one: a layer's colours with every colour above it.
+
+A run whose colours are all unticked masks nothing, so that item makes no part.
+
+### Example: Colour Layers (Nodes)
+
+**Colour Layers (Nodes)** (Add Node > Examples, or My Tools in the Library) turns a colour picture into a stack of layers, one per colour, for printing with a filament change at each layer.
+
+1. Add it and pick a picture in its **Image** section.
+2. Set **Colors** to how many colours the picture has, background included. Each colour but the background gets a **Layer** section.
+3. In each Layer, set its **Height** (Layer 1 starts at 2 mm, the others at 0.4 mm) and tick the colours it prints. Layer 1 is the bottom.
+4. **Create Base** puts a base under the layers: set its **Base Height** and **Base Type** (Rectangle, Circle or Outline, grown by **Expand**).
+
+Each layer covers its own colours and every colour above it, so it sits on solid plastic, and starts where the layer below ends.
+
 ## Trace a Picture with Masks
 
 The Image nodes split **Image to Path** into steps you can see and change:
