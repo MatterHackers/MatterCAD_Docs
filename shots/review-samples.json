@@ -31,5 +31,8 @@
   "web-phone": [
     "web-phone-portrait",
     "web-design-page"
+  ],
+  "chat": [
+    "gs-ai-tab-chat"
   ]
 }

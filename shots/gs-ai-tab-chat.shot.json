@@ -1,0 +1,19 @@
+{
+  "scene": "gs-ai-tab-chat.mcx",
+  "kind": "chat",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.6
+  },
+  "steps": [
+    {
+      "click": "AI Tab"
+    }
+  ],
+  "alt": "The side panel's AI tab with a short chat: the request, a Changed row naming the change the AI made, its answer with a Copy button, the chat bar and the Context meter, beside the changed part",
+  "replaces": {
+    "needed": "The side panel's AI tab with a short chat"
+  }
+}
