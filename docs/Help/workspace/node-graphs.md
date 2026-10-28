@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
+articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, StepCopiesObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -57,6 +57,7 @@ Most toolbar operations are also nodes. Wire a shape or an outline into an opera
 - **Image to Path** takes a picture through its plum **Source** socket. Drag an image from the Library or the scene tree into the graph and wire its result there; Image to Path traces the outline, which you can then wire into Linear Extrude like any other outline. Only an image fits this socket. (The Image Converter is not a node; it stays a shape you drop in from the Library.)
 - **Bounds** takes parts in and gives back a box that fits them, plus the box's **Min**, **Max**, **Size** and **Center** as values (see **Values Between Nodes** below).
 - **Fillet** and **Chamfer** as nodes round (or cut) **every sharp edge** of what is wired in, since a card has no 3D view to click edges in. Fed an outline, they round every corner. To round only some, wire a selection into their **Selection** diamond (see **Choose Edges with Selection Nodes** below). Unchecking Selection, with nothing wired in, rounds none. The toolbar's Fillet and Chamfer still round only the edges you click.
+- **Set Color** colours whatever is wired into it with its **Color**, and the part shows that colour whatever colours its own pieces have. Wire a Color Mask's **First Color** (the first colour ticked on its card) or **Background Color** into it to colour a part from the picture, as Colour Layers (Nodes) colours each layer.
 
 ## Values Between Nodes
 
