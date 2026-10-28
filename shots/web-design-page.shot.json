@@ -1,0 +1,13 @@
+{
+  "scene": "web-design-page.mcx",
+  "kind": "web-phone",
+  "mode": "page",
+  "markers": [
+    "Reset View Button",
+    "Edit Design Button"
+  ],
+  "alt": "A design page on the MatterCAD website: the design in its 3D preview, with Reset View and the camera buttons at the preview's top-left and the Edit button beside them",
+  "replaces": {
+    "needed": "A design page on the MatterCAD website in a desktop browser"
+  }
+}

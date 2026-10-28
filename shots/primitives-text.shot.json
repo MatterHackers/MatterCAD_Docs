@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-text.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 20.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Text"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Wrap Lines"
+      }
+    }
+  ],
+  "alt": "A raised 3D Text selected in the 3D view beside its Properties panel",
+  "replaces": "20260318-184207-paste-20260318-184207.jpg"
+}

@@ -1,0 +1,12 @@
+{
+  "scene": "array-index-radial.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 45.0,
+    "turn_degrees": 0.0,
+    "fill": 0.9
+  },
+  "alt": "A radial array: copies of a part set evenly around a circle, each facing the centre",
+  "replaces": "array_radial.png"
+}

@@ -1,0 +1,22 @@
+{
+  "scene": "linear-extrude.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Linear Extrude"
+    }
+  ],
+  "crop": [
+    "view",
+    "properties-panel"
+  ],
+  "before": "Original",
+  "alt": "Linear Extrude: a flat star path at the left, and at the right the same star extruded into a solid, with its Height, Direction and Bevel Top settings",
+  "replaces": "20260506-100726-paste-20260506-100726.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-cube.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Cube"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Round"
+      }
+    }
+  ],
+  "alt": "A Cube selected in the 3D view beside its Properties panel: Width, Depth, Height and Round",
+  "replaces": "20260318-183230-paste-20260318-183230.jpg"
+}

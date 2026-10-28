@@ -1,0 +1,35 @@
+{
+  "part-panel": [
+    "primitives-cube",
+    "primitives-text",
+    "mechanical-screw",
+    "align"
+  ],
+  "before-after": [
+    "boolean-subtract",
+    "linear-extrude",
+    "twist"
+  ],
+  "scene-only": [
+    "boolean-index-subtract",
+    "array-index-radial",
+    "workspace-selection-multi"
+  ],
+  "ui-closeup": [
+    "workspace-menus-open",
+    "workspace-sheet-column-menu",
+    "workspace-settings-window"
+  ],
+  "view-interaction": [
+    "fillet-pick-edge",
+    "workspace-sheet-col-resize",
+    "gs-edit-resize"
+  ],
+  "full-window": [
+    "help-index-welcome"
+  ],
+  "web-phone": [
+    "web-phone-portrait",
+    "web-design-page"
+  ]
+}

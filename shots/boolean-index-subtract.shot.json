@@ -1,0 +1,12 @@
+{
+  "scene": "boolean-index-subtract.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "alt": "The result of Subtract: a block with the cutter's shape taken out of it",
+  "replaces": "boolean_subtract.png"
+}

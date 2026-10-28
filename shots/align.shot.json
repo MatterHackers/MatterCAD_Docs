@@ -1,0 +1,21 @@
+{
+  "scene": "align.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 35.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Align"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "Two parts lined up by Align, selected beside its Properties panel: the Anchor and the X, Y and Z axis settings",
+  "replaces": "20260506-154830-paste-20260506-154830.jpg"
+}

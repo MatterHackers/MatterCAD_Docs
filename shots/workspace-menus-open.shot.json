@@ -1,0 +1,20 @@
+{
+  "scene": "workspace-menus-open.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "open-menu": [
+        "MatterCAD"
+      ]
+    }
+  ],
+  "crop": [
+    "menu",
+    "tab-bar",
+    "toolbar"
+  ],
+  "alt": "The top of the MatterCAD window with the MatterCAD menu open over a design tab, every item showing, and the toolbar beside it",
+  "replaces": {
+    "needed": "showing every item from Add System File to Bed to About MatterCAD"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "scene": "workspace-sheet-col-resize.mcx",
+  "kind": "view-interaction",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "hover": {
+        "widget": "Column Header 1",
+        "at": "right"
+      }
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Column Header 1"
+    },
+    {
+      "widget": "Column Header 2"
+    },
+    {
+      "widget": "Cell 1,5"
+    },
+    {
+      "widget": "Cell 2,5"
+    }
+  ],
+  "margin": 2,
+  "cursor": "resize-h",
+  "alt": "Close-up of the separator between column headers B and C with the resize pointer on it",
+  "replaces": {
+    "needed": "separator between two column headers"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scene": "twist.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Twist"
+    }
+  ],
+  "crop": [
+    "view",
+    "properties-panel"
+  ],
+  "before": "Original",
+  "alt": "Twist: a plain box at the left, and at the right the same box twisted into a spiral column, with its Rotation Type, Angle, Slices, Minimum Sides and Twist Right settings",
+  "replaces": {
+    "needed": "cube being twisted into a spiral column"
+  }
+}

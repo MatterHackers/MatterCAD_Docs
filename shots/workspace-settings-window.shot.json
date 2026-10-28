@@ -1,0 +1,23 @@
+{
+  "scene": "workspace-settings-window.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "open-menu": [
+        "MatterCAD"
+      ]
+    },
+    {
+      "click": "Settings MenuItem"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The MatterCAD Settings window with its General and Theme sections showing",
+  "replaces": {
+    "needed": "Settings window with the General and Theme sections"
+  }
+}

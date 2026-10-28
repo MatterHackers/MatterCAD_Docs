@@ -1,0 +1,34 @@
+{
+  "scene": "fillet-pick-edge.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 30.0,
+    "turn_degrees": 30.0,
+    "fill": 0.6
+  },
+  "steps": [
+    {
+      "select": "Fillet"
+    },
+    {
+      "hover-part": {
+        "part": "Fillet",
+        "at": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      }
+    }
+  ],
+  "crop": [
+    "view-around-selection"
+  ],
+  "margin": 32,
+  "cursor": "arrow",
+  "alt": "A Fillet selected in the 3D view: the edges already picked drawn in their own colours, and the edge under the pointer highlighted in white",
+  "replaces": {
+    "needed": "Fillet selected, showing an edge highlighted in white"
+  }
+}

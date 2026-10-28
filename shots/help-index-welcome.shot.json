@@ -1,0 +1,17 @@
+{
+  "scene": "help-index-welcome.mcx",
+  "kind": "full-window",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.8
+  },
+  "steps": [
+    {
+      "select": "Gear"
+    }
+  ],
+  "alt": "The MatterCAD window: the design tabs and toolbar at the top, a design in the 3D view, the design tree and Properties panel at the right and the status bar below",
+  "replaces": "paste-20260317-175249.jpg"
+}

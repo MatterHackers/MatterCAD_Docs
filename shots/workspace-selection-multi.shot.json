@@ -1,0 +1,21 @@
+{
+  "scene": "workspace-selection-multi.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": [
+        "Cube",
+        "Astronaut",
+        "Cylinder"
+      ]
+    }
+  ],
+  "alt": "Three parts selected together, each outlined as selected",
+  "replaces": "20260318-192323-paste-20260318-192323.jpg"
+}

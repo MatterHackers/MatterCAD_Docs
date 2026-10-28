@@ -1,0 +1,32 @@
+{
+  "scene": "web-phone-portrait.mcx",
+  "kind": "web-phone",
+  "mode": "web",
+  "window": "phone",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.8
+  },
+  "steps": [
+    {
+      "select": "Cube"
+    },
+    {
+      "sheet": "half"
+    }
+  ],
+  "markers": [
+    "MatterCAD BrandMenuButton",
+    "Toolbar Add Button",
+    "3D View Undo",
+    "3D View Redo",
+    "Save Menu SplitButton",
+    "Toolbar Tools Button"
+  ],
+  "alt": "MatterCAD's editor on a phone held upright: the one-row toolbar (MatterCAD menu, Add, Undo, Redo, Save, Tools) at the top, the 3D view with the Cube selected, the selection bar, and the bottom sheet at half height on the Design tab",
+  "replaces": {
+    "needed": "MatterCAD's editor on a phone held upright"
+  }
+}

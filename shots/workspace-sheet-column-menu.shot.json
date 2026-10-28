@@ -1,0 +1,23 @@
+{
+  "scene": "workspace-sheet-column-menu.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "right-click": "Column Header 1"
+    }
+  ],
+  "crop": [
+    "menu",
+    {
+      "widget": "Column Header 1"
+    }
+  ],
+  "margin": 8,
+  "alt": "The sheet editor with the right-click menu open on column header B: Auto-size Column, Insert Column Left, Insert Column Right, Remove Column and Add Column",
+  "replaces": {
+    "needed": "right-click menu open on column header B"
+  }
+}

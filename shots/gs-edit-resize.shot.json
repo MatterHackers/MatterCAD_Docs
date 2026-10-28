@@ -1,0 +1,32 @@
+{
+  "scene": "gs-edit-resize.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 12.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Astronaut"
+    },
+    {
+      "hover-part": {
+        "part": "Astronaut",
+        "at": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "crop": [
+    "view-around-selection"
+  ],
+  "margin": 40,
+  "cursor": "arrow",
+  "alt": "A selected part with the pointer on a bottom corner handle, its size labels showing",
+  "replaces": "20260324-080819-paste-20260324-080819.jpg"
+}

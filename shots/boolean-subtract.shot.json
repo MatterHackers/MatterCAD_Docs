@@ -1,0 +1,20 @@
+{
+  "scene": "boolean-subtract.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Subtract"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Subtract: the overlapping parts at the left, and at the right the block with the cutter's shape taken out of it"
+}
