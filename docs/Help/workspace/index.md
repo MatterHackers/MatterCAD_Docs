@@ -16,7 +16,7 @@ Learn your way around the MatterCAD window, use keyboard shortcuts, and manage y
 - [Section View](section-view.md) - Cut the design open in the 3D view to see inside, and make a path of the cut
 - [Tabs, Search and the Status Bar](tabs-and-search.md) - Design tabs and their menu, help search, and the bar along the bottom of the window
 - [Settings](settings.md) - Every row of MatterCAD Settings, including AI Providers and your API keys
-- [Signing In](account.md) - Sign in, create an account, reset your password, share codes and sign out
+- [Signing In](account.md) - Sign in, create an account, reset your password, the account menu and sign out
 - [Updates and Recovery](updates-and-recovery.md) - Check For Update, About, the welcome page and tour, crash reports, and getting your tabs and unsaved work back
 - [Keyboard Shortcuts](keyboard-shortcuts.md) - Quick reference for all keyboard shortcuts
 - [Mouse Controls](mouse-controls.md) - How to navigate the 3D viewport with your mouse

@@ -9,7 +9,7 @@ keywords: login, log in, sign up, password, register, log out
 
 You don't need an account to design in MatterCAD. Sign in to your MatterHackers account when you want to use your [Cloud Library](../library/cloud-library.md), open designs others have [shared](../library/sharing.md) with you, or use MatterHackers AI.
 
-<!-- IMAGE_NEEDED: The right end of the tab bar while signed in, with the account menu open under the user's name showing AI Assistant Access..., Enter Share Code... and Sign Out -->
+<!-- IMAGE_NEEDED: The right end of the tab bar while signed in, with the account menu open under the user's name showing Groups..., Repair Cloud Library... and Sign Out -->
 
 ## Sign In
 
@@ -54,17 +54,11 @@ While you are signed in, click your name at the right of the tab bar for:
 
 | Item | What it does |
 |------|--------------|
-| **AI Assistant Access...** | Opens the panel that lets AI tools outside MatterCAD work on your designs. You don't have to be signed in for this: the same item is on the globe in the status bar. See [Using AI Assistants](../getting-started/ai-assistants.md). Desktop app only |
-| **Enter Share Code...** | Opens a design someone shared with you. See below |
+| **Groups...** | Make groups of people to share with, and manage who is in them. See [Groups](../library/sharing.md#groups) |
+| **Repair Cloud Library...** | Uploads parts your cloud designs use that are still only on this computer. Desktop app only |
 | **Sign Out** | Signs you out. See below |
 
-### Enter a share code
-
-1. Choose **Enter Share Code...**.
-2. In **Library - Enter Share Code**, type the code you were given in the **Enter Share Code:** box and click **Continue**. The note under the box says "This code will provide read-only access."
-3. When MatterCAD says "Your code has been redeemed. Please check your 'Shared with Me' folder in your Library.", click **Done**.
-
-The shared design is in the **Shared with Me** folder of your Library. You can open and use it, but you can't change the original. If the code is wrong, MatterCAD says "Oops! Invalid code."; click **Try Again** to fix it.
+Designs and folders others share with you are in the **Shared with Me** folder of your Library. See [Sharing](../library/sharing.md).
 
 ## Sign Out
 
@@ -84,6 +78,6 @@ After you sign out, **Shared with Me** and **Purchased** disappear from the Libr
 ## Related
 
 - [Cloud Library](../library/cloud-library.md) - Keep designs online
-- [Sharing](../library/sharing.md) - Share designs with share codes
+- [Sharing](../library/sharing.md) - Share designs and folders with people and groups
 - [Settings](settings.md#ai-providers) - The AI connection and MatterHackers AI
 - [Tabs, Search and the Status Bar](tabs-and-search.md) - The tab bar and the status bar

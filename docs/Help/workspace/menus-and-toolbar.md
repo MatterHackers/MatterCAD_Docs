@@ -37,10 +37,10 @@ A design from your [Cloud Library](../library/cloud-library.md) that has been de
 
 ## The Mac Menu Bar
 
-On a Mac, the same items are also in the menu bar at the top of the screen, and **File** adds **Save** and **Save As**, which the ☰ MatterCAD menu leaves to the toolbar. An item with a key shows it:
+On a Mac, the same items are also in the menu bar at the top of the screen, and **File** adds **Save**, **Save As** and **Share...**, which the ☰ MatterCAD menu leaves to the toolbar. An item with a key shows it:
 
 - **MatterCAD** - **About MatterCAD**, **Settings** (⌘,), **Check For Update** and **Quit** (⌘Q).
-- **File** - **Add System File to Bed**, **Open System File** (⌘O), **Open Recent**, **Save** (⌘S) and **Save As** (⇧⌘S). **Save** and **Save As** work on the design in front, as the toolbar's do.
+- **File** - **Add System File to Bed**, **Open System File** (⌘O), **Open Recent**, **Save** (⌘S), **Save As** (⇧⌘S) and **Share...**. **Save** and **Save As** work on the design in front, as the toolbar's do. **Share...** opens the Share dialog for the design in front; it is greyed out unless that design is saved in your Cloud Library. See [Sharing](../library/sharing.md).
 - **Help** - **Help** (F1), **Interface Tour** and **Community**.
 
 The first time MatterCAD starts, these items stay greyed out until you accept the license agreement. **Quit** always works.
@@ -49,7 +49,7 @@ The first time MatterCAD starts, these items stay greyed out until you accept th
 
 The toolbar runs across the top of each design tab. When the window is too narrow for every button, the toolbar wraps onto more rows. From the left:
 
-- **Add to Bed**, **Save** and **Bed** (below).
+- **Add to Bed**, **Save** and **Bed** (below). Between **Save** and **Bed**, a **Share** button opens the Share dialog for the design; it is only there while the design is saved in your Cloud Library. See [Sharing](../library/sharing.md).
 - **Undo** and **Redo**. Hover over one to see the step it takes back or does again, for example "Undo - Move". See [Undo and Redo](undo-redo.md).
 - Buttons that work on the selected parts: **Arrange All Parts**, **Lay Flat**, **Rebuild**, **Group**, **Ungroup**, **Convert to Nodes**, **Duplicate** and **Remove**.
 - The operation groups: **Transform**, **Placement**, **Round & Offset**, **Deform**, **Image**, **Path**, **Merge**, **Duplication**, **Mesh** and **Constraints**.
@@ -67,7 +67,7 @@ To pick a file on your computer instead, choose **Add System File to Bed** in th
 ### Save
 
 - Click **Save** to save the design (Ctrl+S). The button reads **Save •** while the design has changes you have not saved.
-- Click the arrow beside it for **Save As** (Ctrl+Shift+S) and **Export**.
+- Click the arrow beside it for **Save As** (Ctrl+Shift+S) and **Export**, and **Share...** when the design is saved in your Cloud Library. A design saved only on your computer has no **Share...** row. See [Sharing](../library/sharing.md).
 
 See [Saving and Exporting](../getting-started/saving-and-exporting.md) for what each one does.
 

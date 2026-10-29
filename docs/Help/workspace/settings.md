@@ -68,7 +68,7 @@ At the top it says: "Your API keys are kept in MatterCAD's settings on this comp
 | **Anthropic API key** | Your own key for Claude, from Anthropic. Used for chat |
 | **OpenAI API key** | Your own key for OpenAI. Used for GPT chat, making pictures and turning speech into text |
 | **Meshy API key** | Your own key for Meshy. Used to make 3D meshes with Meshy's service |
-| **AI Assistant Access** | **Open** opens the panel that lets AI tools outside MatterCAD, such as Claude Code, work on your designs. See [Using AI Assistants](../getting-started/ai-assistants.md) |
+| **AI Assistant Access (MCP)** | **Open** opens the panel that lets AI tools outside MatterCAD, such as Claude Code, work on your designs. This is where you turn that access on, signed in or not. See [Using AI Assistants](../getting-started/ai-assistants.md) |
 
 ### AI connection
 
@@ -76,7 +76,7 @@ At the top it says: "Your API keys are kept in MatterCAD's settings on this comp
 - **MatterHackers AI** - Uses the MatterHackers AI service. You need to [sign in](account.md), and your MatterHackers account needs an AI subscription.
 - **My own API keys** - Always sends your messages straight to Anthropic or OpenAI with your own keys.
 
-If the chat can't connect the way you chose, the **AI** tab tells you what is missing, for example "Sign in to use MatterHackers AI, or add your own API key in Settings."
+If the chat can't connect the way you chose, the **AI** tab tells you what to do. For example, if you are signed out on **MatterHackers AI**, or on **Automatic** without an Anthropic or OpenAI key, it says "Sign in to your MatterHackers account to use MatterHackers AI." with a **Sign In** button, and on **My own API keys** with no Anthropic key it says "Add your Anthropic API key in Settings to use AI." with an **Open Settings** button.
 
 ### Entering a key
 
