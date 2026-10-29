@@ -1,11 +1,15 @@
 {
   "scene": "mirror.mcx",
   "kind": "before-after",
+  "window": [
+    1280,
+    560
+  ],
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 55.0,
     "turn_degrees": 0.0,
-    "fill": 0.85
+    "fill": 0.9
   },
   "steps": [
     {

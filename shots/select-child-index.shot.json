@@ -5,7 +5,7 @@
     "start": "fit-selection",
     "look_down_degrees": 32.0,
     "turn_degrees": 30.0,
-    "fill": 0.7
+    "fill": 0.5
   },
   "steps": [
     {
@@ -17,7 +17,7 @@
   ],
   "crop": [
     "design-tree",
-    "view-around-selection",
+    "view",
     {
       "properties-panel": {
         "to": "Child Index"

@@ -20,7 +20,7 @@
       }
     }
   ],
-  "alt": "A Linear Array of five copies bending into an arc, beside its Properties panel: the Linear, Radial and Transform mode buttons at the top, then Count, Offset Method and Relative Offset",
+  "alt": "An Array of five copies in a line bending into an arc, beside its Properties panel: the Line, Circle and Transform mode tabs at the top, then Count, Offset Method and Relative Offset",
   "replaces": {
     "needed": "Screenshot of the Array panel showing the Mode tabs"
   }
