@@ -1,0 +1,31 @@
+{
+  "scene": "mechanical-cycloidal-gearbox.mcx",
+  "kind": "part-panel",
+  "window": [
+    1280,
+    1000
+  ],
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 35.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Gearbox"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Eccentricity"
+      }
+    }
+  ],
+  "alt": "A Cycloidal Gearbox assembled on the bed, its bearings and screws in grey, selected beside its Properties panel: the View buttons and the Gearbox section's Ratio, Ring Diameter and Eccentricity",
+  "replaces": {
+    "needed": "Screenshot of the Cycloidal Gearbox assembled on the bed"
+  }
+}

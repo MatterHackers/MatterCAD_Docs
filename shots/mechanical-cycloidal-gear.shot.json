@@ -1,0 +1,28 @@
+{
+  "scene": "mechanical-cycloidal-gear.mcx",
+  "kind": "part-panel",
+  "own-style": "window-slice",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Disc"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Eccentricity"
+      }
+    }
+  ],
+  "alt": "A cycloidal drive's Disc and Pin Ring side by side on the bed, the Disc selected beside its Properties panel: Output, the Disc and Pin Ring tabs, Height, Pin Count, Pin Circle Diameter, Pin Diameter and Eccentricity",
+  "replaces": {
+    "needed": "Screenshot of a Cycloidal Gear disc and pin ring side by side in the 3D view"
+  }
+}

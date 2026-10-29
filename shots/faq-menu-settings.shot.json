@@ -1,0 +1,20 @@
+{
+  "scene": "faq-menu-settings.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "open-menu": [
+        "MatterCAD",
+        "Settings MenuItem"
+      ]
+    }
+  ],
+  "crop": [
+    "menu",
+    {
+      "widget": "MatterCAD BrandMenuButton"
+    }
+  ],
+  "alt": "The MatterCAD menu open from its button at the top left of the window, the pointer on its Settings row",
+  "replaces": "20260318-194137-paste-20260318-194137.jpg"
+}

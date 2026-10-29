@@ -1,0 +1,34 @@
+{
+  "scene": "faq-settings-advanced.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "open-menu": [
+        "MatterCAD"
+      ]
+    },
+    {
+      "click": "Settings MenuItem"
+    },
+    {
+      "scroll-to": "Advanced Section"
+    },
+    {
+      "click": "Advanced Section"
+    },
+    {
+      "scroll-to": "Clear Cache Button"
+    },
+    {
+      "hover-tip": "Open Application Storage Button"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "cursor": "arrow",
+  "alt": "The MatterCAD Settings window scrolled down to its open Advanced section, the pointer on the Application Storage button showing its Open Folder tip, and the Close button below",
+  "replaces": "20260318-194218-paste-20260318-194218.jpg"
+}
