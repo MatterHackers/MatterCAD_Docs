@@ -3,6 +3,9 @@
     "before-after": {
       "choice": "one-view"
     },
+    "chat": {
+      "choice": "panel"
+    },
     "full-window": {
       "choice": "framed"
     },
@@ -38,6 +41,9 @@
     "fillet-pick-edge": {
       "choice": "a"
     },
+    "gs-ai-tab-chat": {
+      "choice": "b"
+    },
     "gs-edit-resize": {
       "choice": "c"
     },
@@ -50,10 +56,61 @@
     "mechanical-screw": {
       "choice": "a"
     },
+    "primitives-braille": {
+      "choice": "a"
+    },
+    "primitives-braille-card": {
+      "choice": "a"
+    },
+    "primitives-cone": {
+      "choice": "a"
+    },
     "primitives-cube": {
       "choice": "a"
     },
+    "primitives-cylinder": {
+      "choice": "a"
+    },
+    "primitives-half-cylinder": {
+      "choice": "a"
+    },
+    "primitives-half-sphere": {
+      "choice": "a"
+    },
+    "primitives-half-wedge": {
+      "choice": "a"
+    },
+    "primitives-hole": {
+      "choice": "b"
+    },
+    "primitives-image-bare": {
+      "choice": "a"
+    },
+    "primitives-image-panel": {
+      "choice": "a"
+    },
+    "primitives-pyramid": {
+      "choice": "a"
+    },
+    "primitives-qr-code": {
+      "choice": "a"
+    },
+    "primitives-sphere": {
+      "choice": "a"
+    },
+    "primitives-svg-import": {
+      "choice": "b"
+    },
     "primitives-text": {
+      "choice": "a"
+    },
+    "primitives-torus": {
+      "choice": "a"
+    },
+    "primitives-tube": {
+      "choice": "a"
+    },
+    "primitives-wedge": {
       "choice": "a"
     },
     "twist": {
