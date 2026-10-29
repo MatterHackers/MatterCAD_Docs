@@ -7,11 +7,6 @@
     "turn_degrees": 30.0,
     "fill": 0.85
   },
-  "steps": [
-    {
-      "select": "Fillet"
-    }
-  ],
   "crop": [
     "view"
   ],

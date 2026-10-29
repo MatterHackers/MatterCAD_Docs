@@ -5,11 +5,6 @@
     "start": "top",
     "fill": 0.85
   },
-  "steps": [
-    {
-      "select": "Fillet"
-    }
-  ],
   "crop": [
     "view"
   ],
