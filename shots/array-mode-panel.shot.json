@@ -1,0 +1,27 @@
+{
+  "scene": "array-mode-panel.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 30.0,
+    "turn_degrees": 25.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Array"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Relative Offset"
+      }
+    }
+  ],
+  "alt": "A Linear Array of five copies bending into an arc, beside its Properties panel: the Linear, Radial and Transform mode buttons at the top, then Count, Offset Method and Relative Offset",
+  "replaces": {
+    "needed": "Screenshot of the Array panel showing the Mode tabs"
+  }
+}

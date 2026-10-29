@@ -1,0 +1,28 @@
+{
+  "scene": "rotate.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 35.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Rotate"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Angle"
+      }
+    }
+  ],
+  "own-style": "window-slice",
+  "alt": "A box turned 45 degrees by Rotate, its Rotate About plane drawn in the 3D view, beside its Properties panel: the XY, XZ, YZ and Custom tabs, Flip, Pick Face and Angle",
+  "replaces": {
+    "needed": "Screenshot showing the Rotate operation with its Rotate About plane"
+  }
+}

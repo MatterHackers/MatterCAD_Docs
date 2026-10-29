@@ -1,0 +1,22 @@
+{
+  "scene": "translate.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 50.0,
+    "turn_degrees": 30.0,
+    "fill": 0.6
+  },
+  "steps": [
+    {
+      "select": "Translate"
+    }
+  ],
+  "crop": [
+    "view",
+    "properties-panel"
+  ],
+  "own-style": "window-slice",
+  "alt": "A text moved off the world origin by Translate, a grey copy left where it started at the crossing of the bed's X and Y axes, beside its Properties panel: the X, Y and Z of the move",
+  "replaces": "20260506-160828-paste-20260506-160828.jpg"
+}

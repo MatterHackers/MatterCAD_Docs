@@ -1,0 +1,27 @@
+{
+  "scene": "array-radial-panel.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 45.0,
+    "turn_degrees": 0.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Array"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Radius"
+      }
+    }
+  ],
+  "alt": "A Radial Array of six copies on a circle, beside its Properties panel: Count, the Central Axis tabs and Radius",
+  "replaces": {
+    "needed": "Screenshot of Array in Circle mode showing 6 copies arranged in a circle"
+  }
+}

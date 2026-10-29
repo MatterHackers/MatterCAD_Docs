@@ -1,0 +1,26 @@
+{
+  "scene": "mirror.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 55.0,
+    "turn_degrees": 0.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Mirror"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Mirror On"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Mirror: a text reading normally at the left, and at the right the same text flipped left to right, beside the Mirror On setting",
+  "replaces": "20260506-160651-paste-20260506-160651.jpg"
+}

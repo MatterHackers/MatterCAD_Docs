@@ -1,0 +1,25 @@
+{
+  "scene": "scale.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Scale"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Height"
+      }
+    }
+  ],
+  "alt": "A text made twice its size by Scale, beside its Properties panel: Scale Type, the Direct and Percentage tabs, Lock Proportion and the Width, Depth and Height",
+  "replaces": "20260506-160759-paste-20260506-160759.jpg"
+}

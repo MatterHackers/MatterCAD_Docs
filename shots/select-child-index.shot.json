@@ -1,0 +1,30 @@
+{
+  "scene": "select-child-index.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Select Child"
+    },
+    {
+      "expand": "Select Child"
+    }
+  ],
+  "crop": [
+    "design-tree",
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Child Index"
+      }
+    }
+  ],
+  "own-style": "window-slice",
+  "alt": "A Select Child expanded in the design tree to its three children, showing only the Half Wedge in the 3D view, beside its Properties panel: Selection Method By Index and Child Index 1",
+  "replaces": "20260506-080526-paste-20260506-080526.jpg"
+}
