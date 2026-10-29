@@ -1,0 +1,24 @@
+{
+  "scene": "select-paths.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "top",
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Select Paths"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Filter Preset"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Select Paths: the flat text ABO at the left, the insides of the A and the O open, and at the right Outer Paths Only, the same letters with those insides filled, beside the Filter Preset",
+  "replaces": "20260506-154655-paste-20260506-154655.jpg"
+}

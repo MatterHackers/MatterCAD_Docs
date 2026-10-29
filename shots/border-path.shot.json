@@ -1,0 +1,24 @@
+{
+  "scene": "border-path.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "top",
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Border"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Style"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Border Path: a flat star at the left, and at the right the same star on its Outline border grown 9 mm with round corners, beside the Base Type tabs, Expand, Infill Amount and Style",
+  "replaces": "20260506-100533-paste-20260506-100533.jpg"
+}

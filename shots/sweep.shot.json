@@ -1,0 +1,34 @@
+{
+  "scene": "sweep.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 25.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Sweep"
+    },
+    {
+      "hover-part": {
+        "part": "Sweep",
+        "at": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      }
+    }
+  ],
+  "crop": [
+    "view-around-selection"
+  ],
+  "margin": 32,
+  "cursor": "arrow",
+  "alt": "A Sweep selected in the 3D view: a round tube following an S shaped rail through space, the rail's anchor spheres along it and the spheres of its Scale and Twist graphs",
+  "replaces": {
+    "needed": "Screenshot of a Sweep selected in the 3D view, showing a circle profile swept along an S shaped rail, with the rail's control point spheres visible"
+  }
+}

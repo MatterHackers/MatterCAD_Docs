@@ -1,0 +1,18 @@
+{
+  "scene": "loft.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 15.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Loft: a square on the bed and a circle above it at the left, and at the right the Loft of the two, a solid blending from the square at the bottom to the circle at the top",
+  "replaces": {
+    "needed": "Screenshot of a Loft in the 3D view, showing a square section at the bed and a circle section above it with the skinned surface between them"
+  }
+}

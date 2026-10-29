@@ -1,0 +1,24 @@
+{
+  "scene": "outline-path.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "top",
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Outline Path"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Outer Style"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Outline Path: a filled star at the left, and at the right only its outline, a band 7.5 mm wide with round corners, beside Outline Width, Offset, Inner Style and Outer Style",
+  "replaces": "20260506-101308-paste-20260506-101308.jpg"
+}

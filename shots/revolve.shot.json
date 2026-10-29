@@ -1,0 +1,28 @@
+{
+  "scene": "revolve.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Revolve"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Sides"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Revolve: a vase's half profile standing at the left, and at the right the vase it spins into, beside Rotation, Axis Offset, Starting Angle, Ending Angle and Sides",
+  "replaces": {
+    "needed": "Before and after showing a profile path being revolved into a vase shape, with the Revolve's Properties panel (Rotation, Axis Offset, Starting Angle, Ending Angle, Sides)"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scene": "curve-3d.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 25.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "3D Curve"
+    },
+    {
+      "click-curve-point": 3
+    }
+  ],
+  "crop": [
+    "view-around-selection"
+  ],
+  "margin": 32,
+  "cursor": "arrow",
+  "alt": "A 3D Curve selected in the 3D view: its tube rising through space in an S, a sphere at each anchor, and the middle anchor just clicked, its two handle spheres showing either side of it",
+  "replaces": {
+    "needed": "Screenshot of a 3D Curve selected in the 3D view, showing the thick tube of the curve, the anchor spheres along it, and the two handle spheres of the point being edited"
+  }
+}
