@@ -1,0 +1,21 @@
+{
+  "scene": "mesh-repair.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 25.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Repair"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A mesh with holes and broken edges mended by Repair, beside its Properties panel: the vertex, face and non-manifold edge counts before and after, the non-manifold edges down to 0",
+  "replaces": "20260324-080517-paste-20260324-080517.jpg"
+}

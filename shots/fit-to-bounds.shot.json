@@ -1,0 +1,21 @@
+{
+  "scene": "fit-to-bounds.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 20.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Fit to Bounds"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A text fitted to 53.2 mm wide by Fit to Bounds, beside its Properties panel: Lock Proportion X Y Z, Width, Depth and Height and the Stretch setting",
+  "replaces": "20260506-154930-paste-20260506-154930.jpg"
+}

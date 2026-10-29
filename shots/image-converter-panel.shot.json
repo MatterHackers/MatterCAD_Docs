@@ -1,0 +1,31 @@
+{
+  "scene": "image-converter-panel.mcx",
+  "kind": "part-panel",
+  "window": [
+    1280,
+    1400
+  ],
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Image Converter"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Select Range"
+      }
+    }
+  ],
+  "alt": "A logo made a raised solid by Image Converter, beside its Properties panel: the picture, the Analysis Type tabs and the Select Range histogram",
+  "replaces": {
+    "needed": "Screenshot of an Image Converter selected in the 3D view with the Properties panel open, showing the picture, the Analysis Type tabs and the Select Range histogram"
+  }
+}

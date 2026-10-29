@@ -1,0 +1,29 @@
+{
+  "scene": "image-to-path.mcx",
+  "kind": "part-panel",
+  "window": [
+    1280,
+    1400
+  ],
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 50.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Image to Path"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Min Surface Area"
+      }
+    }
+  ],
+  "alt": "A logo traced by Image to Path into flat outlines over the faint picture, beside its Properties panel: the Analysis Type tabs, the Select Range histogram and Min Surface Area",
+  "replaces": "20260324-075521-paste-20260324-075521.jpg"
+}

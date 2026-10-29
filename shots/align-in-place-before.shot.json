@@ -1,0 +1,12 @@
+{
+  "scene": "align-in-place-before.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "alt": "The parts of one model, made as separate files that share coordinates, scattered on the bed",
+  "replaces": "20260506-160417-paste-20260506-160417.jpg"
+}

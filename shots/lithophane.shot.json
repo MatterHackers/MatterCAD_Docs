@@ -1,0 +1,23 @@
+{
+  "scene": "lithophane.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 15.0,
+    "turn_degrees": 15.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Lithophane"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A picture made a Lithophane panel whose thickness follows its tones, beside its Properties panel: Pixels Per mm, Height, Width, Invert and the Update button",
+  "replaces": {
+    "needed": "A Lithophane made from a photo, with the Lithophane's Properties panel (Pixels Per mm, Height, Width, Invert and the Update button)"
+  }
+}

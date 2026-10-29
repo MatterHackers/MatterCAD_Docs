@@ -1,0 +1,12 @@
+{
+  "scene": "align-in-place-after.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "alt": "The same parts after Align in Place: put back together where their files placed them",
+  "replaces": "20260506-160501-paste-20260506-160501.jpg"
+}

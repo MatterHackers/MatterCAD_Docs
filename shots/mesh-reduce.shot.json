@@ -1,0 +1,26 @@
+{
+  "scene": "mesh-reduce.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 15.0,
+    "turn_degrees": 0.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Reduce"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Final Count"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Reduce: the astronaut at the left, and at the right a copy reduced to 1 percent of its polygons, visibly faceted, beside Mode, Source Polygon Count, Target Percent and Final Count",
+  "replaces": "20260324-080430-paste-20260324-080430.jpg"
+}
