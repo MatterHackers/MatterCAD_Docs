@@ -1,0 +1,26 @@
+{
+  "scene": "primitives-braille-card.mcx",
+  "kind": "part-panel",
+  "style": "window-slice",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 30.0,
+    "turn_degrees": 0.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Braille Card b"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Website"
+      }
+    }
+  ],
+  "alt": "Three Braille Cards in a row, for the letters a, b and c, one card per letter, the b card selected beside its Properties panel: Letter, Base Height and the Website link",
+  "replaces": "20260318-182929-paste-20260318-182929.jpg"
+}

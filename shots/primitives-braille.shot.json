@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-braille.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 35.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Braille"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Website"
+      }
+    }
+  ],
+  "alt": "The word Braille written in raised braille dots on a backing plate, selected beside its Properties panel: Text, Backing Depth, Use Grade 2, Render As Braille, Add Hook and the Website link",
+  "replaces": "20260318-182800-paste-20260318-182800.jpg"
+}

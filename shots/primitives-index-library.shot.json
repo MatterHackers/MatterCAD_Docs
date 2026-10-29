@@ -1,0 +1,22 @@
+{
+  "scene": "primitives-index-library.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "click": "Library Tab"
+    },
+    {
+      "click": "Included Tree Node"
+    },
+    {
+      "double-click": "3D Primitives Row Item Collection"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Library ListView"
+    }
+  ],
+  "alt": "The Library's 3D Primitives folder: a thumbnail and name for each shape it holds, from Cube to Image Converter",
+  "replaces": "20260319-173740-paste-20260319-173740.jpg"
+}

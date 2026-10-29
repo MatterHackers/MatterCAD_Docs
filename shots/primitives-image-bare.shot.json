@@ -1,0 +1,14 @@
+{
+  "scene": "primitives-image-bare.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 25.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "alt": "A bare Image lying flat on the bed, seen at an angle: a picture on a thin plate, not a raised relief",
+  "replaces": {
+    "needed": "Screenshot of a bare Image on the bed viewed at an angle"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-svg-import.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 45.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "SVG Import"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Minimum Area"
+      }
+    }
+  ],
+  "alt": "An imported SVG drawing raised into 3D, selected beside its Properties panel: Output, Height and Minimum Area",
+  "replaces": "20260318-184807-paste-20260318-184807.jpg"
+}

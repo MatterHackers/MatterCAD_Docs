@@ -1,6 +1,10 @@
 {
   "scene": "mechanical-screw.mcx",
   "kind": "part-panel",
+  "window": [
+    1280,
+    1000
+  ],
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 40.0,
@@ -14,7 +18,11 @@
   ],
   "crop": [
     "view-around-selection",
-    "properties-panel"
+    {
+      "properties-panel": {
+        "to": "Head Type"
+      }
+    }
   ],
   "alt": "A socket head Screw selected in the 3D view beside its Properties panel: the Measurement buttons, Size, Thread Spacing, Length and the Head Type icons",
   "replaces": {

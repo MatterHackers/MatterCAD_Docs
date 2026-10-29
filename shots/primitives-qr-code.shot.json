@@ -1,0 +1,21 @@
+{
+  "scene": "primitives-qr-code.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 55.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "QR Code"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A QR Code selected in the 3D view beside its Properties panel: Output Option set to Text, the Text it encodes and a preview of the code",
+  "replaces": "20260318-184540-paste-20260318-184540.jpg"
+}
