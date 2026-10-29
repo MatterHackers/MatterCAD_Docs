@@ -1,0 +1,12 @@
+{
+  "scene": "array-index-linear.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 28.0,
+    "turn_degrees": 20.0,
+    "fill": 0.9
+  },
+  "alt": "A linear array: copies of a part set in a row, evenly spaced",
+  "replaces": "array_linear.png"
+}

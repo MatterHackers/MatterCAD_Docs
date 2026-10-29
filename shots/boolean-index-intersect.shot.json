@@ -1,0 +1,12 @@
+{
+  "scene": "boolean-index-intersect.mcx",
+  "kind": "scene-only",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "alt": "The result of Intersect: only the volume the parts share",
+  "replaces": "boolean_intersect.png"
+}

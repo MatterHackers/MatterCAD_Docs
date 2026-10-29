@@ -1,0 +1,15 @@
+{
+  "scene": "boolean-subtract-and-replace.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Subtract and Replace: the overlapping parts at the left, and at the right the block with the cutter's shape taken out of it and the cut-away piece kept as its own part, pulled out of its pocket"
+}

@@ -1,0 +1,16 @@
+{
+  "scene": "boolean-combine.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 35.0,
+    "fill": 0.85
+  },
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Combine: the overlapping parts at the left, and at the right the same parts merged into one",
+  "replaces": "boolean_combine.png"
+}
