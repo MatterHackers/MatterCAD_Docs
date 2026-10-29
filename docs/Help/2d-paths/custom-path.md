@@ -10,7 +10,7 @@ keywords: draw a shape, sketch, polygon, bezier, spline, freehand, profile, cont
 
 Draw your own 2D path with control points. This gives you complete freedom to create any 2D shape that can then be extruded or revolved into a 3D object.
 
-<!-- IMAGE_NEEDED: Screenshot showing a custom path being edited in the Properties panel's path editor, with its toolbar (Reset Zoom, Sharp, Matched, Aligned, Free, Mirror, the X and Y boxes and the pop-out button) -->
+<!-- IMAGE_NEEDED: Screenshot showing a custom path being edited in the Properties panel's path editor, with its toolbar (Reset Zoom, Sharp, Matched, Aligned, Free, Mirror Left/Right, Mirror Top/Bottom, the X and Y boxes and the pop-out button) -->
 
 
 ## How to Use
@@ -36,7 +36,9 @@ The four point buttons set how the selected point's handles behave:
 - **Aligned** - handles in a straight line, each its own length
 - **Free** - handles move independently
 
-**Mirror** turns on symmetry: edits are mirrored across the vertical line x = 0, so you only draw half of a symmetric shape. The pop-out button on the editor's toolbar moves the editor into its own window, for more room.
+**Mirror Left/Right** and **Mirror Top/Bottom** turn on symmetry, so you only draw part of a symmetric shape. With Mirror Left/Right on, edits are mirrored across the vertical line x = 0; with Mirror Top/Bottom on, across the horizontal line y = 0. Turn both on and you draw a quarter of the shape: every edit is copied to all four corners. Turning one on makes the path symmetric right away, keeping the half your selected points are on (or, with nothing selected, the half with more points); **Undo** puts it back. Drag a point onto the line and it joins its mirror image there; drag it off again and they split. With both on, a point where the two lines cross stays where it is.
+
+The pop-out button on the editor's toolbar moves the editor into its own window, for more room.
 
 ## Points That Follow a Formula
 
