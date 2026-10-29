@@ -1,6 +1,10 @@
 {
   "scene": "primitives-qr-code.mcx",
   "kind": "part-panel",
+  "window": [
+    1280,
+    1000
+  ],
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 55.0,

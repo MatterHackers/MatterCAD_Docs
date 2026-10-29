@@ -1,6 +1,10 @@
 {
   "scene": "primitives-image-panel.mcx",
   "kind": "part-panel",
+  "window": [
+    1280,
+    1000
+  ],
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 32.0,
