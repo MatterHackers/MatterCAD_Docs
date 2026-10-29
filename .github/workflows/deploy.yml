@@ -1,4 +1,4 @@
-name: Deploy Docs to GitHub Pages
+name: Deploy help pictures, help zip and redirects to GitHub Pages
 
 on:
   push:
@@ -24,58 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build help-docs.zip
-        run: |
-          python3 - <<'PYEOF'
-          import os, zipfile
+      - name: Test the site build
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
 
-          HELP_ROOT = "docs/Help"
-          TRANSLATIONS_ROOT = "translations"
-
-          # Build help-docs.zip containing all help articles and JSON metadata from docs/Help/.
-          # The app builds the help tree from the zip's directory structure
-          # and extracts article titles from YAML frontmatter — no toc.json needed.
-          included_extensions = {".md", ".json"}
-          with zipfile.ZipFile("docs/help-docs.zip", "w", zipfile.ZIP_DEFLATED) as zf:
-              for root, dirs, files in os.walk(HELP_ROOT):
-                  # Sort for deterministic zip ordering
-                  dirs.sort()
-                  for fname in sorted(files):
-                      if os.path.splitext(fname)[1].lower() in included_extensions:
-                          full_path = os.path.join(root, fname)
-                          # Entry path relative to docs/, e.g. "Help/operations/array-linear.md"
-                          arc_name = os.path.relpath(full_path, "docs").replace("\\", "/")
-                          zf.write(full_path, arc_name)
-
-              # Translated articles live outside docs/ so Jekyll never publishes them.
-              # Each language contributes "<lang>/Help/..." entries alongside the canonical tree.
-              if os.path.isdir(TRANSLATIONS_ROOT):
-                  for lang in sorted(os.listdir(TRANSLATIONS_ROOT)):
-                      lang_help = os.path.join(TRANSLATIONS_ROOT, lang, "Help")
-                      if not os.path.isdir(lang_help):
-                          continue
-                      for root, dirs, files in os.walk(lang_help):
-                          dirs.sort()
-                          for fname in sorted(files):
-                              if os.path.splitext(fname)[1].lower() == ".md":
-                                  full_path = os.path.join(root, fname)
-                                  # Entry path relative to translations/, e.g. "de/Help/operations/array-linear.md"
-                                  arc_name = os.path.relpath(full_path, TRANSLATIONS_ROOT).replace("\\", "/")
-                                  zf.write(full_path, arc_name)
-              print(f"Generated docs/help-docs.zip with {len(zf.namelist())} entries")
-          PYEOF
+      # The help is read at mattercad.com/help; this site keeps the pictures and help-docs.zip that
+      # MatterCAD downloads, and sends every old article address to the same article there.
+      - name: Build the site
+        run: python3 scripts/build_site.py --out _site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./docs
-          destination: ./_site
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
 
   deploy:
     environment:

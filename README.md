@@ -1,27 +1,27 @@
 # MatterCAD Documentation
 
-[![MatterCAD 3D Design Interface](https://matterhackers.github.io/MatterCAD_Docs/assets/paste-20260317-175249.jpg)](https://matterhackers.github.io/MatterCAD_Docs/)
+[![MatterCAD 3D Design Interface](https://matterhackers.github.io/MatterCAD_Docs/assets/paste-20260317-175249.jpg)](https://mattercad.com/help/)
 
 **MatterCAD** is a powerful, intuitive 3D design application built for makers, engineers, and creators. Design parts from scratch using parametric primitives, boolean operations, arrays, and more — then export for 3D printing or CNC machining.
 
-This repository hosts the official MatterCAD documentation, served publicly via [GitHub Pages](https://matterhackers.github.io/MatterCAD_Docs/).
+MatterCAD's help is read at **[mattercad.com/help](https://mattercad.com/help/)**; this repository is its source. GitHub Pages now serves only the help pictures (`docs/assets/`) and the `help-docs.zip` that MatterCAD downloads, plus pages that send every old article address on matterhackers.github.io to the same article on mattercad.com/help. `scripts/build_site.py` builds that site (tested by `scripts/test_build_site.py`).
 
 ---
 
 ## Browse the Docs
 
-**[View Documentation](https://matterhackers.github.io/MatterCAD_Docs/Help/)**
+**[View Documentation](https://mattercad.com/help/)**
 
 ### What You Can Design
 
 | Boolean Operations | Array Patterns | Mechanical Parts |
 | :---: | :---: | :---: |
-| [![Boolean Subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/subtract) | [![Array](https://matterhackers.github.io/MatterCAD_Docs/assets/array_linear.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/array) | [![Gears](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical_gears.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/mechanical/gears) |
+| [![Boolean Subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)](https://mattercad.com/help/operations/boolean/subtract) | [![Array](https://matterhackers.github.io/MatterCAD_Docs/assets/array_linear.png)](https://mattercad.com/help/operations/array/array) | [![Gears](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical_gears.png)](https://mattercad.com/help/mechanical/gears) |
 | Combine, subtract, and intersect solids | Linear, radial, curve, and transform patterns | Gears, threads, and precision parts |
 
 ### Powerful Operations
 
-| [![Boolean Combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/combine) | [![Boolean Intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/boolean/intersect) | [![Array (Radial)](https://matterhackers.github.io/MatterCAD_Docs/assets/array_radial.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/array) | [![Array (Advanced)](https://matterhackers.github.io/MatterCAD_Docs/assets/array_advanced.png)](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/array/array) |
+| [![Boolean Combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)](https://mattercad.com/help/operations/boolean/combine) | [![Boolean Intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)](https://mattercad.com/help/operations/boolean/intersect) | [![Array (Radial)](https://matterhackers.github.io/MatterCAD_Docs/assets/array_radial.png)](https://mattercad.com/help/operations/array/array) | [![Array (Advanced)](https://matterhackers.github.io/MatterCAD_Docs/assets/array_advanced.png)](https://mattercad.com/help/operations/array/array) |
 | :---: | :---: | :---: | :---: |
 | Combine | Intersect | Array (Radial) | Array (Transform) |
 
@@ -46,11 +46,11 @@ This repository hosts the official MatterCAD documentation, served publicly via 
 
 ## Documentation Topics
 
-- [Getting Started](https://matterhackers.github.io/MatterCAD_Docs/Help/getting-started/) — First steps, viewport navigation, creating and editing objects
-- [Primitives](https://matterhackers.github.io/MatterCAD_Docs/Help/primitives/) — All 3D shape primitives
-- [Operations](https://matterhackers.github.io/MatterCAD_Docs/Help/operations/) — Boolean, array, reshape, transform, path, and mesh operations
-- [Workspace](https://matterhackers.github.io/MatterCAD_Docs/Help/workspace/) — Keyboard shortcuts, mouse controls, expressions, components
-- [Library](https://matterhackers.github.io/MatterCAD_Docs/Help/library/) — Cloud and local library management
+- [Getting Started](https://mattercad.com/help/getting-started/) — First steps, viewport navigation, creating and editing objects
+- [Primitives](https://mattercad.com/help/primitives/) — All 3D shape primitives
+- [Operations](https://mattercad.com/help/operations/) — Boolean, array, reshape, transform, path, and mesh operations
+- [Workspace](https://mattercad.com/help/workspace/) — Keyboard shortcuts, mouse controls, expressions, components
+- [Library](https://mattercad.com/help/library/) — Cloud and local library management
 
 ---
 
@@ -60,10 +60,10 @@ The English articles under `docs/Help` are authoritative — always edit those. 
 
 - Regenerate with `python scripts/update_help_translations.py` from the MatterCAD repo root (requires `ANTHROPIC_API_KEY`). Run it after editing any English article.
 - The pipeline is incremental — a `source_hash` in each translated article's frontmatter means only changed articles are retranslated.
-- `deploy.yml` packs the translations into `help-docs.zip` as `<lang>/Help/...` entries alongside the English ones.
+- `scripts/build_site.py` (run by `deploy.yml`) packs the translations into `help-docs.zip` as `<lang>/Help/...` entries alongside the English ones.
 - The app falls back to English per article, so a missing translation is safe.
 - A translation whose `source_hash` no longer matches its English article is deleted, not kept: the app and the AI assistant read the translation in place of the English page whenever one exists, so a stale one would serve out-of-date text. Regenerate it instead.
-- Translations are not published as Jekyll pages — only the English docs are served on GitHub Pages.
+- Translations are read only through `help-docs.zip`; mattercad.com/help shows the English articles.
 
 ---
 
