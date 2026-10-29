@@ -1,0 +1,21 @@
+{
+  "scene": "round-inside-edges.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 45.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Round Inside Edges"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Round Inside Edges: a sharp tray at the left, and at the right the same tray with its pocket's inside corners rounded",
+  "replaces": "reshape_round_inside_edges.png"
+}

@@ -1,0 +1,21 @@
+{
+  "scene": "dilate.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 28.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Dilate"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Dilate: a sharp L bracket at the left, and at the right the same bracket grown bigger with rounded outside edges",
+  "replaces": "reshape_dilate.png"
+}

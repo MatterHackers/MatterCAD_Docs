@@ -1,0 +1,26 @@
+{
+  "scene": "curve.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 55.0,
+    "turn_degrees": 20.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Curve"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Split Mesh"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Curve: a straight bar at the left, and at the right the same bar bent into an arc inside the red guide of the circle it bends around, with its Angle, Bend Direction, Start Percent and Split Mesh settings",
+  "replaces": "20260506-155243-paste-20260506-155243.jpg"
+}

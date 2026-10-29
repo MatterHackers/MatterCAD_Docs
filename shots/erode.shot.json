@@ -1,0 +1,21 @@
+{
+  "scene": "erode.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 28.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Erode"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Erode: a sharp L bracket at the left, and at the right the same bracket shrunk smaller with its inside corner rounded",
+  "replaces": "reshape_erode.png"
+}

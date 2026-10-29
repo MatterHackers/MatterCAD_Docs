@@ -1,0 +1,21 @@
+{
+  "scene": "chamfer.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 28.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Chamfer"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Chamfer: a sharp block at the left, and at the right the same block with its top and upright edges cut at an angle",
+  "replaces": "reshape_chamfer.png"
+}

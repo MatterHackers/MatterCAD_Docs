@@ -1,0 +1,19 @@
+{
+  "scene": "fillet-2d.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "top",
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Fillet"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "before": "Original",
+  "alt": "Fillet on a flat path: a sharp Star at the left, and at the right the same Star with every corner rounded",
+  "replaces": "reshape_fillet_2d.png"
+}
