@@ -19,7 +19,7 @@
     }
   ],
   "before": "Original",
-  "alt": "Smooth Path: a letter M traced from a blocky picture at the left, its edges in stair-steps, and at the right the same trace evened out, beside Smooth Distance and Iterations",
+  "alt": "Smooth Path: a letter M traced from a blocky picture at the left, the raw trace's edges in stair-steps, and at the right the same trace evened out, beside Smooth Distance and Iterations",
   "replaces": {
     "needed": "Before and after showing a jagged traced outline evened out by Smooth Path, with its Properties panel (Smooth Distance, Iterations)"
   }
