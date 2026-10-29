@@ -13,40 +13,45 @@ You don't need an account to design in MatterCAD. Sign in to your MatterHackers 
 
 ## Sign In
 
-1. Click **(sign in)** at the far right of the tab bar. Hover over it and it says "Sign in to your MatterHackers account".
-2. In **Sign in to my account**, type your **Username or Email** and your **Password**. Tick **Show Password** to see what you typed.
-3. Click **Sign in**, or press Enter in the password box.
+MatterCAD signs you in through your web browser, on mattercad.com. You type your password there, never in MatterCAD.
 
-While MatterCAD checks, it shows "Please wait. Signing in...". Once you are in, **(sign in)** changes to your name, and the cloud designs you had open when you last signed out come back in their tabs.
+1. Click **(sign in)** at the far right of the tab bar. Hover over it and it says "Sign in to your MatterHackers account".
+2. MatterCAD opens mattercad.com in your web browser, at the page where you sign in to your MatterHackers account. Sign in there.
+3. Come back to MatterCAD. It finishes signing you in on its own.
+
+While you sign in in the browser, MatterCAD shows the **Sign in to my account** window. It says "Finish signing in in your browser", and below that "MatterCAD opened mattercad.com in your web browser. Sign in there with your MatterHackers account, then come back here. You can also create an account or reset your password there." Once the browser hands the sign-in back, the window says "Signing in..." for a moment.
+
+<!-- IMAGE_NEEDED: The Sign in to my account window over the app while waiting for the browser: "Finish signing in in your browser", the note about mattercad.com, and the Open the browser again and Cancel buttons -->
+
+- **Open the browser again** opens the sign-in page once more, for example if you closed the browser tab. It starts a new sign-in, and the one before it stops.
+- **Cancel** stops signing in and closes the window. Pressing Escape or closing the window does the same.
+
+Once you are in, the window closes, **(sign in)** changes to your name, and the cloud designs you had open when you last signed out come back in their tabs. The browser tab shows whether signing in worked, and you can close it.
 
 MatterCAD stays signed in when you close and reopen it, until you sign out.
 
-Opening the **Cloud Library** in the library while signed out opens the same sign-in window.
+Opening the **Cloud Library** in the library while signed out starts the same sign-in. So does the **Sign In** button in the AI tab, and MatterCAD starts it by itself when your sign-in has run out and you need to sign in again.
 
-If signing in doesn't work, the window says why:
+If signing in doesn't work, the window says why and what to do:
 
-- "Oops! Invalid username, email or password." - Check what you typed, or use **Forgot Password**.
-- "Sorry! Unable to connect to server. Please try again later." - MatterCAD can't reach the internet or the MatterHackers server.
-- "Sorry! Too many sign in attempts. Please try again later." - Wait a while before you try again.
+- "Sign in was canceled in the browser. Click Open the browser again to try once more." - You said no on the sign-in page.
+- "MatterCAD's sign in is busy right now. Please wait a minute, then click Open the browser again."
+- "The sign in could not be completed. Click Open the browser again to start over."
+- "MatterCAD could not reach mattercad.com. Check your internet connection, then click Open the browser again."
+- "Signing in took too long and was stopped. Click Open the browser again to start over." - MatterCAD waits ten minutes for you to finish in the browser.
+- "Signing in could not start. Restart MatterCAD and try again." - Followed by the reason, such as "MatterCAD could not open your web browser." If your browser didn't open, restart MatterCAD and click **(sign in)** again.
+
+<!-- IMAGE_NEEDED: The Sign in to my account window after a failed sign-in, with the red message "Signing in took too long and was stopped. Click Open the browser again to start over." above the Open the browser again and Cancel buttons -->
+
+On the website, MatterCAD uses your mattercad.com sign-in: sign in on the website itself. Clicking **(sign in)** in the editor there says "Sign in on the MatterCAD website, then reload this page."
 
 ## Create an Account
 
-1. Click **(sign in)**, then click **Create An Account** at the bottom of the window (beside "New User?").
-2. In **Sign Up for an Account**, fill in **Username**, **Email**, **Password** and **Re-enter Password**.
-3. Click **Create Account**.
-
-When the account is made, MatterCAD shows "Success! Your account has been created." Click **Continue** to go back to the sign-in window with your username filled in, and sign in.
-
-If the name or email is already in use, the window tells you which, for example "Sorry! Looks like an account already exists for that email address."
+You make a MatterHackers account on mattercad.com, not in MatterCAD. Click **(sign in)**; the page that opens in your browser lets you create an account. When it is made and you are signed in there, come back to MatterCAD and it finishes signing you in.
 
 ## Forgot Password
 
-1. Click **(sign in)**, then click **Forgot Password** beside the **Password** box.
-2. In **What was my password again?**, type your **Email Address** and click **Reset Password**. MatterCAD emails you a six-digit reset code.
-3. In **Update my password**, type the **Password Reset Code** from the email, then your **New Password** twice (**Re-enter New Password**).
-4. Click **Change Password**. When you see "Success! Your password has been updated.", click **Continue** and sign in with the new password.
-
-If the code is wrong or too old, the window says "Sorry! Looks like that reset code is invalid." or "Sorry! Looks like that reset code has expired." Start again from step 2 to get a new code.
+You reset your password on mattercad.com, not in MatterCAD. Click **(sign in)**; the page that opens in your browser lets you reset your password. Once you have signed in there with the new one, come back to MatterCAD.
 
 ## The Account Menu
 
