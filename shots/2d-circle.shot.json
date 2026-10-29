@@ -1,0 +1,25 @@
+{
+  "scene": "2d-circle.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 60.0,
+    "turn_degrees": 0.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Circle"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Sides"
+      }
+    }
+  ],
+  "alt": "A flat Circle path selected on the bed beside its Properties panel: Plane, Diameter and Sides",
+  "replaces": "20260506-080110-paste-20260506-080110.jpg"
+}

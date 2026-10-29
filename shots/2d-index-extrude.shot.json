@@ -1,0 +1,26 @@
+{
+  "scene": "2d-index-extrude.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 35.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Linear Extrude"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Bevel Top"
+      }
+    }
+  ],
+  "before": "Star",
+  "alt": "A flat Star path at the left and the same Star given height by Linear Extrude at the right, the Linear Extrude selected beside its Properties panel: Height and Bevel Top",
+  "replaces": "20260506-093625-paste-20260506-093625.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "scene": "2d-star.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 60.0,
+    "turn_degrees": 0.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Star"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Valley Radius"
+      }
+    }
+  ],
+  "alt": "A flat Star path selected on the bed, its point and valley circles showing, beside its Properties panel: Plane, Points, Point Radius and Valley Radius",
+  "replaces": "20260506-080319-paste-20260506-080319.jpg"
+}

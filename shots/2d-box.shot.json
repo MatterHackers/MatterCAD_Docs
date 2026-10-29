@@ -1,0 +1,25 @@
+{
+  "scene": "2d-box.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 60.0,
+    "turn_degrees": 0.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Box"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Round"
+      }
+    }
+  ],
+  "alt": "A flat Box path selected on the bed beside its Properties panel: Plane, Width, Depth and Round",
+  "replaces": "20260506-080026-paste-20260506-080026.jpg"
+}
