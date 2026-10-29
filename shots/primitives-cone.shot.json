@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-cone.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Cone"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Sides"
+      }
+    }
+  ],
+  "alt": "A Cone selected in the 3D view beside its Properties panel: Diameter, Height and Sides",
+  "replaces": "20260318-183159-paste-20260318-183159.jpg"
+}

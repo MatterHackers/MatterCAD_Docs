@@ -1,0 +1,21 @@
+{
+  "scene": "primitives-pyramid.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Pyramid"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A Pyramid selected in the 3D view beside its Properties panel: Width, Depth and Height",
+  "replaces": "20260318-183743-paste-20260318-183743.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-tube.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Tube"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "You can switch to Advanced mode to get more ring options."
+      }
+    }
+  ],
+  "alt": "A Tube seen from above so its hollow middle shows, selected beside its Properties panel: Outer Diameter, Inner Diameter, Height, Sides and Advanced, with the line saying Advanced gives more options",
+  "replaces": "20260318-183848-paste-20260318-183848.jpg"
+}

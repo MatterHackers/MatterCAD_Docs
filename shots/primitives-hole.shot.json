@@ -1,0 +1,26 @@
+{
+  "scene": "primitives-hole.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 30.0,
+    "turn_degrees": 25.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Hole"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Round"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Hole: at the left a block with a Hole through it, the Hole selected with its Output set to Hole; at the right the two combined, the Hole's shape cut out of the block",
+  "replaces": "20260318-183619-paste-20260318-183619.jpg"
+}

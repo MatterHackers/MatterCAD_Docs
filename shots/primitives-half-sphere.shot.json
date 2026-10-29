@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-half-sphere.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Half Sphere"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Latitude Sides"
+      }
+    }
+  ],
+  "alt": "A Half Sphere, its dome up, selected beside its Properties panel: Diameter, Longitude Sides and Latitude Sides",
+  "replaces": "20260318-183343-paste-20260318-183343.jpg"
+}

@@ -1,0 +1,21 @@
+{
+  "scene": "primitives-half-wedge.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Half Wedge"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A Half Wedge selected in the 3D view beside its Properties panel: Width, Depth and Height",
+  "replaces": "20260318-183405-paste-20260318-183405.jpg"
+}

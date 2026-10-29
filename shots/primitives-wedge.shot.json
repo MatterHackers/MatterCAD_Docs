@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-wedge.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": -30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Wedge"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Round"
+      }
+    }
+  ],
+  "alt": "A Wedge selected in the 3D view, its slope toward you, beside its Properties panel: Width, Depth, Height and Round",
+  "replaces": "20260318-184625-paste-20260318-184625.jpg"
+}

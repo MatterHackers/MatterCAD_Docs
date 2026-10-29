@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-sphere.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Sphere"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "You can switch to Advanced mode to get more sphere options."
+      }
+    }
+  ],
+  "alt": "A Sphere selected in the 3D view beside its Properties panel: Diameter, Sides and Advanced, with the line saying Advanced gives more options",
+  "replaces": "20260318-183909-paste-20260318-183909.jpg"
+}

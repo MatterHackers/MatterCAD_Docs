@@ -1,0 +1,25 @@
+{
+  "scene": "primitives-torus.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 45.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Torus"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "You can switch to Advanced mode to get more torus options."
+      }
+    }
+  ],
+  "alt": "A Torus seen from above so its hole shows, selected beside its Properties panel: Outer Diameter, Inner Diameter, Sides and Advanced, with the line saying Advanced gives more options",
+  "replaces": "20260318-184240-paste-20260318-184240.jpg"
+}
