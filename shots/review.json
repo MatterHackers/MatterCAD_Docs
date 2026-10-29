@@ -26,6 +26,24 @@
     }
   },
   "scenes": {
+    "2d-box": {
+      "choice": "a"
+    },
+    "2d-circle": {
+      "choice": "a"
+    },
+    "2d-custom-path-editor": {
+      "choice": "a"
+    },
+    "2d-index-extrude": {
+      "choice": "a"
+    },
+    "2d-ring": {
+      "choice": "a"
+    },
+    "2d-star": {
+      "choice": "a"
+    },
     "align": {
       "choice": "c"
     },
@@ -36,6 +54,12 @@
       "choice": "a"
     },
     "boolean-subtract": {
+      "choice": "a"
+    },
+    "faq-menu-settings": {
+      "choice": "c"
+    },
+    "faq-settings-advanced": {
       "choice": "a"
     },
     "fillet-pick-edge": {
@@ -52,6 +76,12 @@
     },
     "linear-extrude": {
       "choice": "a"
+    },
+    "mechanical-cycloidal-gear": {
+      "choice": "a"
+    },
+    "mechanical-cycloidal-gearbox": {
+      "choice": "c"
     },
     "mechanical-screw": {
       "choice": "a"
