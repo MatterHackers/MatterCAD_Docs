@@ -1,0 +1,23 @@
+{
+  "scene": "slice-to-path.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 35.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Slice to Path"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "properties-panel"
+  ],
+  "alt": "A Slice to Path selected: the flat outline of a box with a round hole, a rectangle around a circle, taken where its plane crosses the part, beside its Properties panel's Plane row and Fill Type",
+  "replaces": {
+    "needed": "Slice to Path applied to a solid"
+  }
+}

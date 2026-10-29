@@ -1,0 +1,30 @@
+{
+  "scene": "hollow-out.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 25.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Hollow Out"
+    },
+    {
+      "key": "x"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Wall Thickness"
+      }
+    }
+  ],
+  "alt": "A hollowed-out Cylinder cut open by Section View, showing the thin wall all around the empty inside, beside its Properties panel's Wall Thickness",
+  "replaces": {
+    "needed": "Cross-section view showing a solid object hollowed out"
+  }
+}

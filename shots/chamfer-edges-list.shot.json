@@ -1,0 +1,26 @@
+{
+  "scene": "chamfer-edges-list.mcx",
+  "kind": "ui-closeup",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Chamfer"
+    }
+  ],
+  "crop": [
+    {
+      "properties-panel": {
+        "to": "3. Face Group, 4 edges"
+      }
+    }
+  ],
+  "alt": "A Chamfer's Properties panel: Selection Mode above the Edges list with three groups, an upright edge, a chain and the top face's rim, each with its colour swatch, highlight button and remove button",
+  "replaces": {
+    "needed": "Properties panel for a Chamfer with three groups in the Edges list"
+  }
+}

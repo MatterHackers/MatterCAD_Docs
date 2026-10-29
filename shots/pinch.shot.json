@@ -1,0 +1,26 @@
+{
+  "scene": "pinch.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 28.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Pinch"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Back Ratio"
+      }
+    }
+  ],
+  "before": "Original",
+  "alt": "Pinch: a plain cube at the left, and at the right the same cube narrowed toward its back, with its Back Ratio setting",
+  "replaces": "20260506-155449-paste-20260506-155449.jpg"
+}

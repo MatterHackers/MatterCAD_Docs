@@ -1,0 +1,28 @@
+{
+  "scene": "radial-pinch.mcx",
+  "kind": "before-after",
+  "window": [
+    1280,
+    1000
+  ],
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 15.0,
+    "turn_degrees": 30.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Radial Pinch"
+    }
+  ],
+  "crop": [
+    "view",
+    "properties-panel"
+  ],
+  "before": "Original",
+  "alt": "Radial Pinch: a plain cylinder at the left, and at the right the same cylinder drawn in at the middle into an hourglass, with its Pinch profile editor, Slices and Advanced",
+  "replaces": {
+    "needed": "Before and after showing an object with Radial Pinch applied"
+  }
+}

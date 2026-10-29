@@ -1,0 +1,24 @@
+{
+  "scene": "plane-cut.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 20.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Plane Cut"
+    }
+  ],
+  "crop": [
+    "view",
+    "properties-panel"
+  ],
+  "before": "Original",
+  "alt": "Plane Cut: a whole sphere at the left, and at the right the same sphere with its top cut off flat where the drawn plane passes, with its Plane row: XY, XZ, YZ, Custom, Flip and Pick Face",
+  "replaces": {
+    "needed": "Before and after showing an object cut by a Plane Cut"
+  }
+}
