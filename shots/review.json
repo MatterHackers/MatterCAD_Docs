@@ -47,13 +47,67 @@
     "align": {
       "choice": "c"
     },
+    "align-in-place-after": {
+      "choice": "a"
+    },
+    "align-in-place-before": {
+      "choice": "a"
+    },
+    "array-index-linear": {
+      "choice": "c"
+    },
     "array-index-radial": {
       "choice": "c"
+    },
+    "array-mode-panel": {
+      "choice": "a"
+    },
+    "array-radial-panel": {
+      "choice": "a"
+    },
+    "boolean-combine": {
+      "choice": "a"
+    },
+    "boolean-index-combine": {
+      "choice": "a"
+    },
+    "boolean-index-intersect": {
+      "choice": "a"
     },
     "boolean-index-subtract": {
       "choice": "a"
     },
+    "boolean-index-subtract-replace": {
+      "choice": "a"
+    },
+    "boolean-intersect": {
+      "choice": "a"
+    },
     "boolean-subtract": {
+      "choice": "a"
+    },
+    "boolean-subtract-and-replace": {
+      "choice": "a"
+    },
+    "border-path": {
+      "choice": "a"
+    },
+    "chamfer": {
+      "choice": "a"
+    },
+    "chamfer-edges-list": {
+      "choice": "a"
+    },
+    "curve": {
+      "choice": "b"
+    },
+    "curve-3d": {
+      "choice": "a"
+    },
+    "dilate": {
+      "choice": "a"
+    },
+    "erode": {
       "choice": "a"
     },
     "faq-menu-settings": {
@@ -62,7 +116,16 @@
     "faq-settings-advanced": {
       "choice": "a"
     },
+    "fillet": {
+      "choice": "a"
+    },
+    "fillet-2d": {
+      "choice": "a"
+    },
     "fillet-pick-edge": {
+      "choice": "a"
+    },
+    "fit-to-bounds": {
       "choice": "a"
     },
     "gs-ai-tab-chat": {
@@ -74,7 +137,25 @@
     "help-index-welcome": {
       "choice": "a"
     },
+    "hollow-out": {
+      "choice": "a"
+    },
+    "image-converter-panel": {
+      "choice": "a"
+    },
+    "image-to-path": {
+      "choice": "a"
+    },
+    "inflate-path": {
+      "choice": "a"
+    },
     "linear-extrude": {
+      "choice": "a"
+    },
+    "lithophane": {
+      "choice": "a"
+    },
+    "loft": {
       "choice": "a"
     },
     "mechanical-cycloidal-gear": {
@@ -85,6 +166,24 @@
     },
     "mechanical-screw": {
       "choice": "a"
+    },
+    "mesh-reduce": {
+      "choice": "a"
+    },
+    "mesh-repair": {
+      "choice": "c"
+    },
+    "mirror": {
+      "choice": "b"
+    },
+    "outline-path": {
+      "choice": "a"
+    },
+    "pinch": {
+      "choice": "a"
+    },
+    "plane-cut": {
+      "choice": "b"
     },
     "primitives-braille": {
       "choice": "a"
@@ -142,6 +241,42 @@
     },
     "primitives-wedge": {
       "choice": "a"
+    },
+    "radial-pinch": {
+      "choice": "a"
+    },
+    "revolve": {
+      "choice": "b"
+    },
+    "rotate": {
+      "choice": "a"
+    },
+    "round-all-edges": {
+      "choice": "a"
+    },
+    "round-inside-edges": {
+      "choice": "a"
+    },
+    "scale": {
+      "choice": "b"
+    },
+    "select-child-index": {
+      "choice": "b"
+    },
+    "select-paths": {
+      "choice": "a"
+    },
+    "slice-to-path": {
+      "choice": "b"
+    },
+    "smooth-path": {
+      "choice": "a"
+    },
+    "sweep": {
+      "choice": "a"
+    },
+    "translate": {
+      "choice": "b"
     },
     "twist": {
       "choice": "a"
