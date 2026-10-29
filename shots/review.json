@@ -1,0 +1,84 @@
+{
+  "styles": {
+    "before-after": {
+      "choice": "one-view"
+    },
+    "full-window": {
+      "choice": "framed"
+    },
+    "part-panel": {
+      "choice": "part-card"
+    },
+    "scene-only": {
+      "choice": "on-bed"
+    },
+    "ui-closeup": {
+      "choice": "tight"
+    },
+    "view-interaction": {
+      "choice": "pointer"
+    },
+    "web-phone": {
+      "choice": "phone-outline"
+    }
+  },
+  "scenes": {
+    "align": {
+      "choice": "c"
+    },
+    "array-index-radial": {
+      "choice": "c"
+    },
+    "boolean-index-subtract": {
+      "choice": "a"
+    },
+    "boolean-subtract": {
+      "choice": "a"
+    },
+    "fillet-pick-edge": {
+      "choice": "a"
+    },
+    "gs-edit-resize": {
+      "choice": "c"
+    },
+    "help-index-welcome": {
+      "choice": "a"
+    },
+    "linear-extrude": {
+      "choice": "a"
+    },
+    "mechanical-screw": {
+      "choice": "a"
+    },
+    "primitives-cube": {
+      "choice": "a"
+    },
+    "primitives-text": {
+      "choice": "a"
+    },
+    "twist": {
+      "choice": "a"
+    },
+    "web-design-page": {
+      "choice": "b"
+    },
+    "web-phone-portrait": {
+      "choice": "c"
+    },
+    "workspace-menus-open": {
+      "choice": "a"
+    },
+    "workspace-selection-multi": {
+      "choice": "a"
+    },
+    "workspace-settings-window": {
+      "choice": "a"
+    },
+    "workspace-sheet-col-resize": {
+      "choice": "a"
+    },
+    "workspace-sheet-column-menu": {
+      "choice": "a"
+    }
+  }
+}
