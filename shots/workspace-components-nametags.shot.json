@@ -1,0 +1,23 @@
+{
+  "scene": "workspace-components-nametags.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 40.0,
+    "turn_degrees": 20.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "New Component"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "design-tree",
+    "properties-panel"
+  ],
+  "own-style": "window-slice",
+  "alt": "A finished Component, New Component, holding four name tags, selected in the design tree, its Properties panel showing the four text rows Name 1 to Name 4, one for each tag",
+  "replaces": "20260318-193745-paste-20260318-193745.jpg"
+}

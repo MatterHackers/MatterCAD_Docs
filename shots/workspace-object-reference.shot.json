@@ -1,0 +1,31 @@
+{
+  "scene": "workspace-object-reference.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Cutter"
+    },
+    {
+      "hover": "Tree Row help-handle"
+    }
+  ],
+  "crop": [
+    "design-tree",
+    {
+      "properties-panel": {
+        "to": "Sides"
+      }
+    }
+  ],
+  "own-style": "window-slice",
+  "alt": "The design tree with Handle under the pointer and Cutter selected, Cutter's Properties panel showing Sides =Handle.Sides",
+  "replaces": {
+    "needed": "Scene tree with an object named \"Handle\" selected"
+  }
+}

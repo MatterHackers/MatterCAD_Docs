@@ -1,0 +1,21 @@
+{
+  "scene": "workspace-measure-tool.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 28.0,
+    "turn_degrees": 25.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Measure Tool"
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "own-style": "no-pointer",
+  "alt": "The Measure Tool selected: a line from the cube's top corner to the astronaut, a sphere at each end, and the distance between them shown on the line",
+  "replaces": "20260318-192711-paste-20260318-192711.jpg"
+}

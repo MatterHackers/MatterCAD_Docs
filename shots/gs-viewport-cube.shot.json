@@ -1,0 +1,42 @@
+{
+  "scene": "gs-viewport-cube.mcx",
+  "kind": "ui-closeup",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "crop": [
+    {
+      "widget": "Tumble Cube Control"
+    },
+    {
+      "widget": "Select Parts"
+    },
+    {
+      "widget": "Rotate View"
+    },
+    {
+      "widget": "Move View"
+    },
+    {
+      "widget": "Zoom View"
+    },
+    {
+      "widget": "Reset View Button"
+    },
+    {
+      "widget": "Zoom to selection button"
+    },
+    {
+      "widget": "Turntable Mode"
+    },
+    {
+      "widget": "Projection mode button"
+    }
+  ],
+  "margin": 16,
+  "alt": "The cube in the top-right corner of the 3D view with its ring of round buttons",
+  "replaces": "20260324-080636-paste-20260324-080636.jpg"
+}

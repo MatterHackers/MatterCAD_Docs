@@ -1,0 +1,56 @@
+{
+  "scene": "workspace-camera-cube.mcx",
+  "kind": "ui-closeup",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "crop": [
+    {
+      "widget": "Tumble Cube Control"
+    },
+    {
+      "widget": "Select Parts"
+    },
+    {
+      "widget": "Rotate View"
+    },
+    {
+      "widget": "Move View"
+    },
+    {
+      "widget": "Zoom View"
+    },
+    {
+      "widget": "Reset View Button"
+    },
+    {
+      "widget": "Zoom to selection button"
+    },
+    {
+      "widget": "Turntable Mode"
+    },
+    {
+      "widget": "Projection mode button"
+    },
+    {
+      "widget": "Bed Button"
+    },
+    {
+      "widget": "View Style Button"
+    },
+    {
+      "widget": "Grid Options Button"
+    },
+    {
+      "widget": "Units Button"
+    }
+  ],
+  "margin": 16,
+  "alt": "The camera controls in the top-right corner of the 3D view: the cube with its ring of round buttons (the four view modes above, Reset View and Zoom to Selection lower left, Turntable and Perspective lower right) and, under it, the Show Bed and view style buttons with the snap and units buttons below",
+  "replaces": {
+    "needed": "Close-up of the top-right corner of the 3D view: the cube with the round buttons around it"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "scene": "workspace-plane-pick-face.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 30.0,
+    "turn_degrees": -160.0,
+    "fill": 0.8
+  },
+  "steps": [
+    {
+      "select": "Circle"
+    },
+    {
+      "click": "Plane Pick Face"
+    },
+    {
+      "hover-part": {
+        "part": "Wedge",
+        "at": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      }
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "properties-panel": {
+        "to": "Plane"
+      }
+    }
+  ],
+  "cursor": "crosshair",
+  "alt": "A Pick Face session: the sloping face of a wedge highlighted under the crosshair in the 3D view, and the Cancel Pick button in the Circle's Plane row",
+  "replaces": {
+    "needed": "The 3D view during a Pick Face session, with a slanted face of a model highlighted under the crosshair cursor"
+  }
+}

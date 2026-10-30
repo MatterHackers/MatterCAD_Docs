@@ -1,0 +1,31 @@
+{
+  "scene": "workspace-expression-typing.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Cylinder"
+    },
+    {
+      "type": {
+        "widget": "Diameter Field",
+        "text": "=20+4"
+      }
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    {
+      "properties-panel": {
+        "to": "Diameter"
+      }
+    }
+  ],
+  "alt": "A cylinder selected, its Diameter box in the Properties panel holding the expression =20+4 as it is typed",
+  "replaces": "20260318-193631-paste-20260318-193631.jpg"
+}

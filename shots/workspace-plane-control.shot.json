@@ -1,0 +1,25 @@
+{
+  "scene": "workspace-plane-control.mcx",
+  "kind": "ui-closeup",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Circle"
+    },
+    {
+      "click": "Plane Values section"
+    }
+  ],
+  "crop": [
+    "properties-panel"
+  ],
+  "alt": "The Properties panel of a Circle Path with its Plane control open: the XY, XZ, YZ and Custom tabs, the Flip switch, the Pick Face button, and the Plane Values section showing Origin, Normal and X Direction",
+  "replaces": {
+    "needed": "The Properties panel for a Circle Path with the Plane control expanded"
+  }
+}
