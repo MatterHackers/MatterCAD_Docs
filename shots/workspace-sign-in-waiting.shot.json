@@ -1,0 +1,19 @@
+{
+  "scene": "workspace-sign-in-waiting.mcx",
+  "kind": "ui-closeup",
+  "fixture": "browser-sign-in",
+  "steps": [
+    {
+      "click": "Authentication Sign In"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The Sign in to my account window while MatterCAD waits for the browser: Finish signing in in your browser, the note about mattercad.com, and the Open the browser again and Cancel buttons",
+  "replaces": {
+    "needed": "The Sign in to my account window over the app while waiting for the browser"
+  }
+}

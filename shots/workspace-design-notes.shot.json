@@ -1,0 +1,21 @@
+{
+  "scene": "workspace-design-notes.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "click": "Design Notes Button"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    },
+    {
+      "widget": "Design Side Panel Tab Bar"
+    }
+  ],
+  "alt": "The Design Notes window showing a short brief under the headings Goal, Key sizes, Decisions still in force and Open / next, beside the side panel's Design and AI tabs with the filled Notes button",
+  "replaces": {
+    "needed": "Screenshot of the Design Notes window"
+  }
+}

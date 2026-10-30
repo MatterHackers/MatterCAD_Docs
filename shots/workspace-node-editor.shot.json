@@ -1,0 +1,25 @@
+{
+  "scene": "workspace-node-editor.mcx",
+  "kind": "ui-closeup",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.6
+  },
+  "steps": [
+    {
+      "select": "Outline Graph"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "widget": "Node Editor"
+    }
+  ],
+  "alt": "The node editor open under the 3D view: the graph's Input node, and a Box node wired through an Outline node to the Output node, the outlined box above",
+  "replaces": {
+    "needed": "The node editor open under the 3D view"
+  }
+}

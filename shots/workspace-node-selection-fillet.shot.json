@@ -1,0 +1,25 @@
+{
+  "scene": "workspace-node-selection-fillet.mcx",
+  "kind": "ui-closeup",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 50.0,
+    "turn_degrees": 30.0,
+    "fill": 0.5
+  },
+  "steps": [
+    {
+      "select": "Fillet Graph"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "widget": "Node Editor"
+    }
+  ],
+  "alt": "A Cube wired into a Fillet node, with Position, Separate XYZ and Compare (Greater Than) feeding the Fillet's Selection by a dashed noodle, and the cube above with only its top edges rounded",
+  "replaces": {
+    "needed": "A Cube wired into a Fillet node"
+  }
+}

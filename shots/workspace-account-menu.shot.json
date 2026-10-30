@@ -1,0 +1,21 @@
+{
+  "scene": "workspace-account-menu.mcx",
+  "kind": "ui-closeup",
+  "fixture": "signed-in",
+  "steps": [
+    {
+      "click": "User Options Menu"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "User Options Menu"
+    },
+    "menu"
+  ],
+  "margin": 24,
+  "alt": "The right end of the tab bar while signed in as Sample User, the account menu open under the name with Groups..., Repair Cloud Library... and Sign Out",
+  "replaces": {
+    "needed": "The right end of the tab bar while signed in, with the account menu open"
+  }
+}

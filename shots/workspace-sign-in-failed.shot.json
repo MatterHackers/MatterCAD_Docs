@@ -1,0 +1,19 @@
+{
+  "scene": "workspace-sign-in-failed.mcx",
+  "kind": "ui-closeup",
+  "fixture": "browser-sign-in-too-slow",
+  "steps": [
+    {
+      "click": "Authentication Sign In"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The Sign in to my account window after the sign-in took too long, with the red message Signing in took too long and was stopped above the Open the browser again and Cancel buttons",
+  "replaces": {
+    "needed": "The Sign in to my account window after a failed sign-in"
+  }
+}

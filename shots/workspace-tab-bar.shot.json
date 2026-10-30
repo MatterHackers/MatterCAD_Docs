@@ -1,0 +1,19 @@
+{
+  "scene": "workspace-tab-bar.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "click": "Create New Button"
+    },
+    {
+      "double-click": "Cube Primitive Button"
+    }
+  ],
+  "crop": [
+    "tab-bar"
+  ],
+  "alt": "The tab bar: the MatterCAD menu, the Store and Library tabs, two design tabs with the new one marked as having unsaved changes, the + button, and at the right the search button and (sign in)",
+  "replaces": {
+    "needed": "The full width of the tab bar"
+  }
+}

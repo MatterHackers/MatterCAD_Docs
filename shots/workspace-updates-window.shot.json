@@ -1,0 +1,24 @@
+{
+  "scene": "workspace-updates-window.mcx",
+  "kind": "ui-closeup",
+  "fixture": "update-available",
+  "steps": [
+    {
+      "open-menu": [
+        "MatterCAD"
+      ]
+    },
+    {
+      "click": "Check For Update Menu Item"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The Check for Update window saying there is a recommended update available, with the Download Update button, the current build and the Update Channel set to Stable",
+  "replaces": {
+    "needed": "The Check for Update window showing"
+  }
+}
