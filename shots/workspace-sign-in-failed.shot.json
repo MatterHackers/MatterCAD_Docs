@@ -1,6 +1,7 @@
 {
   "scene": "workspace-sign-in-failed.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "browser-sign-in-too-slow",
   "steps": [
     {

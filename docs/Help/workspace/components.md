@@ -11,7 +11,8 @@ keywords: custom part, reusable part, expose settings, few settings, parametric 
 A component is a group of objects that shows only a chosen handful of controls. Everything inside it is still there in the design tree, but the Properties panel presents just the settings that matter -- the height of one extrude, the diameter of one hole -- so the component reads as a single part with a few parameters rather than as the stack of operations it is built from. The [Image Converter](../operations/image/image-converter.md) is a component MatterCAD builds for you, and the [Design Apps](../library/design-apps.md) are components too.
 
 <!--  Screenshot showing a component in the design tree with exposed parameters -->
-![20260318 193745 paste 20260318 193745](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193745-paste-20260318-193745.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-components-nametags -->
+![A finished Component, New Component, holding four name tags, selected in the design tree, its Properties panel showing the four text rows Name 1 to Name 4, one for each tag](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-components-nametags.png)
 
 
 ## How to Use

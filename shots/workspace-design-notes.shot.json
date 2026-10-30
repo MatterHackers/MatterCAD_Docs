@@ -1,6 +1,7 @@
 {
   "scene": "workspace-design-notes.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "click": "Design Notes Button"

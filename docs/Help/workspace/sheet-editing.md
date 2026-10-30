@@ -13,7 +13,8 @@ Every edit on this page is a single Undo step - the only exception is **Refresh 
 
 ## Moving Around the Grid
 
-<!-- IMAGE_NEEDED: The sheet grid with one cell selected and its editor open, showing the highlighted selection border -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sheet-selected-cell -->
+![The sheet grid with cell B3 selected, its border highlighted, and the edit row above showing its name and formula](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sheet-selected-cell.png)
 
 | Key | What it does |
 | --- | --- |
@@ -102,7 +103,8 @@ Three things are worth knowing:
 - **Drag the separator** between two column letters to set a column's width by hand.
 - **Double-click the separator** to size the column to the widest value it is currently showing - the same thing **Auto-size Column** does from the column's header menu.
 
-<!-- IMAGE_NEEDED: Close-up of the bottom edge of a row number with the vertical resize cursor showing, that row dragged taller than the rows around it -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sheet-row-resize -->
+![Close-up of the bottom edge of row number 3 with the up-down resize pointer on it, that row taller than the rows around it](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sheet-row-resize.png)
 
 Rows work the same way, on the bottom edge of the row number:
 
@@ -117,7 +119,8 @@ Auto-size and auto-fit measure what the column or row **displays**, so a cell sh
 
 The **Format** menu changes how the **selected** cell is shown. It never changes what the cell is worth, so nothing downstream of it recalculates.
 
-<!-- IMAGE_NEEDED: The Format menu open with the Decimal Places submenu showing Auto, 0, 1, 2, 3, 4 and a bullet beside the current choice -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sheet-format-menu -->
+![The sheet editor's Format menu open with its Decimal Places submenu: Auto, 0, 1, 2, 3 and 4, a bullet beside 2](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sheet-format-menu.png)
 
 - **Decimal Places** - **Auto**, or `0` to `4`. Auto is what every cell starts on and means "however many the value has".
 - **Alignment** - **Left**, **Center** or **Right**.
@@ -129,7 +132,8 @@ Decimal places only apply to a value that reads as a **number**. Text, and an er
 
 ## The File Menu
 
-<!-- IMAGE_NEEDED: The sheet editor's File menu open, showing Import CSV..., Export CSV... and Refresh Imported Data -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sheet-file-menu -->
+![The sheet editor's File menu open: Import CSV..., Export CSV... and Refresh Imported Data](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sheet-file-menu.png)
 
 ### Import CSV...
 

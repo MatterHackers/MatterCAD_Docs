@@ -128,11 +128,38 @@
     "fit-to-bounds": {
       "choice": "a"
     },
+    "gs-add-system-file-menu": {
+      "choice": "a"
+    },
+    "gs-add-to-bed-computer": {
+      "choice": "a"
+    },
+    "gs-add-to-bed-popup": {
+      "choice": "a"
+    },
+    "gs-added-file-result": {
+      "choice": "b"
+    },
+    "gs-ai-access-panel": {
+      "choice": "a"
+    },
+    "gs-ai-status-bar": {
+      "choice": "a"
+    },
     "gs-ai-tab-chat": {
       "choice": "b"
     },
+    "gs-ai-undo-step": {
+      "choice": "a"
+    },
     "gs-edit-resize": {
       "choice": "c"
+    },
+    "gs-edit-rotate": {
+      "choice": "b"
+    },
+    "gs-viewport-cube": {
+      "choice": "a"
     },
     "help-index-welcome": {
       "choice": "a"
@@ -147,6 +174,24 @@
       "choice": "a"
     },
     "inflate-path": {
+      "choice": "a"
+    },
+    "lib-cloud-library": {
+      "choice": "a"
+    },
+    "lib-design-apps": {
+      "choice": "a"
+    },
+    "lib-groups-dialog": {
+      "choice": "a"
+    },
+    "lib-local-computer": {
+      "choice": "a"
+    },
+    "lib-share-dialog": {
+      "choice": "a"
+    },
+    "lib-shared-with-me": {
       "choice": "a"
     },
     "linear-extrude": {
@@ -218,6 +263,9 @@
     "primitives-image-panel": {
       "choice": "a"
     },
+    "primitives-index-library": {
+      "choice": "a"
+    },
     "primitives-pyramid": {
       "choice": "a"
     },
@@ -281,17 +329,86 @@
     "twist": {
       "choice": "a"
     },
+    "web-add-to-bed": {
+      "choice": "c"
+    },
     "web-design-page": {
       "choice": "b"
+    },
+    "web-menu-open": {
+      "choice": "a"
+    },
+    "web-phone-landscape": {
+      "choice": "c"
     },
     "web-phone-portrait": {
       "choice": "c"
     },
+    "web-phone-sheet-peek": {
+      "choice": "b"
+    },
+    "workspace-account-menu": {
+      "choice": "a"
+    },
+    "workspace-array-of-text": {
+      "choice": "b"
+    },
+    "workspace-camera-cube": {
+      "choice": "a"
+    },
+    "workspace-components-nametags": {
+      "choice": "c"
+    },
+    "workspace-description-note": {
+      "choice": "a"
+    },
+    "workspace-design-notes": {
+      "choice": "c"
+    },
+    "workspace-expression-typing": {
+      "choice": "a"
+    },
+    "workspace-grouping-after": {
+      "choice": "a"
+    },
+    "workspace-grouping-before": {
+      "choice": "a"
+    },
+    "workspace-grouping-group-button": {
+      "choice": "a"
+    },
+    "workspace-grouping-ungroup-button": {
+      "choice": "a"
+    },
+    "workspace-measure-tool": {
+      "choice": "a"
+    },
     "workspace-menus-open": {
+      "choice": "a"
+    },
+    "workspace-modify-parameters": {
+      "choice": "a"
+    },
+    "workspace-node-editor": {
+      "choice": "b"
+    },
+    "workspace-node-selection-fillet": {
+      "choice": "a"
+    },
+    "workspace-object-reference": {
+      "choice": "a"
+    },
+    "workspace-plane-control": {
+      "choice": "a"
+    },
+    "workspace-plane-pick-face": {
       "choice": "a"
     },
     "workspace-selection-multi": {
       "choice": "a"
+    },
+    "workspace-selection-rubber-band": {
+      "choice": "c"
     },
     "workspace-settings-window": {
       "choice": "a"
@@ -301,6 +418,42 @@
     },
     "workspace-sheet-column-menu": {
       "choice": "a"
+    },
+    "workspace-sheet-file-menu": {
+      "choice": "b"
+    },
+    "workspace-sheet-format-menu": {
+      "choice": "c"
+    },
+    "workspace-sheet-row-resize": {
+      "choice": "b"
+    },
+    "workspace-sheet-selected-cell": {
+      "choice": "b"
+    },
+    "workspace-sign-in-failed": {
+      "choice": "a"
+    },
+    "workspace-sign-in-waiting": {
+      "choice": "a"
+    },
+    "workspace-tab-bar": {
+      "choice": "a"
+    },
+    "workspace-updates-window": {
+      "choice": "a"
+    },
+    "workspace-variable-sheet-editor": {
+      "choice": "b"
+    },
+    "workspace-variable-sheet-hero": {
+      "choice": "c"
+    },
+    "workspace-variable-sheet-name": {
+      "choice": "a"
+    },
+    "workspace-xlookup-sheet": {
+      "choice": "b"
     }
   }
 }

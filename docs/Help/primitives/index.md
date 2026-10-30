@@ -10,7 +10,7 @@ keywords: shapes, basic shapes, building blocks, 3d shapes, solids
 MatterCAD's 3D primitive shapes are the building blocks for your designs. Add one from the **3D Primitives** folder (in the Library, or under **Add to Bed**), or from the favorites bar down the left side of the design, then change its settings in the Properties panel to get the exact shape you need.
 
 <!-- AUTO_IMAGE: type=shot id=primitives-index-library -->
-![The Library's 3D Primitives folder: a thumbnail and name for each shape it holds, from Cube to Image Converter](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-index-library.png)
+![The Library's 3D Primitives folder: a thumbnail and name for each shape it holds, from Cube to 3D Curve](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-index-library.png)
 
 
 

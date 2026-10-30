@@ -1,6 +1,7 @@
 {
   "scene": "workspace-sign-in-waiting.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "browser-sign-in",
   "steps": [
     {

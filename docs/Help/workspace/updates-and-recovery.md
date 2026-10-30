@@ -9,7 +9,8 @@ keywords: upgrade, new version, crash, crashed, lost work, autosave, restore
 
 This page is about the desktop app on Windows, Mac and Linux: keeping MatterCAD up to date, the windows it shows when it starts, crash reports, and getting your work back after MatterCAD closes unexpectedly.
 
-<!-- IMAGE_NEEDED: The Check for Update window showing "There is a recommended update available" with the Download Update button, the Current Build line, and the Update Channel list set to Stable -->
+<!-- AUTO_IMAGE: type=shot id=workspace-updates-window -->
+![The Check for Update window saying there is a recommended update available, with the Download Update button, the current build and the Update Channel set to Stable](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-updates-window.png)
 
 ## Check For Update
 

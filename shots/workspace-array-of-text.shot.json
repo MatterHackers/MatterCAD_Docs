@@ -1,6 +1,7 @@
 {
   "scene": "workspace-array-of-text.mcx",
   "kind": "before-after",
+  "style": "one-view",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 55.0,

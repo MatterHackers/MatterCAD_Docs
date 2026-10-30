@@ -1,6 +1,7 @@
 {
   "scene": "web-phone-sheet-peek.mcx",
   "kind": "web-phone",
+  "style": "phone-outline",
   "mode": "web",
   "window": "phone",
   "camera": {

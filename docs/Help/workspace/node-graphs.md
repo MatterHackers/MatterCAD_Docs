@@ -12,7 +12,8 @@ A node graph lets you build a part by wiring boxes together instead of stacking 
 
 Use a node graph when you want to turn a few parts into one tool with a handful of settings - a bracket with a Width and a Hole Size, say - that you can reuse and share.
 
-<!-- IMAGE_NEEDED: The node editor open under the 3D view, showing the Input node, a Box node wired through an Outline Path node to the Output node -->
+<!-- AUTO_IMAGE: type=shot id=workspace-node-editor -->
+![The node editor open under the 3D view: the graph's Input node, and a Box node wired through an Outline Path node to the Output node, the outlined box above](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-node-editor.png)
 
 ## Start a Graph
 
@@ -180,7 +181,8 @@ The selection nodes are in the Add Node menu's **Selection** group:
 - **Compare** tests A against B: **Greater Than**, **Less Than**, **Equal To**, **At Least** or **At Most**. Choose **Within Distance** instead to select the edges within a **Distance** of a **Point**. Numbers are in your units.
 - **Inside Box** selects the edges inside the box from **Min** to **Max**. An edge lying on the box's surface counts as inside.
 
-<!-- IMAGE_NEEDED: A Cube wired into a Fillet node, with Position -> Separate XYZ -> Z -> Compare (Greater Than 10) wired by a dashed noodle into the Fillet's diamond Selection socket, and only the top edges rounded in the 3D view -->
+<!-- AUTO_IMAGE: type=shot id=workspace-node-selection-fillet -->
+![A Cube wired into a Fillet node, with Position, Separate XYZ and Compare (Greater Than) feeding the Fillet's Selection by a dashed noodle, and the cube above with only its top edges rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-node-selection-fillet.png)
 
 ### Example: Round Only the Top Edges
 

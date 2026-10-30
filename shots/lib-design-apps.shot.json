@@ -1,6 +1,7 @@
 {
   "scene": "lib-design-apps.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "library",
   "steps": [
     {

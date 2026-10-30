@@ -11,7 +11,8 @@ keywords: ruler, dimension, caliper, how big, size check, length
 The Measure Tool lets you measure distances between points in your design. Place measurement points anywhere in the 3D viewport to check dimensions.
 
 <!--  Screenshot showing the Measure Tool with a distance measurement displayed between two points -->
-![20260318 192711 paste 20260318 192711](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-192711-paste-20260318-192711.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-measure-tool -->
+![The Measure Tool selected: a line from the cube's top corner to the astronaut, a sphere at each end, and the distance between them shown on the line](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-measure-tool.png)
 
 
 ## How to Use

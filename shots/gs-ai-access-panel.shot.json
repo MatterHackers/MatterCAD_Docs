@@ -1,6 +1,7 @@
 {
   "scene": "gs-ai-access-panel.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "ai-access-on",
   "steps": [
     {

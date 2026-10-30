@@ -1,6 +1,7 @@
 {
   "scene": "gs-add-system-file-menu.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "open-menu": [

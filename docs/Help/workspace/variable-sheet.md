@@ -10,8 +10,8 @@ keywords: spreadsheet, variables, table, named values, shared sizes
 
 The Variable Sheet stores shared values for a design. Use it when several objects should reference the same dimensions, counts, labels, or formulas. Changing a value in the sheet recalculates the dependent objects, so parametric designs stay consistent without editing every object one at a time.
 
-<!-- IMAGE_NEEDED: Replacement hero shot of the current Variable Sheet editor - menu bar, Name and formula boxes, and a grid of named cells with formulas. The image below predates the menu bar. -->
-![20260507 080914 paste 20260507 080914](https://matterhackers.github.io/MatterCAD_Docs/assets/20260507-080914-paste-20260507-080914.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-variable-sheet-hero -->
+![The Variable Sheet editor in the Properties panel beside the design: the menu bar, the Name and formula boxes and a grid of named cells and formulas, the selected cell's formula =strcat("MC-", A2)](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-variable-sheet-hero.png)
 
 This page covers what a sheet is for and how its values are written and read. For the mechanics of the editor itself - adding and removing rows and columns, column widths and row heights, cell formatting and CSV - see [Editing a Variable Sheet](sheet-editing.md).
 
@@ -28,11 +28,12 @@ Objects use the nearest sheet above them in the scene tree, so a sheet dropped i
 
 The editor appears in the properties panel when the sheet is selected.
 
-<!-- IMAGE_NEEDED: The sheet editor with the menu bar, the Name box and formula box, the units line, and a selected cell in the grid all visible -->
+<!-- AUTO_IMAGE: type=shot id=workspace-variable-sheet-editor -->
+![The sheet editor: the File, Edit, Insert, Format and Help menu bar, the Name box and formula box, and the grid with cell B2 selected](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-variable-sheet-editor.png)
 
 - **The menu bar** - File, Edit, Insert, Format and Help. See [Editing a Variable Sheet](sheet-editing.md) for what each one does.
 - **The edit row** - the **Name** box on the left and the formula box beside it, both acting on whichever cell is selected. At the far right is a button that pops the editor out into a window of its own, which is worth doing for anything bigger than a handful of rows.
-- **The units line** - a reminder that the sheet's numbers are millimetres: *Values are in millimeters. Write a unit for inches, e.g. =2in*.
+- **The units line** - shown only while MatterCAD displays inches, feet or metres, a reminder that the sheet's numbers are millimetres whatever the app displays: *Values are in millimeters. Write a unit to use another, e.g. =2in*. Working in millimetres, you won't see it.
 - **The grid** - column letters across the top, row numbers down the side, and `+` buttons at the right and bottom edges for adding a column or a row. Right-click a column letter or a row number for the menu of commands that act on that column or row.
 
 Click a cell to select it, then type into the formula box to change what it holds. You can also type straight into the selected cell in the grid, and move between cells with the arrow keys.
@@ -51,7 +52,8 @@ A formula that produces text shows that text **without** the quotes the expressi
 
 A cell can be given a name in the **Name** box, and that name is how the rest of the design should refer to it. `=wall_thickness` says what it means where `=B2` does not, and a name keeps working when rows and columns are inserted above or beside the cell.
 
-<!-- IMAGE_NEEDED: The edit row with a cell selected, the Name box holding wall_thickness and the formula box holding 2.4 -->
+<!-- AUTO_IMAGE: type=shot id=workspace-variable-sheet-name -->
+![The sheet's edit row with cell B2 selected: the Name box holds wall_thickness and the formula box 2.4, the cells below it](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-variable-sheet-name.png)
 
 To name a cell, select it, type the name into the **Name** box and press Enter. To take a name off a cell, clear the box.
 
@@ -90,7 +92,7 @@ Start a formula with `=` to evaluate it in the sheet:
 - `=wall_thickness + 4` references a named cell
 - `=2.5in` returns `63.5`, and `=5in` returns `127` - the unit is converted to millimetres
 
-A unit suffix is read by the expression parser, so it only counts inside a formula. A cell holding `5in` on its own is never evaluated and stays the text `5in`; write `=5in` to get `127`. That is what the editor's own hint means by *Write a unit for inches, e.g. =2in*. See [Expressions](expressions.md#units) for the units available.
+A unit suffix is read by the expression parser, so it only counts inside a formula. A cell holding `5in` on its own is never evaluated and stays the text `5in`; write `=5in` to get `127`. That is what the editor's own hint means by *Write a unit to use another, e.g. =2in*. See [Expressions](expressions.md#units) for the units available.
 
 The sheet supports arithmetic, parentheses, comparisons, the constants `pi`, `tau` and `e`, the bracketed unit constants `[cm]`, `[m]`, `[inch]` and `[ft]`, and the whole function library. See [Expressions](expressions.md) for the syntax and [Expression Functions](expression-functions.md) for the functions.
 

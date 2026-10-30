@@ -1,6 +1,7 @@
 {
   "scene": "gs-edit-rotate.mcx",
   "kind": "view-interaction",
+  "style": "pointer",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 28.0,

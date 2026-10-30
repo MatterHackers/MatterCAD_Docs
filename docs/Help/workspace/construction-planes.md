@@ -18,7 +18,8 @@ Construction planes are what let a 2D shape be drawn somewhere other than the be
 - **Plane** on [Plane Cut](../operations/reshape/plane-cut.md), which is where the solid is cut and which side is kept
 - **Plane** on [Slice to Path](../operations/reshape/slice-to-path.md), which is where the cross section is taken and the plane its path is drawn on
 
-<!-- IMAGE_NEEDED: The Properties panel for a Circle Path with the Plane control expanded, showing the preset tabs, the Flip switch, the Pick Face button, and the Origin, Normal and X Direction rows -->
+<!-- AUTO_IMAGE: type=shot id=workspace-plane-control -->
+![The Properties panel of a Circle Path with its Plane control open: the XY, XZ, YZ and Custom tabs, the Flip switch, the Pick Face button, and the Plane Values section showing Origin, Normal and X Direction](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-plane-control.png)
 
 ## The Three Values
 
@@ -66,7 +67,8 @@ Rather than typing a normal, you can take one off a model.
 
 The face's plane is written into Origin, Normal and X Direction as exact numbers, and the picking session ends. It is one undo step, so a wrong pick is a single [undo](undo-redo.md) away.
 
-<!-- IMAGE_NEEDED: The 3D view during a Pick Face session, with a slanted face of a model highlighted under the crosshair cursor and the Cancel Pick button visible in the Properties panel -->
+<!-- AUTO_IMAGE: type=shot id=workspace-plane-pick-face -->
+![A Pick Face session: the sloping face of a wedge highlighted under the crosshair in the 3D view, and the Cancel Pick button in the Circle's Plane row](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-plane-pick-face.png)
 
 A pick is cancelled by pressing **Esc**, by clicking **Cancel Pick**, by choosing a viewport tool such as Rotate or Translate, or by selecting a different object. Nothing is changed when a pick is cancelled.
 

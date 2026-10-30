@@ -9,7 +9,8 @@ keywords: brief, readme, documentation, requirements, intent
 
 Design Notes are a short written brief that travels with your design: what it is for, the sizes that matter, the decisions you made and what is still open. Whoever opens the design next reads them first, whether that's you in a month, a colleague, or an [AI assistant](../getting-started/ai-assistants.md).
 
-<!-- IMAGE_NEEDED: Screenshot of the Design Notes window on the Preview tab, showing a short brief with Goal, Key sizes, Decisions still in force and Open / next headings, and the highlighted Notes button at the right end of the side panel's Design | AI tab row -->
+<!-- AUTO_IMAGE: type=shot id=workspace-design-notes -->
+![The Design Notes window showing a short brief under the headings Goal, Key sizes, Decisions still in force and Open / next, beside the side panel's Design and AI tabs with the filled Notes button](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-design-notes.png)
 
 Notes belong to the whole design, not to one object. To put a note next to a feature in the 3D view, use a [Description](description.md) instead.
 

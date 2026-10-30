@@ -83,7 +83,8 @@ Turn the phone sideways and the 3D view takes the whole height of the screen:
 - While a part is selected, the selection bar is a column beside the rail.
 - The **Design**, **AI** and **Notes** panel is a drawer at the right edge. Tap the handle on that edge, or drag it in with your finger, to open it. Tap the handle again, or tap anywhere outside the drawer, to close it (with a keyboard, Esc closes it too).
 
-<!-- IMAGE_NEEDED: MatterCAD's editor on a phone held sideways: the rail of buttons (☰, Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge -->
+<!-- AUTO_IMAGE: type=shot id=web-phone-landscape -->
+![MatterCAD's editor on a phone held sideways: the rail of buttons (☰, Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-landscape.png)
 
 ## The Bottom Sheet
 
@@ -99,7 +100,8 @@ MatterCAD remembers where you left the sheet.
 
 When you pick a part, the Design tab shows its properties under a row with **‹ Design** (back to the tree) and the part's name. With the sheet dragged low, that row may be all that shows: tap the part's name to raise the sheet to where it starts, so the properties have room.
 
-<!-- IMAGE_NEEDED: The bottom sheet at its lowest on a phone, with the grip at the left of its top edge, the Design, AI and Notes row, and the selection bar just above it -->
+<!-- AUTO_IMAGE: type=shot id=web-phone-sheet-peek -->
+![MatterCAD's editor on a phone held upright with the bottom sheet at its lowest: the grip at the left of its top edge and the Design, AI and Notes row, the selection bar just above it, and the 3D view with the selected Cube filling the rest of the screen](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-sheet-peek.png)
 
 ## Camera Controls
 

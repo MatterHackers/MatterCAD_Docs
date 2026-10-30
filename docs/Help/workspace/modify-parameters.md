@@ -10,7 +10,8 @@ keywords: conditional, show if, visibility formula, color formula, toggle part
 
 Modify Parameters wraps whatever you have selected and lets [expressions](expressions.md) decide whether it is visible and what colour it is. It is how you make a part appear only under certain conditions, or shade itself from a value on a [Variable Sheet](variable-sheet.md).
 
-<!-- IMAGE_NEEDED: Screenshot of a Modify Parameters selected in the design tree, with the Properties panel showing the Visible Override field and the Red/Green/Blue expression fields -->
+<!-- AUTO_IMAGE: type=shot id=workspace-modify-parameters -->
+![A Modify Parameters selected in the design tree, its Properties panel showing Visible Override =width>40 and the Red, Green and Blue formulas](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-modify-parameters.png)
 
 ## Finding It
 

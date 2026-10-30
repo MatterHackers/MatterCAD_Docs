@@ -9,7 +9,8 @@ keywords: login, log in, sign up, password, register, log out
 
 You don't need an account to design in MatterCAD. Sign in to your MatterHackers account when you want to use your [Cloud Library](../library/cloud-library.md), open designs others have [shared](../library/sharing.md) with you, or use MatterHackers AI.
 
-<!-- IMAGE_NEEDED: The right end of the tab bar while signed in, with the account menu open under the user's name showing Groups..., Repair Cloud Library... and Sign Out -->
+<!-- AUTO_IMAGE: type=shot id=workspace-account-menu -->
+![The right end of the tab bar while signed in as Sample User, the account menu open under the name with Groups..., Repair Cloud Library... and Sign Out](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-account-menu.png)
 
 ## Sign In
 
@@ -21,7 +22,8 @@ MatterCAD signs you in through your web browser, on mattercad.com. You type your
 
 While you sign in in the browser, MatterCAD shows the **Sign in to my account** window. It says "Finish signing in in your browser", and below that "MatterCAD opened mattercad.com in your web browser. Sign in there with your MatterHackers account, then come back here. You can also create an account or reset your password there." Once the browser hands the sign-in back, the window says "Signing in..." for a moment.
 
-<!-- IMAGE_NEEDED: The Sign in to my account window over the app while waiting for the browser: "Finish signing in in your browser", the note about mattercad.com, and the Open the browser again and Cancel buttons -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sign-in-waiting -->
+![The Sign in to my account window while MatterCAD waits for the browser: Finish signing in in your browser, the note about mattercad.com, and the Open the browser again and Cancel buttons](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sign-in-waiting.png)
 
 - **Open the browser again** opens the sign-in page once more, for example if you closed the browser tab. It starts a new sign-in, and the one before it stops.
 - **Cancel** stops signing in and closes the window. Pressing Escape or closing the window does the same.
@@ -41,7 +43,8 @@ If signing in doesn't work, the window says why and what to do:
 - "Signing in took too long and was stopped. Click Open the browser again to start over." - MatterCAD waits ten minutes for you to finish in the browser.
 - "Signing in could not start. Restart MatterCAD and try again." - Followed by the reason, such as "MatterCAD could not open your web browser." If your browser didn't open, restart MatterCAD and click **(sign in)** again.
 
-<!-- IMAGE_NEEDED: The Sign in to my account window after a failed sign-in, with the red message "Signing in took too long and was stopped. Click Open the browser again to start over." above the Open the browser again and Cancel buttons -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sign-in-failed -->
+![The Sign in to my account window after the sign-in took too long, with the red message Signing in took too long and was stopped above the Open the browser again and Cancel buttons](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sign-in-failed.png)
 
 On the website, MatterCAD uses your mattercad.com sign-in: sign in on the website itself. Clicking **(sign in)** in the editor there says "Sign in on the MatterCAD website, then reload this page."
 

@@ -1,6 +1,7 @@
 {
   "scene": "lib-cloud-library.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "cloud-library",
   "steps": [
     {

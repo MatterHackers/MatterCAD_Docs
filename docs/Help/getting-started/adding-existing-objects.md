@@ -19,7 +19,8 @@ You can bring models you already have into MatterCAD: files from your computer, 
 
 ## Add a File to the Design You Have Open
 
-<!-- IMAGE_NEEDED: The ☰ MatterCAD menu open over a design tab, with Add System File to Bed highlighted as its first item -->
+<!-- AUTO_IMAGE: type=shot id=gs-add-system-file-menu -->
+![The MatterCAD menu open over a design tab with its first item, Add System File to Bed, highlighted](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-add-system-file-menu.png)
 
 1. Click the **☰ MatterCAD** menu at the left end of the tabs (on a Mac you can also use the **File** menu in the menu bar).
 2. Choose **Add System File to Bed**, the first item.
@@ -42,7 +43,8 @@ Drag files from your computer onto the 3D view. They land on the bed where you l
 - **SVG** (.svg) and **DXF** (.dxf) - Flat drawings, brought in as 2D paths
 - **Pictures** - Brought in as an image you can turn into a 3D shape
 
-![20260324 081416 paste 20260324 081416](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081416-paste-20260324-081416.jpg)
+<!-- AUTO_IMAGE: type=shot id=gs-added-file-result -->
+![The bed after adding an STL, an OBJ and a 3MF file beside a cube and a cylinder, each added file its own row in the design tree, named by its file](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-added-file-result.png)
 
 ## From the Library
 

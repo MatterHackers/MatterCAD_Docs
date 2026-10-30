@@ -1,6 +1,7 @@
 {
   "scene": "workspace-xlookup-sheet.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "select": "Variable Sheet"

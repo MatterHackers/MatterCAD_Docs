@@ -1,6 +1,7 @@
 {
   "scene": "workspace-grouping-ungroup-button.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "select": "Group"

@@ -1,6 +1,7 @@
 {
   "scene": "lib-share-dialog.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "sharing",
   "steps": [
     {

@@ -1,6 +1,7 @@
 {
   "scene": "lib-local-computer.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "library",
   "steps": [
     {

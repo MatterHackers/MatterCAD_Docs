@@ -11,11 +11,14 @@ keywords: ungroup, together, assembly, keep together, move together
 Grouping combines multiple objects into a single unit that can be moved, copied, and operated on as one object. Unlike [Combine](../operations/boolean/combine.md), grouping does not merge the geometry -- each object remains separate inside the group.
 
 <!-- Screenshot showing objects before and after grouping, with the design tree showing the group hierarchy -->
-![20260318 193104 paste 20260318 193104](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193104-paste-20260318-193104.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-grouping-before -->
+![A cube and a cylinder side by side on the bed, each its own row in the design tree, before they are grouped](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-grouping-before.png)
 
-![20260318 193235 paste 20260318 193235](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193235-paste-20260318-193235.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-grouping-group-button -->
+![The toolbar's Group button with the pointer resting on it and its tool tip showing, the Ungroup button beside it](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-grouping-group-button.png)
 
-![20260318 193138 paste 20260318 193138](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193138-paste-20260318-193138.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-grouping-after -->
+![The cube and cylinder grouped: one Group selected on the bed, its design tree row opened to show Cube and Cylinder inside it](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-grouping-after.png)
 
 
 ## How to Use
@@ -30,7 +33,8 @@ Grouping combines multiple objects into a single unit that can be moved, copied,
 
 1. Select a group
 2. Click the **Ungroup** button in the toolbar, or press **Shift + G**
-3. ![20260318 193354 paste 20260318 193354](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193354-paste-20260318-193354.jpg)
+3. <!-- AUTO_IMAGE: type=shot id=workspace-grouping-ungroup-button -->
+   ![The toolbar's Ungroup button with the pointer resting on it and its tool tip showing, a Group selected](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-grouping-ungroup-button.png)
 4. The individual objects are restored as separate items
 
 Ungrouping also attempts to separate multiple bodies within a single imported STL file, if present.

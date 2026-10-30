@@ -17,6 +17,7 @@
     "design-tree",
     "properties-panel"
   ],
+  "own-style": "window-slice",
   "alt": "A Modify Parameters selected in the design tree, its Properties panel showing Visible Override =width>40 and the Red, Green and Blue formulas",
   "replaces": {
     "needed": "Screenshot of a Modify Parameters selected in the design tree, with the Properties panel showing the Visible Override field and the Red/Green/Blue expression fields"

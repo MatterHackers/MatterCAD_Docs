@@ -10,7 +10,8 @@ keywords: formula, equation, calculate, parametric, equals sign
 Most parameters in MatterCAD accept an expression instead of a plain number. An expression is a small formula that MatterCAD evaluates every time something it depends on changes, which is what makes a design parametric: change one value and every dimension derived from it follows.
 
 <!--  Screenshot showing an expression being entered in a parameter field -->
-![20260318 193631 paste 20260318 193631](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-193631-paste-20260318-193631.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-expression-typing -->
+![A cylinder selected, its Diameter box in the Properties panel holding the expression =20+4 as it is typed](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-expression-typing.png)
 
 This page describes the expression language itself. See [Expression Functions](expression-functions.md) for the function library, [Object References](object-references.md) for reading another object's settings, [Variable Sheet](variable-sheet.md) for storing shared values a whole design can use, and [Modify Parameters](modify-parameters.md) for driving an object's visibility and colour from an expression.
 
@@ -136,7 +137,8 @@ Because the substitution happens first, an arrayed copy sees its own position as
 =index("A", [index]+2)
 ```
 
-<!-- IMAGE_NEEDED: An Array of Text objects on the bed, each showing a different part number, next to the sheet column those values come from -->
+<!-- AUTO_IMAGE: type=shot id=workspace-array-of-text -->
+![An Array of five Text objects on the bed, each showing a different part number, beside the sheet whose column A the numbers come from](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-array-of-text.png)
 
 The `+2` skips the header row and converts the 0-based copy position into the 1-based row number `index()` expects, so the first copy reads `A2`, the second reads `A3`, and so on. Give a Text object that expression as its text and an array of it becomes a run of parts, each labelled from its own row.
 

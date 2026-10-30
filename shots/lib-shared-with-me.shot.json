@@ -1,6 +1,7 @@
 {
   "scene": "lib-shared-with-me.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "sharing",
   "window": [
     960,

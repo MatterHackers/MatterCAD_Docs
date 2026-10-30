@@ -11,7 +11,8 @@ While you edit a design on the website, the toolbar starts with a **MatterCAD** 
 
 It holds five items: **Add System File to Bed**, **New Design**, **Interface Tour**, **Help** and **Settings**.
 
-<!-- IMAGE_NEEDED: The website's editor with the MatterCAD menu open under its ☰ MatterCAD button at the start of the toolbar, showing Add System File to Bed, New Design, Interface Tour, Help and Settings -->
+<!-- AUTO_IMAGE: type=shot id=web-menu-open -->
+![The website's editor with the MatterCAD menu open under its ☰ MatterCAD button at the start of the toolbar: Add System File to Bed, New Design, Interface Tour, Help and Settings](https://matterhackers.github.io/MatterCAD_Docs/assets/web-menu-open.png)
 
 ## Add System File to Bed
 

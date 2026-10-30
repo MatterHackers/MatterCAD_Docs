@@ -1,6 +1,7 @@
 {
   "scene": "workspace-plane-pick-face.mcx",
   "kind": "view-interaction",
+  "style": "pointer",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 30.0,

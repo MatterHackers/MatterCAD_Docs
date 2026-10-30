@@ -13,7 +13,8 @@ To chat with an AI inside MatterCAD instead, with nothing to set up outside it, 
 
 When the design is in front, you watch every change happen live in the 3D view. Each AI change is a single undo step in that design's undo history, with a name that starts with "AI:", for example "AI: add mounting holes", so one Undo takes it back.
 
-<!-- IMAGE_NEEDED: Screenshot of MatterCAD with an AI change just applied, the Undo history showing an "AI: add mounting holes" step -->
+<!-- AUTO_IMAGE: type=shot id=gs-ai-undo-step -->
+![MatterCAD just after an AI added mounting holes to a plate: the pointer rests on the Undo button, whose tool tip reads Undo - AI: add mounting holes, above the 3D view showing the drilled plate](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-ai-undo-step.png)
 
 ## Turn It On
 

@@ -1,6 +1,7 @@
 {
   "scene": "workspace-updates-window.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "update-available",
   "steps": [
     {

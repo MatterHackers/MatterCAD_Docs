@@ -31,7 +31,8 @@ Hidden parts and locked parts can't be picked in the 3D view. See [Lock and Hide
 Drag across an empty area of the 3D view to draw a rectangle. Every part the rectangle touches is selected.
 
 <!--  Screenshot showing a rubber band selection rectangle being drawn -->
-![20260318 192357 paste 20260318 192357](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-192357-paste-20260318-192357.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-selection-rubber-band -->
+![A selection rectangle being dragged across the 3D view from the empty bed over the cube and part of the astronaut, the mouse button still held](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-selection-rubber-band.png)
 
 ## In the Design Tree
 

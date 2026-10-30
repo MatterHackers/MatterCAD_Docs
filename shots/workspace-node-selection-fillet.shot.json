@@ -1,6 +1,7 @@
 {
   "scene": "workspace-node-selection-fillet.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 50.0,

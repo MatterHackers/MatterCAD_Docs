@@ -1,6 +1,7 @@
 {
   "scene": "gs-ai-status-bar.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "ai-connected",
   "crop": [
     {

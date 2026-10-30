@@ -10,7 +10,8 @@ keywords: note, annotation, comment, callout, instruction, text note
 
 Description puts a note in the scene. It is a label anchored to a point in your design, showing text you write in Markdown -- a build note, an assembly instruction, a reminder about which way a part goes on the bed.
 
-<!-- IMAGE_NEEDED: Screenshot of a Description in the 3D view, showing the note panel connected to its anchor point on a part, with the Properties panel showing the Markdown text field -->
+<!-- AUTO_IMAGE: type=shot id=workspace-description-note -->
+![A Description pinned to a part: the note's Markdown drawn in the 3D view beside the part, a bold word and a short list, and the Properties panel's Description - Markdown Text box holding the same text](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-description-note.png)
 
 Like the [Measure Tool](measure-tool.md), it is a design aid rather than a part. A Description is left out of STL, 3MF and OBJ exports (an MCX keeps it).
 

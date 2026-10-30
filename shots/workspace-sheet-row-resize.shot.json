@@ -1,6 +1,7 @@
 {
   "scene": "workspace-sheet-row-resize.mcx",
   "kind": "view-interaction",
+  "style": "pointer",
   "steps": [
     {
       "select": "Variable Sheet"

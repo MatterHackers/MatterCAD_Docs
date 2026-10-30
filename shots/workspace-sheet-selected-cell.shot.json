@@ -1,6 +1,7 @@
 {
   "scene": "workspace-sheet-selected-cell.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "select": "Variable Sheet"

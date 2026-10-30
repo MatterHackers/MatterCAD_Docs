@@ -11,7 +11,8 @@ The tabs along the top of the window hold the **Store**, the **Library**, **Help
 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
-<!-- IMAGE_NEEDED: The full width of the tab bar: the ☰ MatterCAD menu, the Store, Library and Help tabs, two design tabs (one with its cube icon tinted and underlined for unsaved changes), the + button, and at the right the search button and (sign in) -->
+<!-- AUTO_IMAGE: type=shot id=workspace-tab-bar -->
+![The tab bar: the MatterCAD menu, the Store and Library tabs, two design tabs with the new one marked as having unsaved changes, the + button, and at the right the search button and (sign in)](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-tab-bar.png)
 
 ## The Tabs
 

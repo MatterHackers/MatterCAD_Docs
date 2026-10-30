@@ -200,13 +200,14 @@ xlookup(lookup_value, lookup_column, return_column, if_not_found)
 
 Searches down `lookup_column` for `lookup_value` and returns whatever `return_column` holds on that row. Where `index()` needs to be told the row, `xlookup()` finds it.
 
-<!-- IMAGE_NEEDED: A sheet holding a small price list - ids in column A, names in column B, prices in column C - with a cell selected whose formula box shows =xlookup("Magenta thing", "B", "A") -->
+<!-- AUTO_IMAGE: type=shot id=workspace-xlookup-sheet -->
+![A sheet holding a price list, ids in column A, names in B and prices in C, and cell C8 below them selected: its formula box shows =xlookup("Magenta thing", "B", "A") and the cell shows MMQFQZ5S, the Magenta thing's id](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-xlookup-sheet.png)
 
 Given a price list with ids in column A, names in column B and prices in column C:
 
 ```
 =xlookup("Magenta thing", "B", "A")     gives  MMQFQZ5S
-=xlookup("Magenta thing", "B", "C")     gives  19.99
+=xlookup("Magenta thing", "B", "C")     gives  4.5
 ```
 
 The rules:

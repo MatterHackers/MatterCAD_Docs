@@ -22,7 +22,8 @@ On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
 ## Rotating Parts
 
-![20260324 080843 paste 20260324 080843](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080843-paste-20260324-080843.jpg)
+<!-- AUTO_IMAGE: type=shot id=gs-edit-rotate -->
+![A selected part being turned by its curved-arrow handle, the rotate ring around it and the angle reading -45](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-edit-rotate.png)
 
 Drag one of the **curved-arrow handles** at the corners of the selected part. Each turns the part around one axis.
 

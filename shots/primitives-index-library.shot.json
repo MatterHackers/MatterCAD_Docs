@@ -1,6 +1,7 @@
 {
   "scene": "primitives-index-library.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "click": "Library Tab"
@@ -17,6 +18,6 @@
       "widget": "Library ListView"
     }
   ],
-  "alt": "The Library's 3D Primitives folder: a thumbnail and name for each shape it holds, from Cube to Image Converter",
+  "alt": "The Library's 3D Primitives folder: a thumbnail and name for each shape it holds, from Cube to 3D Curve",
   "replaces": "20260319-173740-paste-20260319-173740.jpg"
 }

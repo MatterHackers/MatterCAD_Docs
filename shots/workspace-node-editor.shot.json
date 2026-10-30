@@ -1,6 +1,7 @@
 {
   "scene": "workspace-node-editor.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 32.0,

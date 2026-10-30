@@ -1,6 +1,7 @@
 {
   "scene": "workspace-camera-cube.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 32.0,

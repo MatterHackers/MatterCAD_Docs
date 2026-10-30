@@ -1,6 +1,7 @@
 {
   "scene": "gs-add-to-bed-computer.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "fixture": "library",
   "steps": [
     {

@@ -15,7 +15,8 @@ An expression can read a value straight off another object in the scene, without
 
 That reads the **Sides** value of the object named `Handle`. When you change Sides on the handle, everything that references it rebuilds on its own.
 
-<!-- IMAGE_NEEDED: Scene tree with an object named "Handle" selected, and a second object's parameter field showing =Handle.Sides -->
+<!-- AUTO_IMAGE: type=shot id=workspace-object-reference -->
+![The design tree with Handle under the pointer and Cutter selected, Cutter's Properties panel showing Sides =Handle.Sides](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-object-reference.png)
 
 Use object references when one object's shape should follow another's - a cut that must always have the same number of sides as the part it cuts, a lid whose diameter tracks its jar. Use a [Variable Sheet](variable-sheet.md) instead when a value belongs to the design as a whole rather than to one object.
 
