@@ -10,7 +10,6 @@ keywords: rectangle, rounded rectangle, flat square, 2d square, rounded corners
 
 A rectangular 2D path, added as **Box** from the 2D Primitives. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create box shapes, or as a base for other path operations.
 
-<!-- Screenshot of a Box Path on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=2d-box -->
 ![A flat Box path selected on the bed beside its Properties panel: Plane, Width, Depth and Round](https://matterhackers.github.io/MatterCAD_Docs/assets/2d-box.png)
 

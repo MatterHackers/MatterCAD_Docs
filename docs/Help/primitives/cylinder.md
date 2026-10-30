@@ -10,7 +10,6 @@ keywords: rod, pin, post, column, peg, hexagon prism
 
 A round column shape with configurable diameter, height, and number of sides. The Cylinder is essential for creating pins, rods, holes, and round features.
 
-<!--  Screenshot of a Cylinder primitive on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-cylinder -->
 ![A Cylinder selected in the 3D view beside its Properties panel: Diameter, Height, Sides and Advanced, with the line saying Advanced gives more options](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-cylinder.png)
 

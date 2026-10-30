@@ -14,8 +14,6 @@ Image Converter turns a picture into a solid part. It traces the shapes in the p
 <!-- AUTO_IMAGE: type=shot id=image-converter-panel -->
 ![A logo made a raised solid by Image Converter, beside its Properties panel: the picture, the Analysis Type tabs and the Select Range histogram](https://matterhackers.github.io/MatterCAD_Docs/assets/image-converter-panel.png)
 
-![20260323 210414 paste 20260323 210414](https://matterhackers.github.io/MatterCAD_Docs/assets/20260323-210414-paste-20260323-210414.jpg)
-
 ## How to Use
 
 1. Add your picture to the bed (drag the file in, or use an [Image](../../primitives/image-object.md))

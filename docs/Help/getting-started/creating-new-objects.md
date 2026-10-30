@@ -34,7 +34,8 @@ Each shape has settings you change in the Properties panel once it is selected. 
 
 ## The Toolbar
 
-![20260324 081005 paste 20260324 081005](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081005-paste-20260324-081005.jpg)
+<!-- AUTO_IMAGE: type=toolbar_icons group=all -->
+![The toolbar's buttons, from Undo and Redo to the last group](https://matterhackers.github.io/MatterCAD_Docs/assets/toolbar-icons-all.png)
 
 After **Add to Bed**, **Save** and **Bed**, the toolbar holds, in this order:
 

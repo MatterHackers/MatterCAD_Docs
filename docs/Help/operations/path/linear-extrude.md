@@ -11,7 +11,6 @@ keywords: extrusion, pull up, add height, 2d to 3d, raise, make solid
 
 Linear Extrude gives a 2D path height, turning a flat shape into a 3D solid. This is the primary way to convert paths into 3D objects.
 
-<!--  Before and after showing a 2D star path extruded into a 3D star -->
 <!-- AUTO_IMAGE: type=shot id=linear-extrude -->
 ![Linear Extrude: a flat star path at the left, and at the right the same star extruded into a solid, with its Height, Direction and Bevel Top settings](https://matterhackers.github.io/MatterCAD_Docs/assets/linear-extrude.png)
 

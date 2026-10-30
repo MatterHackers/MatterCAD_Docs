@@ -15,10 +15,19 @@
   ],
   "crop": [
     {
-      "widget": "Add Content Menu"
+      "widget": "FolderBreadCrumbWidget"
     },
     {
-      "widget": "Popup Library"
+      "widget": "Household Row Item Collection"
+    },
+    {
+      "widget": "Toys and Games Row Item Collection"
+    },
+    {
+      "widget": "Row Item Box with Lid"
+    },
+    {
+      "widget": "Row Item Name Plate"
     }
   ],
   "alt": "The Add to Bed library inside Included > Design Apps: the folders Household, Tools and Toys and Games and the designs Box with Lid, Cable Clip and Name Plate"

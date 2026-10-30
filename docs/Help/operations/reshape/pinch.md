@@ -11,7 +11,6 @@ keywords: taper, narrow, squeeze, slim
 
 Pinch tapers a part from front to back. The front (the side nearest you in the Front view, lowest Y) keeps its width; moving toward the back (highest Y) the part narrows (or widens) toward its center line along X, reaching the **Back Ratio** at the back. The height (Z) is not changed.
 
-<!--  Before and after showing an object being pinched -->
 <!-- AUTO_IMAGE: type=shot id=pinch -->
 ![Pinch: a plain cube at the left, and at the right the same cube narrowed toward its back, with its Back Ratio setting](https://matterhackers.github.io/MatterCAD_Docs/assets/pinch.png)
 

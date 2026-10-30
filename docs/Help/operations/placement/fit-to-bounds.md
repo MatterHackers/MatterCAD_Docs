@@ -11,7 +11,6 @@ keywords: fit size, exact size, scale to size, resize to fit, stretch to fit, ta
 
 Fit to Bounds scales an object to fit within specified width, depth, and height dimensions. You can control how the object stretches and aligns within the target bounds.
 
-<!--  Screenshot showing an object being fit to specific bounding dimensions -->
 <!-- AUTO_IMAGE: type=shot id=fit-to-bounds -->
 ![A text fitted to 53.2 mm wide by Fit to Bounds, beside its Properties panel: Lock Proportion X Y Z, Width, Depth and Height and the Stretch setting](https://matterhackers.github.io/MatterCAD_Docs/assets/fit-to-bounds.png)
 

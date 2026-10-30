@@ -11,7 +11,6 @@ keywords: move by distance, exact position, shift, move exactly
 
 Translate moves an object by a specific distance along the X, Y, and/or Z axes. Unlike dragging an object with the mouse, Translate lets you enter exact offset values.
 
-<!--  Screenshot showing the Translate operation properties with X, Y, Z offset fields -->
 <!-- AUTO_IMAGE: type=shot id=translate -->
 ![A text moved off the world origin by Translate, a grey copy left where it started at the crossing of the bed's X and Y axes, beside its Properties panel: the X, Y and Z of the move](https://matterhackers.github.io/MatterCAD_Docs/assets/translate.png)
 

@@ -10,7 +10,6 @@ keywords: dome, hemisphere, cap, half ball, rounded cover
 
 The top hemisphere of a sphere -- a dome shape. Useful for creating domed tops, lens shapes, and rounded covers.
 
-<!--  Screenshot of a Half Sphere primitive on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-half-sphere -->
 ![A Half Sphere, its dome up, selected beside its Properties panel: Diameter, Longitude Sides and Latitude Sides](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-half-sphere.png)
 

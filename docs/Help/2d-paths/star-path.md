@@ -10,7 +10,6 @@ keywords: star shape, 2d star, starburst, pointed shape
 
 A star-shaped 2D path, added as **Star** from the 2D Primitives. You choose how many points it has and how far its points and valleys are from the center. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create 3D star shapes.
 
-<!-- Screenshot of a Star Path on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=2d-star -->
 ![A flat Star path selected on the bed, its point and valley circles showing, beside its Properties panel: Plane, Points, Point Radius and Valley Radius](https://matterhackers.github.io/MatterCAD_Docs/assets/2d-star.png)
 

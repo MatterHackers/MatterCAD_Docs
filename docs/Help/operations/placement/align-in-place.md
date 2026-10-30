@@ -10,7 +10,6 @@ keywords: assembly, fit together, original position, restore position, multi-par
 
 Align in Place puts two or more selected parts back where their own files placed them relative to each other, so parts that were made to fit together line up again. The first part you selected stays where it is; every other part moves so it sits relative to the first exactly as it did in the files they came from. It also clears each part's rotation and scale.
 
-<!--  Two parts before and after Align in Place -->
 |<!-- AUTO_IMAGE: type=shot id=align-in-place-before -->![The parts of one model, made as separate files that share coordinates, scattered on the bed](https://matterhackers.github.io/MatterCAD_Docs/assets/align-in-place-before.png)
 |<!-- AUTO_IMAGE: type=shot id=align-in-place-after -->![The same parts after Align in Place: put back together where their files placed them](https://matterhackers.github.io/MatterCAD_Docs/assets/align-in-place-after.png)
 |

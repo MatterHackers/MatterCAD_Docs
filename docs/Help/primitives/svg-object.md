@@ -10,7 +10,6 @@ keywords: vector drawing, illustrator, inkscape, vector art, clip art
 
 An SVG (Scalable Vector Graphics) file opens as an **SVG Import**. By default it makes one solid part per painted shape of the drawing, each 5 mm tall, with shapes painted on top cut out of the shapes under them, so the parts fit together like the drawing. Switch **Output** to **2D** to get the shapes as flat paths instead, ready for [Linear Extrude](../operations/path/linear-extrude.md), [Revolve](../operations/path/revolve.md) or the other path operations.
 
-<!--  Screenshot showing an imported SVG path being extruded into a 3D shape -->
 <!-- AUTO_IMAGE: type=shot id=primitives-svg-import -->
 ![An imported SVG drawing raised into 3D, selected beside its Properties panel: Output, Height and Minimum Area](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-svg-import.png)
 

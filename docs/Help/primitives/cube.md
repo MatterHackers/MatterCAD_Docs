@@ -10,7 +10,6 @@ keywords: box, block, brick, cuboid, rounded box, rectangular block
 
 A rectangular box shape with adjustable width, depth, height, and optional rounded edges. The Cube is one of the most commonly used primitives for building designs.
 
-<!--  Screenshot of a Cube primitive on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-cube -->
 ![A Cube selected in the 3D view beside its Properties panel: Width, Depth, Height and Round](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-cube.png)
 

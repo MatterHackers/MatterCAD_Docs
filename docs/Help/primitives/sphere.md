@@ -10,7 +10,6 @@ keywords: ball, globe, orb, round ball, bead
 
 A round ball shape with adjustable diameter and detail level.
 
-<!--  Screenshot of a Sphere primitive on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-sphere -->
 ![A Sphere selected in the 3D view beside its Properties panel: Diameter, Sides and Advanced, with the line saying Advanced gives more options](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-sphere.png)
 

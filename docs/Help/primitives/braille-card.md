@@ -10,7 +10,6 @@ keywords: braille alphabet, learn braille, teaching, letter card, flash card
 
 A Braille Card shows one letter twice on a rounded plate: as Braille dots, and as an ordinary letter standing up above them, with a line between the two. It is a handy way to learn or teach the Braille alphabet.
 
-<!--  Screenshot of a Braille Card object showing dots on a rectangular card base -->
 <!-- AUTO_IMAGE: type=shot id=primitives-braille-card -->
 ![Three Braille Cards in a row, for the letters a, b and c, one card per letter, the b card selected beside its Properties panel: Letter, Base Height and the Website link](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-braille-card.png)
 

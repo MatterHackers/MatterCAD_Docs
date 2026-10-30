@@ -11,7 +11,6 @@ keywords: line up, center, stack, put on top, align edges, flush, lay out
 
 Align precisely positions multiple objects relative to an anchor object. Use it to line up edges, center parts on each other, place one object on top of another, or create evenly spaced stacks.
 
-<!--  Screenshot showing two objects being aligned with alignment options visible -->
 <!-- AUTO_IMAGE: type=shot id=align -->
 ![Two parts lined up by Align, selected beside its Properties panel: the Anchor and the X, Y and Z axis settings](https://matterhackers.github.io/MatterCAD_Docs/assets/align.png)
 

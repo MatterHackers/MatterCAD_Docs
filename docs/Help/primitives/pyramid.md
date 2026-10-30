@@ -10,7 +10,6 @@ keywords: square pyramid, apex, obelisk, pointed top
 
 A four-sided pyramid shape with an adjustable rectangular base and height.
 
-<!--  Screenshot of a Pyramid primitive on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-pyramid -->
 ![A Pyramid selected in the 3D view beside its Properties panel: Width, Depth and Height](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-pyramid.png)
 

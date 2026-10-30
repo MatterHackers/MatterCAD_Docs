@@ -1,8 +1,8 @@
 {
   "scene": "web-design-page.mcx",
   "kind": "web-phone",
-  "style": "phone-outline",
   "mode": "page",
+  "own-style": "bare",
   "markers": [
     "Reset View Button",
     "Edit Design Button"

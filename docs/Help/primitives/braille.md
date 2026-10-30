@@ -10,7 +10,6 @@ keywords: tactile, blind, visually impaired, raised dots, accessibility, braille
 
 Braille turns English text into raised Braille dots on a backing plate. It can write letter-by-letter (Grade 1) or contracted (Grade 2) Braille. The dots are always the standard Braille size, so the result can be read by touch.
 
-<!-- Screenshot of a Braille object showing raised dots on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-braille -->
 ![The word Braille written in raised braille dots on a backing plate, selected beside its Properties panel: Text, Backing Depth, Use Grade 2, Render As Braille, Add Hook and the Website link](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-braille.png)
 

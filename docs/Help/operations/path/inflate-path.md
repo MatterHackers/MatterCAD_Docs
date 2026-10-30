@@ -11,7 +11,6 @@ keywords: offset, expand, grow outline, thicken, enlarge path, offset path
 
 Inflate Path expands a 2D path outward, making the shape larger while maintaining its overall form. This is similar to applying a uniform offset to all edges.
 
-<!--  Before and after showing a path inflated outward -->
 <!-- AUTO_IMAGE: type=shot id=inflate-path -->
 ![Inflate Path: a star at the left, and at the right the same star grown 7.2 mm all round with sharp corners, beside Inflate and Style](https://matterhackers.github.io/MatterCAD_Docs/assets/inflate-path.png)
 

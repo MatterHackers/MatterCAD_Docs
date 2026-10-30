@@ -15,7 +15,6 @@ What makes it useful is what reads from it. Every image operation -- [Image Conv
 <!-- AUTO_IMAGE: type=shot id=primitives-image-bare -->
 ![A bare Image lying flat on the bed, seen at an angle: a picture on a thin plate, not a raised relief](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-image-bare.png)
 
-<!-- The properties panel for the image, here as part of an Image to Path stack -->
 <!-- AUTO_IMAGE: type=shot id=primitives-image-panel -->
 ![Image properties panel showing the Google image search box, the picture thumbnail, the Invert toggle and the Open new image button](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-image-panel.png)
 

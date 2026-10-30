@@ -10,7 +10,6 @@ keywords: ramp, slope, incline, triangle, angled block, gusset
 
 A triangular prism shape -- like a cube cut diagonally from one edge to the opposite edge. Useful for ramps, supports, and angled surfaces.
 
-<!--  Screenshot of a Wedge primitive on the workspace -->
 <!-- AUTO_IMAGE: type=shot id=primitives-wedge -->
 ![A Wedge selected in the 3D view, its slope toward you, beside its Properties panel: Width, Depth, Height and Round](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-wedge.png)
 
