@@ -1,6 +1,7 @@
 {
   "scene": "2d-index-extrude.mcx",
   "kind": "before-after",
+  "style": "one-view",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 35.0,

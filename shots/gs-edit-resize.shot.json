@@ -1,6 +1,7 @@
 {
   "scene": "gs-edit-resize.mcx",
   "kind": "view-interaction",
+  "style": "pointer",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 12.0,

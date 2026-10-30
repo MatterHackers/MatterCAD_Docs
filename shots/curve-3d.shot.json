@@ -1,6 +1,7 @@
 {
   "scene": "curve-3d.mcx",
   "kind": "view-interaction",
+  "style": "pointer",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 25.0,

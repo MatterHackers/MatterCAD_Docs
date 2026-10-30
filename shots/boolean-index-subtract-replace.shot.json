@@ -1,6 +1,7 @@
 {
   "scene": "boolean-index-subtract-replace.mcx",
   "kind": "scene-only",
+  "style": "on-bed",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 20.0,

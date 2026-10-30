@@ -1,17 +1,13 @@
 {
   "scene": "boolean-subtract.mcx",
   "kind": "before-after",
+  "style": "one-view",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 20.0,
     "turn_degrees": 35.0,
     "fill": 0.85
   },
-  "steps": [
-    {
-      "select": "Subtract"
-    }
-  ],
   "crop": [
     "view"
   ],

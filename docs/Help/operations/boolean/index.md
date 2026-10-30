@@ -17,7 +17,7 @@ All four operations are performed by one Boolean object. The toolbar buttons bel
 
 |Combine|Subtract|Intersect|Subtract & Replace|
 | :--- | :--- | :--- | :--- |
-|<!-- AUTO_IMAGE: type=from_mcx file=boolean_combine -->![boolean_combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)|<!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract -->![boolean_subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)|<!-- AUTO_IMAGE: type=from_mcx file=boolean_intersect -->![boolean_intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)|<!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract_and_replace -->![boolean_subtract_and_replace](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract_and_replace.png)|
+|<!-- AUTO_IMAGE: type=shot id=boolean-index-combine -->![The result of Combine: the overlapping parts merged into one](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-index-combine.png)|<!-- AUTO_IMAGE: type=shot id=boolean-index-subtract -->![The result of Subtract: a block with the cutter's shape taken out of it](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-index-subtract.png)|<!-- AUTO_IMAGE: type=shot id=boolean-index-intersect -->![The result of Intersect: only the volume the parts share](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-index-intersect.png)|<!-- AUTO_IMAGE: type=shot id=boolean-index-subtract-replace -->![The result of Subtract and Replace: the block with the cutter's shape taken out of it, and the cut-away piece kept as its own part](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-index-subtract-replace.png)|
 
 ## Operations
 

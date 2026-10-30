@@ -1,6 +1,7 @@
 {
   "scene": "fit-to-bounds.mcx",
   "kind": "part-panel",
+  "style": "part-card",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 40.0,

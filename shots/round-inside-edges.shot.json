@@ -1,6 +1,7 @@
 {
   "scene": "round-inside-edges.mcx",
   "kind": "before-after",
+  "style": "one-view",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 45.0,

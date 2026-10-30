@@ -11,8 +11,8 @@ keywords: inlay, two colors, multi color, cut and keep, replace, insert, multi-m
 
 Subtract and Replace subtracts the parts you choose out of the parts you did not, but keeps the piece that was cut away as its own part instead of discarding it. Use **Part(s) to Subtract** to pick the cutting shapes; everything else is the base that gets cut.
 
-<!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract_and_replace -->
-![boolean_subtract_and_replace](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract_and_replace.png)
+<!-- AUTO_IMAGE: type=shot id=boolean-subtract-and-replace -->
+![Subtract and Replace: the overlapping parts at the left, and at the right the block with the cutter's shape taken out of it and the cut-away piece kept as its own part, pulled out of its pocket](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-subtract-and-replace.png)
 
 [Combine](combine.md), [Subtract](subtract.md), [Intersect](intersect.md) and Subtract and Replace are all performed by one Boolean object -- the toolbar button creates it with Subtract & Replace already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 

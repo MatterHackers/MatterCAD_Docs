@@ -11,8 +11,8 @@ keywords: intersection, overlap, common part, shared volume, where parts meet
 
 Intersect keeps only the volume every object shares and discards the rest.
 
-<!-- AUTO_IMAGE: type=from_mcx file=boolean_intersect -->
-![boolean_intersect](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_intersect.png)
+<!-- AUTO_IMAGE: type=shot id=boolean-intersect -->
+![Intersect: the overlapping parts at the left, and at the right only the volume the parts share](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-intersect.png)
 
 [Combine](combine.md), [Subtract](subtract.md), Intersect and [Subtract and Replace](subtract-and-replace.md) are all performed by one Boolean object -- the toolbar button creates it with Intersect already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 

@@ -1,6 +1,7 @@
 {
   "scene": "2d-custom-path-editor.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "window": [
     1280,
     1000

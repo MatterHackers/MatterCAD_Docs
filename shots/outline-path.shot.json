@@ -1,6 +1,7 @@
 {
   "scene": "outline-path.mcx",
   "kind": "before-after",
+  "style": "one-view",
   "camera": {
     "start": "top",
     "fill": 0.85

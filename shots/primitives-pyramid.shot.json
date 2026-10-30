@@ -1,6 +1,7 @@
 {
   "scene": "primitives-pyramid.mcx",
   "kind": "part-panel",
+  "style": "part-card",
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 32.0,

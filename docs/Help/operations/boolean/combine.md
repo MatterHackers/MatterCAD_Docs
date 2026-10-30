@@ -11,8 +11,8 @@ keywords: union, merge, join, fuse, weld, add together, glue parts
 
 Combine merges everything into a single solid. Internal faces where the shapes overlapped are removed, so the result is one continuous mesh rather than overlapping shells.
 
-<!-- AUTO_IMAGE: type=from_mcx file=boolean_combine -->
-![boolean_combine](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_combine.png)
+<!-- AUTO_IMAGE: type=shot id=boolean-combine -->
+![Combine: the overlapping parts at the left, and at the right the same parts merged into one](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-combine.png)
 
 Combine, [Subtract](subtract.md), [Intersect](intersect.md) and [Subtract and Replace](subtract-and-replace.md) are all performed by one Boolean object -- the toolbar button creates it with Combine already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 

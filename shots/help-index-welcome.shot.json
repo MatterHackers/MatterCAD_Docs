@@ -1,6 +1,7 @@
 {
   "scene": "help-index-welcome.mcx",
   "kind": "full-window",
+  "style": "framed",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 32.0,

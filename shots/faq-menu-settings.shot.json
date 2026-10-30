@@ -1,6 +1,7 @@
 {
   "scene": "faq-menu-settings.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "open-menu": [

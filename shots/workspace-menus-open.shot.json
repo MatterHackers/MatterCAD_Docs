@@ -1,6 +1,7 @@
 {
   "scene": "workspace-menus-open.mcx",
   "kind": "ui-closeup",
+  "style": "tight",
   "steps": [
     {
       "open-menu": [

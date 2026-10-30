@@ -1,6 +1,7 @@
 {
   "scene": "primitives-qr-code.mcx",
   "kind": "part-panel",
+  "style": "part-card",
   "window": [
     1280,
     1000

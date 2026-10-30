@@ -1,6 +1,7 @@
 {
   "scene": "mirror.mcx",
   "kind": "before-after",
+  "style": "one-view",
   "window": [
     1280,
     560

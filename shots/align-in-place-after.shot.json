@@ -1,6 +1,7 @@
 {
   "scene": "align-in-place-after.mcx",
   "kind": "scene-only",
+  "style": "on-bed",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 32.0,

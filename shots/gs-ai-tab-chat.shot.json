@@ -1,6 +1,7 @@
 {
   "scene": "gs-ai-tab-chat.mcx",
   "kind": "chat",
+  "style": "panel",
   "camera": {
     "start": "fit-all",
     "look_down_degrees": 32.0,

@@ -11,8 +11,8 @@ keywords: difference, cut out, remove material, pocket, carve, punch through
 
 Subtract cuts the parts you choose out of the parts you did not. Select the part to keep first, then the shapes to cut from it, and press Subtract: the first object you selected is the base, and every object you selected after it is cut from it. Use **Part(s) to Subtract** to change which shapes cut; everything not ticked is the base that gets cut.
 
-<!-- AUTO_IMAGE: type=from_mcx file=boolean_subtract -->
-![boolean_subtract](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean_subtract.png)
+<!-- AUTO_IMAGE: type=shot id=boolean-subtract -->
+![Subtract: the overlapping parts at the left, and at the right the block with the cutter's shape taken out of it](https://matterhackers.github.io/MatterCAD_Docs/assets/boolean-subtract.png)
 
 [Combine](combine.md), Subtract, [Intersect](intersect.md) and [Subtract and Replace](subtract-and-replace.md) are all performed by one Boolean object -- the toolbar button creates it with Subtract already selected, and you can switch to any of the other three at any time from the row of operation icon tabs at the top of the Properties panel.
 
