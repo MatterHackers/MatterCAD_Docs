@@ -13,7 +13,7 @@ A node graph lets you build a part by wiring boxes together instead of stacking 
 Use a node graph when you want to turn a few parts into one tool with a handful of settings - a bracket with a Width and a Hole Size, say - that you can reuse and share.
 
 <!-- AUTO_IMAGE: type=shot id=workspace-node-editor -->
-![The node editor open under the 3D view: the graph's Input node, and a Box node wired through an Outline Path node to the Output node, the outlined box above](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-node-editor.png)
+![The node editor open under the 3D view: a Box node wired through an Outline Path node to the Output node, each card readable, the outlined box above](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-node-editor.png)
 
 ## Start a Graph
 
