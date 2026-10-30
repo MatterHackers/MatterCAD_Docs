@@ -27,6 +27,7 @@
     "view"
   ],
   "margin": 12,
+  "cursor": "arrow",
   "alt": "MatterCAD just after an AI added mounting holes to a plate: the pointer rests on the Undo button, whose tool tip reads Undo - AI: add mounting holes, above the 3D view showing the drilled plate",
   "replaces": {
     "needed": "the Undo history showing an \"AI: add mounting holes\" step"
