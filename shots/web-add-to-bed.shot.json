@@ -1,15 +1,21 @@
 {
   "scene": "web-add-to-bed.mcx",
   "kind": "web-phone",
-  "mode": "web",
-  "fixture": "library",
+  "mode": "page",
+  "fixture": "page-library",
   "own-style": "bare",
   "steps": [
+    {
+      "click": "Edit Design Button"
+    },
+    {
+      "key": "w"
+    },
     {
       "click": "Add Content Menu"
     }
   ],
-  "alt": "MatterCAD on the website with the Add to Bed library open over the left side of the editor, listing Included, Cloud Library, Shared with Me and Purchased beside the design",
+  "alt": "The editor on a design's page on the MatterCAD website with the Add to Bed library open over the left side, listing Included, My Designs, Shared with Me and Purchased beside the design",
   "replaces": {
     "needed": "The website's editor with the Add to Bed library open over the left side"
   }

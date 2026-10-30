@@ -2,6 +2,10 @@
   "scene": "lib-shared-with-me.mcx",
   "kind": "ui-closeup",
   "fixture": "sharing",
+  "window": [
+    960,
+    640
+  ],
   "steps": [
     {
       "click": "Library Tab"
@@ -10,17 +14,29 @@
       "double-click": "Shared with Me Row Item Collection"
     },
     {
-      "right-click": "Row Item Desk Lamp"
+      "click": "Library View Options Button"
+    },
+    {
+      "click": "View List Menu Item"
+    },
+    {
+      "right-click": "Row Item Robot Arm"
     }
   ],
   "crop": [
     {
-      "widget": "Library ListView"
+      "widget": "Club Parts Row Item Collection"
+    },
+    {
+      "widget": "Row Item Desk Lamp"
+    },
+    {
+      "widget": "Row Item Robot Arm"
     },
     "menu"
   ],
-  "margin": 24,
-  "alt": "Shared with Me in the Library: the folder Club Parts, Desk Lamp shared by Alex Rivera as a Viewer and Robot Arm shared with Robotics Club by Alex Rivera as an Editor, with the right-click menu open on Desk Lamp",
+  "margin": 6,
+  "alt": "Shared with Me in the Library's list view: the folder Club Parts, Desk Lamp reading \"Shared by Alex Rivera · Viewer\" and Robot Arm reading \"Shared with Robotics Club by Alex Rivera · Editor\", with the right-click menu open on Robot Arm showing Make a copy and Remove from Shared with Me",
   "replaces": {
     "needed": "The Library showing Shared with Me with two designs and a folder"
   }
