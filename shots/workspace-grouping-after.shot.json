@@ -1,0 +1,24 @@
+{
+  "scene": "workspace-grouping-after.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "select": "Group"
+    },
+    {
+      "expand": "Group"
+    }
+  ],
+  "crop": [
+    "view",
+    "design-tree"
+  ],
+  "alt": "The cube and cylinder grouped: one Group selected on the bed, its design tree row opened to show Cube and Cylinder inside it",
+  "replaces": "20260318-193138-paste-20260318-193138.jpg"
+}

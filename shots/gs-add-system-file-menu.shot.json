@@ -1,0 +1,21 @@
+{
+  "scene": "gs-add-system-file-menu.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "open-menu": [
+        "MatterCAD",
+        "Add System File to Bed"
+      ]
+    }
+  ],
+  "crop": [
+    "menu",
+    "tab-bar"
+  ],
+  "margin": 24,
+  "alt": "The MatterCAD menu open over a design tab with its first item, Add System File to Bed, highlighted",
+  "replaces": {
+    "needed": "The ☰ MatterCAD menu open over a design tab, with Add System File to Bed highlighted as its first item"
+  }
+}

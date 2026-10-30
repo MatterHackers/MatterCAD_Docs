@@ -1,0 +1,30 @@
+{
+  "scene": "workspace-selection-rubber-band.mcx",
+  "kind": "view-interaction",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "hold-drag": {
+        "from": [
+          0.1,
+          0.9
+        ],
+        "to": [
+          0.5,
+          0.45
+        ]
+      }
+    }
+  ],
+  "crop": [
+    "view"
+  ],
+  "cursor": "arrow",
+  "alt": "A selection rectangle being dragged across the 3D view from the empty bed over the cube and part of the astronaut, the mouse button still held",
+  "replaces": "20260318-192357-paste-20260318-192357.jpg"
+}

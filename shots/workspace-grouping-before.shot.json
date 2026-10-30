@@ -1,0 +1,16 @@
+{
+  "scene": "workspace-grouping-before.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "crop": [
+    "view",
+    "design-tree"
+  ],
+  "alt": "A cube and a cylinder side by side on the bed, each its own row in the design tree, before they are grouped",
+  "replaces": "20260318-193104-paste-20260318-193104.jpg"
+}

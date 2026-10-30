@@ -1,0 +1,26 @@
+{
+  "scene": "workspace-grouping-group-button.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": [
+        "Cube",
+        "Cylinder"
+      ]
+    },
+    {
+      "hover-tip": "Group Button"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Group Button"
+    },
+    {
+      "widget": "Ungroup Button"
+    }
+  ],
+  "margin": 12,
+  "alt": "The toolbar's Group button with the pointer resting on it and its tool tip showing, the Ungroup button beside it",
+  "replaces": "20260318-193235-paste-20260318-193235.jpg"
+}
