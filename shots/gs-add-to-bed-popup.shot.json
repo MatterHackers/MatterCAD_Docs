@@ -1,0 +1,20 @@
+{
+  "scene": "gs-add-to-bed-popup.mcx",
+  "kind": "ui-closeup",
+  "fixture": "library",
+  "steps": [
+    {
+      "click": "Add Content Menu"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Add Content Menu"
+    },
+    {
+      "widget": "Popup Library"
+    }
+  ],
+  "alt": "The Add to Bed button and the library it opens over the bed, at its top level: Computer, Included, My Tools, History, Cloud Library, Shared with Me and Purchased",
+  "replaces": "20260324-081122-paste-20260324-081122.jpg"
+}

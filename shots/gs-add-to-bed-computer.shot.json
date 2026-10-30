@@ -1,0 +1,23 @@
+{
+  "scene": "gs-add-to-bed-computer.mcx",
+  "kind": "ui-closeup",
+  "fixture": "library",
+  "steps": [
+    {
+      "click": "Add Content Menu"
+    },
+    {
+      "double-click": "Computer Row Item Collection"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Add Content Menu"
+    },
+    {
+      "widget": "Popup Library"
+    }
+  ],
+  "alt": "The Add to Bed library inside Computer: the Downloads, Desktop and Documents folders and the computer's drives",
+  "replaces": "20260324-081446-paste-20260324-081446.jpg"
+}

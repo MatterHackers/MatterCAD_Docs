@@ -1,0 +1,27 @@
+{
+  "scene": "lib-shared-with-me.mcx",
+  "kind": "ui-closeup",
+  "fixture": "sharing",
+  "steps": [
+    {
+      "click": "Library Tab"
+    },
+    {
+      "double-click": "Shared with Me Row Item Collection"
+    },
+    {
+      "right-click": "Row Item Desk Lamp"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Library ListView"
+    },
+    "menu"
+  ],
+  "margin": 24,
+  "alt": "Shared with Me in the Library: the folder Club Parts, Desk Lamp shared by Alex Rivera as a Viewer and Robot Arm shared with Robotics Club by Alex Rivera as an Editor, with the right-click menu open on Desk Lamp",
+  "replaces": {
+    "needed": "The Library showing Shared with Me with two designs and a folder"
+  }
+}

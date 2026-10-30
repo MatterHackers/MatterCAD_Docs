@@ -1,0 +1,20 @@
+{
+  "scene": "lib-local-computer.mcx",
+  "kind": "ui-closeup",
+  "fixture": "library",
+  "steps": [
+    {
+      "click": "Library Tab"
+    },
+    {
+      "double-click": "Computer Row Item Collection"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Library ListView"
+    }
+  ],
+  "alt": "The Library tab inside Computer: the Downloads, Desktop and Documents folders and the computer's drives",
+  "replaces": "20260323-210208-paste-20260323-210208.jpg"
+}

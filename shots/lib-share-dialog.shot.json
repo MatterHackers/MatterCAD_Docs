@@ -1,0 +1,28 @@
+{
+  "scene": "lib-share-dialog.mcx",
+  "kind": "ui-closeup",
+  "fixture": "sharing",
+  "steps": [
+    {
+      "click": "Library Tab"
+    },
+    {
+      "double-click": "Cloud Library Row Item Collection"
+    },
+    {
+      "right-click": "Row Item Dice"
+    },
+    {
+      "click": "Share... Menu Item"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The Share dialog for Dice: the Add people or groups box with Viewer and Send, People with access listing Sample User as Owner, Jordan Lee as a Viewer, Priya Shah as an Editor and the group Robotics Club, and General access reading Restricted",
+  "replaces": {
+    "needed": "The Share dialog for a design"
+  }
+}

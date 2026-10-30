@@ -1,0 +1,25 @@
+{
+  "scene": "lib-groups-dialog.mcx",
+  "kind": "ui-closeup",
+  "fixture": "sharing",
+  "steps": [
+    {
+      "click": "User Options Menu"
+    },
+    {
+      "click": "Groups Menu Item"
+    },
+    {
+      "click": "Group Open robotics-club-key"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The Groups dialog: the New group name box and New Group button, Your groups listing Family and Robotics Club, and Robotics Club picked below with Rename and Delete group, the Add member by email row, and its members: Sample User the Owner, Alex Rivera a Manager and Jordan Lee a Member",
+  "replaces": {
+    "needed": "The Groups dialog with the New group name box and New Group button"
+  }
+}

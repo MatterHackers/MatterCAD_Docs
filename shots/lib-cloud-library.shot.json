@@ -1,0 +1,21 @@
+{
+  "scene": "lib-cloud-library.mcx",
+  "kind": "ui-closeup",
+  "fixture": "cloud-library",
+  "steps": [
+    {
+      "click": "Library Tab"
+    },
+    {
+      "double-click": "Cloud Library Row Item Collection"
+    }
+  ],
+  "crop": [
+    "tab-bar",
+    {
+      "widget": "Library ListView"
+    }
+  ],
+  "alt": "The Library tab inside Cloud Library while signed in as Sample User: the folders Robotics and Gifts and the designs Dice, Keychain, Bracket and Phone Stand",
+  "replaces": "20260323-210141-paste-20260323-210141.jpg"
+}
