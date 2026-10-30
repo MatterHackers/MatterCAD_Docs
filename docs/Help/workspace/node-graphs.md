@@ -12,7 +12,7 @@ A node graph lets you build a part by wiring boxes together instead of stacking 
 
 Use a node graph when you want to turn a few parts into one tool with a handful of settings - a bracket with a Width and a Hole Size, say - that you can reuse and share.
 
-<!-- IMAGE_NEEDED: The node editor open under the 3D view, showing the Input node, a Box node wired through an Outline node to the Output node -->
+<!-- IMAGE_NEEDED: The node editor open under the 3D view, showing the Input node, a Box node wired through an Outline Path node to the Output node -->
 
 ## Start a Graph
 
