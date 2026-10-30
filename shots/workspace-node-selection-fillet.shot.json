@@ -2,6 +2,10 @@
   "scene": "workspace-node-selection-fillet.mcx",
   "kind": "ui-closeup",
   "style": "tight",
+  "window": [
+    1760,
+    1200
+  ],
   "camera": {
     "start": "fit-selection",
     "look_down_degrees": 50.0,
@@ -11,6 +15,15 @@
   "steps": [
     {
       "select": "Fillet Graph"
+    },
+    {
+      "frame-nodes": [
+        "Cube",
+        "Fillet",
+        "Position",
+        "Separate XYZ",
+        "Compare"
+      ]
     }
   ],
   "crop": [
