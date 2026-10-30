@@ -12,7 +12,7 @@ The Measure Tool lets you measure distances between points in your design. Place
 
 <!--  Screenshot showing the Measure Tool with a distance measurement displayed between two points -->
 <!-- AUTO_IMAGE: type=shot id=workspace-measure-tool -->
-![The Measure Tool selected: a line from the cube's top corner to the astronaut, a sphere at each end, and the distance between them shown on the line](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-measure-tool.png)
+![The Measure Tool selected, its marker outlined on the bed: a line from the cube's top corner to the astronaut's chest, a sphere at each end, and the distance between them shown on the line](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-measure-tool.png)
 
 
 ## How to Use
