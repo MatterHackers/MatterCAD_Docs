@@ -6,7 +6,7 @@
       "select": "Variable Sheet"
     },
     {
-      "click": "Cell 4,0"
+      "click": "Cell 2,7"
     }
   ],
   "crop": [
@@ -15,7 +15,7 @@
     }
   ],
   "margin": 4,
-  "alt": "A sheet holding a price list, ids in column A, names in B and prices in C, with cell E1 selected: its formula box shows =xlookup(\"Magenta thing\", \"B\", \"A\") and the cell shows MMQFQZ5S",
+  "alt": "A sheet holding a price list, ids in column A, names in B and prices in C, and cell C8 below them selected: its formula box shows =xlookup(\"Magenta thing\", \"B\", \"A\") and the cell shows MMQFQZ5S, the Magenta thing's id",
   "replaces": {
     "needed": "A sheet holding a small price list - ids in column A, names in column B, prices in column C - with a cell selected whose formula box shows =xlookup(\"Magenta thing\", \"B\", \"A\")"
   }

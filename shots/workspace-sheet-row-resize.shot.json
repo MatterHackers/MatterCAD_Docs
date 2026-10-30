@@ -27,6 +27,6 @@
   "cursor": "resize-v",
   "alt": "Close-up of the bottom edge of row number 3 with the up-down resize pointer on it, that row taller than the rows around it",
   "replaces": {
-    "needed": "Close-up of the bottom edge of a row number with the vertical resize cursor showing"
+    "needed": "Close-up of the bottom edge of a row number with the vertical resize cursor showing, that row dragged taller than the rows around it"
   }
 }

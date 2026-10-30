@@ -100,12 +100,12 @@ Three things are worth knowing:
 - **Drag the separator** between two column letters to set a column's width by hand.
 - **Double-click the separator** to size the column to the widest value it is currently showing - the same thing **Auto-size Column** does from the column's header menu.
 
-<!-- IMAGE_NEEDED: Close-up of the bottom edge of a row number with the vertical resize cursor showing, beside a row holding a wrapped multi-line value -->
+<!-- IMAGE_NEEDED: Close-up of the bottom edge of a row number with the vertical resize cursor showing, that row dragged taller than the rows around it -->
 
 Rows work the same way, on the bottom edge of the row number:
 
 - **Drag the bottom edge of a row number** to set that row's height by hand, as one *Resize Row* Undo step.
-- **Double-click that edge**, or pick **Auto-fit Row** from the row's header menu, to fit the row to the tallest value it is showing, as one *Auto-fit Row* step. A row whose values are all single lines fits back to the standard height - dragging is the only thing that takes a row below that.
+- **Double-click that edge**, or pick **Auto-fit Row** from the row's header menu, to put the row back at the standard height, as one *Auto-fit Row* step. A cell shows its value on a single line, so the standard height fits every row - dragging is the only way to make a row taller or shorter.
 
 Each of these is undoable, and a drag counts as one step no matter how far you moved the pointer.
 
@@ -127,7 +127,7 @@ Decimal places only apply to a value that reads as a **number**. Text, and an er
 
 ## The File Menu
 
-<!-- IMAGE_NEEDED: The sheet editor's File menu open, showing Import CSV..., Download CSV... and Refresh Imported Data -->
+<!-- IMAGE_NEEDED: The sheet editor's File menu open, showing Import CSV..., Export CSV... and Refresh Imported Data -->
 
 ### Import CSV...
 
@@ -141,11 +141,13 @@ Rows and columns past the end of the file are **dropped**, and the names on thos
 
 Because an imported field can be a formula, importing a CSV from a source you do not trust runs whatever that file says to run - including `=importdata("...")`, which reads a file or a URL every time the sheet recalculates.
 
-### Download CSV...
+### Export CSV...
+
+On the website the same item is called **Download CSV...**.
 
 Writes the sheet out **exactly as it was typed**: a formula is written as its own text (`=A1*3`), not as the number it currently shows, and text cells are written as they stand. Importing that file again restores the sheet, formulas and all, still live - the round trip is the point.
 
-The file is named after the sheet object, so a design holding several sheets does not download them all over the top of each other. A sheet with no name of its own downloads as `sheet.csv`.
+The file is named after the sheet object, so a design holding several sheets does not save them all over the top of each other. A sheet with no name of its own is saved as `sheet.csv`.
 
 ### Refresh Imported Data
 
