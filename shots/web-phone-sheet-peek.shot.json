@@ -17,8 +17,8 @@
       "select": "Cube"
     }
   ],
-  "alt": "MatterCAD's editor on a phone held upright with the bottom sheet at peek height: the grab handle at the left of its top edge, the Design, AI and Notes row, and the selected part's name, Cube, under it, the 3D view filling the rest of the screen",
+  "alt": "MatterCAD's editor on a phone held upright with the bottom sheet at its lowest: the grip at the left of its top edge and the Design, AI and Notes row, the selection bar just above it, and the 3D view with the selected Cube filling the rest of the screen",
   "replaces": {
-    "needed": "The bottom sheet at peek height on a phone"
+    "needed": "The bottom sheet at its lowest on a phone"
   }
 }

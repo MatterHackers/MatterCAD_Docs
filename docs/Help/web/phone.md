@@ -61,7 +61,7 @@ While a part is selected, a bar of buttons runs along the bottom of the 3D view,
 - **Combine** and **Subtract** - When you selected two or more parts, or a group of them.
 - **More** - Opens the part's menu, the same one you get by holding a finger on the part.
 
-Only the buttons that do something for what you selected are shown. If the screen is too narrow for all of them, the last ones are left off; you still find them under **More**. **Undo** takes back what a button did in one step. Raising the bottom sheet to full covers the bar.
+Only the buttons that do something for what you selected are shown. If the screen is too narrow for all of them, the last ones are left off; you still find them under **More**. **Undo** takes back what a button did in one step. Raising the bottom sheet as high as it goes covers the bar.
 
 ## Press and Hold for a Menu
 
@@ -88,20 +88,17 @@ Turn the phone sideways and the 3D view takes the whole height of the screen:
 
 On a phone held upright, the side panel becomes a sheet along the bottom of the screen. Its top row holds the **Design** and **AI** tabs and the **Notes** button ([Design Notes](../workspace/design-notes.md)).
 
-The sheet rests at one of three heights:
+To move it, drag the small grip at the left end of the sheet's top edge up or down. The sheet stays wherever you let go:
 
-- **Peek** - Just the tab row and one row under it, with the selected part's name. Tap the name to raise the sheet to half.
-- **Half** - The sheet takes a bit less than half of the room under the toolbar, and the 3D view keeps the rest. This is where it starts.
-- **Full** - The sheet covers the 3D view.
-
-To move it, use the grab handle at the left end of the sheet's top edge:
-
-- **Drag** the handle up or down. The sheet follows your finger and settles at the nearest height when you let go.
-- **Tap** the handle to step from peek to half to full, then back to peek.
+- **As low as it goes**, only the grip and the tab row show, and the 3D view fills the rest of the screen.
+- **As high as it goes**, the sheet covers the 3D view but for a strip under the toolbar.
+- **At the start**, the sheet takes a bit less than half of the room under the toolbar, and the 3D view keeps the rest.
 
 MatterCAD remembers where you left the sheet.
 
-<!-- IMAGE_NEEDED: The bottom sheet at peek height on a phone, with the grab handle at the left of its top edge, the Design, AI and Notes row, and the selected part's name under it -->
+When you pick a part, the Design tab shows its properties under a row with **‹ Design** (back to the tree) and the part's name. With the sheet dragged low, that row may be all that shows: tap the part's name to raise the sheet to where it starts, so the properties have room.
+
+<!-- IMAGE_NEEDED: The bottom sheet at its lowest on a phone, with the grip at the left of its top edge, the Design, AI and Notes row, and the selection bar just above it -->
 
 ## Camera Controls
 
