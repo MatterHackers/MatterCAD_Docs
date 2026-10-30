@@ -2,6 +2,7 @@
   "scene": "workspace-tab-bar.mcx",
   "kind": "ui-closeup",
   "style": "tight",
+  "name": "Desk Parts",
   "steps": [
     {
       "click": "Create New Button"
