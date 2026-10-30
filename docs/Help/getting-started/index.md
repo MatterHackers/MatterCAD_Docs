@@ -23,7 +23,7 @@ On a Mac, press ⌘ (Command) wherever these pages say Ctrl.
   - **Bed** - **Export**, **Cut**, **Copy**, **Paste**, **Reload** and **Clear Bed**.
   - **Undo** and **Redo**.
   - The operations, in groups such as **Transform**, **Placement**, **Merge** and **Duplication**. The **Tools** button at the end of the toolbar lets you collapse or hide groups.
-- **Favorites bar** - The column of shapes down the left side. It starts with the 3D primitives (Cube, Cylinder, Sphere and the rest); the heart on an item in the library adds it here or takes it off. Double-click a shape to add it to the bed, or drag it onto the bed where you want it.
+- **Favorites bar** - The column of shapes down the left side. It starts with the 3D primitives (Cube, Cylinder, Sphere and the rest); in the library, the heart that shows when you point at an item adds it here or takes it off. Double-click a shape to add it to the bed, or drag it onto the bed where you want it.
 - **3D view** - The middle of the window, where your design sits on the bed.
 - **Camera controls** - The cube in the top-right corner of the 3D view and the buttons around and under it. See [Camera Controls](../workspace/camera-controls.md).
 - **Side panel** - On the right, with a **Design** tab and an **AI** tab ([The AI Tab](ai-tab.md)). The **Design** tab shows the **Design tree** (every part in your design) above the **Properties panel** (the settings of the selected part).

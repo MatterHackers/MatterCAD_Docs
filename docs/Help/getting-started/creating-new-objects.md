@@ -18,7 +18,7 @@ Click the **+** button in the row of tabs (**Create New Design**), or press Ctrl
 
 ## Add Shapes
 
-Double-click a shape in the favorites bar down the left side of the design, or drag it onto the bed where you want it. (A single click only highlights it.) The bar starts with every 3D primitive except 3D Curve; in the library, the heart on an item adds it to the bar or takes it off.
+Double-click a shape in the favorites bar down the left side of the design, or drag it onto the bed where you want it. (A single click only highlights it.) The bar starts with every 3D primitive except 3D Curve; in the library, the heart that shows when you point at an item adds it to the bar or takes it off.
 
 For more shapes, click **Add to Bed** in the toolbar and open **Included**:
 
