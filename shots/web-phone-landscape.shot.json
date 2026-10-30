@@ -2,15 +2,12 @@
   "scene": "web-phone-landscape.mcx",
   "kind": "web-phone",
   "style": "phone-outline",
-  "mode": "web",
+  "mode": "page",
   "window": "phone-landscape",
-  "camera": {
-    "start": "fit-all",
-    "look_down_degrees": 32.0,
-    "turn_degrees": 30.0,
-    "fill": 0.8
-  },
   "steps": [
+    {
+      "click": "Edit Design Button"
+    },
     {
       "select": "Cube"
     }
