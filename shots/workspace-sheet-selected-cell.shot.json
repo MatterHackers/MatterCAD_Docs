@@ -1,0 +1,28 @@
+{
+  "scene": "workspace-sheet-selected-cell.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "click": "Cell 1,2"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Sheet Name Box"
+    },
+    {
+      "widget": "Sheet Formula Bar"
+    },
+    {
+      "widget": "Sheet Grid"
+    }
+  ],
+  "margin": 4,
+  "alt": "The sheet grid with cell B3 selected, its border highlighted, and the edit row above showing its name and formula",
+  "replaces": {
+    "needed": "The sheet grid with one cell selected and its editor open, showing the highlighted selection border"
+  }
+}

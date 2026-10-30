@@ -1,0 +1,28 @@
+{
+  "scene": "workspace-sheet-file-menu.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "click": "File Menu"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Sheet Menu Bar"
+    },
+    {
+      "widget": "Import CSV... Menu Item"
+    },
+    {
+      "widget": "Refresh Imported Data Menu Item"
+    }
+  ],
+  "margin": 8,
+  "alt": "The sheet editor's File menu open: Import CSV..., Export CSV... and Refresh Imported Data",
+  "replaces": {
+    "needed": "The sheet editor's File menu open, showing Import CSV..., Download CSV... and Refresh Imported Data"
+  }
+}

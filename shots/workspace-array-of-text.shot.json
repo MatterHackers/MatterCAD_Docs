@@ -1,0 +1,25 @@
+{
+  "scene": "workspace-array-of-text.mcx",
+  "kind": "before-after",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 55.0,
+    "turn_degrees": 0.0,
+    "fill": 0.85
+  },
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "widget": "Sheet Grid"
+    }
+  ],
+  "alt": "An Array of five Text objects on the bed, each showing a different part number, beside the sheet whose column A the numbers come from",
+  "replaces": {
+    "needed": "An Array of Text objects on the bed, each showing a different part number, next to the sheet column those values come from"
+  }
+}

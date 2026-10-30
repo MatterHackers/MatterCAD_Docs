@@ -1,0 +1,22 @@
+{
+  "scene": "workspace-variable-sheet-hero.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "click": "Cell 2,1"
+    }
+  ],
+  "crop": [
+    "view",
+    {
+      "widget": "Sheet Editor"
+    }
+  ],
+  "alt": "The Variable Sheet editor in the Properties panel beside the design: the menu bar, the Name and formula boxes and a grid of named cells and formulas, the selected cell's formula =strcat(\"MC-\", A2)",
+  "replaces": {
+    "needed": "Replacement hero shot of the current Variable Sheet editor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scene": "workspace-modify-parameters.mcx",
+  "kind": "part-panel",
+  "camera": {
+    "start": "fit-selection",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.7
+  },
+  "steps": [
+    {
+      "select": "Modify Parameters"
+    }
+  ],
+  "crop": [
+    "view-around-selection",
+    "design-tree",
+    "properties-panel"
+  ],
+  "alt": "A Modify Parameters selected in the design tree, its Properties panel showing Visible Override =width>40 and the Red, Green and Blue formulas",
+  "replaces": {
+    "needed": "Screenshot of a Modify Parameters selected in the design tree, with the Properties panel showing the Visible Override field and the Red/Green/Blue expression fields"
+  }
+}

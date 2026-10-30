@@ -1,0 +1,37 @@
+{
+  "scene": "workspace-sheet-format-menu.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "click": "Cell 1,1"
+    },
+    {
+      "click": "Format Menu"
+    },
+    {
+      "hover": "Decimal Places Menu Item"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Sheet Menu Bar"
+    },
+    {
+      "widget": "Decimal Places Menu Item"
+    },
+    {
+      "widget": "Bold Menu Item"
+    },
+    {
+      "widget": "4 Menu Item"
+    }
+  ],
+  "margin": 8,
+  "alt": "The sheet editor's Format menu open with its Decimal Places submenu: Auto, 0, 1, 2, 3 and 4, a bullet beside 2",
+  "replaces": {
+    "needed": "The Format menu open with the Decimal Places submenu showing Auto, 0, 1, 2, 3, 4 and a bullet beside the current choice"
+  }
+}

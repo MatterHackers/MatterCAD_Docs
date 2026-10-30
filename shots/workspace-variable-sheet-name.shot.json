@@ -1,0 +1,28 @@
+{
+  "scene": "workspace-variable-sheet-name.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "click": "Cell 1,1"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Sheet Name Box"
+    },
+    {
+      "widget": "Sheet Formula Bar"
+    },
+    {
+      "widget": "Cell 0,3"
+    }
+  ],
+  "margin": 4,
+  "alt": "The sheet's edit row with cell B2 selected: the Name box holds wall_thickness and the formula box 2.4, the cells below it",
+  "replaces": {
+    "needed": "The edit row with a cell selected, the Name box holding wall_thickness and the formula box holding 2.4"
+  }
+}

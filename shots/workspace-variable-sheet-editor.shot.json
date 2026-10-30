@@ -1,0 +1,22 @@
+{
+  "scene": "workspace-variable-sheet-editor.mcx",
+  "kind": "ui-closeup",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "click": "Cell 1,1"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Sheet Editor"
+    }
+  ],
+  "margin": 4,
+  "alt": "The sheet editor: the File, Edit, Insert, Format and Help menu bar, the Name box and formula box, the units line and the grid with cell B2 selected",
+  "replaces": {
+    "needed": "The sheet editor with the menu bar, the Name box and formula box, the units line, and a selected cell in the grid all visible"
+  }
+}

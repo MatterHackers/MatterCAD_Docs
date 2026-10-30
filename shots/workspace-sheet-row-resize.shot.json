@@ -1,0 +1,32 @@
+{
+  "scene": "workspace-sheet-row-resize.mcx",
+  "kind": "view-interaction",
+  "steps": [
+    {
+      "select": "Variable Sheet"
+    },
+    {
+      "hover": {
+        "widget": "Row Header 2",
+        "at": "bottom"
+      }
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Row Header 1"
+    },
+    {
+      "widget": "Row Header 3"
+    },
+    {
+      "widget": "Cell 2,2"
+    }
+  ],
+  "margin": 2,
+  "cursor": "resize-v",
+  "alt": "Close-up of the bottom edge of row number 3 with the up-down resize pointer on it, that row taller than the rows around it",
+  "replaces": {
+    "needed": "Close-up of the bottom edge of a row number with the vertical resize cursor showing"
+  }
+}
