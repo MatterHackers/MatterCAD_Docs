@@ -1,0 +1,19 @@
+{
+  "scene": "gs-ai-access-panel.mcx",
+  "kind": "ui-closeup",
+  "fixture": "ai-access-on",
+  "steps": [
+    {
+      "click": "AI Assistant Status"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Dialog Window"
+    }
+  ],
+  "alt": "The AI Assistant Access (MCP) panel with Allow AI assistants to edit designs turned on, the Address and Port rows, the AI can save and export to folder, and the Copy buttons for Claude Code, Codex and Claude Desktop",
+  "replaces": {
+    "needed": "Screenshot of the AI Assistant Access (MCP) panel"
+  }
+}

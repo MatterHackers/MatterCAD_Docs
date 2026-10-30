@@ -1,0 +1,21 @@
+{
+  "scene": "web-phone-landscape.mcx",
+  "kind": "web-phone",
+  "mode": "web",
+  "window": "phone-landscape",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.8
+  },
+  "steps": [
+    {
+      "select": "Cube"
+    }
+  ],
+  "alt": "MatterCAD's editor on a phone held sideways: the rail of buttons (☰, Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge",
+  "replaces": {
+    "needed": "MatterCAD's editor on a phone held sideways"
+  }
+}

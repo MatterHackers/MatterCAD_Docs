@@ -1,0 +1,33 @@
+{
+  "scene": "gs-ai-undo-step.mcx",
+  "kind": "ui-closeup",
+  "fixture": "ai-mounting-holes",
+  "camera": {
+    "start": "fit-all",
+    "look_down_degrees": 32.0,
+    "turn_degrees": 30.0,
+    "fill": 0.82
+  },
+  "steps": [
+    {
+      "hover-tip": "3D View Undo"
+    }
+  ],
+  "crop": [
+    {
+      "widget": "Add Content Menu"
+    },
+    {
+      "widget": "3D View Undo"
+    },
+    {
+      "widget": "3D View Redo"
+    },
+    "view"
+  ],
+  "margin": 12,
+  "alt": "MatterCAD just after an AI added mounting holes to a plate: the pointer rests on the Undo button, whose tool tip reads Undo - AI: add mounting holes, above the 3D view showing the drilled plate",
+  "replaces": {
+    "needed": "the Undo history showing an \"AI: add mounting holes\" step"
+  }
+}

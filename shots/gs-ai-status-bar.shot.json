@@ -1,0 +1,18 @@
+{
+  "scene": "gs-ai-status-bar.mcx",
+  "kind": "ui-closeup",
+  "fixture": "ai-connected",
+  "crop": [
+    {
+      "widget": "AI Assistant Status"
+    },
+    {
+      "widget": "Network Status"
+    }
+  ],
+  "margin": 24,
+  "alt": "The right end of the status bar: the AI Connected item beside the network panel reading Connected",
+  "replaces": {
+    "needed": "Close-up of the status bar showing the AI Connected item"
+  }
+}

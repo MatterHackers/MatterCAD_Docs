@@ -1,0 +1,27 @@
+{
+  "scene": "web-menu-open.mcx",
+  "kind": "web-phone",
+  "mode": "page",
+  "own-style": "bare",
+  "steps": [
+    {
+      "click": "Edit Design Button"
+    },
+    {
+      "open-menu": [
+        "MatterCAD"
+      ]
+    }
+  ],
+  "crop": [
+    "menu",
+    {
+      "widget": "MatterCAD BrandMenuButton"
+    }
+  ],
+  "margin": 24,
+  "alt": "The website's editor with the MatterCAD menu open under its ☰ MatterCAD button at the start of the toolbar: Add System File to Bed, New Design, Interface Tour, Help and Settings",
+  "replaces": {
+    "needed": "The website's editor with the MatterCAD menu open"
+  }
+}
