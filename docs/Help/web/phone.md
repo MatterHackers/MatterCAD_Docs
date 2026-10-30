@@ -9,7 +9,8 @@ keywords: mobile, iphone, android, smartphone, touch, small screen, phone layout
 
 On a phone, MatterCAD lays itself out to give the 3D view as much of the small screen as it can, whichever way up you hold it. You get the same layout whenever MatterCAD's area is narrower than 600 pixels or shorter than 480 pixels, for example in a browser window made small, and in MatterCAD on your computer if you make its window that small. Most tablets get the full layout either way up. The layout changes as you turn the phone or resize the window; your design, what you have selected and your undo history stay as they are.
 
-<!-- IMAGE_NEEDED: MatterCAD's editor on a phone held upright: the one-row toolbar (☰, Add, Undo, Redo, Save, Tools) at the top, the camera buttons in a column at the 3D view's top-right, the selection bar (Delete, Duplicate, Group, Mirror, More) above the bottom sheet, and the bottom sheet at half height showing the Design tab -->
+<!-- AUTO_IMAGE: type=shot id=web-phone-portrait -->
+![MatterCAD's editor on a phone held upright: the one-row toolbar (MatterCAD menu, Add, Undo, Redo, Save, Tools) at the top, the 3D view with the Cube selected, the selection bar, and the bottom sheet at half height on the Design tab](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-portrait.png)
 
 ## On the Design's Page
 

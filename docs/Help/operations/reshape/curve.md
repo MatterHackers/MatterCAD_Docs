@@ -12,7 +12,8 @@ keywords: bend, wrap, arc, arch, curl, wrap around cylinder, curved text
 Curve bends a straight object into an arc or circular shape. You can control the bend by specifying either an angle or a diameter to wrap around.
 
 <!--  Before and after showing a straight bar being curved into an arc -->
-![20260506 155243 paste 20260506 155243](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-155243-paste-20260506-155243.jpg)
+<!-- AUTO_IMAGE: type=shot id=curve -->
+![Curve: a straight bar at the left, and at the right the same bar bent into an arc inside the red guide of the circle it bends around, with its Angle, Bend Direction, Start Percent and Split Mesh settings](https://matterhackers.github.io/MatterCAD_Docs/assets/curve.png)
 
 ## How to Use
 

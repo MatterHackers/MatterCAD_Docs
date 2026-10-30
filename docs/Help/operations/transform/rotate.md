@@ -11,7 +11,8 @@ keywords: turn, angle, degrees, tilt, orientation, rotate 90
 
 Rotate turns an object around an axis by a given angle. The axis is a [construction plane](../../workspace/construction-planes.md): the plane's normal is what the object turns around, and the plane's origin is the point it turns about.
 
-<!-- IMAGE_NEEDED: Screenshot showing the Rotate operation with its Rotate About plane in the viewport and the Properties panel (XY / XZ / YZ / Custom tabs, Flip, Pick Face, Angle) -->
+<!-- AUTO_IMAGE: type=shot id=rotate -->
+![A box turned 45 degrees by Rotate, its Rotate About plane drawn in the 3D view, beside its Properties panel: the XY, XZ, YZ and Custom tabs, Flip, Pick Face and Angle](https://matterhackers.github.io/MatterCAD_Docs/assets/rotate.png)
 
 ## How to Use
 

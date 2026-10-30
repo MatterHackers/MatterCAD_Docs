@@ -11,7 +11,8 @@ keywords: roof, ridge, peak, triangular prism, gable, a-frame
 A ridge: a triangular prism whose two sloped sides meet at a peak centered across its Width, like a roof. Useful for roof shapes, ridges and pointed features.
 
 <!--  Screenshot of a Half Wedge primitive on the workspace -->
-![20260318 183405 paste 20260318 183405](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183405-paste-20260318-183405.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-half-wedge -->
+![A Half Wedge selected in the 3D view beside its Properties panel: Width, Depth and Height](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-half-wedge.png)
 
 
 ## Parameters

@@ -12,10 +12,12 @@ An Image is a picture placed in your design. MatterCAD builds it as a very thin 
 
 What makes it useful is what reads from it. Every image operation -- [Image Converter](../operations/image/image-converter.md), [Image to Path](../operations/image/image-to-path.md) and [Lithophane](../operations/image/lithophane.md) -- takes an Image as its input, and each is only enabled when the selected item is one. On its own an Image is also a good tracing reference or a label you can see while you build around it.
 
-<!-- IMAGE_NEEDED: Screenshot of a bare Image on the bed viewed at an angle, showing that it is a flat picture lying on the plate rather than a raised relief -->
+<!-- AUTO_IMAGE: type=shot id=primitives-image-bare -->
+![A bare Image lying flat on the bed, seen at an angle: a picture on a thin plate, not a raised relief](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-image-bare.png)
 
 <!-- The properties panel for the image, here as part of an Image to Path stack -->
-![Image properties panel showing the Google image search box, the picture thumbnail, the Invert toggle and the Open new image button](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183708-paste-20260318-183708.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-image-panel -->
+![Image properties panel showing the Google image search box, the picture thumbnail, the Invert toggle and the Open new image button](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-image-panel.png)
 
 ## How to Use
 

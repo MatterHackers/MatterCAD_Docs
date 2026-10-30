@@ -9,7 +9,8 @@ keywords: cloud, online storage, sync, my designs, cloud storage, any computer
 
 The Cloud Library stores your designs online in your MatterHackers account. This lets you access your designs from any computer and keep a backup in the cloud.
 
-![20260323 210141 paste 20260323 210141](https://matterhackers.github.io/MatterCAD_Docs/assets/20260323-210141-paste-20260323-210141.jpg)
+<!-- AUTO_IMAGE: type=shot id=lib-cloud-library -->
+![The Library tab inside Cloud Library while signed in as Sample User: the folders Robotics and Gifts and the designs Dice, Keychain, Bracket and Phone Stand](https://matterhackers.github.io/MatterCAD_Docs/assets/lib-cloud-library.png)
 
 ## Getting Started
 

@@ -11,7 +11,8 @@ keywords: lithopane, photo panel, night light, lamp, backlit photo, light box, p
 
 A lithophane is a thin panel where a picture is turned into varying thickness. With a light behind it, the thinner areas let more light through and the picture appears. It is a beautiful way to display photographs and artwork.
 
-<!-- IMAGE_NEEDED: A Lithophane made from a photo, with the Lithophane's Properties panel (Pixels Per mm, Height, Width, Invert and the Update button) -->
+<!-- AUTO_IMAGE: type=shot id=lithophane -->
+![A bold picture made a Lithophane panel, its dark shape raised from the thin light areas, beside its Properties panel: Pixels Per mm, Height, Width, Invert and the Update button](https://matterhackers.github.io/MatterCAD_Docs/assets/lithophane.png)
 
 
 ## How to Use

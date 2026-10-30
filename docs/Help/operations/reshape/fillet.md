@@ -11,8 +11,8 @@ keywords: round one edge, single edge, rounded corner, roundover
 
 Fillet rounds the edges you pick. On a solid it rolls a ball of the radius you give along each selected edge and leaves the surface that ball sweeps out. On a 2D path it rounds the corners instead.
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_fillet -->
-![reshape_fillet](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_fillet.png)
+<!-- AUTO_IMAGE: type=shot id=fillet -->
+![Fillet: a sharp block at the left, and at the right the same block with its picked edges rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/fillet.png)
 
 Fillet and [Chamfer](chamfer.md) are one tool with two profiles -- Fillet leaves an arc, Chamfer leaves a flat cut -- so everything on this page about picking edges and the messages the panel shows is true of both. The Fillet and Chamfer toolbar buttons only choose which profile it starts with; see [Switching to Chamfer](#switching-to-chamfer) to change it afterwards. If you want every outside edge of a part rounded at one radius and do not want to pick anything, use [Round All Edges](round-all-edges.md) instead.
 
@@ -47,7 +47,8 @@ A small badge sits beside the edge you are hovering and names the reading being 
 
 With nothing hovered the badge names the reading of whichever row in the **Edges** list is highlighted, and its arrows change that group instead of the pick.
 
-<!-- IMAGE_NEEDED: Screenshot of the 3D view with a Fillet selected, showing an edge highlighted in white under the cursor and two already-picked groups drawn in their own accent colors -->
+<!-- AUTO_IMAGE: type=shot id=fillet-pick-edge -->
+![A Fillet selected in the 3D view: the edges already picked drawn in their own colours, and the edge under the pointer highlighted in white](https://matterhackers.github.io/MatterCAD_Docs/assets/fillet-pick-edge.png)
 
 Each selection you commit becomes a row in the **Edges** list, labelled with what it is and how many edges it came to -- "1. Edge, 1 edge", "2. Chain, 64 edges", "3. Face Group, 4 edges". The list is what you have selected, not how big the round is; every row carries:
 
@@ -68,8 +69,8 @@ When the thing you filleted is a 2D path, the panel shows **Choose Corners** ins
 - **Select** - only the corners you click. A small ball appears at every corner of the path; click one to round it, click it again to leave it sharp. The picked corners are listed under **Corners**. With none picked, nothing is rounded
 - **Formula** - an expression in the **Formula** box decides each corner: the corner is rounded when the result is not zero. It must start with `=`. It can use `CornerIndex` (which corner along its contour, from 0), `CornerCount` (how many corners that contour has), `CornerX` and `CornerY` (where the corner is), `CornerAngle` (how far it bends, in degrees; 0 is straight) and `CornerContour` (which contour it is on, from 0). The default, `=mod(CornerIndex, 2) == 0`, rounds every other corner
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_fillet_2d -->
-![reshape_fillet_2d](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_fillet_2d.png)
+<!-- AUTO_IMAGE: type=shot id=fillet-2d -->
+![Fillet on a flat path: a sharp Star at the left, and at the right the same Star with every corner rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/fillet-2d.png)
 
 *The original star path on the left, the same path with a 1.5 mm Fillet on every corner on the right.*
 

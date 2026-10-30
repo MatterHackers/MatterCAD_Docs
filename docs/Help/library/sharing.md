@@ -20,7 +20,8 @@ Any of these opens the **Share** dialog:
 
 The dialog's title names what you are sharing, for example **Share "Bracket"**. Click **Done** to close it.
 
-<!-- IMAGE_NEEDED: The Share dialog for a design: the "Add people or groups" box with the Viewer drop-down and Send, the People with access list with the owner's row reading Owner and two other rows with Viewer and Editor drop-downs, and the General access row reading Restricted with its line "Only people with access can open it." -->
+<!-- AUTO_IMAGE: type=shot id=lib-share-dialog -->
+![The Share dialog for Dice: the Add people or groups box with Viewer and Send, People with access listing Sample User as Owner, Jordan Lee as a Viewer, Priya Shah as an Editor and the group Robotics Club, and General access reading Restricted](https://matterhackers.github.io/MatterCAD_Docs/assets/lib-share-dialog.png)
 
 ## Add People or Groups
 
@@ -87,7 +88,8 @@ The **Shared with Me** folder in your Library holds the designs and folders othe
 
 Each row says who shared it and your role, for example "Shared by Pat · Viewer", or "Shared with Design Team by Pat · Editor" when it came to you through a group.
 
-<!-- IMAGE_NEEDED: The Library showing Shared with Me with two designs and a folder, each row's line reading "Shared by <name> · Viewer" or "Shared with <group> by <name> · Editor", and the right-click menu open on a design showing Make a copy and Remove from Shared with Me -->
+<!-- AUTO_IMAGE: type=shot id=lib-shared-with-me -->
+![Shared with Me in the Library's list view: the folder Club Parts, Desk Lamp reading "Shared by Alex Rivera · Viewer" and Robot Arm reading "Shared with Robotics Club by Alex Rivera · Editor", with the right-click menu open on Robot Arm showing Make a copy and Remove from Shared with Me](https://matterhackers.github.io/MatterCAD_Docs/assets/lib-shared-with-me.png)
 
 Right-click a row for:
 
@@ -104,7 +106,8 @@ A group lets you share with several people at once. Anyone signed in can make on
 
 To open **Groups**, click your name at the right of the tab bar and choose **Groups...**.
 
-<!-- IMAGE_NEEDED: The Groups dialog with the New group name box and New Group button, the Your groups list with two groups, and one group picked below showing its Rename and Delete group buttons, the Add member by email row, and member rows with Member and Manager -->
+<!-- AUTO_IMAGE: type=shot id=lib-groups-dialog -->
+![The Groups dialog: the New group name box and New Group button, Your groups listing Family and Robotics Club, and Robotics Club picked below with Rename and Delete group, the Add member by email row, and its members: Sample User the Owner, Alex Rivera a Manager and Jordan Lee a Member](https://matterhackers.github.io/MatterCAD_Docs/assets/lib-groups-dialog.png)
 
 - **Make a group** - Type a name in **New group name** and click **New Group**.
 - **See a group** - Click it in **Your groups**. Each group says your role and how many people are in it.

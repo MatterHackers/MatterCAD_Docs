@@ -24,7 +24,8 @@ AI assistant access is off until you turn it on.
 
 Outside AI tools connect only to the desktop app, not to MatterCAD on the website.
 
-<!-- IMAGE_NEEDED: Screenshot of the AI Assistant Access (MCP) panel showing the Allow AI assistants to edit designs switch, the Address and Port rows, the AI can save and export to folder, and the Copy buttons for Claude Code, Codex and Claude Desktop -->
+<!-- AUTO_IMAGE: type=shot id=gs-ai-access-panel -->
+![The AI Assistant Access (MCP) panel with Allow AI assistants to edit designs turned on, the Address and Port rows, the AI can save and export to folder, and the Copy buttons for Claude Code, Codex and Claude Desktop](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-ai-access-panel.png)
 
 Access stays on when you close and reopen MatterCAD, until you turn it off again.
 
@@ -36,7 +37,8 @@ While access is on, the status bar item shows what is happening:
 
 If the [feedback log](#the-feedback-log) is on, the item adds "(logging)", for example "AI Connected (logging)". When access is off, the item is hidden.
 
-<!-- IMAGE_NEEDED: Close-up of the status bar showing the AI Connected item next to the Connected item -->
+<!-- AUTO_IMAGE: type=shot id=gs-ai-status-bar -->
+![The right end of the status bar: the AI Connected item beside the network panel reading Connected](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-ai-status-bar.png)
 
 ## Connect Your AI Tool
 

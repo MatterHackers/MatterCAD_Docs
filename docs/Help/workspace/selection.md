@@ -12,7 +12,8 @@ Select parts before you move them, change their settings or use an operation on 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
 <!--  Screenshot showing multiple selected objects with selection highlights -->
-![20260318 192323 paste 20260318 192323](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-192323-paste-20260318-192323.jpg)
+<!-- AUTO_IMAGE: type=shot id=workspace-selection-multi -->
+![Three parts selected together, each outlined as selected](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-selection-multi.png)
 
 ## In the 3D View
 

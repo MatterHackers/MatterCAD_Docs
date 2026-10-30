@@ -11,7 +11,8 @@ keywords: lettering, font, emboss, writing, name, words, sign, label
 Text makes raised 3D letters from words you type, in one of MatterCAD's fonts. Use it for labels, signs, nameplates and decorative lettering. **Text 2D** in the 2D Primitives is the same object with its Output set to **2D**: flat letter outlines you can extrude, offset or cut with the path operations.
 
 <!--  Screenshot of a 3D Text object on the workspace showing extruded letters -->
-![20260318 184207 paste 20260318 184207](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-184207-paste-20260318-184207.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-text -->
+![A raised 3D Text selected in the 3D view beside its Properties panel](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-text.png)
 
 
 ## How to Use

@@ -11,8 +11,8 @@ keywords: bevel, beveled edge, angled edge, cut corner, 45 degree edge, edge bre
 
 Chamfer cuts the edges you pick flat, leaving a flat face where the edge was (at 45 degrees on a square edge). On a 2D path it cuts the corners off instead.
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_chamfer -->
-![reshape_chamfer](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_chamfer.png)
+<!-- AUTO_IMAGE: type=shot id=chamfer -->
+![Chamfer: a sharp block at the left, and at the right the same block with its top and upright edges cut at an angle](https://matterhackers.github.io/MatterCAD_Docs/assets/chamfer.png)
 
 Chamfer and [Fillet](fillet.md) are one tool with two profiles -- Chamfer leaves a flat cut, Fillet leaves an arc. Picking edges, the one size a whole feature is cut at, and the messages the panel shows work identically in both, and are described in full on the [Fillet](fillet.md) page.
 
@@ -37,7 +37,8 @@ Hover the part and the edge under the cursor lights up white; click to add it, c
 
 Every committed selection becomes a row in the **Edges** list with its own accent colour, a button that lights it up in the 3D view, a remove button, and a reading dropdown offering that pick's other readings. Choosing one of them replaces that group in its own slot rather than adding a second, and can be undone. There is no segment count anywhere on a Chamfer: a flat cut is one straight step across, and a second step would only put a point on a line.
 
-<!-- IMAGE_NEEDED: Screenshot of the Properties panel for a Chamfer with three groups in the Edges list, showing the colour swatches, highlight buttons and remove buttons -->
+<!-- AUTO_IMAGE: type=shot id=chamfer-edges-list -->
+![A Chamfer's Properties panel: Selection Mode above the Edges list with three groups, an upright edge, a chain and the top face's rim, each with its colour swatch, highlight button and remove button](https://matterhackers.github.io/MatterCAD_Docs/assets/chamfer-edges-list.png)
 
 On a 2D path the panel shows **Choose Corners** instead, with three tabs: **Angle** (default) cuts every corner that bends more than the **Bend Threshold**; **Select** cuts only the corners you click (small balls appear at each corner; click one to cut it, click it again to leave it sharp; with none picked nothing is cut); **Formula** cuts each corner its **Formula** expression says yes to. The corner variables are listed under [Choosing Corners on a 2D Path](fillet.md#choosing-corners-on-a-2d-path) on the Fillet page.
 

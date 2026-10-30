@@ -11,7 +11,8 @@ keywords: 2d ring, annulus, donut outline, flat washer, circle with hole
 A 2D ring shape -- a circle with a circular hole in the center -- added as **Ring** from the 2D Primitives. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create tube or washer shapes.
 
 <!-- Screenshot of a Ring Path on the workspace -->
-![20260506 080211 paste 20260506 080211](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080211-paste-20260506-080211.jpg)
+<!-- AUTO_IMAGE: type=shot id=2d-ring -->
+![A flat Ring path selected on the bed beside its Properties panel: Plane, Outer Diameter, Inner Diameter, Sides and Advanced](https://matterhackers.github.io/MatterCAD_Docs/assets/2d-ring.png)
 
 ## Parameters
 

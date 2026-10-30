@@ -11,8 +11,8 @@ keywords: inside fillet, inner corner, concave corner, cove, strengthen corner, 
 
 Round Inside Edges fills every inside corner of a solid with a bead of one radius. There is nothing to pick and nothing to select -- you give it a radius and it softens every inside corner in the part.
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_round_inside_edges -->
-![reshape_round_inside_edges](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_round_inside_edges.png)
+<!-- AUTO_IMAGE: type=shot id=round-inside-edges -->
+![Round Inside Edges: a sharp tray at the left, and at the right the same tray with its pocket's inside corners rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/round-inside-edges.png)
 
 It is the mirror image of [Round All Edges](round-all-edges.md). That one rounds the edges that stick out; this one fills the ones that go in. Neither touches the other's edges, so the two together round everything -- run Round Inside Edges, then Round All Edges over it. Chained that way, the surface comes out clean and smooth, with no thin slivers where the inside bead meets the rounded ends.
 

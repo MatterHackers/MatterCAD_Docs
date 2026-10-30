@@ -32,7 +32,8 @@ Drag one of the **curved-arrow handles** at the corners of the selected part. Ea
 
 ## Resizing Parts
 
-![20260324 080819 paste 20260324 080819](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080819-paste-20260324-080819.jpg)
+<!-- AUTO_IMAGE: type=shot id=gs-edit-resize -->
+![A selected part with the pointer on a bottom corner handle, its size labels showing](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-edit-resize.png)
 
 Drag one of the **small cube handles** at the bottom corners of the selected part. The opposite corner stays where it is.
 

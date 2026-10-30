@@ -11,7 +11,8 @@ keywords: decimate, simplify, polygon count, triangle count, smaller file, low p
 
 Reduce lowers the polygon count of a mesh while preserving the overall shape. This is useful for simplifying highly detailed models, reducing file size, and speeding up operations on complex geometry.
 
-![20260324 080430 paste 20260324 080430](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080430-paste-20260324-080430.jpg)
+<!-- AUTO_IMAGE: type=shot id=mesh-reduce -->
+![Reduce: the astronaut at the left, and at the right a copy reduced to 1 percent of its polygons, visibly faceted, beside Mode, Source Polygon Count, Target Percent and Final Count](https://matterhackers.github.io/MatterCAD_Docs/assets/mesh-reduce.png)
 
 
 ## How to Use

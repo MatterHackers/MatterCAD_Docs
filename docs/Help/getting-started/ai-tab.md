@@ -11,7 +11,8 @@ The **AI** tab is a chat inside MatterCAD. Tell it what you want in plain words,
 
 To let AI tools outside MatterCAD, such as Claude Code, work on your designs, see [Using AI Assistants](ai-assistants.md) instead.
 
-<!-- IMAGE_NEEDED: The side panel's AI tab with a short chat: a user message, a "Changed: ..." row, an answer with its Copy button, the chat bar with its buttons, and the Context meter at the bottom -->
+<!-- AUTO_IMAGE: type=shot id=gs-ai-tab-chat -->
+![The side panel's AI tab with a short chat: the request, a Changed row naming the change the AI made, its answer with a Copy button, the chat bar and the Context meter, beside the changed part](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-ai-tab-chat.png)
 
 ## Opening the AI Tab
 

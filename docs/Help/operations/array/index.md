@@ -16,7 +16,7 @@ The **Duplication** group of the toolbar holds **Clone**, **Array** and **Select
 
 |Linear|Radial|
 | :--- | :--- |
-|<!-- AUTO_IMAGE: type=from_mcx file=array_linear -->![array_linear](https://matterhackers.github.io/MatterCAD_Docs/assets/array_linear.png)|<!-- AUTO_IMAGE: type=from_mcx file=array_radial -->![array_radial](https://matterhackers.github.io/MatterCAD_Docs/assets/array_radial.png)|
+|<!-- AUTO_IMAGE: type=shot id=array-index-linear -->![A linear array: copies of a part set in a row, evenly spaced](https://matterhackers.github.io/MatterCAD_Docs/assets/array-index-linear.png)|<!-- AUTO_IMAGE: type=shot id=array-index-radial -->![A radial array: copies of a part set evenly around a circle, each facing the centre](https://matterhackers.github.io/MatterCAD_Docs/assets/array-index-radial.png)|
 
 ## Pages
 

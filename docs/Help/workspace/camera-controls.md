@@ -13,7 +13,8 @@ To move the view with the mouse, the keyboard or a touch screen, see [Viewport N
 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
-<!-- IMAGE_NEEDED: Close-up of the top-right corner of the 3D view: the cube with the round buttons around it (the four mode buttons above, Reset View and Zoom to Selection lower left, Turntable Mode and Perspective Mode lower right), and under it the Show Bed and view style buttons with the snap and units buttons below them, each labelled -->
+<!-- AUTO_IMAGE: type=shot id=workspace-camera-cube -->
+![The camera controls in the top-right corner of the 3D view: the cube with its ring of round buttons (the four view modes above, Reset View and Zoom to Selection lower left, Turntable and Perspective lower right) and, under it, the Show Bed and view style buttons with the snap and units buttons below](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-camera-cube.png)
 
 Hover over any button to see its name. While you hover, the status bar at the bottom of the window shows a hint, such as the key that does the same thing.
 

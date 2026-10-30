@@ -11,7 +11,8 @@ keywords: trace, tracing, vectorize, outline from picture, bitmap to vector
 
 Image to Path traces the outlines of an image to create 2D paths. These paths can then be extruded, revolved, or used with any other path operation. This is ideal for converting logos, silhouettes, and simple graphics into 3D objects.
 
-![20260324 075521 paste 20260324 075521](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-075521-paste-20260324-075521.jpg)
+<!-- AUTO_IMAGE: type=shot id=image-to-path -->
+![A logo traced by Image to Path, the traced outline drawn over the picture, beside its Properties panel: the Analysis Type tabs, the Select Range histogram and Min Surface Area](https://matterhackers.github.io/MatterCAD_Docs/assets/image-to-path.png)
 
 
 ## How to Use

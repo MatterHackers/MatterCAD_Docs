@@ -7,7 +7,8 @@ keywords: contents, table of contents, all topics, start here, documentation hom
 ---
 # Welcome
 
-![paste 20260317 175249](https://matterhackers.github.io/MatterCAD_Docs/assets/paste-20260317-175249.jpg)
+<!-- AUTO_IMAGE: type=shot id=help-index-welcome -->
+![The MatterCAD window: the design tabs and toolbar at the top, a design in the 3D view, the design tree and Properties panel at the right and the status bar below](https://matterhackers.github.io/MatterCAD_Docs/assets/help-index-welcome.png)
 
 Welcome to MatterCAD, professional 3D design software that helps you create and modify 3D models. Use the links below to find help on any topic.
 

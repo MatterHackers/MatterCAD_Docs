@@ -9,4 +9,5 @@ MatterCAD provides powerful tools for designing and creating your own 3D models.
 
 You find them in the Library under **Included** › **Design Apps**. They are loaded from the internet, so the folder needs a connection. To use one, open the **Add to Bed** popup on the design toolbar, go to **Included** › **Design Apps**, and double-click a design to add it to the bed. Then change its settings in the Properties panel.
 
-![Design Apps](https://lh3.googleusercontent.com/dshWx4m208jj7S0ochB0HRORvZ7nVcmh_lfbEiePNTigELHHkdz7VHVm9twVsQvOZ8ub0P23o9RESY41zx4ABVfllA=s300)
+<!-- AUTO_IMAGE: type=shot id=lib-design-apps -->
+![The Add to Bed library inside Included > Design Apps: the folders Household, Tools and Toys and Games and the designs Box with Lid, Cable Clip and Name Plate](https://matterhackers.github.io/MatterCAD_Docs/assets/lib-design-apps.png)

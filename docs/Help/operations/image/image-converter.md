@@ -11,7 +11,8 @@ keywords: picture to 3d, logo, photo to model, silhouette, image to stl, stencil
 
 Image Converter turns a picture into a solid part. It traces the shapes in the picture into an outline, smooths it, and raises it to a height you choose, so a logo becomes a raised solid with the logo's silhouette, not a relief carved from brightness. It can also put a base plate under the shape.
 
-<!-- IMAGE_NEEDED: Screenshot of an Image Converter selected in the 3D view with the Properties panel open, showing the picture, the Analysis Type tabs and the Select Range histogram -->
+<!-- AUTO_IMAGE: type=shot id=image-converter-panel -->
+![A logo made a raised solid by Image Converter, beside its Properties panel: the picture, the Analysis Type tabs and the Select Range histogram](https://matterhackers.github.io/MatterCAD_Docs/assets/image-converter-panel.png)
 
 ![20260323 210414 paste 20260323 210414](https://matterhackers.github.io/MatterCAD_Docs/assets/20260323-210414-paste-20260323-210414.jpg)
 

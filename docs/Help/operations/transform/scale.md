@@ -12,7 +12,8 @@ keywords: resize, bigger, smaller, enlarge, shrink, percent, proportion
 Scale resizes an object with precise control over dimensions, proportions, and unit conversion. You can scale uniformly, lock specific axes together, or resize each axis independently.
 
 <!--  Screenshot showing the Scale operation properties with dimension fields and lock proportion options -->
-![20260506 160759 paste 20260506 160759](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160759-paste-20260506-160759.jpg)
+<!-- AUTO_IMAGE: type=shot id=scale -->
+![A text made twice its size by Scale, beside its Properties panel: Scale Type, the Direct and Percentage tabs, Lock Proportion and the Width, Depth and Height](https://matterhackers.github.io/MatterCAD_Docs/assets/scale.png)
 
 ## How to Use
 

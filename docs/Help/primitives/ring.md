@@ -11,7 +11,8 @@ keywords: pipe, washer, spacer, hollow cylinder, bushing, sleeve
 A hollow cylinder with its own inner and outer diameters and a height: a pipe, washer or spacer. Add it as **Tube** from the 3D Primitives. (The **Ring** in the 2D Primitives is the flat version, a [Ring Path](../2d-paths/ring-path.md).)
 
 <!--  Screenshot of a Tube primitive on the workspace -->
-![20260318 183848 paste 20260318 183848](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183848-paste-20260318-183848.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-tube -->
+![A Tube seen from above so its hollow middle shows, selected beside its Properties panel: Outer Diameter, Inner Diameter, Height, Sides and Advanced, with the line saying Advanced gives more options](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-tube.png)
 
 
 ## Parameters

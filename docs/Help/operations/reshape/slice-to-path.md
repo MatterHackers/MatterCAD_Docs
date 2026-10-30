@@ -11,7 +11,8 @@ keywords: find slice, cross section, outline at height, section path, contour, p
 
 Slice to Path makes a **cross section** of a part: a flat 2D path of the part's outline at the height you choose, where a [construction plane](../../workspace/construction-planes.md) passes through it. Use it to see the shape of a part at that height, or to reuse that shape -- extrude it, offset it, or use it as the profile of a [Sweep](../path/sweep.md). The plane can also be tilted or stood upright, for a section at any angle.
 
-<!-- IMAGE_NEEDED: Screenshot of a Slice to Path applied to a solid, showing the flat outline path where the slice plane crossed the part -->
+<!-- AUTO_IMAGE: type=shot id=slice-to-path -->
+![A Slice to Path selected: the flat outline of a box with a round hole, a rectangle around a circle, taken where its plane crosses the part, beside its Properties panel's Plane row and Fill Type](https://matterhackers.github.io/MatterCAD_Docs/assets/slice-to-path.png)
 
 Nothing is removed from the source. The solid goes in and an outline comes out; the original is kept underneath and hidden, so you can move the plane and take a different section at any time.
 

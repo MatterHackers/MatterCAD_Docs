@@ -42,7 +42,8 @@ There are three ways to change the shape of a sheet, and they run the same comma
 
 **Shift+click a second header of the same kind** to select the range between the two, and every header in it lights up: click column B, Shift+click column E, and B, C, D and E are all selected. The range is always measured from the header you clicked plainly, so a further Shift+click moves its far end rather than starting from where the range currently begins. Shift+clicking the *other* kind of header - a row number while columns are selected - is treated as a plain click and starts again there, as an ordinary click anywhere does. A right-click starts again too, on the header it lands on, which is why a header menu always acts on that one line even when it is opened inside a range. The commands that act on a range as a whole are the **Insert** menu's and the keyboard chords.
 
-<!-- IMAGE_NEEDED: The sheet editor with a right-click menu open on column header B, showing Auto-size Column, Insert Column Left, Insert Column Right, Remove Column and Add Column -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sheet-column-menu -->
+![The sheet editor with the right-click menu open on column header B: Auto-size Column, Insert Column Left, Insert Column Right, Remove Column and Add Column](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sheet-column-menu.png)
 
 Right-clicking a **column letter** offers:
 
@@ -95,7 +96,8 @@ Three things are worth knowing:
 
 ## Column Widths and Row Heights
 
-<!-- IMAGE_NEEDED: Close-up of the separator between two column headers with the horizontal resize cursor showing -->
+<!-- AUTO_IMAGE: type=shot id=workspace-sheet-col-resize -->
+![Close-up of the separator between column headers B and C with the resize pointer on it](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-sheet-col-resize.png)
 
 - **Drag the separator** between two column letters to set a column's width by hand.
 - **Double-click the separator** to size the column to the widest value it is currently showing - the same thing **Auto-size Column** does from the column's header menu.

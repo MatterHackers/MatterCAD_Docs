@@ -12,7 +12,8 @@ keywords: border, rim, frame, edge band, hollow outline, stroke
 Outline Path creates an outline version of a filled path, converting a solid shape into just its boundary ring with a specified thickness.
 
 <!--  Before and after showing a solid circle path converted to a ring outline -->
-![20260506 101308 paste 20260506 101308](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-101308-paste-20260506-101308.jpg)
+<!-- AUTO_IMAGE: type=shot id=outline-path -->
+![Outline Path: a filled star at the left, and at the right only its outline, a band 7.5 mm wide with round corners, beside Outline Width, Offset, Inner Style and Outer Style](https://matterhackers.github.io/MatterCAD_Docs/assets/outline-path.png)
 
 ## How to Use
 

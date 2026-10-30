@@ -11,8 +11,8 @@ keywords: offset outward, expand solid, fatten, thicker walls
 
 Dilate grows a solid outward by at least the radius you set, never less. Flat faces move outward. Outside edges and corners become rounded, holes become smaller, and nearby features can join.
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_dilate -->
-![An L-shaped solid after dilate](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_dilate.png)
+<!-- AUTO_IMAGE: type=shot id=dilate -->
+![Dilate: a sharp L bracket at the left, and at the right the same bracket grown bigger with rounded outside edges](https://matterhackers.github.io/MatterCAD_Docs/assets/dilate.png)
 
 ## How to Use
 

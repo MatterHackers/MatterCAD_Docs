@@ -12,7 +12,8 @@ keywords: pick one, choose part, switch, option, variant, index, configurable
 Select Child picks one child from a group of objects based on either an index number or a name. This is especially useful in scripted and parametric designs where you want to dynamically choose which object to display.
 
 <!-- IMAGE: Screenshot showing Select Child operation with multiple children and one selected by index -->
-![20260506 080526 paste 20260506 080526](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080526-paste-20260506-080526.jpg)
+<!-- AUTO_IMAGE: type=shot id=select-child-index -->
+![A Select Child expanded in the design tree to its three children, showing only the Half Wedge in the 3D view, beside its Properties panel: Selection Method By Index and Child Index 1](https://matterhackers.github.io/MatterCAD_Docs/assets/select-child-index.png)
 
 
 ## How to Use

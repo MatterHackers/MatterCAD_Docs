@@ -11,7 +11,8 @@ keywords: negative shape, slot, square hole, rectangular cutout, empty space
 A cube-shaped object that is pre-configured to act as a boolean subtraction tool. When you use [Combine](../operations/boolean/combine.md), Hole objects are automatically subtracted from other shapes instead of being added to them.
 
 <!--  Screenshot showing a Hole object being used to cut a rectangular slot in another shape -->
-![20260318 183619 paste 20260318 183619](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183619-paste-20260318-183619.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-hole -->
+![Hole: at the left a block with a Hole through it, the Hole selected with its Output set to Hole; at the right the two combined, the Hole's shape cut out of the block](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-hole.png)
 
 
 ## How It Works

@@ -11,7 +11,8 @@ The 3D view is where you look at and work on your design. You can turn the view 
 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
-![20260324 080636 paste 20260324 080636](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080636-paste-20260324-080636.jpg)
+<!-- AUTO_IMAGE: type=shot id=gs-viewport-cube -->
+![The cube in the top-right corner of the 3D view with its ring of round buttons](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-viewport-cube.png)
 
 ## Mouse
 

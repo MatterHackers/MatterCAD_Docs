@@ -11,7 +11,8 @@ keywords: barcode, scan code, link, url, website code, wifi password, scannable
 QR Code makes a scannable QR code from text, a web address or WiFi login details. It arrives as a flat picture plate (60 × 60 mm, 0.2 mm thick) that works like an [Image Object](image-object.md): use it as the picture for [Image Converter](../operations/image/image-converter.md) or [Lithophane](../operations/image/lithophane.md) to turn it into a raised or engraved code.
 
 <!--  Screenshot of a 3D QR Code object on the workspace -->
-![20260318 184540 paste 20260318 184540](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-184540-paste-20260318-184540.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-qr-code -->
+![A QR Code selected in the 3D view beside its Properties panel: Output Option set to Text, the Text it encodes and a preview of the code](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-qr-code.png)
 
 
 ## How to Use

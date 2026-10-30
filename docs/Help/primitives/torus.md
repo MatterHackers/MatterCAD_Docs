@@ -11,7 +11,8 @@ keywords: donut, doughnut, o-ring, loop, bagel
 A donut-shaped ring with independent control over the overall size and the thickness of the ring cross-section.
 
 <!--  Screenshot of a Torus primitive on the workspace -->
-![20260318 184240 paste 20260318 184240](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-184240-paste-20260318-184240.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-torus -->
+![A Torus seen from above so its hole shows, selected beside its Properties panel: Outer Diameter, Inner Diameter, Sides and Advanced, with the line saying Advanced gives more options](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-torus.png)
 
 
 ## Parameters

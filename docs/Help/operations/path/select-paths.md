@@ -24,7 +24,8 @@ Select Paths filters which sub-paths from a complex path object are kept. It is 
 - **Include Function** - The expression that decides each path (default `=PathDepth==0`). Shown only for Custom
 
 <!--  Screenshot showing Select Paths applied to decorative text with outer paths highlighted -->
-![20260506 154655 paste 20260506 154655](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-154655-paste-20260506-154655.jpg)
+<!-- AUTO_IMAGE: type=shot id=select-paths -->
+![Select Paths: the flat text ABO at the left, the insides of the A and the O open, and at the right Outer Paths Only, the same letters with those insides filled, beside the Filter Preset](https://matterhackers.github.io/MatterCAD_Docs/assets/select-paths.png)
 
 ## How Path Depth Works
 

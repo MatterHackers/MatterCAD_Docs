@@ -11,7 +11,8 @@ keywords: 2d circle, disc, disk, round outline, flat circle
 A circular 2D path, added as **Circle** from the 2D Primitives. Use with [Linear Extrude](../operations/path/linear-extrude.md) to create cylinders, or [Revolve](../operations/path/revolve.md) to create torus-like shapes.
 
 <!-- Screenshot of a Circle Path on the workspace -->
-![20260506 080110 paste 20260506 080110](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-080110-paste-20260506-080110.jpg)
+<!-- AUTO_IMAGE: type=shot id=2d-circle -->
+![A flat Circle path selected on the bed beside its Properties panel: Plane, Diameter and Sides](https://matterhackers.github.io/MatterCAD_Docs/assets/2d-circle.png)
 
 
 ## Parameters

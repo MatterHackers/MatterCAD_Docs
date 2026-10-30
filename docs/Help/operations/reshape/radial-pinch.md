@@ -11,7 +11,8 @@ keywords: bulge, waist, barrel, hourglass
 
 Radial Pinch pushes each horizontal layer of a part in or out from its vertical center line, following a profile you draw. Unlike regular [Pinch](pinch.md), which tapers from front to back, Radial Pinch works all the way around the part. A new Radial Pinch starts with a profile at the part's own reach at the bottom and top, bulging out to one and a half times that reach through the middle.
 
-<!-- IMAGE_NEEDED: Before and after showing an object with Radial Pinch applied, with its Properties panel showing the Pinch profile editor, Slices and Advanced -->
+<!-- AUTO_IMAGE: type=shot id=radial-pinch -->
+![Radial Pinch: a plain cylinder at the left, and at the right the same cylinder drawn in at the middle into an hourglass, with its Pinch profile editor, Slices and Advanced](https://matterhackers.github.io/MatterCAD_Docs/assets/radial-pinch.png)
 
 ## How to Use
 

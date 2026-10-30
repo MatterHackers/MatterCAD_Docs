@@ -11,8 +11,8 @@ keywords: offset inward, clearance, tolerance, loosen fit, thinner
 
 Erode shrinks a solid inward by at least the radius you set, never less. Flat faces move inward. Inside corners become rounded, holes become larger, and thin features can disappear or split the part into separate pieces. All surviving pieces are kept.
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_erode -->
-![An L-shaped solid after erode](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_erode.png)
+<!-- AUTO_IMAGE: type=shot id=erode -->
+![Erode: a sharp L bracket at the left, and at the right the same bracket shrunk smaller with its inside corner rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/erode.png)
 
 ## How to Use
 

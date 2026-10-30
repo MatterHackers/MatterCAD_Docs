@@ -10,7 +10,8 @@ keywords: cycloidal gearbox, speed reducer, gear reducer, stepper motor, NEMA 17
 
 Cycloidal Gearbox makes a whole gearbox in one go: every printed part, sized to fit the stepper motor and the bearings you choose, plus the list of bearings and screws to buy. It bolts onto the face of the motor and slows the motor down by the **Ratio** -- at the default 20:1 the output turns once for every 20 turns of the motor, with about 20 times the force.
 
-<!-- IMAGE_NEEDED: Screenshot of the Cycloidal Gearbox assembled on the bed, with the Properties panel showing the Gearbox section -->
+<!-- AUTO_IMAGE: type=shot id=mechanical-cycloidal-gearbox -->
+![A Cycloidal Gearbox assembled on the bed, its bearings and screws in grey, selected beside its Properties panel: the View buttons and the Gearbox section's Ratio, Ring Diameter and Eccentricity](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical-cycloidal-gearbox.png)
 
 ## How It Works
 

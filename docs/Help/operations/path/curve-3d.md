@@ -11,7 +11,8 @@ keywords: 3d spline, bezier curve, rail, route, 3d line, path in space
 
 A 3D Curve is a Bezier spline you draw through space by dragging spheres in the 3D view. It is not a solid -- it is a route. Its main job is to be the rail a [Sweep](sweep.md) carries a profile along.
 
-<!-- IMAGE_NEEDED: Screenshot of a 3D Curve selected in the 3D view, showing the thick tube of the curve, the anchor spheres along it, and the two handle spheres of the point being edited -->
+<!-- AUTO_IMAGE: type=shot id=curve-3d -->
+![A 3D Curve selected in the 3D view: its tube rising through space in an S, a sphere at each anchor, and the middle anchor just clicked, its two handle spheres showing either side of it](https://matterhackers.github.io/MatterCAD_Docs/assets/curve-3d.png)
 
 The curve is drawn as a thin octagonal tube so you can see it and click on it. That tube is editor geometry: it shows in the viewport and in thumbnails, but it is left out of exports and out of the below-the-bed check.
 

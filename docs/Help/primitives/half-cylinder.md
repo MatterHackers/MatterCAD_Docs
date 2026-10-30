@@ -11,7 +11,8 @@ keywords: half round, semicircle, rounded top, half pipe, tunnel
 A solid cylinder cut in half lengthwise: a flat bottom with a round top, lying along Y. Its height is half its Width.
 
 <!--  Screenshot of a Half Cylinder primitive on the workspace -->
-![20260318 183306 paste 20260318 183306](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183306-paste-20260318-183306.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-half-cylinder -->
+![A Half Cylinder lying along Y, its round side toward you, selected beside its Properties panel: Width, Depth and Sides](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-half-cylinder.png)
 
 
 ## Parameters

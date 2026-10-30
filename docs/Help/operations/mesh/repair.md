@@ -11,7 +11,8 @@ keywords: fix stl, broken mesh, non-manifold, watertight, holes in mesh, bad stl
 
 Repair fixes common problems in mesh geometry, including non-manifold edges, holes, inconsistent face orientation, and nearly-coincident vertices. This is especially useful for imported STL and OBJ files that may have errors.
 
-![20260324 080517 paste 20260324 080517](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-080517-paste-20260324-080517.jpg)
+<!-- AUTO_IMAGE: type=shot id=mesh-repair -->
+![A mesh with holes and broken edges mended by Repair, beside its Properties panel: the vertex, face and non-manifold edge counts before and after, the non-manifold edges down to 0](https://matterhackers.github.io/MatterCAD_Docs/assets/mesh-repair.png)
 
 
 ## How to Use

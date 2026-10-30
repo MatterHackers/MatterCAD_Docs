@@ -10,7 +10,8 @@ keywords: cycloidal drive, speed reducer, gearbox, reduction, robot joint, pin r
 
 Cycloidal Gear generates the flat parts of a cycloidal drive -- the single stage speed reducer built from a lobed disc rolling inside a ring of pins. It is the mechanism inside a lot of robot joints and compact gearboxes, because it gets a large reduction out of one very compact stage.
 
-<!-- IMAGE_NEEDED: Screenshot of a Cycloidal Gear disc and pin ring side by side in the 3D view, with the Properties panel showing the Part tabs -->
+<!-- AUTO_IMAGE: type=shot id=mechanical-cycloidal-gear -->
+![A cycloidal drive's Disc and Pin Ring side by side on the bed, the Disc selected beside its Properties panel: Output, the Disc and Pin Ring tabs, Height, Pin Count, Pin Circle Diameter, Pin Diameter and Eccentricity](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical-cycloidal-gear.png)
 
 ## How a Cycloidal Drive Works
 

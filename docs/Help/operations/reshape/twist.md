@@ -11,7 +11,8 @@ keywords: helix, swirl, corkscrew, torsion, twisted
 
 Twist rotates the top of an object relative to the bottom, creating a spiral or twisted effect along the height. By default the rotation progresses evenly from bottom to top; under Advanced you can draw where along the height the turning actually happens.
 
-<!-- IMAGE_NEEDED: Before and after showing a cube being twisted into a spiral column, with the Twist's Properties panel (Rotation Type, Angle, Slices, Minimum Sides, Twist Right) -->
+<!-- AUTO_IMAGE: type=shot id=twist -->
+![Twist: a plain box at the left, and at the right the same box twisted into a spiral column, with its Rotation Type, Angle, Slices, Minimum Sides and Twist Right settings](https://matterhackers.github.io/MatterCAD_Docs/assets/twist.png)
 
 ## How to Use
 

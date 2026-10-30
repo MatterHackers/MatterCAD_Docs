@@ -11,8 +11,8 @@ keywords: fillet everything, soften everything, smooth outside corners, comforta
 
 Round All Edges rolls every outside edge and corner of a solid off at one radius. There is nothing to pick and nothing to select -- you give it a radius and it rounds the whole part.
 
-<!-- AUTO_IMAGE: type=from_mcx file=reshape_round_all_edges -->
-![reshape_round_all_edges](https://matterhackers.github.io/MatterCAD_Docs/assets/reshape_round_all_edges.png)
+<!-- AUTO_IMAGE: type=shot id=round-all-edges -->
+![Round All Edges: a sharp plus-shaped bracket at the left, and at the right the same bracket with every edge rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/round-all-edges.png)
 
 It is the answer to "which edges?" being "all of them". Where [Fillet](fillet.md) asks you to click the edges you want, this one takes the whole part and needs no clicks at all. Both round at a single radius.
 

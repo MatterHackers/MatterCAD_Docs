@@ -10,7 +10,8 @@ keywords: draw a shape, sketch, polygon, bezier, spline, freehand, profile, cont
 
 Draw your own 2D path with control points. This gives you complete freedom to create any 2D shape that can then be extruded or revolved into a 3D object.
 
-<!-- IMAGE_NEEDED: Screenshot showing a custom path being edited in the Properties panel's path editor, with its toolbar (Reset Zoom, Sharp, Matched, Aligned, Free, Mirror Left/Right, Mirror Top/Bottom, the X and Y boxes and the pop-out button) -->
+<!-- AUTO_IMAGE: type=shot id=2d-custom-path-editor -->
+![The Custom Path's editor in the Properties panel, one curved point selected: its toolbar's Reset Zoom, Sharp, Matched (lit), Aligned and Free buttons, the Mirror Left/Right and Mirror Top/Bottom toggles, the X and Y boxes holding the point and the pop-out button](https://matterhackers.github.io/MatterCAD_Docs/assets/2d-custom-path-editor.png)
 
 
 ## How to Use

@@ -11,7 +11,8 @@ keywords: follow path, extrude along curve, handle, cable, wire, bent tube, tube
 
 Sweep carries a flat profile along a curve through space. The profile is a 2D path -- a circle, a star, an SVG outline -- and the curve is a [3D Curve](curve-3d.md), called the rail. The result is a solid tube with your profile as its cross section, following wherever the rail goes.
 
-<!-- IMAGE_NEEDED: Screenshot of a Sweep selected in the 3D view, showing a circle profile swept along an S shaped rail, with the rail's control point spheres visible -->
+<!-- AUTO_IMAGE: type=shot id=sweep -->
+![A Sweep selected in the 3D view: a round tube following an S shaped rail through space, the rail's anchor spheres along it and the spheres of its Scale and Twist graphs](https://matterhackers.github.io/MatterCAD_Docs/assets/sweep.png)
 
 Where [Linear Extrude](linear-extrude.md) pushes a profile straight up and [Revolve](revolve.md) spins it around an axis, Sweep lets you draw the route yourself. It is the tool for handles, tubing, pipes, wire runs and trim that follows a path.
 

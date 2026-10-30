@@ -10,7 +10,8 @@ keywords: bolt, fastener, socket head, countersink, cap screw, machine screw
 
 Screw generates a complete fastener -- head, shank, thread and tip -- from a standard size you pick off a list. Choose M6 and you get an M6 screw with the right pitch, the right head proportions and the right hex socket, without looking anything up. Turn on **Use As Hole** and the same settings make the hole that screw fits instead: threaded, clearance or pilot, with a pocket for the head.
 
-<!-- IMAGE_NEEDED: Screenshot of a Screw in the 3D view with the Properties panel open, showing the Measurement buttons, the Size dropdown and the Head Type icon row -->
+<!-- AUTO_IMAGE: type=shot id=mechanical-screw -->
+![A socket head Screw selected in the 3D view beside its Properties panel: the Measurement buttons, Size, Thread Spacing, Length and the Head Type icons](https://matterhackers.github.io/MatterCAD_Docs/assets/mechanical-screw.png)
 
 Where [Threads](threads.md) gives you a bare threaded rod (or the threaded hole it fits), Screw gives you the whole fastener, or the whole hole for one, head pocket included.
 

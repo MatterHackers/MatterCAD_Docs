@@ -11,7 +11,8 @@ keywords: lathe, spin, rotate profile, vase, bowl, turned part, round part
 
 Revolve spins a 2D path around an axis to create a 3D solid of revolution. This is how you create vases, bowls, wheels, and other rotationally symmetric objects.
 
-<!-- IMAGE_NEEDED: Before and after showing a profile path being revolved into a vase shape, with the Revolve's Properties panel (Rotation, Axis Offset, Starting Angle, Ending Angle, Sides) -->
+<!-- AUTO_IMAGE: type=shot id=revolve -->
+![Revolve: a vase's half profile standing at the left, and at the right the vase it spins into, beside Rotation, Axis Offset, Starting Angle, Ending Angle and Sides](https://matterhackers.github.io/MatterCAD_Docs/assets/revolve.png)
 
 
 ## How to Use

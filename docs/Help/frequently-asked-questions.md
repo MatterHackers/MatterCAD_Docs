@@ -14,11 +14,13 @@ keywords: faq, problems, troubleshooting, tiny part, huge part, reset settings, 
 # How do I clear the application data?
 
 - If reinstalling doesn't resolve an issue, you may need to delete MatterCAD's stored data. This data stays on your computer when you uninstall MatterCAD. To reset everything to the default settings, quit MatterCAD and remove its data folder (below). The folder can also hold designs saved in your local library, so copy any you want to keep first. You can also temporarily rename the database file (MatterCAD.db) in that folder to test whether your settings are causing a problem.
-![20260318 194137 paste 20260318 194137](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-194137-paste-20260318-194137.jpg)
+<!-- AUTO_IMAGE: type=shot id=faq-menu-settings -->
+![The MatterCAD menu open from its button at the top left of the window, the pointer on its Settings row](https://matterhackers.github.io/MatterCAD_Docs/assets/faq-menu-settings.png)
 
 ![20260318 194200 paste 20260318 194200](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-194200-paste-20260318-194200.jpg)
 
-![20260318 194218 paste 20260318 194218](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-194218-paste-20260318-194218.jpg)
+<!-- AUTO_IMAGE: type=shot id=faq-settings-advanced -->
+![The MatterCAD Settings window scrolled down to its open Advanced section, the pointer on the Application Storage button showing its Open Folder tip, and the Close button below](https://matterhackers.github.io/MatterCAD_Docs/assets/faq-settings-advanced.png)
 
 
 - The data folder is:

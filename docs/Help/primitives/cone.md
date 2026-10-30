@@ -11,7 +11,8 @@ keywords: point, spike, funnel, tapered cylinder, tip, truncated cone
 A tapered cylinder that comes to a point at the top. Useful for creating pointed features, funnels, and chamfers.
 
 <!--  Screenshot of a Cone primitive on the workspace -->
-![20260318 183159 paste 20260318 183159](https://matterhackers.github.io/MatterCAD_Docs/assets/20260318-183159-paste-20260318-183159.jpg)
+<!-- AUTO_IMAGE: type=shot id=primitives-cone -->
+![A Cone selected in the 3D view beside its Properties panel: Diameter, Height and Sides](https://matterhackers.github.io/MatterCAD_Docs/assets/primitives-cone.png)
 
 
 ## Parameters

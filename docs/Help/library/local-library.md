@@ -9,7 +9,8 @@ keywords: my files, folders, local files, organize designs, rename design, new f
 
 The Local Library stores your 3D designs on your computer. You can organize designs into folders, search for files, and quickly add them to your workspace.
 
-![20260323 210208 paste 20260323 210208](https://matterhackers.github.io/MatterCAD_Docs/assets/20260323-210208-paste-20260323-210208.jpg)
+<!-- AUTO_IMAGE: type=shot id=lib-local-computer -->
+![The Library tab inside Computer: the Downloads, Desktop and Documents folders and the computer's drives](https://matterhackers.github.io/MatterCAD_Docs/assets/lib-local-computer.png)
 
 
 ## Browsing the Library

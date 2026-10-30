@@ -55,7 +55,8 @@ Click **Add to Bed** in the toolbar. The library opens over the left side of the
 - Open your **Cloud Library** when you are signed in
 - Drag any item onto the bed, or right-click it (on a touch screen, hold a finger on it) and choose **Add to Bed**
 
-![20260324 081446 paste 20260324 081446](https://matterhackers.github.io/MatterCAD_Docs/assets/20260324-081446-paste-20260324-081446.jpg)
+<!-- AUTO_IMAGE: type=shot id=gs-add-to-bed-computer -->
+![The Add to Bed library inside Computer: the Downloads, Desktop and Documents folders and the computer's drives](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-add-to-bed-computer.png)
 
 ### The Library Tab
 

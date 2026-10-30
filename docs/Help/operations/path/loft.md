@@ -11,7 +11,8 @@ keywords: blend shapes, morph, transition, square to circle, skin sections
 
 Loft skins a solid between two or more flat sections stacked at different heights. Each section is a 2D path, and the surface runs smoothly from one to the next -- a square at the bottom blending into a circle at the top, a rectangular base tapering to a slot.
 
-<!-- IMAGE_NEEDED: Screenshot of a Loft in the 3D view, showing a square section at the bed and a circle section above it with the skinned surface between them -->
+<!-- AUTO_IMAGE: type=shot id=loft -->
+![Loft: a square on the bed and a circle above it at the left, and at the right the Loft of the two, a solid blending from the square at the bottom to the circle at the top](https://matterhackers.github.io/MatterCAD_Docs/assets/loft.png)
 
 Where [Linear Extrude](linear-extrude.md) gives one profile a constant height, Loft lets the profile change as it rises. Where [Sweep](sweep.md) carries one profile along a route you draw, Loft keeps the sections where you put them and fills the space between.
 

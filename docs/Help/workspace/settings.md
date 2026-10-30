@@ -17,7 +17,8 @@ The page has five sections: **General**, **Theme**, **Options**, **Advanced** an
 
 In the browser, Settings has no **AI Providers** section, and **Advanced** has no **Application Storage** or **Application Cache** rows.
 
-<!-- IMAGE_NEEDED: The MatterCAD Settings window with the General and Theme sections showing (Language, Number format, Thumbnails, the Text Size slider, and the row of theme previews with the accent color swatches) and the Options, Advanced and AI Providers headings closed below them -->
+<!-- AUTO_IMAGE: type=shot id=workspace-settings-window -->
+![The MatterCAD Settings window with its General and Theme sections showing](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-settings-window.png)
 
 ## General
 

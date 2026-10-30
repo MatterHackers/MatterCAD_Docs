@@ -11,7 +11,8 @@ keywords: copies, repeat, pattern, circular pattern, polar array, copies in a ci
 
 Array makes many copies of a part and arranges them in a pattern: a row, a ring, or a series of steps that each move, turn and grow a little more. The copies stay one editable part, so changing a setting rearranges all of them at once.
 
-<!-- IMAGE_NEEDED: Screenshot of the Array panel showing the Mode tabs at the top (Line | Circle | Transform) -->
+<!-- AUTO_IMAGE: type=shot id=array-mode-panel -->
+![An Array of five copies in a line bending into an arc, beside its Properties panel: the Line, Circle and Transform mode tabs at the top, then Count, Offset Method and Relative Offset](https://matterhackers.github.io/MatterCAD_Docs/assets/array-mode-panel.png)
 
 
 ## How to Use
@@ -50,7 +51,8 @@ Line places copies in a row, each one further along than the last, with optional
 
 Circle places copies evenly around an axis, at a set distance from it.
 
-<!-- IMAGE_NEEDED: Screenshot of Array in Circle mode showing 6 copies arranged in a circle, with the Radius and Central Axis rows visible -->
+<!-- AUTO_IMAGE: type=shot id=array-radial-panel -->
+![An Array in Circle mode: six copies on a circle, beside its Properties panel: Count, the Central Axis tabs and Radius](https://matterhackers.github.io/MatterCAD_Docs/assets/array-radial-panel.png)
 
 
 **Count Method** — How the number of copies is set:

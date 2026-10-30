@@ -10,7 +10,8 @@ keywords: 2d shapes, sketches, flat shapes, profiles, outlines, 2d primitives
 2D paths are flat shapes that you can use as the starting point for 3D objects. Add them from the **2D Primitives** folder (in the Library, or under **Add to Bed**). Use [Linear Extrude](../operations/path/linear-extrude.md) to give a path height, or [Revolve](../operations/path/revolve.md) to spin a path around an axis to create a 3D form.
 
 <!--  Screenshot showing a 2D path being extruded into a 3D shape -->
-![20260506 093625 paste 20260506 093625](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-093625-paste-20260506-093625.jpg)
+<!-- AUTO_IMAGE: type=shot id=2d-index-extrude -->
+![A flat Star path at the left and the same Star given height by Linear Extrude at the right, the Linear Extrude selected beside its Properties panel: Height and Bevel Top](https://matterhackers.github.io/MatterCAD_Docs/assets/2d-index-extrude.png)
 
 
 ## Available Paths

@@ -11,7 +11,8 @@ keywords: cut in half, split, chop, trim, cut off, bisect, cut flat
 
 Plane Cut slices an object with a [construction plane](../../workspace/construction-planes.md) and keeps the part behind it -- everything on the far side of the way the plane faces. The cut surface is capped with a flat face, so the result is still a solid you can go on building with.
 
-<!-- IMAGE_NEEDED: Before and after showing an object cut by a Plane Cut, with its Properties panel showing the Plane row (XY / XZ / YZ / Custom, Flip, Pick Face) -->
+<!-- AUTO_IMAGE: type=shot id=plane-cut -->
+![Plane Cut: a whole sphere at the left, and at the right the same sphere with its top cut off flat where the drawn plane passes, with its Plane row: XY, XZ, YZ, Custom, Flip and Pick Face](https://matterhackers.github.io/MatterCAD_Docs/assets/plane-cut.png)
 
 ## How to Use
 

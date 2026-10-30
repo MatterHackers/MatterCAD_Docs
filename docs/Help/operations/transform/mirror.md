@@ -12,7 +12,8 @@ keywords: flip, reverse, left and right, symmetric, opposite hand
 Mirror flips an object across one of the three main axes. The mirrored shape replaces the original in the design: the original is kept, hidden, inside the Mirror, so you can change the axis at any time.
 
 <!--  Before and after showing an object mirrored across the X axis -->
-![20260506 160651 paste 20260506 160651](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-160651-paste-20260506-160651.jpg)
+<!-- AUTO_IMAGE: type=shot id=mirror -->
+![Mirror: a text reading normally at the left, and at the right the same text flipped left to right, beside the Mirror On setting](https://matterhackers.github.io/MatterCAD_Docs/assets/mirror.png)
 
 
 ## How to Use

@@ -12,7 +12,8 @@ keywords: base plate, backing, tag, name tag, plaque, keychain
 Border Path makes a flat base shape around a 2D path: by default a rounded rectangle 3 mm bigger than the path on every side. Extrude it to make a plate, a tag or a backing for raised text. In the Design tree it is named **Border**.
 
 <!--  Before and after showing a path with a border added -->
-![20260506 100533 paste 20260506 100533](https://matterhackers.github.io/MatterCAD_Docs/assets/20260506-100533-paste-20260506-100533.jpg)
+<!-- AUTO_IMAGE: type=shot id=border-path -->
+![Border Path: a flat star at the left, and at the right the same star on its Outline border grown 9 mm with round corners, beside the Base Type tabs, Expand, Infill Amount and Style](https://matterhackers.github.io/MatterCAD_Docs/assets/border-path.png)
 
 
 ## How to Use

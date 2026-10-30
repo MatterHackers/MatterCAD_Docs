@@ -11,7 +11,8 @@ The **☰ MatterCAD** menu at the left end of the tabs holds what belongs to the
 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
-<!-- IMAGE_NEEDED: The top of the MatterCAD window with the ☰ MatterCAD menu open over a design tab, showing every item from Add System File to Bed to About MatterCAD, and the toolbar's Add to Bed, Save and Bed buttons beside it -->
+<!-- AUTO_IMAGE: type=shot id=workspace-menus-open -->
+![The top of the MatterCAD window with the MatterCAD menu open over a design tab, every item showing, and the toolbar beside it](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-menus-open.png)
 
 ## The ☰ MatterCAD Menu
 
