@@ -37,6 +37,9 @@ On a Mac, press ⌘ (Command) wherever these pages say Ctrl.
 - [Saving and Exporting](saving-and-exporting.md) - Save your work, recover unsaved work, and export to other file formats
 - [The AI Tab](ai-tab.md) - Ask the AI to build, change or explain a design, right in the side panel
 - [Using AI Assistants](ai-assistants.md) - Let Claude Code, Codex or Claude Desktop read and edit your designs
+- [AI Plans](ai-plans.md) - What the Free, Plus and Max plans include, and the weekly AI allowance
+- [Buying an AI Plan](buying-an-ai-plan.md) - Get a plan from the AI tab, mattercad.com or matterhackers.com
+- [Managing Your AI Plan](managing-your-ai-plan.md) - Change your plan or card, cancel, resume, or fix a failed payment
 
 ## Quick Start
 

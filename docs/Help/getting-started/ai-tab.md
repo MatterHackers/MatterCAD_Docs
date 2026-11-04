@@ -22,6 +22,8 @@ Each design has its own chat. The AI in a design's tab works only on that design
 
 On the desktop, the chat uses your own API key or the MatterHackers AI service, as set under **AI connection** in [Settings](../workspace/settings.md#ai-providers). If it can't connect, the tab says what to do. If you are signed out and the chat would use MatterHackers AI (**MatterHackers AI** is chosen, or **Automatic** is chosen and you haven't entered an Anthropic or OpenAI key), it says "Sign in to your MatterHackers account to use MatterHackers AI." with a **Sign In** button. On **My own API keys** with no key, it says, for example, "Add your Anthropic API key in Settings to use AI." with an **Open Settings** button. On the website, the site decides whether you can chat.
 
+MatterHackers AI needs a plan. Without one, the tab shows the plans and a **Get** button on each. See [AI Plans](ai-plans.md) for what each plan includes, and [Buying an AI Plan](buying-an-ai-plan.md) to get one.
+
 Your first message sends at once, like every one after it. What you send, with any pictures or files you attach and the parts of your design the AI reads, goes to the AI service you use: with your own API keys, to the provider you chose (Anthropic or OpenAI); on MatterHackers AI, to MatterHackers AI. You agree to this when you sign up for that service, so MatterCAD doesn't stop to ask before you send.
 
 ## What to Ask
@@ -66,7 +68,9 @@ A recording stops on its own after 5 minutes. With your own API keys, voice need
 
 The line at the bottom of the tab shows how full the chat is, for example "Context 38k / 1M (4%)", over a thin bar. The AI reads the whole chat again each time it answers, so a fuller chat uses more tokens with every reply. To start over, use **Clear chat**.
 
-Click the meter for details: this message's token counts and model calls, and the whole conversation's total. On the MatterHackers AI service it shows only how full the chat is and how much of today's allowance you have used. It shows no prices.
+Click the meter for details: this message's token counts and model calls, and the whole conversation's total. It shows no prices.
+
+On the MatterHackers AI service, the meter shows your AI allowance instead: your plan's name, a bar and how much of the week you have used, for example "Plus" and "30% of this week". Click it to see when more room comes back and, if you pay for your plan, a **Manage plan** link. See [The Weekly AI Allowance](ai-plans.md#the-weekly-ai-allowance).
 
 ## Clear Chat
 
@@ -89,5 +93,8 @@ If a design's saved chat came from a newer MatterCAD or was damaged, the tab say
 ## Related
 
 - [Using AI Assistants](ai-assistants.md) - Let Claude Code, Codex or Claude Desktop work on your designs from outside MatterCAD
+- [AI Plans](ai-plans.md) - What each MatterHackers AI plan includes, and the weekly allowance
+- [Buying an AI Plan](buying-an-ai-plan.md) - Get a plan from the AI tab or mattercad.com
+- [Managing Your AI Plan](managing-your-ai-plan.md) - Change your plan or card, cancel, or resume
 - [Settings](../workspace/settings.md#ai-providers) - Your API keys and the AI connection
 - [Design Notes](../workspace/design-notes.md) - Notes saved with the design

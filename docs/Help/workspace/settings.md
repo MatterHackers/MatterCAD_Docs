@@ -74,7 +74,7 @@ At the top it says: "Your API keys are kept in MatterCAD's settings on this comp
 ### AI connection
 
 - **Automatic** (the starting choice) - Uses your own keys if you have entered an Anthropic or OpenAI key. Otherwise it uses MatterHackers AI when you are signed in. A Meshy key alone doesn't count.
-- **MatterHackers AI** - Uses the MatterHackers AI service. You need to [sign in](account.md), and your MatterHackers account needs an AI subscription.
+- **MatterHackers AI** - Uses the MatterHackers AI service. You need to [sign in](account.md), and your MatterHackers account needs an [AI plan](../getting-started/ai-plans.md).
 - **My own API keys** - Always sends your messages straight to Anthropic or OpenAI with your own keys.
 
 If the chat can't connect the way you chose, the **AI** tab tells you what to do. For example, if you are signed out on **MatterHackers AI**, or on **Automatic** without an Anthropic or OpenAI key, it says "Sign in to your MatterHackers account to use MatterHackers AI." with a **Sign In** button, and on **My own API keys** with no Anthropic key it says "Add your Anthropic API key in Settings to use AI." with an **Open Settings** button.

@@ -22,6 +22,9 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 - [Saving and Exporting](getting-started/saving-and-exporting.md) - Save your work and export to different formats
 - [The AI Tab](getting-started/ai-tab.md) - Chat with an AI that builds, changes and explains your design
 - [Using AI Assistants](getting-started/ai-assistants.md) - Let an AI chat tool read and edit your designs
+- [AI Plans](getting-started/ai-plans.md) - What each MatterHackers AI plan includes, and the weekly allowance
+- [Buying an AI Plan](getting-started/buying-an-ai-plan.md) - Get a plan from the AI tab, mattercad.com or matterhackers.com
+- [Managing Your AI Plan](getting-started/managing-your-ai-plan.md) - Change your plan or card, cancel, or resume
 
 ## MatterCAD on the Web
 
