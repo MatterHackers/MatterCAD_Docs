@@ -3,7 +3,7 @@ title: Buying an AI Plan
 parent: "Getting Started"
 nav_order: 9
 description: Get a MatterHackers AI plan from the AI tab, the pricing page on mattercad.com, or matterhackers.com, and start using it in MatterCAD.
-keywords: subscribe, buy, purchase, checkout, upgrade to plus, get max, pay, credit card, gift code, redeem code, receipt
+keywords: subscribe, buy, purchase, checkout, upgrade to plus, get max, credit card, gift code, redeem code, receipt
 ---
 # Buying an AI Plan
 

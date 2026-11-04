@@ -2,8 +2,8 @@
 title: Managing Your AI Plan
 parent: "Getting Started"
 nav_order: 10
-description: Move to a bigger or smaller MatterHackers AI plan, switch between monthly and yearly, change your card, cancel or resume, and fix a failed payment.
-keywords: subscription, upgrade, downgrade, cancel subscription, resume, change card, update payment, billing, refund, renewal, payment failed, past due, receipts
+description: Move to a bigger or smaller AI plan, switch monthly and yearly, change your card, cancel or resume, and fix a failed payment.
+keywords: upgrade, downgrade, cancel subscription, resume, change card, billing, refund, renewal, payment failed, receipts
 ---
 # Managing Your AI Plan
 

@@ -3,7 +3,7 @@ title: AI Plans
 parent: "Getting Started"
 nav_order: 8
 description: What the Free, Plus and Max plans for MatterHackers AI include, and how the weekly AI allowance works.
-keywords: subscription, pricing, plans, plus, max, free, starter, allowance, usage limit, weekly limit, credits, how much ai can i use
+keywords: subscription, pricing, plans, plus, max, free starter, allowance, weekly limit, credits, how much ai can i use
 ---
 # AI Plans
 
