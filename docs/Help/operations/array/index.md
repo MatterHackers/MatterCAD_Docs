@@ -20,5 +20,6 @@ The **Duplication** group of the toolbar holds **Clone**, **Array** and **Select
 
 ## Pages
 
+- [Clone](clone.md) - Make a linked copy that stays the same as the original, and cut test-fit pieces from it
 - [Array](array.md) - Create linear, radial and transform patterns of duplicated objects
 - [Select Child](select-child.md) - Dynamically pick one child from a group by index or name
