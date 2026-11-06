@@ -142,6 +142,8 @@ The same picture at the same size traces to the same outline Image to Path gives
 
 **Mask From Field** makes a mask from any rule you build, asked of every pixel of the picture wired into it. Wire a selection into its diamond **Selection** socket: the pixels it says yes to keep their colour and their own transparency, the rest are cleared, and a number from 0 to 1 keeps that share of a pixel. Its card previews the mask like the other masks, and it feeds Trace Mask the same way.
 
+**Trace Mask** has a diamond **Selection** socket of its own, so you can skip Mask From Field: wire the selection straight into it and it traces just the pixels the selection picks, exactly what the same selection through Mask From Field traces. See-through pixels stay out even when the selection picks them. With nothing wired in, Trace Mask traces every visible pixel; unchecking its Selection traces none.
+
 **Pixel Info** gives what each pixel is, each output on a dashed noodle: **Alpha** (how solid, 0 to 1), **Luminance** (how bright it looks, as Intensity Mask reads it), **Lightness**, **Hue** (around the colour wheel, 0 to 1), **Saturation** (0 grey to 1 pure colour) and **Pixel Position** (in pixels, up from the bottom left). Feed them through **Compare**, **Math** and **Boolean Math** to make the selection:
 
 - *Pixel Info Alpha -> Compare (Greater Than 0) -> Mask From Field* keeps every visible pixel, exactly Transparency Mask's mask.
