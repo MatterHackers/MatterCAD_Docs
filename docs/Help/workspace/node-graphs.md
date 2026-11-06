@@ -33,13 +33,13 @@ Select the object and turn **Show Graph** on or off in the Properties panel. Wit
 - **Cards** are the nodes in between. Each card is an object - a shape, an operation, a sheet - and shows the same settings the Properties panel would. Click a card to select it; drag its title bar to move it.
 - **Sockets** are the dots on a card's edges: inputs on the left, outputs on the right. Their colour says what they carry - green for solids, blue for paths, grey for numbers, lilac for yes/no values, indigo for positions and sizes (an X, Y and Z together), orange for 3D curves, plum for images, lime for copies, pink for Variables. A single number or yes/no is drawn as a short bar instead of a dot. Hover a socket to see its name.
 - **Diamond sockets** are selections: they carry an answer for each edge or corner, not one value. See **Choose Edges with Selection Nodes** below.
-- **Noodles** are the wires. Drag from an output socket and drop on an input socket of the same colour to connect them. To move a noodle, pick it up by the end at its input and drop it somewhere else; drop it on empty space to remove it. A noodle that would make a loop is refused, and so is one between sockets that don't match - the editor tells you why, for example *Types don't match: geometry into image*. A noodle into a diamond socket is dashed.
+- **Noodles** are the wires. Drag from an output socket and drop on an input socket of the same colour to connect them. To move a noodle, pick it up by the end at its input and drop it somewhere else; drop it on empty space to remove it. A noodle that would make a loop is refused, and so is one between sockets that don't match - the editor tells you why, for example *Types don't match: geometry into image*. A noodle carrying a selection is dashed; a plain value wired into a diamond socket stays solid.
 
 Scroll the mouse wheel to zoom, and drag with the right or middle mouse button to pan.
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math and Vector Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math, Vector Math and Boolean Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
 - Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
@@ -76,7 +76,11 @@ Min, Max, Size and Center are each an X, Y and Z together (the indigo socket). T
 
 **Vector Math** does the same for positions and sizes (an X, Y and Z together). Its operations are Add, Subtract, Multiply, Scale (A times the number **Scale**), Length, Distance, Dot, Cross, Normalize, Minimum and Maximum. Operations that give a position or size come out of **Vector**; Length, Distance and Dot give a single number, which comes out of **Value**.
 
-Both work in plain numbers, so a factor of 2 stays 2 whatever units you use. When an operation has no answer - dividing by zero, the square root of a negative number, the tangent of 90 degrees - the result is 0 and the card shows a warning saying what to change.
+**Boolean Math** works with yes-or-no values: **And** (yes when both A and B are), **Or** (yes when either is), **Not** (the opposite of A) and **Xor** (yes when exactly one is).
+
+All of these also work edge by edge: wire a selection's values into them (see **Choose Edges with Selection Nodes** below) and they answer for each edge.
+
+Both Math and Vector Math work in plain numbers, so a factor of 2 stays 2 whatever units you use. When an operation has no answer - dividing by zero, the square root of a negative number, the tangent of 90 degrees - the result is 0 and the card shows a warning saying what to change.
 
 For example, to make a hole half the width of a part: wire a Bounds' **Size** through **Separate XYZ**, wire its **X** into a Math set to **Divide** with B at 2, and wire the Result into a Cylinder's Diameter.
 
@@ -178,8 +182,10 @@ Selections travel through **diamond sockets** on **dashed noodles**. A diamond's
 The selection nodes are in the Add Node menu's **Selection** group:
 
 - **Position** gives each edge's own position (for a straight edge, its middle). Wire it through **Separate XYZ** to test just its X, Y or Z.
-- **Compare** tests A against B: **Greater Than**, **Less Than**, **Equal To**, **At Least** or **At Most**. Choose **Within Distance** instead to select the edges within a **Distance** of a **Point**. Numbers are in your units.
+- **Compare** tests A against B: **Greater Than**, **Less Than**, **Equal To**, **At Least** or **At Most**. Choose **In Range** to select the edges whose A is from **Min** to **Max** - both ends count, and a Min above Max means the same range. Choose **Within Distance** instead to select the edges within a **Distance** of a **Point**. Numbers are in your units.
 - **Inside Box** selects the edges inside the box from **Min** to **Max**. An edge lying on the box's surface counts as inside.
+
+The Math group's nodes work on selections too. Wire Position (or anything coming from it) into **Separate XYZ**, **Combine XYZ**, **Math** or **Vector Math** and its outputs turn into diamonds: they give an answer for each edge, worked out from that edge's numbers, and go on into a Compare or another Math. **Boolean Math** joins selections: **And** rounds the edges both select, **Or** the edges either selects, **Xor** the edges only one selects, and **Not** turns a selection round. Wired with plain values only, these nodes give plain values as before.
 
 <!-- AUTO_IMAGE: type=shot id=workspace-node-selection-fillet -->
 ![A Cube wired into a Fillet node, with Position, Separate XYZ and Compare (Greater Than) feeding the Fillet's Selection by a dashed noodle, and the cube above with only its top edges rounded](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-node-selection-fillet.png)
@@ -202,6 +208,15 @@ Only the edges higher than the middle - the four top edges - are rounded. The up
 4. Wire Inside Box into the Fillet's **Selection**.
 
 Only the edges inside the second part's box are rounded. Move or resize the second part and the rounded edges follow.
+
+### Example: Round Only the Top Edge on the Left
+
+1. Start from the **Round Only the Top Edges** example above, with a 20 mm Cube sitting on the floor and centred on the origin.
+2. Add a **Math** between Separate XYZ and Compare: wire **Z** into Math's **A**, set Math to **Multiply** with **B** at 2, and wire its **Result** into Compare's **A**. Set Compare's **B** to 20: twice the Z must be over 20, so the top edges are still the ones picked.
+3. Add **Inside Box** with **Min** at -11, -11, -1 and **Max** at -1, 11, 21, a box round the Cube's left face.
+4. Add **Boolean Math** set to **And**. Wire Compare into its **A** and Inside Box into its **B**, and wire its **Result** into the Fillet's **Selection**.
+
+Only the edge that is both on top and on the left is rounded.
 
 ### Example: Round the Corners on the Right of an Outline
 
