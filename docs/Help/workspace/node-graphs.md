@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, BooleanMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, TransformOfObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
+articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, BooleanMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, MaskFromFieldObject3D, PixelInfoObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, TransformOfObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -39,7 +39,7 @@ Scroll the mouse wheel to zoom, and drag with the right or middle mouse button t
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math, Vector Math and Boolean Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask, Color Mask, Mask From Field, Pixel Info, Analyze Picture and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math, Vector Math and Boolean Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
 - Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
@@ -137,6 +137,15 @@ The Image nodes split **Image to Path** into steps you can see and change:
 4. Wire Trace Mask's result into **Linear Extrude**, or any other node that takes an outline.
 
 The same picture at the same size traces to the same outline Image to Path gives. A picture wired straight into Trace Mask traces its solid pixels.
+
+### Pictures as Fields
+
+**Mask From Field** makes a mask from any rule you build, asked of every pixel of the picture wired into it. Wire a selection into its diamond **Selection** socket: the pixels it says yes to keep their colour and their own transparency, the rest are cleared, and a number from 0 to 1 keeps that share of a pixel. Its card previews the mask like the other masks, and it feeds Trace Mask the same way.
+
+**Pixel Info** gives what each pixel is, each output on a dashed noodle: **Alpha** (how solid, 0 to 1), **Luminance** (how bright it looks, as Intensity Mask reads it), **Lightness**, **Hue** (around the colour wheel, 0 to 1), **Saturation** (0 grey to 1 pure colour) and **Pixel Position** (in pixels, up from the bottom left). Feed them through **Compare**, **Math** and **Boolean Math** to make the selection:
+
+- *Pixel Info Alpha -> Compare (Greater Than 0) -> Mask From Field* keeps every visible pixel, exactly Transparency Mask's mask.
+- *Pixel Info Luminance -> Compare (In Range) -> Mask From Field* keeps the pixels in a brightness band. Intensity Mask fades pixels toward the top of a band wider than 64 steps, so over a narrow band the two masks are the same and over a wide one Mask From Field keeps those faded pixels fully.
 
 To let the picture choose, wire it into **Analyze Picture** too. It gives the analysis Image to Path would pick for that picture - Transparency, Colors or Intensity - so wired into a **Switch**'s Choose, with each mask wired into the option of the same name, it passes on the mask that suits the picture.
 
