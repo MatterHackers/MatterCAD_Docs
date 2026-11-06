@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, TransformOfObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
+articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, VectorMathObject3D, BooleanMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, AnalyzePictureObject3D, TraceMaskObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, TransformOfObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
