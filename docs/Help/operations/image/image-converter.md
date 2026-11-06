@@ -25,7 +25,7 @@ Image Converter turns a picture into a solid part. It traces the shapes in the p
 
 Undo brings back the picture in one step.
 
-You can also start without a picture: **Image Converter (Nodes)** in the Library's **My Tools** starts from a sample picture you then replace, and **Image Converter** in the **3D Primitives** folder adds the older Image Converter described at the end of this page.
+You can also start without a picture: **Image Converter** in the Library's **3D Primitives** folder, or **Image Converter (Nodes)** in **My Tools**, adds one that starts from a sample picture you then replace.
 
 ## Settings
 
@@ -81,6 +81,8 @@ The base's thickness, shown once Base Type is something other than None:
 
 Image Converter is built as a [node graph](../../workspace/node-graphs.md): boxes wired together that make a mask of the picture, trace it, smooth it, raise it and add the base. Turn on **Show Graph** in the panel to see how it works, and change it if you want something it does not do. The graph's settings are the ones above, so you never need to open it to use Image Converter.
 
+The graph's first card is an **Image** card: it holds the picture, and it is the only place the picture is loaded, so the Image settings above change it. Its picture is wired into **Make Mask**, a graph inside the graph that holds Analyze Picture, the Transparency, Intensity and Color masks and the Switch that passes on the mask the **Analysis Type** picks. Make Mask takes the picture through a socket, so its card shows only that socket's name, never a picture of its own. Double-click Make Mask to open it. The chosen mask goes on to **Trace Mask**, **Smooth Path** and **Main Extrude**, and the smoothed outline also to the **Border** and **Base Extrude**, joined by an **Align**.
+
 ## Tips
 
 - High-contrast pictures with clear silhouettes trace best. A busy photograph traces into hundreds of shapes
@@ -89,7 +91,7 @@ Image Converter is built as a [node graph](../../workspace/node-graphs.md): boxe
 
 ## Older Image Converters
 
-Designs saved before Image Converter became a node graph keep their Image Converter, which works as before. So does one added from the **3D Primitives** folder, one the AI makes, and one made from a QR code or another image source that is not a stored picture. It is a [component](../../workspace/components.md) built from parts you could assemble yourself: an [Image](../../primitives/image-object.md), an [Image to Path](image-to-path.md) that traces it, a [Smooth Path](../path/smooth-path.md) and a [Linear Extrude](../path/linear-extrude.md) named **Main Extrude**, beside a [Border Path](../path/border-path.md) extruded as **Base Extrude**, held together by an [Align](../placement/align.md). Its settings are the same as above, with these differences:
+Designs saved before Image Converter became a node graph keep their Image Converter, which works as before. So does one the AI makes, and one made from a QR code or another image source that is not a stored picture. It is a [component](../../workspace/components.md) built from parts you could assemble yourself: an [Image](../../primitives/image-object.md), an [Image to Path](image-to-path.md) that traces it, a [Smooth Path](../path/smooth-path.md) and a [Linear Extrude](../path/linear-extrude.md) named **Main Extrude**, beside a [Border Path](../path/border-path.md) extruded as **Base Extrude**, held together by an [Align](../placement/align.md). Its settings are the same as above, with these differences:
 
 - To reach the settings it does not show, such as the Smooth Path's, expand it in the design tree
 - **Cancel** on the component removes it and leaves the original picture behind, so you can start over from it

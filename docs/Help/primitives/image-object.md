@@ -24,7 +24,7 @@ There are three ways an Image gets into a design:
 
 - **Drop a file on the bed.** Drag a `png`, `jpg`, `gif`, `webp` or `tga` file from your desktop onto the 3D view. It arrives as an Image named "Image"
 - **Insert from the library.** Image files stored in your library open the same way
-- **From inside an Image Converter.** The **Image Converter** in the 3D Primitives folder is a [component](../workspace/components.md) built around an Image. Expand it in the design tree to select the Image inside it and change the picture there
+- **From an Image Converter.** An Image Converter's picture is the **Image** setting at the top of its Properties panel; change it there. An older Image Converter, saved as a [component](../workspace/components.md) built around an Image, holds that Image in the design tree: expand it to select the Image and change the picture there
 
 Once it is in the scene:
 
@@ -68,4 +68,4 @@ Colour and material are not offered for an Image -- the picture supplies its own
 - [Lithophane](../operations/image/lithophane.md) - Turn brightness into thickness for a backlit panel
 - [QR Code](qr-code.md) - Another object the image operations accept as input
 - [SVG Object](svg-object.md) - Import vector graphics instead of a raster picture
-- [Components](../workspace/components.md) - How the Image Converter wraps an Image and surfaces a chosen set of controls
+- [Components](../workspace/components.md) - How an older Image Converter wraps an Image and surfaces a chosen set of controls
