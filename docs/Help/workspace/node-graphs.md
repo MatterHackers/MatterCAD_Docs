@@ -293,7 +293,7 @@ Each use adds an independent copy, so changing one never changes the others. Too
 
 ## Graphs Inside Graphs
 
-Add a graph to another graph - from the Add Node menu's My Tools, the Library, or the scene tree - and it becomes one card. Its sockets are the inner graph's parameters and object inputs, plus a **Result**. A shape or outline input takes several parts, one noodle each, and the inner graph gets them together as one group, the way an operation on the toolbar takes everything selected; a picture input takes one picture. Leave an object input unwired and the inner graph keeps its own object.
+Add a graph to another graph - from the Add Node menu's My Tools, the Library, or the scene tree - and it becomes one card. Its sockets are the inner graph's parameters and object inputs, plus a **Result**. A shape or outline input takes several parts, one noodle each, when everything inside that reads it can use them all (a Border, its shapes, the Output, or another graph's input that takes several): the inner graph gets them together as one group, the way an operation on the toolbar takes everything selected. Otherwise, and for a picture input, a new noodle replaces the old one. Leave an object input unwired and the inner graph keeps its own object.
 
 To edit the inner graph, double-click its card or click **Open**. The breadcrumb above the editor (for example *Outer > Inner*) shows where you are; click it or press **Escape** to step back out. Changes inside affect only that copy.
 
