@@ -144,7 +144,7 @@ The same picture at the same size traces to the same outline Image to Path gives
 
 ### Pictures as Fields
 
-**Mask From Field** makes a mask from any rule you build, asked of every pixel of the picture wired into it. Wire a selection into its diamond **Selection** socket: the pixels it says yes to keep their colour and their own transparency, the rest are cleared, and a number from 0 to 1 keeps that share of a pixel. Its card previews the mask like the other masks, and it feeds Trace Mask the same way.
+**Mask From Field** makes a mask from any rule you build, asked of every pixel of the picture wired into it. Wire a selection into its diamond **Selection** socket: the pixels it says yes to keep their colour and their own transparency, the rest are cleared, and a number from 0 to 1 keeps that share of a pixel. Turn on **Solid** to make every kept pixel fully solid instead, as Color Mask does: a partly see-through pixel that is at least half solid becomes solid and a fainter one is left out, while a number still keeps its share (0.5 keeps half of a solid pixel). Its card previews the mask like the other masks, and it feeds Trace Mask the same way.
 
 **Trace Mask** has a diamond **Selection** socket of its own, so you can skip Mask From Field: wire the selection straight into it and it traces just the pixels the selection picks, exactly what the same selection through Mask From Field traces. See-through pixels stay out even when the selection picks them. With nothing wired in, Trace Mask traces every visible pixel; unchecking its Selection traces none.
 
@@ -157,7 +157,7 @@ The same picture at the same size traces to the same outline Image to Path gives
 
 **Palette** splits the picture wired into it into its **Count** most distinct colours, exactly as Color Mask does, and shows them on its card as numbered tiles, the first tile being 1. Its outputs are **Colors** (the colours in the tiles' order, as text like Color Mask's), **Background** (the number of the tile most of the picture's edge is, 0 when the edge is mostly see-through), **Background Color**, and **Swatch**, on a dashed noodle: each pixel's nearest tile number, 0 for a see-through pixel. Changing Count changes the tiles but keeps every noodle.
 
-- *Palette Swatch -> Compare (Equal To 2) -> Mask From Field* keeps the pixels of tile 2, exactly the pixels Color Mask keeps with only that tile ticked. Join several such Compares with **Boolean Math** (Or) to keep several colours.
+- *Palette Swatch -> Compare (Equal To 2) -> Mask From Field* keeps the pixels of tile 2, exactly the pixels Color Mask keeps with only that tile ticked; with Mask From Field's **Solid** on, the mask is Color Mask's own, partly see-through pixels made solid as Color Mask makes them. Join several such Compares with **Boolean Math** (Or) to keep several colours.
 
 To let the picture choose, wire it into **Analyze Picture** too. It gives the analysis Image to Path would pick for that picture - Transparency, Colors or Intensity - so wired into a **Switch**'s Choose, with each mask wired into the option of the same name, it passes on the mask that suits the picture.
 
