@@ -75,7 +75,22 @@ When MatterCAD starts, it shows **Welcome to MatterCAD**: "Let's show you around
 
 To take the tour at any time, click **☰ MatterCAD** › **Interface Tour** (on a Mac, also **Help** › **Interface Tour**), then **Next**.
 
-The tour dims the window and points at one part of it at a time, with a short note: the **Application Menu**, **Add to Bed**, **Primitive Shapes**, **Undo & Redo**, the **Tumble Cube**, **Sign In**, **Search MatterCAD**, **Themes** and **Help**. A stop is skipped when that part isn't on screen.
+The tour dims the window and points at one part of it at a time, with a short note:
+
+1. **Start Here** - the start card on a new design, where you describe a design to the AI, open a file or pick one from your library. The first time you use MatterCAD, the start card stays open through the welcome window and the tour, so the tour begins here.
+2. **Application Menu** - the **☰ MatterCAD** menu. **Help** is here too, with tutorials, docs and keyboard shortcuts.
+3. **New Design** - the **+** button (**Create New Design**) by the tabs, which starts a new design in its own tab.
+4. **Library** - the **Library** tab, with your designs, parts and folders.
+5. **Add to Bed** - adds designs and parts from your library to the bed.
+6. **Save** - saves your design. The arrow beside it saves a copy under a new name or exports the design.
+7. **Undo & Redo**
+8. **Primitive Shapes** - the shapes down the left side; drag one to the bed to start building.
+9. **Design and AI** - the side panel's tabs: **Design** lists your design's parts and the settings of the one you select; **AI** builds or changes a design from what you describe.
+10. **Tumble Cube**
+11. **Sign In**
+12. **Search MatterCAD**
+
+A stop is skipped when that part isn't on screen: **Start Here** shows only while a new design's start card is open.
 
 - Click **Next**, or press Enter, to go on. On the last stop the button reads **Done**.
 - Click **Prev** to go back.
