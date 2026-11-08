@@ -61,6 +61,7 @@ Most toolbar operations are also nodes. Wire a shape or an outline into an opera
   - **Bounding Rectangle** gives the rectangle round them, reaching **Expand** past them on every side, its corners rounded by **Radius** in **Segments** steps.
   - **Bounding Circle** gives the circle round them, reaching **Expand** past them. **Centering** puts its centre where most of the shape is (**Weighted**) or in the middle of the shape's extents (**Bounds**).
   - **Offset Path** grows the outlines by **Expand** (a negative Expand shrinks them), with **Style** setting the corners, and fills gaps and inside corners narrower than twice its **Infill**.
+- **Drop Small Loops** (Add Node > Operations, right after Offset Path) removes islands and fills holes smaller than its **Min Surface Area**, in square millimetres, from the outlines wired into its **Source**, one noodle or several. Open lines are left alone, and when there is only one loop it is always kept.
 - **Bounds** takes parts in and gives back a box that fits them, plus the box's **Min**, **Max**, **Size** and **Center** as values (see **Values Between Nodes** below).
 - **Fillet** and **Chamfer** as nodes round (or cut) **every sharp edge** of what is wired in, since a card has no 3D view to click edges in. Fed an outline, they round every corner. To round only some, wire a selection into their **Selection** diamond (see **Choose Edges with Selection Nodes** below). Unchecking Selection, with nothing wired in, rounds none. The toolbar's Fillet and Chamfer still round only the edges you click.
 - **Set Color** colours whatever is wired into it with its **Color**, and the part shows that colour whatever colours its own pieces have. Wire a Color Mask's **First Color** (the first colour ticked on its card) or **Background Color** into it to colour a part from the picture, as Colour Layers (Nodes) colours each layer.
@@ -145,7 +146,7 @@ The Image nodes split **Image to Path** into steps you can see and change:
 3. Wire the mask into **Trace Mask**. It traces the mask's outline into a path, leaving out pieces smaller than **Min Surface Area**. Under its settings, its card shows the mask in black and white with the traced outline drawn over it in orange, so you can see which pieces it kept.
 4. Wire Trace Mask's result into **Linear Extrude**, or any other node that takes an outline.
 
-The same picture at the same size traces to the same outline Image to Path gives. A picture wired straight into Trace Mask traces its solid pixels.
+The same picture at the same size traces to the same outline Image to Path gives. A picture wired straight into Trace Mask traces its solid pixels. Trace Mask's **Loop Count** output gives how many loops the trace found, before the small ones are left out.
 
 ### Pictures as Fields
 
