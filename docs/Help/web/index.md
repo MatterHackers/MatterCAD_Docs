@@ -13,7 +13,7 @@ A design page works in three steps:
 
 1. **Preview** - The design opens as a 3D preview. You can turn it, move it and zoom, but nothing changes the design.
 2. **Edit** - Press **Edit** and the MatterCAD editor slides in around the same view.
-3. **Done** - Press **Done** to go back to the preview.
+3. **View** - Press **View** to go back to the preview.
 
 <!-- AUTO_IMAGE: type=shot id=web-design-page -->
 ![A design page on the MatterCAD website: the design in its 3D preview, with Reset View and the camera buttons at the preview's top-left and the Edit button beside them](https://matterhackers.github.io/MatterCAD_Docs/assets/web-design-page.png)
@@ -34,7 +34,7 @@ Its page opens. While it gets ready you see "Loading MatterCAD…", then "Downlo
 The title bar above the design holds:
 
 - **Library** (with the back arrow) - Back to the library folder you came from.
-- **Edit** - Opens the editor. It reads **Done** while you edit. It can't be pressed until MatterCAD has started, or while the editor is sliding in or out.
+- **Edit** - Opens the editor. While you edit it reads **View**, a plain button that goes back to the preview. It can't be pressed until MatterCAD has started, or while the editor is sliding in or out.
 - The design's name.
 - **The full screen button** (an icon of four corners, between the name and **Download**) - Fills the screen with the title bar and the design. Press it again, or press Esc, to go back. Its tooltip reads "Full screen" or "Exit full screen". It is there only when your browser can fill the screen.
 - **Download** - Downloads the design's file as it was last saved.
@@ -52,7 +52,7 @@ In the preview a click never selects or moves a part. Press **Edit** to change t
 
 ## Edit the Design
 
-Press **Edit** in the title bar. The editor slides in around the design:
+Press **Edit** in the title bar. With a mouse you can also double-click the 3D scene to start editing, where the design allows it. The editor slides in around the design:
 
 - The **toolbar** across the top, starting with the **MatterCAD** menu and **Add to Bed** ([The MatterCAD Menu](mattercad-menu.md)).
 - The **favorites bar** of shapes down the left side.
@@ -65,7 +65,7 @@ While you edit, the page's address says so: reloading the page, or opening that 
 
 ## Stop Editing
 
-Press **Done** in the title bar. If every change is saved, the editor slides away and you are back in the preview.
+Press **View** in the title bar. If every change is saved, the editor slides away and you are back in the preview.
 
 If you have changes that are not saved, MatterCAD asks first, in a box titled **Save Changes?**: "Save your changes before you stop editing?"
 

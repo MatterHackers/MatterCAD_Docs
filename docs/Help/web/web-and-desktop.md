@@ -47,5 +47,5 @@ MatterCAD on the website needs a browser with WebGPU, such as a current Chrome, 
 
 ## Related
 
-- [MatterCAD on the Web](index.md) - Preview, Edit and Done
+- [MatterCAD on the Web](index.md) - Preview, Edit and View
 - [Using MatterCAD on a Phone](phone.md) - The phone layout

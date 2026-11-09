@@ -53,6 +53,6 @@ MatterCAD reads the same formats as on your computer: MCX, STL, OBJ, 3MF, AMF, S
 
 ## Related
 
-- [MatterCAD on the Web](index.md) - Preview, Edit and Done
+- [MatterCAD on the Web](index.md) - Preview, Edit and View
 - [Saving on the Web](saving.md) - Keep your design in your online library
 - [Library](../library/index.md) - Organize, store and share your designs

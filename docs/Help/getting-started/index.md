@@ -19,7 +19,7 @@ On a Mac, press ⌘ (Command) wherever these pages say Ctrl.
 - **☰ MatterCAD menu** - At the left end of the tabs: **Add System File to Bed**, **Open System File**, **Open Recent**, **Help**, **Interface Tour**, **Check For Update**, **Settings**, **Community** and **About MatterCAD**. On a Mac the same items are also in the menu bar at the top of the screen. See [Menus and Toolbar](../workspace/menus-and-toolbar.md).
 - **Toolbar** - Across the top of the design:
   - **Add to Bed** - opens the library so you can drag parts and files onto the bed. To add a file from your computer, use **Add System File to Bed** in the **☰ MatterCAD** menu.
-  - **Save** - saves the design. The arrow beside it holds **Save As** and **Export**. The button reads **Save •** while you have changes that are not saved.
+  - **Save** - saves the design. The arrow beside it holds **Save As** and **Export**. The button lights up in the accent color while you have changes that are not saved.
   - **Bed** - **Export**, **Cut**, **Copy**, **Paste**, **Reload** and **Clear Bed**.
   - **Undo** and **Redo**.
   - The operations, in groups such as **Transform**, **Placement**, **Merge** and **Duplication**. The **Tools** button at the end of the toolbar lets you collapse or hide groups.

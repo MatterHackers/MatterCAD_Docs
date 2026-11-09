@@ -67,7 +67,7 @@ To pick a file on your computer instead, choose **Add System File to Bed** in th
 
 ### Save
 
-- Click **Save** to save the design (Ctrl+S). The button reads **Save •** while the design has changes you have not saved.
+- Click **Save** to save the design (Ctrl+S). The button lights up in the accent color while the design has changes you have not saved.
 - Click the arrow beside it for **Save As** (Ctrl+Shift+S) and **Export**, and **Share...** when the design is saved in your Cloud Library. A design saved only on your computer has no **Share...** row. See [Sharing](../library/sharing.md).
 
 See [Saving and Exporting](../getting-started/saving-and-exporting.md) for what each one does.

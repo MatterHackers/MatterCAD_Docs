@@ -13,7 +13,7 @@ On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
 ## Save Your Design
 
-The **Save** button is in the design's toolbar, right after **Add to Bed**. It reads **Save •** while the design has changes you have not saved.
+The **Save** button is in the design's toolbar, right after **Add to Bed**. It lights up in the accent color while the design has changes you have not saved.
 
 - **Save** (Ctrl+S) writes the design to its MCX file. A design that has never been saved asks for a name and a folder first, as Save As does. So does a design you opened from an STL, a picture or any other file that is not an MCX: Save never writes your design over the file it came from.
 - **Save As** (Ctrl+Shift+S, or the arrow beside **Save**) saves the design under a new name or in another folder:

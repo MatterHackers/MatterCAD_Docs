@@ -14,7 +14,7 @@ On a phone, MatterCAD lays itself out to give the 3D view as much of the small s
 
 ## On the Design's Page
 
-On a phone, the title bar's buttons are icons only: the back arrow (to the library), the pencil (**Edit**), which turns into a check mark (**Done**) while you edit, the full screen icon (where your browser can fill the screen), and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
+On a phone, the title bar's buttons are icons only: the back arrow (to the library), the pencil (**Edit**), which turns into an eye (**View**) while you edit, the full screen icon (where your browser can fill the screen), and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
 
 ## The Toolbar
 
@@ -131,7 +131,7 @@ Where your phone's browser can fill the screen, the title bar has a full screen 
 
 ## Related
 
-- [MatterCAD on the Web](index.md) - Preview, Edit and Done
+- [MatterCAD on the Web](index.md) - Preview, Edit and View
 - [Viewport Navigation](../getting-started/viewport-navigation.md) - Turn, move and zoom the view
 - [Editing Objects](../getting-started/editing-objects.md) - Move, turn and resize parts
 - [Adding Parts on the Web](adding-parts.md) - Shapes, sample parts and your own designs

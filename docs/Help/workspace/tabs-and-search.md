@@ -28,7 +28,7 @@ The **Store** and **Library** tabs are always there. When there are more tabs th
 
 ### Unsaved changes
 
-While a design has changes you have not saved, the cube icon on its tab is tinted and underlined in the highlight color. The **Save** button in its toolbar reads **Save •** at the same time.
+While a design has changes you have not saved, the cube icon on its tab is tinted and underlined in the highlight color. The **Save** button in its toolbar lights up in the accent color at the same time.
 
 ### Opening, closing and reordering
 

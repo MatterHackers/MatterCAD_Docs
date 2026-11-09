@@ -11,7 +11,7 @@ On the website, **Save** keeps your design in your online library, the same libr
 
 ## Save
 
-Click **Save** in the toolbar, or press Ctrl+S (⌘S on a Mac). The button reads **Save •** while the design has changes that are not saved.
+Click **Save** in the toolbar, or press Ctrl+S (⌘S on a Mac). The button lights up in the accent color while the design has changes that are not saved.
 
 - **A design you can change** is saved over its own copy in your library.
 - **A design you can't save over** (one that isn't yours, or one that isn't an MCX design, such as an STL) is never written over. Save opens **Save As** instead, to save your own copy as a new MCX design.
@@ -64,7 +64,7 @@ While you edit, MatterCAD keeps a copy of your unsaved changes in this browser e
 
 The next time you open the same design's page in this browser, MatterCAD asks, in a box titled **Unsaved Changes Found**: "MatterCAD found changes to this design that weren't saved. Restore them?"
 
-- **Restore** - Puts your changes back and opens the editor. They are still not saved: click **Save** to keep them. **Discard Changes** (when you press **Done**) still takes you back to the saved version.
+- **Restore** - Puts your changes back and opens the editor. They are still not saved: click **Save** to keep them. **Discard Changes** (when you press **View**) still takes you back to the saved version.
 - **Discard** - Throws the copy away.
 
 If you close the box without choosing, the copy is kept and offered again next time.
@@ -80,6 +80,6 @@ Good to know:
 
 ## Related
 
-- [MatterCAD on the Web](index.md) - Preview, Edit and Done
+- [MatterCAD on the Web](index.md) - Preview, Edit and View
 - [The MatterCAD Menu](mattercad-menu.md) - Start a new design
 - [Cloud Library](../library/cloud-library.md) - Your designs online

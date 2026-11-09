@@ -32,7 +32,7 @@ The new design is called "New Design" and the page's title changes to match. The
 
 To go back to the design you had open before, use your browser's Back button. It opens that design as it was last saved.
 
-You can also start a new design from the website's **Library** page: open a folder and click **New Design**. MatterCAD opens on an empty bed, ready to edit, and the first **Save** opens **Save As** in that folder. If you press **Done** before you ever save it, you go back to the folder.
+You can also start a new design from the website's **Library** page: open a folder and click **New Design**. MatterCAD opens on an empty bed, ready to edit, and the first **Save** opens **Save As** in that folder. If you press **View** before you ever save it, you go back to the folder.
 
 ## Interface Tour
 
@@ -58,6 +58,6 @@ The other settings MatterCAD has on your computer aren't in this window. The col
 
 ## Related
 
-- [MatterCAD on the Web](index.md) - Preview, Edit and Done
+- [MatterCAD on the Web](index.md) - Preview, Edit and View
 - [Saving on the Web](saving.md) - Save, Save As and unsaved changes
 - [Web and Desktop Differences](web-and-desktop.md) - What else the website's editor leaves out
