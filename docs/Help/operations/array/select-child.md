@@ -28,7 +28,7 @@ Select Child picks one child from a group of objects based on either an index nu
 - **Child Index** - The position of the child to select, counting from 0 (default 0; shown with By Index). Supports [expressions](../../workspace/expressions.md)
 - **Child Name** - The name of the child to select (shown with By Name). Supports [expressions](../../workspace/expressions.md)
 
-An index below 0 picks the first child, and an index past the end picks the last child. A name picks the child with that name. If you later put that part inside an operation, for example a Combine or an Array, the name still finds it and the Select Child shows that operation's result. A name that matches no part picks the first child. If there are no children, nothing is shown.
+An index below 0 picks the first child, and an index past the end picks the last child. A name picks the child with that name. If you later put that part inside a group or an operation, for example a Combine or an Array, the name still finds it and the Select Child shows that group or operation. A name that matches no part picks the first child. If there are no children, nothing is shown.
 
 ## Use in Scripting
 
