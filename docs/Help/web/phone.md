@@ -20,7 +20,7 @@ On a phone, the title bar's buttons are icons only: the back arrow (to the libra
 
 The toolbar keeps to one row across the top:
 
-- **☰** - On the website, the MatterCAD menu: Add System File to Bed, New Design, Interface Tour, Help and Settings ([The MatterCAD Menu](mattercad-menu.md)). MatterCAD on your computer has its MatterCAD menu in the row of tabs instead.
+- **☰** - The MatterCAD menu. On the website's design pages it is the **☰ MatterCAD** button in the title bar instead, after the eye: **New Design**, **Interface Tour**, **Help** and **Settings** ([The MatterCAD Menu](mattercad-menu.md)). MatterCAD on your computer has its MatterCAD menu in the row of tabs.
 - **Add** (the cube with a plus) - Opens the shapes, with your library at the end (see [Add](#add) below).
 - **Undo** and **Redo**.
 - **Save** - Saves the design ([Saving on the Web](saving.md)).

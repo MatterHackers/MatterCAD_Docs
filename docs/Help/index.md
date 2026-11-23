@@ -68,4 +68,4 @@ Welcome to MatterCAD, professional 3D design software that helps you create and 
 - [What's New](whats-new.md) - Latest features and improvements
 - [Full Release Notes](release-notes.md) - Detailed version history
 - [Frequently Asked Questions](frequently-asked-questions.md) - Common questions and answers
-- [Getting More Help](get-support.md) - Contact support
+- [Getting More Help](get-support.md) - Send feedback from MatterCAD or the website, or contact support

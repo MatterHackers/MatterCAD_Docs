@@ -20,15 +20,15 @@ You can bring models you already have into MatterCAD: files from your computer, 
 ## Add a File to the Design You Have Open
 
 <!-- AUTO_IMAGE: type=shot id=gs-add-system-file-menu -->
-![The MatterCAD menu open over a design tab with its first item, Add System File to Bed, highlighted](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-add-system-file-menu.png)
+![The Add to Bed button and the library it opens over a design, with the pointer on its first folder, System File, which adds a file from the computer to the bed](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-add-system-file-menu.png)
 
-1. Click the **☰ MatterCAD** menu at the left end of the tabs (on a Mac you can also use the **File** menu in the menu bar).
-2. Choose **Add System File to Bed**, the first item.
-3. Pick the file. Its parts are added to the bed of the design you are working on.
+1. Click **Add to Bed** in the toolbar. The library opens over the left side of the design.
+2. Open **System File**, the first folder.
+3. Pick the file. The library closes, and the file's parts are added to the bed of the design you are working on, in one undo step.
 
-**Add System File to Bed** is greyed out while the **Library** or **Help** tab is in front, because there is no bed to add to. Click the tab of the design you want first.
+On a Mac you can also choose **Add System File to Bed** in the menu bar's **File** menu.
 
-The file dialog for **Open System File** and **Add System File to Bed** offers every format MatterCAD reads (its filter reads "MCX, STL, OBJ, 3MF, AMF, STEP, SVG, DXF, Images"): MCX, STL, OBJ, 3MF, AMF, STEP/STP, SVG and DXF files, and pictures (JPG/JPEG, PNG, BMP, GIF, WEBP, TGA).
+The file dialog for **Open System File** and **System File** offers every format MatterCAD reads (its filter reads "MCX, STL, OBJ, 3MF, AMF, STEP, SVG, DXF, Images"): MCX, STL, OBJ, 3MF, AMF, STEP/STP, SVG and DXF files, and pictures (JPG/JPEG, PNG, BMP, GIF, WEBP, TGA).
 
 ## Drag and Drop
 
@@ -52,6 +52,7 @@ Drag files from your computer onto the 3D view. They land on the bed where you l
 
 Click **Add to Bed** in the toolbar. The library opens over the left side of the design. From there you can:
 
+- Open **System File** to pick a file from your computer (above)
 - Open **Included** for the built-in shapes, **Sample Parts** (finished designs such as the **Coin**), **Tools** and **Design Apps**
 - Open **Computer** for the files in your Downloads, Desktop and Documents folders
 - Open your **Cloud Library** when you are signed in
@@ -62,7 +63,7 @@ Click **Add to Bed** in the toolbar. The library opens over the left side of the
 
 ### The Library Tab
 
-The **Library** tab shows the same library at full size. Right-click any item and choose **Add to Bed** to add it to the design you have open, or **Open a copy** to start a new design from it. **Open** opens a saved design (an MCX file in a folder you can save to) in its own tab; it is greyed out for STL files, built-in shapes and sample parts, which you open with **Open a copy** instead.
+The **Library** tab shows the same library at full size. Its **System File** folder opens a file from your computer as a design of its own, as **Open System File** does. Right-click any item and choose **Add to Bed** to add it to the design you have open, or **Open a copy** to start a new design from it. **Open** opens a saved design (an MCX file in a folder you can save to) in its own tab; it is greyed out for STL files, built-in shapes and sample parts, which you open with **Open a copy** instead.
 
 ## Tips
 

@@ -4,18 +4,21 @@
   "style": "tight",
   "steps": [
     {
-      "open-menu": [
-        "MatterCAD",
-        "Add System File to Bed"
-      ]
+      "click": "Add Content Menu"
+    },
+    {
+      "hover": "System File Row Item Collection"
     }
   ],
   "crop": [
-    "menu",
-    "tab-bar"
+    {
+      "widget": "Add Content Menu"
+    },
+    {
+      "widget": "Popup Library"
+    }
   ],
-  "margin": 24,
-  "alt": "The MatterCAD menu open over a design tab with its first item, Add System File to Bed, highlighted",
+  "alt": "The Add to Bed button and the library it opens over a design, with the pointer on its first folder, System File, which adds a file from the computer to the bed",
   "replaces": {
     "needed": "The ☰ MatterCAD menu open over a design tab, with Add System File to Bed highlighted as its first item"
   }

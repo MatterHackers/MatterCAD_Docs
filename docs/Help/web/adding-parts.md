@@ -20,7 +20,7 @@ Click **Add to Bed** in the toolbar. The library opens over the left side of the
 On a phone, tap **Add**, then the last tile, the open folder (**Add from Library…**). Drag an item onto the bed, or hold a finger on it and choose **Add to Bed**.
 
 <!-- AUTO_IMAGE: type=shot id=web-add-to-bed -->
-![The editor on a design's page on the MatterCAD website with the Add to Bed library open over the left side, listing Included, My Designs, Shared with Me and Purchased beside the design](https://matterhackers.github.io/MatterCAD_Docs/assets/web-add-to-bed.png)
+![The editor on a design's page on the MatterCAD website with the Add to Bed library open over the left side, listing System File, Included, My Tools, Toolbar, My Designs, Shared with Me and Purchased beside the design](https://matterhackers.github.io/MatterCAD_Docs/assets/web-add-to-bed.png)
 
 ### Included
 
@@ -46,7 +46,7 @@ If the website refuses to send a design, MatterCAD shows a message asking you to
 
 ## Files from Your Computer
 
-- **Add System File to Bed** - Open the **MatterCAD** menu (☰) at the start of the toolbar and choose **Add System File to Bed**, its first item. Your browser asks you to pick a file, and its parts are added to the bed. This works on a phone too.
+- **System File** - Click **Add to Bed** and open **System File**, the first folder in the library. Your browser asks you to pick a file, the library closes, and the file's parts are added to the bed. This works on a phone too: tap **Add**, then the open folder at the end of the grid.
 - **Drag and drop** - Drag a file from your computer onto the 3D view while you edit. It lands where you let go.
 
 MatterCAD reads the same formats as on your computer: MCX, STL, OBJ, 3MF, AMF, STEP, SVG, DXF and pictures. See [Adding Existing Objects](../getting-started/adding-existing-objects.md#drag-and-drop) for what each one brings in.

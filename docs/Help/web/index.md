@@ -35,9 +35,12 @@ The title bar above the design holds:
 
 - **Library** (with the back arrow) - Back to the library folder you came from.
 - **Edit** - Opens the editor. While you edit it reads **View**, a plain button that goes back to the preview. It can't be pressed until MatterCAD has started, or while the editor is sliding in or out.
+- **☰ MatterCAD** - The MatterCAD menu, shown only while you edit ([The MatterCAD Menu](mattercad-menu.md)).
 - The design's name.
 - **The full screen button** (an icon of four corners, between the name and **Download**) - Fills the screen with the title bar and the design. Press it again, or press Esc, to go back. Its tooltip reads "Full screen" or "Exit full screen". It is there only when your browser can fill the screen.
 - **Download** - Downloads the design's file as it was last saved.
+
+Above the title bar, the website's header has a **Feedback** button for telling us about the design, the website or the app ([Getting More Help](../get-support.md#feedback-on-the-website)). Next to it is the menu under your name, where you choose the website's theme (**Light**, **Dark** or **Match my system**) and color, and **Sign out**. When you aren't signed in, a theme button sits beside **Sign in** instead.
 
 If the design can't be shown, the page says why, starting with "This design couldn't be shown", and tells you to use **Download** to get the file.
 
@@ -54,7 +57,7 @@ In the preview a click never selects or moves a part. Press **Edit** to change t
 
 Press **Edit** in the title bar. With a mouse you can also double-click the 3D scene to start editing, where the design allows it. The editor slides in around the design:
 
-- The **toolbar** across the top, starting with the **MatterCAD** menu and **Add to Bed** ([The MatterCAD Menu](mattercad-menu.md)).
+- The **toolbar** across the top, starting with **Add to Bed**. The **☰ MatterCAD** button appears in the title bar ([The MatterCAD Menu](mattercad-menu.md)).
 - The **favorites bar** of shapes down the left side.
 - The **side panel** on the right, with its **Design** and **AI** tabs and the **Notes** button.
 - The **camera controls**: the cube in the top-right corner of the view and the round buttons around it.
@@ -79,7 +82,7 @@ While you have changes that are not saved, your browser asks before you leave th
 
 ## Topics
 
-- [The MatterCAD Menu](mattercad-menu.md) - Add System File to Bed, New Design, the Interface Tour, Help and Settings on the website
+- [The MatterCAD Menu](mattercad-menu.md) - New Design, the Interface Tour, Help and Settings on the website
 - [Saving on the Web](saving.md) - Save, Save As to a folder of your choice, Export, and getting back unsaved changes
 - [Adding Parts on the Web](adding-parts.md) - Shapes, sample parts and the designs in your own library
 - [Using MatterCAD on a Phone](phone.md) - The phone layout, the selection bar, press and hold menus and the bottom sheet

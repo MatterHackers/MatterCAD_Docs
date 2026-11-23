@@ -2,21 +2,18 @@
 title: The MatterCAD Menu
 parent: "MatterCAD on the Web"
 nav_order: 1
-description: "What each item in the website editor's MatterCAD menu does: add a file, new design, tour, help and settings."
+description: "What each item in the website's MatterCAD menu does: new design, tour, help and settings."
 keywords: web menu, hamburger menu, website menu, browser menu
 ---
 # The MatterCAD Menu on the Website
 
-While you edit a design on the website, the toolbar starts with a **MatterCAD** menu (☰), before **Add to Bed**. On a phone the button shows only the ☰, at the start of the toolbar.
+While you edit a design on the website, the title bar above the design shows a **☰ MatterCAD** button, right after **View** and before the design's name. Click it to open the MatterCAD menu over the editor. Click it again, press Esc or click away to close the menu. The button is hidden while you only view the design.
 
-It holds five items: **Add System File to Bed**, **New Design**, **Interface Tour**, **Help** and **Settings**.
+It holds four items: **New Design**, **Interface Tour**, **Help** and **Settings**.
 
-<!-- AUTO_IMAGE: type=shot id=web-menu-open -->
-![The website's editor with the MatterCAD menu open under its ☰ MatterCAD button at the start of the toolbar: Add System File to Bed, New Design, Interface Tour, Help and Settings](https://matterhackers.github.io/MatterCAD_Docs/assets/web-menu-open.png)
+<!-- IMAGE_NEEDED: The website's editor with the MatterCAD menu open under the ☰ MatterCAD button in the title bar: New Design, Interface Tour, Help and Settings -->
 
-## Add System File to Bed
-
-**Add System File to Bed** brings in a file from your computer or phone. Your browser asks you to pick the file, and its parts are added to the bed. See [Adding Parts on the Web](adding-parts.md#files-from-your-computer).
+To add a file from your computer or phone, use **Add to Bed** and open **System File** ([Adding Parts on the Web](adding-parts.md#files-from-your-computer)). To send feedback, use the **Feedback** button in the website's header ([Getting More Help](../get-support.md#feedback-on-the-website)).
 
 ## New Design
 
@@ -54,7 +51,7 @@ The first time you open it, the articles take a moment to arrive: the window sho
 - **Number format** (under **General**) - How numbers show and are typed: **System** (your computer's or phone's own way), **1234.5** (a point before the decimals) or **1234,5** (a comma before the decimals). The editor redraws every number in the new format at once.
 - **Depth Peeling Layers** (under **Options**) - How many layers of see-through parts the 3D view draws: **Off**, **4**, **6** (the starting setting) or **8**. Fewer layers draw faster, which can help on a slower phone.
 
-The other settings MatterCAD has on your computer aren't in this window. The colors follow the light or dark theme you chose on the website, and the camera, snapping and units are set with the camera controls in the 3D view ([Viewport Navigation](../getting-started/viewport-navigation.md)).
+The other settings MatterCAD has on your computer aren't in this window. The colors follow the theme you chose on the website, in the menu under your name in the website's header (or the theme button beside **Sign in** when you aren't signed in), and the camera, snapping and units are set with the camera controls in the 3D view ([Viewport Navigation](../getting-started/viewport-navigation.md)).
 
 ## Related
 

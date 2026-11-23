@@ -7,7 +7,7 @@ keywords: help search, status bar, rename tab, close tab, find help
 ---
 # Tabs, Search and the Status Bar
 
-The tabs along the top of the window hold the **Store**, the **Library**, **Help** and every design you have open. At the right end of the tab bar are the help search button and your account. The status bar along the bottom of the window shows hints, running tasks and your connection.
+The tabs along the top of the window hold the **Store**, the **Library**, **Help** and every design you have open. At the right end of the tab bar are the help search button and your account. The status bar along the bottom of the window shows hints, running tasks and your connection, and has the **Submit Feedback** button.
 
 On a Mac, press ⌘ (Command) wherever this page says Ctrl.
 
@@ -81,6 +81,7 @@ The bar along the bottom of the window shows, from left to right:
 
 - **Running tasks** - Anything MatterCAD is working on, such as saving a design, with a small progress bar under its name.
 - **Hints** - What the button or control under the mouse does, or the keys that do the same thing. For example, hover over **Reset View** to see "W".
+- **Submit Feedback** - Opens the **Submit Feedback** window, to report a bug, ask for a feature or ask a question. In a narrow window it shows only its icon. See [Getting More Help](../get-support.md#submit-feedback-in-mattercad).
 - **The theme button** - Opens the **Theme** settings in a small panel, so you can change the colors without opening Settings. See [Settings](settings.md#theme).
 - **The AI item** - Shows **AI Ready**, **AI Connected** or **AI Editing** while AI assistant access is on, and is hidden while it is off. Click it to open **AI Assistant Access (MCP)**. To turn access on, use **Settings** › **AI Providers**. See [Using AI Assistants](../getting-started/ai-assistants.md).
 - **The globe** - Your connection to MatterCAD's online services. It reads **Connected** while you are signed in and online, **Disconnected** while you are signed out or offline, and **Retry Login** when your sign-in has run out and you need to [sign in](account.md) again. Hover over it to see, for example, "Services: Connected". It only reports: clicking it opens nothing.
