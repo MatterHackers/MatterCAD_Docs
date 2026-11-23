@@ -125,7 +125,7 @@ One repair is made silently. A mesh made of loose, unwelded triangles -- which m
 
 ## Tips
 
-- Fillet last. Round the edges of a shape after you have finished cutting and combining it, so you do not have to re-pick edges every time the shape changes
+- Fillet last. Round the edges of a shape after you have finished cutting and combining it, so you do not have to re-pick edges every time the shape changes. The exception is a hollow part made by subtracting a cavity: round the outer body's edge and the cavity's matching edge (the outer radius less the wall) before the Subtract, so the wall stays one thickness around the curve
 - Selections survive a rebuild. They are stored as geometry, not as edge numbers, so changing the size of the box under a Fillet keeps the same edges rounded
 - If a whole rim should be rounded, hover one edge of it, step the badge on once so the whole rim lights up, and click -- that is nearly always faster and more robust than picking edges one at a time. If you have already committed the single edge, the row's reading dropdown gets you there without re-picking
 - Keep segments low while you work and raise them at the end. Every segment is mesh
