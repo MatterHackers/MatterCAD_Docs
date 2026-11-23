@@ -5,7 +5,7 @@ parent: "Reshape Operations"
 grand_parent: "Operations"
 nav_order: 11
 description: Fill every inside corner of a part with a smooth bead, which makes joins stronger.
-keywords: inside fillet, inner corner, concave corner, cove, strengthen corner, smooth join, smooth inside, easy to clean, even wall
+keywords: inside fillet, inner corner, concave corner, cove, strengthen corner, smooth join, smooth inside
 ---
 # Round Inside Edges
 
@@ -78,7 +78,7 @@ Use [Fillet](fillet.md) when:
 - only some inside corners should be filled, or different ones want different radii
 - the part is large or detailed and you do not want to pay for whole-part work
 - you want the selection to be a parametric part of the design that survives changes to the shape underneath
-- the part is hollow and its walls should stay even: Round Inside Edges only adds material inside, so a wall thickens at every corner it fills. Fillet the outside body and the cavity before subtracting instead
+- the part is hollow and its walls should stay even: Round Inside Edges only adds material inside, so a wall thickens at every corner it fills. Fillet the outside body and the cavity before subtracting instead, the cavity's radius the body's less the wall (see the tips in [Fillet](fillet.md))
 
 ## Tips
 
