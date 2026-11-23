@@ -2,7 +2,7 @@
 title: Getting More Help
 nav_order: 102
 description: Send feedback from MatterCAD or the website, or contact MatterHackers support when you need help or want to report a problem.
-keywords: support, contact, report a bug, customer service, email, help me, feedback, submit feedback, send feedback, feature request, report a problem
+keywords: support, contact, report a bug, customer service, email, help me, feedback, submit feedback, send feedback, feature request
 ---
 # Issue Reporting & Support
 
