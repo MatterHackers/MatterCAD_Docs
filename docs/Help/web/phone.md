@@ -10,17 +10,18 @@ keywords: mobile, iphone, android, smartphone, touch, small screen, phone layout
 On a phone, MatterCAD lays itself out to give the 3D view as much of the small screen as it can, whichever way up you hold it. You get the same layout whenever MatterCAD's area is narrower than 600 pixels or shorter than 480 pixels, for example in a browser window made small, and in MatterCAD on your computer if you make its window that small. Most tablets get the full layout either way up. The layout changes as you turn the phone or resize the window; your design, what you have selected and your undo history stay as they are.
 
 <!-- AUTO_IMAGE: type=shot id=web-phone-portrait -->
-![MatterCAD's editor on a phone held upright: the one-row toolbar (MatterCAD menu, Add, Undo, Redo, Save, Tools) at the top, the 3D view with the Cube selected, the selection bar, and the bottom sheet at half height on the Design tab](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-portrait.png)
+![MatterCAD's editor on a phone held upright: the one-row toolbar (Add, Undo, Redo, Save, Tools) at the top, the 3D view with the Cube selected, the selection bar, and the bottom sheet at half height on the Design tab](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-portrait.png)
 
 ## On the Design's Page
 
-On a phone, the title bar's buttons are icons only: the back arrow (to the library), the pencil (**Edit**), which turns into an eye (**View**) while you edit, the full screen icon (where your browser can fill the screen), and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
+On a phone, the title bar's buttons are icons only, apart from **☰ MatterCAD** (below): the back arrow (to the library), the pencil (**Edit**), which turns into an eye (**View**) while you edit, the full screen icon (where your browser can fill the screen), and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
+
+While you edit, the title bar also shows the **☰ MatterCAD** button, with its words, right after the eye. It opens the MatterCAD menu: **New Design**, **Interface Tour**, **Help** and **Settings** ([The MatterCAD Menu](mattercad-menu.md)). The toolbar has no ☰ of its own on the website.
 
 ## The Toolbar
 
 The toolbar keeps to one row across the top:
 
-- **☰** - The MatterCAD menu. On the website's design pages it is the **☰ MatterCAD** button in the title bar instead, after the eye: **New Design**, **Interface Tour**, **Help** and **Settings** ([The MatterCAD Menu](mattercad-menu.md)). MatterCAD on your computer has its MatterCAD menu in the row of tabs.
 - **Add** (the cube with a plus) - Opens the shapes, with your library at the end (see [Add](#add) below).
 - **Undo** and **Redo**.
 - **Save** - Saves the design ([Saving on the Web](saving.md)).
@@ -78,13 +79,13 @@ Tap a row to use it, or tap outside the menu to close it. The first time you tap
 
 Turn the phone sideways and the 3D view takes the whole height of the screen:
 
-- The toolbar becomes a rail down the left edge: ☰ (on the website), **Add**, **Undo**, **Redo**, **Save** and **Tools**, as icons only. When the rail is too short for all of them, **Save** makes room.
+- The toolbar becomes a rail down the left edge: **Add**, **Undo**, **Redo**, **Save** and **Tools**, as icons only. When the rail is too short for all of them, **Save** makes room.
 - The shapes from **Add** and the list from **Tools** open beside the rail.
 - While a part is selected, the selection bar is a column beside the rail.
 - The **Design**, **AI** and **Notes** panel is a drawer at the right edge. Tap the handle on that edge, or drag it in with your finger, to open it. Tap the handle again, or tap anywhere outside the drawer, to close it (with a keyboard, Esc closes it too).
 
 <!-- AUTO_IMAGE: type=shot id=web-phone-landscape -->
-![MatterCAD's editor on a phone held sideways: the rail of buttons (☰, Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-landscape.png)
+![MatterCAD's editor on a phone held sideways: the rail of buttons (Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge](https://matterhackers.github.io/MatterCAD_Docs/assets/web-phone-landscape.png)
 
 ## The Bottom Sheet
 

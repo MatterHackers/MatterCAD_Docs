@@ -42,7 +42,7 @@ A design from your [Cloud Library](../library/cloud-library.md) that has been de
 On a Mac, the same items are also in the menu bar at the top of the screen, and **File** adds **Add System File to Bed**, which the ☰ MatterCAD menu leaves to **Add to Bed**, and **Save**, **Save As** and **Share...**, which it leaves to the toolbar. An item with a key shows it:
 
 - **MatterCAD** - **About MatterCAD**, **Settings** (⌘,), **Check For Update** and **Quit** (⌘Q).
-- **File** - **Add System File to Bed** (a file from your computer onto the bed of the design in front, as **Add to Bed**'s **System File** does), **Open System File** (⌘O), **Open Recent**, **Save** (⌘S), **Save As** (⇧⌘S) and **Share...**. **Save** and **Save As** work on the design in front, as the toolbar's do. **Share...** opens the Share dialog for the design in front; it is greyed out unless that design is saved in your Cloud Library. See [Sharing](../library/sharing.md).
+- **File** - **Add System File to Bed** (a file from your computer onto the bed of the design in front, as **Add to Bed**'s **System File** does), **Open System File** (⌘O), **Open Recent**, **Open Demo**, **Save** (⌘S), **Save As** (⇧⌘S) and **Share...**. **Save** and **Save As** work on the design in front, as the toolbar's do. **Share...** opens the Share dialog for the design in front; it is greyed out unless that design is saved in your Cloud Library. See [Sharing](../library/sharing.md).
 - **Help** - **Help** (F1), **Interface Tour**, **Submit Feedback...** and **Community**.
 
 The first time MatterCAD starts, these items stay greyed out until you accept the license agreement. **Quit** always works.

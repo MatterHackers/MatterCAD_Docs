@@ -13,12 +13,12 @@ To open it, click **☰ MatterCAD** › **Settings**. On a Mac you can also choo
 
 Every change takes effect when you make it; there is no Save button. Click **Close** when you are done. Some changes reload the window, which takes a moment and keeps your open designs.
 
-The page has five sections: **General**, **Theme**, **Options**, **Advanced** and **AI Providers**. **Options**, **Advanced** and **AI Providers** start closed: click a heading to open it. MatterCAD remembers which ones you left open.
+The page has six sections: **General**, **3D View**, **Theme**, **Options**, **Advanced** and **AI Providers**. **Options**, **Advanced** and **AI Providers** start closed: click a heading to open it. MatterCAD remembers which ones you left open.
 
 In the browser, Settings has no **AI Providers** section, and **Advanced** has no **Application Storage** or **Application Cache** rows.
 
 <!-- AUTO_IMAGE: type=shot id=workspace-settings-window -->
-![The MatterCAD Settings window with its General and Theme sections showing](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-settings-window.png)
+![The MatterCAD Settings window with its General, 3D View and Theme sections showing](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-settings-window.png)
 
 ## General
 
@@ -28,6 +28,13 @@ In the browser, Settings has no **AI Providers** section, and **Advanced** has n
 | **Number format** | How numbers are shown and typed: **System** (follow your computer's region setting), **1234.5** (a point before the decimals) or **1234,5** (a comma before the decimals). The window reloads |
 | **Thumbnails** | **Reset Thumbnails** deletes the small pictures the library shows for your designs and makes them again. MatterCAD asks first: click **Reset** to go ahead or **No** to stop. The library may be slower for a while as the pictures are remade |
 | **Text Size** | Makes everything in the window bigger or smaller, from 0.3 to 2.5 (1.0 is normal). The row's name shows the size, for example "Text Size : 1.2". Move the slider, then click **Apply** to use the new size (the window reloads). If you close Settings without clicking **Apply**, the new size is used the next time you start MatterCAD |
+
+## 3D View
+
+| Setting | What it does |
+|---------|--------------|
+| **Anti-aliasing** | Smooths jagged edges in the 3D view: **Auto** (the starting setting), **Off**, **2x**, **3x** or **4x**. **Auto** shows what it uses now, for example "Auto (2x)", and lowers it while you move the view if drawing gets slow. Higher settings use more graphics memory; a choice that doesn't fit the window is greyed out |
+| **Transparency Layers** | How many overlapping see-through surfaces the 3D view draws: **Auto** (the starting setting), **Off**, **4**, **6** or **8**. Fewer is faster. **Auto** shows what it uses now, for example "Auto (6)", and lowers it while you move the view if drawing gets slow |
 
 ## Theme
 
@@ -42,7 +49,6 @@ The window reloads after each change. You can also change the theme without open
 
 | Setting | What it does |
 |---------|--------------|
-| **Depth Peeling Layers** | How carefully see-through parts are drawn where they overlap: **Off**, **4**, **6** (the starting value) or **8**. More layers draw overlapping see-through parts more accurately but take more work from your graphics card. **Off** uses a quicker approximation. Open designs follow the change at once |
 | **Show Welcome Message** | When on (the starting setting), the welcome window opens each time MatterCAD starts. Ticking **Don't remind me again** in the welcome window turns this off. See [Updates and Recovery](updates-and-recovery.md#the-welcome-page-and-the-interface-tour) |
 | **Send Crash Reports** | When on, MatterCAD offers to send a report after it crashes, and shows you exactly what would be sent before anything goes. It turns on when you choose **Allow** in the one-time question "Help improve MatterCAD?" that MatterCAD asks when it starts, or when you turn it on here. Until you answer that question it shows off. The question says what a report leaves out: "Your computer's user name, your AI keys and your GitHub token are taken out; other text, such as file names, is sent as it is." A report also carries MatterCAD's recent debug log, with the same things taken out. Once you have turned it off, MatterCAD never asks or offers. Crash reports are sent from MatterCAD for Windows and Mac; MatterCAD for Linux doesn't send them yet, and keeps its crash reports on your computer. See [Updates and Recovery](updates-and-recovery.md#crash-reports) |
 

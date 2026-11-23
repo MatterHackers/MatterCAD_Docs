@@ -4,10 +4,9 @@
   "mode": "page",
   "own-style": "bare",
   "markers": [
-    "Reset View Button",
-    "Edit Design Button"
+    "Reset View Button"
   ],
-  "alt": "A design page on the MatterCAD website: the design in its 3D preview, with Reset View and the camera buttons at the preview's top-left and the Edit button beside them",
+  "alt": "A design's 3D preview on its page on the MatterCAD website, with Reset View and the camera buttons at the preview's top-left",
   "replaces": {
     "needed": "A design page on the MatterCAD website in a desktop browser"
   }

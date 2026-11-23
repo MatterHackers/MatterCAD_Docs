@@ -19,12 +19,12 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 ## The Window and Menus
 
 - Each design has its own page. There are no tabs, and no **Library** or **Help** tab.
-- The **☰ MatterCAD** button is in the page's title bar, shown while you edit. Its menu holds **New Design**, **Interface Tour**, **Help** and **Settings**. **Open System File**, **Open Recent**, **Check For Update**, **Community** and **About MatterCAD** are only in MatterCAD on your computer.
+- The **☰ MatterCAD** button is in the page's title bar, shown while you edit. Its menu holds **New Design**, **Interface Tour**, **Help** and **Settings**. **Open System File**, **Open Recent**, **Open Demo**, **Check For Update**, **Community** and **About MatterCAD** are only in MatterCAD on your computer.
 - **Submit Feedback** is the **Feedback** button in the website's header, not a button in the status bar ([Getting More Help](../get-support.md#feedback-on-the-website)).
 - There is no **Check For Update**: the website runs the version of MatterCAD it serves. Reload the page to get a newer version once the website has one.
-- **Settings** has only **Number format** and **Depth Peeling Layers**. The colors follow the theme you chose on the website, in the menu under your name in its header ([The MatterCAD Menu](mattercad-menu.md#settings)).
+- **Settings** has only **Number format**, **Anti-aliasing** and **Transparency Layers**. The colors follow the theme you chose on the website, in the menu under your name in its header ([The MatterCAD Menu](mattercad-menu.md#settings)).
 - The **Bed** menu has no **Reload**.
-- A selected part has no **Help** button and no **Help Docs** menu row. Open **Help** from the MatterCAD menu instead. The first time you open it, its articles take a moment to load ([Help](mattercad-menu.md#help)).
+- A selected part has no **Help** button and no **Help Docs** menu row. Open **Help** from the MatterCAD menu instead: it opens the help pages on the website in a new browser tab ([Help](mattercad-menu.md#help)).
 - There is no **Open With** in a part's right-click menu, and no menu item that shows a file in your computer's file manager.
 - **Save as Tool**, for node graphs, is only in MatterCAD on your computer.
 

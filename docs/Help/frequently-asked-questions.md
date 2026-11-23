@@ -18,7 +18,7 @@ keywords: faq, problems, troubleshooting, tiny part, huge part, reset settings, 
 ![The MatterCAD menu open from its button at the top left of the window, the pointer on its Settings row](https://matterhackers.github.io/MatterCAD_Docs/assets/faq-menu-settings.png)
 
 <!-- AUTO_IMAGE: type=shot id=workspace-settings-window -->
-![The MatterCAD Settings window with its General and Theme sections showing](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-settings-window.png)
+![The MatterCAD Settings window with its General, 3D View and Theme sections showing](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-settings-window.png)
 
 <!-- AUTO_IMAGE: type=shot id=faq-settings-advanced -->
 ![The MatterCAD Settings window scrolled down to its open Advanced section, the pointer on the Application Storage button showing its Open Folder tip, and the Close button below](https://matterhackers.github.io/MatterCAD_Docs/assets/faq-settings-advanced.png)

@@ -37,19 +37,15 @@ You can also start a new design from the website's **Library** page: open a fold
 
 ## Help
 
-**Help** opens MatterCAD's help pages in a window over the editor. Your design stays as it is underneath.
-
-The first time you open it, the articles take a moment to arrive: the window shows "Loading help…" until they do. If they can't be loaded, it says "Help couldn't be loaded. Check your internet connection, then open Help again." Opening **Help** again tries once more. The **Mouse** and **Keys** pages, which list every mouse control and shortcut, are there either way, even without a connection.
-
-- On a wider screen the window opens at the right. You can move it, and close it with the close button in its title bar.
-- On a phone, or in a narrow window, it covers the whole screen. Close it with the close button in its title bar.
+**Help** opens MatterCAD's help pages on the website in a new browser tab, starting at the help's first page. The editor stays open in its own tab with your design as it is: switch back to that tab to keep working.
 
 ## Settings
 
 **Settings** opens a window with the settings that matter while you edit in a browser:
 
 - **Number format** (under **General**) - How numbers show and are typed: **System** (your computer's or phone's own way), **1234.5** (a point before the decimals) or **1234,5** (a comma before the decimals). The editor redraws every number in the new format at once.
-- **Depth Peeling Layers** (under **Options**) - How many layers of see-through parts the 3D view draws: **Off**, **4**, **6** (the starting setting) or **8**. Fewer layers draw faster, which can help on a slower phone.
+- **Anti-aliasing** (under **3D View**) - Smooths jagged edges in the 3D view: **Auto** (the starting setting), **Off**, **2x**, **3x** or **4x**. **Auto** shows what it uses now, for example "Auto (2x)", and lowers it while you move the view if drawing gets slow. Higher settings use more graphics memory; a choice that doesn't fit the window is greyed out.
+- **Transparency Layers** (under **3D View**) - How many overlapping see-through surfaces the 3D view draws: **Auto** (the starting setting), **Off**, **4**, **6** or **8**. Fewer is faster, which can help on a slower phone. **Auto** shows what it uses now, for example "Auto (6)", and lowers it while you move the view if drawing gets slow.
 
 The other settings MatterCAD has on your computer aren't in this window. The colors follow the theme you chose on the website, in the menu under your name in the website's header (or the theme button beside **Sign in** when you aren't signed in), and the camera, snapping and units are set with the camera controls in the 3D view ([Viewport Navigation](../getting-started/viewport-navigation.md)).
 

@@ -23,7 +23,7 @@ The window asks for:
 - **Title** - A short summary.
 - **Description** - What happened, and what you expected. Near the 4,000-character limit the window shows how many characters are left.
 - **Include with your report:** - Tick what goes with it: a **Screenshot of the 3D view**, **Your design** (the whole design, so we can reproduce the problem) and **Diagnostics** (MatterCAD's version, your system and graphics, your recent steps and the end of MatterCAD's log, with your computer's user name and your sign-in removed). Click **Show** to see the diagnostics before you send them.
-- **OK to contact me about this** - Tick it if we may write back to you. It starts unticked.
+- **OK to contact me about this (optional, we usually don't reply)** - Tick it if you don't mind us writing to you about your feedback. It starts unticked.
 
 Click **Send**. When it arrives, the window says "Thank you. Your feedback was sent." with a reference you can copy with **Copy Reference**. If it couldn't be sent, the window says so and offers **Retry**.
 

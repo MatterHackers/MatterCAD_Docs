@@ -12,7 +12,7 @@
       "select": "Cube"
     }
   ],
-  "alt": "MatterCAD's editor on a phone held sideways: the rail of buttons (☰, Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge",
+  "alt": "MatterCAD's editor on a phone held sideways: the rail of buttons (Add, Undo, Redo, Save, Tools) down the left edge, the selection bar as a column beside it, the camera buttons at the top-right, and the drawer handle on the right edge",
   "replaces": {
     "needed": "MatterCAD's editor on a phone held sideways"
   }

@@ -16,7 +16,7 @@ A design page works in three steps:
 3. **View** - Press **View** to go back to the preview.
 
 <!-- AUTO_IMAGE: type=shot id=web-design-page -->
-![A design page on the MatterCAD website: the design in its 3D preview, with Reset View and the camera buttons at the preview's top-left and the Edit button beside them](https://matterhackers.github.io/MatterCAD_Docs/assets/web-design-page.png)
+![A design's 3D preview on its page on the MatterCAD website, with Reset View and the camera buttons at the preview's top-left](https://matterhackers.github.io/MatterCAD_Docs/assets/web-design-page.png)
 
 ## What You Need
 

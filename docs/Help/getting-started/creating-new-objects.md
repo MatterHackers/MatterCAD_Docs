@@ -10,7 +10,7 @@ keywords: blank design, add shape, start designing, first design, make something
 Most designs start from simple shapes. You add them, size them, place them, and then combine or reshape them with operations.
 
 <!-- AUTO_IMAGE: type=shot id=gs-add-to-bed-popup -->
-![The Add to Bed button and the library it opens over the bed, at its top level: System File, Computer, Included, My Tools, History, Cloud Library, Shared with Me and Purchased](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-add-to-bed-popup.png)
+![The Add to Bed button and the library it opens over the bed, at its top level: System File, Computer, Included, My Tools, Toolbar, History, Cloud Library, Shared with Me and Purchased](https://matterhackers.github.io/MatterCAD_Docs/assets/gs-add-to-bed-popup.png)
 
 ## Start a New Design
 

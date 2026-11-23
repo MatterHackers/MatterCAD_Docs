@@ -14,14 +14,11 @@
     }
   ],
   "crop": [
-    "menu",
-    {
-      "widget": "MatterCAD BrandMenuButton"
-    }
+    "menu"
   ],
   "margin": 24,
-  "alt": "The website's editor with the MatterCAD menu open under its ☰ MatterCAD button at the start of the toolbar: New Design, Interface Tour, Help and Settings",
+  "alt": "The website's MatterCAD menu, opened from the ☰ MatterCAD button in the design page's title bar: New Design, Interface Tour, Help and Settings",
   "replaces": {
-    "needed": "The website's editor with the MatterCAD menu open"
+    "needed": "The website's editor with the MatterCAD menu open under the ☰ MatterCAD button in the title bar"
   }
 }

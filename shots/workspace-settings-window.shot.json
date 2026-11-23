@@ -17,7 +17,7 @@
       "widget": "Dialog Window"
     }
   ],
-  "alt": "The MatterCAD Settings window with its General and Theme sections showing",
+  "alt": "The MatterCAD Settings window with its General, 3D View and Theme sections showing",
   "replaces": {
     "needed": "Settings window with the General and Theme sections"
   }

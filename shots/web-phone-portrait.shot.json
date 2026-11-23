@@ -16,14 +16,13 @@
     }
   ],
   "markers": [
-    "MatterCAD BrandMenuButton",
     "Toolbar Add Button",
     "3D View Undo",
     "3D View Redo",
     "Save Menu SplitButton",
     "Toolbar Tools Button"
   ],
-  "alt": "MatterCAD's editor on a phone held upright: the one-row toolbar (MatterCAD menu, Add, Undo, Redo, Save, Tools) at the top, the 3D view with the Cube selected, the selection bar, and the bottom sheet at half height on the Design tab",
+  "alt": "MatterCAD's editor on a phone held upright: the one-row toolbar (Add, Undo, Redo, Save, Tools) at the top, the 3D view with the Cube selected, the selection bar, and the bottom sheet at half height on the Design tab",
   "replaces": {
     "needed": "MatterCAD's editor on a phone held upright"
   }
