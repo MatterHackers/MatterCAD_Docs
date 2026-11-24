@@ -19,7 +19,7 @@ The editor on the website is MatterCAD itself: the same shapes, operations, Prop
 ## The Window and Menus
 
 - Each design has its own page. There are no tabs, and no **Library** or **Help** tab.
-- The **☰ Options** button is in the page's title bar, shown while you edit. Its menu holds **New Design**, **Interface Tour**, **Help** and **Settings**. **Open System File**, **Open Recent**, **Open Demo**, **Check For Update**, **Community** and **About MatterCAD** are only in MatterCAD on your computer.
+- The **☰ Options** button is in the page's title bar, shown while you edit. Its menu holds **New Design**, **Interface Tour**, **Help** and **Settings**. **Open System File**, **Open Recent**, **Open Example**, **Check For Update**, **Community** and **About MatterCAD** are only in MatterCAD on your computer.
 - **Submit Feedback** is the **Feedback** button in the website's header, not a button in the status bar ([Getting More Help](../get-support.md#feedback-on-the-website)).
 - There is no **Check For Update**: the website runs the version of MatterCAD it serves. Reload the page to get a newer version once the website has one.
 - **Settings** has only **Number format**, **Anti-aliasing** and **Transparency Layers**. The colors follow the theme you chose on the website, in the menu under your name in its header ([The Options Menu](mattercad-menu.md#settings)).

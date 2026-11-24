@@ -3,7 +3,7 @@ title: Menus and Toolbar
 parent: "Workspace"
 nav_order: 19
 description: What the MatterCAD menu, the Mac menu bar and the toolbar buttons do, from adding and deleting parts to saving.
-keywords: delete, erase, buttons, file menu, main menu, duplicate
+keywords: delete, erase, buttons, file menu, main menu, duplicate, open example, example designs
 ---
 # Menus and Toolbar
 
@@ -22,7 +22,7 @@ Click **☰ MatterCAD** at the left end of the tabs. A row with a key shows it a
 |------|--------------|
 | **Open System File** | Opens a file from your computer (Ctrl+O). An MCX design opens in its own tab. Any other file (an STL, a picture, a drawing) opens on the bed of a new design. See [Adding Existing Objects](../getting-started/adding-existing-objects.md) |
 | **Open Recent** | Lists the last 10 designs you opened, newest first, each with a small picture. Hover over one to see where it is. Click one to open it again. A design that is already open shows its tab instead of opening twice. When there are none, the list says **No recent files** |
-| **Open Demo** | Lists the demo designs MatterHackers keeps in Design Apps. Pick one to open a copy of it in a new tab; the first **Save** asks where to keep it. It isn't in the menu in a copy of MatterCAD set up not to use the network |
+| **Open Example** | Lists the example designs MatterHackers keeps in Design Apps. Pick one to open a copy of it in a new tab; the first **Save** asks where to keep it. It isn't in the menu in a copy of MatterCAD set up not to use the network |
 | **Help** | Opens the **Help** tab, the same as pressing F1 |
 | **Interface Tour** | Opens the welcome window. Click **Next** there for a short guided tour of the window. See [Updates and Recovery](updates-and-recovery.md#the-welcome-page-and-the-interface-tour) |
 | **Submit Feedback...** | Opens the **Submit Feedback** window, to report a bug, ask for a feature or ask a question. The **Submit Feedback** button in the status bar opens it too. See [Getting More Help](../get-support.md#submit-feedback-in-mattercad) |
@@ -42,7 +42,7 @@ A design from your [Cloud Library](../library/cloud-library.md) that has been de
 On a Mac, the same items are also in the menu bar at the top of the screen, and **File** adds **Add System File to Bed**, which the ☰ MatterCAD menu leaves to **Add to Bed**, and **Save**, **Save As** and **Share...**, which it leaves to the toolbar. An item with a key shows it:
 
 - **MatterCAD** - **About MatterCAD**, **Settings** (⌘,), **Check For Update** and **Quit** (⌘Q).
-- **File** - **Add System File to Bed** (a file from your computer onto the bed of the design in front, as **Add to Bed**'s **System File** does), **Open System File** (⌘O), **Open Recent**, **Open Demo**, **Save** (⌘S), **Save As** (⇧⌘S) and **Share...**. **Save** and **Save As** work on the design in front, as the toolbar's do. **Share...** opens the Share dialog for the design in front; it is greyed out unless that design is saved in your Cloud Library. See [Sharing](../library/sharing.md).
+- **File** - **Add System File to Bed** (a file from your computer onto the bed of the design in front, as **Add to Bed**'s **System File** does), **Open System File** (⌘O), **Open Recent**, **Open Example**, **Save** (⌘S), **Save As** (⇧⌘S) and **Share...**. **Save** and **Save As** work on the design in front, as the toolbar's do. **Share...** opens the Share dialog for the design in front; it is greyed out unless that design is saved in your Cloud Library. See [Sharing](../library/sharing.md).
 - **Help** - **Help** (F1), **Interface Tour**, **Submit Feedback...** and **Community**.
 
 The first time MatterCAD starts, these items stay greyed out until you accept the license agreement. **Quit** always works.
