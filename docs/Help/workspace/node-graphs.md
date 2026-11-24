@@ -1,6 +1,6 @@
 ---
 title: Node Graphs
-articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, MapRangeObject3D, VectorMathObject3D, BooleanMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, PaletteObject3D, AnalyzePictureObject3D, TraceMaskObject3D, MaskFromFieldObject3D, PixelInfoObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, TransformOfObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
+articleKey: GeometryNodesObject3D, SetColorObject3D, PositionObject3D, CompareObject3D, InsideBoxObject3D, SeparateXyzObject3D, CombineXyzObject3D, MathObject3D, MapRangeObject3D, VectorMathObject3D, BooleanMathObject3D, SwitchObject3D, TransparencyMaskObject3D, IntensityMaskObject3D, ColorMaskObject3D, PaletteObject3D, AnalyzePictureObject3D, TraceMaskObject3D, MaskFromFieldObject3D, PixelInfoObject3D, TimeObject3D, LineCopiesObject3D, CircleCopiesObject3D, CircleAxisObject3D, StepCopiesObject3D, TransformOfObject3D, CurveCopiesObject3D, AdjustCopiesObject3D, PlaceOnCopiesObject3D, ArrowHandleObject3D, DialHandleObject3D, RadiusHandleObject3D, PointHandleObject3D
 parent: "Workspace"
 nav_order: 18
 description: Build a part by wiring nodes together in a graph instead of stacking operations in the tree.
@@ -39,7 +39,7 @@ Scroll the mouse wheel to zoom, and drag with the right or middle mouse button t
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask, Color Mask, Palette, Mask From Field, Pixel Info, Analyze Picture and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math, Map Range, Vector Math and Boolean Math), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask, Color Mask, Palette, Mask From Field, Pixel Info, Analyze Picture and Trace Mask), **Operations**, **Math** (Separate XYZ, Combine XYZ, Math, Map Range, Vector Math, Boolean Math and Time), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
 - Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
@@ -93,6 +93,21 @@ Math and Vector Math follow what you feed them. Fed a position or a size (a Sepa
 When an operation has no answer - dividing by zero, the square root of a negative number, the tangent of 90 degrees - the result is 0 and the card shows a warning saying what to change.
 
 For example, to make a hole half the width of a part: wire a Bounds' **Size** through **Separate XYZ**, wire its **X** into a Math set to **Divide** with B at 2, and wire the Result into a Cylinder's Diameter.
+
+### Time
+
+**Time** (Add Node > Math) gives a time of day as a number, so a graph can turn a clock's hands or change a part as the day goes on. Its **Seconds** output is the seconds since midnight: 3600 for each hour, 60 for each minute, and the seconds. Wire it through a **Math** node to get what you need - Divide by 3600 for hours, or Modulo 60 for the seconds of the minute.
+
+- With **Live** on (a new Time node starts that way), it follows your computer's clock and the design updates once a second. The ticking is not an edit: it adds nothing to Undo and does not mark the design as needing a save. The **Hour**, **Minute** and **Second** settings are hidden while Live is on, because the clock sets them.
+- A saved design keeps the moment it was saved. Opened again with Live on, it shows the current time as soon as the clock ticks.
+- Exporting a design, or adding a saved design to the bed with **Add to Bed**, takes the time at the moment you press the button.
+- With **Live** off, the node holds the time you set in Hour, Minute and Second, like any other setting. Values past the day carry on: 25 hours is a day and an hour.
+
+### Example: Hold Z to 0
+
+**Hold Z to 0** (Add Node > Examples, My Tools in the Library, or the toolbar's **My Tools** group once you add it there) moves a part so its lowest point sits at Z 0, the bed, however the part changes. Select a part and use the tool: the part is wrapped in the graph and comes down (or up) to rest on the bed, keeping its X and Y.
+
+Open its graph to see how it works: a **Bounds** measures the part, **Separate XYZ** takes the Z of the Bounds' **Min** (the part's lowest point), a **Math** multiplies it by -1, and **Combine XYZ** makes that the Z of a **Translate**'s **Translation**. Change the part inside, make it taller or move it, and the graph lowers it again.
 
 ## Switch Between Branches
 
@@ -154,7 +169,7 @@ The same picture at the same size traces to the same outline Image to Path gives
 
 **Trace Mask** has a diamond **Selection** socket of its own, so you can skip Mask From Field: wire the selection straight into it and it traces just the pixels the selection picks, exactly what the same selection through Mask From Field traces. See-through pixels stay out even when the selection picks them. With nothing wired in, Trace Mask traces every visible pixel; unchecking its Selection traces none.
 
-**Pixel Info** gives what each pixel is, each output on a dashed noodle: **Color** (the pixel's colour), **Alpha** (how solid, 0 to 1), **Luminance** (how bright it looks, as Intensity Mask reads it), **Lightness**, **Hue** (around the colour wheel, 0 to 1), **Saturation** (0 grey to 1 pure colour) and **Pixel Position** (in pixels, up from the bottom left). Feed them through **Compare**, **Math**, **Map Range** and **Boolean Math** to make the selection:
+**Pixel Info** gives what each pixel is, each output on a dashed noodle: **Color** (the pixel's colour), **Alpha** (how solid, 0 to 1), **Luminance** (how bright it looks, as Intensity Mask reads it), **Lightness**, **Hue** (around the colour wheel, 0 to 1), **Saturation** (0 grey to 1 pure colour), **Pixel Position** (in pixels, up from the bottom left) and **Picture Size** (the picture's width as X and height as Y, in pixels; half of it is the picture's middle). Feed them through **Compare**, **Math**, **Map Range** and **Boolean Math** to make the selection:
 
 - *Pixel Info Alpha -> Compare (Greater Than 0) -> Mask From Field* keeps every visible pixel, exactly Transparency Mask's mask.
 - *Pixel Info Color -> Compare (Similar Color) -> Mask From Field* keeps the pixels near a colour. Wire Color into Compare's **Color A**, click **Color B** on the Compare card to pick the colour to look for, and set **Tolerance**: 0% keeps only that exact colour and 100% keeps every colour, black and white being 100% apart. Pure red is about 5% from an orange-red, 16% from orange and 54% from blue, so 10% keeps red and the reds close to it. Clear pixels are never kept.
