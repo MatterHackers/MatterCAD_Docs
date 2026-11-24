@@ -1,17 +1,17 @@
 ---
-title: The MatterCAD Menu
+title: The Options Menu
 parent: "MatterCAD on the Web"
 nav_order: 1
-description: "What each item in the website's MatterCAD menu does: new design, tour, help and settings."
-keywords: web menu, hamburger menu, website menu, browser menu
+description: "What each item in the website's Options menu does: new design, tour, help and settings."
+keywords: options, options menu, web menu, hamburger menu, website menu, browser menu
 ---
-# The MatterCAD Menu on the Website
+# The Options Menu on the Website
 
-While you edit a design on the website, the title bar above the design shows a **☰ MatterCAD** button, right after **View** and before the design's name. Click it to open the MatterCAD menu over the editor. Click it again, press Esc or click away to close the menu. The button is hidden while you only view the design.
+While you edit a design on the website, the title bar above the design shows a **☰ Options** button, right after **View** and before the design's name. Click it to open the Options menu over the editor. Click it again, press Esc or click away to close the menu. The button is hidden while you only view the design.
 
 It holds four items: **New Design**, **Interface Tour**, **Help** and **Settings**.
 
-<!-- IMAGE_NEEDED: The website's editor with the MatterCAD menu open under the ☰ MatterCAD button in the title bar: New Design, Interface Tour, Help and Settings -->
+<!-- IMAGE_NEEDED: The website's editor with the Options menu open under the ☰ Options button in the title bar: New Design, Interface Tour, Help and Settings -->
 
 To add a file from your computer or phone, use **Add to Bed** and open **System File** ([Adding Parts on the Web](adding-parts.md#files-from-your-computer)). To send feedback, use the **Feedback** button in the website's header ([Getting More Help](../get-support.md#feedback-on-the-website)).
 

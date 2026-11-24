@@ -29,15 +29,10 @@ Click **Send**. When it arrives, the window says "Thank you. Your feedback was s
 
 ## Feedback on the Website
 
-The MatterCAD website has a **Feedback** button in its header, at the top right. Click it and choose what your feedback is about:
+The MatterCAD website has a **Feedback** button in its header, at the top right. What it opens depends on where you are:
 
-- **This design** - Only on a design's page.
-- **The website**
-- **The MatterCAD app**
-
-On a design's page, each choice opens MatterCAD's **Submit Feedback** window over the design, whether you are viewing the design or editing it. The window asks **What is this about?** with the same three choices, already set to the one you picked. Choosing **The website** or **The MatterCAD app** unticks the screenshot and the design, because those belong to the design; tick them again if they help explain your feedback.
-
-Anywhere else on the website (the Library, Pricing or Help pages), **The website** and **The MatterCAD app** open a short form: the kind of feedback (**Bug**, **Feature request** or **Question**), **Title**, **Description** and **OK to contact me**. Click **Send** to send it.
+- **On a design's page**, once MatterCAD has started, it opens MatterCAD's **Submit Feedback** window over the design, whether you are viewing the design or editing it. It is the same window described above, so your feedback can include a screenshot of the 3D view, your design and diagnostics.
+- **Anywhere else** (the Library, Pricing or Help pages), it opens a short form titled **Send feedback about the website**: the kind of feedback (**Bug**, **Feature request** or **Question**), **Title**, **Description** and **OK to contact me**. Click **Send** to send it.
 
 If you aren't signed in, the website asks you to sign in first, so MatterHackers can follow up with you.
 
