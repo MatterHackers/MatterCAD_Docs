@@ -321,7 +321,7 @@ Right-click the object and choose **Save as Tool** to keep a copy you can use in
 
 The tools that come with MatterCAD, such as **Hold Z to 0**, are in the Library under **Included > Tools**, and can go on the toolbar the same way.
 
-Each use adds an independent copy, so changing one never changes the others. The tools on your toolbar and your Favorites bar also appear under **My Tools** in the Add Node menu.
+Each use adds an independent copy, so changing one never changes the others. The tools you saved that are on your toolbar or your Favorites bar also appear under **My Tools** in the Add Node menu; the tools that come with MatterCAD are under **Examples** there.
 
 ## Graphs Inside Graphs
 
