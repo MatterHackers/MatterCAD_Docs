@@ -25,7 +25,7 @@ Image Converter turns a picture into a solid part. It traces the shapes in the p
 
 Undo brings back the picture in one step.
 
-You can also start without a picture: **Image Converter** in the Library's **3D Primitives** folder, or **Image Converter (Nodes)** in **My Tools**, adds one that starts from a sample picture you then replace.
+You can also start without a picture: **Image Converter** in the Library's **3D Primitives** folder, or **Image Converter (Nodes)** in the Library's **Included > Tools** folder, adds one that starts from a sample picture you then replace.
 
 ## Settings
 

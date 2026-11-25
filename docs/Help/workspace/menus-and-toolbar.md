@@ -55,7 +55,7 @@ The toolbar runs across the top of each design tab. When the window is too narro
 - **Undo** and **Redo**. Hover over one to see the step it takes back or does again, for example "Undo - Move". See [Undo and Redo](undo-redo.md).
 - Buttons that work on the selected parts: **Arrange All Parts**, **Lay Flat**, **Rebuild**, **Group**, **Ungroup**, **Convert to Nodes**, **Duplicate** and **Remove**.
 - The operation groups: **Transform**, **Placement**, **Round & Offset**, **Deform**, **Image**, **Path**, **Merge**, **Duplication**, **Mesh** and **Constraints**.
-- **My Tools**, the operation tools you saved yourself, when you have any.
+- **My Tools**, the tools you added to the toolbar yourself, when you have added any. See [Save as Tool](node-graphs.md#save-as-tool).
 - **Tools**, at the end (below).
 
 Hover over any button to see its name, with its key when it has one, for example "Group (G)". A greyed-out button can't be used on what is selected; hover over it to see what it needs. While you hover, the status bar at the bottom of the window shows a hint for the button, such as its shortcut.

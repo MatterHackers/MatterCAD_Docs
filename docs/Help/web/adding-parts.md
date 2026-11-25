@@ -20,7 +20,7 @@ Click **Add to Bed** in the toolbar. The library opens over the left side of the
 On a phone, tap **Add**, then the last tile, the open folder (**Add from Library…**). Drag an item onto the bed, or hold a finger on it and choose **Add to Bed**.
 
 <!-- AUTO_IMAGE: type=shot id=web-add-to-bed -->
-![The editor on a design's page on the MatterCAD website with the Add to Bed library open over the left side, listing System File, Included, My Tools, Toolbar, My Designs, Shared with Me and Purchased beside the design](https://matterhackers.github.io/MatterCAD_Docs/assets/web-add-to-bed.png)
+![The editor on a design's page on the MatterCAD website with the Add to Bed library open over the left side, listing System File, Included, Toolbar, My Designs, Shared with Me and Purchased beside the design](https://matterhackers.github.io/MatterCAD_Docs/assets/web-add-to-bed.png)
 
 ### Included
 

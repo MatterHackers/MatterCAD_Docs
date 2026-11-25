@@ -43,7 +43,7 @@ The grid closes when you tap a shape, the library tile or an empty spot in it. T
 
 ## Tools
 
-Tap **Tools** to open a list over the 3D view with every operation, each with its icon and its name, under the same group headings the toolbar uses. The operations that sit in no group come first, under **General**, and the tools you saved yourself come last, under **My Tools**.
+Tap **Tools** to open a list over the 3D view with every operation, each with its icon and its name, under the same group headings the toolbar uses. The operations that sit in no group come first, under **General**, and the tools you added to the toolbar's **My Tools** group come last, under **My Tools**. A tool you added to another group is listed in that group.
 
 - Tap an operation to use it on what you have selected. The list closes.
 - An operation that can't be used on what you have selected is faded, with a line under its name saying what it needs you to select.

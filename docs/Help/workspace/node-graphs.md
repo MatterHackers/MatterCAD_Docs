@@ -39,7 +39,7 @@ Scroll the mouse wheel to zoom, and drag with the right or middle mouse button t
 
 ## Add and Delete Nodes
 
-- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask, Color Mask, Palette, Mask From Field, Pixel Info, Analyze Picture and Trace Mask), **Operations** (sorted into the toolbar's groups - **Transform**, **Placement**, **Round & Offset**, **Deform**, **Image**, **Path**, **Merge**, **Duplication** and **Mesh** - with **Set Color**, which is in no group, directly under Operations), **Math** (Separate XYZ, Combine XYZ, Math, Map Range, Vector Math, Boolean Math and Time), **Copies** (Line Copies, Circle Copies, Step Copies, Curve Copies, Adjust Copies and Place on Copies), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each) and **My Tools**; type to search. In the editor's **Add** menu each toolbar group is a submenu of Operations, so Linear Extrude is at **Add > Operations > Path**; the Shift+A menu shows the groups as headings inside Operations. Typing still finds any node by its name, whatever group it is in. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
+- Press **Shift+A**, or right-click on empty space, to open the **Add Node** menu at the pointer. It lists **Shapes**, **2D Shapes**, **Image** (Image, Transparency Mask, Intensity Mask, Color Mask, Palette, Mask From Field, Pixel Info, Analyze Picture and Trace Mask), **Operations** (sorted into the toolbar's groups - **Transform**, **Placement**, **Round & Offset**, **Deform**, **Image**, **Path**, **Merge**, **Duplication** and **Mesh** - with **Set Color**, which is in no group, directly under Operations), **Math** (Separate XYZ, Combine XYZ, Combine Transform, Separate Transform, Math, Map Range, Vector Math, Boolean Math and Time), **Copies** (Line Copies, Circle Copies, Circle Axis, Step Copies, Transform Of, Curve Copies, Adjust Copies and Place on Copies), **Handles** (Arrow Handle, Dial Handle, Radius Handle and Point Handle), **Sheet**, **Selection** (Position, Compare and Inside Box), **Flow** (Switch and For Each), **My Tools** (the tools you saved that are on your toolbar or your Favorites bar) and **Examples** (the tools that come with MatterCAD, even one you added to the toolbar); type to search. In the editor's **Add** menu each toolbar group is a submenu of Operations, so Linear Extrude is at **Add > Operations > Path**; the Shift+A menu shows the groups as headings inside Operations. Typing still finds any node by its name, whatever group it is in. The node you pick lands at the pointer, unwired and selected. If a node is selected and the new one can take its result, the new node goes in after it instead - to its right, wired to it and to whatever it fed - so picking Linear Extrude with a Circle selected gives *Circle -> Linear Extrude -> Output*.
 - Drag a noodle from a socket and let go on empty space to open the Add Node menu there. It lists only the nodes that can take that noodle, and the one you pick lands wired to it.
 - With a graph shown, the toolbar's operation buttons add a node to the graph you are looking at.
 - Drag an object from the scene tree onto the editor to move it into the graph, or drag an item from the Library to add a copy.
@@ -119,7 +119,7 @@ For example, to make a hole half the width of a part: wire a Bounds' **Size** th
 
 ### Example: Hold Z to 0
 
-**Hold Z to 0** (Add Node > Examples, My Tools in the Library, or the toolbar's **My Tools** group once you add it there) moves a part so its lowest point sits at Z 0, the bed, however the part changes. Select a part and use the tool: the part is wrapped in the graph and comes down (or up) to rest on the bed, keeping its X and Y.
+**Hold Z to 0** (Add Node > Examples, **Included > Tools** in the Library, or the toolbar once you add it there) moves a part so its lowest point sits at Z 0, the bed, however the part changes. Select a part and use the tool: the part is wrapped in the graph and comes down (or up) to rest on the bed, keeping its X and Y.
 
 Open its graph to see how it works: a **Bounds** measures the part, **Separate XYZ** takes the Z of the Bounds' **Min** (the part's lowest point), a **Math** multiplies it by -1, and **Combine XYZ** makes that the Z of a **Translate**'s **Translation**. Change the part inside, make it taller or move it, and the graph lowers it again.
 
@@ -157,7 +157,7 @@ A run whose colours are all unticked masks nothing, so that item makes no part.
 
 ### Example: Colour Layers (Nodes)
 
-**Colour Layers (Nodes)** (Add Node > Examples, or My Tools in the Library) turns a colour picture into a stack of layers, one per colour, for printing with a filament change at each layer.
+**Colour Layers (Nodes)** (Add Node > Examples, or **Included > Tools** in the Library) turns a colour picture into a stack of layers, one per colour, for printing with a filament change at each layer.
 
 1. Add it and pick a picture in its **Image** section.
 2. Set **Colors** to how many colours the picture has, background included. Each colour but the background gets a **Layer** section.
@@ -312,14 +312,16 @@ A graph is sealed: a formula inside it sees only what is wired to its card's **V
 - To read objects in the scene outside the graph, wire the Input node's **Scene** socket to this node's Variables socket. Otherwise: *... isn't wired to this node. Wire the Input node's Scene socket to this node's Variables socket to use names from the scene.*
 - A **Sheet** node works the same way: wire its Variables socket to each node whose formulas read its cells. A sheet has no result, so it never goes into the Output.
 
-## Save as Tool and My Tools
+## Save as Tool
 
-Right-click the object and choose **Save as Tool** to keep a copy you can use in any design. Tools are stored in **My Tools** in the Library.
+Right-click the object and choose **Save as Tool** to keep a copy you can use in any design. MatterCAD asks where to save it and what to call it, as **Save As** does, starting with the graph's name. A tool is a design file marked as a tool, so it can go in any folder of your Library. You can't save over a design that is open in a tab; pick another name or close that tab first.
 
 - A tool that **makes** a shape (no object inputs) is also added to the **Favorites** bar. Drag it into your design like a primitive.
-- A tool that **works on** objects (it has object inputs) gets a button in the toolbar's **My Tools** group. Select a part and click the button to run the tool on it.
+- A tool that **works on** objects (it has object inputs) can go on the toolbar. In the Library, right-click it, choose **Add to Toolbar** and pick a group, or drag it onto one of the groups in the Library's **Toolbar** folder. **My Tools** is the toolbar's own group for your tools; it shows once you add one. Then select a part and click the tool's button to run it on the part. Only tools can go on the toolbar: anything else is refused with *Only tools can go on the toolbar. Drag a tool from your Library.*
 
-Each use adds an independent copy, so changing one never changes the others. Tools also appear under My Tools in the Add Node menu.
+The tools that come with MatterCAD, such as **Hold Z to 0**, are in the Library under **Included > Tools**, and can go on the toolbar the same way.
+
+Each use adds an independent copy, so changing one never changes the others. The tools on your toolbar and your Favorites bar also appear under **My Tools** in the Add Node menu.
 
 ## Graphs Inside Graphs
 
