@@ -30,7 +30,7 @@ Formulas in other parts can read one part of a value by adding its letter: `=Bou
 
 ## In a Node Graph
 
-Bounds is also a node (Add Node > Operations). Wire parts into its **Source**; its **Result** is the box, and its **Min**, **Max**, **Size** and **Center** are outputs you can wire into another card's settings - through Separate XYZ for a single number, or into an Inside Box node to round only the edges inside the box. See *Values Between Nodes* on the [Node Graphs](../../workspace/node-graphs.md) page.
+Bounds is also a node (Add Node > Operations > Placement). Wire parts into its **Source**; its **Result** is the box, and its **Min**, **Max**, **Size** and **Center** are outputs you can wire into another card's settings - through Separate XYZ for a single number, or into an Inside Box node to round only the edges inside the box. See *Values Between Nodes* on the [Node Graphs](../../workspace/node-graphs.md) page.
 
 ## Tips
 
