@@ -49,7 +49,6 @@ The window reloads after each change. You can also change the theme without open
 
 | Setting | What it does |
 |---------|--------------|
-| **Show Welcome Message** | When on (the starting setting), the welcome window opens each time MatterCAD starts. Ticking **Don't remind me again** in the welcome window turns this off. See [Updates and Recovery](updates-and-recovery.md#the-welcome-page-and-the-interface-tour) |
 | **Send Crash Reports** | When on, MatterCAD offers to send a report after it crashes, and shows you exactly what would be sent before anything goes. It turns on when you choose **Allow** in the one-time question "Help improve MatterCAD?" that MatterCAD asks when it starts, or when you turn it on here. Until you answer that question it shows off. The question says what a report leaves out: "Your computer's user name, your AI keys and your GitHub token are taken out; other text, such as file names, is sent as it is." A report also carries MatterCAD's recent debug log, with the same things taken out. Once you have turned it off, MatterCAD never asks or offers. Crash reports are sent from MatterCAD for Windows and Mac; MatterCAD for Linux doesn't send them yet, and keeps its crash reports on your computer. See [Updates and Recovery](updates-and-recovery.md#crash-reports) |
 
 ## Advanced
@@ -97,4 +96,4 @@ Your keys stay on this computer, saved with MatterCAD's other settings. Each key
 
 - [Menus and Toolbar](menus-and-toolbar.md) - The ☰ MatterCAD menu
 - [Signing In](account.md) - Your MatterHackers account
-- [Updates and Recovery](updates-and-recovery.md) - Updates, crash reports and the welcome window
+- [Updates and Recovery](updates-and-recovery.md) - Updates, crash reports and getting your work back

@@ -3,11 +3,11 @@ title: Updates and Recovery
 parent: "Workspace"
 nav_order: 24
 description: Update MatterCAD, send crash reports and get your work back after MatterCAD closes unexpectedly.
-keywords: upgrade, new version, crash, crashed, lost work, autosave, restore
+keywords: upgrade, new version, crash, crashed, lost work, autosave, restore, hints, first use, got it, what's new
 ---
 # Updates and Recovery
 
-This page is about the desktop app on Windows, Mac and Linux: keeping MatterCAD up to date, the windows it shows when it starts, crash reports, and getting your work back after MatterCAD closes unexpectedly.
+This page is about the desktop app on Windows, Mac and Linux: keeping MatterCAD up to date, the hints a new user sees, What's New, crash reports, and getting your work back after MatterCAD closes unexpectedly.
 
 <!-- AUTO_IMAGE: type=shot id=workspace-updates-window -->
 ![The Check for Update window saying there is a recommended update available, with the Download Update button, the current build and the Update Channel set to Stable](https://matterhackers.github.io/MatterCAD_Docs/assets/workspace-updates-window.png)
@@ -65,40 +65,27 @@ Click **☰ MatterCAD** › **About MatterCAD** (on a Mac, also in the **MatterC
 - "Developed By: MatterHackers", and a link to www.matterhackers.com.
 - The open source software MatterCAD is made with. Click a name to read its license, or its link button to open its web page.
 
-## The Welcome Page and the Interface Tour
+## First-Use Hints
 
-When MatterCAD starts, it shows **Welcome to MatterCAD**: "Let's show you around before you get started."
+The first time you use MatterCAD, it shows a few hints, each once, at the moment you need it. A hint is a small card beside the control it is about, with one sentence and a **Got it** button:
 
-- Click **Next** to take the Interface Tour.
-- Click **Done** to close the window.
-- Tick **Don't remind me again** so it doesn't open when MatterCAD starts. You can turn it back on with **Show Welcome Message** in [Settings](settings.md#options).
+| When | Where | What it says |
+|------|-------|--------------|
+| The start card has closed and the bed is still empty | Beside the shapes down the left side | "Drag a shape onto the bed to start." |
+| You select a part | Beside **Width** in the part's settings | "Type a size in millimetres to change it." |
+| You set a part to **Hole** | Beside **Combine** | "To cut the hole, select it and the part, then press Combine." |
+| Your first save has finished | Beside the arrow next to **Save** | "To print, choose Export > STL and open the file in your slicer." |
 
-To take the tour at any time, click **☰ MatterCAD** › **Interface Tour** (on a Mac, also **Help** › **Interface Tour**), then **Next**.
+- Only one hint shows at a time.
+- A hint never gets in your way: you can click anything while it shows, including the control it points at.
+- A hint goes away for good when you do what it says (add a shape, change a size, run **Combine** or **Subtract**, or export the design), or when you click **Got it**.
+- When the control a hint is about isn't on screen, for example in a narrow window, the hint waits until it is.
 
-The tour dims the window and points at one part of it at a time, with a short note:
-
-1. **Start Here** - the start card on a new design, where you describe a design to the AI, open a file or pick one from your library. The first time you use MatterCAD, the start card stays open through the welcome window and the tour, so the tour begins here.
-2. **Application Menu** - the **☰ MatterCAD** menu. **Help** is here too, with tutorials, docs and keyboard shortcuts.
-3. **New Design** - the **+** button (**Create New Design**) by the tabs, which starts a new design in its own tab.
-4. **Library** - the **Library** tab, with your designs, parts and folders.
-5. **Add to Bed** - adds designs and parts from your library to the bed.
-6. **Save** - saves your design. The arrow beside it saves a copy under a new name or exports the design.
-7. **Undo & Redo**
-8. **Primitive Shapes** - the shapes down the left side; drag one to the bed to start building.
-9. **Design and AI** - the side panel's tabs: **Design** lists your design's parts and the settings of the one you select; **AI** builds or changes a design from what you describe.
-10. **Tumble Cube**
-11. **Sign In**
-12. **Search MatterCAD**
-
-A stop is skipped when that part isn't on screen: **Start Here** shows only while a new design's start card is open.
-
-- Click **Next**, or press Enter, to go on. On the last stop the button reads **Done**.
-- Click **Prev** to go back.
-- Click the **X** on the note, or press Esc, to end the tour.
+If you used MatterCAD before, you don't see these hints.
 
 ## What's New
 
-After MatterCAD updates to a new version, it opens the **Help** tab on [What's New](../whats-new.md) once, so you can see what changed. This happens only when you have turned off the welcome page; while the welcome page is on, it opens instead. A first install doesn't show What's New.
+After MatterCAD updates to a newer version, it opens the **Help** tab on [What's New](../whats-new.md) once, so you can see what changed. A first install doesn't show What's New: you first see it after your next update. MatterCAD on the website never opens it.
 
 ## Crash Reports
 
@@ -141,6 +128,6 @@ If the previous version of MatterCAD is still running, MatterCAD shows **Previou
 ## Related
 
 - [Saving and Exporting](../getting-started/saving-and-exporting.md) - Save your work and recover unsaved work
-- [Settings](settings.md) - Show Welcome Message and Send Crash Reports
+- [Settings](settings.md) - Send Crash Reports
 - [Menus and Toolbar](menus-and-toolbar.md) - The ☰ MatterCAD menu
 - [What's New](../whats-new.md) - What changed in each version

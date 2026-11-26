@@ -82,7 +82,7 @@ While you have changes that are not saved, your browser asks before you leave th
 
 ## Topics
 
-- [The Options Menu](mattercad-menu.md) - New Design, the Interface Tour, Help and Settings on the website
+- [The Options Menu](mattercad-menu.md) - New Design, Help and Settings on the website
 - [Saving on the Web](saving.md) - Save, Save As to a folder of your choice, Export, and getting back unsaved changes
 - [Adding Parts on the Web](adding-parts.md) - Shapes, sample parts and the designs in your own library
 - [Using MatterCAD on a Phone](phone.md) - The phone layout, the selection bar, press and hold menus and the bottom sheet

@@ -16,7 +16,7 @@ On a phone, MatterCAD lays itself out to give the 3D view as much of the small s
 
 On a phone, the title bar's buttons are icons only, apart from **☰ Options** (below): the back arrow (to the library), the pencil (**Edit**), which turns into an eye (**View**) while you edit, the full screen icon (where your browser can fill the screen), and the download arrow (**Download**). Press the pencil to edit. The toolbar comes down from the top and the bottom sheet comes up from the bottom.
 
-While you edit, the title bar also shows the **☰ Options** button, with its words, right after the eye. It opens the Options menu: **New Design**, **Interface Tour**, **Help** and **Settings** ([The Options Menu](mattercad-menu.md)). The toolbar has no ☰ of its own on the website.
+While you edit, the title bar also shows the **☰ Options** button, with its words, right after the eye. It opens the Options menu: **New Design**, **Help** and **Settings** ([The Options Menu](mattercad-menu.md)). The toolbar has no ☰ of its own on the website.
 
 ## The Toolbar
 

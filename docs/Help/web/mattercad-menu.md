@@ -2,16 +2,16 @@
 title: The Options Menu
 parent: "MatterCAD on the Web"
 nav_order: 1
-description: "What each item in the website's Options menu does: new design, tour, help and settings."
+description: "What each item in the website's Options menu does: new design, help and settings."
 keywords: options, options menu, web menu, hamburger menu, website menu, browser menu
 ---
 # The Options Menu on the Website
 
 While you edit a design on the website, the title bar above the design shows a **☰ Options** button, right after **View** and before the design's name. Click it to open the Options menu over the editor. Click it again, press Esc or click away to close the menu. The button is hidden while you only view the design.
 
-It holds four items: **New Design**, **Interface Tour**, **Help** and **Settings**.
+It holds three items: **New Design**, **Help** and **Settings**.
 
-<!-- IMAGE_NEEDED: The website's editor with the Options menu open under the ☰ Options button in the title bar: New Design, Interface Tour, Help and Settings -->
+<!-- IMAGE_NEEDED: The website's editor with the Options menu open under the ☰ Options button in the title bar: New Design, Help and Settings -->
 
 To add a file from your computer or phone, use **Add to Bed** and open **System File** ([Adding Parts on the Web](adding-parts.md#files-from-your-computer)). To send feedback, use the **Feedback** button in the website's header ([Getting More Help](../get-support.md#feedback-on-the-website)).
 
@@ -30,10 +30,6 @@ The new design is called "New Design" and the page's title changes to match. The
 To go back to the design you had open before, use your browser's Back button. It opens that design as it was last saved.
 
 You can also start a new design from the website's **Library** page: open a folder and click **New Design**. MatterCAD opens on an empty bed, ready to edit, and the first **Save** opens **Save As** in that folder. If you press **View** before you ever save it, you go back to the folder.
-
-## Interface Tour
-
-**Interface Tour** opens the **Welcome to MatterCAD** box. Click **Next** to start a tour that points out the parts of the editor one at a time, or **Done** to close the box. On the website the tour visits only the parts the website's editor has.
 
 ## Help
 
